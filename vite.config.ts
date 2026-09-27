@@ -12,6 +12,11 @@ export default defineConfig(() => {
         '@': path.resolve(__dirname, '.'),
       },
     },
+    publicDir: 'public',
+    assetsDir: 'assets',
+    build: {
+      assetsDir: 'assets',
+    },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
