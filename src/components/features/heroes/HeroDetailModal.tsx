@@ -189,19 +189,19 @@ export const HeroDetailModal: React.FC<HeroDetailModalProps> = ({
 
             <div className="grid grid-cols-8 gap-0 mt-4">
               <div className="rounded-lg bg-slate-950/40 text-center">
-                <img src="src/assets/icons/hero_stats/offence.png" alt="ATQ" className="w-6 h-6 mx-auto mb-1" />
+                <img src={new URL(`../../../assets/icons/hero_stats/offence.png`, import.meta.url).href} alt="ATQ" className="w-6 h-6 mx-auto mb-1" />
               </div>
               <div className="font-bold text-slate-200">{hero.attack}</div>
               <div className="rounded-lg bg-slate-950/40 text-center">
-                <img src="src/assets/icons/hero_stats/defence.png" alt="DEF" className="w-6 h-6 mx-auto mb-1" />
+                <img src={new URL(`../../../assets/icons/hero_stats/defence.png`, import.meta.url).href} alt="DEF" className="w-6 h-6 mx-auto mb-1" />
               </div>
               <div className="font-bold text-slate-200">{hero.defence}</div>
               <div className="rounded-lg bg-slate-950/40 text-center">
-                <img src="src/assets/icons/hero_stats/spellpower.png" alt="PODER" className="w-6 h-6 mx-auto mb-1" />
+                <img src={new URL(`../../../assets/icons/hero_stats/spellpower.png`, import.meta.url).href} alt="PODER" className="w-6 h-6 mx-auto mb-1" />
               </div>
               <div className="font-bold text-slate-200">{hero.spellPower}</div>
               <div className="rounded-lg bg-slate-950/40 text-center">
-                <img src="src/assets/icons/hero_stats/intelligence.png" alt="CONOC" className="w-6 h-6 mx-auto mb-1" />
+                <img src={new URL(`../../../assets/icons/hero_stats/intelligence.png`, import.meta.url).href} alt="CONOC" className="w-6 h-6 mx-auto mb-1" />
               </div>
               <div className="font-bold text-slate-200">{hero.knowledge}</div>
             </div>
