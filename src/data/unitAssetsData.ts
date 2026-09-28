@@ -14,6 +14,23 @@ export interface UnitAssetEntry {
   nameEn: string;
 }
 
+const assetUrls = import.meta.glob(
+  '/src/assets/**/*.{png,jpg,jpeg,webp,svg}',
+  {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  }
+) as Record<string, string>;
+
+function resolveAsset(path: string): string {
+  if (!path.startsWith('src/assets/')) {
+    return path;
+  }
+
+  return assetUrls[`/${path}`] ?? path;
+}
+
 // Iconos canónicos oficiales de cada facción de Jadame
 export const FACTION_ICONS: Record<string, string> = {
   // Mazmorra
@@ -54,6 +71,10 @@ export const FACTION_ICONS: Record<string, string> = {
   Neutral: 'src/assets/icons/fractions/unicorn.png',
   neutral: 'src/assets/icons/fractions/unicorn.png',
 };
+
+Object.keys(FACTION_ICONS).forEach((key) => {
+  FACTION_ICONS[key] = resolveAsset(FACTION_ICONS[key]);
+});
 
 /**
  * Obtiene la ruta al icono canónico de la facción
@@ -229,6 +250,15 @@ export const UNIT_ASSETS_CATALOG: UnitAssetEntry[] = [
   { unit_id: 'unicorn', icon: 'src/assets/icons/units/hex_portraits/unicorn.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Unicornio', nameEn: 'Unicorn' },
   { unit_id: 'mech_guard', icon: 'src/assets/icons/units/hex_portraits/mech_guard.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Observador del mundo', nameEn: 'Worldwatcher' },
 ];
+
+UNIT_ASSETS_CATALOG.forEach((entry) => {
+  entry.icon = resolveAsset(entry.icon);
+  entry.faction_image = resolveAsset(entry.faction_image);
+
+  if (entry.visual_3d) {
+    entry.visual_3d = resolveAsset(entry.visual_3d);
+  }
+});
 
 // Mapas rápidos para resolución O(1)
 const NORM_MAP = new Map<string, UnitAssetEntry>();

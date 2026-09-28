@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 //import { getHeroPortrait } from '../../data/heroAssetsData';
 import { Shield } from 'lucide-react';
 
+const heroAssetUrls = import.meta.glob(
+  '/src/assets/icons/hero_large_portraits/*.{png,jpg,jpeg,webp}',
+  {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  }
+) as Record<string, string>;
+
 interface HeroImageProps {
   heroId?: string;
   heroName?: string;
@@ -36,19 +45,23 @@ export const HeroImage: React.FC<HeroImageProps> = ({
   // Normaliza iconPath: puede venir sin "src/assets/" y sin ".png".
   const normalizeIconPath = (raw?: string): string | null => {
     if (!raw) return null;
+
     let p = raw.trim();
     if (!p) return null;
-    // Quitar "src/assets/" si lo incluye, para construir la ruta canónica.
+
     if (p.startsWith('src/assets/')) {
       p = p.substring('src/assets/'.length);
-    } else if (p.startsWith('src/assets/')) {
-      p = p.substring('src/assets/'.length);
     }
-    if (!p.endsWith('.png')) p += '.png';
-    return `src/assets/${p}`;
+
+    if (!p.endsWith('.png')) {
+      p += '.png';
+    }
+
+    const assetKey = `/src/assets/${p}`;
+    return heroAssetUrls[assetKey] ?? null;
   };
 
-const iconSrc = normalizeIconPath(iconPath) || `src/assets/icons/heroes/${heroId ? heroId.toLowerCase() : 'default'}/${heroId || 'default'}.png`;
+  const iconSrc = normalizeIconPath(iconPath);
 
   const sizeClass = SIZE_MAP[size] || SIZE_MAP.md;
 

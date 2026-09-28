@@ -36,6 +36,32 @@ import { useStickyState } from '../../../utils/useStickyState';
 import { HeroBuildSimulator } from '../../HeroBuildSimulator';
 import type { FactionId } from '../../../data/factionDataProvider';
 
+const heroDetailAssetUrls = import.meta.glob(
+  '/src/assets/**/*.{png,jpg,jpeg,webp,svg}',
+  {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  }
+) as Record<string, string>;
+
+const resolveHeroDetailAsset = (assetPath?: string): string | null => {
+  if (!assetPath) return null;
+
+  let path = assetPath.trim();
+  if (!path) return null;
+
+  if (path.startsWith('src/assets/')) {
+    path = path.substring('src/assets/'.length);
+  }
+
+  if (!path.endsWith('.png')) {
+    path += '.png';
+  }
+
+  return heroDetailAssetUrls[`/src/assets/${path}`] ?? null;
+};
+
 interface HeroDetailModalProps {
   hero: HeroWithExtras | null;
   onClose: () => void;
@@ -178,11 +204,11 @@ export const HeroDetailModal: React.FC<HeroDetailModalProps> = ({
             
             <div className="mt-3 flex gap-3 text-sm">
               <div className="flex items-center gap-2 mt-2">
-                <img src={`src/assets/${hero.classIcon}.png`} alt={`Clase ${hero.classDisplay}`} className="w-10 h-10 object-cover" />
+                <img src={resolveHeroDetailAsset(hero.classIcon) ?? undefined} alt={`Clase ${hero.classDisplay}`} className="w-10 h-10 object-cover" />
                 <span className="text-slate-300 font-medium">{hero.classDisplay}</span>
               </div>
               <div className="flex items-center gap-2 mt-2">
-                <img src={`src/assets/${hero.factionIcon}.png`} alt={`Facción ${hero.factionDisplay}`} className="w-10 h-10 object-cover" />
+                <img src={resolveHeroDetailAsset(hero.factionIcon) ?? undefined} alt={`Facción ${hero.factionDisplay}`} className="w-10 h-10 object-cover" />
                 <span className="text-slate-300 font-medium">{hero.factionDisplay}</span>
               </div>
             </div>
@@ -380,7 +406,7 @@ const OverviewTab: React.FC<{
         <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col items-center text-center">
           <div className="flex flex-col items-center gap-3 mb-2">
             {hero.specializationIcon ? (
-              <img src={`src/assets/${hero.specializationIcon}.png`} alt="Especialidad" className="w-16 h-16 rounded-md object-cover" />
+              <img src={resolveHeroDetailAsset(hero.specializationIcon) ?? undefined} alt="Especialidad" className="w-16 h-16 rounded-md object-cover" />
             ) : (
               <Sparkles className="w-10 h-10 text-amber-400" />
             )}
@@ -399,7 +425,7 @@ const OverviewTab: React.FC<{
             {hero.startingArmy?.map((unit, i) => (
               <div key={i} className="flex flex-col items-center gap-2 text-center">
                 {unit.icon ? (
-                  <img src={`src/assets/${unit.icon}.png`} alt={unit.unitName} className="w-16 h-16 rounded-sm object-cover" />
+                  <img src={resolveHeroDetailAsset(unit.icon) ?? undefined} alt={unit.unitName} className="w-16 h-16 rounded-sm object-cover" />
                 ) : null}
                 <div className="text-xs font-mono text-slate-200 max-w-[4.5rem] leading-tight">{unit.unitName}</div>
                 <div className="text-xs font-mono text-amber-300">{unit.countInterval}</div>
@@ -418,7 +444,7 @@ const OverviewTab: React.FC<{
             {hero.startingSkills.map((skill, i) => (
               <div key={i} className="flex flex-col items-center gap-2 text-center">
                 {skill.icon ? (
-                  <img src={`src/assets/${skill.icon}.png`} alt={skill.skillName} className="w-16 h-16 rounded-sm object-cover" />
+                  <img src={resolveHeroDetailAsset(skill.icon) ?? undefined} alt={skill.skillName} className="w-16 h-16 rounded-sm object-cover" />
                 ) : null}
                 <div className="text-xs font-mono text-slate-200 max-w-[4.5rem] leading-tight">{skill.skillName}</div>
               </div>
@@ -437,7 +463,7 @@ const OverviewTab: React.FC<{
               {hero.startingSpells.map((spell, i) => (
                 <div key={i} className="flex flex-col items-center gap-2 text-center">
                   {spell.icon ? (
-                    <img src={`src/assets/${spell.icon}.png`} alt={spell.spellName} className="w-16 h-16 rounded-sm object-cover" />
+                    <img src={resolveHeroDetailAsset(spell.icon) ?? undefined} alt={spell.spellName} className="w-16 h-16 rounded-sm object-cover" />
                   ) : null}
                   <div className="text-xs font-mono text-slate-200 max-w-[4.5rem] leading-tight">{spell.spellName}</div>
                 </div>
