@@ -1,41 +1,101 @@
-# Endpoints de la API Descubiertos
+# Endpoints de la API Descubiertos (Actualizado 2026-09-28)
 
-Servidor: `http://localhost:5176`
+Servidor: `http://localhost:5176` (OldenEraExplorer - .NET 10)
+Fuente: https://github.com/laszlo-gilanyi/OldenEraExplorer
 
-## Endpoints Confirmados (200 OK)
+## Endpoints Confirmados (200 OK) — Catálogos
 
-### Catálogos (Arrays)
-- `/api/heroes` - 108 héroes (id, name, faction, factionDisplay, classType, classDisplay, iconPath)
-- `/api/units` - 148 unidades (id, name, faction, factionDisplay, tier, iconPath, isOrphan, scale, prefabPath)
-- `/api/spells` - 115 hechizos (id, name, school, schoolDisplay, schoolTierText, rank, category, icon, isMasterful, baseNameForSort)
-- `/api/skills` - 30 habilidades (id, name, icon)
-- `/api/subclasses` - 24 subclases (id, name, faction, factionDisplay, classType, classDisplay, icon)
-- `/api/abilities` - 337 habilidades (id, name, abilityType, icon)
-- `/api/artifacts` - 298 artefactos (id, name, rarity, slot, raritySlotText, icon, isOrphan, prefabPath)
-- `/api/buildings` - 207 edificios (id, name, faction, factionDisplay, level, maxLevel, iconPath, category)
-- `/api/map-objects` - 201 objetos del mapa (id, name, category, icon, isOrphan, prefabPath, bankType, hasGuards, rewardTypes)
-- `/api/faction-laws` - Leyes de facción (confirmado en catálogo)
+### Unidades y Criaturas
+- `GET /api/units` — 148 unidades (id, name, faction, factionDisplay, tier, iconPath, isOrphan, scale, prefabPath)
+- `GET /api/units/{id}` — Datos completos (localizedName, factionIcon, attack, defense, minDamage, maxDamage, health, speed, initiative, growth, luck, morale, squadValue, expBonus, description, narrativeDescription, creatureType, passiveAbilities, activeAbilities, costEntries, upgradeCostEntries, usedByHeroes, statLabels)
 
-### Detalles Individuales Confirmados (200 OK)
-- `/api/heroes/{id}` - Datos completos del héroe (attack, defence, spellPower, knowledge, specializationName, specializationDescription, startingArmy, startingSkills, startingSpells, description, motto, statLabels, classIcon, specializationIcon, factionIcon)
-- `/api/units/{id}` - Datos completos de la unidad (localizedName, factionIcon, attack, defense, minDamage, maxDamage, health, speed, initiative, growth, luck, morale, squadValue, expBonus, description, narrativeDescription, creatureType, passiveAbilities, activeAbilities, costEntries, upgradeCostEntries, usedByHeroes, statLabels)
-- `/api/spells/{id}` - Detalle de hechizo
-- `/api/skills/{id}` - Detalle de habilidad
-- `/api/subclasses/{id}` - Detalle de subclase
-- `/api/abilities/{id}` - Detalle de habilidad
-- `/api/artifacts/{id}` - Detalle de artefacto
-- `/api/buildings/{id}` - Detalle de edificio
-- `/api/map-objects/{id}` - Detalle de objeto de mapa
-- `/api/faction-laws/{id}` - Detalle de ley de facción
+### Héroes
+- `GET /api/heroes` — 108 héroes (id, name, faction, factionDisplay, classType, classDisplay, iconPath)
+- `GET /api/heroes/{id}` — Datos completos (attack, defence, spellPower, knowledge, specializationName, specializationDescription, startingArmy, startingSkills, startingSpells, description, motto, statLabels, classIcon, specializationIcon, factionIcon)
 
-### Endpoints que devuelven HTML (404 o SPA)
-- `/api/factions` - Devuelve HTML (SPA / no existe como endpoint JSON independiente)
-- `/api/laws` - Devuelve HTML (SPA / no existe como endpoint JSON independiente)
-- `/swagger.json` - 404 (no hay documentación Swagger expuesta)
-- `/routes` - Devuelve HTML (SPA)
+### Hechizos
+- `GET /api/spells` — 115 hechizos (id, name, school, schoolDisplay, schoolTierText, rank, category, icon, isMasterful, baseNameForSort)
+- `GET /api/spells/{id}` — Detalle completo
+
+### Habilidades de Héroe (Skills)
+- `GET /api/skills` — 30 habilidades (id, name, icon)
+- `GET /api/skills/{id}` — Detalle completo (levels, sub-skills, localized text)
+
+### Subclases
+- `GET /api/subclasses` — 24 subclases (id, name, faction, factionDisplay, classType, classDisplay, icon)
+- `GET /api/subclasses/{id}` — Detalle completo
+
+### Habilidades de Unidades/Hechizos (Abilities)
+- `GET /api/abilities` — 337 habilidades (id, name, abilityType, icon)
+- `GET /api/abilities/{id}` — Detalle completo (localized text, immunities, info notes)
+
+### Artefactos
+- `GET /api/artifacts` — 298 artefactos (id, name, rarity, slot, raritySlotText, icon, isOrphan, prefabPath)
+- `GET /api/artifacts/{id}` — Detalle completo (stats, set bonuses, localized text)
+
+### Edificios
+- `GET /api/buildings` — 207 edificios (id, name, faction, factionDisplay, level, maxLevel, iconPath, category)
+- `GET /api/buildings/{id}` — Detalle completo (costs, effects, localized text)
+
+### Objetos del Mapa
+- `GET /api/map-objects` — 201 objetos (id, name, category, icon, isOrphan, prefabPath, bankType, hasGuards, rewardTypes)
+- `GET /api/map-objects/categories` — Categorías disponibles
+- `GET /api/map-objects/{*id}` — Detalle completo
+
+### Leyes de Facción
+- `GET /api/faction-laws` — Leyes de facción (id, name, faction, factionDisplay, icon)
+- `GET /api/faction-laws/{id}` — Detalle completo (levels, localized text)
+
+### Búsqueda Global
+- `GET /api/search?q={query}` — Búsqueda full-text en todas las entidades (con location-aware highlighting)
+
+### Referencias Cruzadas
+- `GET /api/references/{entityType}/{id}` — Entidades que referencian a esta entidad (backward links)
+
+## Endpoints de Game / Configuración
+
+- `GET /api/game/detect` — Auto-detectar instalaciones del juego (confianza por ruta)
+- `POST /api/game/path` — Configurar ruta manualmente (con locale opcional)
+- `GET /api/game/status` — Estado de carga y configuración
+- `POST /api/game/load` — Cargar datos del juego (requiere ruta válida)
+- `DELETE /api/game/path` — Limpiar ruta y descargar datos
+
+- `GET /api/settings` — Configuración actual (theme, locale, resolver, auto-extract)
+- `PUT /api/settings` — Actualizar configuración
+- `GET /api/settings/locales` — Locales disponibles (16 idiomas)
+
+- `GET /api/labels` — Etiquetas UI localizadas
+
+## Endpoints de Assets / Modelos 3D
+
+- `GET /api/assets/info` — Configuración de servicio de assets
+- `GET /api/assets/exists/png/{*path}` — Verificar existencia de ícono
+- `GET /api/models/units` — Listar modelos GLB de unidades
+- `GET /api/models/map-objects` — Listar modelos GLB de objetos
+- `GET /api/models/artifacts` — Listar modelos GLB de artefactos
+- `GET /api/models/extracted` — Listar todos los modelos extraídos
+- `GET /api/models/unit/{id}/glb` — Obtener archivo GLB de unidad
+- `GET /api/models/map-object/{category}/{name}/glb` — Obtener GLB de objeto
+
+## Endpoints de Extracción
+
+- `POST /api/extraction/start` — Iniciar extracción (PNG y/o GLB)
+- `POST /api/extraction/cancel` — Cancelar extracción en curso
+
+## Endpoints de Vista / Viewer
+
+- `GET /api/viewer/platform` — Modelo GLB de plataforma
+- `GET /api/viewer/background` — Textura de fondo
+- `GET /api/viewer/environment` — Mapa de entorno equirectangular
+
+## Endpoints de Sistema de Archivos
+
+- `GET /api/filesystem/roots` — Raíces disponibles
+- `GET /api/filesystem/list` — Listar directorio
 
 ## Datos que NO contiene la API (exclusivos de la aplicación)
-- `idealSkillBuild` (builds de habilidades recomendadas)
+
+- `idealSkillBuild` (builds recomendados de habilidades)
 - `statGrowth` (crecimiento de atributos por nivel)
 - `tacticalPlaystyle` (estilo de juego táctico)
 - `synergyCombo` (sinergia de facción)
@@ -47,6 +107,24 @@ Servidor: `http://localhost:5176`
 - `role` (rol del héroe)
 
 ## Estrategia de Sincronización Recomendada
+
+1. **Cargar datos del juego**: `POST /api/game/load` (requiere `POST /api/game/path` primero)
+2. **Obtener catálogos**: `/api/units`, `/api/heroes`, `/api/spells`, `/api/skills`, `/api/subclasses`, `/api/abilities`, `/api/artifacts`, `/api/buildings`, `/api/map-objects`, `/api/faction-laws`
+3. **Detalles individuales**: `/api/{entity}/{id}` para cada entidad
+4. **Búsqueda**: `/api/search?q=` para consultas globales
+5. **Referencias**: `/api/references/{entityType}/{id}` para relaciones cruzadas
+6. **Assets**: `/api/assets/exists/png/` y `/api/models/` para iconos y modelos 3D
+
+## Notas Técnicas
+
+- Servidor: ASP.NET Core (.NET 10) — `OldenEraExplorer`
+- Puerto por defecto: `5176`
+- Datos fuente: `Core.zip` del juego instalado (Steam)
+- Auto-detecta instalación de Steam automáticamente
+- Lee JSON de `StreamingAssets/Core.zip`
+- Resuelve texto dinámico con scripts del juego (placeholders `{0}` → valores reales)
+- Soporta 16 idiomas (localización completa)
+- No distribuye archivos del juego — solo lee de tu copia legal
 
 1. **Usar `/api/heroes` como catálogo base** para obtener la lista de todos los héroes disponibles
 2. **Usar `/api/heroes/{id}` para datos detallados** de cada héroe individual

@@ -1,0 +1,2024 @@
+[
+  {
+    "id": "angel_ability_1_name",
+    "name": "Refractar y reflejar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/angel_ability_1_name"
+  },
+  {
+    "id": "angel_ability_3_name",
+    "name": "Cáliz devorador",
+    "abilityType": "Active",
+    "icon": "icons/abilities/angel_ability_3_name"
+  },
+  {
+    "id": "angel_ability_4_name",
+    "name": "Orgullo inflexible",
+    "abilityType": "Active",
+    "icon": "icons/abilities/angel_ability_4_name"
+  },
+  {
+    "id": "aqualotl_ability_1_name",
+    "name": "Despertar: Agua I",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_1_name"
+  },
+  {
+    "id": "aqualotl_ability_2_name",
+    "name": "Despertar: Agua II",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_2_name"
+  },
+  {
+    "id": "aqualotl_ability_3_name",
+    "name": "Retirada de riachuelo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_3_name"
+  },
+  {
+    "id": "aqualotl_ability_5_name",
+    "name": "Remolino",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_5_name"
+  },
+  {
+    "id": "arbitrator_ability_1_name",
+    "name": "Orden: Reposicionar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/arbitrator_ability_1_name"
+  },
+  {
+    "id": "arbitrator_ability_2_name",
+    "name": "Orden: Temer",
+    "abilityType": "Active",
+    "icon": "icons/abilities/arbitrator_ability_2_name"
+  },
+  {
+    "id": "arbitrator_ability_3_name",
+    "name": "Tormenta de regurgitación",
+    "abilityType": "Active",
+    "icon": "icons/abilities/arbitrator_ability_3_name"
+  },
+  {
+    "id": "arbitrator_ability_4_name",
+    "name": "Comando: Cambiar de lugar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/arbitrator_ability_4_name"
+  },
+  {
+    "id": "arbitrator_ability_5_name",
+    "name": "Páginas heladas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/arbitrator_ability_5_name"
+  },
+  {
+    "id": "assassin_ability_1_name",
+    "name": "Estilo de lucha: Ataque y huida",
+    "abilityType": "Active",
+    "icon": "icons/abilities/assassin_ability_1_name"
+  },
+  {
+    "id": "assassin_ability_2_name",
+    "name": "Golpe de sombra",
+    "abilityType": "Active",
+    "icon": "icons/abilities/assassin_ability_2_name"
+  },
+  {
+    "id": "assassin_ability_3_name",
+    "name": "Velo de sombras",
+    "abilityType": "Active",
+    "icon": "icons/abilities/assassin_ability_3_name"
+  },
+  {
+    "id": "avatar_of_war_ability_1_name",
+    "name": "Cosechar sin sembrar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/avatar_of_war_ability_1_name"
+  },
+  {
+    "id": "black_dragon_ability_1_name",
+    "name": "Estilo de lucha: Asalto sulfúrico",
+    "abilityType": "Active",
+    "icon": "icons/abilities/black_dragon_ability_1_name"
+  },
+  {
+    "id": "black_dragon_ability_2_name",
+    "name": "Llama interior",
+    "abilityType": "Active",
+    "icon": "icons/abilities/black_dragon_ability_2_name"
+  },
+  {
+    "id": "black_dragon_ability_3_name",
+    "name": "Vuelo de dragón",
+    "abilityType": "Active",
+    "icon": "icons/abilities/black_dragon_ability_3_name"
+  },
+  {
+    "id": "blade_dancer_ability_1_name",
+    "name": "Estilo de lucha: Gujas rebotadoras",
+    "abilityType": "Active",
+    "icon": "icons/abilities/blade_dancer_ability_1_name"
+  },
+  {
+    "id": "crossbowman_ability_1_name-var1",
+    "name": "Virotes refinados",
+    "abilityType": "Active",
+    "icon": "icons/abilities/crossbowman_ability_1_name"
+  },
+  {
+    "id": "crossbowman_ability_1_name-var2",
+    "name": "Virotes refinados",
+    "abilityType": "Active",
+    "icon": "icons/abilities/crossbowman_ability_1_name"
+  },
+  {
+    "id": "crossbowman_ability_2_name",
+    "name": "Disparo perforador",
+    "abilityType": "Active",
+    "icon": "icons/abilities/crossbowman_ability_2_name"
+  },
+  {
+    "id": "dragon_ability_1_name",
+    "name": "dragon_ability_1_name",
+    "abilityType": "Active",
+    "icon": "icons/abilities/dragon_ability_1_name"
+  },
+  {
+    "id": "dragon_hunter_ability_1_name",
+    "name": "Sangre del dragón",
+    "abilityType": "Active",
+    "icon": "icons/abilities/dragon_hunter_ability_1_name"
+  },
+  {
+    "id": "druid_ability_1_name-var1",
+    "name": "Canto fúngico",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_1_name"
+  },
+  {
+    "id": "druid_ability_1_name-var2",
+    "name": "Canto fúngico",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_1_name"
+  },
+  {
+    "id": "druid_ability_2_name",
+    "name": "Enjambre de abejas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_2_name"
+  },
+  {
+    "id": "druid_ability_3_name",
+    "name": "Raíces protectoras",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_3_name"
+  },
+  {
+    "id": "druid_ability_4_name",
+    "name": "Ecos del Bosque Murmullo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_4_name"
+  },
+  {
+    "id": "eldritch_flyer_ability_1_name",
+    "name": "Rito de invocación: Shoth majestuoso",
+    "abilityType": "Active",
+    "icon": "icons/abilities/eldritch_flyer_ability_1_name"
+  },
+  {
+    "id": "eldritch_flyer_ability_1_name_upg",
+    "name": "Rito de invocación: Shoth innombrable",
+    "abilityType": "Active",
+    "icon": "icons/abilities/eldritch_flyer_ability_1_name_upg"
+  },
+  {
+    "id": "eldritch_flyer_ability_1_name_upg_alt",
+    "name": "Rito de invocación: Shoth impensable",
+    "abilityType": "Active",
+    "icon": "icons/abilities/eldritch_flyer_ability_1_name_upg_alt"
+  },
+  {
+    "id": "eldritch_flyer_ability_2_name",
+    "name": "Fragmento de hielo negro",
+    "abilityType": "Active",
+    "icon": "icons/abilities/eldritch_flyer_ability_2_name"
+  },
+  {
+    "id": "elf_tracker_ability_1_name",
+    "name": "Furia de la naturaleza",
+    "abilityType": "Active",
+    "icon": "icons/abilities/elf_tracker_ability_1_name"
+  },
+  {
+    "id": "ent_ability_1_name",
+    "name": "Despertar: Tierra I",
+    "abilityType": "Active",
+    "icon": "icons/abilities/ent_ability_1_name"
+  },
+  {
+    "id": "ent_ability_2_name",
+    "name": "Despertar: Tierra II",
+    "abilityType": "Active",
+    "icon": "icons/abilities/ent_ability_2_name"
+  },
+  {
+    "id": "ent_ability_3_name",
+    "name": "Destrozatierras",
+    "abilityType": "Active",
+    "icon": "icons/abilities/ent_ability_3_name"
+  },
+  {
+    "id": "ent_ability_4_name",
+    "name": "Piedra implacable",
+    "abilityType": "Active",
+    "icon": "icons/abilities/ent_ability_4_name"
+  },
+  {
+    "id": "fairy_dragon_ability_1_name",
+    "name": "Anular",
+    "abilityType": "Active",
+    "icon": "icons/abilities/fairy_dragon_ability_1_name"
+  },
+  {
+    "id": "fairy_dragon_ability_2_name",
+    "name": "Desterrar invocaciones",
+    "abilityType": "Active",
+    "icon": "icons/abilities/fairy_dragon_ability_2_name"
+  },
+  {
+    "id": "flicker_ability_1_name",
+    "name": "Aullido de la banshee",
+    "abilityType": "Active",
+    "icon": "icons/abilities/flicker_ability_1_name"
+  },
+  {
+    "id": "frostworm_rider_ability_1_name",
+    "name": "Aliento gélido",
+    "abilityType": "Active",
+    "icon": "icons/abilities/frostworm_rider_ability_1_name"
+  },
+  {
+    "id": "frostworm_rider_ability_2_name",
+    "name": "Púas de hielo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/frostworm_rider_ability_2_name"
+  },
+  {
+    "id": "giant_frog_ability_1_name",
+    "name": "Salto",
+    "abilityType": "Active",
+    "icon": "icons/abilities/giant_frog_ability_1_name"
+  },
+  {
+    "id": "giant_frog_ability_2_name",
+    "name": "Lengua pegajosa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/giant_frog_ability_2_name"
+  },
+  {
+    "id": "godslayer_ability_1_name",
+    "name": "Asalto rápido",
+    "abilityType": "Active",
+    "icon": "icons/abilities/godslayer_ability_1_name"
+  },
+  {
+    "id": "godslayer_ability_2_name",
+    "name": "Terror",
+    "abilityType": "Active",
+    "icon": "icons/abilities/godslayer_ability_2_name"
+  },
+  {
+    "id": "godslayer_ability_3_name",
+    "name": "Bendición de Belcebú",
+    "abilityType": "Active",
+    "icon": "icons/abilities/godslayer_ability_3_name"
+  },
+  {
+    "id": "gorilla_ability_1_name",
+    "name": "Rrr, ¡salta!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/gorilla_ability_1_name"
+  },
+  {
+    "id": "gorilla_ability_2_name",
+    "name": "¡Gran roca, rrr!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/gorilla_ability_2_name"
+  },
+  {
+    "id": "graverobber_ability_1_name-var1",
+    "name": "Desenterrar huesos",
+    "abilityType": "Active",
+    "icon": "icons/abilities/graverobber_ability_1_name"
+  },
+  {
+    "id": "graverobber_ability_1_name-var2",
+    "name": "Desenterrar huesos",
+    "abilityType": "Active",
+    "icon": "icons/abilities/graverobber_ability_1_name"
+  },
+  {
+    "id": "graverobber_ability_2_name",
+    "name": "Atrapar recuerdos",
+    "abilityType": "Active",
+    "icon": "icons/abilities/graverobber_ability_2_name"
+  },
+  {
+    "id": "graverobber_ability_3_name",
+    "name": "¡Busca!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/graverobber_ability_3_name"
+  },
+  {
+    "id": "graverobber_ability_4_name",
+    "name": "¡Ataca!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/graverobber_ability_4_name"
+  },
+  {
+    "id": "griffin_ability_1_name-var1",
+    "name": "Grito valiente",
+    "abilityType": "Active",
+    "icon": "icons/abilities/griffin_ability_1_name"
+  },
+  {
+    "id": "griffin_ability_1_name-var2",
+    "name": "Grito valiente",
+    "abilityType": "Active",
+    "icon": "icons/abilities/griffin_ability_1_name"
+  },
+  {
+    "id": "halfling_ability_1_name",
+    "name": "Brincar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/halfling_ability_1_name"
+  },
+  {
+    "id": "hive_queen_ability_1_name-var1",
+    "name": "Adoración blasfema",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_1_name"
+  },
+  {
+    "id": "hive_queen_ability_1_name-var2",
+    "name": "Adoración blasfema",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_1_name"
+  },
+  {
+    "id": "hive_queen_ability_1_name-var3",
+    "name": "Adoración blasfema",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_1_name"
+  },
+  {
+    "id": "hive_queen_ability_3_name",
+    "name": "Promesa de amor",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_3_name"
+  },
+  {
+    "id": "hive_queen_ability_4_name-var1",
+    "name": "Explosión contaminante",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_4_name"
+  },
+  {
+    "id": "hive_queen_ability_4_name-var2",
+    "name": "Explosión contaminante",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hive_queen_ability_4_name"
+  },
+  {
+    "id": "hydra_ability_1_name",
+    "name": "Estilo de lucha: Golpe torbellino",
+    "abilityType": "Active",
+    "icon": "icons/abilities/hydra_ability_1_name"
+  },
+  {
+    "id": "inquisitor_ability_1_name-var1",
+    "name": "Armadura imbuida",
+    "abilityType": "Active",
+    "icon": "icons/abilities/inquisitor_ability_1_name"
+  },
+  {
+    "id": "inquisitor_ability_1_name-var2",
+    "name": "Armadura imbuida",
+    "abilityType": "Active",
+    "icon": "icons/abilities/inquisitor_ability_1_name"
+  },
+  {
+    "id": "inquisitor_ability_2_name",
+    "name": "Mangual celestial",
+    "abilityType": "Active",
+    "icon": "icons/abilities/inquisitor_ability_2_name"
+  },
+  {
+    "id": "inquisitor_ability_4_name",
+    "name": "Penitencia rápida",
+    "abilityType": "Active",
+    "icon": "icons/abilities/inquisitor_ability_4_name"
+  },
+  {
+    "id": "jaw_ability_1_name-var1",
+    "name": "Adaptación: Ataque",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_1_name"
+  },
+  {
+    "id": "jaw_ability_1_name-var2",
+    "name": "Adaptación: Ataque",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_1_name"
+  },
+  {
+    "id": "jaw_ability_2_name-var1",
+    "name": "Adaptación: Defensa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_2_name"
+  },
+  {
+    "id": "jaw_ability_2_name-var2",
+    "name": "Adaptación: Defensa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_2_name"
+  },
+  {
+    "id": "jaw_ability_3_name-var1",
+    "name": "Adaptación: Velocidad",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_3_name"
+  },
+  {
+    "id": "jaw_ability_3_name-var2",
+    "name": "Adaptación: Velocidad",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_3_name"
+  },
+  {
+    "id": "kitten_horn_ability_1_name",
+    "name": "¡Yupiii!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/kitten_horn_ability_1_name"
+  },
+  {
+    "id": "lava_larva_ability_1_name",
+    "name": "Abrazo ardiente",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lava_larva_ability_1_name"
+  },
+  {
+    "id": "lava_larva_ability_2_name",
+    "name": "Estallido",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lava_larva_ability_2_name"
+  },
+  {
+    "id": "lesser_eldritch_ability_1_name",
+    "name": "Rito de invocación: Ra'shoth",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lesser_eldritch_ability_1_name"
+  },
+  {
+    "id": "lesser_eldritch_ability_1_name_upg",
+    "name": "Rito de invocación: Ra'shoth punzante",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lesser_eldritch_ability_1_name_upg"
+  },
+  {
+    "id": "lesser_eldritch_ability_1_name_upg_alt",
+    "name": "Rito de invocación: Ra'shoth feroz",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lesser_eldritch_ability_1_name_upg_alt"
+  },
+  {
+    "id": "lich_ability_1_name-var1",
+    "name": "Rebobinar la muerte",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_ability_1_name"
+  },
+  {
+    "id": "lich_ability_1_name-var2",
+    "name": "Rebobinar la muerte",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_ability_1_name"
+  },
+  {
+    "id": "lich_ability_2_name",
+    "name": "Abrazo de la muerte",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_ability_2_name"
+  },
+  {
+    "id": "lich_dragon_ability_1_name",
+    "name": "Autorreconstrucción",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_dragon_ability_1_name"
+  },
+  {
+    "id": "lich_dragon_ability_2_name",
+    "name": "Apocalipsis óseo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_dragon_ability_2_name"
+  },
+  {
+    "id": "lightweaver_ability_1_name-var1",
+    "name": "Resplandor interior",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lightweaver_ability_1_name"
+  },
+  {
+    "id": "lightweaver_ability_1_name-var2",
+    "name": "Resplandor interior",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lightweaver_ability_1_name"
+  },
+  {
+    "id": "lightweaver_ability_2_name",
+    "name": "Sagrada ablución",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lightweaver_ability_2_name"
+  },
+  {
+    "id": "lightweaver_ability_4_name",
+    "name": "Exaltación",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lightweaver_ability_4_name"
+  },
+  {
+    "id": "locust_ability_1_name-var1",
+    "name": "Cosecha",
+    "abilityType": "Active",
+    "icon": "icons/abilities/locust_ability_1_name"
+  },
+  {
+    "id": "locust_ability_1_name-var2",
+    "name": "Cosecha",
+    "abilityType": "Active",
+    "icon": "icons/abilities/locust_ability_1_name"
+  },
+  {
+    "id": "mech_guard_ability_1_name",
+    "name": "Bucle temporal",
+    "abilityType": "Active",
+    "icon": "icons/abilities/mech_guard_ability_1_name"
+  },
+  {
+    "id": "medusa_ability_1_name",
+    "name": "Estilo de lucha: Descarga de flechas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/medusa_ability_1_name"
+  },
+  {
+    "id": "medusa_ability_2_name",
+    "name": "Salir por escamas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/medusa_ability_2_name"
+  },
+  {
+    "id": "medusa_ability_3_name",
+    "name": "Petrificación",
+    "abilityType": "Active",
+    "icon": "icons/abilities/medusa_ability_3_name"
+  },
+  {
+    "id": "minos_ability_1_name",
+    "name": "Estilo de lucha: Gran impacto",
+    "abilityType": "Active",
+    "icon": "icons/abilities/minos_ability_1_name"
+  },
+  {
+    "id": "minos_ability_2_name",
+    "name": "Voluntad inquebrantable",
+    "abilityType": "Active",
+    "icon": "icons/abilities/minos_ability_2_name"
+  },
+  {
+    "id": "olgoi_ability_1_name",
+    "name": "Devorar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/olgoi_ability_1_name"
+  },
+  {
+    "id": "pet_ability_2_name",
+    "name": "Llamar a la manada",
+    "abilityType": "Active",
+    "icon": "icons/abilities/pet_ability_2_name"
+  },
+  {
+    "id": "phoenix_ability_1_name",
+    "name": "Despertar: Fuego I",
+    "abilityType": "Active",
+    "icon": "icons/abilities/phoenix_ability_1_name"
+  },
+  {
+    "id": "phoenix_ability_2_name",
+    "name": "Despertar: Fuego II",
+    "abilityType": "Active",
+    "icon": "icons/abilities/phoenix_ability_2_name"
+  },
+  {
+    "id": "phoenix_ability_3_name",
+    "name": "Ola de calor",
+    "abilityType": "Active",
+    "icon": "icons/abilities/phoenix_ability_3_name"
+  },
+  {
+    "id": "phoenix_ability_4_name",
+    "name": "Supernova",
+    "abilityType": "Active",
+    "icon": "icons/abilities/phoenix_ability_4_name"
+  },
+  {
+    "id": "primal_remnant_ability_1_name_new",
+    "name": "Purificación de esporas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/primal_remnant_ability_1_name_new"
+  },
+  {
+    "id": "primal_remnant_ability_2_name",
+    "name": "Propagación de la vegetación",
+    "abilityType": "Active",
+    "icon": "icons/abilities/primal_remnant_ability_2_name"
+  },
+  {
+    "id": "qilin_ability_1_name",
+    "name": "Despertar: Aire I",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_1_name"
+  },
+  {
+    "id": "qilin_ability_2_name",
+    "name": "Despertar: Aire II",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_2_name"
+  },
+  {
+    "id": "qilin_ability_3_name",
+    "name": "Trueno",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_3_name"
+  },
+  {
+    "id": "qilin_ability_4_name",
+    "name": "Bola de rayos",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_4_name"
+  },
+  {
+    "id": "qilin_ability_5_name",
+    "name": "Forma de niebla",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_5_name"
+  },
+  {
+    "id": "sentinel_ability_1_name",
+    "name": "El camino de Arina",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sentinel_ability_1_name"
+  },
+  {
+    "id": "sentinel_ability_2_name",
+    "name": "El camino de Naira",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sentinel_ability_2_name"
+  },
+  {
+    "id": "sentinel_ability_3_name",
+    "name": "El camino de Doreath",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sentinel_ability_3_name"
+  },
+  {
+    "id": "sentinel_ability_4_name",
+    "name": "El camino de Hksmilla",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sentinel_ability_4_name"
+  },
+  {
+    "id": "star_child_ability_1_name",
+    "name": "Lluvia de estrellas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/star_child_ability_1_name"
+  },
+  {
+    "id": "succubus_ability_1_name",
+    "name": "Esposas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/succubus_ability_1_name"
+  },
+  {
+    "id": "succubus_ability_2_name",
+    "name": "Reloj de arena",
+    "abilityType": "Active",
+    "icon": "icons/abilities/succubus_ability_2_name"
+  },
+  {
+    "id": "succubus_ability_3_name",
+    "name": "Azotar la mente ociosa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/succubus_ability_3_name"
+  },
+  {
+    "id": "succubus_ability_4_name",
+    "name": "Embrujo de pasividad",
+    "abilityType": "Active",
+    "icon": "icons/abilities/succubus_ability_4_name"
+  },
+  {
+    "id": "sunlight_cavalry_ability_1_name",
+    "name": "¡A la carga!",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sunlight_cavalry_ability_1_name"
+  },
+  {
+    "id": "trogl_ability_1_name",
+    "name": "Estilo de lucha: Escupitajo viscoso",
+    "abilityType": "Active",
+    "icon": "icons/abilities/trogl_ability_1_name"
+  },
+  {
+    "id": "twinkle_ability_1_name",
+    "name": "Lúpulo drenante",
+    "abilityType": "Active",
+    "icon": "icons/abilities/twinkle_ability_1_name"
+  },
+  {
+    "id": "twinkle_ability_2_name",
+    "name": "Rocío de la mañana",
+    "abilityType": "Active",
+    "icon": "icons/abilities/twinkle_ability_2_name"
+  },
+  {
+    "id": "twinkle_ability_3_name",
+    "name": "Floración",
+    "abilityType": "Active",
+    "icon": "icons/abilities/twinkle_ability_3_name"
+  },
+  {
+    "id": "unfrozen_cultist_ability_1_name",
+    "name": "Mirada del abismo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unfrozen_cultist_ability_1_name"
+  },
+  {
+    "id": "unfrozen_cultist_ability_2_name",
+    "name": "Zarcillo abisal",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unfrozen_cultist_ability_2_name"
+  },
+  {
+    "id": "unfrozen_cultist_ability_3_name",
+    "name": "Mirada del abismo: Aletargamiento",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unfrozen_cultist_ability_3_name"
+  },
+  {
+    "id": "unfrozen_cultist_ability_4_name",
+    "name": "Mirada del abismo: Lentitud",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unfrozen_cultist_ability_4_name"
+  },
+  {
+    "id": "unicorn_ability_1_name",
+    "name": "Golpe cegador",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unicorn_ability_1_name"
+  },
+  {
+    "id": "unspeakable_ability_1_name",
+    "name": "Rito de invocación: Enviado",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_1_name"
+  },
+  {
+    "id": "unspeakable_ability_1_name_upg",
+    "name": "Rito de invocación: Supervisor",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_1_name_upg"
+  },
+  {
+    "id": "unspeakable_ability_1_name_upg_alt",
+    "name": "Rito de invocación: Ejecutor",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_1_name_upg_alt"
+  },
+  {
+    "id": "unspeakable_ability_3_name",
+    "name": "Momento de locura",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_3_name"
+  },
+  {
+    "id": "unspeakable_ability_4_name",
+    "name": "Voluntad del Abismo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_4_name"
+  },
+  {
+    "id": "unspeakable_ability_5_name",
+    "name": "Controlar mente",
+    "abilityType": "Active",
+    "icon": "icons/abilities/unspeakable_ability_5_name"
+  },
+  {
+    "id": "vampire_ability_1_name",
+    "name": "Transfusión de sangre",
+    "abilityType": "Active",
+    "icon": "icons/abilities/vampire_ability_1_name"
+  },
+  {
+    "id": "vampire_ability_3_name",
+    "name": "Purificación de la sangre",
+    "abilityType": "Active",
+    "icon": "icons/abilities/vampire_ability_3_name"
+  },
+  {
+    "id": "base_class_construct",
+    "name": "Constructo",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_construct"
+  },
+  {
+    "id": "base_class_demon",
+    "name": "Engendro de la Colmena",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_demon"
+  },
+  {
+    "id": "base_class_dragon",
+    "name": "Dragón",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_dragon"
+  },
+  {
+    "id": "base_class_embodiment",
+    "name": "Encarnación",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_embodiment"
+  },
+  {
+    "id": "base_class_living",
+    "name": "Viviente",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_living"
+  },
+  {
+    "id": "base_class_magic_creature",
+    "name": "Criatura mágica",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_magic_creature"
+  },
+  {
+    "id": "base_class_undead",
+    "name": "No muerto",
+    "abilityType": "BaseClass",
+    "icon": "icons/abilities/base_class_undead"
+  },
+  {
+    "id": "aqualotl_ability_4_name",
+    "name": "Gota disipadora",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/aqualotl_ability_4_name"
+  },
+  {
+    "id": "avatar_passive_1_name",
+    "name": "Alma encarnada",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/avatar_passive_1_name"
+  },
+  {
+    "id": "avatar_passive_2_name",
+    "name": "Subsistencia",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/avatar_passive_2_name"
+  },
+  {
+    "id": "avatar_passive_unfrozen_name",
+    "name": "Esencia siempre cambiante",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/avatar_passive_unfrozen_name"
+  },
+  {
+    "id": "base_class_caster",
+    "name": "Maestría en aptitudes",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_class_caster"
+  },
+  {
+    "id": "base_passive_double_counterattack_name",
+    "name": "Contraataque doble",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_double_counterattack_name"
+  },
+  {
+    "id": "base_passive_double_strike_melee_attack_name",
+    "name": "Golpe doble cuerpo a cuerpo",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_double_strike_melee_attack_name"
+  },
+  {
+    "id": "base_passive_double_strike_remote_attack_name",
+    "name": "Golpe doble de largo alcance",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_double_strike_remote_attack_name"
+  },
+  {
+    "id": "base_passive_evasive_1_name",
+    "name": "Defensa a distancia II",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_evasive_2_name"
+  },
+  {
+    "id": "base_passive_evasive_3_name",
+    "name": "Defensa a distancia IV",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_evasive_4_name"
+  },
+  {
+    "id": "base_passive_floating_name",
+    "name": "Flotante",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_floating_name"
+  },
+  {
+    "id": "base_passive_immunity_bless_name",
+    "name": "Inmunidad a las bendiciones",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_bless_name"
+  },
+  {
+    "id": "base_passive_immunity_curse_name",
+    "name": "Inmunidad a las maldiciones",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_curse_name"
+  },
+  {
+    "id": "base_passive_immunity_daylight_name",
+    "name": "Inmunidad a la luz solar",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_daylight_name"
+  },
+  {
+    "id": "base_passive_immunity_magic_1_name",
+    "name": "Inmunidad mágica I",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_magic_1_name"
+  },
+  {
+    "id": "base_passive_immunity_magic_2_name",
+    "name": "Inmunidad mágica II",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_magic_2_name"
+  },
+  {
+    "id": "base_passive_immunity_night_name",
+    "name": "Inmunidad a nochesombra",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_night_name"
+  },
+  {
+    "id": "base_passive_immunity_primal_name",
+    "name": "Inmunidad primigenia",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_primal_name"
+  },
+  {
+    "id": "base_passive_immunity_spacetime_name",
+    "name": "Inmunidad arcana",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_immunity_spacetime_name"
+  },
+  {
+    "id": "base_passive_magic_attack_name",
+    "name": "Ataque mágico",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_magic_attack_name"
+  },
+  {
+    "id": "base_passive_pure_attack_name",
+    "name": "Ataque puro",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_pure_attack_name"
+  },
+  {
+    "id": "base_passive_remote_attack_penalty_name",
+    "name": "Largo alcance",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_remote_attack_penalty_name"
+  },
+  {
+    "id": "base_passive_resistant_0_name",
+    "name": "Defensa mágica I",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_resistant_1_name"
+  },
+  {
+    "id": "base_passive_resistant_1_name",
+    "name": "Defensa mágica II",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_resistant_2_name"
+  },
+  {
+    "id": "base_passive_staunch_3_name",
+    "name": "Inquebrantable III",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_staunch_3_name"
+  },
+  {
+    "id": "base_passive_steelskin_1_name",
+    "name": "Defensa cuerpo a cuerpo II",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_steelskin_2_name"
+  },
+  {
+    "id": "base_passive_steelskin_3_name",
+    "name": "Defensa cuerpo a cuerpo IV",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_steelskin_4_name"
+  },
+  {
+    "id": "base_passive_strike_pierce_3_name",
+    "name": "Golpe perforador III",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_strike_pierce_3_name"
+  },
+  {
+    "id": "base_passive_strike_reach_2_name",
+    "name": "Golpe de aliento de dragón",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_strike_reach_2_name"
+  },
+  {
+    "id": "base_passive_strike_swipe_2_name",
+    "name": "Golpe de barrido",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_strike_swipe_2_name"
+  },
+  {
+    "id": "base_passive_strike_swirl_1_name",
+    "name": "Golpe torbellino",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/base_passive_strike_swirl_1_name"
+  },
+  {
+    "id": "basilisk_passive_1_name",
+    "name": "Mirada mortal",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/basilisk_passive_1_name"
+  },
+  {
+    "id": "basilisk_passive_2_name",
+    "name": "Veneno de basilisco",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/basilisk_passive_2_name"
+  },
+  {
+    "id": "demon_passive_3_name",
+    "name": "Determinación de victoria",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/demon_passive_3_name"
+  },
+  {
+    "id": "hive_queen_ability_2_name",
+    "name": "Nacimiento profano",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/hive_queen_ability_2_name"
+  },
+  {
+    "id": "kitten_horn_passive_2_name",
+    "name": "Demasiado mono para ser cierto",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/kitten_horn_passive_2_name"
+  },
+  {
+    "id": "manticore_passive_1_name",
+    "name": "manticore_passive_1_name",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/manticore_passive_1_name"
+  },
+  {
+    "id": "obsidian_dragon_passive_2_name",
+    "name": "Achicharramiento",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/obsidian_dragon_passive_2_name"
+  },
+  {
+    "id": "primal_remnant_ability_1_name",
+    "name": "Esporas alentadoras",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/primal_remnant_ability_1_name"
+  },
+  {
+    "id": "trickster_ability_1_name",
+    "name": "Zorro de nueve colas",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/trickster_ability_1_name"
+  },
+  {
+    "id": "trickster_passive_1_name",
+    "name": "Truco",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/trickster_passive_1_name"
+  },
+  {
+    "id": "unspeakable_ability_2_name",
+    "name": "Fragmento de hielo negro",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/unspeakable_ability_2_name"
+  },
+  {
+    "id": "vampire_ability_2_name",
+    "name": "Explosión de cadáver",
+    "abilityType": "Orphan",
+    "icon": "icons/abilities/vampire_ability_2_name"
+  },
+  {
+    "id": "angel_passive_1_name",
+    "name": "Perfección de forja",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/angel_passive_1_name"
+  },
+  {
+    "id": "angel_passive_2_name",
+    "name": "Aura de pureza",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/angel_passive_2_name"
+  },
+  {
+    "id": "aqualotl_passive_1_name",
+    "name": "Encarnación del agua",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/aqualotl_passive_1_name"
+  },
+  {
+    "id": "aqualotl_passive_2_name",
+    "name": "Venas heladas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/aqualotl_passive_2_name"
+  },
+  {
+    "id": "arbitrator_passive_1_name",
+    "name": "Disparos paradójicos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/arbitrator_passive_1_name"
+  },
+  {
+    "id": "arbitrator_passive_2_name",
+    "name": "Tacto viscoso",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/arbitrator_passive_2_name"
+  },
+  {
+    "id": "arbitrator_passive_3_name",
+    "name": "Poder del Abismo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/arbitrator_passive_3_name"
+  },
+  {
+    "id": "assassin_passive_1_name",
+    "name": "Punto débil",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/assassin_passive_1_name"
+  },
+  {
+    "id": "assassin_passive_2_name",
+    "name": "Impactos abrumadores",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/assassin_passive_2_name"
+  },
+  {
+    "id": "assassin_passive_3_name",
+    "name": "Hoja de precisión",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/assassin_passive_3_name"
+  },
+  {
+    "id": "avatar_of_war_passive_1_name-var1",
+    "name": "Presencia terrible",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_1_name"
+  },
+  {
+    "id": "avatar_of_war_passive_1_name-var2",
+    "name": "Presencia terrible",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_1_name"
+  },
+  {
+    "id": "avatar_of_war_passive_2_name",
+    "name": "Encarnación de la guerra",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_2_name"
+  },
+  {
+    "id": "avatar_of_war_passive_3_name",
+    "name": "Mirada mortal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_3_name"
+  },
+  {
+    "id": "avatar_of_war_passive_4_name",
+    "name": "Vacío hambriento",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_4_name"
+  },
+  {
+    "id": "base_passive_absolute_resistance_name",
+    "name": "Resistencia absoluta",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_absolute_resistance_name"
+  },
+  {
+    "id": "base_passive_alert_name",
+    "name": "Parada",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_alert_name"
+  },
+  {
+    "id": "base_passive_aware_1_name",
+    "name": "Alerta I",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_aware_1_name"
+  },
+  {
+    "id": "base_passive_aware_2_name",
+    "name": "Alerta II",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_aware_2_name"
+  },
+  {
+    "id": "base_passive_blink_name-var1",
+    "name": "Traslación",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_blink_name"
+  },
+  {
+    "id": "base_passive_blink_name-var2",
+    "name": "Traslación",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_blink_name"
+  },
+  {
+    "id": "base_passive_countershot_name",
+    "name": "Contradisparo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_countershot_name"
+  },
+  {
+    "id": "base_passive_double_strike_name",
+    "name": "Golpe doble",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_double_strike_name"
+  },
+  {
+    "id": "base_passive_double_strike_ranged_attack_name",
+    "name": "Disparo doble",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_double_strike_ranged_attack_name"
+  },
+  {
+    "id": "base_passive_duelist_name",
+    "name": "Duelista",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_duelist_name"
+  },
+  {
+    "id": "base_passive_evasive_0_name",
+    "name": "Defensa a distancia I",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_evasive_1_name"
+  },
+  {
+    "id": "base_passive_evasive_2_name",
+    "name": "Defensa a distancia III",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_evasive_3_name"
+  },
+  {
+    "id": "base_passive_flyer_name",
+    "name": "Volador",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_flyer_name"
+  },
+  {
+    "id": "base_passive_immunity_magic_3_name",
+    "name": "Inmunidad mágica III",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_immunity_magic_3_name"
+  },
+  {
+    "id": "base_passive_immunity_magic_4_name",
+    "name": "Inmunidad mágica IV",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_immunity_magic_4_name"
+  },
+  {
+    "id": "base_passive_immunity_magic_5_name",
+    "name": "Inmunidad mágica V",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_immunity_magic_5_name"
+  },
+  {
+    "id": "base_passive_melee_attack_name",
+    "name": "Ataque cuerpo a cuerpo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_melee_attack_name"
+  },
+  {
+    "id": "base_passive_melee_attack_no_counter_name",
+    "name": "Ataque cuerpo a cuerpo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_melee_attack_no_counter_name"
+  },
+  {
+    "id": "base_passive_noncounter_name",
+    "name": "Golpe rápido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_noncounter_name"
+  },
+  {
+    "id": "base_passive_quickness_name",
+    "name": "Agilidad",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_quickness_name"
+  },
+  {
+    "id": "base_passive_ranged_attack_name",
+    "name": "Ataque a distancia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_ranged_attack_name"
+  },
+  {
+    "id": "base_passive_ranged_attack_no_close_name",
+    "name": "Ataque a distancia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_ranged_attack_no_close_name"
+  },
+  {
+    "id": "base_passive_ranged_attack_no_range_close_name",
+    "name": "Ataque a distancia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_ranged_attack_no_range_close_name"
+  },
+  {
+    "id": "base_passive_ranged_attack_no_range_name",
+    "name": "Ataque a distancia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_ranged_attack_no_range_name"
+  },
+  {
+    "id": "base_passive_remote_attack_name",
+    "name": "Largo alcance",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_remote_attack_name"
+  },
+  {
+    "id": "base_passive_resistant_2_name-var1",
+    "name": "Defensa mágica III",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_resistant_3_name"
+  },
+  {
+    "id": "base_passive_resistant_2_name-var2",
+    "name": "Defensa mágica III",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_resistant_3_name"
+  },
+  {
+    "id": "base_passive_resistant_3_name",
+    "name": "Defensa mágica IV",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_resistant_4_name"
+  },
+  {
+    "id": "base_passive_sharpshooter_name",
+    "name": "Tirador experto",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_sharpshooter_name"
+  },
+  {
+    "id": "base_passive_staunch_1_name",
+    "name": "Inquebrantable I",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_staunch_1_name"
+  },
+  {
+    "id": "base_passive_staunch_2_name",
+    "name": "Inquebrantable II",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_staunch_2_name"
+  },
+  {
+    "id": "base_passive_steelskin_0_name",
+    "name": "Defensa cuerpo a cuerpo I",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_steelskin_1_name"
+  },
+  {
+    "id": "base_passive_steelskin_2_name",
+    "name": "Defensa cuerpo a cuerpo III",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_steelskin_3_name"
+  },
+  {
+    "id": "base_passive_strike_pierce_1_name",
+    "name": "Golpe perforador I",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_pierce_1_name"
+  },
+  {
+    "id": "base_passive_strike_pierce_2_name",
+    "name": "Golpe perforador II",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_pierce_2_name"
+  },
+  {
+    "id": "base_passive_strike_reach_1_name",
+    "name": "Golpe de aliento de dragón",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_reach_1_name"
+  },
+  {
+    "id": "base_passive_strike_rumble_1_name",
+    "name": "Golpe de área",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_rumble_1_name"
+  },
+  {
+    "id": "base_passive_strike_rumble_2_name-var1",
+    "name": "Golpe de área",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_rumble_2_name"
+  },
+  {
+    "id": "base_passive_strike_rumble_2_name-var2",
+    "name": "Golpe de área",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_rumble_2_name"
+  },
+  {
+    "id": "base_passive_strike_swipe_1_name-var1",
+    "name": "Golpe de barrido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_swipe_1_name"
+  },
+  {
+    "id": "base_passive_strike_swipe_1_name-var2",
+    "name": "Golpe de barrido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_swipe_1_name"
+  },
+  {
+    "id": "base_passive_strike_tri_reach_1_name",
+    "name": "Golpe cónico",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_tri_reach_1_name"
+  },
+  {
+    "id": "black_dragon_passive_1_name",
+    "name": "Fuegos de dominación",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/black_dragon_passive_1_name"
+  },
+  {
+    "id": "black_dragon_passive_2_name",
+    "name": "Presencia dominante",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/black_dragon_passive_2_name"
+  },
+  {
+    "id": "blade_dancer_passive_1_name-var1",
+    "name": "Mil cortes",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/blade_dancer_passive_1_name"
+  },
+  {
+    "id": "blade_dancer_passive_1_name-var2",
+    "name": "Mil cortes",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/blade_dancer_passive_1_name"
+  },
+  {
+    "id": "blade_dancer_passive_2_name",
+    "name": "Espada draconiana",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/blade_dancer_passive_2_name"
+  },
+  {
+    "id": "coatl_passive_1_name",
+    "name": "Terquedad primigenia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/coatl_passive_1_name"
+  },
+  {
+    "id": "crossbowman_passive_1_name",
+    "name": "Vista desde los cielos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/crossbowman_passive_1_name"
+  },
+  {
+    "id": "demon_passive_1_name",
+    "name": "Mente colmena: Protector del nido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/demon_passive_1_name"
+  },
+  {
+    "id": "demon_passive_2_name",
+    "name": "Mente colmena: Vanguardia",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/demon_passive_2_name"
+  },
+  {
+    "id": "dragon_hunter_passive_1_name",
+    "name": "Disección",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/dragon_hunter_passive_1_name"
+  },
+  {
+    "id": "dragon_hunter_passive_2_name",
+    "name": "Cazador de dragones",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/dragon_hunter_passive_2_name"
+  },
+  {
+    "id": "druid_passive_1_name-var1",
+    "name": "Magia fúngica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/druid_passive_1_name"
+  },
+  {
+    "id": "druid_passive_1_name-var2",
+    "name": "Magia fúngica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/druid_passive_1_name"
+  },
+  {
+    "id": "druid_passive_2_name",
+    "name": "El poder de los murmullos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/druid_passive_2_name"
+  },
+  {
+    "id": "eldritch_flyer_passive_1_name",
+    "name": "Gélido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/eldritch_flyer_passive_1_name"
+  },
+  {
+    "id": "ent_passive_1_name",
+    "name": "Encarnación de la tierra",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/ent_passive_1_name"
+  },
+  {
+    "id": "ent_passive_2_name",
+    "name": "Cobertura viviente",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/ent_passive_2_name"
+  },
+  {
+    "id": "ent_passive_3_name",
+    "name": "Espinas de cristal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/ent_passive_3_name"
+  },
+  {
+    "id": "ent_passive_4_name",
+    "name": "Corazón de piedra",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/ent_passive_4_name"
+  },
+  {
+    "id": "esquire_passive_1_name",
+    "name": "Ungido para la defensa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/esquire_passive_1_name"
+  },
+  {
+    "id": "esquire_passive_2_name",
+    "name": "Égida",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/esquire_passive_2_name"
+  },
+  {
+    "id": "fairy_dragon_passive_1_name",
+    "name": "Bebedor de maná",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/fairy_dragon_passive_1_name"
+  },
+  {
+    "id": "fairy_dragon_passive_2_name",
+    "name": "Burbuja de silencio",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/fairy_dragon_passive_2_name"
+  },
+  {
+    "id": "flicker_passive_1_name-var1",
+    "name": "Vampirismo fantasmal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/flicker_passive_1_name"
+  },
+  {
+    "id": "flicker_passive_1_name-var2",
+    "name": "Vampirismo fantasmal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/flicker_passive_1_name"
+  },
+  {
+    "id": "flicker_passive_2_name",
+    "name": "Pesadillas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/flicker_passive_2_name"
+  },
+  {
+    "id": "frostworm_rider_passive_1_name",
+    "name": "Abrirse paso",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/frostworm_rider_passive_1_name"
+  },
+  {
+    "id": "frostworm_rider_passive_2_name-var1",
+    "name": "Frío perforador",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/frostworm_rider_passive_2_name"
+  },
+  {
+    "id": "frostworm_rider_passive_2_name-var2",
+    "name": "Frío perforador",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/frostworm_rider_passive_2_name"
+  },
+  {
+    "id": "frostworm_rider_passive_3_name",
+    "name": "Ayuda de aga'shoth",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/frostworm_rider_passive_3_name"
+  },
+  {
+    "id": "giant_frog_passive_1_name",
+    "name": "Escupitajo ablandador",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/giant_frog_passive_1_name"
+  },
+  {
+    "id": "godslayer_passive_1_name-var1",
+    "name": "Depredador alfa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/godslayer_passive_1_name"
+  },
+  {
+    "id": "godslayer_passive_1_name-var2",
+    "name": "Depredador alfa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/godslayer_passive_1_name"
+  },
+  {
+    "id": "godslayer_passive_2_name",
+    "name": "Resiliencia impía",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/godslayer_passive_2_name"
+  },
+  {
+    "id": "godslayer_passive_3_name",
+    "name": "Regocijo asesino",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/godslayer_passive_3_name"
+  },
+  {
+    "id": "graverobber_passive_1_name",
+    "name": "Olor de la cacería",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/graverobber_passive_1_name"
+  },
+  {
+    "id": "graverobber_passive_2_name",
+    "name": "Cadáveres marchitos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/graverobber_passive_2_name"
+  },
+  {
+    "id": "griffin_passive_1_name",
+    "name": "Protector leal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/griffin_passive_1_name"
+  },
+  {
+    "id": "hive_queen_passive_1_name",
+    "name": "Asimilador de almas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hive_queen_passive_1_name"
+  },
+  {
+    "id": "hive_queen_passive_2_name",
+    "name": "Fines de Belcebú",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hive_queen_passive_2_name"
+  },
+  {
+    "id": "hive_queen_passive_3_name",
+    "name": "¡Machaca a los débiles!",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hive_queen_passive_3_name"
+  },
+  {
+    "id": "hydra_passive_1_name",
+    "name": "Veneno debilitante",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_1_name"
+  },
+  {
+    "id": "hydra_passive_2_name",
+    "name": "Regeneración",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_2_name"
+  },
+  {
+    "id": "hydra_passive_3_name",
+    "name": "Sangre venenosa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_3_name"
+  },
+  {
+    "id": "hydra_passive_4_name-var1",
+    "name": "Dientes en crecimiento",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_4_name"
+  },
+  {
+    "id": "hydra_passive_4_name-var2",
+    "name": "Dientes en crecimiento",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_4_name"
+  },
+  {
+    "id": "hydra_passive_5_name",
+    "name": "Todas las cabezas listas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hydra_passive_5_name"
+  },
+  {
+    "id": "inquisitor_passive_1_name",
+    "name": "Armadura celestial",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/inquisitor_passive_1_name"
+  },
+  {
+    "id": "kitten_horn_passive_1_name",
+    "name": "Posos de locura",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/kitten_horn_passive_1_name"
+  },
+  {
+    "id": "lava_larva_passive_1_name",
+    "name": "Mejunje inestable",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lava_larva_passive_1_name"
+  },
+  {
+    "id": "lich_dragon_passive_1_name",
+    "name": "Absorción ósea",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lich_dragon_passive_1_name"
+  },
+  {
+    "id": "lich_passive_1_name",
+    "name": "Vampirismo temporal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lich_passive_1_name"
+  },
+  {
+    "id": "lich_passive_2_name",
+    "name": "Conocimiento de la muerte",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lich_passive_2_name"
+  },
+  {
+    "id": "lightweaver_passive_1_name",
+    "name": "Ungido para el daño",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lightweaver_passive_1_name"
+  },
+  {
+    "id": "mech_guard_passive_1_name",
+    "name": "Causa superior",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/mech_guard_passive_1_name"
+  },
+  {
+    "id": "medusa_passive_1_name",
+    "name": "Flechas de mármol",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/medusa_passive_1_name"
+  },
+  {
+    "id": "minos_passive_1_name",
+    "name": "Ansias de batalla",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/minos_passive_1_name"
+  },
+  {
+    "id": "minos_passive_2_name",
+    "name": "Sangre por sangre",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/minos_passive_2_name"
+  },
+  {
+    "id": "minos_passive_3_name",
+    "name": "Subida de adrenalina",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/minos_passive_3_name"
+  },
+  {
+    "id": "obsidian_dragon_passive_1_name",
+    "name": "Desdén",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/obsidian_dragon_passive_1_name"
+  },
+  {
+    "id": "olgoi_passive_1_name",
+    "name": "Devorador de cadáveres",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/olgoi_passive_1_name"
+  },
+  {
+    "id": "olgoi_passive_2_name-var1",
+    "name": "Hedor demoníaco",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/olgoi_passive_2_name"
+  },
+  {
+    "id": "olgoi_passive_2_name-var2",
+    "name": "Hedor demoníaco",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/olgoi_passive_2_name"
+  },
+  {
+    "id": "peasant_passive_1_name",
+    "name": "Contribuyente",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/peasant_passive_1_name"
+  },
+  {
+    "id": "peasant_passive_2_name",
+    "name": "Amado cerdito",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/peasant_passive_2_name"
+  },
+  {
+    "id": "peasant_passive_3_name",
+    "name": "Enfurecido",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/peasant_passive_3_name"
+  },
+  {
+    "id": "pet_passive_1_name",
+    "name": "Triturador de huesos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/pet_passive_1_name"
+  },
+  {
+    "id": "pet_passive_2_name",
+    "name": "Proteger a los caídos",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/pet_passive_2_name"
+  },
+  {
+    "id": "pet_passive_3_name",
+    "name": "Heridas laceradas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/pet_passive_3_name"
+  },
+  {
+    "id": "phoenix_passive_1_name",
+    "name": "Encarnación del fuego",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/phoenix_passive_1_name"
+  },
+  {
+    "id": "phoenix_passive_2_name",
+    "name": "Inmortal",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/phoenix_passive_2_name"
+  },
+  {
+    "id": "phoenix_passive_3_name",
+    "name": "Llama eterna",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/phoenix_passive_3_name"
+  },
+  {
+    "id": "qilin_passive_1_name",
+    "name": "Encarnación del aire",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/qilin_passive_1_name"
+  },
+  {
+    "id": "qilin_passive_2_name",
+    "name": "Veloz como el rayo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/qilin_passive_2_name"
+  },
+  {
+    "id": "qilin_passive_3_name",
+    "name": "Escamas centelleantes",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/qilin_passive_3_name"
+  },
+  {
+    "id": "qilin_passive_4_name",
+    "name": "En las nubes",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/qilin_passive_4_name"
+  },
+  {
+    "id": "succubus_passive_1_name-var1",
+    "name": "Gánate la magia, cariño",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_1_name"
+  },
+  {
+    "id": "succubus_passive_1_name-var2",
+    "name": "Gánate la magia, cariño",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_1_name"
+  },
+  {
+    "id": "succubus_passive_2_name",
+    "name": "Gánate las aptitudes, cariño",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_2_name"
+  },
+  {
+    "id": "sunlight_cavalry_passive_1_name-var1",
+    "name": "Inspiración",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_1_name"
+  },
+  {
+    "id": "sunlight_cavalry_passive_1_name-var2",
+    "name": "Inspiración",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_1_name"
+  },
+  {
+    "id": "sunlight_cavalry_passive_2_name-var1",
+    "name": "Bonificación de justa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_2_name"
+  },
+  {
+    "id": "sunlight_cavalry_passive_2_name-var2",
+    "name": "Bonificación de justa",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_2_name"
+  },
+  {
+    "id": "sunlight_cavalry_passive_3_name",
+    "name": "Ungido para el ataque",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_3_name"
+  },
+  {
+    "id": "trick_demon_passive_1_name",
+    "name": "¡Derribemos al fuerte!",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/trick_demon_passive_1_name"
+  },
+  {
+    "id": "trogl_passive_1_name",
+    "name": "Lanza tóxica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/trogl_passive_1_name"
+  },
+  {
+    "id": "trogl_passive_2_name",
+    "name": "Sangre tóxica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/trogl_passive_2_name"
+  },
+  {
+    "id": "twinkle_passive_1_name",
+    "name": "Núcleo mágico",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/twinkle_passive_1_name"
+  },
+  {
+    "id": "vampire_passive_1_name",
+    "name": "Vampirismo",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/vampire_passive_1_name"
+  },
+  {
+    "id": "wasp_passive_1_name",
+    "name": "Susurros de duda",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/wasp_passive_1_name"
+  },
+  {
+    "id": "wasp_passive_2_name",
+    "name": "Aguijón perforador",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/wasp_passive_2_name"
+  }
+]

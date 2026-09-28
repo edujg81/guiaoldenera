@@ -1,0 +1,218 @@
+[
+  {
+    "id": "sub_class_demons_might_1",
+    "name": "Madre de cría",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "icon": "icons/hero_sub_classes/sub_class_demons_might_1_icon"
+  },
+  {
+    "id": "sub_class_demons_might_2",
+    "name": "Devorador de almas",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "icon": "icons/hero_sub_classes/sub_class_demons_might_2_icon"
+  },
+  {
+    "id": "sub_class_demons_magic_1",
+    "name": "Progenitor",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "icon": "icons/hero_sub_classes/sub_class_demons_magic_1_icon"
+  },
+  {
+    "id": "sub_class_demons_magic_2",
+    "name": "Señor del caos",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "icon": "icons/hero_sub_classes/sub_class_demons_magic_2_icon"
+  },
+  {
+    "id": "sub_class_dungeon_might_1",
+    "name": "Guardaespaldas de Baltasar",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "icon": "icons/hero_sub_classes/sub_class_dungeon_might_1_icon"
+  },
+  {
+    "id": "sub_class_dungeon_might_2",
+    "name": "Enviado de Lengua de Plata",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "icon": "icons/hero_sub_classes/sub_class_dungeon_might_2_icon"
+  },
+  {
+    "id": "sub_class_dungeon_magic_1",
+    "name": "Heredero de Amelchia",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "icon": "icons/hero_sub_classes/sub_class_dungeon_magic_1_icon"
+  },
+  {
+    "id": "sub_class_dungeon_magic_2",
+    "name": "Gran mercader",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "icon": "icons/hero_sub_classes/sub_class_dungeon_magic_2_icon"
+  },
+  {
+    "id": "sub_class_human_might_1",
+    "name": "Bravucón",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "icon": "icons/hero_sub_classes/sub_class_human_might_1_icon"
+  },
+  {
+    "id": "sub_class_human_might_2",
+    "name": "Dechado",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "icon": "icons/hero_sub_classes/sub_class_human_might_2_icon"
+  },
+  {
+    "id": "sub_class_human_magic_1",
+    "name": "Gran Inquisidor",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "icon": "icons/hero_sub_classes/sub_class_human_magic_1_icon"
+  },
+  {
+    "id": "sub_class_human_magic_2",
+    "name": "Ascendente",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "icon": "icons/hero_sub_classes/sub_class_human_magic_2_icon"
+  },
+  {
+    "id": "sub_class_nature_might_1",
+    "name": "Pozo de vigor",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "icon": "icons/hero_sub_classes/sub_class_nature_might_1_icon"
+  },
+  {
+    "id": "sub_class_nature_might_2",
+    "name": "Favorecidos por el azar",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "icon": "icons/hero_sub_classes/sub_class_nature_might_2_icon"
+  },
+  {
+    "id": "sub_class_nature_magic_1",
+    "name": "Enviado celestial",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "icon": "icons/hero_sub_classes/sub_class_nature_magic_1_icon"
+  },
+  {
+    "id": "sub_class_nature_magic_2",
+    "name": "Furia del cielo",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "icon": "icons/hero_sub_classes/sub_class_nature_magic_2_icon"
+  },
+  {
+    "id": "sub_class_undead_might_1",
+    "name": "Heraldo de la perdición",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "icon": "icons/hero_sub_classes/sub_class_undead_might_1_icon"
+  },
+  {
+    "id": "sub_class_undead_might_2",
+    "name": "Podredumbre ambulante",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "icon": "icons/hero_sub_classes/sub_class_undead_might_2_icon"
+  },
+  {
+    "id": "sub_class_undead_magic_1",
+    "name": "Tejedor de almas",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "icon": "icons/hero_sub_classes/sub_class_undead_magic_1_icon"
+  },
+  {
+    "id": "sub_class_undead_magic_2",
+    "name": "Cronomante",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "icon": "icons/hero_sub_classes/sub_class_undead_magic_2_icon"
+  },
+  {
+    "id": "sub_class_unfrozen_might_1",
+    "name": "Sin límites",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "icon": "icons/hero_sub_classes/sub_class_unfrozen_might_1_icon"
+  },
+  {
+    "id": "sub_class_unfrozen_might_2",
+    "name": "Insensible",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "icon": "icons/hero_sub_classes/sub_class_unfrozen_might_2_icon"
+  },
+  {
+    "id": "sub_class_unfrozen_magic_1",
+    "name": "Imparable",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "icon": "icons/hero_sub_classes/sub_class_unfrozen_magic_1_icon"
+  },
+  {
+    "id": "sub_class_unfrozen_magic_2",
+    "name": "Insondable",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "icon": "icons/hero_sub_classes/sub_class_unfrozen_magic_2_icon"
+  }
+]

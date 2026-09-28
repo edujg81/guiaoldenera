@@ -1,0 +1,2982 @@
+[
+  {
+    "id": "beelzebubs_blessing_heartbeat_artifact",
+    "name": "Latido",
+    "rarity": "legendary",
+    "slot": "armor",
+    "raritySlotText": "Armadura legendaria",
+    "icon": "icons/artifacts/beelzebubs_blessing_heartbeat_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_armor_of_wonder_artifact",
+    "name": "Armadura Portentosa",
+    "rarity": "legendary",
+    "slot": "armor",
+    "raritySlotText": "Armadura legendaria",
+    "icon": "icons/artifacts/angelic_alliance_armor_of_wonder_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tunic_of_the_cyclops_king_artifact",
+    "name": "Túnica del rey cíclope",
+    "rarity": "rare",
+    "slot": "armor",
+    "raritySlotText": "Armadura rara",
+    "icon": "icons/artifacts/tunic_of_the_cyclops_king_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "eagle_armor_artifact",
+    "name": "Armadura de águila",
+    "rarity": "rare",
+    "slot": "armor",
+    "raritySlotText": "Armadura rara",
+    "icon": "icons/artifacts/eagle_armor_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_dragon_scale_armor_artifact",
+    "name": "Armadura de Escamas de Dragón",
+    "rarity": "legendary",
+    "slot": "armor",
+    "raritySlotText": "Armadura legendaria",
+    "icon": "icons/artifacts/power_of_the_dragon_father_dragon_scale_armor_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ethereal_knowledge_vortex_dress_artifact",
+    "name": "Túnica de vórtice",
+    "rarity": "rare",
+    "slot": "armor",
+    "raritySlotText": "Armadura rara",
+    "icon": "icons/artifacts/ethereal_knowledge_vortex_dress_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shamaniac_soul_iridescent_cloak_artifact",
+    "name": "Capa iridiscente",
+    "rarity": "epic",
+    "slot": "armor",
+    "raritySlotText": "Armadura épica",
+    "icon": "icons/artifacts/shamaniac_soul_iridescent_cloak_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shadow_of_death_cursed_armor_artifact",
+    "name": "Armadura de torso",
+    "rarity": "epic",
+    "slot": "armor",
+    "raritySlotText": "Armadura épica",
+    "icon": "icons/artifacts/shadow_of_death_cursed_armor_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "knights_honor_plate_armor_artifact",
+    "name": "Armadura de placas",
+    "rarity": "rare",
+    "slot": "armor",
+    "raritySlotText": "Armadura rara",
+    "icon": "icons/artifacts/knights_honor_plate_armor_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_rags_artifact",
+    "name": "Harapos",
+    "rarity": "common",
+    "slot": "armor",
+    "raritySlotText": "Armadura común",
+    "icon": "icons/artifacts/paupers_glory_rags_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "chain_mail_artifact",
+    "name": "Cota de malla",
+    "rarity": "common",
+    "slot": "armor",
+    "raritySlotText": "Armadura común",
+    "icon": "icons/artifacts/chain_mail_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "clothes_of_enlightenment_artifact",
+    "name": "Túnica de iluminación",
+    "rarity": "epic",
+    "slot": "armor",
+    "raritySlotText": "Armadura épica",
+    "icon": "icons/artifacts/clothes_of_enlightenment_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "banner_of_four_winds_artifact",
+    "name": "Estandarte de los Seis Vientos",
+    "rarity": "epic",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda épico",
+    "icon": "icons/artifacts/banner_of_four_winds_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "fallen_angel_wings_artifact",
+    "name": "Alas de ángel caído",
+    "rarity": "legendary",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda legendario",
+    "icon": "icons/artifacts/fallen_angel_wings_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_dragon_wing_artifact",
+    "name": "Tabardo de ala de dragón",
+    "rarity": "rare",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda raro",
+    "icon": "icons/artifacts/power_of_the_dragon_father_dragon_wing_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "living_arrows_light_and_shade_cloak_artifact",
+    "name": "Capa de luces y sombras",
+    "rarity": "epic",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda épico",
+    "icon": "icons/artifacts/living_arrows_light_and_shade_cloak_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "wanderers_way_backpack_artifact",
+    "name": "Mochila",
+    "rarity": "rare",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda raro",
+    "icon": "icons/artifacts/wanderers_way_backpack_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "gifts_of_dwarven_lords_automated_antimagic_shield_artifact",
+    "name": "Escudo antimagia automatizado",
+    "rarity": "rare",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda raro",
+    "icon": "icons/artifacts/gifts_of_dwarven_lords_automated_antimagic_shield_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "flag_of_truce_artifact",
+    "name": "Bandera de tregua",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/flag_of_truce_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "monster_head_artifact",
+    "name": "Cabeza de monstruo",
+    "rarity": "rare",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda raro",
+    "icon": "icons/artifacts/monster_head_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "omencaller_artifact",
+    "name": "Presagista",
+    "rarity": "common",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda común",
+    "icon": "icons/artifacts/omencaller_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shadow_of_death_second_shade_artifact",
+    "name": "Segunda sombra",
+    "rarity": "epic",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda épico",
+    "icon": "icons/artifacts/shadow_of_death_second_shade_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ambassadors_word_ambassadors_sash_artifact",
+    "name": "Túnica del diplomático",
+    "rarity": "legendary",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda legendario",
+    "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "wizards_might_wizards_cloak_artifact",
+    "name": "Capa del hechicero",
+    "rarity": "rare",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda raro",
+    "icon": "icons/artifacts/wizards_might_wizards_cloak_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_key_ring_artifact",
+    "name": "Anillo de llave mágica",
+    "rarity": "legendary",
+    "slot": "belt",
+    "raritySlotText": "Cinturón legendario",
+    "icon": "icons/artifacts/magic_key_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "milos_curse_skull_of_milos_artifact",
+    "name": "Calavera de Milos",
+    "rarity": "epic",
+    "slot": "belt",
+    "raritySlotText": "Cinturón épico",
+    "icon": "icons/artifacts/milos_curse_skull_of_milos_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_slithering_sash_artifact",
+    "name": "Fajín serpenteante",
+    "rarity": "epic",
+    "slot": "belt",
+    "raritySlotText": "Cinturón épico",
+    "icon": "icons/artifacts/power_of_the_dragon_father_slithering_sash_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_celestial_sash_of_bliss_artifact",
+    "name": "Faja celestial de la felicidad",
+    "rarity": "legendary",
+    "slot": "belt",
+    "raritySlotText": "Cinturón legendario",
+    "icon": "icons/artifacts/angelic_alliance_celestial_sash_of_bliss_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "gifts_of_dwarven_lords_protective_belt_artifact",
+    "name": "Cinturón protector",
+    "rarity": "epic",
+    "slot": "belt",
+    "raritySlotText": "Cinturón épico",
+    "icon": "icons/artifacts/gifts_of_dwarven_lords_protective_belt_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "spyglass_artifact",
+    "name": "Catalejo",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/spyglass_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "elixir_of_life_flask_of_oblivion_artifact",
+    "name": "Frasco del olvido",
+    "rarity": "rare",
+    "slot": "belt",
+    "raritySlotText": "Cinturón raro",
+    "icon": "icons/artifacts/elixir_of_life_flask_of_oblivion_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "endless_bag_artifact",
+    "name": "Bolsa infinita",
+    "rarity": "rare",
+    "slot": "belt",
+    "raritySlotText": "Cinturón raro",
+    "icon": "icons/artifacts/endless_bag_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_rope_belt_artifact",
+    "name": "Cinturón de cuerda",
+    "rarity": "common",
+    "slot": "belt",
+    "raritySlotText": "Cinturón común",
+    "icon": "icons/artifacts/paupers_glory_rope_belt_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "soulless_sash_artifact",
+    "name": "Fajín sin alma",
+    "rarity": "common",
+    "slot": "belt",
+    "raritySlotText": "Cinturón común",
+    "icon": "icons/artifacts/soulless_sash_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "warriors_strength_warriors_belt_artifact",
+    "name": "Cinturón del guerrero",
+    "rarity": "rare",
+    "slot": "belt",
+    "raritySlotText": "Cinturón raro",
+    "icon": "icons/artifacts/warriors_strength_warriors_belt_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "spells_in_a_bottle_artifact",
+    "name": "Hechizos embotellados",
+    "rarity": "legendary",
+    "slot": "belt",
+    "raritySlotText": "Cinturón legendario",
+    "icon": "icons/artifacts/spells_in_a_bottle_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "seven_league_boots_artifact",
+    "name": "Botas de siete leguas",
+    "rarity": "legendary",
+    "slot": "boots",
+    "raritySlotText": "Botas legendarias",
+    "icon": "icons/artifacts/seven_league_boots_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "legions_step_artifact",
+    "name": "Pierna de la legión",
+    "rarity": "epic",
+    "slot": "boots",
+    "raritySlotText": "Botas épicas",
+    "icon": "icons/artifacts/legions_step_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_dragonbone_greaves_artifact",
+    "name": "Espinilleras de hueso de dragón",
+    "rarity": "common",
+    "slot": "boots",
+    "raritySlotText": "Botas comunes",
+    "icon": "icons/artifacts/power_of_the_dragon_father_dragonbone_greaves_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shadow_of_death_bone_boots_artifact",
+    "name": "Botas de hueso",
+    "rarity": "epic",
+    "slot": "boots",
+    "raritySlotText": "Botas épicas",
+    "icon": "icons/artifacts/shadow_of_death_bone_boots_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_sandals_of_the_saint_artifact",
+    "name": "Sandalias del santo",
+    "rarity": "legendary",
+    "slot": "boots",
+    "raritySlotText": "Botas legendarias",
+    "icon": "icons/artifacts/angelic_alliance_sandals_of_the_saint_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shackles_of_war_artifact",
+    "name": "Grilletes de guerra",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/shackles_of_war_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "swamp_boots_artifact",
+    "name": "Botas de pantano",
+    "rarity": "epic",
+    "slot": "boots",
+    "raritySlotText": "Botas épicas",
+    "icon": "icons/artifacts/swamp_boots_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "warlord_boots_artifact",
+    "name": "Botas de señor de la guerra",
+    "rarity": "legendary",
+    "slot": "boots",
+    "raritySlotText": "Botas legendarias",
+    "icon": "icons/artifacts/warlord_boots_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "wanderers_way_boots_of_travel_artifact",
+    "name": "Botas de viaje",
+    "rarity": "rare",
+    "slot": "boots",
+    "raritySlotText": "Botas raras",
+    "icon": "icons/artifacts/wanderers_way_boots_of_travel_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ethereal_knowledge_mirror_shoes_artifact",
+    "name": "Calzado mágico",
+    "rarity": "common",
+    "slot": "boots",
+    "raritySlotText": "Botas comunes",
+    "icon": "icons/artifacts/ethereal_knowledge_mirror_shoes_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_17_magic_clear_view",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_17_magic_clear_view_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_1_magic_healing_water",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_1_magic_healing_water_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_2_magic_sharp_edge",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_2_magic_sharp_edge_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_3_magic_haste",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_3_magic_haste_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_4_magic_favorable_wind",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_4_magic_favorable_wind_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_5_magic_shorten_shadow",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_5_magic_shorten_shadow_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_6_magic_cleansing_ray",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_6_magic_cleansing_ray_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_7_magic_inner_light",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_7_magic_inner_light_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_8_magic_taunt",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_8_magic_taunt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_9_magic_arinas_hymn",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_9_magic_arinas_hymn_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_10_magic_second_song",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_10_magic_second_song_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_11_magic_masterful_parry",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_11_magic_masterful_parry_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_18_magic_farsight",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_18_magic_farsight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_12_magic_radiant_armor",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_12_magic_radiant_armor_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_13_magic_holy_arms",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_13_magic_holy_arms_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_14_magic_vengeance",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_14_magic_vengeance_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_15_magic_judgement",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_15_magic_judgement_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_day_16_magic_arinas_chosen",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_day_16_magic_arinas_chosen_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_1_magic_unnatural_calm",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_1_magic_unnatural_calm_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_2_magic_web",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_2_magic_web_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_3_magic_enlarge_shadow",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_3_magic_enlarge_shadow_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_4_magic_despair",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_4_magic_despair_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_17_magic_read_minds",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_17_magic_read_minds_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_5_magic_shade_cloak",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_5_magic_shade_cloak_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_6_magic_deaths_grip",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_6_magic_deaths_grip_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_7_magic_fatal_decay",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_7_magic_fatal_decay_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_18_magic_nairas_veil",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_18_magic_nairas_veil_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_8_magic_sleep",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_8_magic_sleep_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_9_magic_twilight",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_9_magic_twilight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_10_magic_silence",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_10_magic_silence_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_11_magic_vulnerability",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_11_magic_vulnerability_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_12_magic_summon_starchild",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_12_magic_summon_starchild_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_13_magic_berserker",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_13_magic_berserker_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_14_magic_nairas_kiss",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_14_magic_nairas_kiss_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_15_magic_deaths_call",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_15_magic_deaths_call_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_night_16_magic_shadow_army",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_night_16_magic_shadow_army_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_1_magic_early_start",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_1_magic_early_start_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_2_magic_energy_explosion",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_2_magic_energy_explosion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_3_magic_energyze",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_3_magic_energyze_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_17_magic_reinforcements",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_17_magic_reinforcements_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_4_magic_optical_illusion",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_4_magic_optical_illusion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_5_magic_trap_jaws",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_5_magic_trap_jaws_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_6_magic_blink",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_6_magic_blink_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_18_magic_assemble",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_18_magic_assemble_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_7_magic_shackles",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_7_magic_shackles_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_8_magic_carapace",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_8_magic_carapace_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_9_magic_impending_fate",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_9_magic_impending_fate_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_10_magic_mirror_copy",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_10_magic_mirror_copy_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_11_magic_decimate",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_11_magic_decimate_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_12_magic_rewind",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_12_magic_rewind_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_13_magic_black_hole",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_13_magic_black_hole_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_14_magic_doreaths_tide",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_14_magic_doreaths_tide_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_15_magic_trap_snare",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_15_magic_trap_snare_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_space_16_magic_reality_distortion",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_space_16_magic_reality_distortion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_17_magic_groundsight",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_17_magic_groundsight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_1_magic_thunderbolt",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_1_magic_thunderbolt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_2_magic_thick_hide",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_2_magic_thick_hide_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_3_magic_wean",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_3_magic_wean_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_4_magic_fire_globe",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_4_magic_fire_globe_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_5_magic_crystal_crown",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_5_magic_crystal_crown_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_6_magic_ice_bolt",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_6_magic_ice_bolt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_18_magic_primordial_chaos",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_18_magic_primordial_chaos_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_7_magic_wall_of_flame",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_7_magic_wall_of_flame_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_8_magic_cave_in",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_8_magic_cave_in_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_9_magic_earths_rage",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_9_magic_earths_rage_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_10_magic_primordial_purity",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_10_magic_primordial_purity_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_11_magic_armageddon",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_11_magic_armageddon_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_12_magic_chain_lightning",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_12_magic_chain_lightning_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_13_magic_avalanche",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_13_magic_avalanche_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_14_magic_hksmillas_rampage",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_14_magic_hksmillas_rampage_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_15_magic_summon_primal_remnant",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_15_magic_summon_primal_remnant_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "enchanted_magic_scroll_artifact_primal_16_magic_stone_fangs",
+    "name": "Pergamino mágico encantado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/enchanted_magic_scroll_artifact/enchanted_magic_scroll_artifact_primal_16_magic_stone_fangs_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "beelzebubs_blessing_demon_crest_artifact",
+    "name": "Beneficio de Belcebú",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/beelzebubs_blessing_demon_crest_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "crown_of_the_supreme_magi_artifact",
+    "name": "Corona de los magos supremos",
+    "rarity": "rare",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza raro",
+    "icon": "icons/artifacts/crown_of_the_supreme_magi_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ethereal_knowledge_third_eye_artifact",
+    "name": "Siete Ojos",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/ethereal_knowledge_third_eye_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_dragon_crest_artifact",
+    "name": "Corona de diente de dragón",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/power_of_the_dragon_father_dragon_crest_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "two_faced_mask_artifact",
+    "name": "Máscara de dos caras",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/two_faced_mask_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tranquility_brightmind_tiara_artifact",
+    "name": "Tiara de espejo",
+    "rarity": "epic",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza épico",
+    "icon": "icons/artifacts/tranquility_brightmind_tiara_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_helm_of_heavenly_enlightenment_artifact",
+    "name": "Yelmo de la divina iluminación",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/angelic_alliance_helm_of_heavenly_enlightenment_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shamaniac_soul_gemwood_mask_artifact",
+    "name": "Máscara de sirin",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/shamaniac_soul_gemwood_mask_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "knights_honor_armet_artifact",
+    "name": "Almete",
+    "rarity": "common",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza común",
+    "icon": "icons/artifacts/knights_honor_armet_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "head_torch_artifact",
+    "name": "Linterna de cabeza",
+    "rarity": "common",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza común",
+    "icon": "icons/artifacts/head_torch_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_straw_hat_artifact",
+    "name": "Sombrero de paja",
+    "rarity": "common",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza común",
+    "icon": "icons/artifacts/paupers_glory_straw_hat_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "inner_song_fancy_mask_artifact",
+    "name": "Máscara elegante",
+    "rarity": "common",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza común",
+    "icon": "icons/artifacts/inner_song_fancy_mask_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "rule_of_shadow_nostrias_gaze_artifact",
+    "name": "Ley de Amelchia",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/rule_of_shadow_nostrias_gaze_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "scholars_wisdom_scholars_tiara_artifact",
+    "name": "Tiara del erudito",
+    "rarity": "rare",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza raro",
+    "icon": "icons/artifacts/scholars_wisdom_scholars_tiara_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "spellbinders_hat_artifact",
+    "name": "Sombrero del encantador",
+    "rarity": "legendary",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza legendario",
+    "icon": "icons/artifacts/spellbinders_hat_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "orb_of_inhibition_artifact",
+    "name": "Orbe de inhibición",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/orb_of_inhibition_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "golden_goose_egg_artifact",
+    "name": "Huevo de oca de oro",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/golden_goose_egg_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "catechism_of_night_magic_artifact",
+    "name": "Tomo de nochesombra",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/catechism_of_night_magic_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "catechism_of_daylight_magic_artifact",
+    "name": "Tomo de luz solar",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/catechism_of_daylight_magic_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "catechism_of_spacetime_magic_artifact",
+    "name": "Tomo arcano",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/catechism_of_spacetime_magic_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "catechism_of_primal_magic_artifact",
+    "name": "Tomo primigenio",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/catechism_of_primal_magic_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "pole_star_artifact",
+    "name": "Estrella polar",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/pole_star_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "orb_of_destruction_artifact",
+    "name": "Orbe de destrucción",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/orb_of_destruction_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ancient_idol_artifact",
+    "name": "Ídolo antiguo",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/ancient_idol_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tactical_guide_artifact",
+    "name": "Guía táctica",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/tactical_guide_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "inner_song_music_sheet_artifact",
+    "name": "Partitura",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/inner_song_music_sheet_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "resonant_sphere_orb_of_twilight_artifact",
+    "name": "Orbe del crepúsculo",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/resonant_sphere_orb_of_twilight_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "resonant_sphere_orb_of_daylight_artifact",
+    "name": "Orbe del amanecer",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/resonant_sphere_orb_of_daylight_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "resonant_sphere_orb_of_eternity_artifact",
+    "name": "Orbe de eternidad",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/resonant_sphere_orb_of_eternity_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "resonant_sphere_primal_orb_artifact",
+    "name": "Orbe primordial",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/resonant_sphere_primal_orb_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "elixir_of_life_lifeblood_fairy_artifact",
+    "name": "Hada de sangre vital",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/elixir_of_life_lifeblood_fairy_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "living_arrows_quivering_quiver_artifact",
+    "name": "Carcaj carcajeante",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/living_arrows_quivering_quiver_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ukhtabar_seal_ukh_seal_artifact",
+    "name": "Sello de ukh",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/ukhtabar_seal_ukh_seal_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "milos_curse_golden_pig_artifact",
+    "name": "Cerdo dorado",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/milos_curse_golden_pig_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "milos_curse_golden_moth_artifact",
+    "name": "Polilla dorada",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/milos_curse_golden_moth_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "knights_honor_drums_of_war_artifact",
+    "name": "Tambor de guerra",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/knights_honor_drums_of_war_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_last_coin_artifact",
+    "name": "Última moneda",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/paupers_glory_last_coin_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tranquility_magic_mirror_artifact",
+    "name": "Espejo mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/tranquility_magic_mirror_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "boreolos_hand_artifact",
+    "name": "Mano de Boreoloth",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/boreolos_hand_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "boreolos_foot_artifact",
+    "name": "Cola de Boreoloth",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/boreolos_foot_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "boreolos_heart_artifact",
+    "name": "Corazón de Boreoloth",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/boreolos_heart_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "boreolos_head_artifact",
+    "name": "Cabeza de Boreoloth",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/boreolos_head_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "rule_of_shadow_liquid_silence_artifact",
+    "name": "Silencio líquido",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/rule_of_shadow_liquid_silence_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ambassadors_word_diplomatic_gifts_artifact",
+    "name": "Regalos diplomáticos",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/ambassadors_word_diplomatic_gifts_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "voodoosh_doll_artifact",
+    "name": "Muñeco vudú",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/voodoosh_doll_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "demonic_heart_artifact",
+    "name": "Corazón demoniaco",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/demonic_heart_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "warriors_strength_warriors_oberegus_artifact",
+    "name": "Amuleto del guerrero",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/warriors_strength_warriors_oberegus_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "keepers_fortitude_keepers_oberegus_artifact",
+    "name": "Amuleto del guardián",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/keepers_fortitude_keepers_oberegus_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "wizards_might_wizards_oberegus_artifact",
+    "name": "Amuleto del hechicero",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/wizards_might_wizards_oberegus_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "scholars_wisdom_scholars_oberegus_artifact",
+    "name": "Amuleto del erudito",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/scholars_wisdom_scholars_oberegus_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "cards_deck_artifact",
+    "name": "Baraja de hechizos",
+    "rarity": "rare",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto raro",
+    "icon": "icons/artifacts/cards_deck_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "runestone_shards_artifact",
+    "name": "Fragmentos de piedra rúnica",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/runestone_shards_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "beelzebubs_blessing_chitinous_shield_artifact",
+    "name": "Escudo quitinoso",
+    "rarity": "legendary",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria legendario",
+    "icon": "icons/artifacts/beelzebubs_blessing_chitinous_shield_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "hourglass_of_protection_artifact",
+    "name": "Reloj de arena pelágico",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/hourglass_of_protection_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_lions_shield_of_courage_artifact",
+    "name": "Escudo del león del valor",
+    "rarity": "legendary",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria legendario",
+    "icon": "icons/artifacts/angelic_alliance_lions_shield_of_courage_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tarq_of_the_rampaging_ogre_artifact",
+    "name": "Escudo del ogro enloquecido",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/tarq_of_the_rampaging_ogre_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_dragon_scale_shield_artifact",
+    "name": "Escudo de escamas de dragón",
+    "rarity": "epic",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria épico",
+    "icon": "icons/artifacts/power_of_the_dragon_father_dragon_scale_shield_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "duelists_pride_buckler_artifact",
+    "name": "Rodela",
+    "rarity": "common",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria común",
+    "icon": "icons/artifacts/duelists_pride_buckler_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ethereal_knowledge_glass_dagger_artifact",
+    "name": "Daga de medialuna",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/ethereal_knowledge_glass_dagger_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "inner_song_singing_pan_pipe_artifact",
+    "name": "Flauta de pan cantante",
+    "rarity": "common",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria común",
+    "icon": "icons/artifacts/inner_song_singing_pan_pipe_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "knights_honor_misericorde_artifact",
+    "name": "Misericordia",
+    "rarity": "common",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria común",
+    "icon": "icons/artifacts/knights_honor_misericorde_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "fine_wand_artifact",
+    "name": "Varita fina",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/fine_wand_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shoddy_shield_artifact",
+    "name": "Escudo de mala calidad",
+    "rarity": "common",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria común",
+    "icon": "icons/artifacts/shoddy_shield_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "caduceus_artifact",
+    "name": "Caduceo",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/caduceus_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "rule_of_shadow_the_truthseeker_artifact",
+    "name": "Buscador de la verdad",
+    "rarity": "epic",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria épico",
+    "icon": "icons/artifacts/rule_of_shadow_the_truthseeker_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_17_magic_clear_view",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_17_magic_clear_view_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_1_magic_healing_water",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_1_magic_healing_water_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_2_magic_sharp_edge",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_2_magic_sharp_edge_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_3_magic_haste",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_3_magic_haste_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_4_magic_favorable_wind",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_4_magic_favorable_wind_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_5_magic_shorten_shadow",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_5_magic_shorten_shadow_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_6_magic_cleansing_ray",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_6_magic_cleansing_ray_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_7_magic_inner_light",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_7_magic_inner_light_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_8_magic_taunt",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_8_magic_taunt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_9_magic_arinas_hymn",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_9_magic_arinas_hymn_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_10_magic_second_song",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_10_magic_second_song_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_11_magic_masterful_parry",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_11_magic_masterful_parry_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_18_magic_farsight",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_18_magic_farsight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_12_magic_radiant_armor",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_12_magic_radiant_armor_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_13_magic_holy_arms",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_13_magic_holy_arms_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_14_magic_vengeance",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_14_magic_vengeance_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_15_magic_judgement",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_15_magic_judgement_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_day_16_magic_arinas_chosen",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_day_16_magic_arinas_chosen_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_1_magic_unnatural_calm",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_1_magic_unnatural_calm_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_2_magic_web",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_2_magic_web_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_3_magic_enlarge_shadow",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_3_magic_enlarge_shadow_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_4_magic_despair",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_4_magic_despair_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_17_magic_read_minds",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_17_magic_read_minds_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_5_magic_shade_cloak",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_5_magic_shade_cloak_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_6_magic_deaths_grip",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_6_magic_deaths_grip_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_7_magic_fatal_decay",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_7_magic_fatal_decay_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_18_magic_nairas_veil",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_18_magic_nairas_veil_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_8_magic_sleep",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_8_magic_sleep_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_9_magic_twilight",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_9_magic_twilight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_10_magic_silence",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_10_magic_silence_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_11_magic_vulnerability",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_11_magic_vulnerability_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_12_magic_summon_starchild",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_12_magic_summon_starchild_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_13_magic_berserker",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_13_magic_berserker_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_14_magic_nairas_kiss",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_14_magic_nairas_kiss_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_15_magic_deaths_call",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_15_magic_deaths_call_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_night_16_magic_shadow_army",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_night_16_magic_shadow_army_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_1_magic_early_start",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_1_magic_early_start_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_2_magic_energy_explosion",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_2_magic_energy_explosion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_3_magic_energyze",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_3_magic_energyze_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_17_magic_reinforcements",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_17_magic_reinforcements_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_4_magic_optical_illusion",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_4_magic_optical_illusion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_5_magic_trap_jaws",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_5_magic_trap_jaws_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_6_magic_blink",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_6_magic_blink_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_7_magic_shackles",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_7_magic_shackles_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_18_magic_assemble",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_18_magic_assemble_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_8_magic_carapace",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_8_magic_carapace_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_9_magic_impending_fate",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_9_magic_impending_fate_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_10_magic_mirror_copy",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_10_magic_mirror_copy_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_11_magic_decimate",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_11_magic_decimate_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_12_magic_rewind",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_12_magic_rewind_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_13_magic_black_hole",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_13_magic_black_hole_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_14_magic_doreaths_tide",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_14_magic_doreaths_tide_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_15_magic_trap_snare",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_15_magic_trap_snare_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_space_16_magic_reality_distortion",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_space_16_magic_reality_distortion_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_17_magic_groundsight",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_17_magic_groundsight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_1_magic_thunderbolt",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_1_magic_thunderbolt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_2_magic_thick_hide",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_2_magic_thick_hide_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_3_magic_wean",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_3_magic_wean_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_4_magic_fire_globe",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_4_magic_fire_globe_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_5_magic_crystal_crown",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_5_magic_crystal_crown_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_6_magic_ice_bolt",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_6_magic_ice_bolt_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_18_magic_primordial_chaos",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_18_magic_primordial_chaos_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_7_magic_wall_of_flame",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_7_magic_wall_of_flame_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_8_magic_cave_in",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_8_magic_cave_in_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_9_magic_earths_rage",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_9_magic_earths_rage_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_10_magic_primordial_purity",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_10_magic_primordial_purity_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_11_magic_armageddon",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_11_magic_armageddon_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_12_magic_chain_lightning",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_12_magic_chain_lightning_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_13_magic_avalanche",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_13_magic_avalanche_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_14_magic_hksmillas_rampage",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_14_magic_hksmillas_rampage_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_15_magic_summon_primal_remnant",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_15_magic_summon_primal_remnant_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "magic_scroll_artifact_primal_16_magic_stone_fangs",
+    "name": "Pergamino mágico",
+    "rarity": "common",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto común",
+    "icon": "icons/artifacts/magic_scroll_artifact/magic_scroll_artifact_primal_16_magic_stone_fangs_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_second_sight",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_second_sight_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_shadow_form",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_shadow_form_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_light_gate",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_light_gate_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_town_portal",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_town_portal_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_dimension_door",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_dimension_door_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "mythic_magic_scroll_artifact_neutral_magic_pocket_dimension",
+    "name": "Pergamino mágico mítico",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/mythic_scroll_box_artifact/mythic_magic_scroll_artifact_neutral_magic_pocket_dimension_icon",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "beelzebubs_blessing_demon_claw_artifact",
+    "name": "Garra de demonio",
+    "rarity": "legendary",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal legendario",
+    "icon": "icons/artifacts/beelzebubs_blessing_demon_claw_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ogres_club_of_havoc_artifact",
+    "name": "Garrote del caos del ogro",
+    "rarity": "rare",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal raro",
+    "icon": "icons/artifacts/ogres_club_of_havoc_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "angelic_alliance_sword_of_judgement_artifact",
+    "name": "Espada del juicio",
+    "rarity": "legendary",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal legendario",
+    "icon": "icons/artifacts/angelic_alliance_sword_of_judgement_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_red_dragon_flame_tongue_artifact",
+    "name": "Lengua ígnea de dragón rojo",
+    "rarity": "rare",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal raro",
+    "icon": "icons/artifacts/power_of_the_dragon_father_red_dragon_flame_tongue_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shamaniac_soul_shaman_staff_artifact",
+    "name": "Vara de chamán",
+    "rarity": "epic",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal épico",
+    "icon": "icons/artifacts/shamaniac_soul_shaman_staff_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "living_arrows_shroomwood_bow_artifact",
+    "name": "Arco de setamadera",
+    "rarity": "epic",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal épico",
+    "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shadow_of_death_dark_hatchet_artifact",
+    "name": "Hachuela oscura",
+    "rarity": "epic",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal épico",
+    "icon": "icons/artifacts/shadow_of_death_dark_hatchet_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "garotte_artifact",
+    "name": "Garrote",
+    "rarity": "epic",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal épico",
+    "icon": "icons/artifacts/garotte_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "knights_honor_lance_artifact",
+    "name": "Lanza",
+    "rarity": "rare",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal raro",
+    "icon": "icons/artifacts/knights_honor_lance_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_dumb_club_artifact",
+    "name": "Pez en la cara",
+    "rarity": "common",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal común",
+    "icon": "icons/artifacts/paupers_glory_dumb_club_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "duelists_pride_rapier_artifact",
+    "name": "Estoque",
+    "rarity": "rare",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal raro",
+    "icon": "icons/artifacts/duelists_pride_rapier_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "excalibur_artifact",
+    "name": "Excalibur",
+    "rarity": "legendary",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal legendario",
+    "icon": "icons/artifacts/excalibur_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "rule_of_shadow_the_truthmaker_artifact",
+    "name": "Hacedor de verdad",
+    "rarity": "epic",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal épico",
+    "icon": "icons/artifacts/rule_of_shadow_the_truthmaker_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "soulscaller_ring_artifact",
+    "name": "Anillo de invocador de almas",
+    "rarity": "legendary",
+    "slot": "ring",
+    "raritySlotText": "Anillo legendario",
+    "icon": "icons/artifacts/soulscaller_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "duelists_pride_brass_knuckles_artifact",
+    "name": "Nudillos de bronce",
+    "rarity": "epic",
+    "slot": "ring",
+    "raritySlotText": "Anillo épico",
+    "icon": "icons/artifacts/duelists_pride_brass_knuckles_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "sixth_finger_artifact",
+    "name": "Sexto dedo",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/sixth_finger_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "power_of_the_dragon_father_piercing_eye_of_a_dragon_artifact",
+    "name": "Ojo contenido de un dragón",
+    "rarity": "common",
+    "slot": "ring",
+    "raritySlotText": "Anillo común",
+    "icon": "icons/artifacts/power_of_the_dragon_father_piercing_eye_of_a_dragon_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "elixir_of_life_ring_of_life_artifact",
+    "name": "Anillo de vida",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/elixir_of_life_ring_of_life_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "chain_link_artifact",
+    "name": "Eslabón de cadena",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/chain_link_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "gifts_of_dwarven_lords_crimson_resonance_controller_artifact",
+    "name": "Controlador de resonancia carmesí",
+    "rarity": "epic",
+    "slot": "ring",
+    "raritySlotText": "Anillo épico",
+    "icon": "icons/artifacts/gifts_of_dwarven_lords_crimson_resonance_controller_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ring_of_neutrality_artifact",
+    "name": "Anillo de neutralidad",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/ring_of_neutrality_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "gifts_of_dwarven_lords_emerald_resonance_controller_artifact",
+    "name": "Controlador de resonancia esmeralda",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/gifts_of_dwarven_lords_emerald_resonance_controller_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "ukhtabar_seal_tabar_seal_artifact",
+    "name": "Sello de tabar",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/ukhtabar_seal_tabar_seal_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "tranquility_ring_of_serenity_artifact",
+    "name": "Fragmento de serenidad",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/tranquility_ring_of_serenity_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "paupers_glory_wooden_ring_artifact",
+    "name": "Anillo de madera",
+    "rarity": "common",
+    "slot": "ring",
+    "raritySlotText": "Anillo común",
+    "icon": "icons/artifacts/paupers_glory_wooden_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "shamaniac_soul_clutching_ring_artifact",
+    "name": "Anillo de sujeción",
+    "rarity": "common",
+    "slot": "ring",
+    "raritySlotText": "Anillo común",
+    "icon": "icons/artifacts/shamaniac_soul_clutching_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "lords_ring_artifact",
+    "name": "Anillo de señor",
+    "rarity": "epic",
+    "slot": "ring",
+    "raritySlotText": "Anillo épico",
+    "icon": "icons/artifacts/lords_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "seal_of_silence_artifact",
+    "name": "Sello del silencio",
+    "rarity": "epic",
+    "slot": "ring",
+    "raritySlotText": "Anillo épico",
+    "icon": "icons/artifacts/seal_of_silence_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "keepers_fortitude_keepers_ring_artifact",
+    "name": "Anillo del guardián",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/keepers_fortitude_keepers_ring_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_uurdt_artifact",
+    "name": "Sello sagrado de Uurdt",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_uurdt_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_the_second_man_artifact",
+    "name": "Sello sagrado del segundo hombre",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_the_second_man_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_the_seven_magi_artifact",
+    "name": "Sello sagrado de los Siete Magos",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_the_seven_magi_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_quix_artifact",
+    "name": "Sello sagrado de Quix",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_quix_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_insara_artifact",
+    "name": "Sello sagrado de Insara",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_insara_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_mearea_artifact",
+    "name": "Sello sagrado de Mearea",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_mearea_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_eridore_artifact",
+    "name": "Sello sagrado de Eridore",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_eridore_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  },
+  {
+    "id": "holy_sigil_of_roph_artifact",
+    "name": "Sello sagrado de Roph",
+    "rarity": "epic",
+    "slot": "unic_slot",
+    "raritySlotText": "Reliquia épica",
+    "icon": "icons/artifacts/holy_sigil_of_roph_artifact",
+    "isOrphan": false,
+    "prefabPath": null
+  }
+]

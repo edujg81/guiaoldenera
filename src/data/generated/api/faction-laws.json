@@ -1,0 +1,1395 @@
+[
+  {
+    "id": "fraction_law_demon_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_1_icon"
+  },
+  {
+    "id": "fraction_law_demon_2",
+    "name": "Leyes de la Colmena",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_2_icon"
+  },
+  {
+    "id": "fraction_law_demon_3",
+    "name": "Riqueza de recursos I",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_3_icon"
+  },
+  {
+    "id": "fraction_law_demon_4",
+    "name": "Integración de la Colmena",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_4_icon"
+  },
+  {
+    "id": "fraction_law_demon_5",
+    "name": "Recepción de la Colmena",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_5_icon"
+  },
+  {
+    "id": "fraction_law_demon_6",
+    "name": "Vástagos de la Colmena I",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_6_icon"
+  },
+  {
+    "id": "fraction_law_demon_7",
+    "name": "Reservas de concentración",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_31_icon"
+  },
+  {
+    "id": "fraction_law_demon_8",
+    "name": "Deseos ocultos",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_8_icon"
+  },
+  {
+    "id": "fraction_law_demon_9",
+    "name": "Devorar maná",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_9_icon"
+  },
+  {
+    "id": "fraction_law_demon_10",
+    "name": "Parásitos de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_10_icon"
+  },
+  {
+    "id": "fraction_law_demon_11",
+    "name": "Langostas de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_11_icon"
+  },
+  {
+    "id": "fraction_law_demon_12",
+    "name": "Avispones de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_12_icon"
+  },
+  {
+    "id": "fraction_law_demon_13",
+    "name": "Minería: Cristales",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_13_icon"
+  },
+  {
+    "id": "fraction_law_demon_14",
+    "name": "Poder ancestral",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_14_icon"
+  },
+  {
+    "id": "fraction_law_demon_15",
+    "name": "Riquezas de recursos II",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_15_icon"
+  },
+  {
+    "id": "fraction_law_demon_16",
+    "name": "Escorpiones de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_16_icon"
+  },
+  {
+    "id": "fraction_law_demon_17",
+    "name": "Asoladores de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_17_icon"
+  },
+  {
+    "id": "fraction_law_demon_18",
+    "name": "Vermes de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_18_icon"
+  },
+  {
+    "id": "fraction_law_demon_19",
+    "name": "Vástagos de la Colmena II",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_19_icon"
+  },
+  {
+    "id": "fraction_law_demon_20",
+    "name": "Evolucionar, adaptarse, prevalecer",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_20_icon"
+  },
+  {
+    "id": "fraction_law_demon_21",
+    "name": "Selección natural",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_21_icon"
+  },
+  {
+    "id": "fraction_law_demon_22",
+    "name": "Magia de la Colmena",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_22_icon"
+  },
+  {
+    "id": "fraction_law_demon_23",
+    "name": "Reinas de la Colmena de élite",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_23_icon"
+  },
+  {
+    "id": "fraction_law_demon_24",
+    "name": "Gran conquista",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_24_icon"
+  },
+  {
+    "id": "fraction_law_demon_25",
+    "name": "Mirada de Belcebú",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_25_icon"
+  },
+  {
+    "id": "fraction_law_demon_26",
+    "name": "Prosperar y florecer",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_26_icon"
+  },
+  {
+    "id": "fraction_law_demon_27",
+    "name": "Riquezas de recursos III",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_27_icon"
+  },
+  {
+    "id": "fraction_law_demon_28",
+    "name": "Ira infernal",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_28_icon"
+  },
+  {
+    "id": "fraction_law_demon_29",
+    "name": "Sin compasión",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_29_icon"
+  },
+  {
+    "id": "fraction_law_demon_30",
+    "name": "Vástagos de la Colmena III",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/fraction_law_demon_30_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_1_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_2",
+    "name": "Líderes de la nación",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_2_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_3",
+    "name": "Riqueza de recursos I",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_3_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_4",
+    "name": "Trogloditas de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_4_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_5",
+    "name": "Escamas de dragón",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_5_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_6",
+    "name": "Maestros de mazmorras I",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_6_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_7",
+    "name": "¿Sin mineral?",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_7_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_8",
+    "name": "Mapas de Jadame",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_8_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_9",
+    "name": "Código de alquimistas I",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_9_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_10",
+    "name": "Infiltrados de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_10_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_11",
+    "name": "Bailarinas de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_11_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_12",
+    "name": "Maestros de mazmorras II",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_12_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_13",
+    "name": "Maestros de mazmorras III",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_13_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_14",
+    "name": "Minería: Gemas",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_14_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_15",
+    "name": "Red de espías",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_15_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_16",
+    "name": "Pueblo de Jadame",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_16_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_17",
+    "name": "Riquezas de recursos II",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_17_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_18",
+    "name": "Minotauros de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_18_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_19",
+    "name": "Medusas de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_19_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_20",
+    "name": "Ventaja táctica",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_20_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_21",
+    "name": "Maestros de mazmorras IV",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_21_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_22",
+    "name": "Agentes del Triunvirato",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_22_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_23",
+    "name": "Gremio de comerciantes",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_23_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_24",
+    "name": "Código de alquimistas II",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_24_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_25",
+    "name": "Hidras de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_25_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_26",
+    "name": "Maestros de mazmorras V",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_26_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_27",
+    "name": "Maestros de mazmorras VI",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_27_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_28",
+    "name": "Educación mágica",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_28_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_29",
+    "name": "Saturación",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_nature_19_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_30",
+    "name": "Riquezas de recursos III",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_30_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_31",
+    "name": "Dragones de cueva de élite",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_31_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_32",
+    "name": "Maestros de mazmorras VII",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_32_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_33",
+    "name": "Mapas celestiales",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_33_icon"
+  },
+  {
+    "id": "fraction_law_dungeon_34",
+    "name": "Conocimiento arcano",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_34_icon"
+  },
+  {
+    "id": "fraction_law_human_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_1_icon"
+  },
+  {
+    "id": "fraction_law_human_2",
+    "name": "Entrenamiento: Exploración",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_2_icon"
+  },
+  {
+    "id": "fraction_law_human_3",
+    "name": "Riqueza de recursos I",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_3_icon"
+  },
+  {
+    "id": "fraction_law_human_4",
+    "name": "Espadachines de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_4_icon"
+  },
+  {
+    "id": "fraction_law_human_5",
+    "name": "Ejecutar excelencia",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_5_icon"
+  },
+  {
+    "id": "fraction_law_human_6",
+    "name": "Entrenamiento: Ataque",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_6_icon"
+  },
+  {
+    "id": "fraction_law_human_7",
+    "name": "Entrenamiento: Defensa",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_7_icon"
+  },
+  {
+    "id": "fraction_law_human_8",
+    "name": "Entrenamiento: Poder de hechizo",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_8_icon"
+  },
+  {
+    "id": "fraction_law_human_9",
+    "name": "Entrenamiento: Conocimiento",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_9_icon"
+  },
+  {
+    "id": "fraction_law_human_10",
+    "name": "Saeteros de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_10_icon"
+  },
+  {
+    "id": "fraction_law_human_11",
+    "name": "Grifos de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_11_icon"
+  },
+  {
+    "id": "fraction_law_human_12",
+    "name": "Reflejos rápidos",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_12_icon"
+  },
+  {
+    "id": "fraction_law_human_13",
+    "name": "Golpe vengativo",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_13_icon"
+  },
+  {
+    "id": "fraction_law_human_14",
+    "name": "Minería: Gemas",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_14_icon"
+  },
+  {
+    "id": "fraction_law_human_15",
+    "name": "Gracia del Sol",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_15_icon"
+  },
+  {
+    "id": "fraction_law_human_16",
+    "name": "Riquezas de recursos II",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_16_icon"
+  },
+  {
+    "id": "fraction_law_human_17",
+    "name": "Tejedoras de luz de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_17_icon"
+  },
+  {
+    "id": "fraction_law_human_18",
+    "name": "Entrenamiento: Combate cuerpo a cuerpo",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_18_icon"
+  },
+  {
+    "id": "fraction_law_human_19",
+    "name": "Entrenamiento: Combate a distancia",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_20_icon"
+  },
+  {
+    "id": "fraction_law_human_20",
+    "name": "Entrenamiento: Combate a distancia",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_20_icon"
+  },
+  {
+    "id": "fraction_law_human_21",
+    "name": "Reforma de la moneda",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_21_icon"
+  },
+  {
+    "id": "fraction_law_human_22",
+    "name": "Héroes de fábulas",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_22_icon"
+  },
+  {
+    "id": "fraction_law_human_23",
+    "name": "Caballería de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_23_icon"
+  },
+  {
+    "id": "fraction_law_human_24",
+    "name": "Inquisidores de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_24_icon"
+  },
+  {
+    "id": "fraction_law_human_25",
+    "name": "Aliento",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_25_icon"
+  },
+  {
+    "id": "fraction_law_human_26",
+    "name": "Bendición del héroe",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_26_icon"
+  },
+  {
+    "id": "fraction_law_human_27",
+    "name": "Poder de la fe",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_27_icon"
+  },
+  {
+    "id": "fraction_law_human_28",
+    "name": "Maestría del arquitecto",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_28_icon"
+  },
+  {
+    "id": "fraction_law_human_29",
+    "name": "Riquezas de recursos III",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_29_icon"
+  },
+  {
+    "id": "fraction_law_human_30",
+    "name": "Ángeles de élite",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_30_icon"
+  },
+  {
+    "id": "fraction_law_human_31",
+    "name": "La concentración es clave",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_31_icon"
+  },
+  {
+    "id": "fraction_law_human_32",
+    "name": "Tierras sagradas",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_32_icon"
+  },
+  {
+    "id": "fraction_law_human_33",
+    "name": "Cruzada de la Inquisición",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_33_icon"
+  },
+  {
+    "id": "fraction_law_human_34",
+    "name": "Fe en la magia",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "icon": "icons/fraction_laws/fraction_law_human_34_icon"
+  },
+  {
+    "id": "fraction_law_nature_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_1_icon"
+  },
+  {
+    "id": "fraction_law_nature_2",
+    "name": "El saber es poder",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_2_icon"
+  },
+  {
+    "id": "fraction_law_nature_3",
+    "name": "Héroes del pueblo",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_3_icon"
+  },
+  {
+    "id": "fraction_law_nature_4",
+    "name": "Riqueza de recursos I",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_4_icon"
+  },
+  {
+    "id": "fraction_law_nature_5",
+    "name": "Faunos de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_5_icon"
+  },
+  {
+    "id": "fraction_law_nature_6",
+    "name": "Lupuciérnagas de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_6_icon"
+  },
+  {
+    "id": "fraction_law_nature_7",
+    "name": "Hijos de la naturaleza",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_7_icon"
+  },
+  {
+    "id": "fraction_law_nature_8",
+    "name": "Salvemos los bosques",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_8_icon"
+  },
+  {
+    "id": "fraction_law_nature_9",
+    "name": "Resistencia del bosque",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_9_icon"
+  },
+  {
+    "id": "fraction_law_nature_10",
+    "name": "Íriyad de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_10_icon"
+  },
+  {
+    "id": "fraction_law_nature_11",
+    "name": "Naturaleza salvaje",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_11_icon"
+  },
+  {
+    "id": "fraction_law_nature_12",
+    "name": "Resolución de la naturaleza",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_12_icon"
+  },
+  {
+    "id": "fraction_law_nature_13",
+    "name": "Minería: Cristales",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_13_icon"
+  },
+  {
+    "id": "fraction_law_nature_14",
+    "name": "Magia del bosque",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_14_icon"
+  },
+  {
+    "id": "fraction_law_nature_15",
+    "name": "Riquezas de recursos II",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_15_icon"
+  },
+  {
+    "id": "fraction_law_nature_16",
+    "name": "Náyades de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_16_icon"
+  },
+  {
+    "id": "fraction_law_nature_17",
+    "name": "Velado por los árboles",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_17_icon"
+  },
+  {
+    "id": "fraction_law_nature_18",
+    "name": "El poder de la palabra escrita",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_18_icon"
+  },
+  {
+    "id": "fraction_law_nature_19",
+    "name": "Concentración",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_dungeon_29_icon"
+  },
+  {
+    "id": "fraction_law_nature_20",
+    "name": "Suelo fértil",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_20_icon"
+  },
+  {
+    "id": "fraction_law_nature_21",
+    "name": "Raíces vivas",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_21_icon"
+  },
+  {
+    "id": "fraction_law_nature_22",
+    "name": "Mantes de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_22_icon"
+  },
+  {
+    "id": "fraction_law_nature_23",
+    "name": "Qilin de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_23_icon"
+  },
+  {
+    "id": "fraction_law_nature_24",
+    "name": "La suerte del más fuerte",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_24_icon"
+  },
+  {
+    "id": "fraction_law_nature_25",
+    "name": "Fuerza de la naturaleza",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_25_icon"
+  },
+  {
+    "id": "fraction_law_nature_26",
+    "name": "Riquezas de recursos III",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_26_icon"
+  },
+  {
+    "id": "fraction_law_nature_27",
+    "name": "Fénix de élite",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_27_icon"
+  },
+  {
+    "id": "fraction_law_nature_28",
+    "name": "Cuento de hadas",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_28_icon"
+  },
+  {
+    "id": "fraction_law_nature_29",
+    "name": "Santuario",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_29_icon"
+  },
+  {
+    "id": "fraction_law_nature_30",
+    "name": "Cielo despejado",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_30_icon"
+  },
+  {
+    "id": "fraction_law_nature_31",
+    "name": "Serenidad natural",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "icon": "icons/fraction_laws/fraction_law_nature_31_icon"
+  },
+  {
+    "id": "fraction_law_undead_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_1_icon"
+  },
+  {
+    "id": "fraction_law_undead_2",
+    "name": "Animar a los muertos I",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_2_icon"
+  },
+  {
+    "id": "fraction_law_undead_3",
+    "name": "Riqueza de recursos I",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_3_icon"
+  },
+  {
+    "id": "fraction_law_undead_4",
+    "name": "Esqueletos de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_4_icon"
+  },
+  {
+    "id": "fraction_law_undead_5",
+    "name": "Apariciones de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_5_icon"
+  },
+  {
+    "id": "fraction_law_undead_6",
+    "name": "¡Resistid hasta la muerte!",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_6_icon"
+  },
+  {
+    "id": "fraction_law_undead_7",
+    "name": "Animar a los muertos II",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_7_icon"
+  },
+  {
+    "id": "fraction_law_undead_8",
+    "name": "Leyes de los inmortales",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_8_icon"
+  },
+  {
+    "id": "fraction_law_undead_9",
+    "name": "La muerte iguala a todos",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_9_icon"
+  },
+  {
+    "id": "fraction_law_undead_10",
+    "name": "Mascotas no muertas de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_10_icon"
+  },
+  {
+    "id": "fraction_law_undead_11",
+    "name": "Ladrones de tumbas de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_11_icon"
+  },
+  {
+    "id": "fraction_law_undead_12",
+    "name": "Dones del más allá",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_12_icon"
+  },
+  {
+    "id": "fraction_law_undead_13",
+    "name": "Minería: Mercurio",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_13_icon"
+  },
+  {
+    "id": "fraction_law_undead_14",
+    "name": "Alquimia prohibida",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_14_icon"
+  },
+  {
+    "id": "fraction_law_undead_15",
+    "name": "Animar a los muertos III",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_15_icon"
+  },
+  {
+    "id": "fraction_law_undead_16",
+    "name": "Riquezas de recursos II",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_16_icon"
+  },
+  {
+    "id": "fraction_law_undead_17",
+    "name": "Sed de sangre",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_17_icon"
+  },
+  {
+    "id": "fraction_law_undead_18",
+    "name": "Liches de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_18_icon"
+  },
+  {
+    "id": "fraction_law_undead_19",
+    "name": "Caballeros del terror de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_19_icon"
+  },
+  {
+    "id": "fraction_law_undead_20",
+    "name": "Terra mortis",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_20_icon"
+  },
+  {
+    "id": "fraction_law_undead_21",
+    "name": "Animar a los muertos IV",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_21_icon"
+  },
+  {
+    "id": "fraction_law_undead_22",
+    "name": "Muerte gratuita",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_22_icon"
+  },
+  {
+    "id": "fraction_law_undead_23",
+    "name": "Vampiros de élite",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_23_icon"
+  },
+  {
+    "id": "fraction_law_undead_24",
+    "name": "Retorno a la tierra",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_24_icon"
+  },
+  {
+    "id": "fraction_law_undead_25",
+    "name": "Más allá del descanso final",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_25_icon"
+  },
+  {
+    "id": "fraction_law_undead_26",
+    "name": "Muerte negra",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_26_icon"
+  },
+  {
+    "id": "fraction_law_undead_27",
+    "name": "Animar a los muertos V",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_27_icon"
+  },
+  {
+    "id": "fraction_law_undead_28",
+    "name": "Riquezas de recursos III",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_28_icon"
+  },
+  {
+    "id": "fraction_law_undead_29",
+    "name": "Terror y pavor",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_29_icon"
+  },
+  {
+    "id": "fraction_law_undead_30",
+    "name": "Morituri te salutant",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_30_icon"
+  },
+  {
+    "id": "fraction_law_undead_31",
+    "name": "Presencia de la muerte",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_31_icon"
+  },
+  {
+    "id": "fraction_law_undead_32",
+    "name": "Gracia de la Luna",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_32_icon"
+  },
+  {
+    "id": "fraction_law_undead_34",
+    "name": "Absorción mágica",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "icon": "icons/fraction_laws/fraction_law_undead_34_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_1",
+    "name": "Recaudadores de impuestos",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_1_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_2",
+    "name": "Sabiduría generacional",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_2_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_3",
+    "name": "Riqueza de recursos I",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_3_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_4",
+    "name": "Tierra natal gélida",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_4_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_5",
+    "name": "Ra'shoth de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_5_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_6",
+    "name": "Fuerza descongelada I",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_6_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_7",
+    "name": "Poder del hielo",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_7_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_8",
+    "name": "Condiciones de supervivencia",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_8_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_9",
+    "name": "Profundidades de la mente",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_9_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_10",
+    "name": "Fuerza descongelada II",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_10_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_11",
+    "name": "Fuerza descongelada III",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_11_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_12",
+    "name": "Cultores de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_12_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_13",
+    "name": "Jinetes de aga'shoth de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_13_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_14",
+    "name": "Minería: Mercurio",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_14_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_15",
+    "name": "Magia de otro mundo",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_15_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_16",
+    "name": "Frialdad en el trato",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_16_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_17",
+    "name": "Riquezas de recursos II",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_17_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_18",
+    "name": "Fuerza descongelada IV",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_18_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_19",
+    "name": "Shoth majestuoso de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_19_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_20",
+    "name": "Tacto frío",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_20_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_21",
+    "name": "Helada",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_21_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_22",
+    "name": "Llamada de las profundidades",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_22_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_23",
+    "name": "Destrucción inevitable",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_23_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_24",
+    "name": "Fuerza descongelada V",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_24_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_25",
+    "name": "Fuerza descongelada VI",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_25_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_26",
+    "name": "Cóncubos de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_26_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_27",
+    "name": "Árbitros de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_27_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_28",
+    "name": "Congelación mental",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_28_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_29",
+    "name": "El Abismo devuelve la mirada",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_29_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_30",
+    "name": "Riquezas de recursos III",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_30_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_31",
+    "name": "Fuerza descongelada VII",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_31_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_32",
+    "name": "Enviados abisales de élite",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_32_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_33",
+    "name": "Tormentas de hielo",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_33_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_34",
+    "name": "El mundo es nuestro",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_34_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_35",
+    "name": "Exploradores planares",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_35_icon"
+  },
+  {
+    "id": "fraction_law_unfrozen_36",
+    "name": "Cero absoluto",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "icon": "icons/fraction_laws/fraction_law_unfrozen_36_icon"
+  },
+  {
+    "id": "fraction_law_demon_31",
+    "name": "Reservas de concentración",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "icon": "icons/fraction_laws/wip_fraction_law_icon"
+  }
+]

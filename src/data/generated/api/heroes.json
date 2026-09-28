@@ -1,0 +1,974 @@
+[
+  {
+    "id": "demon_hero_1",
+    "name": "Niev",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_1_x_nieven_large"
+  },
+  {
+    "id": "demon_hero_10",
+    "name": "Fleu",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_10_fleu_large"
+  },
+  {
+    "id": "demon_hero_11",
+    "name": "Xirr",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_11_x_ramman_large"
+  },
+  {
+    "id": "demon_hero_12",
+    "name": "Bathym, Duque de las Joyas",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_12_bathin_duke_of_jewels_large"
+  },
+  {
+    "id": "demon_hero_13",
+    "name": "Leira",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_13_x_aleria_large"
+  },
+  {
+    "id": "demon_hero_14",
+    "name": "Groo",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_14_grooo_large"
+  },
+  {
+    "id": "demon_hero_15",
+    "name": "Mila",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_15_x_mila_large"
+  },
+  {
+    "id": "demon_hero_16",
+    "name": "Oriax",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_16_oriax_large"
+  },
+  {
+    "id": "demon_hero_17",
+    "name": "Khariseth",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_17_hera-hera_large"
+  },
+  {
+    "id": "demon_hero_18",
+    "name": "Pauper",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_18_pauper_x_wistari_large"
+  },
+  {
+    "id": "demon_hero_2",
+    "name": "Vorágine",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_2_maelstrom_large"
+  },
+  {
+    "id": "demon_hero_3",
+    "name": "Nor",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_3_x_ubunor_large"
+  },
+  {
+    "id": "demon_hero_4",
+    "name": "Zoran el Autofundado",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_4_zoran_self_founded_large"
+  },
+  {
+    "id": "demon_hero_5",
+    "name": "Curson, Duque de la Ira",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_5_purson_duke_of_rage_large"
+  },
+  {
+    "id": "demon_hero_6",
+    "name": "Tavi",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "magic",
+    "classDisplay": "Heraldo",
+    "iconPath": "icons/hero_large_portraits/hero_demon_6_xtaviola_large"
+  },
+  {
+    "id": "demon_hero_7",
+    "name": "Lo",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_7_x_lo_large"
+  },
+  {
+    "id": "demon_hero_8",
+    "name": "Lengua de Oro",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_8_goldentongue_large"
+  },
+  {
+    "id": "demon_hero_9",
+    "name": "Abigor, Duque de la Batalla",
+    "faction": "demon",
+    "factionDisplay": "Colmena",
+    "classType": "might",
+    "classDisplay": "Ejecutor",
+    "iconPath": "icons/hero_large_portraits/hero_demon_9_eligos_duke_of_battle_large"
+  },
+  {
+    "id": "dungeon_hero_1",
+    "name": "Enatee",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_1_enatee_large"
+  },
+  {
+    "id": "dungeon_hero_10",
+    "name": "Kelarr, hijo de Navarr",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_10_kelarr_large"
+  },
+  {
+    "id": "dungeon_hero_11",
+    "name": "Zakron el Grande",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_11_zachron_large"
+  },
+  {
+    "id": "dungeon_hero_12",
+    "name": "Hermana Deira",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_12_sister_deira_large"
+  },
+  {
+    "id": "dungeon_hero_13",
+    "name": "Motley",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_13_motley_large"
+  },
+  {
+    "id": "dungeon_hero_14",
+    "name": "Ylwari",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_14_ylwara_large"
+  },
+  {
+    "id": "dungeon_hero_15",
+    "name": "Glastor",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_15_glastor_large"
+  },
+  {
+    "id": "dungeon_hero_16",
+    "name": "Typhona",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_16_typhona_large"
+  },
+  {
+    "id": "dungeon_hero_17",
+    "name": "Rauktol el Soleado",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_17_sunny_rauktol_large"
+  },
+  {
+    "id": "dungeon_hero_18",
+    "name": "Lodos",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "magic",
+    "classDisplay": "Brujo",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_18_lodos_large"
+  },
+  {
+    "id": "dungeon_hero_2",
+    "name": "Tellaris el Traicionado",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_2_talleris_the_betrayed_large"
+  },
+  {
+    "id": "dungeon_hero_3",
+    "name": "Aguijón",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_3_stinger_large"
+  },
+  {
+    "id": "dungeon_hero_4",
+    "name": "Kieran",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_4_blind_kieran_large"
+  },
+  {
+    "id": "dungeon_hero_5",
+    "name": "Mouaren",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_5_mouaren_large"
+  },
+  {
+    "id": "dungeon_hero_6",
+    "name": "Devir, hijo de Devir",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_6_devir_large"
+  },
+  {
+    "id": "dungeon_hero_7",
+    "name": "Creta, hija de Navarr",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_7_creta_large"
+  },
+  {
+    "id": "dungeon_hero_8",
+    "name": "Rhea",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_8_rhea_large"
+  },
+  {
+    "id": "dungeon_hero_9",
+    "name": "Gleard el Gris",
+    "faction": "dungeon",
+    "factionDisplay": "Mazmorra",
+    "classType": "might",
+    "classDisplay": "Adalid",
+    "iconPath": "icons/hero_large_portraits/hero_dungeon_9_gleard_large"
+  },
+  {
+    "id": "human_hero_1",
+    "name": "Ister",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_1_ister_large"
+  },
+  {
+    "id": "human_hero_10",
+    "name": "Elias el Alegre",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_10_merry_elias_large"
+  },
+  {
+    "id": "human_hero_11",
+    "name": "Pip",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_11_pip_large"
+  },
+  {
+    "id": "human_hero_12",
+    "name": "Zenith",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_12_zenith_large"
+  },
+  {
+    "id": "human_hero_13",
+    "name": "Lia la Desatada",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_13_lia_the_untethered_large"
+  },
+  {
+    "id": "human_hero_14",
+    "name": "Julius",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_14_julius_large"
+  },
+  {
+    "id": "human_hero_15",
+    "name": "Vesper",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_15_vesper_large"
+  },
+  {
+    "id": "human_hero_16",
+    "name": "Anastasia la Dócil",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_16_anastasia_the_meek_large"
+  },
+  {
+    "id": "human_hero_17",
+    "name": "Nadir",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_17_nadir_large"
+  },
+  {
+    "id": "human_hero_18",
+    "name": "Clarissa",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "magic",
+    "classDisplay": "Clérigo",
+    "iconPath": "icons/hero_large_portraits/hero_human_18_clarissa_large"
+  },
+  {
+    "id": "human_hero_2",
+    "name": "Leon Dedos Pegajosos",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_2_leon_sticky_fingers_large"
+  },
+  {
+    "id": "human_hero_3",
+    "name": "John Johnson",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_3_john_johnson_large"
+  },
+  {
+    "id": "human_hero_4",
+    "name": "Kestrel",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_4_kestrel_large"
+  },
+  {
+    "id": "human_hero_5",
+    "name": "Aeos la Exaltada",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_5_aeos_the_exalted_large"
+  },
+  {
+    "id": "human_hero_6",
+    "name": "Avis el Hereje",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_6_heretic_avis_large"
+  },
+  {
+    "id": "human_hero_7",
+    "name": "Keandra",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_7_leandra_large"
+  },
+  {
+    "id": "human_hero_8",
+    "name": "Lord Edgar",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_8_lord_edgar_large"
+  },
+  {
+    "id": "human_hero_9",
+    "name": "Viejo lord Mandall",
+    "faction": "human",
+    "factionDisplay": "Templo",
+    "classType": "might",
+    "classDisplay": "Caballero",
+    "iconPath": "icons/hero_large_portraits/hero_human_9_old_lord_mandall_large"
+  },
+  {
+    "id": "nature_hero_1",
+    "name": "Eith",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_1_eith_large"
+  },
+  {
+    "id": "nature_hero_10",
+    "name": "Vatawna",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_10_vatawna_large"
+  },
+  {
+    "id": "nature_hero_11",
+    "name": "Anciano Tss'kish",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_11_elder_tsskish_large"
+  },
+  {
+    "id": "nature_hero_12",
+    "name": "Aeliniel",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_12_capreola_large"
+  },
+  {
+    "id": "nature_hero_13",
+    "name": "Glacia",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_13_glacia_large"
+  },
+  {
+    "id": "nature_hero_14",
+    "name": "Vim",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_14_vim_large"
+  },
+  {
+    "id": "nature_hero_15",
+    "name": "Halon",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_15_halon_large"
+  },
+  {
+    "id": "nature_hero_16",
+    "name": "Echolily",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_16_echolalia_large"
+  },
+  {
+    "id": "nature_hero_17",
+    "name": "Suli",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_17_sullie_large"
+  },
+  {
+    "id": "nature_hero_18",
+    "name": "El juglar",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "magic",
+    "classDisplay": "Druida",
+    "iconPath": "icons/hero_large_portraits/hero_nature_18_mute_minstrel_large"
+  },
+  {
+    "id": "nature_hero_2",
+    "name": "Gorel Punta de Lanza",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_2_gorel_spearhead_large"
+  },
+  {
+    "id": "nature_hero_3",
+    "name": "Colajengibre",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_3_gingertail_large"
+  },
+  {
+    "id": "nature_hero_4",
+    "name": "Viejo Peregrino",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_4_old_peregrinator_large"
+  },
+  {
+    "id": "nature_hero_5",
+    "name": "Octavia",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_5_octavia_large"
+  },
+  {
+    "id": "nature_hero_6",
+    "name": "Mreowa",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_6_mreowa_large"
+  },
+  {
+    "id": "nature_hero_7",
+    "name": "Faleor",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_7_faleor_large"
+  },
+  {
+    "id": "nature_hero_8",
+    "name": "Seductora Sh'a",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_8_alluring_sha_large"
+  },
+  {
+    "id": "nature_hero_9",
+    "name": "Tía Daliar",
+    "faction": "nature",
+    "factionDisplay": "Foresta",
+    "classType": "might",
+    "classDisplay": "Guardián",
+    "iconPath": "icons/hero_large_portraits/hero_nature_9_aunt_daliar_large"
+  },
+  {
+    "id": "necro_hero_1",
+    "name": "Baluarte",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_1_bulwark_large"
+  },
+  {
+    "id": "necro_hero_10",
+    "name": "Mag",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_10_mag_large"
+  },
+  {
+    "id": "necro_hero_11",
+    "name": "Adahn",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_11_adahn_large"
+  },
+  {
+    "id": "necro_hero_12",
+    "name": "Ethric",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_12_ethric_large"
+  },
+  {
+    "id": "necro_hero_13",
+    "name": "Maestro Klastor",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_13_klasto_large"
+  },
+  {
+    "id": "necro_hero_14",
+    "name": "Hilasombras Oona",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_14_shadespinner_oona_large"
+  },
+  {
+    "id": "necro_hero_15",
+    "name": "Laura",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_15_laura_large"
+  },
+  {
+    "id": "necro_hero_16",
+    "name": "Lord Rufus",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_16_lord_rufus_large"
+  },
+  {
+    "id": "necro_hero_17",
+    "name": "Funerella",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_17_funerella_large"
+  },
+  {
+    "id": "necro_hero_18",
+    "name": "Milossa la Dorada",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "magic",
+    "classDisplay": "Nigromante",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_18_milossa_the_golden_large"
+  },
+  {
+    "id": "necro_hero_2",
+    "name": "Rey de Reyes",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_2_king_of_kings_large"
+  },
+  {
+    "id": "necro_hero_3",
+    "name": "Onkos",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_3_onkos_large"
+  },
+  {
+    "id": "necro_hero_4",
+    "name": "Kel'Ghul",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_4_kelghul_large"
+  },
+  {
+    "id": "necro_hero_5",
+    "name": "Natalida",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_5_natalida_large"
+  },
+  {
+    "id": "necro_hero_6",
+    "name": "Artorius Veritas",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_6_artorius_veritas_large"
+  },
+  {
+    "id": "necro_hero_7",
+    "name": "Marl",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_7_marl_large"
+  },
+  {
+    "id": "necro_hero_8",
+    "name": "Tarius",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_8_iratus_large"
+  },
+  {
+    "id": "necro_hero_9",
+    "name": "Zam",
+    "faction": "undead",
+    "factionDisplay": "Necrópolis",
+    "classType": "might",
+    "classDisplay": "Caballero de la muerte",
+    "iconPath": "icons/hero_large_portraits/hero_necromancer_9_zam_large"
+  },
+  {
+    "id": "unfrozen_hero_1",
+    "name": "Nihil",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_1_nihil_large"
+  },
+  {
+    "id": "unfrozen_hero_10",
+    "name": "Grellekh el Traidor",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_10_grellekh_large"
+  },
+  {
+    "id": "unfrozen_hero_11",
+    "name": "Reina de Hielo Hel'Ghat",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_11_ice_queen_ort_large"
+  },
+  {
+    "id": "unfrozen_hero_12",
+    "name": "Kwinri",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_12_kwinri_large"
+  },
+  {
+    "id": "unfrozen_hero_13",
+    "name": "La Mirada Colectiva",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_13_the_eye_colletcive_large"
+  },
+  {
+    "id": "unfrozen_hero_14",
+    "name": "Tölketh",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_14_tolketh_guiding_star_large"
+  },
+  {
+    "id": "unfrozen_hero_15",
+    "name": "Ulkuth",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_15_ulkuth_large"
+  },
+  {
+    "id": "unfrozen_hero_16",
+    "name": "Ra'Davok",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_16_ra_daphokh_large"
+  },
+  {
+    "id": "unfrozen_hero_17",
+    "name": "Hermana Keiri",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_17_sister_keiri_large"
+  },
+  {
+    "id": "unfrozen_hero_18",
+    "name": "Dhüvri",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "magic",
+    "classDisplay": "Portavoz de la Grieta",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_18_dhuvri_large"
+  },
+  {
+    "id": "unfrozen_hero_2",
+    "name": "Cuerno Negro",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_2_blackhorn_large"
+  },
+  {
+    "id": "unfrozen_hero_3",
+    "name": "Matastala la Blanca",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_3_matastala_the_white_large"
+  },
+  {
+    "id": "unfrozen_hero_4",
+    "name": "Jänhei",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_4_janhei_large"
+  },
+  {
+    "id": "unfrozen_hero_5",
+    "name": "Mara Mat'ha",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_5_mara_matha_large"
+  },
+  {
+    "id": "unfrozen_hero_6",
+    "name": "El Doncel de Hierro",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_6_iron_master_large"
+  },
+  {
+    "id": "unfrozen_hero_7",
+    "name": "Wal'kha",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_7_walkha_large"
+  },
+  {
+    "id": "unfrozen_hero_8",
+    "name": "Urgo el Cambiante",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_8_changeling_urgo_large"
+  },
+  {
+    "id": "unfrozen_hero_9",
+    "name": "Mártir Tho",
+    "faction": "unfrozen",
+    "factionDisplay": "Cisma",
+    "classType": "might",
+    "classDisplay": "Juramentado",
+    "iconPath": "icons/hero_large_portraits/hero_unfrozen_9_martyr_tho_large"
+  }
+]

@@ -1,0 +1,2344 @@
+[
+  {
+    "id": "abandoned_corpse",
+    "name": "Restos olvidados",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_corpse",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "abandoned_mansion",
+    "name": "Mansión abandonada",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_mansion",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "abandoned_outpost",
+    "name": "Puesto avanzado abandonado",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_outpost",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "abnormal_structure",
+    "name": "Estructura anormal",
+    "category": "Interact",
+    "icon": "objects/interactive/abnormal_structure",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ]
+  },
+  {
+    "id": "alchemy_lab",
+    "name": "Laboratorio alquímico",
+    "category": "Interact",
+    "icon": "objects/interactive/alchemy_lab",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "altar_of_magic_1",
+    "name": "Sagrario de nochesombra",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ]
+  },
+  {
+    "id": "altar_of_magic_2",
+    "name": "Sagrario de luz solar",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ]
+  },
+  {
+    "id": "altar_of_magic_3",
+    "name": "Sagrario arcano",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ]
+  },
+  {
+    "id": "altar_of_magic_4",
+    "name": "Sagrario primigenio",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ]
+  },
+  {
+    "id": "alvars_eye",
+    "name": "Puesto avanzado de Alvar",
+    "category": "Interact",
+    "icon": "objects/interactive/alvars_eye",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "arena",
+    "name": "Foso de la gloria",
+    "category": "Interact",
+    "icon": "objects/interactive/arena",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "armory_automaton",
+    "name": "Autómata de la cumbre",
+    "category": "Interact",
+    "icon": "objects/interactive/armory_automaton",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_1",
+    "name": "Vivienda abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_2",
+    "name": "Guarida de carroña",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_3",
+    "name": "Nido de papel",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_4",
+    "name": "Zigurat quitinoso",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_5",
+    "name": "Cima",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_6",
+    "name": "Madrigueras de alma ardiente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_demon_7",
+    "name": "Torre de amor",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_1",
+    "name": "Cubil",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_2",
+    "name": "Refugio",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_3",
+    "name": "Anfiteatro",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_4",
+    "name": "Laberinto",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_5",
+    "name": "Voces quietas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_6",
+    "name": "Hogar ctónico",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_dungeon_7",
+    "name": "Palacio de cueva",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_1",
+    "name": "Guarnición",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_2",
+    "name": "Pajarera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_3",
+    "name": "Colonia de grifos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_4",
+    "name": "Capilla de resol",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_5",
+    "name": "Hipódromo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_6",
+    "name": "Basílica del umbral",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_human_7",
+    "name": "Forja radiante",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_1",
+    "name": "Cabañas de faunos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_2",
+    "name": "Huerto de lúpulo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_3",
+    "name": "Círculo de menhires",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_4",
+    "name": "Estanque floreciente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_5",
+    "name": "Cabaña de setamadera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_6",
+    "name": "Guarida del trueno",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_nature_7",
+    "name": "Pira",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_1",
+    "name": "Criptas y tumbas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_2",
+    "name": "Pabellón tranquilo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_3",
+    "name": "Perrera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_4",
+    "name": "Intercambio de huesos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_5",
+    "name": "Mansión atemporal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_6",
+    "name": "Tumba de guerreros",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_necropolis_7",
+    "name": "Castillo de festines",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_1",
+    "name": "Templo de los Cuatro Eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/temple_of_magic",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_10",
+    "name": "Nido de cristal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_kitten_horn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_11",
+    "name": "Fragmento estelar",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_star_child",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_12",
+    "name": "Matorral de rocío del sol",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_primal_remnant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_13",
+    "name": "Campo de batalla",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_animated_armor",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_14",
+    "name": "Bosque del Terror",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_gorilla",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_15",
+    "name": "Madriguera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_halfling",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_16",
+    "name": "Cabaña de aldea",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_peasant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_17",
+    "name": "Torre de pixies",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_fairy",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_2",
+    "name": "Risco de dragones",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_animated_armor",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_3",
+    "name": "Plataforma de vigilantes",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_world_watcher",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_4",
+    "name": "Pirámide",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_coatle",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_5",
+    "name": "Torre abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_primal_remnant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_6",
+    "name": "Cáscaras de huevo de dragón",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_fairy_dragon",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_7",
+    "name": "Ciénaga floreciente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_giand_frog",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_8",
+    "name": "Valle de unicornios",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_unicorn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_9",
+    "name": "Base de matadragones",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragonslayer",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_neutral_dragon_lich",
+    "name": "barracks_neutral_dragon_lich",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragon_lich",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_1",
+    "name": "Rito de invocación menor",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_2",
+    "name": "Torre de cultores",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_3",
+    "name": "Establos de aga'shoth",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_4",
+    "name": "Rito de invocación perturbador",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_5",
+    "name": "Casa de las cadenas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_6",
+    "name": "Mansión hinchada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "barracks_unfrozen_7",
+    "name": "Rito de invocación inquietante",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null
+  },
+  {
+    "id": "beer_fountain",
+    "name": "Fuente de cerveza",
+    "category": "Interact",
+    "icon": "objects/interactive/some_barrel",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "black_tower",
+    "name": "Torre negra",
+    "category": "Interact",
+    "icon": "objects/interactive/black_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "boreal_call",
+    "name": "Llamada boreal",
+    "category": "Interact",
+    "icon": "objects/interactive/boreal_call",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "camp_fire",
+    "name": "Hoguera",
+    "category": "Resource",
+    "icon": "objects/resource/resource_camp_fire_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "celestial_sphere",
+    "name": "Chapitel celestial",
+    "category": "Interact",
+    "icon": "objects/interactive/celestial_sphere",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "chest",
+    "name": "Cofre del tesoro",
+    "category": "Resource",
+    "icon": "objects/resource/resource_chest",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience",
+      "resource"
+    ]
+  },
+  {
+    "id": "chimerologist",
+    "name": "Quimerólogo",
+    "category": "Interact",
+    "icon": "objects/interactive/chimerisrs_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "circle_of_life",
+    "name": "Ciclo de la vida",
+    "category": "Interact",
+    "icon": "objects/interactive/circle_of_life",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "circus",
+    "name": "Circo ambulante",
+    "category": "Interact",
+    "icon": "objects/interactive/circus",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "college_of_wonder",
+    "name": "Monasterio de la montaña",
+    "category": "Interact",
+    "icon": "objects/interactive/college_of_wonder",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "crow_nest",
+    "name": "Nido de cuervo",
+    "category": "Interact",
+    "icon": "objects/interactive/crow_nest",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "crystal_trail",
+    "name": "Pisada de dragón",
+    "category": "Interact",
+    "icon": "objects/interactive/crystal_trail",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "cursed_old_house",
+    "name": "Casa vieja maldita",
+    "category": "Interact",
+    "icon": "objects/interactive/cursed_old_house",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ]
+  },
+  {
+    "id": "dragon_utopia",
+    "name": "Utopía de Dragones",
+    "category": "Interact",
+    "icon": "objects/interactive/dragon_utopia",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "eternal_dragon",
+    "name": "Dragón eterno",
+    "category": "Interact",
+    "icon": "objects/interactive/eternal_dragon",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "fairy_ring",
+    "name": "fairy_ring",
+    "category": "Interact",
+    "icon": "objects/interactive/fairy_ring",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ]
+  },
+  {
+    "id": "fickle_shrine",
+    "name": "Sagrario de los cuatro eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/fickle_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "flattering_mirror",
+    "name": "Espejo del mundo",
+    "category": "Interact",
+    "icon": "objects/interactive/flattering_mirror",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "forge",
+    "name": "Forja del Segundo Hombre",
+    "category": "Interact",
+    "icon": "objects/interactive/forge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "fort",
+    "name": "Orden de los caballeros pobres",
+    "category": "Interact",
+    "icon": "objects/interactive/fort",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "fountain",
+    "name": "Fuente",
+    "category": "Interact",
+    "icon": "objects/interactive/fountain",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "fountain_2",
+    "name": "Fuente",
+    "category": "Interact",
+    "icon": "objects/interactive/fountain_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "gardener",
+    "name": "Jardín mágico",
+    "category": "Interact",
+    "icon": "objects/interactive/gardener",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "gingerbread_house",
+    "name": "Casa de galleta de jengibre",
+    "category": "Interact",
+    "icon": "objects/interactive/gingerbread_house",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "gladiator_arena",
+    "name": "Arena de Lucinferno",
+    "category": "Interact",
+    "icon": "objects/interactive/Hell_light_arena",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "gladiator_spire",
+    "name": "Chapitel de Lucinferno",
+    "category": "Interact",
+    "icon": "objects/interactive/fairy_ring",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "goblin_cache",
+    "name": "Tesoros de goblins",
+    "category": "Interact",
+    "icon": "objects/interactive/goblin_cache",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "heros_crypt",
+    "name": "Tumba del héroe anónimo",
+    "category": "Interact",
+    "icon": "objects/interactive/heros_crypt",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact"
+    ]
+  },
+  {
+    "id": "huntsmans_camp",
+    "name": "Campamento de explorador",
+    "category": "Interact",
+    "icon": "objects/interactive/temporary_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "infernal_cirque",
+    "name": "Circo infernal",
+    "category": "Interact",
+    "icon": "objects/interactive/infernal_cirque",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "insaras_eye",
+    "name": "Ojo de Insara",
+    "category": "Interact",
+    "icon": "objects/interactive/insaras_eye",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "iridescent_abbey",
+    "name": "Abadía Iridiscente",
+    "category": "Interact",
+    "icon": "objects/interactive/iridescent_abbey",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "jousting_range",
+    "name": "Coliseo",
+    "category": "Interact",
+    "icon": "objects/interactive/jousting_range",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "knowledge_garden",
+    "name": "Jardín del conocimiento",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_garden",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "learning_stone",
+    "name": "Piedra de aprendizaje",
+    "category": "Interact",
+    "icon": "objects/interactive/learning_stone",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ]
+  },
+  {
+    "id": "legions_memorial",
+    "name": "Monumento a la legión",
+    "category": "Interact",
+    "icon": "objects/interactive/legions_memorial",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "lost_library",
+    "name": "Biblioteca perdida",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ]
+  },
+  {
+    "id": "magic_amplifier_1",
+    "name": "Pergamino infinito de plata",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "magic_amplifier_2",
+    "name": "Pergamino infinito de oro",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "magic_amplifier_3",
+    "name": "Pergamino infinito de platino",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "magic_amplifier_4",
+    "name": "Pergamino infinito de bronce",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "magic_wheel",
+    "name": "Rueda mágica",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_wheel",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mana_well",
+    "name": "Pozo",
+    "category": "Interact",
+    "icon": "objects/interactive/autumn_well",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "market",
+    "name": "Mercado",
+    "category": "Interact",
+    "icon": "objects/interactive/market",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "maze",
+    "name": "Laberinto viviente",
+    "category": "Interact",
+    "icon": "objects/interactive/maze",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mercenary_guild",
+    "name": "Gremio de mercenarios",
+    "category": "Interact",
+    "icon": "objects/interactive/mercenary_guild",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mereas_shrine",
+    "name": "Altar de Mearea",
+    "category": "Interact",
+    "icon": "objects/interactive/mereas_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "mine_crystals",
+    "name": "Veta de cristal",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mine_gemstones",
+    "name": "Montículo de gemas",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mine_gold",
+    "name": "Mina de oro",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mine_mercury",
+    "name": "Fisura de mercurio",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mine_ore",
+    "name": "Mina de minerales",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mine_wood",
+    "name": "Aserradero",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mirage",
+    "name": "Espejismo",
+    "category": "Interact",
+    "icon": "objects/interactive/mirage",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "monty_hall",
+    "name": "El salón de Monty",
+    "category": "Interact",
+    "icon": "objects/interactive/monty_hall",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact"
+    ]
+  },
+  {
+    "id": "mysterious_stone",
+    "name": "Piedras susurrantes",
+    "category": "Interact",
+    "icon": "objects/interactive/learning_stone_old",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "mystical_tower",
+    "name": "Altar de la percepción",
+    "category": "Interact",
+    "icon": "objects/interactive/mystical_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "orb_observatory",
+    "name": "Observatorio de los cuatro eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/mana_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "overgrown_grave",
+    "name": "Cripta antigua",
+    "category": "Interact",
+    "icon": "objects/interactive/overgrown_grave",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "pandora_box",
+    "name": "Caja de Pandora",
+    "category": "Resource",
+    "icon": "objects/resource/pandora_box",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "experience",
+      "resource",
+      "spell"
+    ]
+  },
+  {
+    "id": "peasant_cart",
+    "name": "Carro abandonado",
+    "category": "Interact",
+    "icon": "objects/interactive/peasant_cart",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "petrified_memorial",
+    "name": "Monumento petrificado",
+    "category": "Interact",
+    "icon": "objects/interactive/petrified_memorial",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "pile_of_books",
+    "name": "Pila de libros",
+    "category": "Interact",
+    "icon": "objects/interactive/pile_of_books",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "pocket_dimension",
+    "name": "Dimensión de bolsillo",
+    "category": "Interact",
+    "icon": "objects/interactive/pocket_dimension",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "point_of_balance",
+    "name": "Punto de equilibrio",
+    "category": "Interact",
+    "icon": "objects/interactive/point_of_balance",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "portal_1",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_1_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_1_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_2_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_2_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_3_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_3_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_4",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_4_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_4_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_5",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_5_2",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "portal_5_3",
+    "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "prismatic_lair",
+    "name": "Nido prismático",
+    "category": "Interact",
+    "icon": "objects/interactive/prismatic_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "prison",
+    "name": "Jaula de héroe",
+    "category": "Interact",
+    "icon": "objects/interactive/prison",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "quixs_path",
+    "name": "Altar de Quix",
+    "category": "Interact",
+    "icon": "objects/interactive/quixs_path",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "raiders_camp",
+    "name": "Campamento de incursores",
+    "category": "Interact",
+    "icon": "objects/interactive/raiders_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "remote_foothold",
+    "name": "Punto de apoyo remoto",
+    "category": "Interact",
+    "icon": "objects/interactive/remote_foothold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "research_laboratory",
+    "name": "Laboratorio de investigación",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragon_lich",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "resource_crystals",
+    "name": "Cristales",
+    "category": "Resource",
+    "icon": "objects/resource/resource_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_dust",
+    "name": "Polvo alquímico",
+    "category": "Resource",
+    "icon": "objects/resource/resource_dust",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_gemstones",
+    "name": "Gemas",
+    "category": "Resource",
+    "icon": "objects/resource/resource_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_gold",
+    "name": "Oro",
+    "category": "Resource",
+    "icon": "objects/resource/resource_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_mercury",
+    "name": "Mercurio",
+    "category": "Resource",
+    "icon": "objects/resource/resource_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_ore",
+    "name": "Mineral",
+    "category": "Resource",
+    "icon": "objects/resource/resource_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "resource_wood",
+    "name": "Madera",
+    "category": "Resource",
+    "icon": "objects/resource/resource_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "ritual_pyre",
+    "name": "Pira ritual",
+    "category": "Interact",
+    "icon": "objects/interactive/ritual_pyre",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "sacrificial_shrine",
+    "name": "Sagrario de sacrificio",
+    "category": "Interact",
+    "icon": "objects/interactive/sacrificial_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "shady_den",
+    "name": "Guarida del cazador de trofeos",
+    "category": "Interact",
+    "icon": "objects/interactive/shady_den",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "shroom_of_growth",
+    "name": "shroom_of_growth",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_cabin",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ]
+  },
+  {
+    "id": "stables",
+    "name": "Establos",
+    "category": "Interact",
+    "icon": "objects/interactive/stables",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "stinging_sword",
+    "name": "Espada punzante",
+    "category": "Interact",
+    "icon": "objects/interactive/stinging_sword",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "storage_crystals",
+    "name": "Depósito de cristal",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_dust",
+    "name": "Depósito de polvo alquímico",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_dust",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_gemstones",
+    "name": "Depósito de gemas",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_gold",
+    "name": "Depósito de oro",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_mercury",
+    "name": "Depósito de mercurio",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_ore",
+    "name": "Depósito de mineral",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "storage_wood",
+    "name": "Depósito de madera",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "tavern",
+    "name": "Taberna",
+    "category": "Interact",
+    "icon": "objects/interactive/tavern",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "tear_of_truth",
+    "name": "Lágrima de la verdad",
+    "category": "Interact",
+    "icon": "objects/interactive/tear_of_truth_old",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "temporary_camp",
+    "name": "temporary_camp",
+    "category": "Interact",
+    "icon": "objects/interactive/temporary_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null
+  },
+  {
+    "id": "testing_grounds",
+    "name": "testing_grounds",
+    "category": "Interact",
+    "icon": "objects/interactive/testing_grounds",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ]
+  },
+  {
+    "id": "the_gorge",
+    "name": "Pila de carroña",
+    "category": "Interact",
+    "icon": "objects/interactive/gorge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "town_gate",
+    "name": "Portal de Ciudad",
+    "category": "Interact",
+    "icon": "objects/interactive/town_gate",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "tree_of_abundance",
+    "name": "Arborcopia",
+    "category": "Interact",
+    "icon": "objects/interactive/tree_of_abundance",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "tree_of_knowledge",
+    "name": "Árbol del conocimiento",
+    "category": "Interact",
+    "icon": "objects/interactive/tree_of_knowledge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "trial_scales",
+    "name": "Balanza de valía",
+    "category": "Interact",
+    "icon": "objects/interactive/trial_scales",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "troglodyte_throne",
+    "name": "Trono troglodita",
+    "category": "Interact",
+    "icon": "objects/interactive/troglodyte_throne",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "twilight_bloom",
+    "name": "Floración crepuscular",
+    "category": "Interact",
+    "icon": "objects/interactive/twilight_bloom",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ]
+  },
+  {
+    "id": "uncanny_rite",
+    "name": "Rito insólito",
+    "category": "Interact",
+    "icon": "objects/interactive/uncanny_rite",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "underground_lair",
+    "name": "Laberinto subterráneo",
+    "category": "Interact",
+    "icon": "objects/interactive/underground_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "unforgotten_grave",
+    "name": "Tumba de vigilancia",
+    "category": "Interact",
+    "icon": "objects/interactive/grave",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ]
+  },
+  {
+    "id": "unit_trade_lab_gnat",
+    "name": "Vivienda abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "unit_trade_lab_kitten_horn",
+    "name": "Nido de cristal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_kitten_horn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "university",
+    "name": "Universidad",
+    "category": "Interact",
+    "icon": "objects/interactive/university",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "unstable_ruins",
+    "name": "Ruinas de Vori con vegetación",
+    "category": "Interact",
+    "icon": "objects/interactive/unstable_ruins",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "village",
+    "name": "Aldea",
+    "category": "Interact",
+    "icon": "objects/interactive/village",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "watchtower",
+    "name": "Observatorio de caoba",
+    "category": "Interact",
+    "icon": "objects/interactive/watchtower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "wind_rose",
+    "name": "Rosa de los vientos",
+    "category": "Interact",
+    "icon": "objects/interactive/wind_rose",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  },
+  {
+    "id": "windmill",
+    "name": "Molino",
+    "category": "Interact",
+    "icon": "objects/interactive/windmill",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ]
+  },
+  {
+    "id": "wise_owl",
+    "name": "Búho sabio",
+    "category": "Interact",
+    "icon": "objects/interactive/wise_owl",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null
+  }
+]

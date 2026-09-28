@@ -1,0 +1,152 @@
+[
+  {
+    "id": "skill_assault",
+    "name": "Ofensiva",
+    "icon": "icons/hero_skills/skill_assault"
+  },
+  {
+    "id": "skill_battle_artistry",
+    "name": "Combate",
+    "icon": "icons/hero_skills/skill_battle_artistry"
+  },
+  {
+    "id": "skill_battlemage",
+    "name": "Magia de batalla",
+    "icon": "icons/hero_skills/skill_battlemage"
+  },
+  {
+    "id": "skill_diplomacy",
+    "name": "Diplomacia",
+    "icon": "icons/hero_skills/skill_diplomacy"
+  },
+  {
+    "id": "skill_economy",
+    "name": "Economía",
+    "icon": "icons/hero_skills/skill_economy"
+  },
+  {
+    "id": "skill_enlightenment",
+    "name": "Percepción",
+    "icon": "icons/hero_skills/skill_enlightenment"
+  },
+  {
+    "id": "skill_faction_demons",
+    "name": "Invocar enjambre",
+    "icon": "icons/hero_skills/skill_faction_demons"
+  },
+  {
+    "id": "skill_faction_dungeon",
+    "name": "Fuerza del Triunvirato",
+    "icon": "icons/hero_skills/skill_faction_dungeon"
+  },
+  {
+    "id": "skill_faction_humans",
+    "name": "Justicia",
+    "icon": "icons/hero_skills/skill_faction_humans"
+  },
+  {
+    "id": "skill_faction_nature",
+    "name": "Murmullo",
+    "icon": "icons/hero_skills/skill_faction_nature"
+  },
+  {
+    "id": "skill_faction_undead",
+    "name": "Nigromancia",
+    "icon": "icons/hero_skills/skill_faction_undead"
+  },
+  {
+    "id": "skill_faction_unfrozen",
+    "name": "Comunión abisal",
+    "icon": "icons/hero_skills/skill_faction_unfrozen"
+  },
+  {
+    "id": "skill_formation",
+    "name": "Arte de batalla",
+    "icon": "icons/hero_skills/skill_formation"
+  },
+  {
+    "id": "skill_leadership",
+    "name": "Liderazgo",
+    "icon": "icons/hero_skills/skill_leadership"
+  },
+  {
+    "id": "skill_logistic",
+    "name": "Logística",
+    "icon": "icons/hero_skills/skill_logistic"
+  },
+  {
+    "id": "skill_luck",
+    "name": "Suerte",
+    "icon": "icons/hero_skills/skill_luck"
+  },
+  {
+    "id": "skill_magic_day",
+    "name": "Magia de luz solar",
+    "icon": "icons/hero_skills/skill_magic_day"
+  },
+  {
+    "id": "skill_magic_night",
+    "name": "Magia de nochesombra",
+    "icon": "icons/hero_skills/skill_magic_night"
+  },
+  {
+    "id": "skill_magic_primal",
+    "name": "Magia primigenia",
+    "icon": "icons/hero_skills/skill_magic_primal"
+  },
+  {
+    "id": "skill_magic_space",
+    "name": "Magia arcana",
+    "icon": "icons/hero_skills/skill_magic_space"
+  },
+  {
+    "id": "skill_mastery",
+    "name": "Sabiduría",
+    "icon": "icons/hero_skills/skill_mastery"
+  },
+  {
+    "id": "skill_protection",
+    "name": "Defensa",
+    "icon": "icons/hero_skills/skill_protection"
+  },
+  {
+    "id": "skill_resistance",
+    "name": "Resistencia",
+    "icon": "icons/hero_skills/skill_resistance"
+  },
+  {
+    "id": "skill_scouting",
+    "name": "Exploración",
+    "icon": "icons/hero_skills/skill_scouting"
+  },
+  {
+    "id": "skill_siege",
+    "name": "Arte de asedio",
+    "icon": "icons/hero_skills/skill_siege"
+  },
+  {
+    "id": "skill_sorcery",
+    "name": "Hechicería",
+    "icon": "icons/hero_skills/skill_sorcery"
+  },
+  {
+    "id": "skill_summoner",
+    "name": "Invocar avatar",
+    "icon": "icons/hero_skills/skill_summoner"
+  },
+  {
+    "id": "skill_tactics",
+    "name": "Tácticas",
+    "icon": "icons/hero_skills/skill_tactics"
+  },
+  {
+    "id": "skill_trainer",
+    "name": "Reclutamiento",
+    "icon": "icons/hero_skills/skill_trainer"
+  },
+  {
+    "id": "skill_wisdom",
+    "name": "Taumaturgia",
+    "icon": "icons/hero_skills/skill_wisdom"
+  }
+]
