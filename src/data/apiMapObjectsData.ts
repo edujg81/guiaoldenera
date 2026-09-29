@@ -10,8 +10,8 @@
   // Datos reales de http://localhost:5176/api/map-objects
   // Ejemplo: { id: 'abandoned_corpse', name: 'Restos olvidados', description: '...', narrativeDescription: '...', icon: '...', creatureBankInfo: { ... } }
 ];*/
-import rawAbilities from './generated/api/abilities.json';
-import type { ApiAbility } from '../types-api';
+import rawMapObjects from './generated/api/map-objects.json';
+import type { ApiMapObject } from '../types-api';
 
-export const API_ABILITIES_DATA =
-  rawAbilities as ApiAbility[];
+export const API_MAP_OBJECTS_DATA =
+  rawMapObjects as unknown as ApiMapObject[];

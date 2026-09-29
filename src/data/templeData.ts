@@ -2228,7 +2228,7 @@ export const TEMPLE_HEROES_LOCAL: HeroExtension[] = [
     name: 'Zenith',
     title: 'La Dama de la Luz Celestial y Tejedoras',
     role: 'Principal Mágico / Tejedoras de Luz',
-    tierRank: 'Tier S+ (Inicio con Tier 3)',
+    tierRank: 'Tier S+ (Inicio con Tier 4)',
     recommendedStartingTier: 'Inicio fantástico con 3-4 Tejedoras de Luz que aportan bendiciones y ataques mágicos desde el Día 1.',
     statGrowth: { attack: 15, defense: 20, spellPower: 40, knowledge: 25 },
     tacticalPlaystyle: 'Utiliza las Tejedoras para potenciar al ejército mientras lanza conjuros de Luz con Hechicería.',
