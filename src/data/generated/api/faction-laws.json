@@ -2,11 +2,11 @@
   {
     "id": "fraction_law_demon_1",
     "name": "fraction_law_demon_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -278,11 +278,11 @@
   {
     "id": "fraction_law_demon_2",
     "name": "fraction_law_demon_2_name",
-    "localizedName": "Leyes de la Colmena",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_2_icon",
+    "localizedName": "Leyes de la Colmena",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -549,11 +549,11 @@
   {
     "id": "fraction_law_demon_3",
     "name": "fraction_law_demon_3_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_3_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -815,11 +815,11 @@
   {
     "id": "fraction_law_demon_4",
     "name": "fraction_law_demon_4_name",
-    "localizedName": "Integración de la Colmena",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_4_icon",
+    "localizedName": "Integración de la Colmena",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -1091,11 +1091,11 @@
   {
     "id": "fraction_law_demon_5",
     "name": "fraction_law_demon_5_name",
-    "localizedName": "Recepción de la Colmena",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_5_icon",
+    "localizedName": "Recepción de la Colmena",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -1367,11 +1367,11 @@
   {
     "id": "fraction_law_demon_6",
     "name": "fraction_law_demon_6_name",
-    "localizedName": "Vástagos de la Colmena I",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_6_icon",
+    "localizedName": "Vástagos de la Colmena I",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -1633,11 +1633,11 @@
   {
     "id": "fraction_law_demon_7",
     "name": "fraction_law_demon_31_name",
-    "localizedName": "Reservas de concentración",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_31_icon",
+    "localizedName": "Reservas de concentración",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -1899,11 +1899,11 @@
   {
     "id": "fraction_law_demon_8",
     "name": "fraction_law_demon_8_name",
-    "localizedName": "Deseos ocultos",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_8_icon",
+    "localizedName": "Deseos ocultos",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -2165,11 +2165,11 @@
   {
     "id": "fraction_law_demon_9",
     "name": "fraction_law_demon_9_name",
-    "localizedName": "Devorar maná",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_9_icon",
+    "localizedName": "Devorar maná",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -2441,11 +2441,11 @@
   {
     "id": "fraction_law_demon_10",
     "name": "fraction_law_demon_10_name",
-    "localizedName": "Parásitos de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_10_icon",
+    "localizedName": "Parásitos de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -2712,11 +2712,11 @@
   {
     "id": "fraction_law_demon_11",
     "name": "fraction_law_demon_11_name",
-    "localizedName": "Langostas de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_11_icon",
+    "localizedName": "Langostas de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -2983,11 +2983,11 @@
   {
     "id": "fraction_law_demon_12",
     "name": "fraction_law_demon_12_name",
-    "localizedName": "Avispones de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_12_icon",
+    "localizedName": "Avispones de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -3254,11 +3254,11 @@
   {
     "id": "fraction_law_demon_13",
     "name": "fraction_law_demon_13_name",
-    "localizedName": "Minería: Cristales",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_13_icon",
+    "localizedName": "Minería: Cristales",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -3525,11 +3525,11 @@
   {
     "id": "fraction_law_demon_14",
     "name": "fraction_law_demon_14_name",
-    "localizedName": "Poder ancestral",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_14_icon",
+    "localizedName": "Poder ancestral",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -3791,11 +3791,11 @@
   {
     "id": "fraction_law_demon_15",
     "name": "fraction_law_demon_15_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_15_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -4057,11 +4057,11 @@
   {
     "id": "fraction_law_demon_16",
     "name": "fraction_law_demon_16_name",
-    "localizedName": "Escorpiones de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_16_icon",
+    "localizedName": "Escorpiones de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -4328,11 +4328,11 @@
   {
     "id": "fraction_law_demon_17",
     "name": "fraction_law_demon_17_name",
-    "localizedName": "Asoladores de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_17_icon",
+    "localizedName": "Asoladores de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -4599,11 +4599,11 @@
   {
     "id": "fraction_law_demon_18",
     "name": "fraction_law_demon_18_name",
-    "localizedName": "Vermes de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_18_icon",
+    "localizedName": "Vermes de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -4870,11 +4870,11 @@
   {
     "id": "fraction_law_demon_19",
     "name": "fraction_law_demon_19_name",
-    "localizedName": "Vástagos de la Colmena II",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_19_icon",
+    "localizedName": "Vástagos de la Colmena II",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -5136,11 +5136,11 @@
   {
     "id": "fraction_law_demon_20",
     "name": "fraction_law_demon_20_name",
-    "localizedName": "Evolucionar, adaptarse, prevalecer",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_20_icon",
+    "localizedName": "Evolucionar, adaptarse, prevalecer",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -5407,11 +5407,11 @@
   {
     "id": "fraction_law_demon_21",
     "name": "fraction_law_demon_21_name",
-    "localizedName": "Selección natural",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_21_icon",
+    "localizedName": "Selección natural",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -5673,11 +5673,11 @@
   {
     "id": "fraction_law_demon_22",
     "name": "fraction_law_demon_22_name",
-    "localizedName": "Magia de la Colmena",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_22_icon",
+    "localizedName": "Magia de la Colmena",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -5949,11 +5949,11 @@
   {
     "id": "fraction_law_demon_23",
     "name": "fraction_law_demon_23_name",
-    "localizedName": "Reinas de la Colmena de élite",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_23_icon",
+    "localizedName": "Reinas de la Colmena de élite",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -6220,11 +6220,11 @@
   {
     "id": "fraction_law_demon_24",
     "name": "fraction_law_demon_24_name",
-    "localizedName": "Gran conquista",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_24_icon",
+    "localizedName": "Gran conquista",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -6496,11 +6496,11 @@
   {
     "id": "fraction_law_demon_25",
     "name": "fraction_law_demon_25_name",
-    "localizedName": "Mirada de Belcebú",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_25_icon",
+    "localizedName": "Mirada de Belcebú",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -6762,11 +6762,11 @@
   {
     "id": "fraction_law_demon_26",
     "name": "fraction_law_demon_26_name",
-    "localizedName": "Prosperar y florecer",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_26_icon",
+    "localizedName": "Prosperar y florecer",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -7033,11 +7033,11 @@
   {
     "id": "fraction_law_demon_27",
     "name": "fraction_law_demon_27_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_27_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -7299,11 +7299,11 @@
   {
     "id": "fraction_law_demon_28",
     "name": "fraction_law_demon_28_name",
-    "localizedName": "Ira infernal",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_28_icon",
+    "localizedName": "Ira infernal",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -7570,11 +7570,11 @@
   {
     "id": "fraction_law_demon_29",
     "name": "fraction_law_demon_29_name",
-    "localizedName": "Sin compasión",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_29_icon",
+    "localizedName": "Sin compasión",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -7846,11 +7846,11 @@
   {
     "id": "fraction_law_demon_30",
     "name": "fraction_law_demon_30_name",
-    "localizedName": "Vástagos de la Colmena III",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/fraction_law_demon_30_icon",
+    "localizedName": "Vástagos de la Colmena III",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,
@@ -8112,11 +8112,11 @@
   {
     "id": "fraction_law_dungeon_1",
     "name": "fraction_law_dungeon_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -8407,11 +8407,11 @@
   {
     "id": "fraction_law_dungeon_2",
     "name": "fraction_law_dungeon_2_name",
-    "localizedName": "Líderes de la nación",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_2_icon",
+    "localizedName": "Líderes de la nación",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -8702,11 +8702,11 @@
   {
     "id": "fraction_law_dungeon_3",
     "name": "fraction_law_dungeon_3_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_3_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -8992,11 +8992,11 @@
   {
     "id": "fraction_law_dungeon_4",
     "name": "fraction_law_dungeon_4_name",
-    "localizedName": "Trogloditas de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_4_icon",
+    "localizedName": "Trogloditas de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -9287,11 +9287,11 @@
   {
     "id": "fraction_law_dungeon_5",
     "name": "fraction_law_dungeon_5_name",
-    "localizedName": "Escamas de dragón",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_5_icon",
+    "localizedName": "Escamas de dragón",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -9587,11 +9587,11 @@
   {
     "id": "fraction_law_dungeon_6",
     "name": "fraction_law_dungeon_6_name",
-    "localizedName": "Maestros de mazmorras I",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_6_icon",
+    "localizedName": "Maestros de mazmorras I",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -9877,11 +9877,11 @@
   {
     "id": "fraction_law_dungeon_7",
     "name": "fraction_law_dungeon_7_name",
-    "localizedName": "¿Sin mineral?",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_7_icon",
+    "localizedName": "¿Sin mineral?",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -10172,11 +10172,11 @@
   {
     "id": "fraction_law_dungeon_8",
     "name": "fraction_law_dungeon_8_name",
-    "localizedName": "Mapas de Jadame",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_8_icon",
+    "localizedName": "Mapas de Jadame",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -10467,11 +10467,11 @@
   {
     "id": "fraction_law_dungeon_9",
     "name": "fraction_law_dungeon_9_name",
-    "localizedName": "Código de alquimistas I",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_9_icon",
+    "localizedName": "Código de alquimistas I",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -10757,11 +10757,11 @@
   {
     "id": "fraction_law_dungeon_10",
     "name": "fraction_law_dungeon_10_name",
-    "localizedName": "Infiltrados de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_10_icon",
+    "localizedName": "Infiltrados de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -11052,11 +11052,11 @@
   {
     "id": "fraction_law_dungeon_11",
     "name": "fraction_law_dungeon_11_name",
-    "localizedName": "Bailarinas de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_11_icon",
+    "localizedName": "Bailarinas de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -11347,11 +11347,11 @@
   {
     "id": "fraction_law_dungeon_12",
     "name": "fraction_law_dungeon_12_name",
-    "localizedName": "Maestros de mazmorras II",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_12_icon",
+    "localizedName": "Maestros de mazmorras II",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -11637,11 +11637,11 @@
   {
     "id": "fraction_law_dungeon_13",
     "name": "fraction_law_dungeon_13_name",
-    "localizedName": "Maestros de mazmorras III",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_13_icon",
+    "localizedName": "Maestros de mazmorras III",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -11927,11 +11927,11 @@
   {
     "id": "fraction_law_dungeon_14",
     "name": "fraction_law_dungeon_14_name",
-    "localizedName": "Minería: Gemas",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_14_icon",
+    "localizedName": "Minería: Gemas",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -12222,11 +12222,11 @@
   {
     "id": "fraction_law_dungeon_15",
     "name": "fraction_law_dungeon_15_name",
-    "localizedName": "Red de espías",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_15_icon",
+    "localizedName": "Red de espías",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -12522,11 +12522,11 @@
   {
     "id": "fraction_law_dungeon_16",
     "name": "fraction_law_dungeon_16_name",
-    "localizedName": "Pueblo de Jadame",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_16_icon",
+    "localizedName": "Pueblo de Jadame",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -12817,11 +12817,11 @@
   {
     "id": "fraction_law_dungeon_17",
     "name": "fraction_law_dungeon_17_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_17_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -13107,11 +13107,11 @@
   {
     "id": "fraction_law_dungeon_18",
     "name": "fraction_law_dungeon_18_name",
-    "localizedName": "Minotauros de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_18_icon",
+    "localizedName": "Minotauros de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -13402,11 +13402,11 @@
   {
     "id": "fraction_law_dungeon_19",
     "name": "fraction_law_dungeon_19_name",
-    "localizedName": "Medusas de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_19_icon",
+    "localizedName": "Medusas de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -13697,11 +13697,11 @@
   {
     "id": "fraction_law_dungeon_20",
     "name": "fraction_law_dungeon_20_name",
-    "localizedName": "Ventaja táctica",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_20_icon",
+    "localizedName": "Ventaja táctica",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -13987,11 +13987,11 @@
   {
     "id": "fraction_law_dungeon_21",
     "name": "fraction_law_dungeon_21_name",
-    "localizedName": "Maestros de mazmorras IV",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_21_icon",
+    "localizedName": "Maestros de mazmorras IV",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -14277,11 +14277,11 @@
   {
     "id": "fraction_law_dungeon_22",
     "name": "fraction_law_dungeon_22_name",
-    "localizedName": "Agentes del Triunvirato",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_22_icon",
+    "localizedName": "Agentes del Triunvirato",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -14572,11 +14572,11 @@
   {
     "id": "fraction_law_dungeon_23",
     "name": "fraction_law_dungeon_23_name",
-    "localizedName": "Gremio de comerciantes",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_23_icon",
+    "localizedName": "Gremio de comerciantes",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -14862,11 +14862,11 @@
   {
     "id": "fraction_law_dungeon_24",
     "name": "fraction_law_dungeon_24_name",
-    "localizedName": "Código de alquimistas II",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_24_icon",
+    "localizedName": "Código de alquimistas II",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -15152,11 +15152,11 @@
   {
     "id": "fraction_law_dungeon_25",
     "name": "fraction_law_dungeon_25_name",
-    "localizedName": "Hidras de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_25_icon",
+    "localizedName": "Hidras de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -15447,11 +15447,11 @@
   {
     "id": "fraction_law_dungeon_26",
     "name": "fraction_law_dungeon_26_name",
-    "localizedName": "Maestros de mazmorras V",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_26_icon",
+    "localizedName": "Maestros de mazmorras V",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -15737,11 +15737,11 @@
   {
     "id": "fraction_law_dungeon_27",
     "name": "fraction_law_dungeon_27_name",
-    "localizedName": "Maestros de mazmorras VI",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_27_icon",
+    "localizedName": "Maestros de mazmorras VI",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -16027,11 +16027,11 @@
   {
     "id": "fraction_law_dungeon_28",
     "name": "fraction_law_dungeon_28_name",
-    "localizedName": "Educación mágica",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_28_icon",
+    "localizedName": "Educación mágica",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -16322,11 +16322,11 @@
   {
     "id": "fraction_law_dungeon_29",
     "name": "fraction_law_dungeon_29_name",
-    "localizedName": "Saturación",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_19_icon",
+    "localizedName": "Saturación",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -16612,11 +16612,11 @@
   {
     "id": "fraction_law_dungeon_30",
     "name": "fraction_law_dungeon_30_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_30_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -16902,11 +16902,11 @@
   {
     "id": "fraction_law_dungeon_31",
     "name": "fraction_law_dungeon_31_name",
-    "localizedName": "Dragones de cueva de élite",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_31_icon",
+    "localizedName": "Dragones de cueva de élite",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -17197,11 +17197,11 @@
   {
     "id": "fraction_law_dungeon_32",
     "name": "fraction_law_dungeon_32_name",
-    "localizedName": "Maestros de mazmorras VII",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_32_icon",
+    "localizedName": "Maestros de mazmorras VII",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -17487,11 +17487,11 @@
   {
     "id": "fraction_law_dungeon_33",
     "name": "fraction_law_dungeon_33_name",
-    "localizedName": "Mapas celestiales",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_33_icon",
+    "localizedName": "Mapas celestiales",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -17777,11 +17777,11 @@
   {
     "id": "fraction_law_dungeon_34",
     "name": "fraction_law_dungeon_34_name",
-    "localizedName": "Conocimiento arcano",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_34_icon",
+    "localizedName": "Conocimiento arcano",
+    "factionIcon": "icons/fractions/dungeon_icon",
     "levels": [
       {
         "level": 1,
@@ -18067,11 +18067,11 @@
   {
     "id": "fraction_law_human_1",
     "name": "fraction_law_human_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -18350,11 +18350,11 @@
   {
     "id": "fraction_law_human_2",
     "name": "fraction_law_human_2_name",
-    "localizedName": "Entrenamiento: Exploración",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_2_icon",
+    "localizedName": "Entrenamiento: Exploración",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -18628,11 +18628,11 @@
   {
     "id": "fraction_law_human_3",
     "name": "fraction_law_human_3_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_3_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -18906,11 +18906,11 @@
   {
     "id": "fraction_law_human_4",
     "name": "fraction_law_human_4_name",
-    "localizedName": "Espadachines de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_4_icon",
+    "localizedName": "Espadachines de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -19194,11 +19194,11 @@
   {
     "id": "fraction_law_human_5",
     "name": "fraction_law_human_5_name",
-    "localizedName": "Ejecutar excelencia",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_5_icon",
+    "localizedName": "Ejecutar excelencia",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -19477,11 +19477,11 @@
   {
     "id": "fraction_law_human_6",
     "name": "fraction_law_human_6_name",
-    "localizedName": "Entrenamiento: Ataque",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_6_icon",
+    "localizedName": "Entrenamiento: Ataque",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -19760,11 +19760,11 @@
   {
     "id": "fraction_law_human_7",
     "name": "fraction_law_human_7_name",
-    "localizedName": "Entrenamiento: Defensa",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_7_icon",
+    "localizedName": "Entrenamiento: Defensa",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -20043,11 +20043,11 @@
   {
     "id": "fraction_law_human_8",
     "name": "fraction_law_human_8_name",
-    "localizedName": "Entrenamiento: Poder de hechizo",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_8_icon",
+    "localizedName": "Entrenamiento: Poder de hechizo",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -20326,11 +20326,11 @@
   {
     "id": "fraction_law_human_9",
     "name": "fraction_law_human_9_name",
-    "localizedName": "Entrenamiento: Conocimiento",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_9_icon",
+    "localizedName": "Entrenamiento: Conocimiento",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -20609,11 +20609,11 @@
   {
     "id": "fraction_law_human_10",
     "name": "fraction_law_human_10_name",
-    "localizedName": "Saeteros de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_10_icon",
+    "localizedName": "Saeteros de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -20897,11 +20897,11 @@
   {
     "id": "fraction_law_human_11",
     "name": "fraction_law_human_11_name",
-    "localizedName": "Grifos de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_11_icon",
+    "localizedName": "Grifos de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -21185,11 +21185,11 @@
   {
     "id": "fraction_law_human_12",
     "name": "fraction_law_human_12_name",
-    "localizedName": "Reflejos rápidos",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_12_icon",
+    "localizedName": "Reflejos rápidos",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -21463,11 +21463,11 @@
   {
     "id": "fraction_law_human_13",
     "name": "fraction_law_human_13_name",
-    "localizedName": "Golpe vengativo",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_13_icon",
+    "localizedName": "Golpe vengativo",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -21746,11 +21746,11 @@
   {
     "id": "fraction_law_human_14",
     "name": "fraction_law_human_14_name",
-    "localizedName": "Minería: Gemas",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_14_icon",
+    "localizedName": "Minería: Gemas",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -22029,11 +22029,11 @@
   {
     "id": "fraction_law_human_15",
     "name": "fraction_law_human_15_name",
-    "localizedName": "Gracia del Sol",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_15_icon",
+    "localizedName": "Gracia del Sol",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -22307,11 +22307,11 @@
   {
     "id": "fraction_law_human_16",
     "name": "fraction_law_human_16_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_16_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -22585,11 +22585,11 @@
   {
     "id": "fraction_law_human_17",
     "name": "fraction_law_human_17_name",
-    "localizedName": "Tejedoras de luz de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_17_icon",
+    "localizedName": "Tejedoras de luz de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -22873,11 +22873,11 @@
   {
     "id": "fraction_law_human_18",
     "name": "fraction_law_human_18_name",
-    "localizedName": "Entrenamiento: Combate cuerpo a cuerpo",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_18_icon",
+    "localizedName": "Entrenamiento: Combate cuerpo a cuerpo",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -23156,11 +23156,11 @@
   {
     "id": "fraction_law_human_19",
     "name": "fraction_law_human_20_name",
-    "localizedName": "Entrenamiento: Combate a distancia",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_20_icon",
+    "localizedName": "Entrenamiento: Combate a distancia",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -23439,11 +23439,11 @@
   {
     "id": "fraction_law_human_20",
     "name": "fraction_law_human_20_name",
-    "localizedName": "Entrenamiento: Combate a distancia",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_20_icon",
+    "localizedName": "Entrenamiento: Combate a distancia",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -23722,11 +23722,11 @@
   {
     "id": "fraction_law_human_21",
     "name": "fraction_law_human_21_name",
-    "localizedName": "Reforma de la moneda",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_21_icon",
+    "localizedName": "Reforma de la moneda",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -24005,11 +24005,11 @@
   {
     "id": "fraction_law_human_22",
     "name": "fraction_law_human_22_name",
-    "localizedName": "Héroes de fábulas",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_22_icon",
+    "localizedName": "Héroes de fábulas",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -24283,11 +24283,11 @@
   {
     "id": "fraction_law_human_23",
     "name": "fraction_law_human_23_name",
-    "localizedName": "Caballería de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_23_icon",
+    "localizedName": "Caballería de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -24571,11 +24571,11 @@
   {
     "id": "fraction_law_human_24",
     "name": "fraction_law_human_24_name",
-    "localizedName": "Inquisidores de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_24_icon",
+    "localizedName": "Inquisidores de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -24859,11 +24859,11 @@
   {
     "id": "fraction_law_human_25",
     "name": "fraction_law_human_25_name",
-    "localizedName": "Aliento",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_25_icon",
+    "localizedName": "Aliento",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -25142,11 +25142,11 @@
   {
     "id": "fraction_law_human_26",
     "name": "fraction_law_human_26_name",
-    "localizedName": "Bendición del héroe",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_26_icon",
+    "localizedName": "Bendición del héroe",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -25420,11 +25420,11 @@
   {
     "id": "fraction_law_human_27",
     "name": "fraction_law_human_27_name",
-    "localizedName": "Poder de la fe",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_27_icon",
+    "localizedName": "Poder de la fe",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -25698,11 +25698,11 @@
   {
     "id": "fraction_law_human_28",
     "name": "fraction_law_human_28_name",
-    "localizedName": "Maestría del arquitecto",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_28_icon",
+    "localizedName": "Maestría del arquitecto",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -25976,11 +25976,11 @@
   {
     "id": "fraction_law_human_29",
     "name": "fraction_law_human_29_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_29_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -26254,11 +26254,11 @@
   {
     "id": "fraction_law_human_30",
     "name": "fraction_law_human_30_name",
-    "localizedName": "Ángeles de élite",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_30_icon",
+    "localizedName": "Ángeles de élite",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -26542,11 +26542,11 @@
   {
     "id": "fraction_law_human_31",
     "name": "fraction_law_human_31_name",
-    "localizedName": "La concentración es clave",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_31_icon",
+    "localizedName": "La concentración es clave",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -26820,11 +26820,11 @@
   {
     "id": "fraction_law_human_32",
     "name": "fraction_law_human_32_name_new",
-    "localizedName": "Protección sagrada",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_32_icon",
+    "localizedName": "Protección sagrada",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -27098,11 +27098,11 @@
   {
     "id": "fraction_law_human_33",
     "name": "fraction_law_human_33_name",
-    "localizedName": "Cruzada de la Inquisición",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_33_icon",
+    "localizedName": "Cruzada de la Inquisición",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -27376,11 +27376,11 @@
   {
     "id": "fraction_law_human_34",
     "name": "fraction_law_human_34_name",
-    "localizedName": "Fe en la magia",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "icon": "icons/fraction_laws/fraction_law_human_34_icon",
+    "localizedName": "Fe en la magia",
+    "factionIcon": "icons/fractions/human_icon",
     "levels": [
       {
         "level": 1,
@@ -27654,11 +27654,11 @@
   {
     "id": "fraction_law_nature_1",
     "name": "fraction_law_nature_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -27926,11 +27926,11 @@
   {
     "id": "fraction_law_nature_2",
     "name": "fraction_law_nature_2_name",
-    "localizedName": "El saber es poder",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_2_icon",
+    "localizedName": "El saber es poder",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -28208,11 +28208,11 @@
   {
     "id": "fraction_law_nature_3",
     "name": "fraction_law_nature_3_name",
-    "localizedName": "Héroes del pueblo",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_3_icon",
+    "localizedName": "Héroes del pueblo",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -28480,11 +28480,11 @@
   {
     "id": "fraction_law_nature_4",
     "name": "fraction_law_nature_4_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_4_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -28752,11 +28752,11 @@
   {
     "id": "fraction_law_nature_5",
     "name": "fraction_law_nature_5_name",
-    "localizedName": "Faunos de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_5_icon",
+    "localizedName": "Faunos de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -29034,11 +29034,11 @@
   {
     "id": "fraction_law_nature_6",
     "name": "fraction_law_nature_6_name",
-    "localizedName": "Lupuciérnagas de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_6_icon",
+    "localizedName": "Lupuciérnagas de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -29316,11 +29316,11 @@
   {
     "id": "fraction_law_nature_7",
     "name": "fraction_law_nature_7_name",
-    "localizedName": "Hijos de la naturaleza",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_7_icon",
+    "localizedName": "Hijos de la naturaleza",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -29593,11 +29593,11 @@
   {
     "id": "fraction_law_nature_8",
     "name": "fraction_law_nature_8_name",
-    "localizedName": "Salvemos los bosques",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_8_icon",
+    "localizedName": "Salvemos los bosques",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -29870,11 +29870,11 @@
   {
     "id": "fraction_law_nature_9",
     "name": "fraction_law_nature_9_name",
-    "localizedName": "Resistencia del bosque",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_9_icon",
+    "localizedName": "Resistencia del bosque",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -30142,11 +30142,11 @@
   {
     "id": "fraction_law_nature_10",
     "name": "fraction_law_nature_10_name",
-    "localizedName": "Íriyad de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_10_icon",
+    "localizedName": "Íriyad de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -30424,11 +30424,11 @@
   {
     "id": "fraction_law_nature_11",
     "name": "fraction_law_nature_11_name",
-    "localizedName": "Naturaleza salvaje",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_11_icon",
+    "localizedName": "Naturaleza salvaje",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -30701,11 +30701,11 @@
   {
     "id": "fraction_law_nature_12",
     "name": "fraction_law_nature_12_name",
-    "localizedName": "Resolución de la naturaleza",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_12_icon",
+    "localizedName": "Resolución de la naturaleza",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -30973,11 +30973,11 @@
   {
     "id": "fraction_law_nature_13",
     "name": "fraction_law_nature_13_name",
-    "localizedName": "Minería: Cristales",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_13_icon",
+    "localizedName": "Minería: Cristales",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -31250,11 +31250,11 @@
   {
     "id": "fraction_law_nature_14",
     "name": "fraction_law_nature_14_name",
-    "localizedName": "Magia del bosque",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_14_icon",
+    "localizedName": "Magia del bosque",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -31527,11 +31527,11 @@
   {
     "id": "fraction_law_nature_15",
     "name": "fraction_law_nature_15_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_15_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -31799,11 +31799,11 @@
   {
     "id": "fraction_law_nature_16",
     "name": "fraction_law_nature_16_name",
-    "localizedName": "Náyades de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_16_icon",
+    "localizedName": "Náyades de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -32081,11 +32081,11 @@
   {
     "id": "fraction_law_nature_17",
     "name": "fraction_law_nature_17_name",
-    "localizedName": "Velado por los árboles",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_17_icon",
+    "localizedName": "Velado por los árboles",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -32363,11 +32363,11 @@
   {
     "id": "fraction_law_nature_18",
     "name": "fraction_law_nature_18_name",
-    "localizedName": "El poder de la palabra escrita",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_18_icon",
+    "localizedName": "El poder de la palabra escrita",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -32645,11 +32645,11 @@
   {
     "id": "fraction_law_nature_19",
     "name": "fraction_law_nature_19_name",
-    "localizedName": "Concentración",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_dungeon_29_icon",
+    "localizedName": "Concentración",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -32917,11 +32917,11 @@
   {
     "id": "fraction_law_nature_20",
     "name": "fraction_law_nature_20_name",
-    "localizedName": "Suelo fértil",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_20_icon",
+    "localizedName": "Suelo fértil",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -33194,11 +33194,11 @@
   {
     "id": "fraction_law_nature_21",
     "name": "fraction_law_nature_21_name",
-    "localizedName": "Raíces vivas",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_21_icon",
+    "localizedName": "Raíces vivas",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -33466,11 +33466,11 @@
   {
     "id": "fraction_law_nature_22",
     "name": "fraction_law_nature_22_name",
-    "localizedName": "Mantes de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_22_icon",
+    "localizedName": "Mantes de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -33748,11 +33748,11 @@
   {
     "id": "fraction_law_nature_23",
     "name": "fraction_law_nature_23_name",
-    "localizedName": "Qilin de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_23_icon",
+    "localizedName": "Qilin de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -34030,11 +34030,11 @@
   {
     "id": "fraction_law_nature_24",
     "name": "fraction_law_nature_24_name",
-    "localizedName": "La suerte del más fuerte",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_24_icon",
+    "localizedName": "La suerte del más fuerte",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -34312,11 +34312,11 @@
   {
     "id": "fraction_law_nature_25",
     "name": "fraction_law_nature_25_name",
-    "localizedName": "Fuerza de la naturaleza",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_25_icon",
+    "localizedName": "Fuerza de la naturaleza",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -34584,11 +34584,11 @@
   {
     "id": "fraction_law_nature_26",
     "name": "fraction_law_nature_26_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_26_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -34856,11 +34856,11 @@
   {
     "id": "fraction_law_nature_27",
     "name": "fraction_law_nature_27_name",
-    "localizedName": "Fénix de élite",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_27_icon",
+    "localizedName": "Fénix de élite",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -35138,11 +35138,11 @@
   {
     "id": "fraction_law_nature_28",
     "name": "fraction_law_nature_28_name",
-    "localizedName": "Cuento de hadas",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_28_icon",
+    "localizedName": "Cuento de hadas",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -35410,11 +35410,11 @@
   {
     "id": "fraction_law_nature_29",
     "name": "fraction_law_nature_29_name",
-    "localizedName": "Santuario",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_29_icon",
+    "localizedName": "Santuario",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -35682,11 +35682,11 @@
   {
     "id": "fraction_law_nature_30",
     "name": "fraction_law_nature_30_name",
-    "localizedName": "Cielo despejado",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_30_icon",
+    "localizedName": "Cielo despejado",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -35954,11 +35954,11 @@
   {
     "id": "fraction_law_nature_31",
     "name": "fraction_law_nature_31_name",
-    "localizedName": "Serenidad natural",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "icon": "icons/fraction_laws/fraction_law_nature_31_icon",
+    "localizedName": "Serenidad natural",
+    "factionIcon": "icons/fractions/spring_icon",
     "levels": [
       {
         "level": 1,
@@ -36226,11 +36226,11 @@
   {
     "id": "fraction_law_undead_1",
     "name": "fraction_law_undead_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -36509,11 +36509,11 @@
   {
     "id": "fraction_law_undead_2",
     "name": "fraction_law_undead_2_name",
-    "localizedName": "Animar a los muertos I",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_2_icon",
+    "localizedName": "Animar a los muertos I",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -36787,11 +36787,11 @@
   {
     "id": "fraction_law_undead_3",
     "name": "fraction_law_undead_3_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_3_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -37065,11 +37065,11 @@
   {
     "id": "fraction_law_undead_4",
     "name": "fraction_law_undead_4_name",
-    "localizedName": "Esqueletos de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_4_icon",
+    "localizedName": "Esqueletos de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -37348,11 +37348,11 @@
   {
     "id": "fraction_law_undead_5",
     "name": "fraction_law_undead_5_name",
-    "localizedName": "Apariciones de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_5_icon",
+    "localizedName": "Apariciones de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -37631,11 +37631,11 @@
   {
     "id": "fraction_law_undead_6",
     "name": "fraction_law_undead_6_name",
-    "localizedName": "¡Resistid hasta la muerte!",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_6_icon",
+    "localizedName": "¡Resistid hasta la muerte!",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -37919,11 +37919,11 @@
   {
     "id": "fraction_law_undead_7",
     "name": "fraction_law_undead_7_name",
-    "localizedName": "Animar a los muertos II",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_7_icon",
+    "localizedName": "Animar a los muertos II",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -38197,11 +38197,11 @@
   {
     "id": "fraction_law_undead_8",
     "name": "fraction_law_undead_8_name",
-    "localizedName": "Leyes de los inmortales",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_8_icon",
+    "localizedName": "Leyes de los inmortales",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -38485,11 +38485,11 @@
   {
     "id": "fraction_law_undead_9",
     "name": "fraction_law_undead_9_name",
-    "localizedName": "La muerte iguala a todos",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_9_icon",
+    "localizedName": "La muerte iguala a todos",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -38763,11 +38763,11 @@
   {
     "id": "fraction_law_undead_10",
     "name": "fraction_law_undead_10_name",
-    "localizedName": "Mascotas no muertas de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_10_icon",
+    "localizedName": "Mascotas no muertas de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -39046,11 +39046,11 @@
   {
     "id": "fraction_law_undead_11",
     "name": "fraction_law_undead_11_name",
-    "localizedName": "Ladrones de tumbas de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_11_icon",
+    "localizedName": "Ladrones de tumbas de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -39329,11 +39329,11 @@
   {
     "id": "fraction_law_undead_12",
     "name": "fraction_law_undead_12_name",
-    "localizedName": "Dones del más allá",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_12_icon",
+    "localizedName": "Dones del más allá",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -39612,11 +39612,11 @@
   {
     "id": "fraction_law_undead_13",
     "name": "fraction_law_undead_13_name",
-    "localizedName": "Minería: Mercurio",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_13_icon",
+    "localizedName": "Minería: Mercurio",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -39895,11 +39895,11 @@
   {
     "id": "fraction_law_undead_14",
     "name": "fraction_law_undead_14_name",
-    "localizedName": "Alquimia prohibida",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_14_icon",
+    "localizedName": "Alquimia prohibida",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -40183,11 +40183,11 @@
   {
     "id": "fraction_law_undead_15",
     "name": "fraction_law_undead_15_name",
-    "localizedName": "Animar a los muertos III",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_15_icon",
+    "localizedName": "Animar a los muertos III",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -40461,11 +40461,11 @@
   {
     "id": "fraction_law_undead_16",
     "name": "fraction_law_undead_16_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_16_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -40739,11 +40739,11 @@
   {
     "id": "fraction_law_undead_17",
     "name": "fraction_law_undead_17_name",
-    "localizedName": "Sed de sangre",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_17_icon",
+    "localizedName": "Sed de sangre",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -41017,11 +41017,11 @@
   {
     "id": "fraction_law_undead_18",
     "name": "fraction_law_undead_18_name",
-    "localizedName": "Liches de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_18_icon",
+    "localizedName": "Liches de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -41300,11 +41300,11 @@
   {
     "id": "fraction_law_undead_19",
     "name": "fraction_law_undead_19_name",
-    "localizedName": "Caballeros del terror de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_19_icon",
+    "localizedName": "Caballeros del terror de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -41583,11 +41583,11 @@
   {
     "id": "fraction_law_undead_20",
     "name": "fraction_law_undead_20_name",
-    "localizedName": "Terra mortis",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_20_icon",
+    "localizedName": "Terra mortis",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -41861,11 +41861,11 @@
   {
     "id": "fraction_law_undead_21",
     "name": "fraction_law_undead_21_name",
-    "localizedName": "Animar a los muertos IV",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_21_icon",
+    "localizedName": "Animar a los muertos IV",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -42139,11 +42139,11 @@
   {
     "id": "fraction_law_undead_22",
     "name": "fraction_law_undead_22_name",
-    "localizedName": "Muerte gratuita",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_22_icon",
+    "localizedName": "Muerte gratuita",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -42427,11 +42427,11 @@
   {
     "id": "fraction_law_undead_23",
     "name": "fraction_law_undead_23_name",
-    "localizedName": "Vampiros de élite",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_23_icon",
+    "localizedName": "Vampiros de élite",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -42710,11 +42710,11 @@
   {
     "id": "fraction_law_undead_24",
     "name": "fraction_law_undead_24_name",
-    "localizedName": "Retorno a la tierra",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_24_icon",
+    "localizedName": "Retorno a la tierra",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -42993,11 +42993,11 @@
   {
     "id": "fraction_law_undead_25",
     "name": "fraction_law_undead_25_name",
-    "localizedName": "Más allá del descanso final",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_25_icon",
+    "localizedName": "Más allá del descanso final",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -43281,11 +43281,11 @@
   {
     "id": "fraction_law_undead_26",
     "name": "fraction_law_undead_26_name",
-    "localizedName": "Muerte negra",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_26_icon",
+    "localizedName": "Muerte negra",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -43564,11 +43564,11 @@
   {
     "id": "fraction_law_undead_27",
     "name": "fraction_law_undead_27_name",
-    "localizedName": "Animar a los muertos V",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_27_icon",
+    "localizedName": "Animar a los muertos V",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -43842,11 +43842,11 @@
   {
     "id": "fraction_law_undead_28",
     "name": "fraction_law_undead_28_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_28_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -44120,11 +44120,11 @@
   {
     "id": "fraction_law_undead_29",
     "name": "fraction_law_undead_29_name",
-    "localizedName": "Terror y pavor",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_29_icon",
+    "localizedName": "Terror y pavor",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -44403,11 +44403,11 @@
   {
     "id": "fraction_law_undead_30",
     "name": "fraction_law_undead_30_name",
-    "localizedName": "Morituri te salutant",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_30_icon",
+    "localizedName": "Morituri te salutant",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -44681,11 +44681,11 @@
   {
     "id": "fraction_law_undead_31",
     "name": "fraction_law_undead_31_name",
-    "localizedName": "Presencia de la muerte",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_31_icon",
+    "localizedName": "Presencia de la muerte",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -44964,11 +44964,11 @@
   {
     "id": "fraction_law_undead_32",
     "name": "fraction_law_undead_32_name",
-    "localizedName": "Gracia de la Luna",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_32_icon",
+    "localizedName": "Gracia de la Luna",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -45242,11 +45242,11 @@
   {
     "id": "fraction_law_undead_34",
     "name": "fraction_law_undead_34_name",
-    "localizedName": "Absorción mágica",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "icon": "icons/fraction_laws/fraction_law_undead_34_icon",
+    "localizedName": "Absorción mágica",
+    "factionIcon": "icons/fractions/undead_icon",
     "levels": [
       {
         "level": 1,
@@ -45520,11 +45520,11 @@
   {
     "id": "fraction_law_unfrozen_1",
     "name": "fraction_law_unfrozen_1_name",
-    "localizedName": "Recaudadores de impuestos",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_1_icon",
+    "localizedName": "Recaudadores de impuestos",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -45821,11 +45821,11 @@
   {
     "id": "fraction_law_unfrozen_2",
     "name": "fraction_law_unfrozen_2_name",
-    "localizedName": "Sabiduría generacional",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_2_icon",
+    "localizedName": "Sabiduría generacional",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -46122,11 +46122,11 @@
   {
     "id": "fraction_law_unfrozen_3",
     "name": "fraction_law_unfrozen_3_name",
-    "localizedName": "Riqueza de recursos I",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_3_icon",
+    "localizedName": "Riqueza de recursos I",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -46418,11 +46418,11 @@
   {
     "id": "fraction_law_unfrozen_4",
     "name": "fraction_law_unfrozen_4_name",
-    "localizedName": "Tierra natal gélida",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_4_icon",
+    "localizedName": "Tierra natal gélida",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -46724,11 +46724,11 @@
   {
     "id": "fraction_law_unfrozen_5",
     "name": "fraction_law_unfrozen_5_name",
-    "localizedName": "Ra'shoth de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_5_icon",
+    "localizedName": "Ra'shoth de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -47025,11 +47025,11 @@
   {
     "id": "fraction_law_unfrozen_6",
     "name": "fraction_law_unfrozen_6_name",
-    "localizedName": "Fuerza descongelada I",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_6_icon",
+    "localizedName": "Fuerza descongelada I",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -47321,11 +47321,11 @@
   {
     "id": "fraction_law_unfrozen_7",
     "name": "fraction_law_unfrozen_7_name",
-    "localizedName": "Poder del hielo",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_7_icon",
+    "localizedName": "Poder del hielo",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -47627,11 +47627,11 @@
   {
     "id": "fraction_law_unfrozen_8",
     "name": "fraction_law_unfrozen_8_name",
-    "localizedName": "Condiciones de supervivencia",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_8_icon",
+    "localizedName": "Condiciones de supervivencia",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -47928,11 +47928,11 @@
   {
     "id": "fraction_law_unfrozen_9",
     "name": "fraction_law_unfrozen_9_name",
-    "localizedName": "Profundidades de la mente",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_9_icon",
+    "localizedName": "Profundidades de la mente",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -48234,11 +48234,11 @@
   {
     "id": "fraction_law_unfrozen_10",
     "name": "fraction_law_unfrozen_10_name",
-    "localizedName": "Fuerza descongelada II",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_10_icon",
+    "localizedName": "Fuerza descongelada II",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -48530,11 +48530,11 @@
   {
     "id": "fraction_law_unfrozen_11",
     "name": "fraction_law_unfrozen_11_name",
-    "localizedName": "Fuerza descongelada III",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_11_icon",
+    "localizedName": "Fuerza descongelada III",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -48826,11 +48826,11 @@
   {
     "id": "fraction_law_unfrozen_12",
     "name": "fraction_law_unfrozen_12_name",
-    "localizedName": "Cultores de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_12_icon",
+    "localizedName": "Cultores de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -49122,11 +49122,11 @@
   {
     "id": "fraction_law_unfrozen_13",
     "name": "fraction_law_unfrozen_13_name",
-    "localizedName": "Jinetes de aga'shoth de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_13_icon",
+    "localizedName": "Jinetes de aga'shoth de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -49418,11 +49418,11 @@
   {
     "id": "fraction_law_unfrozen_14",
     "name": "fraction_law_unfrozen_14_name",
-    "localizedName": "Minería: Mercurio",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_14_icon",
+    "localizedName": "Minería: Mercurio",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -49719,11 +49719,11 @@
   {
     "id": "fraction_law_unfrozen_15",
     "name": "fraction_law_unfrozen_15_name",
-    "localizedName": "Magia de otro mundo",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_15_icon",
+    "localizedName": "Magia de otro mundo",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -50015,11 +50015,11 @@
   {
     "id": "fraction_law_unfrozen_16",
     "name": "fraction_law_unfrozen_16_name",
-    "localizedName": "Frialdad en el trato",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_16_icon",
+    "localizedName": "Frialdad en el trato",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -50311,11 +50311,11 @@
   {
     "id": "fraction_law_unfrozen_17",
     "name": "fraction_law_unfrozen_17_name",
-    "localizedName": "Riquezas de recursos II",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_17_icon",
+    "localizedName": "Riquezas de recursos II",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -50607,11 +50607,11 @@
   {
     "id": "fraction_law_unfrozen_18",
     "name": "fraction_law_unfrozen_18_name",
-    "localizedName": "Fuerza descongelada IV",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_18_icon",
+    "localizedName": "Fuerza descongelada IV",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -50903,11 +50903,11 @@
   {
     "id": "fraction_law_unfrozen_19",
     "name": "fraction_law_unfrozen_19_name",
-    "localizedName": "Shoth majestuoso de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_19_icon",
+    "localizedName": "Shoth majestuoso de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -51204,11 +51204,11 @@
   {
     "id": "fraction_law_unfrozen_20",
     "name": "fraction_law_unfrozen_20_name",
-    "localizedName": "Tacto frío",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_20_icon",
+    "localizedName": "Tacto frío",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -51505,11 +51505,11 @@
   {
     "id": "fraction_law_unfrozen_21",
     "name": "fraction_law_unfrozen_21_name",
-    "localizedName": "Helada",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_21_icon",
+    "localizedName": "Helada",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -51801,11 +51801,11 @@
   {
     "id": "fraction_law_unfrozen_22",
     "name": "fraction_law_unfrozen_22_name",
-    "localizedName": "Llamada de las profundidades",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_22_icon",
+    "localizedName": "Llamada de las profundidades",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -52107,11 +52107,11 @@
   {
     "id": "fraction_law_unfrozen_23",
     "name": "fraction_law_unfrozen_23_name",
-    "localizedName": "Destrucción inevitable",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_23_icon",
+    "localizedName": "Destrucción inevitable",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -52413,11 +52413,11 @@
   {
     "id": "fraction_law_unfrozen_24",
     "name": "fraction_law_unfrozen_24_name",
-    "localizedName": "Fuerza descongelada V",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_24_icon",
+    "localizedName": "Fuerza descongelada V",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -52709,11 +52709,11 @@
   {
     "id": "fraction_law_unfrozen_25",
     "name": "fraction_law_unfrozen_25_name",
-    "localizedName": "Fuerza descongelada VI",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_25_icon",
+    "localizedName": "Fuerza descongelada VI",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -53005,11 +53005,11 @@
   {
     "id": "fraction_law_unfrozen_26",
     "name": "fraction_law_unfrozen_26_name",
-    "localizedName": "Cóncubos de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_26_icon",
+    "localizedName": "Cóncubos de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -53301,11 +53301,11 @@
   {
     "id": "fraction_law_unfrozen_27",
     "name": "fraction_law_unfrozen_27_name",
-    "localizedName": "Árbitros de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_27_icon",
+    "localizedName": "Árbitros de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -53597,11 +53597,11 @@
   {
     "id": "fraction_law_unfrozen_28",
     "name": "fraction_law_unfrozen_28_name",
-    "localizedName": "Congelación mental",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_28_icon",
+    "localizedName": "Congelación mental",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -53893,11 +53893,11 @@
   {
     "id": "fraction_law_unfrozen_29",
     "name": "fraction_law_unfrozen_29_name",
-    "localizedName": "El Abismo devuelve la mirada",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_29_icon",
+    "localizedName": "El Abismo devuelve la mirada",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -54189,11 +54189,11 @@
   {
     "id": "fraction_law_unfrozen_30",
     "name": "fraction_law_unfrozen_30_name",
-    "localizedName": "Riquezas de recursos III",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_30_icon",
+    "localizedName": "Riquezas de recursos III",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -54485,11 +54485,11 @@
   {
     "id": "fraction_law_unfrozen_31",
     "name": "fraction_law_unfrozen_31_name",
-    "localizedName": "Fuerza descongelada VII",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_31_icon",
+    "localizedName": "Fuerza descongelada VII",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -54781,11 +54781,11 @@
   {
     "id": "fraction_law_unfrozen_32",
     "name": "fraction_law_unfrozen_32_name",
-    "localizedName": "Enviados abisales de élite",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_32_icon",
+    "localizedName": "Enviados abisales de élite",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -55082,11 +55082,11 @@
   {
     "id": "fraction_law_unfrozen_33",
     "name": "fraction_law_unfrozen_33_name",
-    "localizedName": "Tormentas de hielo",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_33_icon",
+    "localizedName": "Tormentas de hielo",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -55378,11 +55378,11 @@
   {
     "id": "fraction_law_unfrozen_34",
     "name": "fraction_law_unfrozen_34_name",
-    "localizedName": "El mundo es nuestro",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_34_icon",
+    "localizedName": "El mundo es nuestro",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -55674,11 +55674,11 @@
   {
     "id": "fraction_law_unfrozen_35",
     "name": "fraction_law_unfrozen_35_name",
-    "localizedName": "Exploradores planares",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_35_icon",
+    "localizedName": "Exploradores planares",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -55980,11 +55980,11 @@
   {
     "id": "fraction_law_unfrozen_36",
     "name": "fraction_law_unfrozen_36_name",
-    "localizedName": "Cero absoluto",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "icon": "icons/fraction_laws/fraction_law_unfrozen_36_icon",
+    "localizedName": "Cero absoluto",
+    "factionIcon": "icons/fractions/unfrozen_icon",
     "levels": [
       {
         "level": 1,
@@ -56276,11 +56276,11 @@
   {
     "id": "fraction_law_demon_31",
     "name": "fraction_law_demon_31_name",
-    "localizedName": "Reservas de concentración",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "icon": "icons/fraction_laws/wip_fraction_law_icon",
+    "localizedName": "Reservas de concentración",
+    "factionIcon": "icons/fractions/hive_icon",
     "levels": [
       {
         "level": 1,

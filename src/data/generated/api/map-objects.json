@@ -2,9 +2,18 @@
   {
     "id": "abandoned_corpse",
     "name": "Restos olvidados",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_corpse",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Una vez por partida, otorga una pequeña recompensa aleatoria.",
     "narrativeDescription": "Quienquiera que haya matado a este viajero, claramente no tenía ningún interés en robar.",
-    "icon": "objects/interactive/abandoned_corpse",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -1528,9 +1537,18 @@
   {
     "id": "abandoned_mansion",
     "name": "Mansión abandonada",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_mansion",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga oro y posiblemente también artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Los ricos están bien provistos y deseosos de donar a tu causa después de algo de persuasión.",
-    "icon": "objects/interactive/abandoned_mansion",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -3091,9 +3109,15 @@
   {
     "id": "abandoned_outpost",
     "name": "Puesto avanzado abandonado",
+    "category": "Interact",
+    "icon": "objects/interactive/abandoned_outpost",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Derrota a su guardia para transformar este puesto avanzado en una ciudad de tu facción inicial.",
     "narrativeDescription": "Tiene todo lo básico para vivir… Lo que le falta es identidad.",
-    "icon": "objects/interactive/abandoned_outpost",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -3142,9 +3166,17 @@
   {
     "id": "abnormal_structure",
     "name": "Estructura anormal",
+    "category": "Interact",
+    "icon": "objects/interactive/abnormal_structure",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ],
     "description": "Otorga artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Entre los restos destrozados del edificio merodean los engendros de la Grieta. ¿Qué custodian?",
-    "icon": "objects/interactive/abnormal_structure",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -5443,9 +5475,15 @@
   {
     "id": "alchemy_lab",
     "name": "Laboratorio alquímico",
+    "category": "Interact",
+    "icon": "objects/interactive/alchemy_lab",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite convertir gemas, cristales y mercurio en polvo alquímico.",
     "narrativeDescription": "Un refugio para alquimistas que buscan la fórmula perfecta. Un lugar en el que cada experimento los acerca un poco más a su gran obra maestra.",
-    "icon": "objects/interactive/alchemy_lab",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -5477,9 +5515,17 @@
   {
     "id": "altar_of_magic_1",
     "name": "Sagrario de nochesombra",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ],
     "description": "Permite al héroe elegir y aprender <resolved>1</resolved> entre <resolved>3</resolved> hechizos de nochesombra aleatorios.",
     "narrativeDescription": "Los hechizos de Naira suelen versar sobre maldiciones, defensa y efectos mentales.",
-    "icon": "objects/interactive/altar_of_magic_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -5789,9 +5835,17 @@
   {
     "id": "altar_of_magic_2",
     "name": "Sagrario de luz solar",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ],
     "description": "Permite al héroe elegir y aprender <resolved>1</resolved> entre <resolved>3</resolved> hechizos de luz solar aleatorios.",
     "narrativeDescription": "Los hechizos de Arina suelen versar sobre ventajas tácticas, efectos positivos y curación.",
-    "icon": "objects/interactive/altar_of_magic_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -6107,9 +6161,17 @@
   {
     "id": "altar_of_magic_3",
     "name": "Sagrario arcano",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ],
     "description": "Permite al héroe elegir y aprender <resolved>1</resolved> entre <resolved>3</resolved> hechizos arcanos aleatorios.",
     "narrativeDescription": "Los hechizos de Doreath suelen versar sobre conceptos puros que deforman el espacio y el tiempo.",
-    "icon": "objects/interactive/altar_of_magic_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -6419,9 +6481,17 @@
   {
     "id": "altar_of_magic_4",
     "name": "Sagrario primigenio",
+    "category": "Interact",
+    "icon": "objects/interactive/altar_of_magic_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "spell"
+    ],
     "description": "Permite al héroe elegir y aprender <resolved>1</resolved> entre <resolved>3</resolved> hechizos primigenios aleatorios.",
     "narrativeDescription": "Los hechizos de Hksmilla son en su mayoría ataques poderosos con distintos efectos.",
-    "icon": "objects/interactive/altar_of_magic_4",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -6737,9 +6807,17 @@
   {
     "id": "alvars_eye",
     "name": "Puesto avanzado de Alvar",
+    "category": "Interact",
+    "icon": "objects/interactive/alvars_eye",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga recursos comunes y valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Un refugio utilizado por los espías del Triunvirato para descansar entre misiones.",
-    "icon": "objects/interactive/alvars_eye",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -7156,9 +7234,15 @@
   {
     "id": "arena",
     "name": "Foso de la gloria",
+    "category": "Interact",
+    "icon": "objects/interactive/arena",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes mejorar a sus criaturas a cambio de oro.",
     "narrativeDescription": "Los veteranos independientes que luchan aquí estarán encantados de enseñar a tus tropas… por un precio.",
-    "icon": "objects/interactive/arena",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7190,9 +7274,15 @@
   {
     "id": "armory_automaton",
     "name": "Autómata de la cumbre",
+    "category": "Interact",
+    "icon": "objects/interactive/armory_automaton",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>1</resolved> de forma permanente la defensa de los héroes visitantes.",
     "narrativeDescription": "El herrero automatizado repara cualquier armadura que se coloque delante de él.",
-    "icon": "objects/interactive/armory_automaton",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -7224,9 +7314,15 @@
   {
     "id": "barracks_demon_1",
     "name": "Vivienda abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar parásitos en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "A los parásitos no les importa mucho el estado de las casas de sus huéspedes.",
-    "icon": "objects/barracks/barracks_demon_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7295,9 +7391,15 @@
   {
     "id": "barracks_demon_2",
     "name": "Guarida de carroña",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar langostas en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "El olor es insoportable.",
-    "icon": "objects/barracks/barracks_demon_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7366,9 +7468,15 @@
   {
     "id": "barracks_demon_3",
     "name": "Nido de papel",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar avispones en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Cabe señalar que uno de los mayores logros de la civilización, el papel, se inventó en un nido de avispones, aunque sus habitantes nunca aprendieron a escribir.",
-    "icon": "objects/barracks/barracks_demon_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7437,9 +7545,15 @@
   {
     "id": "barracks_demon_4",
     "name": "Zigurat quitinoso",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar escorpiones en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Fabricado a partir de los robustos caparazones de sus habitantes.",
-    "icon": "objects/barracks/barracks_demon_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -7525,9 +7639,15 @@
   {
     "id": "barracks_demon_5",
     "name": "Cima",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar asoladores en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Los asoladores <b>nunca</b> se conformarían con un edificio más bajo, sin importar lo práctico que pueda ser.",
-    "icon": "objects/barracks/barracks_demon_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -7613,9 +7733,15 @@
   {
     "id": "barracks_demon_6",
     "name": "Madrigueras de alma ardiente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar vermes en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Los túneles de los vermes se extienden a lo largo de muchas leguas en todas direcciones.",
-    "icon": "objects/barracks/barracks_demon_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -7701,9 +7827,15 @@
   {
     "id": "barracks_demon_7",
     "name": "Torre de amor",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar reinas de la Colmena en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "\"Ven, cariño, y sé testigo de la suave caricia de nuestro señor…\".",
-    "icon": "objects/barracks/barracks_demon_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -7789,9 +7921,15 @@
   {
     "id": "barracks_dungeon_1",
     "name": "Cubil",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar trogloditas en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "En las madrigueras de los trogloditas reina la oscuridad total, lo que hace imposible orientarse con la vista.",
-    "icon": "objects/barracks/barracks_dungeon_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7860,9 +7998,15 @@
   {
     "id": "barracks_dungeon_2",
     "name": "Refugio",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar infiltrados en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "Se quedan una noche y luego parten hacia una nueva misión.",
-    "icon": "objects/barracks/barracks_dungeon_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -7931,9 +8075,15 @@
   {
     "id": "barracks_dungeon_3",
     "name": "Anfiteatro",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar bailarinas de ónice en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "En tiempos de paz, las bailarinas disfrutan cambiando de accesorios, aunque algunos admiradores prefieren que mantengan el aspecto de siempre.",
-    "icon": "objects/barracks/barracks_dungeon_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -8002,9 +8152,15 @@
   {
     "id": "barracks_dungeon_4",
     "name": "Laberinto",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar minotauros en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Construida por minotauros, Guarida de Baltasar es posiblemente la ciudad de mayor esplendor de Jadame.",
-    "icon": "objects/barracks/barracks_dungeon_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8090,9 +8246,15 @@
   {
     "id": "barracks_dungeon_5",
     "name": "Voces quietas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar medusas en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Muestra respeto o tu voz también se silenciará.",
-    "icon": "objects/barracks/barracks_dungeon_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8178,9 +8340,15 @@
   {
     "id": "barracks_dungeon_6",
     "name": "Hogar ctónico",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar hidras en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "La casa sirve de alojamiento para los criadores de hidras, mientras que las criaturas se mantienen en grandes recintos subterráneos.",
-    "icon": "objects/barracks/barracks_dungeon_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8266,9 +8434,15 @@
   {
     "id": "barracks_dungeon_7",
     "name": "Palacio de cueva",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_dungeon_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar dragones de cueva en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Aunque existe una gran cantidad de dragones viviendo en la superficie, estos prefieren permanecer en las sombras.",
-    "icon": "objects/barracks/barracks_dungeon_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8354,9 +8528,15 @@
   {
     "id": "barracks_human_1",
     "name": "Guarnición",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar espadachines en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "Las tácticas sofisticadas pueden ser útiles, pero no servirán de mucho sin infantería básica.",
-    "icon": "objects/barracks/barracks_human_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -8425,9 +8605,15 @@
   {
     "id": "barracks_human_2",
     "name": "Pajarera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar saeteros en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "Aunque los ballesteros acabaron suplantando a las antiguas unidades de arqueros, las pajareras de halcones resistieron, testigos de una época pasada.",
-    "icon": "objects/barracks/barracks_human_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -8496,9 +8682,15 @@
   {
     "id": "barracks_human_3",
     "name": "Colonia de grifos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar grifos en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Sí, es increíblemente lujosa. Los grifos tienen derecho a los mejores nidos del país.",
-    "icon": "objects/barracks/barracks_human_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -8567,9 +8759,15 @@
   {
     "id": "barracks_human_4",
     "name": "Capilla de resol",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar tejedoras de luz en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Reza al Cáliz y él te sanará y fortalecerá. O deja que los profesionales recen por ti.",
-    "icon": "objects/barracks/barracks_human_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8655,9 +8853,15 @@
   {
     "id": "barracks_human_5",
     "name": "Hipódromo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar caballerías en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "En los hipódromos se celebran carreras de caballos con regularidad, e incluso, ocasionalmente, torneos de justas.",
-    "icon": "objects/barracks/barracks_human_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8743,9 +8947,15 @@
   {
     "id": "barracks_human_6",
     "name": "Basílica del umbral",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar inquisidores en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Aquí residen humanos a punto de convertirse en luz pura, pero que aún conservan su forma humana y sus roles sociales.",
-    "icon": "objects/barracks/barracks_human_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8831,9 +9041,15 @@
   {
     "id": "barracks_human_7",
     "name": "Forja radiante",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_human_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar ángeles en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "A los detractores de la Iglesia les gusta decir que los verdaderos ángeles se separaron de los templarios. Pero, si es así, ¿de quién son las armaduras que se forjan aquí?",
-    "icon": "objects/barracks/barracks_human_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -8919,9 +9135,15 @@
   {
     "id": "barracks_nature_1",
     "name": "Cabañas de faunos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar faunos en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "Los feéricos hacen de este sitio su hogar y fabrican sus herramientas y armas de guerra con la materia misma de la tierra.",
-    "icon": "objects/barracks/barracks_nature_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -8990,9 +9212,15 @@
   {
     "id": "barracks_nature_2",
     "name": "Huerto de lúpulo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar lupuciérnagas en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "Aunque a algunos les parecen adorables, las lupuciérnagas son feroces defensoras del Bosque Murmullo, y estas humildes casas son su fortaleza.",
-    "icon": "objects/barracks/barracks_nature_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -9061,9 +9289,15 @@
   {
     "id": "barracks_nature_3",
     "name": "Círculo de menhires",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar íriyad de enredadera en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Aquí los árboles y las piedras están vivos y, en ocasiones, se alejan por su propia cuenta.",
-    "icon": "objects/barracks/barracks_nature_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -9132,9 +9366,15 @@
   {
     "id": "barracks_nature_4",
     "name": "Estanque floreciente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar náyades en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Aquellos que cuidan el agua serán recompensados por las criaturas que habitan en ella.",
-    "icon": "objects/barracks/barracks_nature_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9220,9 +9460,15 @@
   {
     "id": "barracks_nature_5",
     "name": "Cabaña de setamadera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar herbomantes en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Los mantes más experimentados se aíslan dentro de estas peculiares estructuras para comunicarse con el Micelio.",
-    "icon": "objects/barracks/barracks_nature_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9308,9 +9554,15 @@
   {
     "id": "barracks_nature_6",
     "name": "Guarida del trueno",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar qilin en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Los dominios del aire son tempestuosos y se requiere un gran tributo para domar a las criaturas infundidas de viento que habitan en ellos.",
-    "icon": "objects/barracks/barracks_nature_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9396,9 +9648,15 @@
   {
     "id": "barracks_nature_7",
     "name": "Pira",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_nature_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar fénix en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Las llamas no provienen de la madera, sino de la fuerza vital colectiva del propio bosque.",
-    "icon": "objects/barracks/barracks_nature_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9484,9 +9742,15 @@
   {
     "id": "barracks_necropolis_1",
     "name": "Criptas y tumbas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar esqueletos en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "La forma más sencilla de obtener esqueletos no fracturados es desde una tumba.",
-    "icon": "objects/barracks/barracks_necropolis_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -9555,9 +9819,15 @@
   {
     "id": "barracks_necropolis_2",
     "name": "Pabellón tranquilo",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar apariciones en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "Traídas de vuelta contra su voluntad, se sienten atraídas por los reflejos, tanto físicos como mentales.",
-    "icon": "objects/barracks/barracks_necropolis_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -9626,9 +9896,15 @@
   {
     "id": "barracks_necropolis_3",
     "name": "Perrera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar mascotas no muertas en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Los perros son tan leales a sus amos que a menudo siguen sirviéndolos despreocupadamente incluso después de morir.",
-    "icon": "objects/barracks/barracks_necropolis_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -9697,9 +9973,15 @@
   {
     "id": "barracks_necropolis_4",
     "name": "Intercambio de huesos",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar ladrones de tumbas en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Los nigromantes no suelen estar tan implicados como para recolectar huesos por sí mismos, ¡y ahí es donde entran los empresarios astutos!",
-    "icon": "objects/barracks/barracks_necropolis_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9785,9 +10067,15 @@
   {
     "id": "barracks_necropolis_5",
     "name": "Mansión atemporal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar liches en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "La aristocracia no muerta persigue incansablemente el estudio de la muerte y, al hacerlo, se adentra en el estudio del mismo tiempo.",
-    "icon": "objects/barracks/barracks_necropolis_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9873,9 +10161,15 @@
   {
     "id": "barracks_necropolis_6",
     "name": "Tumba de guerreros",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar caballeros del terror en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "La guerra nunca termina: aquí, permanece en las mentes de los que perecieron.",
-    "icon": "objects/barracks/barracks_necropolis_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -9961,9 +10255,15 @@
   {
     "id": "barracks_necropolis_7",
     "name": "Castillo de festines",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_necropolis_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar vampiros en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "La vida eterna implica festines eternos y lujos sin fin.",
-    "icon": "objects/barracks/barracks_necropolis_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10049,9 +10349,15 @@
   {
     "id": "barracks_neutral_1",
     "name": "Templo de los Cuatro Eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/temple_of_magic",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar centinelas de la gloria en esta vivienda.",
     "narrativeDescription": "¿Pero qué es la gloria y por qué necesitamos centinelas que la protejan?",
-    "icon": "objects/interactive/temple_of_magic",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10137,9 +10443,15 @@
   {
     "id": "barracks_neutral_10",
     "name": "Nido de cristal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_kitten_horn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar cuernigatos en esta vivienda.",
     "narrativeDescription": "Adoran los cristales hasta el punto de fusionarlos con su cuerpo. Por eso no es de extrañar que estos voraces mininos hagan sus nidos entre ellos.",
-    "icon": "objects/barracks/barracks_neutral_kitten_horn",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10225,9 +10537,15 @@
   {
     "id": "barracks_neutral_11",
     "name": "Fragmento estelar",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_star_child",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar niños estrella en esta vivienda.",
     "narrativeDescription": "¿De dónde viene? Los seres que puedes reclutar aquí te seguirán, pero nunca responderán a esta pregunta.",
-    "icon": "objects/barracks/barracks_neutral_star_child",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10313,9 +10631,15 @@
   {
     "id": "barracks_neutral_12",
     "name": "Matorral de rocío del sol",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_primal_remnant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar remanentes primigenios en esta vivienda.",
     "narrativeDescription": "Un lugar tan antiguo como el mismo mundo.",
-    "icon": "objects/barracks/barracks_neutral_primal_remnant",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10401,9 +10725,15 @@
   {
     "id": "barracks_neutral_13",
     "name": "Campo de batalla",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_animated_armor",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar armaduras animadas en esta vivienda.",
     "narrativeDescription": "En los lugares de conflicto se engendran muertos vivientes y más… si es que el Micelio llega primero.",
-    "icon": "objects/barracks/barracks_neutral_animated_armor",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10489,9 +10819,15 @@
   {
     "id": "barracks_neutral_14",
     "name": "Bosque del Terror",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_gorilla",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar grols en esta vivienda.",
     "narrativeDescription": "Un lugar de cuento de hadas en el que habitan monstruos.",
-    "icon": "objects/barracks/barracks_neutral_gorilla",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10577,9 +10913,15 @@
   {
     "id": "barracks_neutral_15",
     "name": "Madriguera",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_halfling",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar medianos en esta vivienda.",
     "narrativeDescription": "La guerra obliga incluso a las personas más pacíficas y hogareñas a cruzar el umbral de sus propios hogares.",
-    "icon": "objects/barracks/barracks_neutral_halfling",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10665,9 +11007,15 @@
   {
     "id": "barracks_neutral_16",
     "name": "Cabaña de aldea",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_peasant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar campesinos en esta vivienda.",
     "narrativeDescription": "Se unirán a cualquier ejército con el fin de evitar pagar impuestos a su señor.",
-    "icon": "objects/barracks/barracks_neutral_peasant",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10753,9 +11101,15 @@
   {
     "id": "barracks_neutral_17",
     "name": "Torre de pixies",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_fairy",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar pixies en esta vivienda.",
     "narrativeDescription": "Sus alegres habitantes están ansiosas por unirse a cualquier héroe que les prometa pasar un buen rato.",
-    "icon": "objects/barracks/barracks_neutral_fairy",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10841,17 +11195,29 @@
   {
     "id": "barracks_neutral_2",
     "name": "Risco de dragones",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_animated_armor",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null,
     "description": "Puedes reclutar dragones de obsidiana en esta vivienda.",
     "narrativeDescription": "Solo los campeones más poderosos consiguen aliados aquí. El resto no son más que comida.",
-    "icon": "objects/barracks/barracks_neutral_animated_armor",
     "creatureBankInfo": null
   },
   {
     "id": "barracks_neutral_3",
     "name": "Plataforma de vigilantes",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_world_watcher",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar vigilantes del mundo en esta vivienda.",
     "narrativeDescription": "Se desconoce por qué los observadores del mundo se dejan \"reclutar\", pero no tiene nada que ver con el oro.",
-    "icon": "objects/barracks/barracks_neutral_world_watcher",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -10937,9 +11303,15 @@
   {
     "id": "barracks_neutral_4",
     "name": "Pirámide",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_coatle",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar couatl en esta vivienda.",
     "narrativeDescription": "Se dice que estos lugares son obra de Hksmilla, donde residen ahora sus sirvientes más poderosos.",
-    "icon": "objects/barracks/barracks_neutral_coatle",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11025,17 +11397,29 @@
   {
     "id": "barracks_neutral_5",
     "name": "Torre abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_primal_remnant",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null,
     "description": "Puedes reclutar mantícoras en esta vivienda.",
     "narrativeDescription": "Las mantícoras prefieren los lugares altos y anidan donde pueden avistar presas a kilómetros de distancia.",
-    "icon": "objects/barracks/barracks_neutral_primal_remnant",
     "creatureBankInfo": null
   },
   {
     "id": "barracks_neutral_6",
     "name": "Cáscaras de huevo de dragón",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_fairy_dragon",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar dragones feéricos en esta vivienda.",
     "narrativeDescription": "Los dragones feéricos conservan un toque de su infancia en la edad adulta y a menudo modelan sus hogares para que se parezcan a los huevos de los que salieron.",
-    "icon": "objects/barracks/barracks_neutral_fairy_dragon",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11121,9 +11505,15 @@
   {
     "id": "barracks_neutral_7",
     "name": "Ciénaga floreciente",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_giand_frog",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar sapos gigantes en esta vivienda.",
     "narrativeDescription": "Lugares como estos, ricos en vida y en maná, dan lugar a los anfibios más extraños.",
-    "icon": "objects/barracks/barracks_neutral_giand_frog",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11209,9 +11599,15 @@
   {
     "id": "barracks_neutral_8",
     "name": "Valle de unicornios",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_unicorn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar unicornios en esta vivienda.",
     "narrativeDescription": "Donde criaturas de belleza pura responden a la llamada de un corazón puro.",
-    "icon": "objects/barracks/barracks_neutral_unicorn",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11297,9 +11693,15 @@
   {
     "id": "barracks_neutral_9",
     "name": "Base de matadragones",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragonslayer",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar matadragones en esta vivienda.",
     "narrativeDescription": "Los matadragones, por muchos considerados algo desquiciados, establecen enclaves en lugares remotos y aceptan aprendices que tienen poco que perder y todo que ganar.",
-    "icon": "objects/barracks/barracks_neutral_dragonslayer",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11385,17 +11787,29 @@
   {
     "id": "barracks_neutral_dragon_lich",
     "name": "barracks_neutral_dragon_lich",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragon_lich",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null,
     "description": null,
     "narrativeDescription": null,
-    "icon": "objects/barracks/barracks_neutral_dragon_lich",
     "creatureBankInfo": null
   },
   {
     "id": "barracks_unfrozen_1",
     "name": "Rito de invocación menor",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar a ra'shoth en esta vivienda. Su crecimiento semanal aumenta en <resolved>4</resolved>.",
     "narrativeDescription": "La invocación puede ser tumultuosa, pero las cadenas hacen que permanezcan firmes en su lugar.",
-    "icon": "objects/barracks/barracks_unfrozen_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -11464,9 +11878,15 @@
   {
     "id": "barracks_unfrozen_2",
     "name": "Torre de cultores",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar cultores en esta vivienda. Su crecimiento semanal aumenta en <resolved>3</resolved>.",
     "narrativeDescription": "Las habitaciones no son adecuadas para practicar un autocontrol riguroso.",
-    "icon": "objects/barracks/barracks_unfrozen_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -11535,9 +11955,15 @@
   {
     "id": "barracks_unfrozen_3",
     "name": "Establos de aga'shoth",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar jinetes de aga'shoth en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "Los aga'shoth duermen cómodamente en el interior. Los jinetes tienen su propio espacio en el piso de arriba, pero a menudo se unen a sus monturas.",
-    "icon": "objects/barracks/barracks_unfrozen_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -11606,9 +12032,15 @@
   {
     "id": "barracks_unfrozen_4",
     "name": "Rito de invocación perturbador",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar shoth majestuosos en esta vivienda. Su crecimiento semanal aumenta en <resolved>2</resolved>.",
     "narrativeDescription": "El centro del portal resplandece y centellea con colores de más allá de este mundo.",
-    "icon": "objects/barracks/barracks_unfrozen_4",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11694,9 +12126,15 @@
   {
     "id": "barracks_unfrozen_5",
     "name": "Casa de las cadenas",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_5",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar cóncubos en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Las ventanas aquí son diminutas, pues los habitantes han renunciado a toda necesidad de luz.",
-    "icon": "objects/barracks/barracks_unfrozen_5",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11782,9 +12220,15 @@
   {
     "id": "barracks_unfrozen_6",
     "name": "Mansión hinchada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_6",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar árbitros en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Medio sumergida en emanaciones abisales, la mansión late con vida.",
-    "icon": "objects/barracks/barracks_unfrozen_6",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11870,9 +12314,15 @@
   {
     "id": "barracks_unfrozen_7",
     "name": "Rito de invocación inquietante",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_unfrozen_7",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": null,
     "description": "Puedes reclutar enviados abisales en esta vivienda. Su crecimiento semanal aumenta en <resolved>1</resolved>.",
     "narrativeDescription": "Vendrán cuando se les llame.",
-    "icon": "objects/barracks/barracks_unfrozen_7",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "",
@@ -11958,9 +12408,15 @@
   {
     "id": "beer_fountain",
     "name": "Fuente de cerveza",
+    "category": "Interact",
+    "icon": "objects/interactive/some_barrel",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>3</resolved> la suerte de cada héroe visitante hasta el final de la semana.",
     "narrativeDescription": "A menudo llamada \"oro líquido\", una buena cerveza puede dar lugar a muchas aventuras e historias.",
-    "icon": "objects/interactive/some_barrel",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -11992,9 +12448,18 @@
   {
     "id": "black_tower",
     "name": "Torre negra",
+    "category": "Interact",
+    "icon": "objects/interactive/black_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga un artefacto valioso, oro o recursos después de derrotar a su guardia.",
     "narrativeDescription": "Una estructura imponente y siniestra que se alza en la distancia, llena de criaturas peligrosas y tesoros ocultos.",
-    "icon": "objects/interactive/black_tower",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -14803,9 +15268,17 @@
   {
     "id": "boreal_call",
     "name": "Llamada boreal",
+    "category": "Interact",
+    "icon": "objects/interactive/boreal_call",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener enviados abisales.",
     "narrativeDescription": "A veces, la barrera entre el Mundo Material y el Reino Entre Reinos es tan fina que por sus grietas escapan horrores abominables.",
-    "icon": "objects/interactive/boreal_call",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -15122,9 +15595,17 @@
   {
     "id": "camp_fire",
     "name": "Hoguera",
+    "category": "Resource",
+    "icon": "objects/resource/resource_camp_fire_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga una pequeña cantidad de recursos aleatorios.",
     "narrativeDescription": "Sea lo que fuese antes, ahora no es más que ceniza y elementos básicos.",
-    "icon": "objects/resource/resource_camp_fire_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -15620,9 +16101,15 @@
   {
     "id": "celestial_sphere",
     "name": "Chapitel celestial",
+    "category": "Interact",
+    "icon": "objects/interactive/celestial_sphere",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite el estudio de todos los hechizos contenidos dentro del Observatorio mágico.",
     "narrativeDescription": "Cuanto más cerca estés del cielo, mejor verás los hechizos escritos en las estrellas.",
-    "icon": "objects/interactive/celestial_sphere",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -15654,9 +16141,18 @@
   {
     "id": "chest",
     "name": "Cofre del tesoro",
+    "category": "Resource",
+    "icon": "objects/resource/resource_chest",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience",
+      "resource"
+    ],
     "description": "Da la opción de conseguir <resolved>1000-2000</resolved> de oro o la mitad de esa cantidad en EXP.",
     "narrativeDescription": "Una elección entre una riqueza fugaz y la sabiduría eterna.",
-    "icon": "objects/resource/resource_chest",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -15789,9 +16285,15 @@
   {
     "id": "chimerologist",
     "name": "Quimerólogo",
+    "category": "Interact",
+    "icon": "objects/interactive/chimerisrs_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes intercambiar criaturas por otras aleatorias.",
     "narrativeDescription": "La transmutación es un arte donde la ciencia y el caos se entrelazan. Produce resultados impredecibles, a menudo sorprendentes.",
-    "icon": "objects/interactive/chimerisrs_lair",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -15823,9 +16325,17 @@
   {
     "id": "circle_of_life",
     "name": "Ciclo de la vida",
+    "category": "Interact",
+    "icon": "objects/interactive/circle_of_life",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga oro y cristales después de derrotar a su guardia.",
     "narrativeDescription": "Los bosques y la Colmena, unidos en su lógica de que los muertos no son más que carroña que reciclar.",
-    "icon": "objects/interactive/circle_of_life",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -16150,9 +16660,15 @@
   {
     "id": "circus",
     "name": "Circo ambulante",
+    "category": "Interact",
+    "icon": "objects/interactive/circus",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Sube el nivel de una habilidad aleatoria a cada héroe visitante.",
     "narrativeDescription": "Trucos, acrobacias y representaciones divertidas: ¿cuál de estos espectáculos tendrás tiempo de ver?",
-    "icon": "objects/interactive/circus",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -16184,9 +16700,15 @@
   {
     "id": "college_of_wonder",
     "name": "Monasterio de la montaña",
+    "category": "Interact",
+    "icon": "objects/interactive/college_of_wonder",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>2</resolved> de forma permanente el ataque, la defensa, el poder de hechizo y el conocimiento de cada héroe visitante por <resolved>5000</resolved> de oro.",
     "narrativeDescription": "Estos monasterios, construidos para la iluminación y la serenidad, albergan generaciones de conocimiento a las que se puede acceder… pagando.",
-    "icon": "objects/interactive/college_of_wonder",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -16218,9 +16740,18 @@
   {
     "id": "crow_nest",
     "name": "Nido de cuervo",
+    "category": "Interact",
+    "icon": "objects/interactive/crow_nest",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Una vez por partida, otorga una pequeña recompensa aleatoria.",
     "narrativeDescription": "Los cuervos de Jadame llevan todo tipo de baratijas de vuelta a sus nidos.",
-    "icon": "objects/interactive/crow_nest",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -18674,9 +19205,15 @@
   {
     "id": "crystal_trail",
     "name": "Pisada de dragón",
+    "category": "Interact",
+    "icon": "objects/interactive/crystal_trail",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Una vez a la semana, por cada héroe, restaura completamente el maná de cada héroe visitante y luego lo duplica.",
     "narrativeDescription": "Los dragones antiguos estaban tan llenos de magia que incluso sus huellas zumbaban con ella.",
-    "icon": "objects/interactive/crystal_trail",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -18708,9 +19245,17 @@
   {
     "id": "cursed_old_house",
     "name": "Casa vieja maldita",
+    "category": "Interact",
+    "icon": "objects/interactive/cursed_old_house",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ],
     "description": "Otorga artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Era un edificio con un tejado a dos aguas, ennegrecido por el paso del tiempo y desprovisto de cualquier encanto… La casa permanecía en silencio, guardando los secretos de años pasados.",
-    "icon": "objects/interactive/cursed_old_house",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -22082,9 +22627,18 @@
   {
     "id": "dragon_utopia",
     "name": "Utopía de Dragones",
+    "category": "Interact",
+    "icon": "objects/interactive/dragon_utopia",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga una gran cantidad de oro y artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "La fantasía utópica en cuestión es que diferentes dragones puedan vivir unidos y en paz.",
-    "icon": "objects/interactive/dragon_utopia",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -26289,9 +26843,15 @@
   {
     "id": "eternal_dragon",
     "name": "Dragón eterno",
+    "category": "Interact",
+    "icon": "objects/interactive/eternal_dragon",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes transformar sus dragones en dragones liche muy poderosos.",
     "narrativeDescription": "Los dragones solían ser tan grandes como una ciudad, con tres ojos que veían el pasado, el presente y el futuro. Ahora solo nos queda tratar de reconstruir ese poder.",
-    "icon": "objects/interactive/eternal_dragon",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -26323,9 +26883,17 @@
   {
     "id": "fairy_ring",
     "name": "fairy_ring",
+    "category": "Interact",
+    "icon": "objects/interactive/fairy_ring",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ],
     "description": null,
     "narrativeDescription": null,
-    "icon": "objects/interactive/fairy_ring",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -26357,9 +26925,15 @@
   {
     "id": "fickle_shrine",
     "name": "Sagrario de los cuatro eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/fickle_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Restablece todos los atributos y las habilidades obtenidos al subir de nivel, lo que permite volver a entrenar al héroe. Solo una vez por héroe.",
     "narrativeDescription": "Arina, Naira, Doreath y Hksmilla aún recorren Enroth. Y, al comunicarse con ellos, los héroes pueden recibir su guía, a través de la cual hallarán nuevos caminos.",
-    "icon": "objects/interactive/fickle_shrine",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -26391,9 +26965,15 @@
   {
     "id": "flattering_mirror",
     "name": "Espejo del mundo",
+    "category": "Interact",
+    "icon": "objects/interactive/flattering_mirror",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Elimina la niebla de guerra en un pequeño radio alrededor de cada espejo del mapa.",
     "narrativeDescription": "La visión de tierras lejanas que ofrece el espejo despierta tanto anhelo como temor.",
-    "icon": "objects/interactive/flattering_mirror",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -26425,9 +27005,15 @@
   {
     "id": "forge",
     "name": "Forja del Segundo Hombre",
+    "category": "Interact",
+    "icon": "objects/interactive/forge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes intercambiar recursos por artefactos.",
     "narrativeDescription": "Forjar es su forma de rezar. No les importa mucho el resultado y lo comparten con gusto a cambio de una donación.",
-    "icon": "objects/interactive/forge",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -26459,9 +27045,15 @@
   {
     "id": "fort",
     "name": "Orden de los caballeros pobres",
+    "category": "Interact",
+    "icon": "objects/interactive/fort",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>2</resolved> de forma permanente el ataque o la defensa de los héroes visitantes por <resolved>1000</resolved> de oro.",
     "narrativeDescription": "Renunciaron a la magia y lo compensaron con un entrenamiento incesante.",
-    "icon": "objects/interactive/fort",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -26510,9 +27102,15 @@
   {
     "id": "fountain",
     "name": "Fuente",
+    "category": "Interact",
+    "icon": "objects/interactive/fountain",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga +<resolved>40</resolved> puntos de movimiento en este turno.",
     "narrativeDescription": "Los eruditos de Jadame lo confirman: los caballos beben.",
-    "icon": "objects/interactive/fountain",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -26544,9 +27142,15 @@
   {
     "id": "fountain_2",
     "name": "Fuente",
+    "category": "Interact",
+    "icon": "objects/interactive/fountain_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga +<resolved>40</resolved> puntos de movimiento en este turno.",
     "narrativeDescription": "Los eruditos de Jadame lo confirman: los caballos beben.",
-    "icon": "objects/interactive/fountain_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -26578,9 +27182,17 @@
   {
     "id": "gardener",
     "name": "Jardín mágico",
+    "category": "Interact",
+    "icon": "objects/interactive/gardener",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez a la semana, otorga oro o recursos valiosos al primer héroe visitante.",
     "narrativeDescription": "Jardín mágico de riquezas mágicas.",
-    "icon": "objects/interactive/gardener",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -26794,9 +27406,17 @@
   {
     "id": "gingerbread_house",
     "name": "Casa de galleta de jengibre",
+    "category": "Interact",
+    "icon": "objects/interactive/gingerbread_house",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez a la semana, otorga al primer héroe visitante el recurso valioso que elija.",
     "narrativeDescription": "La bruja malvada te pagará bien si ignoras el sótano.",
-    "icon": "objects/interactive/gingerbread_house",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -26989,9 +27609,15 @@
   {
     "id": "gladiator_arena",
     "name": "Arena de Lucinferno",
+    "category": "Interact",
+    "icon": "objects/interactive/Hell_light_arena",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "¡La arena de los campeones! Tras visitarla y pasar unos días, se desatará una batalla. El vencedor gana la partida. Si el enemigo no se presenta, ganas por defecto.",
     "narrativeDescription": "Dicen que los verdaderos duelos de habilidad solo se pueden ganar bajo las luces del infierno.",
-    "icon": "objects/interactive/Hell_light_arena",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -27023,9 +27649,15 @@
   {
     "id": "gladiator_spire",
     "name": "Chapitel de Lucinferno",
+    "category": "Interact",
+    "icon": "objects/interactive/fairy_ring",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "El chapitel te permite elegir al héroe que luchará en la próxima batalla.",
     "narrativeDescription": "Dicen que los verdaderos duelos de habilidad solo se pueden ganar bajo las luces del infierno.",
-    "icon": "objects/interactive/fairy_ring",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -27057,9 +27689,18 @@
   {
     "id": "goblin_cache",
     "name": "Tesoros de goblins",
+    "category": "Interact",
+    "icon": "objects/interactive/goblin_cache",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Una vez por partida, otorga una pequeña recompensa aleatoria.",
     "narrativeDescription": "Todos los objetos de valor de este alijo son robados. ¿Y robarle a un ladrón? Eso tiene perdón.",
-    "icon": "objects/interactive/goblin_cache",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -28154,9 +28795,17 @@
   {
     "id": "heros_crypt",
     "name": "Tumba del héroe anónimo",
+    "category": "Interact",
+    "icon": "objects/interactive/heros_crypt",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact"
+    ],
     "description": "Una vez por partida, otorga un artefacto aleatorio. Maldice al saqueador.",
     "narrativeDescription": "Ningún dios ni deidad aprueba a quien simplemente lleva ofrendas a un héroe.",
-    "icon": "objects/interactive/heros_crypt",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -30579,9 +31228,15 @@
   {
     "id": "huntsmans_camp",
     "name": "Campamento de explorador",
+    "category": "Interact",
+    "icon": "objects/interactive/temporary_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Restaura el <resolved>50</resolved> % de los puntos de movimiento máximos y el <resolved>50</resolved> % del maná máximo del héroe.",
     "narrativeDescription": "Siéntate y descansa tus piernas fatigadas.",
-    "icon": "objects/interactive/temporary_camp",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -30613,9 +31268,15 @@
   {
     "id": "infernal_cirque",
     "name": "Circo infernal",
+    "category": "Interact",
+    "icon": "objects/interactive/infernal_cirque",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite que cada héroe visitante aprenda hasta <resolved>1</resolved> habilidades expertas aleatorias o las suba de nivel.",
     "narrativeDescription": "Quienes presencian estas actuaciones quedan cambiados para siempre.",
-    "icon": "objects/interactive/infernal_cirque",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -30680,9 +31341,15 @@
   {
     "id": "insaras_eye",
     "name": "Ojo de Insara",
+    "category": "Interact",
+    "icon": "objects/interactive/insaras_eye",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga al propietario un nivel adicional de conocimiento sobre sus oponentes, así como <resolved>250</resolved> puntos de ley diarios.",
     "narrativeDescription": "La deidad de las oportunidades y el progreso vigila atentamente a los mejores.",
-    "icon": "objects/interactive/insaras_eye",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -30714,9 +31381,17 @@
   {
     "id": "iridescent_abbey",
     "name": "Abadía Iridiscente",
+    "category": "Interact",
+    "icon": "objects/interactive/iridescent_abbey",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga oro y gemas después de derrotar a su guardia.",
     "narrativeDescription": "Los artesanos utilizan gemas para fabricar vidrieras que algunos creen que poseen cualidades milagrosas.",
-    "icon": "objects/interactive/iridescent_abbey",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -31009,9 +31684,17 @@
   {
     "id": "jousting_range",
     "name": "Coliseo",
+    "category": "Interact",
+    "icon": "objects/interactive/jousting_range",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener caballería.",
     "narrativeDescription": "¡Justas y peleas de grifos! Con gusto te seguirán a una zona más abierta para disfrutar de mejores justas.",
-    "icon": "objects/interactive/jousting_range",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -31328,9 +32011,15 @@
   {
     "id": "knowledge_garden",
     "name": "Jardín del conocimiento",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_garden",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>1</resolved> de forma permanente el conocimiento de los héroes visitantes.",
     "narrativeDescription": "El mejor lugar para leer.",
-    "icon": "objects/interactive/knowledge_garden",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -31362,9 +32051,17 @@
   {
     "id": "learning_stone",
     "name": "Piedra de aprendizaje",
+    "category": "Interact",
+    "icon": "objects/interactive/learning_stone",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ],
     "description": "Otorga +<resolved>1000</resolved> de EXP a cada héroe visitante.",
     "narrativeDescription": "Un artefacto atemporal, cuyo conocimiento se transmite de generación en generación y ofrece sabiduría a quienes la buscan.",
-    "icon": "objects/interactive/learning_stone",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -31396,9 +32093,17 @@
   {
     "id": "legions_memorial",
     "name": "Monumento a la legión",
+    "category": "Interact",
+    "icon": "objects/interactive/legions_memorial",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga oro, madera y mineral después de derrotar a su guardia.",
     "narrativeDescription": "Estas estatuas, dispersas por todo Jadame, se utilizan a menudo como puntos de referencia y lugares de encuentro.",
-    "icon": "objects/interactive/legions_memorial",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -31775,9 +32480,17 @@
   {
     "id": "lost_library",
     "name": "Biblioteca perdida",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ],
     "description": "Otorga al primer héroe visitante <resolved>6000-10000</resolved> de EXP.",
     "narrativeDescription": "Los escalones son infinitos. Dicen que llega hasta el mismo Abismo.",
-    "icon": "objects/interactive/knowledge_tower",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -31841,9 +32554,15 @@
   {
     "id": "magic_amplifier_1",
     "name": "Pergamino infinito de plata",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Mientras lo controla un jugador, aumenta el nivel de todos los hechizos de nochesombra en el Observatorio.",
     "narrativeDescription": "El pergamino se puede desenrollar una y otra vez. Sus secretos cambian constantemente, pero nunca se repiten.",
-    "icon": "objects/interactive/magic_amplifier_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -31875,9 +32594,15 @@
   {
     "id": "magic_amplifier_2",
     "name": "Pergamino infinito de oro",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Mientras lo controla un jugador, aumenta el nivel de todos los hechizos de luz solar en el Observatorio.",
     "narrativeDescription": "Escrito con tinta dorada, este pergamino viviente e interminable contiene una verdad esencial sobre la magia.",
-    "icon": "objects/interactive/magic_amplifier_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -31909,9 +32634,15 @@
   {
     "id": "magic_amplifier_3",
     "name": "Pergamino infinito de platino",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Mientras lo controla un jugador, aumenta el nivel de todos los hechizos arcanos en el Observatorio.",
     "narrativeDescription": "La lectura de los secretos de este pergamino llena el alma de asombro ante lo incomprensible.",
-    "icon": "objects/interactive/magic_amplifier_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -31943,9 +32674,15 @@
   {
     "id": "magic_amplifier_4",
     "name": "Pergamino infinito de bronce",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_amplifier_4",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Mientras lo controla un jugador, aumenta el nivel de todos los hechizos primigenios en el Observatorio.",
     "narrativeDescription": "El pergamino vibra, y las palabras escritas en él tiemblan rítmicamente, como si estuvieran vivas.",
-    "icon": "objects/interactive/magic_amplifier_4",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -31977,9 +32714,15 @@
   {
     "id": "magic_wheel",
     "name": "Rueda mágica",
+    "category": "Interact",
+    "icon": "objects/interactive/magic_wheel",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta de forma permanente el poder de hechizo de los héroes visitantes en <resolved>1</resolved>.",
     "narrativeDescription": "Meditar frente a la rueda te imbuye misteriosamente de poder mágico.",
-    "icon": "objects/interactive/magic_wheel",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -32011,9 +32754,15 @@
   {
     "id": "mana_well",
     "name": "Pozo",
+    "category": "Interact",
+    "icon": "objects/interactive/autumn_well",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Restaura completamente el maná de cada héroe visitante.",
     "narrativeDescription": "El maná rebosa en este pozo tanto que está a punto de desbordarse.",
-    "icon": "objects/interactive/autumn_well",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -32045,9 +32794,15 @@
   {
     "id": "market",
     "name": "Mercado",
+    "category": "Interact",
+    "icon": "objects/interactive/market",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite que los héroes visitantes intercambien sus recursos por otros diferentes.",
     "narrativeDescription": "La falta de competencia anima a los mercaderes a subir sus precios.",
-    "icon": "objects/interactive/market",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32079,9 +32834,15 @@
   {
     "id": "maze",
     "name": "Laberinto viviente",
+    "category": "Interact",
+    "icon": "objects/interactive/maze",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>2</resolved> de forma permanente el atributo que eligen los héroes visitantes.",
     "narrativeDescription": "Un laberinto de autodescubrimiento, donde solo los más fuertes emergen con su verdadera fuerza.",
-    "icon": "objects/interactive/maze",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -32146,9 +32907,15 @@
   {
     "id": "mercenary_guild",
     "name": "Gremio de mercenarios",
+    "category": "Interact",
+    "icon": "objects/interactive/mercenary_guild",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite al héroe reclutar hasta <resolved>3</resolved> unidades aleatorias. Se reinicia cada semana.",
     "narrativeDescription": "Mira, no todos tienen el privilegio de tener dramas personales. A veces la gente simplemente pelea por dinero.",
-    "icon": "objects/interactive/mercenary_guild",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32180,9 +32947,17 @@
   {
     "id": "mereas_shrine",
     "name": "Altar de Mearea",
+    "category": "Interact",
+    "icon": "objects/interactive/mereas_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga oro después de derrotar a su guardia.",
     "narrativeDescription": "Mearea concede su bendición dorada solo a quienes son dignos.",
-    "icon": "objects/interactive/mereas_shrine",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -32359,9 +33134,15 @@
   {
     "id": "mine_crystals",
     "name": "Veta de cristal",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>1</resolved> cristal(es) al día.",
     "narrativeDescription": "Los alquimistas experimentados saben que lo importante no es el cristal, sino su contenido.",
-    "icon": "objects/interactive/mine_crystals",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32393,9 +33174,15 @@
   {
     "id": "mine_gemstones",
     "name": "Montículo de gemas",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>1</resolved> gema(s) al día.",
     "narrativeDescription": "El seductor brillo de las gemas preciosas ha sembrado numerosos conflictos.",
-    "icon": "objects/interactive/mine_gemstones",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32427,9 +33214,15 @@
   {
     "id": "mine_gold",
     "name": "Mina de oro",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>1000</resolved> de oro al día.",
     "narrativeDescription": "El oro no solo es el método de intercambio más importante, sino también un componente mágico muy popular.",
-    "icon": "objects/interactive/mine_gold",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32461,9 +33254,15 @@
   {
     "id": "mine_mercury",
     "name": "Fisura de mercurio",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>1</resolved> de mercurio al día.",
     "narrativeDescription": "Una sustancia única, perfectamente adecuada para ritos arcanos.",
-    "icon": "objects/interactive/mine_mercury",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32495,9 +33294,15 @@
   {
     "id": "mine_ore",
     "name": "Mina de minerales",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>2</resolved> de mineral al día.",
     "narrativeDescription": "Las minas de Jadame contienen una gran variedad de metales.",
-    "icon": "objects/interactive/mine_ore",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32529,9 +33334,15 @@
   {
     "id": "mine_wood",
     "name": "Aserradero",
+    "category": "Mine",
+    "icon": "objects/interactive/mine_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Mine",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Produce <resolved>2</resolved> de madera al día.",
     "narrativeDescription": "La madera es la base de la supervivencia. Desde la construcción y el combustible hasta la fabricación de armas, su utilidad no tiene parangón.",
-    "icon": "objects/interactive/mine_wood",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32563,9 +33374,17 @@
   {
     "id": "mirage",
     "name": "Espejismo",
+    "category": "Interact",
+    "icon": "objects/interactive/mirage",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Derrota a tu mejor versión para fusionar la ilusión con un grial. Este tesoro permitirá al héroe construir un edificio único y maravilloso en una ciudad.",
     "narrativeDescription": "Un artefacto tan antiguo y poderoso que puede adoptar cualquier forma… y brillar con ella.",
-    "icon": "objects/interactive/mirage",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -32603,9 +33422,17 @@
   {
     "id": "monty_hall",
     "name": "El salón de Monty",
+    "category": "Interact",
+    "icon": "objects/interactive/monty_hall",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact"
+    ],
     "description": "Una vez por partida, ofrece la posibilidad de elegir <resolved>1</resolved> entre <resolved>3</resolved> artefactos aleatorios.",
     "narrativeDescription": "Dicen que los otros dos artefactos se convierten en cabras después.",
-    "icon": "objects/interactive/monty_hall",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -38413,9 +39240,15 @@
   {
     "id": "mysterious_stone",
     "name": "Piedras susurrantes",
+    "category": "Interact",
+    "icon": "objects/interactive/learning_stone_old",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta un <resolved>50</resolved> % el maná máximo de cada héroe visitante hasta el final de la semana.",
     "narrativeDescription": "Una pequeña grieta en la realidad deja que se filtre la magia pura. ¡Úsala!",
-    "icon": "objects/interactive/learning_stone_old",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -38447,9 +39280,17 @@
   {
     "id": "mystical_tower",
     "name": "Altar de la percepción",
+    "category": "Interact",
+    "icon": "objects/interactive/mystical_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga <resolved>1</resolved> percepción(es) al primer héroe visitante. Se puede usar como siempre para aprender o mejorar hechizos del mapa global.",
     "narrativeDescription": "Este altar contiene conocimiento nacido de las estrellas, revelado únicamente a aquellos considerados dignos.",
-    "icon": "objects/interactive/mystical_tower",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -38487,9 +39328,15 @@
   {
     "id": "orb_observatory",
     "name": "Observatorio de los cuatro eruditos",
+    "category": "Interact",
+    "icon": "objects/interactive/mana_tower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>2</resolved> de forma permanente el poder de hechizo o el conocimiento de cada héroe visitante por <resolved>1000</resolved> de oro.",
     "narrativeDescription": "Los cuatro eruditos escribieron hechizos en las estrellas. Ahora nos toca a nosotros leerlos.",
-    "icon": "objects/interactive/mana_tower",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -38538,9 +39385,18 @@
   {
     "id": "overgrown_grave",
     "name": "Cripta antigua",
+    "category": "Interact",
+    "icon": "objects/interactive/overgrown_grave",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga oro y posiblemente también artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Esta cripta es tan antigua que nadie recuerda quién fue enterrado allí. Si es que alguna vez lo estuvo alguien.",
-    "icon": "objects/interactive/overgrown_grave",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -40921,9 +41777,20 @@
   {
     "id": "pandora_box",
     "name": "Caja de Pandora",
+    "category": "Resource",
+    "icon": "objects/resource/pandora_box",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "experience",
+      "resource",
+      "spell"
+    ],
     "description": "Otorga una recompensa impredecible pero grandiosa.",
     "narrativeDescription": "¿Sabías que en realidad era un jarrón y no una caja?",
-    "icon": "objects/resource/pandora_box",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -42339,9 +43206,18 @@
   {
     "id": "peasant_cart",
     "name": "Carro abandonado",
+    "category": "Interact",
+    "icon": "objects/interactive/peasant_cart",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Una vez por partida, otorga una pequeña recompensa aleatoria.",
     "narrativeDescription": "Las cajas de este carro se han resecado y agrietado con el paso del tiempo. Es evidente que su dueño no volverá a buscarlas.",
-    "icon": "objects/interactive/peasant_cart",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -43240,9 +44116,17 @@
   {
     "id": "petrified_memorial",
     "name": "Monumento petrificado",
+    "category": "Interact",
+    "icon": "objects/interactive/petrified_memorial",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener medusas.",
     "narrativeDescription": "Un salón donde las medusas exhiben sus mejores estatuas, todas congeladas en el tiempo. Trofeos de su letal habilidad.",
-    "icon": "objects/interactive/petrified_memorial",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -43527,9 +44411,15 @@
   {
     "id": "pile_of_books",
     "name": "Pila de libros",
+    "category": "Interact",
+    "icon": "objects/interactive/pile_of_books",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta los EXP que obtiene cada héroe visitante un <resolved>25</resolved> % hasta el final de la semana.",
     "narrativeDescription": "Los fragmentos que leas aquí permanecerán en tu mente durante un tiempo.",
-    "icon": "objects/interactive/pile_of_books",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -43561,9 +44451,15 @@
   {
     "id": "pocket_dimension",
     "name": "Dimensión de bolsillo",
+    "category": "Interact",
+    "icon": "objects/interactive/pocket_dimension",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes dejar aquí criaturas y artefactos y transferirlos al instante a cualquier punto de apoyo remoto o dimensión de bolsillo bajo tu control.",
     "narrativeDescription": "Con ingeniería de sonido y magia potente, todo es posible.",
-    "icon": "objects/interactive/pocket_dimension",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -43595,9 +44491,17 @@
   {
     "id": "point_of_balance",
     "name": "Punto de equilibrio",
+    "category": "Interact",
+    "icon": "objects/interactive/point_of_balance",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener centinelas de la gloria.",
     "narrativeDescription": "Los centinelas de la gloria son guardianes del equilibrio: firmes en su resolución y cautelosos ante la creciente influencia de la Iglesia.",
-    "icon": "objects/interactive/point_of_balance",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -43882,9 +44786,15 @@
   {
     "id": "portal_1",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_1_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -43916,9 +44826,15 @@
   {
     "id": "portal_1_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_1_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -43950,9 +44866,15 @@
   {
     "id": "portal_1_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_1_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_1_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -43984,9 +44906,15 @@
   {
     "id": "portal_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_2_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44018,9 +44946,15 @@
   {
     "id": "portal_2_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_2_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44052,9 +44986,15 @@
   {
     "id": "portal_2_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_2_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_2_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44086,9 +45026,15 @@
   {
     "id": "portal_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_3_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44120,9 +45066,15 @@
   {
     "id": "portal_3_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_3_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44154,9 +45106,15 @@
   {
     "id": "portal_3_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_3_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_3_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44188,9 +45146,15 @@
   {
     "id": "portal_4",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_4_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44222,9 +45186,15 @@
   {
     "id": "portal_4_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_4_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44256,9 +45226,15 @@
   {
     "id": "portal_4_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_4_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_4_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44290,9 +45266,15 @@
   {
     "id": "portal_5",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_5_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44324,9 +45306,15 @@
   {
     "id": "portal_5_2",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_2",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_5_2",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44358,9 +45346,15 @@
   {
     "id": "portal_5_3",
     "name": "Portal",
+    "category": "Interact",
+    "icon": "objects/interactive/portal_5_3",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a un portal emparejado.",
     "narrativeDescription": "No es que la distancia no exista, simplemente es irrelevante.",
-    "icon": "objects/interactive/portal_5_3",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44392,9 +45386,17 @@
   {
     "id": "prismatic_lair",
     "name": "Nido prismático",
+    "category": "Interact",
+    "icon": "objects/interactive/prismatic_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga gemas, cristales y mercurio después de derrotar a su guardia.",
     "narrativeDescription": "Los habitantes están unidos por su amor por los nidos coloridos.",
-    "icon": "objects/interactive/prismatic_lair",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -44759,9 +45761,15 @@
   {
     "id": "prison",
     "name": "Jaula de héroe",
+    "category": "Interact",
+    "icon": "objects/interactive/prison",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Ábrela para liberar a un héroe amistoso.",
     "narrativeDescription": "¿Cuánto tiempo lleva pudriéndose en esa celda?",
-    "icon": "objects/interactive/prison",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -44873,9 +45881,15 @@
   {
     "id": "quixs_path",
     "name": "Altar de Quix",
+    "category": "Interact",
+    "icon": "objects/interactive/quixs_path",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>3</resolved> la moral de cada héroe visitante hasta el final de la semana.",
     "narrativeDescription": "La deidad de los viajes sin rumbo otorga bendiciones a quienes pasan por aquí.",
-    "icon": "objects/interactive/quixs_path",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -44907,9 +45921,18 @@
   {
     "id": "raiders_camp",
     "name": "Campamento de incursores",
+    "category": "Interact",
+    "icon": "objects/interactive/raiders_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga oro y posiblemente también artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Acampan en Jadame y atacan aldeas y a viajeros al azar. Sin remordimientos.",
-    "icon": "objects/interactive/raiders_camp",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -46542,9 +47565,15 @@
   {
     "id": "remote_foothold",
     "name": "Punto de apoyo remoto",
+    "category": "Interact",
+    "icon": "objects/interactive/remote_foothold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes dejar aquí criaturas y artefactos y transferirlos al instante a otro punto de apoyo remoto bajo tu control.",
     "narrativeDescription": "Todo gira en torno a pasadizos subterráneos secretos.",
-    "icon": "objects/interactive/remote_foothold",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -46576,9 +47605,18 @@
   {
     "id": "research_laboratory",
     "name": "Laboratorio de investigación",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_dragon_lich",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga una gran cantidad de oro y artefactos valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Toda la \"investigación\" que se hace aquí es de naturaleza nigromántica, incluidos varios intentos de resucitar dragones. Hasta ahora no han tenido éxito, pero sin duda han acumulado una gran cantidad de fondos.",
-    "icon": "objects/barracks/barracks_neutral_dragon_lich",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -48136,9 +49174,15 @@
   {
     "id": "resource_crystals",
     "name": "Cristales",
+    "category": "Resource",
+    "icon": "objects/resource/resource_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>2-4</resolved> cristales.",
     "narrativeDescription": "Algunos brillan de forma diferente al resto.",
-    "icon": "objects/resource/resource_crystals",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48170,9 +49214,15 @@
   {
     "id": "resource_dust",
     "name": "Polvo alquímico",
+    "category": "Resource",
+    "icon": "objects/resource/resource_dust",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>8-12</resolved> de polvo alquímico.",
     "narrativeDescription": "Esencial para mejorar artefactos y más cosas.",
-    "icon": "objects/resource/resource_dust",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48204,9 +49254,15 @@
   {
     "id": "resource_gemstones",
     "name": "Gemas",
+    "category": "Resource",
+    "icon": "objects/resource/resource_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>2-4</resolved> gemas.",
     "narrativeDescription": "¿Cuántas vidas se han perdido por culpa de estas joyas?",
-    "icon": "objects/resource/resource_gemstones",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48238,9 +49294,15 @@
   {
     "id": "resource_gold",
     "name": "Oro",
+    "category": "Resource",
+    "icon": "objects/resource/resource_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>400-800</resolved> de oro.",
     "narrativeDescription": "A todo el mundo le gusta el oro. Incluso a los demonios y espíritus.",
-    "icon": "objects/resource/resource_gold",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48272,9 +49334,15 @@
   {
     "id": "resource_mercury",
     "name": "Mercurio",
+    "category": "Resource",
+    "icon": "objects/resource/resource_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>2-4</resolved> de mercurio.",
     "narrativeDescription": "El único metal que desafía las leyes de la razón. Perfecto para ritos esotéricos.",
-    "icon": "objects/resource/resource_mercury",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48306,9 +49374,15 @@
   {
     "id": "resource_ore",
     "name": "Mineral",
+    "category": "Resource",
+    "icon": "objects/resource/resource_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>4-6</resolved> de mineral.",
     "narrativeDescription": "Tanto la roca en bruto como lo que puede extraerse de ella poseen valor.",
-    "icon": "objects/resource/resource_ore",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48340,9 +49414,15 @@
   {
     "id": "resource_wood",
     "name": "Madera",
+    "category": "Resource",
+    "icon": "objects/resource/resource_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Resource",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga <resolved>4-6</resolved> de madera.",
     "narrativeDescription": "Troncos, tablones, vigas y astillas de madera.",
-    "icon": "objects/resource/resource_wood",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48374,9 +49454,17 @@
   {
     "id": "ritual_pyre",
     "name": "Pira ritual",
+    "category": "Interact",
+    "icon": "objects/interactive/ritual_pyre",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener fénix.",
     "narrativeDescription": "Invocar fénix es el ritual elemental más complicado: exige mucho dolor.",
-    "icon": "objects/interactive/ritual_pyre",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -48661,9 +49749,15 @@
   {
     "id": "sacrificial_shrine",
     "name": "Sagrario de sacrificio",
+    "category": "Interact",
+    "icon": "objects/interactive/sacrificial_shrine",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes sacrificar artefactos y criaturas para obtener experiencia.",
     "narrativeDescription": "Es mejor no pensar demasiado en qué entidad te recompensa por tus sacrificios de sangre.",
-    "icon": "objects/interactive/sacrificial_shrine",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -48695,9 +49789,17 @@
   {
     "id": "shady_den",
     "name": "Guarida del cazador de trofeos",
+    "category": "Interact",
+    "icon": "objects/interactive/shady_den",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga recursos comunes y valiosos después de derrotar a su guardia.",
     "narrativeDescription": "Un cazador de trofeos valora tanto su colección que contrató matadragones para protegerla… y no solo de los dragones.",
-    "icon": "objects/interactive/shady_den",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -48877,9 +49979,17 @@
   {
     "id": "shroom_of_growth",
     "name": "shroom_of_growth",
+    "category": "Interact",
+    "icon": "objects/interactive/knowledge_cabin",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "experience"
+    ],
     "description": null,
     "narrativeDescription": null,
-    "icon": "objects/interactive/knowledge_cabin",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachSideOneTime",
@@ -48911,9 +50021,15 @@
   {
     "id": "stables",
     "name": "Establos",
+    "category": "Interact",
+    "icon": "objects/interactive/stables",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Restaura el <resolved>20</resolved> % de los puntos de movimiento máximos del héroe y otorga +<resolved>20</resolved> % hasta el final de la semana.",
     "narrativeDescription": "Los mozos de cuadra en esas posadas ganan una buena suma, especialmente en tiempos difíciles.",
-    "icon": "objects/interactive/stables",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -48945,9 +50061,15 @@
   {
     "id": "stinging_sword",
     "name": "Espada punzante",
+    "category": "Interact",
+    "icon": "objects/interactive/stinging_sword",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>1</resolved> de forma permanente el ataque de los héroes visitantes.",
     "narrativeDescription": "¿Qué héroe de antaño la dejó atrás… y por qué?",
-    "icon": "objects/interactive/stinging_sword",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -48979,9 +50101,17 @@
   {
     "id": "storage_crystals",
     "name": "Depósito de cristal",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_crystals",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>4-6</resolved> cristales al primer héroe visitante.",
     "narrativeDescription": "Cerca de este almacén, percibes un leve temblor y una extraña oleada de energía.",
-    "icon": "objects/interactive/storage_crystals",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49063,9 +50193,17 @@
   {
     "id": "storage_dust",
     "name": "Depósito de polvo alquímico",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_dust",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>20-40</resolved> de polvo alquímico al primer héroe visitante.",
     "narrativeDescription": "Aquí se almacena polvo alquímico, junto con hierbas y herramientas que no te sirven para nada.",
-    "icon": "objects/interactive/storage_dust",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49147,9 +50285,17 @@
   {
     "id": "storage_gemstones",
     "name": "Depósito de gemas",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_gemstones",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>4-6</resolved> gemas al primer héroe visitante.",
     "narrativeDescription": "¿Quién habrá dejado tantas gemas en pleno corazón de la naturaleza salvaje? No tiene pinta de que llegues a saberlo.",
-    "icon": "objects/interactive/storage_gemstones",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49231,9 +50377,17 @@
   {
     "id": "storage_gold",
     "name": "Depósito de oro",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_gold",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>3000-4000</resolved> de oro al primer héroe visitante.",
     "narrativeDescription": "Sin duda lo necesitas más que quien lo dejara aquí.",
-    "icon": "objects/interactive/storage_gold",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49315,9 +50469,17 @@
   {
     "id": "storage_mercury",
     "name": "Depósito de mercurio",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_mercury",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>4-6</resolved> de mercurio al primer héroe visitante.",
     "narrativeDescription": "Los vapores de mercurio que emanan de este lugar impregnan los alrededores y provocan insomnio y dolores de cabeza a los lugareños.",
-    "icon": "objects/interactive/storage_mercury",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49399,9 +50561,17 @@
   {
     "id": "storage_ore",
     "name": "Depósito de mineral",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_ore",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>8-12</resolved> de mineral al primer héroe visitante.",
     "narrativeDescription": "El almacén está repleto de mineral, pero no hay ni rastro de mineros o guardias.",
-    "icon": "objects/interactive/storage_ore",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49483,9 +50653,17 @@
   {
     "id": "storage_wood",
     "name": "Depósito de madera",
+    "category": "Interact",
+    "icon": "objects/interactive/storage_wood",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez por semana, otorga <resolved>8-12</resolved> de madera al primer héroe visitante.",
     "narrativeDescription": "Una pila de madera abandonada. Si nadie la recoge pronto, la madera empezará a pudrirse.",
-    "icon": "objects/interactive/storage_wood",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -49567,9 +50745,15 @@
   {
     "id": "tavern",
     "name": "Taberna",
+    "category": "Interact",
+    "icon": "objects/interactive/tavern",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite a los héroes visitantes reclutar héroes adicionales.",
     "narrativeDescription": "Incluso los héroes más extraños necesitan una bebida y una charla de vez en cuando.",
-    "icon": "objects/interactive/tavern",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -49601,9 +50785,15 @@
   {
     "id": "tear_of_truth",
     "name": "Lágrima de la verdad",
+    "category": "Interact",
+    "icon": "objects/interactive/tear_of_truth_old",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Una vez a la semana, restaura por completo los puntos de movimiento de todos los héroes.",
     "narrativeDescription": "Toma un sorbo de este rocío y siente una oleada de vigor renovado.",
-    "icon": "objects/interactive/tear_of_truth_old",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -49635,17 +50825,31 @@
   {
     "id": "temporary_camp",
     "name": "temporary_camp",
+    "category": "Interact",
+    "icon": "objects/interactive/temporary_camp",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "unused",
+    "hasGuards": null,
+    "rewardTypes": null,
     "description": null,
     "narrativeDescription": null,
-    "icon": "objects/interactive/temporary_camp",
     "creatureBankInfo": null
   },
   {
     "id": "testing_grounds",
     "name": "testing_grounds",
+    "category": "Interact",
+    "icon": "objects/interactive/testing_grounds",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact"
+    ],
     "description": null,
     "narrativeDescription": null,
-    "icon": "objects/interactive/testing_grounds",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -53794,9 +54998,17 @@
   {
     "id": "the_gorge",
     "name": "Pila de carroña",
+    "category": "Interact",
+    "icon": "objects/interactive/gorge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener vermes.",
     "narrativeDescription": "El gigantesco cuerpo en descomposición apesta y, lo que es más importante, está repleto de carroñeros.",
-    "icon": "objects/interactive/gorge",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -54113,9 +55325,15 @@
   {
     "id": "town_gate",
     "name": "Portal de Ciudad",
+    "category": "Interact",
+    "icon": "objects/interactive/town_gate",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Teletransporta al héroe visitante a cualquier ciudad seleccionada bajo tu control.",
     "narrativeDescription": "El espacio es solo otro lienzo para la mente.",
-    "icon": "objects/interactive/town_gate",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -54147,9 +55365,15 @@
   {
     "id": "tree_of_abundance",
     "name": "Arborcopia",
+    "category": "Interact",
+    "icon": "objects/interactive/tree_of_abundance",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Una vez por partida, activa una semana de crecimiento de las criaturas en todas las ciudades bajo control del jugador.",
     "narrativeDescription": "¡Vida! ¡Vida! ¡Vida que brota de la tierra sin que nadie se lo pida!",
-    "icon": "objects/interactive/tree_of_abundance",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -54181,9 +55405,15 @@
   {
     "id": "tree_of_knowledge",
     "name": "Árbol del conocimiento",
+    "category": "Interact",
+    "icon": "objects/interactive/tree_of_knowledge",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Otorga un nivel a cada héroe visitante.",
     "narrativeDescription": "Conectado al Micelio del Bosque Murmullo, este árbol conoce todos los relatos. Pero ¿cómo aprenden cosas sus hermanos de otros continentes?",
-    "icon": "objects/interactive/tree_of_knowledge",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -54215,9 +55445,15 @@
   {
     "id": "trial_scales",
     "name": "Balanza de valía",
+    "category": "Interact",
+    "icon": "objects/interactive/trial_scales",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Aumenta en <resolved>4</resolved> de forma permanente el atributo que eligen los héroes visitantes.",
     "narrativeDescription": "El \"peso\" de un corazón recae sobre la virtud de quien lo porta.",
-    "icon": "objects/interactive/trial_scales",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",
@@ -54282,9 +55518,17 @@
   {
     "id": "troglodyte_throne",
     "name": "Trono troglodita",
+    "category": "Interact",
+    "icon": "objects/interactive/troglodyte_throne",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga una gran cantidad de oro después de derrotar a su guardia.",
     "narrativeDescription": "Dicen que la suerte es ciega, después de todo.",
-    "icon": "objects/interactive/troglodyte_throne",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -54637,9 +55881,18 @@
   {
     "id": "twilight_bloom",
     "name": "Floración crepuscular",
+    "category": "Interact",
+    "icon": "objects/interactive/twilight_bloom",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "artifact",
+      "resource"
+    ],
     "description": "Otorga oro y un artefacto valioso después de derrotar a su guardia.",
     "narrativeDescription": "Esta misteriosa planta crece como si brotara directamente de los planos elementales.",
-    "icon": "objects/interactive/twilight_bloom",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -56804,9 +58057,17 @@
   {
     "id": "uncanny_rite",
     "name": "Rito insólito",
+    "category": "Interact",
+    "icon": "objects/interactive/uncanny_rite",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga oro y mercurio después de derrotar a su guardia.",
     "narrativeDescription": "Sea lo que sea que esté sucediendo aquí, presagia algo malo y debe detenerse.",
-    "icon": "objects/interactive/uncanny_rite",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -57099,9 +58360,17 @@
   {
     "id": "underground_lair",
     "name": "Laberinto subterráneo",
+    "category": "Interact",
+    "icon": "objects/interactive/underground_lair",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a sus guardias para obtener basiliscos. Los guardias y basiliscos reaparecen cada semana.",
     "narrativeDescription": "Essssssshthhasssaaa…",
-    "icon": "objects/interactive/underground_lair",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -57188,9 +58457,17 @@
   {
     "id": "unforgotten_grave",
     "name": "Tumba de vigilancia",
+    "category": "Interact",
+    "icon": "objects/interactive/grave",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "unit"
+    ],
     "description": "Derrota a su guardia para obtener caballeros del terror.",
     "narrativeDescription": "Sus leales mascotas no muertas se negaron a abandonar la tumba, incluso después de la muerte de sus amos.",
-    "icon": "objects/interactive/grave",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -57539,9 +58816,15 @@
   {
     "id": "unit_trade_lab_gnat",
     "name": "Vivienda abandonada",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_demon_1",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar jejenes en esta vivienda.",
     "narrativeDescription": "Su monótono zumbido se escucha desde lejos.",
-    "icon": "objects/barracks/barracks_demon_1",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -57573,9 +58856,15 @@
   {
     "id": "unit_trade_lab_kitten_horn",
     "name": "Nido de cristal",
+    "category": "Interact",
+    "icon": "objects/barracks/barracks_neutral_kitten_horn",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Puedes reclutar cuernigatos en esta vivienda.",
     "narrativeDescription": "Adoran los cristales hasta el punto de fusionarlos con su cuerpo. Por eso no es de extrañar que estos voraces mininos hagan sus nidos entre ellos.",
-    "icon": "objects/barracks/barracks_neutral_kitten_horn",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "",
@@ -57607,9 +58896,15 @@
   {
     "id": "university",
     "name": "Universidad",
+    "category": "Interact",
+    "icon": "objects/interactive/university",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Permite que cada héroe visitante aprenda hasta <resolved>4</resolved> habilidades aleatorias por <resolved>2500</resolved> de oro cada una.",
     "narrativeDescription": "Muchas mentes brillantes en Enroth provienen de las escuelas de Jadame.",
-    "icon": "objects/interactive/university",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -57674,9 +58969,17 @@
   {
     "id": "unstable_ruins",
     "name": "Ruinas de Vori con vegetación",
+    "category": "Interact",
+    "icon": "objects/interactive/unstable_ruins",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": true,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Otorga una gran cantidad de oro y recursos después de derrotar a su guardia.",
     "narrativeDescription": "En la antigüedad, los elfos de Vori establecieron exquisitos puestos avanzados por todo Jadame. Ahora se han ido a sus tierras aisladas.",
-    "icon": "objects/interactive/unstable_ruins",
     "creatureBankInfo": {
       "hasGuards": true,
       "visitType": "OneTime",
@@ -58085,9 +59388,17 @@
   {
     "id": "village",
     "name": "Aldea",
+    "category": "Interact",
+    "icon": "objects/interactive/village",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez a la semana, otorga al primer héroe visitante el recurso común que elija.",
     "narrativeDescription": "Algunos lo llaman crimen organizado; los políticos lo llaman impuestos.",
-    "icon": "objects/interactive/village",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -58238,9 +59549,15 @@
   {
     "id": "watchtower",
     "name": "Observatorio de caoba",
+    "category": "Interact",
+    "icon": "objects/interactive/watchtower",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Elimina la niebla de guerra en un enorme radio a su alrededor.",
     "narrativeDescription": "¡Es mejor que escalar un árbol al azar!",
-    "icon": "objects/interactive/watchtower",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -58272,9 +59589,15 @@
   {
     "id": "wind_rose",
     "name": "Rosa de los vientos",
+    "category": "Interact",
+    "icon": "objects/interactive/wind_rose",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Revela completamente todo el mapa.",
     "narrativeDescription": "Permite ver todo, no con lentes o catalejos, sino con vientos encantadores.",
-    "icon": "objects/interactive/wind_rose",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "Unlimited",
@@ -58306,9 +59629,17 @@
   {
     "id": "windmill",
     "name": "Molino",
+    "category": "Interact",
+    "icon": "objects/interactive/windmill",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": [
+      "resource"
+    ],
     "description": "Una vez a la semana, otorga al primer héroe visitante una pequeña cantidad de recursos aleatorios.",
     "narrativeDescription": "El molinero pagará a su soberano, pero no tiene nada de valor.",
-    "icon": "objects/interactive/windmill",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "OneTime",
@@ -58588,9 +59919,15 @@
   {
     "id": "wise_owl",
     "name": "Búho sabio",
+    "category": "Interact",
+    "icon": "objects/interactive/wise_owl",
+    "isOrphan": false,
+    "prefabPath": null,
+    "bankType": "Interact",
+    "hasGuards": false,
+    "rewardTypes": null,
     "description": "Enseña una habilidad aleatoria a cada héroe visitante. Si ya la conoce, la sube de nivel.",
     "narrativeDescription": "Los búhos son conocidos por su sabiduría y siempre están dispuestos a compartirla.",
-    "icon": "objects/interactive/wise_owl",
     "creatureBankInfo": {
       "hasGuards": false,
       "visitType": "EachHeroOneTime",

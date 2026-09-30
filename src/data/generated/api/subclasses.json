@@ -2,14 +2,14 @@
   {
     "id": "sub_class_demons_might_1",
     "name": "Madre de cría",
-    "description": "Duplica las estadísticas básicas de las larvas de fuego invocadas.",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "classType": "might",
     "classDisplay": "Ejecutor",
-    "classIcon": "icons/hero_classes/might_demon_icon",
     "icon": "icons/hero_sub_classes/sub_class_demons_might_1_icon",
+    "description": "Duplica las estadísticas básicas de las larvas de fuego invocadas.",
+    "factionIcon": "icons/fractions/hive_icon",
+    "classIcon": "icons/hero_classes/might_demon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -44,14 +44,14 @@
   {
     "id": "sub_class_demons_might_2",
     "name": "Devorador de almas",
-    "description": "Otorga una aptitud de batalla nueva. Permite al héroe consumir un cadáver objetivo y obtener ataque, defensa y poder de hechizo adicionales hasta el final de la batalla.",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "classType": "might",
     "classDisplay": "Ejecutor",
-    "classIcon": "icons/hero_classes/might_demon_icon",
     "icon": "icons/hero_sub_classes/sub_class_demons_might_2_icon",
+    "description": "Otorga una aptitud de batalla nueva. Permite al héroe consumir un cadáver objetivo y obtener ataque, defensa y poder de hechizo adicionales hasta el final de la batalla.",
+    "factionIcon": "icons/fractions/hive_icon",
+    "classIcon": "icons/hero_classes/might_demon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -86,14 +86,14 @@
   {
     "id": "sub_class_demons_magic_1",
     "name": "Progenitor",
-    "description": "+<resolved>200</resolved> % al crecimiento de criaturas en todas tus ciudades.",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "classType": "magic",
     "classDisplay": "Heraldo",
-    "classIcon": "icons/hero_classes/magic_demon_icon",
     "icon": "icons/hero_sub_classes/sub_class_demons_magic_1_icon",
+    "description": "+<resolved>200</resolved> % al crecimiento de criaturas en todas tus ciudades.",
+    "factionIcon": "icons/fractions/hive_icon",
+    "classIcon": "icons/hero_classes/magic_demon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",
@@ -128,14 +128,14 @@
   {
     "id": "sub_class_demons_magic_2",
     "name": "Señor del caos",
-    "description": "Golpe heroico inflige +<resolved>2</resolved> de daño por cada punto de atributo del héroe.",
     "faction": "demon",
     "factionDisplay": "Colmena",
-    "factionIcon": "icons/fractions/hive_icon",
     "classType": "magic",
     "classDisplay": "Heraldo",
-    "classIcon": "icons/hero_classes/magic_demon_icon",
     "icon": "icons/hero_sub_classes/sub_class_demons_magic_2_icon",
+    "description": "Golpe heroico inflige +<resolved>2</resolved> de daño por cada punto de atributo del héroe.",
+    "factionIcon": "icons/fractions/hive_icon",
+    "classIcon": "icons/hero_classes/magic_demon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -170,14 +170,14 @@
   {
     "id": "sub_class_dungeon_might_1",
     "name": "Guardaespaldas de Baltasar",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de ataque.",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "classType": "might",
     "classDisplay": "Adalid",
-    "classIcon": "icons/hero_classes/might_dungeon_icon",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_might_1_icon",
+    "description": "El héroe obtiene +<resolved>100</resolved> % de ataque.",
+    "factionIcon": "icons/fractions/dungeon_icon",
+    "classIcon": "icons/hero_classes/might_dungeon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -212,14 +212,14 @@
   {
     "id": "sub_class_dungeon_might_2",
     "name": "Enviado de Lengua de Plata",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de defensa.",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "classType": "might",
     "classDisplay": "Adalid",
-    "classIcon": "icons/hero_classes/might_dungeon_icon",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_might_2_icon",
+    "description": "El héroe obtiene +<resolved>100</resolved> % de defensa.",
+    "factionIcon": "icons/fractions/dungeon_icon",
+    "classIcon": "icons/hero_classes/might_dungeon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",
@@ -254,14 +254,14 @@
   {
     "id": "sub_class_dungeon_magic_1",
     "name": "Heredero de Amelchia",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de poder de hechizo.",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "classType": "magic",
     "classDisplay": "Brujo",
-    "classIcon": "icons/hero_classes/magic_dungeon_icon",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_magic_1_icon",
+    "description": "El héroe obtiene +<resolved>100</resolved> % de poder de hechizo.",
+    "factionIcon": "icons/fractions/dungeon_icon",
+    "classIcon": "icons/hero_classes/magic_dungeon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -296,14 +296,14 @@
   {
     "id": "sub_class_dungeon_magic_2",
     "name": "Gran mercader",
-    "description": "Produce +<resolved>10000</resolved> de oro al día.",
     "faction": "dungeon",
     "factionDisplay": "Mazmorra",
-    "factionIcon": "icons/fractions/dungeon_icon",
     "classType": "magic",
     "classDisplay": "Brujo",
-    "classIcon": "icons/hero_classes/magic_dungeon_icon",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_magic_2_icon",
+    "description": "Produce +<resolved>10000</resolved> de oro al día.",
+    "factionIcon": "icons/fractions/dungeon_icon",
+    "classIcon": "icons/hero_classes/magic_dungeon_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -338,14 +338,14 @@
   {
     "id": "sub_class_human_might_1",
     "name": "Bravucón",
-    "description": "Golpe heroico inflige +<resolved>60</resolved> de daño básico.",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "classType": "might",
     "classDisplay": "Caballero",
-    "classIcon": "icons/hero_classes/might_human_icon",
     "icon": "icons/hero_sub_classes/sub_class_human_might_1_icon",
+    "description": "Golpe heroico inflige +<resolved>60</resolved> de daño básico.",
+    "factionIcon": "icons/fractions/human_icon",
+    "classIcon": "icons/hero_classes/might_human_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -380,14 +380,14 @@
   {
     "id": "sub_class_human_might_2",
     "name": "Dechado",
-    "description": "Las criaturas amistosas infligen siempre el daño máximo y reciben el daño mínimo.",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "classType": "might",
     "classDisplay": "Caballero",
-    "classIcon": "icons/hero_classes/might_human_icon",
     "icon": "icons/hero_sub_classes/sub_class_human_might_2_icon",
+    "description": "Las criaturas amistosas infligen siempre el daño máximo y reciben el daño mínimo.",
+    "factionIcon": "icons/fractions/human_icon",
+    "classIcon": "icons/hero_classes/might_human_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -422,14 +422,14 @@
   {
     "id": "sub_class_human_magic_1",
     "name": "Gran Inquisidor",
-    "description": "El héroe enemigo solo puede usar cada hechizo una vez por batalla.",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "classType": "magic",
     "classDisplay": "Clérigo",
-    "classIcon": "icons/hero_classes/magic_human_icon",
     "icon": "icons/hero_sub_classes/sub_class_human_magic_1_icon",
+    "description": "El héroe enemigo solo puede usar cada hechizo una vez por batalla.",
+    "factionIcon": "icons/fractions/human_icon",
+    "classIcon": "icons/hero_classes/magic_human_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",
@@ -464,14 +464,14 @@
   {
     "id": "sub_class_human_magic_2",
     "name": "Ascendente",
-    "description": "Todos los hechizos del héroe cuestan siempre 0 de maná.",
     "faction": "human",
     "factionDisplay": "Templo",
-    "factionIcon": "icons/fractions/human_icon",
     "classType": "magic",
     "classDisplay": "Clérigo",
-    "classIcon": "icons/hero_classes/magic_human_icon",
     "icon": "icons/hero_sub_classes/sub_class_human_magic_2_icon",
+    "description": "Todos los hechizos del héroe cuestan siempre 0 de maná.",
+    "factionIcon": "icons/fractions/human_icon",
+    "classIcon": "icons/hero_classes/magic_human_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -506,14 +506,14 @@
   {
     "id": "sub_class_nature_might_1",
     "name": "Pozo de vigor",
-    "description": "Genera el máximo de cargas de concentración al comienzo de cada ronda, <b>excepto la primera</b>.",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "classType": "might",
     "classDisplay": "Guardián",
-    "classIcon": "icons/hero_classes/might_nature_icon",
     "icon": "icons/hero_sub_classes/sub_class_nature_might_1_icon",
+    "description": "Genera el máximo de cargas de concentración al comienzo de cada ronda, <b>excepto la primera</b>.",
+    "factionIcon": "icons/fractions/spring_icon",
+    "classIcon": "icons/hero_classes/might_nature_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -548,14 +548,14 @@
   {
     "id": "sub_class_nature_might_2",
     "name": "Favorecidos por el azar",
-    "description": "Las criaturas amistosas tienen la máxima suerte posible y <b>siempre</b> asestarán un golpe de suerte cuando ataquen.",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "classType": "might",
     "classDisplay": "Guardián",
-    "classIcon": "icons/hero_classes/might_nature_icon",
     "icon": "icons/hero_sub_classes/sub_class_nature_might_2_icon",
+    "description": "Las criaturas amistosas tienen la máxima suerte posible y <b>siempre</b> asestarán un golpe de suerte cuando ataquen.",
+    "factionIcon": "icons/fractions/spring_icon",
+    "classIcon": "icons/hero_classes/might_nature_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -590,14 +590,14 @@
   {
     "id": "sub_class_nature_magic_1",
     "name": "Enviado celestial",
-    "description": "El héroe puede usar todos los hechizos.",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "classType": "magic",
     "classDisplay": "Druida",
-    "classIcon": "icons/hero_classes/magic_nature_icon",
     "icon": "icons/hero_sub_classes/sub_class_nature_magic_1_icon",
+    "description": "El héroe puede usar todos los hechizos.",
+    "factionIcon": "icons/fractions/spring_icon",
+    "classIcon": "icons/hero_classes/magic_nature_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",
@@ -632,14 +632,14 @@
   {
     "id": "sub_class_nature_magic_2",
     "name": "Furia del cielo",
-    "description": "Golpe heroico inflige daño a todos los enemigos en un radio de 1 casilla.",
     "faction": "nature",
     "factionDisplay": "Foresta",
-    "factionIcon": "icons/fractions/spring_icon",
     "classType": "magic",
     "classDisplay": "Druida",
-    "classIcon": "icons/hero_classes/magic_nature_icon",
     "icon": "icons/hero_sub_classes/sub_class_nature_magic_2_icon",
+    "description": "Golpe heroico inflige daño a todos los enemigos en un radio de 1 casilla.",
+    "factionIcon": "icons/fractions/spring_icon",
+    "classIcon": "icons/hero_classes/magic_nature_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -674,14 +674,14 @@
   {
     "id": "sub_class_undead_might_1",
     "name": "Heraldo de la perdición",
-    "description": "Las criaturas enemigas siempre tienen la mínima suerte posible y <b>siempre</b> asestan un golpe sin suerte cuando atacan.",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "classType": "might",
     "classDisplay": "Caballero de la muerte",
-    "classIcon": "icons/hero_classes/might_undead_icon",
     "icon": "icons/hero_sub_classes/sub_class_undead_might_1_icon",
+    "description": "Las criaturas enemigas siempre tienen la mínima suerte posible y <b>siempre</b> asestan un golpe sin suerte cuando atacan.",
+    "factionIcon": "icons/fractions/undead_icon",
+    "classIcon": "icons/hero_classes/might_undead_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",
@@ -716,14 +716,14 @@
   {
     "id": "sub_class_undead_might_2",
     "name": "Podredumbre ambulante",
-    "description": "Todos los enemigos tienen siempre la mínima moral posible.",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "classType": "might",
     "classDisplay": "Caballero de la muerte",
-    "classIcon": "icons/hero_classes/might_undead_icon",
     "icon": "icons/hero_sub_classes/sub_class_undead_might_2_icon",
+    "description": "Todos los enemigos tienen siempre la mínima moral posible.",
+    "factionIcon": "icons/fractions/undead_icon",
+    "classIcon": "icons/hero_classes/might_undead_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -758,14 +758,14 @@
   {
     "id": "sub_class_undead_magic_1",
     "name": "Tejedor de almas",
-    "description": "Después de que una formación enemiga muera en combate, una formación temporal de apariciones amistosas aparece en su lugar.",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "classType": "magic",
     "classDisplay": "Nigromante",
-    "classIcon": "icons/hero_classes/magic_undead_icon",
     "icon": "icons/hero_sub_classes/sub_class_undead_magic_1_icon",
+    "description": "Después de que una formación enemiga muera en combate, una formación temporal de apariciones amistosas aparece en su lugar.",
+    "factionIcon": "icons/fractions/undead_icon",
+    "classIcon": "icons/hero_classes/magic_undead_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -800,14 +800,14 @@
   {
     "id": "sub_class_undead_magic_2",
     "name": "Cronomante",
-    "description": "Cada día restaura la energía nigromántica del héroe hasta su nivel máximo.",
     "faction": "undead",
     "factionDisplay": "Necrópolis",
-    "factionIcon": "icons/fractions/undead_icon",
     "classType": "magic",
     "classDisplay": "Nigromante",
-    "classIcon": "icons/hero_classes/magic_undead_icon",
     "icon": "icons/hero_sub_classes/sub_class_undead_magic_2_icon",
+    "description": "Cada día restaura la energía nigromántica del héroe hasta su nivel máximo.",
+    "factionIcon": "icons/fractions/undead_icon",
+    "classIcon": "icons/hero_classes/magic_undead_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -842,14 +842,14 @@
   {
     "id": "sub_class_unfrozen_might_1",
     "name": "Sin límites",
-    "description": "Aumenta el nivel de todos los hechizos del héroe al máximo.",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "classType": "might",
     "classDisplay": "Juramentado",
-    "classIcon": "icons/hero_classes/might_unfrozen_icon",
     "icon": "icons/hero_sub_classes/sub_class_unfrozen_might_1_icon",
+    "description": "Aumenta el nivel de todos los hechizos del héroe al máximo.",
+    "factionIcon": "icons/fractions/unfrozen_icon",
+    "classIcon": "icons/hero_classes/might_unfrozen_icon",
     "requiredSkills": [
       {
         "skillId": "skill_assault",
@@ -884,14 +884,14 @@
   {
     "id": "sub_class_unfrozen_might_2",
     "name": "Insensible",
-    "description": "El enemigo pierde todas las cargas de concentración al comienzo de cada ronda, <b>excepto la primera</b>.",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "classType": "might",
     "classDisplay": "Juramentado",
-    "classIcon": "icons/hero_classes/might_unfrozen_icon",
     "icon": "icons/hero_sub_classes/sub_class_unfrozen_might_2_icon",
+    "description": "El enemigo pierde todas las cargas de concentración al comienzo de cada ronda, <b>excepto la primera</b>.",
+    "factionIcon": "icons/fractions/unfrozen_icon",
+    "classIcon": "icons/hero_classes/might_unfrozen_icon",
     "requiredSkills": [
       {
         "skillId": "skill_resistance",
@@ -926,14 +926,14 @@
   {
     "id": "sub_class_unfrozen_magic_1",
     "name": "Imparable",
-    "description": "El héroe obtiene +<resolved>10</resolved> de ataque, defensa, poder de hechizo y conocimiento.",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "classType": "magic",
     "classDisplay": "Portavoz de la Grieta",
-    "classIcon": "icons/hero_classes/magic_unfrozen_icon",
     "icon": "icons/hero_sub_classes/sub_class_unfrozen_magic_1_icon",
+    "description": "El héroe obtiene +<resolved>10</resolved> de ataque, defensa, poder de hechizo y conocimiento.",
+    "factionIcon": "icons/fractions/unfrozen_icon",
+    "classIcon": "icons/hero_classes/magic_unfrozen_icon",
     "requiredSkills": [
       {
         "skillId": "skill_formation",
@@ -968,14 +968,14 @@
   {
     "id": "sub_class_unfrozen_magic_2",
     "name": "Insondable",
-    "description": "Todos los enemigos infligen siempre el daño mínimo y reciben el daño máximo.",
     "faction": "unfrozen",
     "factionDisplay": "Cisma",
-    "factionIcon": "icons/fractions/unfrozen_icon",
     "classType": "magic",
     "classDisplay": "Portavoz de la Grieta",
-    "classIcon": "icons/hero_classes/magic_unfrozen_icon",
     "icon": "icons/hero_sub_classes/sub_class_unfrozen_magic_2_icon",
+    "description": "Todos los enemigos infligen siempre el daño mínimo y reciben el daño máximo.",
+    "factionIcon": "icons/fractions/unfrozen_icon",
+    "classIcon": "icons/hero_classes/magic_unfrozen_icon",
     "requiredSkills": [
       {
         "skillId": "skill_protection",

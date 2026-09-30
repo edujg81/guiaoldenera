@@ -112,11 +112,21 @@ async function fetchDetails(
 ): Promise<unknown[]> {
   const items = extractItems(catalog);
 
-  const ids = items
-    .map(getId)
-    .filter((id): id is string => id !== null);
+  const entries = items
+    .map((item) => ({
+      item,
+      id: getId(item),
+    }))
+    .filter(
+      (
+        entry
+      ): entry is {
+        item: unknown;
+        id: string;
+      } => entry.id !== null
+    );
 
-  if (ids.length === 0) {
+  if (entries.length === 0) {
     throw new Error(
       `El catálogo /${endpoint.name} no contiene registros con id.`
     );
@@ -124,18 +134,30 @@ async function fetchDetails(
 
   const details: unknown[] = [];
 
-  for (let index = 0; index < ids.length; index++) {
-    const id = ids[index];
+  for (let index = 0; index < entries.length; index++) {
+    const { item: catalogItem, id } = entries[index];
     const url = buildDetailUrl(endpoint.path, id);
 
     process.stdout.write(
-      `  [${String(index + 1).padStart(String(ids.length).length, ' ')}/${ids.length}] ${id}`
+      `  [${String(index + 1).padStart(String(entries.length).length, ' ')}/${entries.length}] ${id}`
     );
 
     try {
       const detail = await fetchJson(url);
 
-      details.push(detail);
+      if (
+        catalogItem &&
+        typeof catalogItem === 'object' &&
+        detail &&
+        typeof detail === 'object'
+      ) {
+        details.push({
+          ...(catalogItem as Record<string, unknown>),
+          ...(detail as Record<string, unknown>),
+        });
+      } else {
+        details.push(detail);
+      }
 
       console.log(' ✓');
     } catch (error) {
@@ -205,7 +227,7 @@ async function main() {
       // 2. Obtener detalle completo de cada registro.
       const details = await fetchDetails(endpoint, catalog);
 
-      // 3. Guardar solamente los detalles completos.
+      // 3. Guardar catálogo + detalle completo.
       const outputPath = path.join(
         OUTPUT_DIR,
         `${endpoint.name}.json`
