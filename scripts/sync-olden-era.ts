@@ -1,7 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
-const API_BASE = process.env.OLDEN_ERA_API ?? 'http://localhost:5176/api';
+const API_BASE =
+  process.env.OLDEN_ERA_API ?? 'http://localhost:5176/api';
 
 const OUTPUT_DIR = path.resolve(
   process.cwd(),
@@ -38,21 +39,117 @@ async function fetchJson(url: string): Promise<unknown> {
   return response.json();
 }
 
-function countRecords(data: unknown): number {
+/**
+ * Convierte las distintas formas de respuesta de los catálogos
+ * de OldenEraExplorer en una lista de registros.
+ *
+ * Normalmente la API devuelve:
+ *   [...]
+ *
+ * Algunas rutas devuelven:
+ *   { value: [...], Count: n }
+ *
+ * Y otras podrían devolver:
+ *   { items: [...] }
+ */
+function extractItems(data: unknown): unknown[] {
   if (Array.isArray(data)) {
-    return data.length;
+    return data;
   }
 
-  if (
-    data &&
-    typeof data === 'object' &&
-    'items' in data &&
-    Array.isArray((data as { items?: unknown }).items)
-  ) {
-    return (data as { items: unknown[] }).items.length;
+  if (!data || typeof data !== 'object') {
+    return [];
   }
 
-  return 1;
+  const record = data as Record<string, unknown>;
+
+  if (Array.isArray(record.value)) {
+    return record.value;
+  }
+
+  if (Array.isArray(record.items)) {
+    return record.items;
+  }
+
+  return [];
+}
+
+/**
+ * Obtiene el ID de una entrada del catálogo.
+ */
+function getId(item: unknown): string | null {
+  if (!item || typeof item !== 'object') {
+    return null;
+  }
+
+  const id = (item as Record<string, unknown>).id;
+
+  return typeof id === 'string' && id.length > 0
+    ? id
+    : null;
+}
+
+/**
+ * Algunos endpoints tienen IDs que pueden contener caracteres
+ * especiales. URLSearchParams/encodeURIComponent evita problemas
+ * al construir la ruta del detalle.
+ */
+function buildDetailUrl(endpoint: string, id: string): string {
+  return `${API_BASE}${endpoint}/${encodeURIComponent(id)}`;
+}
+
+/**
+ * Descarga todos los detalles de un catálogo.
+ *
+ * Importante:
+ * - Primero se obtiene el catálogo.
+ * - Después se consulta /{id} para cada entrada.
+ * - El JSON final contiene únicamente los detalles completos.
+ */
+async function fetchDetails(
+  endpoint: EndpointConfig,
+  catalog: unknown
+): Promise<unknown[]> {
+  const items = extractItems(catalog);
+
+  const ids = items
+    .map(getId)
+    .filter((id): id is string => id !== null);
+
+  if (ids.length === 0) {
+    throw new Error(
+      `El catálogo /${endpoint.name} no contiene registros con id.`
+    );
+  }
+
+  const details: unknown[] = [];
+
+  for (let index = 0; index < ids.length; index++) {
+    const id = ids[index];
+    const url = buildDetailUrl(endpoint.path, id);
+
+    process.stdout.write(
+      `  [${String(index + 1).padStart(String(ids.length).length, ' ')}/${ids.length}] ${id}`
+    );
+
+    try {
+      const detail = await fetchJson(url);
+
+      details.push(detail);
+
+      console.log(' ✓');
+    } catch (error) {
+      console.log(' ✗');
+
+      throw new Error(
+        `Error obteniendo el detalle de ${endpoint.name}/${id}: ${
+          error instanceof Error ? error.message : String(error)
+        }`
+      );
+    }
+  }
+
+  return details;
 }
 
 async function main() {
@@ -62,19 +159,25 @@ async function main() {
   console.log('========================================');
   console.log('');
   console.log(`API: ${API_BASE}`);
+  console.log(`Destino: ${OUTPUT_DIR}`);
   console.log('');
 
   await mkdir(OUTPUT_DIR, { recursive: true });
 
-  // Primero comprobamos que el servidor responde.
+  // Comprobamos primero que OldenEraExplorer está disponible.
   try {
     await fetchJson(`${API_BASE}/game/status`);
   } catch (error) {
     console.error('✗ No se puede conectar con OldenEraExplorer.');
     console.error('');
-    console.error(`Comprueba que esté ejecutándose en: ${API_BASE}`);
+    console.error(
+      `Comprueba que esté ejecutándose en: ${API_BASE}`
+    );
     console.error('');
-    console.error(error instanceof Error ? error.message : error);
+    console.error(
+      error instanceof Error ? error.message : error
+    );
+    console.error('');
     process.exit(1);
   }
 
@@ -83,13 +186,26 @@ async function main() {
 
   let successCount = 0;
   let errorCount = 0;
+  let totalRecords = 0;
 
   for (const endpoint of ENDPOINTS) {
-    const url = `${API_BASE}${endpoint.path}`;
+    console.log(`▶ ${endpoint.name}`);
 
     try {
-      const data = await fetchJson(url);
+      // 1. Obtener catálogo.
+      const catalogUrl = `${API_BASE}${endpoint.path}`;
+      const catalog = await fetchJson(catalogUrl);
 
+      const catalogItems = extractItems(catalog);
+
+      console.log(
+        `  Catálogo: ${catalogItems.length} registros`
+      );
+
+      // 2. Obtener detalle completo de cada registro.
+      const details = await fetchDetails(endpoint, catalog);
+
+      // 3. Guardar solamente los detalles completos.
       const outputPath = path.join(
         OUTPUT_DIR,
         `${endpoint.name}.json`
@@ -97,38 +213,44 @@ async function main() {
 
       await writeFile(
         outputPath,
-        `${JSON.stringify(data, null, 2)}\n`,
+        `${JSON.stringify(details, null, 2)}\n`,
         'utf8'
       );
 
       console.log(
-        `✓ ${endpoint.name.padEnd(15)} ${String(countRecords(data)).padStart(4)} registros`
+        `  ✓ Guardado: ${details.length} registros`
       );
+      console.log('');
 
       successCount++;
+      totalRecords += details.length;
     } catch (error) {
       console.error(
-        `✗ ${endpoint.name.padEnd(15)} ERROR`
+        `  ✗ ERROR en ${endpoint.name}`
       );
-
       console.error(
         `  ${error instanceof Error ? error.message : error}`
       );
+      console.log('');
 
       errorCount++;
     }
   }
 
-  console.log('');
   console.log('----------------------------------------');
   console.log(
     `Resultado: ${successCount} correctos, ${errorCount} errores`
   );
+  console.log(`Registros descargados: ${totalRecords}`);
   console.log(`Destino: ${OUTPUT_DIR}`);
   console.log('----------------------------------------');
   console.log('');
 
   if (errorCount > 0) {
+    console.error(
+      '✗ La sincronización ha terminado con errores.'
+    );
+    console.error('');
     process.exit(1);
   }
 
@@ -138,7 +260,12 @@ async function main() {
 
 main().catch((error) => {
   console.error('');
-  console.error('✗ Error inesperado durante la sincronización.');
-  console.error(error);
+  console.error(
+    '✗ Error inesperado durante la sincronización.'
+  );
+  console.error(
+    error instanceof Error ? error.message : error
+  );
+  console.error('');
   process.exit(1);
 });
