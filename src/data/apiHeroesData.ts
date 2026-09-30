@@ -1,6 +1,10 @@
-import { ApiHero } from '../types-api';
+import rawHeroes from './generated/api/heroes.json';
+import type { ApiHero } from '../types-api';
 
-export const API_HEROES_DATA: ApiHero[] = [
+export const API_HEROES_DATA =
+  rawHeroes as ApiHero[];
+
+/*export const API_HEROES_DATA: ApiHero[] = [
   {
     id: 'demon_hero_1',
     name: 'Niev',
@@ -2809,7 +2813,7 @@ export const API_HEROES_DATA: ApiHero[] = [
     motto: 'Nunca pensó que el precio que había pagado por recuperar un solo puesto avanzado fuera demasiado alto.',
     statLabels: {"startingArmy":"Ejército inicial","startingSkills":"Habilidades iniciales","startingSpells":"Hechizos iniciales","biography":"Descripción","motto":"Lema"},
   }
-];
+];*/
 
 export const API_HEROES_COUNT = API_HEROES_DATA.length;
 

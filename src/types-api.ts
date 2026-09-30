@@ -282,12 +282,12 @@ export interface ApiRequiredSkill {
 
 // --- HEROES (/api/heroes) ---
 
-export interface ApiHero {
+/*export interface ApiHero {
   id: string;
   name: string;
   localizedName: string;
   icon: string;
-}
+}*/
 
 // --- UNITS (/api/units) ---
 
