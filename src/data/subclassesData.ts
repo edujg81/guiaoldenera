@@ -17,7 +17,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // MAZMORRA (DUNGEON / PACTO DE ALVAR)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-bodyguard',
+    id: 'sub_class_dungeon_might_1',
     name: 'Guardaespaldas de Baltasar',
     nameEn: "Balthazar's Bodyguard",
     faction: 'Mazmorra',
@@ -38,7 +38,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Combina de forma devastadora con tropas de alto daño base como Danzantes de Ónice, Minotauros e Hidras de las Cavernas.',
   },
   {
-    id: 'subclass-envoy',
+    id: 'sub_class_dungeon_might_2',
     name: 'Enviado de Lengua de Plata',
     nameEn: 'Silver-Tongue Envoy',
     faction: 'Mazmorra',
@@ -59,7 +59,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite tanquear torres de asedio y contraataques enemigos con pérdidas prácticamente nulas.',
   },
   {
-    id: 'subclass-heir',
+    id: 'sub_class_dungeon_magic_1',
     name: 'Heredero de Amelchia',
     nameEn: "Amelchia's Heir",
     faction: 'Mazmorra',
@@ -80,7 +80,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Sinergia brutal con la estrategia de Dragón Negro + Armageddon, amplificando el daño del cataclismo a cifras astronómicas.',
   },
   {
-    id: 'subclass-merchant',
+    id: 'sub_class_dungeon_magic_2',
     name: 'Gran mercader',
     nameEn: 'Grand Merchant',
     faction: 'Mazmorra',
@@ -105,7 +105,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // TEMPLO (TEMPLE / SACERDOTES Y CABALLEROS DE ERATHIA)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-swashbuckler',
+    id: 'sub_class_human_might_1',
     name: 'Bravucón',
     nameEn: 'Swashbuckler',
     faction: 'Templo',
@@ -126,7 +126,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Ideal para combates rápidos donde el héroe actúa como una unidad de aniquilación adicional.',
   },
   {
-    id: 'subclass-paragon',
+    id: 'sub_class_human_might_2',
     name: 'Dechado',
     nameEn: 'Paragon',
     faction: 'Templo',
@@ -147,7 +147,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Multiplica la efectividad de los Tiradores de Kestrel, la Caballería de Keandra y las Égidas del Sol de John Johnson.',
   },
   {
-    id: 'subclass-grand-inquisitor',
+    id: 'sub_class_human_magic_1',
     name: 'Gran Inquisidor',
     nameEn: 'Grand Inquisitor',
     faction: 'Templo',
@@ -168,7 +168,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Desactiva el control de masas y los reinicios mágicos de los rivales, encajando a la perfección con la purga de maná de Lia.',
   },
   {
-    id: 'subclass-ascendant',
+    id: 'sub_class_human_magic_2',
     name: 'Ascendente',
     nameEn: 'Ascendant',
     faction: 'Templo',
@@ -193,7 +193,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // FORESTA (GROVE / GUARDIANES & ELFOS SILVANOS)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-fortunes-favored',
+    id: 'sub_class_nature_might_2',
     name: 'Favorecidos por el azar',
     nameEn: "Fortune's Favored",
     faction: 'Foresta',
@@ -214,7 +214,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Sinergia extrema con faunos arqueros, ninfas iriyad, herbomantes y qilins celestiales.',
   },
   {
-    id: 'subclass-wellspring-of-vigor',
+    id: 'sub_class_nature_might_1',
     name: 'Pozo de vigor',
     nameEn: 'Wellspring of Vigor',
     faction: 'Foresta',
@@ -235,7 +235,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite limpiar grupos compactos de infantería enemiga sin depender de maná.',
   },
   {
-    id: 'subclass-sky-fury',
+    id: 'sub_class_nature_magic_2',
     name: 'Furia del cielo',
     nameEn: 'Sky Fury',
     faction: 'Foresta',
@@ -256,7 +256,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Combina con hechizos de relámpago en cadena y vendaval.',
   },
   {
-    id: 'subclass-celestial-envoy',
+    id: 'sub_class_nature_magic_1',
     name: 'Enviado celestial',
     nameEn: 'Celestial Envoy',
     faction: 'Foresta',
@@ -281,7 +281,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // NECRÓPOLIS (NECROPOLIS / NO-MUERTOS & NIGROMANTES)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-walking-rot',
+    id: 'sub_class_undead_might_2',
     name: 'Podredumbre ambulante',
     nameEn: 'Walking Rot',
     faction: 'Necrópolis',
@@ -302,7 +302,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Especialmente demoledor contra facciones con grandes acumulaciones de tropas de nivel 1-3.',
   },
   {
-    id: 'subclass-harbinger-of-doom',
+    id: 'sub_class_undead_might_1',
     name: 'Heraldo de la perdición',
     nameEn: 'Harbinger of Doom',
     faction: 'Necrópolis',
@@ -323,7 +323,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Potencia los ataques de los Segadores de Almas y Vampiros del Château.',
   },
   {
-    id: 'subclass-soul-weaver',
+    id: 'sub_class_undead_magic_1',
     name: 'Tejedor de almas',
     nameEn: 'Soul Weaver',
     faction: 'Necrópolis',
@@ -344,7 +344,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite conquistar mapas enteros sin necesidad de comprar unidades en castillos.',
   },
   {
-    id: 'subclass-chronomancer',
+    id: 'sub_class_undead_magic_2',
     name: 'Cronomante',
     nameEn: 'Chronomancer',
     faction: 'Necrópolis',
@@ -369,7 +369,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // COLMENA (HIVE / INSECTOIDES & CAUDILLOS)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-broodmother',
+    id: 'sub_class_demons_might_1',
     name: 'Madre de cría',
     nameEn: 'Broodmother',
     faction: 'Colmena',
@@ -390,7 +390,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite a las unidades principales golpear sin recibir represalias enemigas.',
   },
   {
-    id: 'subclass-chaos-lord',
+    id: 'sub_class_demons_might_2',
     name: 'Señor del caos',
     nameEn: 'Chaos Lord',
     faction: 'Colmena',
@@ -411,7 +411,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Ideal contra Paladines de Templo o Señores Supremos de Mazmorra.',
   },
   {
-    id: 'subclass-progenitor',
+    id: 'sub_class_demons_magic_1',
     name: 'Progenitor',
     nameEn: 'Progenitor',
     faction: 'Colmena',
@@ -432,7 +432,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Protege las tropas frágiles mientras los devoradores avanzan.',
   },
   {
-    id: 'subclass-soul-eater',
+    id: 'sub_class_demons_magic_2',
     name: 'Devorador de almas',
     nameEn: 'Soul Eater',
     faction: 'Colmena',
@@ -457,7 +457,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
   // CISMA (SCHISM / DEMONIOS & HEREJES)
   // -----------------------------------------------------------------------
   {
-    id: 'subclass-unstoppable',
+    id: 'ub_class_unfrozen_might_2',
     name: 'Imparable',
     nameEn: 'Unstoppable',
     faction: 'Cisma',
@@ -478,7 +478,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite cruzar todo el mapa de combate en el Turno 1 e impactar las líneas enemigas sin frenos.',
   },
   {
-    id: 'subclass-boundless',
+    id: 'sub_class_unfrozen_might_1',
     name: 'Sin límites',
     nameEn: 'Boundless',
     faction: 'Cisma',
@@ -499,7 +499,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Permite teletransportar infantería pesada directamente sobre arqueros y artillería.',
   },
   {
-    id: 'subclass-fathomless',
+    id: 'ub_class_unfrozen_magic_2',
     name: 'Insondable',
     nameEn: 'Fathomless',
     faction: 'Cisma',
@@ -520,7 +520,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
     synergyNotes: 'Convierte el campo de batalla en una trampa mortal combinada con empujes y aturdimientos.',
   },
   {
-    id: 'subclass-unfeeling',
+    id: 'ub_class_unfrozen_magic_1',
     name: 'Insensible',
     nameEn: 'Unfeeling',
     faction: 'Cisma',
