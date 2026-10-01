@@ -70,7 +70,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Economía', 'Construcción', 'Rush Tier 7'],
   },
   {
-    id: 'law-temple-t1-ballistics',
+    id: 'fraction_law_human_10',
     priorityOrder: 2,
     tier: 1,
     tierMinPoints: 0,
@@ -144,7 +144,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
   // TIER 2 (5 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-temple-t2-grassland-sanctity',
+    id: 'fraction_law_human_5',
     priorityOrder: 4,
     tier: 2,
     tierMinPoints: 5,
@@ -179,7 +179,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Inmunidad', 'Terreno Nativo'],
   },
   {
-    id: 'law-temple-t2-erathian-discipline',
+    id: 'fraction_law_human_22',
     priorityOrder: 5,
     tier: 2,
     tierMinPoints: 5,
@@ -214,7 +214,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Economía', 'Crecimiento'],
   },
   {
-    id: 'law-temple-t2-griffin-valiance',
+    id: 'fraction_law_human_11',
     priorityOrder: 6,
     tier: 2,
     tierMinPoints: 5,
@@ -280,7 +280,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Magia', 'Grimorio Universal'],
   },
   {
-    id: 'law-temple-t3-resurrection-blessing',
+    id: 'fraction_law_human_18',
     priorityOrder: 8,
     tier: 3,
     tierMinPoints: 15,
@@ -319,7 +319,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (30 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-temple-t4-chivalric-code',
+    id: 'fraction_law_human_24',
     priorityOrder: 9,
     tier: 4,
     tierMinPoints: 30,
@@ -346,7 +346,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Caballería', 'Carga', 'Militar'],
   },
   {
-    id: 'law-temple-t4-holy-tithes',
+    id: 'fraction_law_human_6',
     priorityOrder: 10,
     tier: 4,
     tierMinPoints: 30,
@@ -377,7 +377,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
   // TIER 5 (50 PUNTOS REQUERIDOS - CÚSPIDE METAGAME)
   // =======================================================================
   {
-    id: 'law-temple-t5-solar-supremacy',
+    id: 'fraction_law_human_26',
     priorityOrder: 11,
     tier: 5,
     tierMinPoints: 50,

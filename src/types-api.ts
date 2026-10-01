@@ -20,23 +20,13 @@ export interface ApiArtifact {
   narrativeDescription?: string;
   upgradeDescription?: string;
   upgradeCost?: string;
-  upgradeCostNote?: string;
+  upgradeCostNote?: string | null;
   destroyReward?: string;
   setBonus?: {
     setName: string;
     bonuses: { header: string; effect: string }[];
     setItems: { artifactId: string; name: string; icon: string; slot: string }[];
   };
-}
-
-// Campos locales extendidos (no en API, preservados en sincronización)
-export interface ArtifactInfo extends ApiArtifact {
-  isOrphan?: boolean;
-  prefabPath?: string | null;
-  faction?: string;
-  idealSlot?: string;
-  metaTier?: string;
-  synergyTags?: string[];
 }
 
 // --- ABILITIES (/api/abilities) ---
@@ -56,13 +46,6 @@ export interface ApiAbility {
   sourceUnitIds: string[];
   sourceUnitNames: string[];
   statLabels: Record<string, string>;
-}
-
-// Campos locales extendidos para abilitiesData.ts
-export interface AbilityInfo extends ApiAbility {
-  effect: string;
-  faction: string;
-  creatureType: string;
 }
 
 // --- BUILDINGS (/api/buildings) ---
@@ -196,7 +179,7 @@ export interface ApiFactionLaw {
   icon: string;
   levels: ApiLawLevel[];
   statLabels: Record<string, string>;
-  layout: ApiLawLayout;
+  layout: ApiLawLayout[];
 }
 
 export interface ApiLawLevel {
@@ -294,9 +277,76 @@ export interface ApiRequiredSkill {
 export interface ApiUnit {
   id: string;
   name: string;
+  faction: string;
+  factionDisplay: string;
+  tier: number;
+  iconPath: string;
+  isOrphan: boolean;
+  scale?: string | null;
+  prefabPath?: string;
   localizedName: string;
+  factionIcon: string | null;
+  attack: number;
+  defense: number;
+  minDamage: number;
+  maxDamage: number;
+  health: number;
+  speed: number;
+  initiative: number;
+  growth: number | null;
+  luck: number;
+  morale: number;
+  squadValue: number;
+  expBonus: number;
+  description: string;
+  narrativeDescription: string;
+  creatureType: CreatureType[];
+  passiveAbilities: PassiveAbilitie[];
+  activeAbilities: string;
+  costEntries: CostEntry[];
+  upgradeCostEntries: string | null;
+  usedByHeroes: string;
+  statLabels: Record<string, string>;
+}
+
+export interface CreatureType {
+  id: string;
+  name: string;
+  nameSid: string;
+  abilityType: string;
+  description: string;
+  rank?: string;
+  energyCost?: number | null;
+  abilityTypeSid?: string | null;
+  immunities: string | null;
+  infoNotes: string | null;
   icon: string;
-  rarity: string;
+  sourceUnitIds: string | null;
+  sourceUnitNames: string | null;
+  statLabels: string | null;
+}
+
+export interface PassiveAbilitie {
+  id: string;
+  name: string;
+  nameSid: string;
+  abilityType: string;
+  description: string;
+  rank: number | null;
+  energyCost: number | null;
+  abilityTypeSid: string;
+  immunities: string | null;
+  infoNotes: string | null;
+  icon: string;
+  sourceUnitIds: string | null;
+  sourceUnitNames: string | null;
+  statLabels: string | null;
+}
+
+export interface CostEntry {
+  resourceKey: string;
+  displayName: string;
+  amount: number;
 }
 
 // --- SPELLS (/api/spells) ---
@@ -310,10 +360,27 @@ export interface ApiSpell {
 // TIPOS LOCALES EXTENDIDOS (preservan campos no presentes en la API)
 // =====================================================================
 
+// Campos locales extendidos para abilitiesData.ts
+export interface AbilityInfo extends ApiAbility {
+  effect: string;
+  faction: string;
+  creatureType: string;
+}
+
+// Campos locales extendidos (no en API, preservados en sincronización)
 export interface ArtifactInfo extends ApiArtifact {
   isOrphan?: boolean;
   prefabPath?: string | null;
+  faction?: string;
   idealSlot?: string;
   metaTier?: string;
   synergyTags?: string[];
+}
+
+export interface UnitInfo extends ApiUnit {
+  id: string;
+  name: string;
+  localizedName: string;
+  icon: string;
+  rarity: string;
 }

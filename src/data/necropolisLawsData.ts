@@ -35,7 +35,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
   // TIER 1 (0 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-necropolis-t1-bone-harvest',
+    id: 'fraction_law_undead_4',
     priorityOrder: 1,
     tier: 1,
     tierMinPoints: 0,
@@ -69,7 +69,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
     tags: ['Nigromancia', 'Esqueletos', 'Militar'],
   },
   {
-    id: 'law-necropolis-t1-crypt-construction',
+    id: 'fraction_law_undead_2',
     priorityOrder: 2,
     tier: 1,
     tierMinPoints: 0,
@@ -107,7 +107,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
   // TIER 2 (5 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-necropolis-t2-vampiric-bloodline',
+    id: 'fraction_law_undead_11',
     priorityOrder: 3,
     tier: 2,
     tierMinPoints: 5,
@@ -141,7 +141,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
     tags: ['Vampiros', 'Mercurio', 'Militar'],
   },
   {
-    id: 'law-necropolis-t2-death-cloud-amplification',
+    id: 'fraction_law_undead_9',
     priorityOrder: 4,
     tier: 2,
     tierMinPoints: 5,
@@ -179,7 +179,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (15 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-necropolis-t3-vampire-supremacy',
+    id: 'fraction_law_undead_17',
     priorityOrder: 5,
     tier: 3,
     tierMinPoints: 15,
@@ -213,7 +213,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
     tags: ['Vampiros', 'Drenaje', 'Tier 7'],
   },
   {
-    id: 'law-necropolis-t3-wraith-spectral-shroud',
+    id: 'fraction_law_undead_18',
     priorityOrder: 6,
     tier: 3,
     tierMinPoints: 15,
@@ -243,7 +243,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (30 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-necropolis-t4-vampiric-lordship',
+    id: 'fraction_law_undead_23',
     priorityOrder: 7,
     tier: 4,
     tierMinPoints: 30,
@@ -269,7 +269,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
     tags: ['Vampiros', 'Moral', 'Tier 7', 'Drenaje'],
   },
   {
-    id: 'law-necropolis-t4-eternal-crypts',
+    id: 'fraction_law_undead_21',
     priorityOrder: 8,
     tier: 4,
     tierMinPoints: 30,
@@ -299,7 +299,7 @@ export const NECROPOLIS_FACTION_LAWS: FactionLaw[] = [
   // TIER 5 (50 PUNTOS REQUERIDOS - CÚSPIDE METAGAME)
   // =======================================================================
   {
-    id: 'law-necropolis-t5-eternal-death-reign',
+    id: 'fraction_law_undead_31',
     priorityOrder: 9,
     tier: 5,
     tierMinPoints: 50,

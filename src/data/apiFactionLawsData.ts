@@ -1,4 +1,4 @@
-import { ApiLaw, ApiLawLayout, ApiLawGroup, ApiLawInGroup, ApiLawLevel } from '../types-api';
+//import { ApiLaw, ApiLawLayout, ApiLawGroup, ApiLawInGroup, ApiLawLevel } from '../types-api';
 
 /**
  * Datos puros de la API /api/faction-laws (catálogo)
@@ -6,7 +6,7 @@ import { ApiLaw, ApiLawLayout, ApiLawGroup, ApiLawInGroup, ApiLawLevel } from '.
  * Se sincroniza manualmente desde la API cuando hay cambios.
  * Los campos locales extendidos están en factionLawsData.ts
  */
-export interface ApiFactionLaw {
+/*export interface ApiFactionLaw {
   id: string;
   name: string;
   faction: string;
@@ -14,11 +14,10 @@ export interface ApiFactionLaw {
   icon: string;
   levels: ApiLawLevel[];
   layout: ApiLawLayout;
-}
+}*/
 
-export const API_FACTION_LAWS_DATA: ApiFactionLaw[] = [
-  // Datos extraídos de http://localhost:5176/api/faction-laws (muestra real)
-  // La API devuelve objetos con: id, name, faction, factionDisplay, icon
-  // El detalle (/api/faction-laws/{id}) incluye: levels, layout
-  // Ejemplo real: { id: 'fraction_law_demon_1', name: 'Recaudadores de impuestos', faction: 'demon', factionDisplay: 'Colmena', icon: 'icons/fraction_laws/fraction_law_demon_1_icon' }
-];
+import rawFactionLaws from './generated/api/faction-laws.json';
+import type { ApiFactionLaw } from '../types-api';
+
+export const API_FACTION_LAWS_DATA =
+  rawFactionLaws as ApiFactionLaw[];
