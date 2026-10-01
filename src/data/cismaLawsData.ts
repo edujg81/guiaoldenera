@@ -8,11 +8,11 @@ export const CISMA_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque optimizado para acelerar la extracción de Mercurio y Mineral para levantar el Santuario del Abismo y reclutar Enviados Abisales en el Día 14.',
     totalCost: 50,
     steps: [
-      { stepNumber: 1, lawId: 'law-cisma-t1-tax-collectors', level: 1, dayWindow: 'Día 1-3', notes: '+150 Oro diario por cada asentamiento bajo control del Cisma.' },
-      { stepNumber: 2, lawId: 'law-cisma-t1-unfrozen-strength-1', level: 1, dayWindow: 'Día 4-6', notes: '+10% PS y daño a todos los Ra\'Shoths de invocación.' },
-      { stepNumber: 3, lawId: 'law-cisma-t2-mining-mercury', level: 1, dayWindow: 'Día 7-9', notes: 'Genera +1 Mercurio diario por cada mina de mercurio controlada.' },
-      { stepNumber: 4, lawId: 'law-cisma-t2-elite-agashoth', level: 1, dayWindow: 'Día 10-12', notes: '+2 Velocidad y carga gélida a los Jinetes Aga\'Shoth.' },
-      { stepNumber: 5, lawId: 'law-cisma-t5-elite-abyssal-envoys', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes de los Enviados Abisales y potencia Voluntad del Abismo.' },
+      { stepNumber: 1, lawId: 'fraction_law_unfrozen_1', level: 1, dayWindow: 'Día 1-3', notes: '+150 Oro diario por cada asentamiento bajo control del Cisma.' },
+      { stepNumber: 2, lawId: 'fraction_law_unfrozen_6', level: 1, dayWindow: 'Día 4-6', notes: '+10% PS y daño a todos los Ra\'Shoths de invocación.' },
+      { stepNumber: 3, lawId: 'fraction_law_unfrozen_14', level: 1, dayWindow: 'Día 7-9', notes: 'Genera +1 Mercurio diario por cada mina de mercurio controlada.' },
+      { stepNumber: 4, lawId: 'fraction_law_unfrozen_13', level: 1, dayWindow: 'Día 10-12', notes: '+2 Velocidad y carga gélida a los Jinetes Aga\'Shoth.' },
+      { stepNumber: 5, lawId: 'fraction_law_unfrozen_32', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes de los Enviados Abisales y potencia Voluntad del Abismo.' },
     ],
   },
   {
@@ -22,9 +22,9 @@ export const CISMA_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque centrado en maximizar las invocaciones permanentes en combate sobre cadáveres y potenciar el daño de frío de Vori.',
     totalCost: 48,
     steps: [
-      { stepNumber: 1, lawId: 'law-cisma-t1-ice-power', level: 2, dayWindow: 'Semana 1', notes: '+25% Daño de hechizos de frío y coste de maná reducido.' },
-      { stepNumber: 2, lawId: 'law-cisma-t3-the-abyss-stares-back', level: 1, dayWindow: 'Semana 2', notes: 'Los Cultistas y Concubis drenan un 50% más de maná del rival.' },
-      { stepNumber: 3, lawId: 'law-cisma-t4-absolute-zero', level: 1, dayWindow: 'Semana 3', notes: 'Congela completamente a las unidades enemigas golpeadas por frío crítico.' },
+      { stepNumber: 1, lawId: 'fraction_law_unfrozen_7', level: 2, dayWindow: 'Semana 1', notes: '+25% Daño de hechizos de frío y coste de maná reducido.' },
+      { stepNumber: 2, lawId: 'fraction_law_unfrozen_29', level: 1, dayWindow: 'Semana 2', notes: 'Los Cultistas y Concubis drenan un 50% más de maná del rival.' },
+      { stepNumber: 3, lawId: 'fraction_law_unfrozen_36', level: 1, dayWindow: 'Semana 3', notes: 'Congela completamente a las unidades enemigas golpeadas por frío crítico.' },
     ],
   },
 ];
@@ -34,7 +34,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
   // TIER 1 (0 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-cisma-t1-tax-collectors',
+    id: 'fraction_law_unfrozen_1',
     priorityOrder: 1,
     tier: 1,
     tierMinPoints: 0,
@@ -65,7 +65,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t1-generational-wisdom',
+    id: 'fraction_law_unfrozen_2',
     priorityOrder: 2,
     tier: 1,
     tierMinPoints: 0,
@@ -88,7 +88,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t1-ice-power',
+    id: 'fraction_law_unfrozen_7',
     priorityOrder: 3,
     tier: 1,
     tierMinPoints: 0,
@@ -111,7 +111,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t1-unfrozen-strength-1',
+    id: 'fraction_law_unfrozen_6',
     priorityOrder: 4,
     tier: 1,
     tierMinPoints: 0,
@@ -138,7 +138,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
   // TIER 2 (5 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-cisma-t2-mining-mercury',
+    id: 'fraction_law_unfrozen_14',
     priorityOrder: 5,
     tier: 2,
     tierMinPoints: 5,
@@ -161,7 +161,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t2-elite-cultists',
+    id: 'fraction_law_unfrozen_12',
     priorityOrder: 6,
     tier: 2,
     tierMinPoints: 5,
@@ -184,7 +184,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t2-elite-agashoth',
+    id: 'fraction_law_unfrozen_13',
     priorityOrder: 7,
     tier: 2,
     tierMinPoints: 5,
@@ -211,7 +211,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (15 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-cisma-t3-cold-shoulder',
+    id: 'fraction_law_unfrozen_16',
     priorityOrder: 8,
     tier: 3,
     tierMinPoints: 15,
@@ -234,7 +234,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t3-the-abyss-stares-back',
+    id: 'fraction_law_unfrozen_29',
     priorityOrder: 9,
     tier: 3,
     tierMinPoints: 15,
@@ -257,7 +257,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t3-elite-grand-shoths',
+    id: 'fraction_law_unfrozen_19',
     priorityOrder: 10,
     tier: 3,
     tierMinPoints: 15,
@@ -284,7 +284,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (30 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-cisma-t4-absolute-zero',
+    id: 'fraction_law_unfrozen_36',
     priorityOrder: 11,
     tier: 4,
     tierMinPoints: 30,
@@ -307,7 +307,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
     ],
   },
   {
-    id: 'law-cisma-t4-elite-arbitrators',
+    id: 'fraction_law_unfrozen_27',
     priorityOrder: 12,
     tier: 4,
     tierMinPoints: 30,
@@ -334,7 +334,7 @@ export const CISMA_FACTION_LAWS: FactionLaw[] = [
   // TIER 5 (50 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-cisma-t5-elite-abyssal-envoys',
+    id: 'fraction_law_unfrozen_32',
     priorityOrder: 13,
     tier: 5,
     tierMinPoints: 50,

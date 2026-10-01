@@ -8,11 +8,11 @@ export const TEMPLE_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque optimizado para acelerar la economía, doble construcción y asegurar la Forja Radiante y el Portal Celestial en el Día 14 exacto.',
     totalCost: 50,
     steps: [
-      { stepNumber: 1, lawId: 'law-temple-t1-double-build', level: 1, dayWindow: 'Día 1-3', notes: 'Desbloquea aceleración de construcción para erigir infraestructuras clave.' },
+      { stepNumber: 1, lawId: 'fraction_law_human_28', level: 1, dayWindow: 'Día 1-3', notes: 'Desbloquea aceleración de construcción para erigir infraestructuras clave.' },
       { stepNumber: 2, lawId: 'law-temple-t1-ballistics', level: 1, dayWindow: 'Día 4-6', notes: 'Potencia el daño de los Ballesteros para limpiar minas iniciales sin bajas.' },
       { stepNumber: 3, lawId: 'law-temple-t2-grassland-sanctity', level: 1, dayWindow: 'Día 7-9', notes: 'Inmunidad a efectos negativos en terreno de pradera durante la expansión.' },
       { stepNumber: 4, lawId: 'law-temple-t2-erathian-discipline', level: 1, dayWindow: 'Día 10-12', notes: 'Reduce costes de reclutamiento de infantería pesada y aumenta la moral.' },
-      { stepNumber: 5, lawId: 'law-temple-t3-universal-light', level: 1, dayWindow: 'Día 13-14', notes: 'Permite a los héroes de Templo aprender cualquier hechizo independientemente de su nivel.' },
+      { stepNumber: 5, lawId: 'fraction_law_human_27', level: 1, dayWindow: 'Día 13-14', notes: 'Permite a los héroes de Templo aprender cualquier hechizo independientemente de su nivel.' },
     ],
   },
   {
@@ -22,7 +22,7 @@ export const TEMPLE_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque centrado en maximizar los bonos de moral (+3 garantizado), la carga de la caballería y la efectividad de los Arcángeles.',
     totalCost: 48,
     steps: [
-      { stepNumber: 1, lawId: 'law-temple-t1-encouragement', level: 1, dayWindow: 'Semana 1', notes: 'Aumenta la frecuencia de turnos dobles por alta moral.' },
+      { stepNumber: 1, lawId: 'fraction_law_human_25', level: 1, dayWindow: 'Semana 1', notes: 'Aumenta la frecuencia de turnos dobles por alta moral.' },
       { stepNumber: 2, lawId: 'law-temple-t2-griffin-valiance', level: 1, dayWindow: 'Semana 2', notes: 'Contraataques potenciados para los Grifos de Templo.' },
       { stepNumber: 3, lawId: 'law-temple-t3-resurrection-blessing', level: 1, dayWindow: 'Semana 3', notes: 'Reduce el coste de maná de Resurrección y aumenta tropas revividas.' },
       { stepNumber: 4, lawId: 'law-temple-t4-chivalric-code', level: 1, dayWindow: 'Semana 4', notes: 'Carga demoledora de la Caballería pesada y Paladines.' },
@@ -35,7 +35,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
   // TIER 1 (0 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-temple-t1-double-build',
+    id: 'fraction_law_human_28',
     priorityOrder: 1,
     tier: 1,
     tierMinPoints: 0,
@@ -105,7 +105,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
     tags: ['Tiradores', 'Daño Físico', 'Tier 2'],
   },
   {
-    id: 'law-temple-t1-encouragement',
+    id: 'fraction_law_human_25',
     priorityOrder: 3,
     tier: 1,
     tierMinPoints: 0,
@@ -208,7 +208,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 3',
       },
     ],
-    prerequisiteLaws: ['law-temple-t1-double-build'],
+    prerequisiteLaws: ['fraction_law_human_28'],
     incompatibleLaws: [],
     recommendedForHeroes: ['Lord Edgar', 'Clarissa'],
     tags: ['Economía', 'Crecimiento'],
@@ -235,7 +235,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 2',
       },
     ],
-    prerequisiteLaws: ['law-temple-t1-encouragement'],
+    prerequisiteLaws: ['fraction_law_human_25'],
     incompatibleLaws: [],
     recommendedForHeroes: ['Viejo Lord Mandall', 'Lord Edgar'],
     tags: ['Grifos', 'Velocidad'],
@@ -245,7 +245,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (15 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-temple-t3-universal-light',
+    id: 'fraction_law_human_27',
     priorityOrder: 7,
     tier: 3,
     tierMinPoints: 15,
@@ -367,7 +367,7 @@ export const TEMPLE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 5',
       },
     ],
-    prerequisiteLaws: ['law-temple-t1-double-build'],
+    prerequisiteLaws: ['fraction_law_human_28'],
     incompatibleLaws: [],
     recommendedForHeroes: ['Clarissa', 'Anastasia la Dócil'],
     tags: ['Diezmo', 'Oro', 'Economía'],

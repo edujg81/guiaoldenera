@@ -9,10 +9,10 @@ export const ARBOLEDA_LAW_PRESETS: FactionLawPreset[] = [
     totalCost: 50,
     steps: [
       { stepNumber: 1, lawId: 'law-arboleda-t1-forest-symbiosis', level: 1, dayWindow: 'Día 1-3', notes: '+2 Madera diaria y reducción del coste de construcción de moradas silvanas.' },
-      { stepNumber: 2, lawId: 'law-arboleda-t1-faun-harmony', level: 1, dayWindow: 'Día 4-6', notes: '+2 Ataque y +1 Velocidad a los Faunos para creeping inicial sin pérdidas.' },
+      { stepNumber: 2, lawId: 'fraction_law_nature_5', level: 1, dayWindow: 'Día 4-6', notes: '+2 Ataque y +1 Velocidad a los Faunos para creeping inicial sin pérdidas.' },
       { stepNumber: 3, lawId: 'law-arboleda-t2-hoplite-oath', level: 1, dayWindow: 'Día 7-9', notes: 'Disciplina de falange: +3 Defensa y reducción de daño a distancia para Hoplitas.' },
       { stepNumber: 4, lawId: 'law-arboleda-t2-mana-sanctuary', level: 1, dayWindow: 'Día 10-12', notes: 'Generación diaria de Gemas y aceleración del crecimiento de Herbomantes.' },
-      { stepNumber: 5, lawId: 'law-arboleda-t3-phoenix-ascension', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes del Fénix Mítico y garantiza renacimiento de cenizas al 100% de efectividad.' },
+      { stepNumber: 5, lawId: 'fraction_law_nature_27', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes del Fénix Mítico y garantiza renacimiento de cenizas al 100% de efectividad.' },
     ],
   },
   {
@@ -22,10 +22,10 @@ export const ARBOLEDA_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Especialización defensiva centrada en crear una muralla impenetrable de Hoplitas protegidos por las Ninfas Iriyads y las curaciones continuas de los Herbomantes.',
     totalCost: 48,
     steps: [
-      { stepNumber: 1, lawId: 'law-arboleda-t1-faun-harmony', level: 2, dayWindow: 'Semana 1', notes: 'Danza de combate y resistencia aumentada para tropas de apertura.' },
+      { stepNumber: 1, lawId: 'fraction_law_nature_5', level: 2, dayWindow: 'Semana 1', notes: 'Danza de combate y resistencia aumentada para tropas de apertura.' },
       { stepNumber: 2, lawId: 'law-arboleda-t2-hoplite-oath', level: 2, dayWindow: 'Semana 2', notes: 'Muro de escudos que bloquea represalias enemigas.' },
-      { stepNumber: 3, lawId: 'law-arboleda-t3-iriyad-grace', level: 1, dayWindow: 'Semana 3', notes: 'Aura evasiva de las Ninfas Iriyads y vuelo de hostigamiento.' },
-      { stepNumber: 4, lawId: 'law-arboleda-t4-qilin-celestial-ward', level: 1, dayWindow: 'Semana 4', notes: 'Aura protectora de los Qilins celestiales contra magia elemental.' },
+      { stepNumber: 3, lawId: 'fraction_law_nature_10', level: 1, dayWindow: 'Semana 3', notes: 'Aura evasiva de las Ninfas Iriyads y vuelo de hostigamiento.' },
+      { stepNumber: 4, lawId: 'fraction_law_nature_23', level: 1, dayWindow: 'Semana 4', notes: 'Aura protectora de los Qilins celestiales contra magia elemental.' },
     ],
   },
 ];
@@ -70,7 +70,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
     tags: ['Economía', 'Madera', 'Rush Tier 7'],
   },
   {
-    id: 'law-arboleda-t1-faun-harmony',
+    id: 'fraction_law_nature_5',
     priorityOrder: 2,
     tier: 1,
     tierMinPoints: 0,
@@ -105,7 +105,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
     tags: ['Faunos', 'Iniciativa', 'Militar'],
   },
   {
-    id: 'law-arboleda-t1-canopy-striders',
+    id: 'fraction_law_nature_7',
     priorityOrder: 3,
     tier: 1,
     tierMinPoints: 0,
@@ -164,7 +164,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Día 11-12 (Semana 2)',
       },
     ],
-    prerequisiteLaws: ['law-arboleda-t1-faun-harmony'],
+    prerequisiteLaws: ['fraction_law_nature_5'],
     incompatibleLaws: [],
     tags: ['Hoplitas', 'Defensa', 'Falange'],
   },
@@ -233,7 +233,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (15 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-arboleda-t3-phoenix-ascension',
+    id: 'fraction_law_nature_27',
     priorityOrder: 7,
     tier: 3,
     tierMinPoints: 15,
@@ -267,7 +267,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
     tags: ['Fénix', 'Tier 7', 'Renacimiento'],
   },
   {
-    id: 'law-arboleda-t3-iriyad-grace',
+    id: 'fraction_law_nature_10',
     priorityOrder: 8,
     tier: 3,
     tierMinPoints: 15,
@@ -293,7 +293,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
     tags: ['Ninfas', 'Ceguera', 'Evasión'],
   },
   {
-    id: 'law-arboleda-t3-herbomancy-mastery',
+    id: 'fraction_law_nature_22',
     priorityOrder: 9,
     tier: 3,
     tierMinPoints: 15,
@@ -331,7 +331,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (30 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-arboleda-t4-qilin-celestial-ward',
+    id: 'fraction_law_nature_23',
     priorityOrder: 10,
     tier: 4,
     tierMinPoints: 30,
@@ -352,7 +352,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 4-5',
       },
     ],
-    prerequisiteLaws: ['law-arboleda-t3-phoenix-ascension'],
+    prerequisiteLaws: ['fraction_law_nature_27'],
     incompatibleLaws: [],
     tags: ['Qilin', 'Antimagia', 'Moral'],
   },
@@ -378,7 +378,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 5',
       },
     ],
-    prerequisiteLaws: ['law-arboleda-t3-herbomancy-mastery'],
+    prerequisiteLaws: ['fraction_law_nature_22'],
     incompatibleLaws: [],
     tags: ['Crecimiento', 'Economía'],
   },
@@ -409,7 +409,7 @@ export const ARBOLEDA_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 6-8 (Batalla Final)',
       },
     ],
-    prerequisiteLaws: ['law-arboleda-t4-qilin-celestial-ward'],
+    prerequisiteLaws: ['fraction_law_nature_23'],
     incompatibleLaws: [],
     tags: ['Tier 5', 'Ultimate', 'Fénix'],
   },

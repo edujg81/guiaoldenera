@@ -8,11 +8,11 @@ export const ENJAMBRE_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque diseñado para optimizar la recolección de Cristal y Biomasa para erigir la Torre del Amor de la Reina de la Colmena en el Día 14 exacto.',
     totalCost: 50,
     steps: [
-      { stepNumber: 1, lawId: 'law-enjambre-t1-mass-hatching', level: 1, dayWindow: 'Día 1-3', notes: '+25% de crecimiento de Langostas y reducción de costes de nidos.' },
+      { stepNumber: 1, lawId: 'fraction_law_demon_6', level: 1, dayWindow: 'Día 1-3', notes: '+25% de crecimiento de Langostas y reducción de costes de nidos.' },
       { stepNumber: 2, lawId: 'law-enjambre-t1-chitin-armor', level: 1, dayWindow: 'Día 4-6', notes: '+2 Defensa y armadura quitinosa a todas las criaturas del enjambre.' },
-      { stepNumber: 3, lawId: 'law-enjambre-t2-crystal-metabolism', level: 1, dayWindow: 'Día 7-9', notes: '+1 de Cristal diario por cada mina controlada.' },
+      { stepNumber: 3, lawId: 'fraction_law_demon_13', level: 1, dayWindow: 'Día 7-9', notes: '+1 de Cristal diario por cada mina controlada.' },
       { stepNumber: 4, lawId: 'law-enjambre-t2-royal-mantis-leap', level: 1, dayWindow: 'Día 10-12', notes: 'Salto depredador y daño perforante para las Mantis Reales.' },
-      { stepNumber: 5, lawId: 'law-enjambre-t3-hive-queen-majesty', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes de la Reina de la Colmena y potencia el engendro continuo de larvas en batalla.' },
+      { stepNumber: 5, lawId: 'fraction_law_demon_23', level: 1, dayWindow: 'Día 13-14', notes: 'Reduce los costes de la Reina de la Colmena y potencia el engendro continuo de larvas en batalla.' },
     ],
   },
   {
@@ -22,11 +22,11 @@ export const ENJAMBRE_LAW_PRESETS: FactionLawPreset[] = [
     description: 'Enfoque centrado en inundar el campo de batalla con Langostas Segadoras, Avispones y Parásitos, desgastando defensas enemigas mediante neurotoxinas y ácido corrosivo.',
     totalCost: 48,
     steps: [
-      { stepNumber: 1, lawId: 'law-enjambre-t1-mass-hatching', level: 2, dayWindow: 'Semana 1', notes: 'Eclosión masiva de langostas en fase temprana.' },
+      { stepNumber: 1, lawId: 'fraction_law_demon_6', level: 2, dayWindow: 'Semana 1', notes: 'Eclosión masiva de langostas en fase temprana.' },
       { stepNumber: 2, lawId: 'law-enjambre-t1-hivemind-vanguard', level: 1, dayWindow: 'Semana 1', notes: 'Vínculo de Mente Colmena que aumenta ataque por cada casta insectoide.' },
       { stepNumber: 3, lawId: 'law-enjambre-t2-caustic-corrosion', level: 1, dayWindow: 'Semana 2', notes: 'Ácido que reduce la armadura del enemigo en cada asalto.' },
       { stepNumber: 4, lawId: 'law-enjambre-t3-hornet-neurotoxin', level: 1, dayWindow: 'Semana 3', notes: 'Avispones que paralizan e impiden contraataques.' },
-      { stepNumber: 5, lawId: 'law-enjambre-t4-biomass-assimilation', level: 1, dayWindow: 'Semana 4', notes: 'Asimilación de cadáveres que repone tropas caídas.' },
+      { stepNumber: 5, lawId: 'fraction_law_demon_21', level: 1, dayWindow: 'Semana 4', notes: 'Asimilación de cadáveres que repone tropas caídas.' },
     ],
   },
 ];
@@ -36,7 +36,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
   // TIER 1 (0 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-enjambre-t1-mass-hatching',
+    id: 'fraction_law_demon_6',
     priorityOrder: 1,
     tier: 1,
     tierMinPoints: 0,
@@ -136,7 +136,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
   // TIER 2 (5 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-enjambre-t2-crystal-metabolism',
+    id: 'fraction_law_demon_13',
     priorityOrder: 4,
     tier: 2,
     tierMinPoints: 5,
@@ -234,7 +234,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (15 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-enjambre-t3-hive-queen-majesty',
+    id: 'fraction_law_demon_23',
     priorityOrder: 7,
     tier: 3,
     tierMinPoints: 15,
@@ -298,7 +298,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (30 PUNTOS REQUERIDOS)
   // =======================================================================
   {
-    id: 'law-enjambre-t4-biomass-assimilation',
+    id: 'fraction_law_demon_21',
     priorityOrder: 9,
     tier: 4,
     tierMinPoints: 30,
@@ -319,12 +319,12 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 4-5',
       },
     ],
-    prerequisiteLaws: ['law-enjambre-t3-hive-queen-majesty'],
+    prerequisiteLaws: ['fraction_law_demon_23'],
     incompatibleLaws: [],
     tags: ['Asimiladores', 'Biomasa', 'Adaptación'],
   },
   {
-    id: 'law-enjambre-t4-synaptic-tunnels',
+    id: 'fraction_law_demon_8',
     priorityOrder: 10,
     tier: 4,
     tierMinPoints: 30,
@@ -345,7 +345,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 5',
       },
     ],
-    prerequisiteLaws: ['law-enjambre-t2-crystal-metabolism'],
+    prerequisiteLaws: ['fraction_law_demon_13'],
     incompatibleLaws: [],
     tags: ['Teletransporte', 'Logística'],
   },
@@ -354,7 +354,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
   // TIER 5 (50 PUNTOS REQUERIDOS - CÚSPIDE METAGAME)
   // =======================================================================
   {
-    id: 'law-enjambre-t5-hivemind-transcendence',
+    id: 'fraction_law_demon_22',
     priorityOrder: 11,
     tier: 5,
     tierMinPoints: 50,
@@ -376,7 +376,7 @@ export const ENJAMBRE_FACTION_LAWS: FactionLaw[] = [
         recommendedUnlockTime: 'Semana 6-8 (Batalla Decisiva)',
       },
     ],
-    prerequisiteLaws: ['law-enjambre-t4-biomass-assimilation'],
+    prerequisiteLaws: ['fraction_law_demon_21'],
     incompatibleLaws: [],
     tags: ['Tier 5', 'Ultimate', 'Mente Colmena'],
   },

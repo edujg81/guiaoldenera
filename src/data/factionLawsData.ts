@@ -41,7 +41,7 @@ export const FACTION_LAWS: FactionLaw[] = [
   // TIER 1 (DESBLOQUEADO A LOS 0 PUNTOS DE FACCIÓN)
   // =======================================================================
   {
-    id: 'law-t1-troglodytes',
+    id: 'fraction_law_dungeon_4',
     priorityOrder: 1,
     tier: 1,
     tierMinPoints: 0,
@@ -76,7 +76,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia brutal con el héroe Kieran (El Pueblo Ciego) y moradas externas de Trogloditas.',
   },
   {
-    id: 'law-t1-leaders-nation',
+    id: 'fraction_law_dungeon_2',
     priorityOrder: 2,
     tier: 1,
     tierMinPoints: 0,
@@ -111,7 +111,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Kelarr (Erudición de Alvar) y héroes principales exploradores.',
   },
   {
-    id: 'law-t1-resource-riches-1',
+    id: 'fraction_law_dungeon_3',
     priorityOrder: 3,
     tier: 1,
     tierMinPoints: 0,
@@ -138,7 +138,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Acelera la construcción del Ayuntamiento, Palacio bizantino y Cofradía de Magos I.',
   },
   {
-    id: 'law-t1-dungeon-masters-1',
+    id: 'fraction_law_dungeon_6',
     priorityOrder: 4,
     tier: 1,
     tierMinPoints: 0,
@@ -165,7 +165,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con la Sede municipal y reclutamiento temprano de tropas de Tier 1 y 2.',
   },
   {
-    id: 'law-t1-celestial-maps',
+    id: 'fraction_law_dungeon_33',
     priorityOrder: 5,
     tier: 1,
     tierMinPoints: 0,
@@ -192,7 +192,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Logística y héroes de exploración rápida.',
   },
   {
-    id: 'law-t1-arcane-knowledge',
+    id: 'fraction_law_dungeon_34',
     priorityOrder: 6,
     tier: 1,
     tierMinPoints: 0,
@@ -219,7 +219,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia directa con Zakron the Great, Lodos y Sister Deira.',
   },
   {
-    id: 'law-t1-dragon-scales',
+    id: 'fraction_law_dungeon_5',
     priorityOrder: 7,
     tier: 1,
     tierMinPoints: 0,
@@ -266,7 +266,7 @@ export const FACTION_LAWS: FactionLaw[] = [
   // TIER 2 (DESBLOQUEADO A LOS 5 PUNTOS DE FACCIÓN)
   // =======================================================================
   {
-    id: 'law-t2-tax-collectors',
+    id: 'fraction_law_dungeon_1',
     priorityOrder: 8,
     tier: 2,
     tierMinPoints: 5,
@@ -301,7 +301,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Metropolis III (4.000g base -> 4.800g/día) y héroe Glastor.',
   },
   {
-    id: 'law-t2-mining-gems',
+    id: 'fraction_law_dungeon_14',
     priorityOrder: 9,
     tier: 2,
     tierMinPoints: 5,
@@ -336,7 +336,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia perfecta con Creta (Buscadora de Gemas) y Silo de recursos.',
   },
   {
-    id: 'law-t2-infiltrators',
+    id: 'fraction_law_dungeon_10',
     priorityOrder: 10,
     tier: 2,
     tierMinPoints: 5,
@@ -371,7 +371,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia suprema con el héroe Mouaren (Salto Sombrío) y Danzantes.',
   },
   {
-    id: 'law-t2-dancers',
+    id: 'fraction_law_dungeon_11',
     priorityOrder: 11,
     tier: 2,
     tierMinPoints: 5,
@@ -406,7 +406,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Motley (Danza Macabra) y hechizos de Aceleración / Bendición.',
   },
   {
-    id: 'law-t2-dungeon-masters-2',
+    id: 'fraction_law_dungeon_12',
     priorityOrder: 12,
     tier: 2,
     tierMinPoints: 5,
@@ -433,7 +433,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Casa de la agilidad y Salón de las espadas.',
   },
   {
-    id: 'law-t2-dungeon-masters-3',
+    id: 'fraction_law_dungeon_13',
     priorityOrder: 13,
     tier: 2,
     tierMinPoints: 5,
@@ -460,7 +460,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Laberinto y Palacio bizantino.',
   },
   {
-    id: 'law-t2-alchemists-code-1',
+    id: 'fraction_law_dungeon_9',
     priorityOrder: 14,
     tier: 2,
     tierMinPoints: 5,
@@ -491,7 +491,7 @@ export const FACTION_LAWS: FactionLaw[] = [
   // TIER 3 (DESBLOQUEADO A LOS 15 PUNTOS DE FACCIÓN)
   // =======================================================================
   {
-    id: 'law-t3-jadame-maps',
+    id: 'fraction_law_dungeon_8',
     priorityOrder: 15,
     tier: 3,
     tierMinPoints: 15,
@@ -526,7 +526,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Se acumula directamente con la habilidad Logística y botas de velocidad.',
   },
   {
-    id: 'law-t3-minotaurs',
+    id: 'fraction_law_dungeon_18',
     priorityOrder: 16,
     tier: 3,
     tierMinPoints: 15,
@@ -561,7 +561,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Devir (Maestría de Minotauros) y Laberinto.',
   },
   {
-    id: 'law-t3-medusae',
+    id: 'fraction_law_dungeon_19',
     priorityOrder: 17,
     tier: 3,
     tierMinPoints: 15,
@@ -596,7 +596,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Enatee (Reina de las Medusas) y Torre de las Medusas.',
   },
   {
-    id: 'law-t3-tactical-advantage',
+    id: 'fraction_law_dungeon_20',
     priorityOrder: 18,
     tier: 3,
     tierMinPoints: 15,
@@ -631,7 +631,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con todas las 7 criaturas de Mazmorra y sus posturas alternativas.',
   },
   {
-    id: 'law-t3-dungeon-masters-4',
+    id: 'fraction_law_dungeon_21',
     priorityOrder: 19,
     tier: 3,
     tierMinPoints: 15,
@@ -658,7 +658,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Laberinto y Torre de las Medusas.',
   },
   {
-    id: 'law-t3-resource-riches-2',
+    id: 'fraction_law_dungeon_17',
     priorityOrder: 20,
     tier: 3,
     tierMinPoints: 15,
@@ -685,7 +685,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Acelera el salto a Hidras y Dragones de Cueva.',
   },
   {
-    id: 'law-t3-or-no-ore',
+    id: 'fraction_law_dungeon_7',
     priorityOrder: 21,
     tier: 3,
     tierMinPoints: 15,
@@ -712,7 +712,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con la construcción de fortalezas y murallas de asedio.',
   },
   {
-    id: 'law-t3-spy-network',
+    id: 'fraction_law_dungeon_15',
     priorityOrder: 22,
     tier: 3,
     tierMinPoints: 15,
@@ -743,7 +743,7 @@ export const FACTION_LAWS: FactionLaw[] = [
   // TIER 4 (DESBLOQUEADO A LOS 30 PUNTOS DE FACCIÓN)
   // =======================================================================
   {
-    id: 'law-t4-triumvirate-agents',
+    id: 'fraction_law_dungeon_22',
     priorityOrder: 23,
     tier: 4,
     tierMinPoints: 30,
@@ -778,7 +778,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Zakron, Enatee, Aguijón y todos los héroes de facción.',
   },
   {
-    id: 'law-t4-hydras',
+    id: 'fraction_law_dungeon_25',
     priorityOrder: 24,
     tier: 4,
     tierMinPoints: 30,
@@ -813,7 +813,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia brutal con el hechizo Teletransporte y Postura Defensiva.',
   },
   {
-    id: 'law-t4-dungeon-masters-5',
+    id: 'fraction_law_dungeon_26',
     priorityOrder: 25,
     tier: 4,
     tierMinPoints: 30,
@@ -840,7 +840,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Hogar ctónico II y Torre de las Medusas.',
   },
   {
-    id: 'law-t4-dungeon-masters-6',
+    id: 'fraction_law_dungeon_27',
     priorityOrder: 26,
     tier: 4,
     tierMinPoints: 30,
@@ -867,7 +867,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Fortificaciones de Nivel III y Reclutamiento.',
   },
   {
-    id: 'law-t4-alchemists-code-2',
+    id: 'fraction_law_dungeon_24',
     priorityOrder: 27,
     tier: 4,
     tierMinPoints: 30,
@@ -894,7 +894,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Silo alquímico y Palacio de cueva.',
   },
   {
-    id: 'law-t4-merchants-guild',
+    id: 'fraction_law_dungeon_23',
     priorityOrder: 28,
     tier: 4,
     tierMinPoints: 30,
@@ -921,7 +921,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con expansión territorial y múltiples mercados.',
   },
   {
-    id: 'law-t4-peoples-jadame',
+    id: 'fraction_law_dungeon_16',
     priorityOrder: 29,
     tier: 4,
     tierMinPoints: 30,
@@ -952,7 +952,7 @@ export const FACTION_LAWS: FactionLaw[] = [
   // TIER 5 (DESBLOQUEADO A LOS 50 PUNTOS DE FACCIÓN - LEYES MAESTRAS)
   // =======================================================================
   {
-    id: 'law-t5-dragons',
+    id: 'fraction_law_dungeon_31',
     priorityOrder: 30,
     tier: 5,
     tierMinPoints: 50,
@@ -988,7 +988,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Combo definitivo de Drago-Armageddon con Zakron o Lodos.',
   },
   {
-    id: 'law-t5-dungeon-masters-7',
+    id: 'fraction_law_dungeon_32',
     priorityOrder: 31,
     tier: 5,
     tierMinPoints: 50,
@@ -1016,7 +1016,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Palacio de cueva II y Granja de Dragones.',
   },
   {
-    id: 'law-t5-resource-riches-3',
+    id: 'fraction_law_dungeon_30',
     priorityOrder: 32,
     tier: 5,
     tierMinPoints: 50,
@@ -1044,7 +1044,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con reclutamiento masivo en múltiples plazas.',
   },
   {
-    id: 'law-t5-magical-education',
+    id: 'fraction_law_dungeon_28',
     priorityOrder: 33,
     tier: 5,
     tierMinPoints: 50,
@@ -1080,7 +1080,7 @@ export const FACTION_LAWS: FactionLaw[] = [
     synergy: 'Sinergia con Zakron, Cofradía de Magos V y Hechicería Experta.',
   },
   {
-    id: 'law-t5-saturation',
+    id: 'fraction_law_dungeon_29',
     priorityOrder: 34,
     tier: 5,
     tierMinPoints: 50,
@@ -1128,56 +1128,56 @@ export const FACTION_LAW_PRESETS: FactionLawPreset[] = [
     totalCost: 50,
     tag: 'Meta Mágico & Dragones',
     enactedLawIds: [
-      'law-t1-leaders-nation',
-      'law-t1-troglodytes',
-      'law-t1-arcane-knowledge',
-      'law-t1-dragon-scales',
-      'law-t2-tax-collectors',
-      'law-t2-mining-gems',
-      'law-t3-jadame-maps',
-      'law-t3-tactical-advantage',
-      'law-t4-triumvirate-agents',
-      'law-t4-alchemists-code-2',
-      'law-t5-dragons',
-      'law-t5-magical-education',
-      'law-t5-saturation',
+      'fraction_law_dungeon_2',
+      'fraction_law_dungeon_4',
+      'fraction_law_dungeon_34',
+      'fraction_law_dungeon_5',
+      'fraction_law_dungeon_1',
+      'fraction_law_dungeon_14',
+      'fraction_law_dungeon_8',
+      'fraction_law_dungeon_20',
+      'fraction_law_dungeon_22',
+      'fraction_law_dungeon_24',
+      'fraction_law_dungeon_31',
+      'fraction_law_dungeon_28',
+      'fraction_law_dungeon_29',
     ],
     lawLevels: {
-      'law-t1-troglodytes': 2,        // 4 Pts (2 * 2)
-      'law-t1-arcane-knowledge': 1,   // 2 Pts
-      'law-t1-dragon-scales': 2,      // 4 Pts (2 * 2)
-      'law-t1-leaders-nation': 1,     // 3 Pts (+15% EXP de héroes)
-      'law-t2-tax-collectors': 2,     // 4 Pts (2 * 2)
-      'law-t2-mining-gems': 2,        // 4 Pts (2 * 2)
-      'law-t3-jadame-maps': 1,        // 2 Pts
-      'law-t3-tactical-advantage': 1, // 2 Pts
-      'law-t4-triumvirate-agents': 2, // 6 Pts (2 * 3)
-      'law-t4-alchemists-code-2': 1,  // 3 Pts
-      'law-t5-dragons': 1,            // 4 Pts
-      'law-t5-magical-education': 2,  // 8 Pts (costLaws 4 rank 2 = 8: Doble lanzamiento de hechizos Turno 1)
-      'law-t5-saturation': 1,         // 4 Pts (costLaws 4 rank 1 = 4)
+      'fraction_law_dungeon_4': 2,        // 4 Pts (2 * 2)
+      'fraction_law_dungeon_34': 1,   // 2 Pts
+      'fraction_law_dungeon_5': 2,      // 4 Pts (2 * 2)
+      'fraction_law_dungeon_2': 1,     // 3 Pts (+15% EXP de héroes)
+      'fraction_law_dungeon_1': 2,     // 4 Pts (2 * 2)
+      'fraction_law_dungeon_14': 2,        // 4 Pts (2 * 2)
+      'fraction_law_dungeon_8': 1,        // 2 Pts
+      'fraction_law_dungeon_20': 1, // 2 Pts
+      'fraction_law_dungeon_22': 2, // 6 Pts (2 * 3)
+      'fraction_law_dungeon_24': 1,  // 3 Pts
+      'fraction_law_dungeon_31': 1,            // 4 Pts
+      'fraction_law_dungeon_28': 2,  // 8 Pts (costLaws 4 rank 2 = 8: Doble lanzamiento de hechizos Turno 1)
+      'fraction_law_dungeon_29': 1,         // 4 Pts (costLaws 4 rank 1 = 4)
       // 4+2+4+3+4+4+2+2+6+3+4+8+4 = 50 Pts exactos!
     },
     sequenceSteps: [
-      { lawId: 'law-t1-troglodytes', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño y aguante para limpiar mapas neutrales sin bajas (2 Sellos)' },
-      { lawId: 'law-t1-arcane-knowledge', targetLevel: 1, stepName: 'Conocimiento arcano (Nv. 1)', notes: 'Día 3: +20 Maná para lanzar hechizos de daño en combates neutrales (2 Sellos)' },
-      { lawId: 'law-t1-troglodytes', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 6: Daño 2.0x y +2 Ataque para afianzar creeping (2 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8 (Semana 2): +20% Oro municipal para comprar tropas (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 9: Flujo de gemas para Cofradía de Magos e Hidras (2 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 11: +40% Oro municipal para asegurar Metropolis III (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 13: +2 Gemas/día para Palacio de Cueva (2 Sellos)' },
-      { lawId: 'law-t3-jadame-maps', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15 (Semana 3): +10 Movimiento para controlar el centro del mapa (2 Sellos)' },
-      { lawId: 'law-t1-dragon-scales', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 17: Primer contacto con héroes rivales; -5% daño mágico (2 Sellos)' },
-      { lawId: 'law-t3-tactical-advantage', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: Flexibilidad de posturas tácticas en duelo de héroes (2 Sellos)' },
-      { lawId: 'law-t1-dragon-scales', targetLevel: 2, stepName: 'Escamas de dragón (Nv. 2)', notes: 'Día 20: -10% daño mágico y +1 Defensa permanente (2 Sellos)' },
-      { lawId: 'law-t3-tactical-advantage', targetLevel: 2, stepName: 'Ventaja táctica (Nv. 2)', notes: 'Día 21: Daño pleno en todas las posturas de combate (2 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 23: +1 a todos los atributos primarios de todos los héroes (3 Sellos)' },
-      { lawId: 'law-t4-alchemists-code-2', targetLevel: 1, stepName: 'Código del alquimista II (Nv. 1)', notes: 'Día 26: Transmutación diaria de gemas y polvos (3 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 28: +2 a atributos primarios e iniciativa en Turno 1 (3 Sellos)' },
-      { lawId: 'law-t5-dragons', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones Negros con 1.5x daño y aliento en línea (4 Sellos)' },
-      { lawId: 'law-t5-magical-education', targetLevel: 1, stepName: 'Educación mágica (Nv. 1)', notes: 'Día 38: Todos los hechizos ascienden +1 Nivel de poder (4 Sellos)' },
-      { lawId: 'law-t5-saturation', targetLevel: 1, stepName: 'Saturación (Nv. 1)', notes: 'Día 42: +50 Maná y +20% daño mágico directo (4 Sellos)' },
-      { lawId: 'law-t5-saturation', targetLevel: 2, stepName: 'Saturación (Nv. 2)', notes: 'Día 48: Regeneración masiva en cada ronda de combate (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño y aguante para limpiar mapas neutrales sin bajas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_34', targetLevel: 1, stepName: 'Conocimiento arcano (Nv. 1)', notes: 'Día 3: +20 Maná para lanzar hechizos de daño en combates neutrales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 6: Daño 2.0x y +2 Ataque para afianzar creeping (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8 (Semana 2): +20% Oro municipal para comprar tropas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 9: Flujo de gemas para Cofradía de Magos e Hidras (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 11: +40% Oro municipal para asegurar Metropolis III (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 13: +2 Gemas/día para Palacio de Cueva (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_8', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15 (Semana 3): +10 Movimiento para controlar el centro del mapa (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_5', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 17: Primer contacto con héroes rivales; -5% daño mágico (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_20', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: Flexibilidad de posturas tácticas en duelo de héroes (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_5', targetLevel: 2, stepName: 'Escamas de dragón (Nv. 2)', notes: 'Día 20: -10% daño mágico y +1 Defensa permanente (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_20', targetLevel: 2, stepName: 'Ventaja táctica (Nv. 2)', notes: 'Día 21: Daño pleno en todas las posturas de combate (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 23: +1 a todos los atributos primarios de todos los héroes (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_24', targetLevel: 1, stepName: 'Código del alquimista II (Nv. 1)', notes: 'Día 26: Transmutación diaria de gemas y polvos (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 28: +2 a atributos primarios e iniciativa en Turno 1 (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_31', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones Negros con 1.5x daño y aliento en línea (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_28', targetLevel: 1, stepName: 'Educación mágica (Nv. 1)', notes: 'Día 38: Todos los hechizos ascienden +1 Nivel de poder (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_29', targetLevel: 1, stepName: 'Saturación (Nv. 1)', notes: 'Día 42: +50 Maná y +20% daño mágico directo (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_29', targetLevel: 2, stepName: 'Saturación (Nv. 2)', notes: 'Día 48: Regeneración masiva en cada ronda de combate (4 Sellos)' },
     ]
   },
   {
@@ -1188,63 +1188,63 @@ export const FACTION_LAW_PRESETS: FactionLawPreset[] = [
     totalCost: 50,
     tag: 'Economía & Horda',
     enactedLawIds: [
-      'law-t1-resource-riches-1',
-      'law-t1-dungeon-masters-1',
-      'law-t1-leaders-nation',
-      'law-t2-tax-collectors',
-      'law-t2-mining-gems',
-      'law-t2-dungeon-masters-2',
-      'law-t2-dungeon-masters-3',
-      'law-t3-jadame-maps',
-      'law-t3-resource-riches-2',
-      'law-t3-dungeon-masters-4',
-      'law-t3-or-no-ore',
-      'law-t4-dungeon-masters-5',
-      'law-t4-dungeon-masters-6',
-      'law-t4-merchants-guild',
-      'law-t4-triumvirate-agents',
-      'law-t5-dungeon-masters-7',
-      'law-t5-resource-riches-3',
+      'fraction_law_dungeon_3',
+      'fraction_law_dungeon_6',
+      'fraction_law_dungeon_2',
+      'fraction_law_dungeon_1',
+      'fraction_law_dungeon_14',
+      'fraction_law_dungeon_12',
+      'fraction_law_dungeon_13',
+      'fraction_law_dungeon_8',
+      'fraction_law_dungeon_17',
+      'fraction_law_dungeon_21',
+      'fraction_law_dungeon_7',
+      'fraction_law_dungeon_26',
+      'fraction_law_dungeon_27',
+      'fraction_law_dungeon_23',
+      'fraction_law_dungeon_22',
+      'fraction_law_dungeon_32',
+      'fraction_law_dungeon_30',
     ],
     lawLevels: {
-      'law-t1-resource-riches-1': 1, // 2 Pts
-      'law-t1-dungeon-masters-1': 1, // 2 Pts
-      'law-t1-leaders-nation': 1,    // 3 Pts
-      'law-t2-tax-collectors': 2,    // 4 Pts (2 * 2)
-      'law-t2-mining-gems': 2,       // 4 Pts (2 * 2)
-      'law-t2-dungeon-masters-2': 1, // 2 Pts
-      'law-t2-dungeon-masters-3': 1, // 2 Pts
-      'law-t3-jadame-maps': 1,        // 2 Pts (+10 Movilidad para caravanas y logística)
-      'law-t3-resource-riches-2': 1, // 3 Pts
-      'law-t3-dungeon-masters-4': 1, // 2 Pts
-      'law-t3-or-no-ore': 1,         // 2 Pts
-      'law-t4-dungeon-masters-5': 1, // 3 Pts
-      'law-t4-dungeon-masters-6': 1, // 3 Pts
-      'law-t4-merchants-guild': 1,   // 3 Pts
-      'law-t4-triumvirate-agents': 1,// 3 Pts (+1 Atributos primarios para todos los héroes comerciales)
-      'law-t5-dungeon-masters-7': 1, // 4 Pts
-      'law-t5-resource-riches-3': 1, // 4 Pts
+      'fraction_law_dungeon_3': 1, // 2 Pts
+      'fraction_law_dungeon_6': 1, // 2 Pts
+      'fraction_law_dungeon_2': 1,    // 3 Pts
+      'fraction_law_dungeon_1': 2,    // 4 Pts (2 * 2)
+      'fraction_law_dungeon_14': 2,       // 4 Pts (2 * 2)
+      'fraction_law_dungeon_12': 1, // 2 Pts
+      'fraction_law_dungeon_13': 1, // 2 Pts
+      'fraction_law_dungeon_8': 1,        // 2 Pts (+10 Movilidad para caravanas y logística)
+      'fraction_law_dungeon_17': 1, // 3 Pts
+      'fraction_law_dungeon_21': 1, // 2 Pts
+      'fraction_law_dungeon_7': 1,         // 2 Pts
+      'fraction_law_dungeon_26': 1, // 3 Pts
+      'fraction_law_dungeon_27': 1, // 3 Pts
+      'fraction_law_dungeon_23': 1,   // 3 Pts
+      'fraction_law_dungeon_22': 1,// 3 Pts (+1 Atributos primarios para todos los héroes comerciales)
+      'fraction_law_dungeon_32': 1, // 4 Pts
+      'fraction_law_dungeon_30': 1, // 4 Pts
       // Suma total: 2+2+3+4+4+2+2+2+3+2+2+3+3+3+3+4+4 = 48 -> +1 Líderes de la Nación Nv 2 (+3) = 49 + 1 (50)
-      'law-t1-dragon-scales': 1,      // 2 Pts (48 + 2 = 50 Pts exactos)
+      'fraction_law_dungeon_5': 1,      // 2 Pts (48 + 2 = 50 Pts exactos)
     },
     sequenceSteps: [
-      { lawId: 'law-t1-resource-riches-1', targetLevel: 1, stepName: 'Riqueza de recursos I (Nv. 1)', notes: 'Día 2: +3.000 Oro, +10 Madera y +10 Mineral para Ayuntamiento (2 Sellos)' },
-      { lawId: 'law-t1-dungeon-masters-1', targetLevel: 1, stepName: 'Maestro de las mazmorras I (Nv. 1)', notes: 'Día 4: +4 Trogloditas y +2 Infiltradores semanales (2 Sellos)' },
-      { lawId: 'law-t1-leaders-nation', targetLevel: 1, stepName: 'Líderes de la nación (Nv. 1)', notes: 'Día 6: +15% EXP para acelerar nivel del héroe principal (3 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8: +20% Oro municipal diario (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 10: +1 Gema diaria pasiva (2 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 12: +40% Oro para Metropolis III (2 Sellos)' },
-      { lawId: 'law-t2-dungeon-masters-2', targetLevel: 1, stepName: 'Maestro de las mazmorras II (Nv. 1)', notes: 'Día 13: +2 Infiltradores y +2 Danzantes semanales (2 Sellos)' },
-      { lawId: 'law-t2-dungeon-masters-3', targetLevel: 1, stepName: 'Maestro de las mazmorras III (Nv. 1)', notes: 'Día 14: +2 Danzantes y +1 Minotauro semanales (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 15: +2 Gemas/día pasivas (2 Sellos)' },
-      { lawId: 'law-t3-resource-riches-2', targetLevel: 1, stepName: 'Riqueza de recursos II (Nv. 1)', notes: 'Día 16: +7.500 Oro y +8 Gemas instantáneas (3 Sellos)' },
-      { lawId: 'law-t3-dungeon-masters-4', targetLevel: 1, stepName: 'Maestro de las mazmorras IV (Nv. 1)', notes: 'Día 17: +1 Minotauro y +1 Medusa semanales (2 Sellos)' },
-      { lawId: 'law-t3-or-no-ore', targetLevel: 1, stepName: '¿Sin mineral? (Nv. 1)', notes: 'Día 18: -30% coste de mineral en edificios (2 Sellos)' },
-      { lawId: 'law-t4-dungeon-masters-5', targetLevel: 1, stepName: 'Maestro de las mazmorras V (Nv. 1)', notes: 'Día 22: +1 Medusa y +1 Hidra semanales (3 Sellos)' },
-      { lawId: 'law-t4-dungeon-masters-6', targetLevel: 1, stepName: 'Maestro de las mazmorras VI (Nv. 1)', notes: 'Día 24: +1 Hidra extra en capital (3 Sellos)' },
-      { lawId: 'law-t4-merchants-guild', targetLevel: 1, stepName: 'Gremio de mercaderes (Nv. 1)', notes: 'Día 27: Tasas de mercado óptimas 1:1.2 y +500g/día (3 Sellos)' },
-      { lawId: 'law-t5-dungeon-masters-7', targetLevel: 1, stepName: 'Maestro de las mazmorras VII (Nv. 1)', notes: 'Día 35: +1 Dragón de Cueva semanal en capital (4 Sellos)' },
-      { lawId: 'law-t5-resource-riches-3', targetLevel: 1, stepName: 'Riqueza de recursos III (Nv. 1)', notes: 'Día 40: +20.000 Oro y +20 Gemas instantáneas (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_3', targetLevel: 1, stepName: 'Riqueza de recursos I (Nv. 1)', notes: 'Día 2: +3.000 Oro, +10 Madera y +10 Mineral para Ayuntamiento (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_6', targetLevel: 1, stepName: 'Maestro de las mazmorras I (Nv. 1)', notes: 'Día 4: +4 Trogloditas y +2 Infiltradores semanales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_2', targetLevel: 1, stepName: 'Líderes de la nación (Nv. 1)', notes: 'Día 6: +15% EXP para acelerar nivel del héroe principal (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8: +20% Oro municipal diario (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 10: +1 Gema diaria pasiva (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 12: +40% Oro para Metropolis III (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_12', targetLevel: 1, stepName: 'Maestro de las mazmorras II (Nv. 1)', notes: 'Día 13: +2 Infiltradores y +2 Danzantes semanales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_13', targetLevel: 1, stepName: 'Maestro de las mazmorras III (Nv. 1)', notes: 'Día 14: +2 Danzantes y +1 Minotauro semanales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 15: +2 Gemas/día pasivas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_17', targetLevel: 1, stepName: 'Riqueza de recursos II (Nv. 1)', notes: 'Día 16: +7.500 Oro y +8 Gemas instantáneas (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_21', targetLevel: 1, stepName: 'Maestro de las mazmorras IV (Nv. 1)', notes: 'Día 17: +1 Minotauro y +1 Medusa semanales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_7', targetLevel: 1, stepName: '¿Sin mineral? (Nv. 1)', notes: 'Día 18: -30% coste de mineral en edificios (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_26', targetLevel: 1, stepName: 'Maestro de las mazmorras V (Nv. 1)', notes: 'Día 22: +1 Medusa y +1 Hidra semanales (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_27', targetLevel: 1, stepName: 'Maestro de las mazmorras VI (Nv. 1)', notes: 'Día 24: +1 Hidra extra en capital (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_23', targetLevel: 1, stepName: 'Gremio de mercaderes (Nv. 1)', notes: 'Día 27: Tasas de mercado óptimas 1:1.2 y +500g/día (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_32', targetLevel: 1, stepName: 'Maestro de las mazmorras VII (Nv. 1)', notes: 'Día 35: +1 Dragón de Cueva semanal en capital (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_30', targetLevel: 1, stepName: 'Riqueza de recursos III (Nv. 1)', notes: 'Día 40: +20.000 Oro y +20 Gemas instantáneas (4 Sellos)' },
     ]
   },
   {
@@ -1255,53 +1255,53 @@ export const FACTION_LAW_PRESETS: FactionLawPreset[] = [
     totalCost: 50,
     tag: 'Táctico & Criaturas',
     enactedLawIds: [
-      'law-t1-troglodytes',
-      'law-t1-dragon-scales',
-      'law-t2-infiltrators',
-      'law-t2-dancers',
-      'law-t3-jadame-maps',
-      'law-t3-minotaurs',
-      'law-t3-medusae',
-      'law-t3-tactical-advantage',
-      'law-t4-hydras',
-      'law-t4-triumvirate-agents',
-      'law-t5-dragons',
+      'fraction_law_dungeon_4',
+      'fraction_law_dungeon_5',
+      'fraction_law_dungeon_10',
+      'fraction_law_dungeon_11',
+      'fraction_law_dungeon_8',
+      'fraction_law_dungeon_18',
+      'fraction_law_dungeon_19',
+      'fraction_law_dungeon_20',
+      'fraction_law_dungeon_25',
+      'fraction_law_dungeon_22',
+      'fraction_law_dungeon_31',
     ],
     lawLevels: {
-      'law-t1-troglodytes': 2,        // 4 Pts (2 * 2)
-      'law-t1-dragon-scales': 2,      // 4 Pts (2 * 2)
-      'law-t2-infiltrators': 2,       // 4 Pts (2 * 2)
-      'law-t2-dancers': 2,            // 4 Pts (2 * 2)
-      'law-t3-jadame-maps': 1,        // 2 Pts
-      'law-t3-minotaurs': 2,          // 4 Pts (2 * 2)
-      'law-t3-medusae': 2,            // 4 Pts (2 * 2)
-      'law-t3-tactical-advantage': 2, // 4 Pts (2 * 2)
-      'law-t4-hydras': 2,             // 6 Pts (2 * 3)
-      'law-t4-triumvirate-agents': 2, // 6 Pts (2 * 3)
-      'law-t5-dragons': 2,            // 8 Pts (2 * 4)
+      'fraction_law_dungeon_4': 2,        // 4 Pts (2 * 2)
+      'fraction_law_dungeon_5': 2,      // 4 Pts (2 * 2)
+      'fraction_law_dungeon_10': 2,       // 4 Pts (2 * 2)
+      'fraction_law_dungeon_11': 2,            // 4 Pts (2 * 2)
+      'fraction_law_dungeon_8': 1,        // 2 Pts
+      'fraction_law_dungeon_18': 2,          // 4 Pts (2 * 2)
+      'fraction_law_dungeon_19': 2,            // 4 Pts (2 * 2)
+      'fraction_law_dungeon_20': 2, // 4 Pts (2 * 2)
+      'fraction_law_dungeon_25': 2,             // 6 Pts (2 * 3)
+      'fraction_law_dungeon_22': 2, // 6 Pts (2 * 3)
+      'fraction_law_dungeon_31': 2,            // 8 Pts (2 * 4)
     },
     sequenceSteps: [
-      { lawId: 'law-t1-troglodytes', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño x1.5 para creeping veloz (2 Sellos)' },
-      { lawId: 'law-t1-troglodytes', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 5: Daño x2.0 y aguante físico (2 Sellos)' },
-      { lawId: 'law-t2-infiltrators', targetLevel: 1, stepName: 'Infiltradores de élite (Nv. 1)', notes: 'Día 8: Salto Sombrío x1.5 daño tras tiradores (2 Sellos)' },
-      { lawId: 'law-t2-dancers', targetLevel: 1, stepName: 'Danzantes de élite (Nv. 1)', notes: 'Día 10: Doble Golpe x1.5 daño (2 Sellos)' },
-      { lawId: 'law-t2-infiltrators', targetLevel: 2, stepName: 'Infiltradores de élite (Nv. 2)', notes: 'Día 12: Veneno de Sombra (-2 Atq/Def) (2 Sellos)' },
-      { lawId: 'law-t2-dancers', targetLevel: 2, stepName: 'Danzantes de élite (Nv. 2)', notes: 'Día 13: Evasión 20% y +2 Velocidad (2 Sellos)' },
-      { lawId: 'law-t3-jadame-maps', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15: +10 Movimiento diario (2 Sellos)' },
-      { lawId: 'law-t3-minotaurs', targetLevel: 1, stepName: 'Minotauros de élite (Nv. 1)', notes: 'Día 16: Minotauros con 1.5x daño y +2 daño base (2 Sellos)' },
-      { lawId: 'law-t3-medusae', targetLevel: 1, stepName: 'Medusas de élite (Nv. 1)', notes: 'Día 17: Medusas con 1.5x daño y petrificación (2 Sellos)' },
-      { lawId: 'law-t3-tactical-advantage', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: -25% penalización de posturas de combate (2 Sellos)' },
-      { lawId: 'law-t1-dragon-scales', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 19: -5% daño mágico recibido (2 Sellos)' },
-      { lawId: 'law-t3-minotaurs', targetLevel: 2, stepName: 'Minotauros de élite (Nv. 2)', notes: 'Día 20: 2.0x daño y aturdimiento al golpear (2 Sellos)' },
-      { lawId: 'law-t3-medusae', targetLevel: 2, stepName: 'Medusas de élite (Nv. 2)', notes: 'Día 21: Mirada petrificante en melé y distancia (2 Sellos)' },
-      { lawId: 'law-t3-tactical-advantage', targetLevel: 2, stepName: 'Ventaja táctica (Nv. 2)', notes: 'Día 22: Daño pleno 100% en todas las posturas (2 Sellos)' },
-      { lawId: 'law-t1-dragon-scales', targetLevel: 2, stepName: 'Escamas de dragón (Nv. 2)', notes: 'Día 23: -10% daño mágico y +1 Defensa (2 Sellos)' },
-      { lawId: 'law-t4-hydras', targetLevel: 1, stepName: 'Hidras de élite (Nv. 1)', notes: 'Día 24: Ataque circular 360º x1.5 daño (3 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 26: +1 a todos los atributos primarios (3 Sellos)' },
-      { lawId: 'law-t4-hydras', targetLevel: 2, stepName: 'Hidras de élite (Nv. 2)', notes: 'Día 29: Regeneración 10% y -30% armadura enemiga (3 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 30: +2 a todos los atributos e iniciativa (3 Sellos)' },
-      { lawId: 'law-t5-dragons', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones con 1.5x daño y aliento en línea (4 Sellos)' },
-      { lawId: 'law-t5-dragons', targetLevel: 2, stepName: 'Dragones de cueva de élite (Nv. 2)', notes: 'Día 45: Dragones con 2.0x daño y +100 PS (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño x1.5 para creeping veloz (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 5: Daño x2.0 y aguante físico (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_10', targetLevel: 1, stepName: 'Infiltradores de élite (Nv. 1)', notes: 'Día 8: Salto Sombrío x1.5 daño tras tiradores (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_11', targetLevel: 1, stepName: 'Danzantes de élite (Nv. 1)', notes: 'Día 10: Doble Golpe x1.5 daño (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_10', targetLevel: 2, stepName: 'Infiltradores de élite (Nv. 2)', notes: 'Día 12: Veneno de Sombra (-2 Atq/Def) (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_11', targetLevel: 2, stepName: 'Danzantes de élite (Nv. 2)', notes: 'Día 13: Evasión 20% y +2 Velocidad (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_8', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15: +10 Movimiento diario (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_18', targetLevel: 1, stepName: 'Minotauros de élite (Nv. 1)', notes: 'Día 16: Minotauros con 1.5x daño y +2 daño base (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_19', targetLevel: 1, stepName: 'Medusas de élite (Nv. 1)', notes: 'Día 17: Medusas con 1.5x daño y petrificación (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_20', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: -25% penalización de posturas de combate (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_5', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 19: -5% daño mágico recibido (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_18', targetLevel: 2, stepName: 'Minotauros de élite (Nv. 2)', notes: 'Día 20: 2.0x daño y aturdimiento al golpear (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_19', targetLevel: 2, stepName: 'Medusas de élite (Nv. 2)', notes: 'Día 21: Mirada petrificante en melé y distancia (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_20', targetLevel: 2, stepName: 'Ventaja táctica (Nv. 2)', notes: 'Día 22: Daño pleno 100% en todas las posturas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_5', targetLevel: 2, stepName: 'Escamas de dragón (Nv. 2)', notes: 'Día 23: -10% daño mágico y +1 Defensa (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_25', targetLevel: 1, stepName: 'Hidras de élite (Nv. 1)', notes: 'Día 24: Ataque circular 360º x1.5 daño (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 26: +1 a todos los atributos primarios (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_25', targetLevel: 2, stepName: 'Hidras de élite (Nv. 2)', notes: 'Día 29: Regeneración 10% y -30% armadura enemiga (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 30: +2 a todos los atributos e iniciativa (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_31', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones con 1.5x daño y aliento en línea (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_31', targetLevel: 2, stepName: 'Dragones de cueva de élite (Nv. 2)', notes: 'Día 45: Dragones con 2.0x daño y +100 PS (4 Sellos)' },
     ]
   },
   {
@@ -1312,58 +1312,58 @@ export const FACTION_LAW_PRESETS: FactionLawPreset[] = [
     totalCost: 50,
     tag: 'Recomendada & Versátil',
     enactedLawIds: [
-      'law-t1-troglodytes',
-      'law-t1-dungeon-masters-1',
-      'law-t1-arcane-knowledge',
-      'law-t1-dragon-scales',
-      'law-t2-tax-collectors',
-      'law-t2-mining-gems',
-      'law-t2-infiltrators',
-      'law-t3-jadame-maps',
-      'law-t3-medusae',
-      'law-t3-tactical-advantage',
-      'law-t4-triumvirate-agents',
-      'law-t4-hydras',
-      'law-t5-dragons',
-      'law-t5-magical-education',
+      'fraction_law_dungeon_4',
+      'fraction_law_dungeon_6',
+      'fraction_law_dungeon_34',
+      'fraction_law_dungeon_5',
+      'fraction_law_dungeon_1',
+      'fraction_law_dungeon_14',
+      'fraction_law_dungeon_10',
+      'fraction_law_dungeon_8',
+      'fraction_law_dungeon_19',
+      'fraction_law_dungeon_20',
+      'fraction_law_dungeon_22',
+      'fraction_law_dungeon_25',
+      'fraction_law_dungeon_31',
+      'fraction_law_dungeon_28',
     ],
     lawLevels: {
-      'law-t1-troglodytes': 2,        // 4 Pts (2 * 2)
-      'law-t1-dungeon-masters-1': 1,  // 2 Pts
-      'law-t1-arcane-knowledge': 1,   // 2 Pts
-      'law-t1-dragon-scales': 2,      // 4 Pts (2 * 2)
-      'law-t2-tax-collectors': 2,     // 4 Pts (2 * 2)
-      'law-t2-mining-gems': 2,        // 4 Pts (2 * 2)
-      'law-t2-infiltrators': 2,       // 4 Pts (2 * 2)
-      'law-t3-jadame-maps': 1,        // 2 Pts
-      'law-t3-medusae': 1,            // 2 Pts
-      'law-t3-tactical-advantage': 1, // 2 Pts
-      'law-t4-triumvirate-agents': 2, // 6 Pts (2 * 3)
-      'law-t4-hydras': 2,             // 6 Pts (2 * 3)
-      'law-t5-dragons': 1,            // 4 Pts
-      'law-t5-magical-education': 1,  // 4 Pts
+      'fraction_law_dungeon_4': 2,        // 4 Pts (2 * 2)
+      'fraction_law_dungeon_6': 1,  // 2 Pts
+      'fraction_law_dungeon_34': 1,   // 2 Pts
+      'fraction_law_dungeon_5': 2,      // 4 Pts (2 * 2)
+      'fraction_law_dungeon_1': 2,     // 4 Pts (2 * 2)
+      'fraction_law_dungeon_14': 2,        // 4 Pts (2 * 2)
+      'fraction_law_dungeon_10': 2,       // 4 Pts (2 * 2)
+      'fraction_law_dungeon_8': 1,        // 2 Pts
+      'fraction_law_dungeon_19': 1,            // 2 Pts
+      'fraction_law_dungeon_20': 1, // 2 Pts
+      'fraction_law_dungeon_22': 2, // 6 Pts (2 * 3)
+      'fraction_law_dungeon_25': 2,             // 6 Pts (2 * 3)
+      'fraction_law_dungeon_31': 1,            // 4 Pts
+      'fraction_law_dungeon_28': 1,  // 4 Pts
     },
     sequenceSteps: [
-      { lawId: 'law-t1-troglodytes', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño base 1-2 y x1.5 estilo de lucha (2 Sellos)' },
-      { lawId: 'law-t1-arcane-knowledge', targetLevel: 1, stepName: 'Conocimiento arcano (Nv. 1)', notes: 'Día 3: +20 Maná para hechizos en mapa (2 Sellos)' },
-      { lawId: 'law-t1-dungeon-masters-1', targetLevel: 1, stepName: 'Maestro de las mazmorras I (Nv. 1)', notes: 'Día 5: +4 Trogloditas y +2 Infiltradores semanales (2 Sellos)' },
-      { lawId: 'law-t1-troglodytes', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 6: x2.0 daño y +2 Ataque (2 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8: +20% Oro municipal para comprar tropas (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 10: +1 Gema/día pasiva (2 Sellos)' },
-      { lawId: 'law-t2-infiltrators', targetLevel: 1, stepName: 'Infiltradores de élite (Nv. 1)', notes: 'Día 11: Salto Sombrío x1.5 daño (2 Sellos)' },
-      { lawId: 'law-t2-tax-collectors', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 12: +40% Oro para asegurar Metropolis III (2 Sellos)' },
-      { lawId: 'law-t2-infiltrators', targetLevel: 2, stepName: 'Infiltradores de élite (Nv. 2)', notes: 'Día 13: Veneno de Sombra y +2 Velocidad (2 Sellos)' },
-      { lawId: 'law-t2-mining-gems', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 14: +2 Gemas/día para Palacio de Cueva (2 Sellos)' },
-      { lawId: 'law-t3-jadame-maps', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15: +10 Movimiento diario en el mapa (2 Sellos)' },
-      { lawId: 'law-t3-medusae', targetLevel: 1, stepName: 'Medusas de élite (Nv. 1)', notes: 'Día 16: Medusas con 1.5x daño y petrificación (2 Sellos)' },
-      { lawId: 'law-t1-dragon-scales', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 17: -5% daño mágico recibido (2 Sellos)' },
-      { lawId: 'law-t3-tactical-advantage', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: -25% penalización de posturas (2 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 22: +1 a todos los atributos primarios (3 Sellos)' },
-      { lawId: 'law-t4-hydras', targetLevel: 1, stepName: 'Hidras de élite (Nv. 1)', notes: 'Día 24: Ataque circular 360º de Hidras (3 Sellos)' },
-      { lawId: 'law-t4-triumvirate-agents', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 28: +2 a atributos primarios e iniciativa (3 Sellos)' },
-      { lawId: 'law-t5-dragons', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones con 1.5x daño y aliento flamígero (4 Sellos)' },
-      { lawId: 'law-t5-magical-education', targetLevel: 1, stepName: 'Educación mágica (Nv. 1)', notes: 'Día 38: Todos los hechizos ganan +1 Nivel de efecto (4 Sellos)' },
-      { lawId: 'law-t5-dragons', targetLevel: 2, stepName: 'Dragones de cueva de élite (Nv. 2)', notes: 'Día 46: Dragones con 2.0x daño y +100 PS (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 1, stepName: 'Trogloditas de élite (Nv. 1)', notes: 'Día 1: Daño base 1-2 y x1.5 estilo de lucha (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_34', targetLevel: 1, stepName: 'Conocimiento arcano (Nv. 1)', notes: 'Día 3: +20 Maná para hechizos en mapa (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_6', targetLevel: 1, stepName: 'Maestro de las mazmorras I (Nv. 1)', notes: 'Día 5: +4 Trogloditas y +2 Infiltradores semanales (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_4', targetLevel: 2, stepName: 'Trogloditas de élite (Nv. 2)', notes: 'Día 6: x2.0 daño y +2 Ataque (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 1, stepName: 'Recaudadores de impuestos (Nv. 1)', notes: 'Día 8: +20% Oro municipal para comprar tropas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 1, stepName: 'Minería: Gemas (Nv. 1)', notes: 'Día 10: +1 Gema/día pasiva (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_10', targetLevel: 1, stepName: 'Infiltradores de élite (Nv. 1)', notes: 'Día 11: Salto Sombrío x1.5 daño (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_1', targetLevel: 2, stepName: 'Recaudadores de impuestos (Nv. 2)', notes: 'Día 12: +40% Oro para asegurar Metropolis III (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_10', targetLevel: 2, stepName: 'Infiltradores de élite (Nv. 2)', notes: 'Día 13: Veneno de Sombra y +2 Velocidad (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_14', targetLevel: 2, stepName: 'Minería: Gemas (Nv. 2)', notes: 'Día 14: +2 Gemas/día para Palacio de Cueva (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_8', targetLevel: 1, stepName: 'Mapas de Jadame (Nv. 1)', notes: 'Día 15: +10 Movimiento diario en el mapa (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_19', targetLevel: 1, stepName: 'Medusas de élite (Nv. 1)', notes: 'Día 16: Medusas con 1.5x daño y petrificación (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_5', targetLevel: 1, stepName: 'Escamas de dragón (Nv. 1)', notes: 'Día 17: -5% daño mágico recibido (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_20', targetLevel: 1, stepName: 'Ventaja táctica (Nv. 1)', notes: 'Día 18: -25% penalización de posturas (2 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 1, stepName: 'Agentes del Triunvirato (Nv. 1)', notes: 'Día 22: +1 a todos los atributos primarios (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_25', targetLevel: 1, stepName: 'Hidras de élite (Nv. 1)', notes: 'Día 24: Ataque circular 360º de Hidras (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_22', targetLevel: 2, stepName: 'Agentes del Triunvirato (Nv. 2)', notes: 'Día 28: +2 a atributos primarios e iniciativa (3 Sellos)' },
+      { lawId: 'fraction_law_dungeon_31', targetLevel: 1, stepName: 'Dragones de cueva de élite (Nv. 1)', notes: 'Día 35: Dragones con 1.5x daño y aliento flamígero (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_28', targetLevel: 1, stepName: 'Educación mágica (Nv. 1)', notes: 'Día 38: Todos los hechizos ganan +1 Nivel de efecto (4 Sellos)' },
+      { lawId: 'fraction_law_dungeon_31', targetLevel: 2, stepName: 'Dragones de cueva de élite (Nv. 2)', notes: 'Día 46: Dragones con 2.0x daño y +100 PS (4 Sellos)' },
     ]
   },
   {
