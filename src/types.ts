@@ -56,7 +56,7 @@ export interface UnitStats {
 }
 
 export interface UnitVariant {
-  id: 'base' | 'branch_a' | 'branch_b';
+  id: string;
   branchLabel: 'Base' | 'Rama A' | 'Rama B';
   name: string;
   nameEn: string;
