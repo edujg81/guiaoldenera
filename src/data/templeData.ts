@@ -1149,7 +1149,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'esquire',
         branchLabel: 'Base',
         name: 'Espadachín',
         nameEn: 'Swordsman',
@@ -1181,7 +1181,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'esquire_upg',
         branchLabel: 'Rama A',
         name: 'Capitán de la guardia',
         nameEn: 'Guard Captain',
@@ -1214,7 +1214,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'esquire_upg_alt',
         branchLabel: 'Rama B',
         name: 'Égida del Sol',
         nameEn: 'Sun\'s Aegis',
@@ -1280,7 +1280,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'crossbowman',
         branchLabel: 'Base',
         name: 'Saetero',
         nameEn: 'Crossbowman',
@@ -1313,7 +1313,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'crossbowman_upg',
         branchLabel: 'Rama A',
         name: 'Azorero',
         nameEn: 'Austringer',
@@ -1347,7 +1347,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'crossbowman_upg_alt',
         branchLabel: 'Rama B',
         name: 'Ballestero',
         nameEn: 'Marksman',
@@ -1416,7 +1416,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Feather',
     variants: {
       base: {
-        id: 'base',
+        id: 'griffin',
         branchLabel: 'Base',
         name: 'Grifo',
         nameEn: 'Griffin',
@@ -1450,7 +1450,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'griffin_upg',
         branchLabel: 'Rama A',
         name: 'Grifo del Templo',
         nameEn: 'Temple Griffin',
@@ -1484,7 +1484,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'griffin_upg_alt',
         branchLabel: 'Rama B',
         name: 'Grifo guardián',
         nameEn: 'Guardian Griffin',
@@ -1551,7 +1551,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Sparkles',
     variants: {
       base: {
-        id: 'base',
+        id: 'lightweaver',
         branchLabel: 'Base',
         name: 'Tejedora de Luz',
         nameEn: 'Lightweaver',
@@ -1583,7 +1583,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'lightweaver_upg',
         branchLabel: 'Rama A',
         name: 'Hierofante',
         nameEn: 'Hierophant',
@@ -1616,7 +1616,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'lightweaver_upg_alt',
         branchLabel: 'Rama B',
         name: 'Heraldo del Sol',
         nameEn: 'Sun Herald',
@@ -1683,7 +1683,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Flame',
     variants: {
       base: {
-        id: 'base',
+        id: 'sunlight_cavalry',
         branchLabel: 'Base',
         name: 'Caballería',
         nameEn: 'Cavalry',
@@ -1717,7 +1717,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'sunlight_cavalry_upg',
         branchLabel: 'Rama A',
         name: 'Caballería noble',
         nameEn: 'Noble Cavalry',
@@ -1752,7 +1752,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'sunlight_cavalry_upg_alt',
         branchLabel: 'Rama B',
         name: 'Caballería de la Lanza del Sol',
         nameEn: 'Sunspear Cavalry',
@@ -1821,7 +1821,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Zap',
     variants: {
       base: {
-        id: 'base',
+        id: 'inquisitor',
         branchLabel: 'Base',
         name: 'Inquisidor',
         nameEn: 'Inquisitor',
@@ -1856,7 +1856,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'inquisitor_upg',
         branchLabel: 'Rama A',
         name: 'Madre superiora',
         nameEn: 'Mother Superior',
@@ -1892,7 +1892,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'inquisitor_upg_alt',
         branchLabel: 'Rama B',
         name: 'Excomulgador',
         nameEn: 'Excommunicator',
@@ -1961,7 +1961,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'angel',
         branchLabel: 'Base',
         name: 'Ángel',
         nameEn: 'Angel',
@@ -1995,7 +1995,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'angel_upg',
         branchLabel: 'Rama A',
         name: 'Arcángel',
         nameEn: 'Archangel',
@@ -2032,7 +2032,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'angel_upg_alt',
         branchLabel: 'Rama B',
         name: 'Apoteosis',
         nameEn: 'Apotheosis',

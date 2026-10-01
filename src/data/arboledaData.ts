@@ -1104,7 +1104,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'elf_tracker',
         branchLabel: 'Base',
         name: 'Fauno',
         nameEn: 'Faun',
@@ -1136,7 +1136,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'elf_tracker_upg',
         branchLabel: 'Rama A',
         name: 'Fauno arquero',
         nameEn: 'Faun Archer',
@@ -1169,7 +1169,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'elf_tracker_upg_alt',
         branchLabel: 'Rama B',
         name: 'Fauno guerrero',
         nameEn: 'Faun Warrior',
@@ -1235,7 +1235,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Feather',
     variants: {
       base: {
-        id: 'base',
+        id: 'twinkle',
         branchLabel: 'Base',
         name: 'Lupuciérnaga',
         nameEn: 'Hoplet',
@@ -1268,7 +1268,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'twinkle_upg',
         branchLabel: 'Rama A',
         name: 'Lupuciérnaga del alba',
         nameEn: 'Dawn Hoplet',
@@ -1302,7 +1302,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'twinkle_upg_alt',
         branchLabel: 'Rama B',
         name: 'Lupuciérnaga del ocaso',
         nameEn: 'Dusk Hoplet',
@@ -1371,7 +1371,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'ent',
         branchLabel: 'Base',
         name: 'Íriyad de enredadera',
         nameEn: 'Vine Iriyad',
@@ -1405,7 +1405,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'ent_upg',
         branchLabel: 'Rama A',
         name: 'Íriyad fúngico',
         nameEn: 'Fungal Iriyad',
@@ -1442,7 +1442,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'ent_upg_alt',
         branchLabel: 'Rama B',
         name: 'Íriyad de cristal',
         nameEn: 'Crystal Iriyad',
@@ -1512,7 +1512,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'aqualotl',
         branchLabel: 'Base',
         name: 'Náyade',
         nameEn: 'Naiad',
@@ -1546,7 +1546,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'aqualotl_upg',
         branchLabel: 'Rama A',
         name: 'Náyade vernal',
         nameEn: 'Vernal Naiad',
@@ -1581,7 +1581,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'aqualotl_upg_alt',
         branchLabel: 'Rama B',
         name: 'Náyade brumal',
         nameEn: 'Brumal Naiad',
@@ -1651,7 +1651,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Sparkles',
     variants: {
       base: {
-        id: 'base',
+        id: 'druid',
         branchLabel: 'Base',
         name: 'Herbomante',
         nameEn: 'Herbomancer',
@@ -1685,7 +1685,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'druid_upg',
         branchLabel: 'Rama A',
         name: 'Esporamante',
         nameEn: 'Sporemancer',
@@ -1720,7 +1720,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'druid_upg_alt',
         branchLabel: 'Rama B',
         name: 'Murmumante',
         nameEn: 'Murmurmancer',
@@ -1789,7 +1789,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Flame',
     variants: {
       base: {
-        id: 'base',
+        id: 'qilin',
         branchLabel: 'Base',
         name: 'Qilin',
         nameEn: 'Qilin',
@@ -1823,7 +1823,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'qilin_upg',
         branchLabel: 'Rama A',
         name: 'Qilin de trueno',
         nameEn: 'Thunder Qilin',
@@ -1860,7 +1860,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'qilin_upg_alt',
         branchLabel: 'Rama B',
         name: 'Qilin de niebla',
         nameEn: 'Mist Qilin',
@@ -1930,7 +1930,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'phoenix',
         branchLabel: 'Base',
         name: 'Fénix',
         nameEn: 'Phoenix',
@@ -1965,7 +1965,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'phoenix_upg',
         branchLabel: 'Rama A',
         name: 'Fénix llameante',
         nameEn: 'Flaming Phoenix',
@@ -2002,7 +2002,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'phoenix_upg_alt',
         branchLabel: 'Rama B',
         name: 'Fénix de energía',
         nameEn: 'Energy Phoenix',

@@ -1196,7 +1196,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Eye',
     variants: {
       base: {
-        id: 'base',
+        id: 'trogl',
         branchLabel: 'Base',
         name: 'Troglodita',
         nameEn: 'Troglodyte',
@@ -1228,7 +1228,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'trogl_upg',
         branchLabel: 'Rama A',
         name: 'Troglodita infernal',
         nameEn: 'Infernal Troglodyte',
@@ -1261,7 +1261,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'trogl_upg_alt',
         branchLabel: 'Rama B',
         name: 'Troglodita tóxico',
         nameEn: 'Toxic Troglodyte',
@@ -1329,7 +1329,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Zap',
     variants: {
       base: {
-        id: 'base',
+        id: 'assassin',
         branchLabel: 'Base',
         name: 'Infiltrado',
         nameEn: 'Infiltrator',
@@ -1363,7 +1363,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'assassin_upg',
         branchLabel: 'Rama A',
         name: 'Infiltrado astuto',
         nameEn: 'Guile Infiltrator',
@@ -1399,7 +1399,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'assassin_upg_alt',
         branchLabel: 'Rama B',
         name: 'Infiltrado lúgubre',
         nameEn: 'Bleak Infiltrator',
@@ -1468,7 +1468,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'blade_dancer',
         branchLabel: 'Base',
         name: 'Bailarina de ónice',
         nameEn: 'Onyx Dancer',
@@ -1501,7 +1501,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'blade_dancer_upg',
         branchLabel: 'Rama A',
         name: 'Bailarina de jaspe',
         nameEn: 'Jasper Dancer',
@@ -1536,7 +1536,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'blade_dancer_upg_alt',
         branchLabel: 'Rama B',
         name: 'Bailarina áurea',
         nameEn: 'Aureate Dancer',
@@ -1603,7 +1603,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'minos',
         branchLabel: 'Base',
         name: 'Minotauro',
         nameEn: 'Minotaur',
@@ -1637,7 +1637,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'minos_upg',
         branchLabel: 'Rama A',
         name: 'Señor minotauro',
         nameEn: 'Minotaur Lord',
@@ -1673,7 +1673,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'minos_upg_alt',
         branchLabel: 'Rama B',
         name: 'Minotauro de la Vanguardia',
         nameEn: 'Minotaur Vanguard',
@@ -1742,7 +1742,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'medusa',
         branchLabel: 'Base',
         name: 'Medusa',
         nameEn: 'Medusa',
@@ -1776,7 +1776,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'medusa_upg',
         branchLabel: 'Rama A',
         name: 'Medusa escultora',
         nameEn: 'Medusa Sculptor',
@@ -1812,7 +1812,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'medusa_upg_alt',
         branchLabel: 'Rama B',
         name: 'Medusa reina',
         nameEn: 'Medusa Queen',
@@ -1882,7 +1882,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Flame',
     variants: {
       base: {
-        id: 'base',
+        id: 'hydra',
         branchLabel: 'Base',
         name: 'Hidra',
         nameEn: 'Hydra',
@@ -1917,7 +1917,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'hydra_upg',
         branchLabel: 'Rama A',
         name: 'Hidra ctónica',
         nameEn: 'Chthonic Hydra',
@@ -1955,7 +1955,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'hydra_upg_alt',
         branchLabel: 'Rama B',
         name: 'Hidra infernal',
         nameEn: 'Infernal Hydra',
@@ -2025,7 +2025,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'black_dragon',
         branchLabel: 'Base',
         name: 'Dragón de cueva',
         nameEn: 'Cave Dragon',
@@ -2061,7 +2061,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'black_dragon_upg',
         branchLabel: 'Rama A',
         name: 'Dragón negro',
         nameEn: 'Black Dragon',
@@ -2098,7 +2098,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'black_dragon_upg_alt',
         branchLabel: 'Rama B',
         name: 'Dragón de ceniza',
         nameEn: 'Ashen Dragon',

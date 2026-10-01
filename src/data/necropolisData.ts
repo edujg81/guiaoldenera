@@ -1115,7 +1115,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'skeleton',
         branchLabel: 'Base',
         name: 'Esqueleto',
         nameEn: 'Skeleton',
@@ -1146,7 +1146,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'skeleton_upg',
         branchLabel: 'Rama A',
         name: 'Esqueleto guerrero',
         nameEn: 'Skeleton Warrior',
@@ -1177,7 +1177,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'skeleton_upg_alt',
         branchLabel: 'Rama B',
         name: 'Esqueleto arquero',
         nameEn: 'Skeleton Archer',
@@ -1241,7 +1241,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Feather',
     variants: {
       base: {
-        id: 'base',
+        id: 'flicker',
         branchLabel: 'Base',
         name: 'Aparición',
         nameEn: 'Wight',
@@ -1274,7 +1274,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'flicker_upg',
         branchLabel: 'Rama A',
         name: 'Espectro',
         nameEn: 'Wraith',
@@ -1308,7 +1308,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'flicker_upg_alt',
         branchLabel: 'Rama B',
         name: 'Fantasma',
         nameEn: 'Phantasm',
@@ -1374,7 +1374,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Axe',
     variants: {
       base: {
-        id: 'base',
+        id: 'pet',
         branchLabel: 'Base',
         name: 'Mascota no muerta',
         nameEn: 'Undead Pet',
@@ -1406,7 +1406,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'pet_upg',
         branchLabel: 'Rama A',
         name: 'Barghest',
         nameEn: 'Barghest',
@@ -1440,7 +1440,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'pet_upg_alt',
         branchLabel: 'Rama B',
         name: 'Sabueso blindado',
         nameEn: 'Armored Hound',
@@ -1506,7 +1506,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'graverobber',
         branchLabel: 'Base',
         name: 'Ladrón de tumbas',
         nameEn: 'Graverobber',
@@ -1538,7 +1538,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'graverobber_upg',
         branchLabel: 'Rama A',
         name: 'Mercader de muerte',
         nameEn: 'Merchant of Death',
@@ -1572,7 +1572,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'graverobber_upg_alt',
         branchLabel: 'Rama B',
         name: 'Maestro de perrera',
         nameEn: 'Kennelmaster',
@@ -1638,7 +1638,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Sparkles',
     variants: {
       base: {
-        id: 'base',
+        id: 'lich',
         branchLabel: 'Base',
         name: 'Liche',
         nameEn: 'Lich',
@@ -1670,7 +1670,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'lich_upg',
         branchLabel: 'Rama A',
         name: 'Liche pestilente',
         nameEn: 'Pestilent Lich',
@@ -1703,7 +1703,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'lich_upg_alt',
         branchLabel: 'Rama B',
         name: 'Liche sanguino',
         nameEn: 'Sanguine Lich',
@@ -1770,7 +1770,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Flame',
     variants: {
       base: {
-        id: 'base',
+        id: 'avatar_of_war',
         branchLabel: 'Base',
         name: 'Caballero del terror',
         nameEn: 'Dread Knight',
@@ -1803,7 +1803,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'avatar_of_war_upg',
         branchLabel: 'Rama A',
         name: 'Avatar de guerra',
         nameEn: 'Avatar of War',
@@ -1837,7 +1837,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'avatar_of_war_upg_alt',
         branchLabel: 'Rama B',
         name: 'Segador vacuo',
         nameEn: 'Hollow Reaper',
@@ -1905,7 +1905,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'vampire',
         branchLabel: 'Base',
         name: 'Vampiro',
         nameEn: 'Vampire',
@@ -1938,7 +1938,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'vampire_upg',
         branchLabel: 'Rama A',
         name: 'Señor vampiro',
         nameEn: 'Vampire Lord',
@@ -1972,7 +1972,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'vampire_upg_alt',
         branchLabel: 'Rama B',
         name: 'Vampiro erudito',
         nameEn: 'Vampire Scholar',

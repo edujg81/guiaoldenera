@@ -1105,7 +1105,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Feather',
     variants: {
       base: {
-        id: 'base',
+        id: 'lesser_eldritch'',
         branchLabel: 'Base',
         name: 'Ra\'shoth',
         nameEn: 'Ra\'Shoth',
@@ -1138,7 +1138,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'lesser_eldritch_upg'',
         branchLabel: 'Rama A',
         name: 'Ra\'shoth punzante',
         nameEn: 'Stinging Ra\'Shoth',
@@ -1171,7 +1171,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'lesser_eldritch_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Ra\'shoth feroz',
         nameEn: 'Ferocious Ra\'Shoth',
@@ -1237,7 +1237,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Sparkles',
     variants: {
       base: {
-        id: 'base',
+        id: 'unfrozen_cultist'',
         branchLabel: 'Base',
         name: 'Cultor',
         nameEn: 'Cultist',
@@ -1269,7 +1269,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'unfrozen_cultist_upg'',
         branchLabel: 'Rama A',
         name: 'Vinculador',
         nameEn: 'Binder',
@@ -1302,7 +1302,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'unfrozen_cultist_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Devoto',
         nameEn: 'Votary',
@@ -1369,7 +1369,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'frostworm_rider'',
         branchLabel: 'Base',
         name: 'Jinete de aga\'shoth',
         nameEn: 'Aga\'Shoth Rider',
@@ -1403,7 +1403,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'frostworm_rider_upg'',
         branchLabel: 'Rama A',
         name: 'Domador de aga\'shoth',
         nameEn: 'Aga\'Shoth Tamer',
@@ -1437,7 +1437,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'frostworm_rider_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Mat\'ha aga\'shoth',
         nameEn: 'Aga\'Shoth Mat\'ha',
@@ -1506,7 +1506,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Zap',
     variants: {
       base: {
-        id: 'base',
+        id: 'eldritch_flyer'',
         branchLabel: 'Base',
         name: 'Shoth majestuoso',
         nameEn: 'Grand Shoth',
@@ -1540,7 +1540,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'eldritch_flyer_upg'',
         branchLabel: 'Rama A',
         name: 'Shoth innombrable',
         nameEn: 'Unspeakable Shoth',
@@ -1575,7 +1575,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'eldritch_flyer_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Shoth impensable',
         nameEn: 'Unthinkable Shoth',
@@ -1644,7 +1644,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'succubus'',
         branchLabel: 'Base',
         name: 'Cóncubo',
         nameEn: 'Concubus',
@@ -1678,7 +1678,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'succubus_upg'',
         branchLabel: 'Rama A',
         name: 'Señora de las cadenas',
         nameEn: 'Mistress of Chains',
@@ -1714,7 +1714,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'succubus_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Embrujadora',
         nameEn: 'Bewitcher',
@@ -1784,7 +1784,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Crosshair',
     variants: {
       base: {
-        id: 'base',
+        id: 'arbitrator'',
         branchLabel: 'Base',
         name: 'Árbitro',
         nameEn: 'Arbitrator',
@@ -1819,7 +1819,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'arbitrator_upg'',
         branchLabel: 'Rama A',
         name: 'Árbitro de la Grieta',
         nameEn: 'Rift Arbitrator',
@@ -1855,7 +1855,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'arbitrator_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Árbitro hinchado',
         nameEn: 'Bloated Arbitrator',
@@ -1925,7 +1925,7 @@ export const CISMA_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'unspeakable'',
         branchLabel: 'Base',
         name: 'Enviado abisal',
         nameEn: 'Abyssal Envoy',
@@ -1959,7 +1959,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'unspeakable_upg'',
         branchLabel: 'Rama A',
         name: 'Supervisor abisal',
         nameEn: 'Abyssal Overseer',
@@ -1995,7 +1995,7 @@ export const CISMA_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'unspeakable_upg_alt'',
         branchLabel: 'Rama B',
         name: 'Ejecutor abisal',
         nameEn: 'Abyssal Executor',

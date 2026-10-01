@@ -1104,7 +1104,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Eye',
     variants: {
       base: {
-        id: 'base',
+        id: 'trick_demon',
         branchLabel: 'Base',
         name: 'Parásito',
         nameEn: 'Parasite',
@@ -1136,7 +1136,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'trick_demon_upg',
         branchLabel: 'Rama A',
         name: 'Parásito guardián',
         nameEn: 'Warden Parasite',
@@ -1169,7 +1169,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 1']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'trick_demon_upg_alt',
         branchLabel: 'Rama B',
         name: 'Parásito asolador',
         nameEn: 'Ravager Parasite',
@@ -1235,7 +1235,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Axe',
     variants: {
       base: {
-        id: 'base',
+        id: 'locust',
         branchLabel: 'Base',
         name: 'Langosta',
         nameEn: 'Locust',
@@ -1268,7 +1268,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'locust_upg',
         branchLabel: 'Rama A',
         name: 'Langosta gigante',
         nameEn: 'Overgrown Locust',
@@ -1302,7 +1302,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 2']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'locust_upg_alt',
         branchLabel: 'Rama B',
         name: 'Langosta cosechadora',
         nameEn: 'Harvester Locust',
@@ -1368,7 +1368,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Feather',
     variants: {
       base: {
-        id: 'base',
+        id: 'wasp',
         branchLabel: 'Base',
         name: 'Avispón',
         nameEn: 'Hornet',
@@ -1400,7 +1400,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'wasp_upg',
         branchLabel: 'Rama A',
         name: 'Cantor',
         nameEn: 'Chanter',
@@ -1434,7 +1434,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 3']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'wasp_upg_alt',
         branchLabel: 'Rama B',
         name: 'Aguijón',
         nameEn: 'Stinger',
@@ -1502,7 +1502,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Shield',
     variants: {
       base: {
-        id: 'base',
+        id: 'jaw',
         branchLabel: 'Base',
         name: 'Escorpión',
         nameEn: 'Scorpion',
@@ -1536,7 +1536,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'jaw_upg',
         branchLabel: 'Rama A',
         name: 'Escorpión volcánico',
         nameEn: 'Volcanic Scorpion',
@@ -1571,7 +1571,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 4']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'jaw_upg_alt',
         branchLabel: 'Rama B',
         name: 'Escorpión cavernoso',
         nameEn: 'Spelaean Scorpion',
@@ -1639,7 +1639,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Zap',
     variants: {
       base: {
-        id: 'base',
+        id: 'godslayer',
         branchLabel: 'Base',
         name: 'Asolador',
         nameEn: 'Reaver',
@@ -1672,7 +1672,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'godslayer_upg',
         branchLabel: 'Rama A',
         name: 'Asolador amenazante',
         nameEn: 'Menacing Reaver',
@@ -1708,7 +1708,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 5']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'godslayer_upg_alt',
         branchLabel: 'Rama B',
         name: 'Asolador maníaco',
         nameEn: 'Maniacal Reaver',
@@ -1778,7 +1778,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Flame',
     variants: {
       base: {
-        id: 'base',
+        id: 'olgoi',
         branchLabel: 'Base',
         name: 'Verme',
         nameEn: 'Waurms',
@@ -1812,7 +1812,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'olgoi_upg',
         branchLabel: 'Rama A',
         name: 'Devorador',
         nameEn: 'Devourer',
@@ -1848,7 +1848,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 6']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'olgoi_upg_alt',
         branchLabel: 'Rama B',
         name: 'Piróvoro',
         nameEn: 'Pyroboros',
@@ -1919,7 +1919,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
     iconName: 'Crown',
     variants: {
       base: {
-        id: 'base',
+        id: 'hive_queen',
         branchLabel: 'Base',
         name: 'Reina de la Colmena',
         nameEn: 'Hive Queen',
@@ -1955,7 +1955,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchA: {
-        id: 'branch_a',
+        id: 'hive_queen_upg',
         branchLabel: 'Rama A',
         name: 'Madre de la Colmena',
         nameEn: 'Hive Mother',
@@ -1993,7 +1993,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
         synergyLaws: ['Doctrina de Combate de Tier 7']
       },
       branchB: {
-        id: 'branch_b',
+        id: 'hive_queen_upg_alt',
         branchLabel: 'Rama B',
         name: 'Cazadora de la Colmena',
         nameEn: 'Hive Huntress',
