@@ -1,4 +1,3 @@
-
 import rawBuildings from './generated/api/buildings.json';
 import type { ApiBuilding } from '../types-api';
 

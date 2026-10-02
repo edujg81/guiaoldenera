@@ -1,7 +1,7 @@
 import { AbilityInfo } from '../types-api';
 
 export const ABILITIES_DATA: AbilityInfo[] = [
-  {
+ /* {
     id: 'angel_ability_1_name',
     name: 'Refractar y reflejar',
     nameSid: 'angel_ability_1_name',
@@ -5453,7 +5453,7 @@ export const ABILITIES_DATA: AbilityInfo[] = [
     effect: 'Efecto sincronizado con /api/abilities.',
     faction: '',
     creatureType: '',
-  }
+  }*/
 ];
 
 export const ABILITIES_COUNT = ABILITIES_DATA.length;
