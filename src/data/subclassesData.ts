@@ -1,543 +1,344 @@
-import { SubclassInfo } from '../types';
+import type { SubclassInfo, GuideSubclass } from '../types';
+import { API_SUBCLASSES_DATA } from './apiSubclassesData';
 
-// =========================================================================
-// COMPENDIO OFICIAL DE SUBCLASES (CLASES AVANZADAS / PRESTIGE CLASSES)
-// HEROES OF MIGHT AND MAGIC: OLDEN ERA (UNFROZEN / UBISOFT)
-//
-// Reglas Canónicas Oficiales:
-// 1. Cada facción cuenta con 2 clases base de héroe (Guerrero y Mago).
-// 2. Cada clase base tiene exactamente 2 Subclases avanzadas disponibles (4 por facción, 24 en total).
-// 3. Para desbloquear una Subclase se requiere aprender 5 habilidades secundarias
-//    específicas y subirlas todas a nivel EXPERTO (desbloqueo entre niveles 16 y 20+).
-// 4. Concede una bonificación legendaria pasiva masiva permanente.
-// =========================================================================
-
-export const OFFICIAL_SUBCLASSES: SubclassInfo[] = [
-  // -----------------------------------------------------------------------
-  // MAZMORRA (DUNGEON / PACTO DE ALVAR)
-  // -----------------------------------------------------------------------
+const GUIDE_SUBCLASSES: GuideSubclass[] = [
   {
-    id: 'sub_class_dungeon_might_1',
-    name: 'Guardaespaldas de Baltasar',
-    nameEn: "Balthazar's Bodyguard",
-    faction: 'Mazmorra',
-    baseClass: 'Señor Supremo (Overlord)',
-    classType: 'Poder',
-    bonusTitle: '+100% Ataque al Héroe',
-    bonusEffect: 'Duplica el atributo de Ataque base del héroe (+100%). Los ataques directos del héroe (Heroic Strike) y la fuerza militar de sus tropas escalan exponencialmente contra la armadura enemiga.',
-    requiredSkills: [
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
+    "id": "sub_class_dungeon_might_1",
+    "recommendedHeroes": [
+      "Enatee",
+      "Devir, hijo de Devir",
+      "Tellaris el Traicionado",
+      "Mouaren",
+      "Gleard el Gris"
     ],
-    recommendedHeroes: ['Enatee', 'Devir, hijo de Devir', 'Tellaris el Traicionado', 'Mouaren', 'Gleard el Gris'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Ideal para Señores Supremos que buscan aniquilar pilas enemigas de un solo impacto. Duplicar el ataque convierte el asalto del ejército de Mazmorra en una fuerza imparable en el combate decisivo.',
-    synergyNotes: 'Combina de forma devastadora con tropas de alto daño base como Danzantes de Ónice, Minotauros e Hidras de las Cavernas.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Ideal para Señores Supremos que buscan aniquilar pilas enemigas de un solo impacto. Duplicar el ataque convierte el asalto del ejército de Mazmorra en una fuerza imparable en el combate decisivo.",
+    "synergyNotes": "Combina de forma devastadora con tropas de alto daño base como Danzantes de Ónice, Minotauros e Hidras de las Cavernas."
   },
   {
-    id: 'sub_class_dungeon_might_2',
-    name: 'Enviado de Lengua de Plata',
-    nameEn: 'Silver-Tongue Envoy',
-    faction: 'Mazmorra',
-    baseClass: 'Señor Supremo (Overlord)',
-    classType: 'Poder',
-    bonusTitle: '+100% Defensa al Héroe',
-    bonusEffect: 'Duplica el atributo de Defensa base del héroe (+100%). Reduce drásticamente todo el daño físico y de proyectiles sufrido por el ejército, blindando las líneas de choque.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
+    "id": "sub_class_dungeon_might_2",
+    "recommendedHeroes": [
+      "Kieran",
+      "Creta, hija de Navarr",
+      "Rhea",
+      "Aguijón",
+      "Devir, hijo de Devir"
     ],
-    recommendedHeroes: ['Kieran', 'Creta, hija de Navarr', 'Rhea', 'Aguijón', 'Devir, hijo de Devir'],
-    tacticalTier: 'Tier A',
-    strategicAnalysis: 'Excelente contra facciones que dependen de daño masivo a distancia o asaltos rápidos. Permite a las Hidras y Trogloditas absorber asedios completos con bajas mínimas.',
-    synergyNotes: 'Permite tanquear torres de asedio y contraataques enemigos con pérdidas prácticamente nulas.',
+    "tacticalTier": "Tier A",
+    "strategicAnalysis": "Excelente contra facciones que dependen de daño masivo a distancia o asaltos rápidos. Permite a las Hidras y Trogloditas absorber asedios completos con bajas mínimas.",
+    "synergyNotes": "Permite tanquear torres de asedio y contraataques enemigos con pérdidas prácticamente nulas."
   },
   {
-    id: 'sub_class_dungeon_magic_1',
-    name: 'Heredero de Amelchia',
-    nameEn: "Amelchia's Heir",
-    faction: 'Mazmorra',
-    baseClass: 'Brujo (Warlock)',
-    classType: 'Magia',
-    bonusTitle: '+100% Poder de Hechizo (Spell Power)',
-    bonusEffect: 'Duplica el Poder Mágico base del héroe (+100%). El daño de todos los hechizos directos (Rayo Arcano, Relámpago, Crepúsculo, Armageddon) se duplica, destruyendo tropas de tier alto de un solo lanzamiento.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
+    "id": "sub_class_dungeon_magic_1",
+    "recommendedHeroes": [
+      "Zakron el Grande",
+      "Typhona",
+      "Kelarr, hijo de Navarr",
+      "Motley",
+      "Lodos"
     ],
-    recommendedHeroes: ['Zakron el Grande', 'Typhona', 'Kelarr, hijo de Navarr', 'Motley', 'Lodos'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'La subclase mágica definitiva de Mazmorra. Convierte a héroes como Zakron o Typhona en bombarderos mágicos capaces de barrer la mitad del ejército rival en el Turno 1 con hechizos en área.',
-    synergyNotes: 'Sinergia brutal con la estrategia de Dragón Negro + Armageddon, amplificando el daño del cataclismo a cifras astronómicas.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "La subclase mágica definitiva de Mazmorra. Convierte a héroes como Zakron o Typhona en bombarderos mágicos capaces de barrer la mitad del ejército rival en el Turno 1 con hechizos en área.",
+    "synergyNotes": "Sinergia brutal con la estrategia de Dragón Negro + Armageddon, amplificando el daño del cataclismo a cifras astronómicas."
   },
   {
-    id: 'sub_class_dungeon_magic_2',
-    name: 'Gran mercader',
-    nameEn: 'Grand Merchant',
-    faction: 'Mazmorra',
-    baseClass: 'Brujo (Warlock)',
-    classType: 'Magia',
-    bonusTitle: '+10.000 Oro Diario Extra',
-    bonusEffect: 'Genera 10.000 piezas de oro adicionales al día para el tesoro del reino. Resuelve cualquier déficit económico y permite comprar artefactos de reliquia y el 100% de los reclutas semanales.',
-    requiredSkills: [
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
+    "id": "sub_class_dungeon_magic_2",
+    "recommendedHeroes": [
+      "Glastor",
+      "Ylwari",
+      "Rauktol el Soleado",
+      "Hermana Deira"
     ],
-    recommendedHeroes: ['Glastor', 'Ylwari', 'Rauktol el Soleado', 'Hermana Deira'],
-    tacticalTier: 'Tier A (Económica)',
-    strategicAnalysis: 'Magnífica en mapas gigantes de largo desarrollo o héroes de apoyo económico. +10.000 de oro al día asegura costear todas las moradas de Dragones Negros y ejércitos en múltiples ciudades.',
-    synergyNotes: 'Combina perfectamente con Leyes de Prosperidad y el Banco/Tesorería de Alvar.',
-  },
-
-  // -----------------------------------------------------------------------
-  // TEMPLO (TEMPLE / SACERDOTES Y CABALLEROS DE ERATHIA)
-  // -----------------------------------------------------------------------
-  {
-    id: 'sub_class_human_might_1',
-    name: 'Bravucón',
-    nameEn: 'Swashbuckler',
-    faction: 'Templo',
-    baseClass: 'Caballero (Knight)',
-    classType: 'Poder',
-    bonusTitle: '+200 Daño a Golpe Heroico (Heroic Strike)',
-    bonusEffect: 'Añade +200 de daño plano al ataque directo del héroe (Heroic Strike) en cada ronda de combate, permitiendo ejecutar unidades enemigas de nivel medio sin gastar maná.',
-    requiredSkills: [
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
-    ],
-    recommendedHeroes: ['Viejo Lord Mandall', 'Lord Edgar', 'Leon Dedos Pegajosos', 'Avis el Hereje'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Otorga una presión ofensiva constante cada turno sin coste de recursos. En Old Lord Mandall, la amplificación de daño de su especialidad combinada con los +200 de daño aniquila criaturas de tier alto al instante.',
-    synergyNotes: 'Ideal para combates rápidos donde el héroe actúa como una unidad de aniquilación adicional.',
+    "tacticalTier": "Tier A (Económica)",
+    "strategicAnalysis": "Magnífica en mapas gigantes de largo desarrollo o héroes de apoyo económico. +10.000 de oro al día asegura costear todas las moradas de Dragones Negros y ejércitos en múltiples ciudades.",
+    "synergyNotes": "Combina perfectamente con Leyes de Prosperidad y el Banco/Tesorería de Alvar."
   },
   {
-    id: 'sub_class_human_might_2',
-    name: 'Dechado',
-    nameEn: 'Paragon',
-    faction: 'Templo',
-    baseClass: 'Caballero (Knight)',
-    classType: 'Poder',
-    bonusTitle: 'Daño Máximo y Daño Recibido Mínimo en Tropas',
-    bonusEffect: 'Garantiza que todas las tropas aliadas inflijan siempre su daño máximo en cada ataque y que sufran siempre el daño mínimo posible al ser atacadas.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
+    "id": "sub_class_human_might_1",
+    "recommendedHeroes": [
+      "Viejo Lord Mandall",
+      "Lord Edgar",
+      "Leon Dedos Pegajosos",
+      "Avis el Hereje"
     ],
-    recommendedHeroes: ['Kestrel', 'Keandra', 'John Johnson', 'Lord Edgar', 'Aeos la Exaltada'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Elimina el factor aleatorio del rango de daño a favor absoluto del jugador en cada intercambio físico.',
-    synergyNotes: 'Multiplica la efectividad de los Tiradores de Kestrel, la Caballería de Keandra y las Égidas del Sol de John Johnson.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Otorga una presión ofensiva constante cada turno sin coste de recursos. En Old Lord Mandall, la amplificación de daño de su especialidad combinada con los +200 de daño aniquila criaturas de tier alto al instante.",
+    "synergyNotes": "Ideal para combates rápidos donde el héroe actúa como una unidad de aniquilación adicional."
   },
   {
-    id: 'sub_class_human_magic_1',
-    name: 'Gran Inquisidor',
-    nameEn: 'Grand Inquisitor',
-    faction: 'Templo',
-    baseClass: 'Clérigo (Cleric)',
-    classType: 'Magia',
-    bonusTitle: 'Restricción Mágica Enemiga (1 Hechizo por Batalla)',
-    bonusEffect: 'Limita al héroe enemigo a lanzar cada hechizo exactamente una sola vez por combate. Neutraliza estrategias basadas en spam de curación, resurrección o daño directo.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
+    "id": "sub_class_human_might_2",
+    "recommendedHeroes": [
+      "Kestrel",
+      "Keandra",
+      "John Johnson",
+      "Lord Edgar",
+      "Aeos la Exaltada"
     ],
-    recommendedHeroes: ['Lia la Desatada', 'Zenith', 'Nadir', 'Anastasia la Dócil'],
-    tacticalTier: 'Tier S (Anti-Mago)',
-    strategicAnalysis: 'La herramienta definitiva contra Brujos y Nigromantes centrados en magia ofensiva.',
-    synergyNotes: 'Desactiva el control de masas y los reinicios mágicos de los rivales, encajando a la perfección con la purga de maná de Lia.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Elimina el factor aleatorio del rango de daño a favor absoluto del jugador en cada intercambio físico.",
+    "synergyNotes": "Multiplica la efectividad de los Tiradores de Kestrel, la Caballería de Keandra y las Égidas del Sol de John Johnson."
   },
   {
-    id: 'sub_class_human_magic_2',
-    name: 'Ascendente',
-    nameEn: 'Ascendant',
-    faction: 'Templo',
-    baseClass: 'Clérigo (Cleric)',
-    classType: 'Magia',
-    bonusTitle: 'Coste 0 de Maná en Todos los Hechizos',
-    bonusEffect: 'Todos los hechizos del héroe tienen un coste de 0 puntos de maná. Permite lanzar los hechizos más costosos de nivel 5 de forma infinita.',
-    requiredSkills: [
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
+    "id": "sub_class_human_magic_1",
+    "recommendedHeroes": [
+      "Lia la Desatada",
+      "Zenith",
+      "Nadir",
+      "Anastasia la Dócil"
     ],
-    recommendedHeroes: ['Julius', 'Pip', 'Elias el Alegre', 'Clarissa', 'Vesper'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Rompe la economía de recursos mágicos permitiendo lanzar hechizos de máximo calibre en cada ronda sin preocuparse por la reserva.',
-    synergyNotes: 'Permite invocar elementos y usar resurrección masiva continuamente turno tras turno. Julius con Resistencia inicial y Pip con ganancia de XP acelerada son los mejores candidatos.',
-  },
-
-  // -----------------------------------------------------------------------
-  // FORESTA (GROVE / GUARDIANES & ELFOS SILVANOS)
-  // -----------------------------------------------------------------------
-  {
-    id: 'sub_class_nature_might_2',
-    name: 'Favorecidos por el azar',
-    nameEn: "Fortune's Favored",
-    faction: 'Foresta',
-    baseClass: 'Guardián (Warden)',
-    classType: 'Poder',
-    bonusTitle: 'Cargas de Concentración Máximas + Golpe Afortunado 100%',
-    bonusEffect: 'Genera el máximo de cargas de Concentración (Focus) al inicio de cada ronda y asegura que todas las tropas aliadas acierten siempre con Golpe Afortunado (Lucky Strike).',
-    requiredSkills: [
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
-    ],
-    recommendedHeroes: ['Octavia', 'Mreowa', 'Gorel Punta de Lanza', 'Colajengibre'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Multiplica el daño crítico de todas las tropas de la Arboleda y acelera la activación de habilidades activas de facción.',
-    synergyNotes: 'Sinergia extrema con faunos arqueros, ninfas iriyad, herbomantes y qilins celestiales.',
+    "tacticalTier": "Tier S (Anti-Mago)",
+    "strategicAnalysis": "La herramienta definitiva contra Brujos y Nigromantes centrados en magia ofensiva.",
+    "synergyNotes": "Desactiva el control de masas y los reinicios mágicos de los rivales, encajando a la perfección con la purga de maná de Lia."
   },
   {
-    id: 'sub_class_nature_might_1',
-    name: 'Pozo de vigor',
-    nameEn: 'Wellspring of Vigor',
-    faction: 'Foresta',
-    baseClass: 'Guardián (Warden)',
-    classType: 'Poder',
-    bonusTitle: 'Ataque Heroico en Área (AoE) + Regeneración',
-    bonusEffect: 'El Golpe Heroico del comandante inflige daño de área de efecto a múltiples casillas enemigas adyacentes y cura a las tropas aliadas cercanas.',
-    requiredSkills: [
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
+    "id": "sub_class_human_magic_2",
+    "recommendedHeroes": [
+      "Julius",
+      "Pip",
+      "Elias el Alegre",
+      "Clarissa",
+      "Vesper"
     ],
-    recommendedHeroes: ['Viejo Peregrino', 'Faleor', 'Eith', 'Tía Daliar', 'Seductora Sh\'a'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Convierte al héroe en una pieza de control de multitudes física de primer orden con sustento grupal.',
-    synergyNotes: 'Permite limpiar grupos compactos de infantería enemiga sin depender de maná.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Rompe la economía de recursos mágicos permitiendo lanzar hechizos de máximo calibre en cada ronda sin preocuparse por la reserva.",
+    "synergyNotes": "Permite invocar elementos y usar resurrección masiva continuamente turno tras turno. Julius con Resistencia inicial y Pip con ganancia de XP acelerada son los mejores candidatos."
   },
   {
-    id: 'sub_class_nature_magic_2',
-    name: 'Furia del cielo',
-    nameEn: 'Sky Fury',
-    faction: 'Foresta',
-    baseClass: 'Druida (Druid)',
-    classType: 'Magia',
-    bonusTitle: 'Doble Lanzamiento de Hechizos de la Naturaleza',
-    bonusEffect: 'Permite al héroe lanzar un segundo hechizo gratuito de la escuela elemental o de la naturaleza cada ronda si el primero dañó a dos o más unidades.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
+    "id": "sub_class_nature_might_2",
+    "recommendedHeroes": [
+      "Octavia",
+      "Mreowa",
+      "Gorel Punta de Lanza",
+      "Colajengibre"
     ],
-    recommendedHeroes: ['Vatawna', 'Aeliniel', 'Halon', 'Glacia'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Capacidad de bombardeo mágico dual devastadora para controlar el tablero.',
-    synergyNotes: 'Combina con hechizos de relámpago en cadena y vendaval.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Multiplica el daño crítico de todas las tropas de la Arboleda y acelera la activación de habilidades activas de facción.",
+    "synergyNotes": "Sinergia extrema con faunos arqueros, ninfas iriyad, herbomantes y qilins celestiales."
   },
   {
-    id: 'sub_class_nature_magic_1',
-    name: 'Enviado celestial',
-    nameEn: 'Celestial Envoy',
-    faction: 'Foresta',
-    baseClass: 'Druida (Druid)',
-    classType: 'Magia',
-    bonusTitle: 'Avatar Supremo Inmune & Auras de Protección',
-    bonusEffect: 'El avatar convocado por el héroe adquiere inmunidad total a la magia y proyecta un aura de resistencia de +30% a todas las tropas circundantes.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
+    "id": "sub_class_nature_might_1",
+    "recommendedHeroes": [
+      "Viejo Peregrino",
+      "Faleor",
+      "Eith",
+      "Tía Daliar",
+      "Seductora Sh'a"
     ],
-    recommendedHeroes: ['Anciano Tss\'kish', 'Suli', 'Vim', 'Echolily', 'El juglar'],
-    tacticalTier: 'Tier A+',
-    strategicAnalysis: 'Excelente para batallas de desgaste donde el avatar absorbe todo el daño pesado.',
-    synergyNotes: 'Protege las líneas traseras silvanas frente a asaltos voladores.',
-  },
-
-  // -----------------------------------------------------------------------
-  // NECRÓPOLIS (NECROPOLIS / NO-MUERTOS & NIGROMANTES)
-  // -----------------------------------------------------------------------
-  {
-    id: 'sub_class_undead_might_2',
-    name: 'Podredumbre ambulante',
-    nameEn: 'Walking Rot',
-    faction: 'Necrópolis',
-    baseClass: 'Caballero de la Muerte (Death Knight)',
-    classType: 'Poder',
-    bonusTitle: 'Plaga de Putrefacción & Aura Venenosa Global',
-    bonusEffect: 'Todas las unidades enemigas reciben daño de veneno al inicio de su turno e infectan a los aliados adyacentes al perecer.',
-    requiredSkills: [
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
-    ],
-    recommendedHeroes: ['Baluarte', 'Onkos', 'Zam'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Drena la vitalidad del ejército rival mientras las hordas de no-muertos resisten.',
-    synergyNotes: 'Especialmente demoledor contra facciones con grandes acumulaciones de tropas de nivel 1-3.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Convierte al héroe en una pieza de control de multitudes física de primer orden con sustento grupal.",
+    "synergyNotes": "Permite limpiar grupos compactos de infantería enemiga sin depender de maná."
   },
   {
-    id: 'sub_class_undead_might_1',
-    name: 'Heraldo de la perdición',
-    nameEn: 'Harbinger of Doom',
-    faction: 'Necrópolis',
-    baseClass: 'Caballero de la Muerte (Death Knight)',
-    classType: 'Poder',
-    bonusTitle: 'Moral Negativa Extrema (-3) & Pánico',
-    bonusEffect: 'Reduce la moral enemiga en -3 puntos permanentes. Las unidades enemigas con moral negativa tienen 35% de omitir turnos por pánico.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
+    "id": "sub_class_nature_magic_2",
+    "recommendedHeroes": [
+      "Vatawna",
+      "Aeliniel",
+      "Halon",
+      "Glacia"
     ],
-    recommendedHeroes: ['Rey de reyes', 'Baluarte', 'Zam'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Inhabilita la sincronización del ejército enemigo mediante pérdidas constantes de turno.',
-    synergyNotes: 'Potencia los ataques de los Segadores de Almas y Vampiros del Château.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Capacidad de bombardeo mágico dual devastadora para controlar el tablero.",
+    "synergyNotes": "Combina con hechizos de relámpago en cadena y vendaval."
   },
   {
-    id: 'sub_class_undead_magic_1',
-    name: 'Tejedor de almas',
-    nameEn: 'Soul Weaver',
-    faction: 'Necrópolis',
-    baseClass: 'Nigromante (Necromancer)',
-    classType: 'Magia',
-    bonusTitle: '+100% Levantamiento de Nigromancia & Espectros',
-    bonusEffect: 'Duplica las tropas no-muertas levantadas tras la batalla y convierte el 25% de las bajas de élite enemigas en Espectros de alto rango.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
+    "id": "sub_class_nature_magic_1",
+    "recommendedHeroes": [
+      "Anciano Tss'kish",
+      "Suli",
+      "Vim",
+      "Echolily",
+      "El juglar"
     ],
-    recommendedHeroes: ['Ethric', 'Laura', 'Artorius Veritas', 'Oona Tejesombras'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Genera un efecto bola de nieve masivo donde cada victoria incrementa exponencialmente el tamaño de tu ejército.',
-    synergyNotes: 'Permite conquistar mapas enteros sin necesidad de comprar unidades en castillos.',
+    "tacticalTier": "Tier A+",
+    "strategicAnalysis": "Excelente para batallas de desgaste donde el avatar absorbe todo el daño pesado.",
+    "synergyNotes": "Protege las líneas traseras silvanas frente a asaltos voladores."
   },
   {
-    id: 'sub_class_undead_magic_2',
-    name: 'Cronomante',
-    nameEn: 'Chronomancer',
-    faction: 'Necrópolis',
-    baseClass: 'Nigromante (Necromancer)',
-    classType: 'Magia',
-    bonusTitle: 'Manipulación Temporal & Congelación de Iniciativa',
-    bonusEffect: 'Otorga una acción inmediata adicional a la criatura más poderosa aliada en el Turno 1 y reduce la iniciativa de todo el ejército enemigo en 2.',
-    requiredSkills: [
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
+    "id": "sub_class_undead_might_2",
+    "recommendedHeroes": [
+      "Baluarte",
+      "Onkos",
+      "Zam"
     ],
-    recommendedHeroes: ['Mag', 'Funerella', 'Lord Rufus'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Garantiza el control de la iniciativa en los primeros instantes críticos del combate.',
-    synergyNotes: 'Permite que unidades lentas pero demoledoras como Liches o Dragones de Sombra actúen antes que las tropas rápidas enemigas.',
-  },
-
-  // -----------------------------------------------------------------------
-  // COLMENA (HIVE / INSECTOIDES & CAUDILLOS)
-  // -----------------------------------------------------------------------
-  {
-    id: 'sub_class_demons_might_1',
-    name: 'Madre de cría',
-    nameEn: 'Broodmother',
-    faction: 'Colmena',
-    baseClass: 'Ejecutor (Enforcer)',
-    classType: 'Poder',
-    bonusTitle: 'Eclosión Automática de Enjambres en Combate',
-    bonusEffect: 'Eclosiona 3 enjambres de larvas de combate al inicio de cada ronda, actuando como escudos de carne e interrumpiendo tiradores.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
-    ],
-    recommendedHeroes: ['Abigor', 'Zoran', 'Tavi'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Satura el campo de batalla con unidades prescindibles que absorben contraataques.',
-    synergyNotes: 'Permite a las unidades principales golpear sin recibir represalias enemigas.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Drena la vitalidad del ejército rival mientras las hordas de no-muertos resisten.",
+    "synergyNotes": "Especialmente demoledor contra facciones con grandes acumulaciones de tropas de nivel 1-3."
   },
   {
-    id: 'sub_class_demons_might_2',
-    name: 'Señor del caos',
-    nameEn: 'Chaos Lord',
-    faction: 'Colmena',
-    baseClass: 'Ejecutor (Enforcer)',
-    classType: 'Poder',
-    bonusTitle: 'Frenesí Descontrolado & 100% Penetración de Armadura',
-    bonusEffect: 'Los ataques de las unidades de la Colmena ignoran el 100% de la defensa enemiga cuando la unidad enemiga tiene menos del 50% de su salud.',
-    requiredSkills: [
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
+    "id": "sub_class_undead_might_1",
+    "recommendedHeroes": [
+      "Rey de reyes",
+      "Baluarte",
+      "Zam"
     ],
-    recommendedHeroes: ['Curson', 'Niev', 'Goldentongue', 'Lo', 'Pauper'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Remata ejércitos pesados con armaduras impenetrables con una velocidad pasmosa.',
-    synergyNotes: 'Ideal contra Paladines de Templo o Señores Supremos de Mazmorra.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Inhabilita la sincronización del ejército enemigo mediante pérdidas constantes de turno.",
+    "synergyNotes": "Potencia los ataques de los Segadores de Almas y Vampiros del Château."
   },
   {
-    id: 'sub_class_demons_magic_1',
-    name: 'Progenitor',
-    nameEn: 'Progenitor',
-    faction: 'Colmena',
-    baseClass: 'Heraldo (Herald)',
-    classType: 'Magia',
-    bonusTitle: 'Invocación de Enjambre Titánico & Absorción de Daño',
-    bonusEffect: 'Invoca un Enjambre Colosal con salud equivalente al 40% del ejército que redirige todo el daño a distancia hacia sí mismo.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
+    "id": "sub_class_undead_magic_1",
+    "recommendedHeroes": [
+      "Ethric",
+      "Laura",
+      "Artorius Veritas",
+      "Oona Tejesombras"
     ],
-    recommendedHeroes: ['Khariseth', 'Fleu', 'Groo'],
-    tacticalTier: 'Tier A+',
-    strategicAnalysis: 'Bloquea eficazmente a tiradores y asedios enemigos.',
-    synergyNotes: 'Protege las tropas frágiles mientras los devoradores avanzan.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Genera un efecto bola de nieve masivo donde cada victoria incrementa exponencialmente el tamaño de tu ejército.",
+    "synergyNotes": "Permite conquistar mapas enteros sin necesidad de comprar unidades en castillos."
   },
   {
-    id: 'sub_class_demons_magic_2',
-    name: 'Devorador de almas',
-    nameEn: 'Soul Eater',
-    faction: 'Colmena',
-    baseClass: 'Heraldo (Herald)',
-    classType: 'Magia',
-    bonusTitle: 'Drenaje de Maná & Robo de Concentración',
-    bonusEffect: 'Cada vez que una criatura enemiga es destruida, el héroe recupera 6 de maná y 1 carga de concentración, drenándolo del héroe rival.',
-    requiredSkills: [
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
+    "id": "sub_class_undead_magic_2",
+    "recommendedHeroes": [
+      "Mag",
+      "Funerella",
+      "Lord Rufus"
     ],
-    recommendedHeroes: ['Mila', 'Oriax', 'Pauper'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Seca la reserva mágica del adversario mientras te mantiene en combustible infinito.',
-    synergyNotes: 'Desactiva por completo a magos rivales en batallas prolongadas.',
-  },
-
-  // -----------------------------------------------------------------------
-  // CISMA (SCHISM / DEMONIOS & HEREJES)
-  // -----------------------------------------------------------------------
-  {
-    id: 'ub_class_unfrozen_might_2',
-    name: 'Imparable',
-    nameEn: 'Unstoppable',
-    faction: 'Cisma',
-    baseClass: 'Devastador (Devastator)',
-    classType: 'Poder',
-    bonusTitle: 'Inmunidad Total a Control de Masas & Arremetida',
-    bonusEffect: 'Las unidades de Cisma son completamente inmunes a Ralentización, Ceguera, Parálisis y Desarme, y obtienen +2 de movimiento en combate.',
-    requiredSkills: [
-      { name: 'Arte de batalla', nameEn: 'Battlecraft', tier: 'Experta' },
-      { name: 'Magia de batalla', nameEn: 'Battle Magic', tier: 'Experta' },
-      { name: 'Magia primigenia', nameEn: 'Primal Magic', tier: 'Experta' },
-      { name: 'Percepción', nameEn: 'Perception', tier: 'Experta' },
-      { name: 'Tácticas', nameEn: 'Tactics', tier: 'Experta' },
-    ],
-    recommendedHeroes: ['Nihil', 'Cuerno Negro', 'Matastala la Blanca', 'Jänhei'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'Inhabilita las herramientas de control del tablero de los magos rivales.',
-    synergyNotes: 'Permite cruzar todo el mapa de combate en el Turno 1 e impactar las líneas enemigas sin frenos.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Garantiza el control de la iniciativa en los primeros instantes críticos del combate.",
+    "synergyNotes": "Permite que unidades lentas pero demoledoras como Liches o Dragones de Sombra actúen antes que las tropas rápidas enemigas."
   },
   {
-    id: 'sub_class_unfrozen_might_1',
-    name: 'Sin límites',
-    nameEn: 'Boundless',
-    faction: 'Cisma',
-    baseClass: 'Devastador (Devastator)',
-    classType: 'Poder',
-    bonusTitle: 'Movilidad Ilimitada & Salto Abisal',
-    bonusEffect: 'Otorga +35% de movimiento en el mapa de aventura y permite a todas las criaturas realizar un teletransporte de combate corto cada 2 rondas.',
-    requiredSkills: [
-      { name: 'Exploración', nameEn: 'Scouting', tier: 'Experta' },
-      { name: 'Hechicería', nameEn: 'Sorcery', tier: 'Experta' },
-      { name: 'Liderazgo', nameEn: 'Leadership', tier: 'Experta' },
-      { name: 'Magia de luz solar', nameEn: 'Sunlight Magic', tier: 'Experta' },
-      { name: 'Ofensiva', nameEn: 'Offence', tier: 'Experta' },
+    "id": "sub_class_demons_might_1",
+    "recommendedHeroes": [
+      "Abigor",
+      "Zoran",
+      "Tavi"
     ],
-    recommendedHeroes: ['Mara Mat\'ha', 'El Doncel de Hierro', 'Wal\'kha', 'Urgo el Cambiante', 'Mártir Tho'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Capacidad de flanqueo instantáneo que deja obsoletas las murallas y las barreras defensivas.',
-    synergyNotes: 'Permite teletransportar infantería pesada directamente sobre arqueros y artillería.',
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Satura el campo de batalla con unidades prescindibles que absorben contraataques.",
+    "synergyNotes": "Permite a las unidades principales golpear sin recibir represalias enemigas."
   },
   {
-    id: 'ub_class_unfrozen_magic_2',
-    name: 'Insondable',
-    nameEn: 'Fathomless',
-    faction: 'Cisma',
-    baseClass: 'Invocador Abisal (Corruptor)',
-    classType: 'Magia',
-    bonusTitle: 'Brechas del Vacío & Colapso Espacial',
-    bonusEffect: 'Abre brechas dimensionales en el campo de batalla que dañan a cualquier unidad enemiga que se mueva y potencian los hechizos de vacío un 50%.',
-    requiredSkills: [
-      { name: 'Defensa', nameEn: 'Defence', tier: 'Experta' },
-      { name: 'Invocar avatar', nameEn: 'Summon Avatar', tier: 'Experta' },
-      { name: 'Logística', nameEn: 'Logistics', tier: 'Experta' },
-      { name: 'Magia arcana', nameEn: 'Arcane Magic', tier: 'Experta' },
-      { name: 'Suerte', nameEn: 'Luck', tier: 'Experta' },
+    "id": "sub_class_demons_might_2",
+    "recommendedHeroes": [
+      "Curson",
+      "Niev",
+      "Goldentongue",
+      "Lo",
+      "Pauper"
     ],
-    recommendedHeroes: ['Grellekh el Traidor', 'Reina de Hielo Hel\'Ghat', 'Tölketh', 'Hermana Keiri'],
-    tacticalTier: 'Tier S',
-    strategicAnalysis: 'Zonifica el mapa forzando al enemigo a maniobrar a través de terrenos letales.',
-    synergyNotes: 'Convierte el campo de batalla en una trampa mortal combinada con empujes y aturdimientos.',
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Remata ejércitos pesados con armaduras impenetrables con una velocidad pasmosa.",
+    "synergyNotes": "Ideal contra Paladines de Templo o Señores Supremos de Mazmorra."
   },
   {
-    id: 'ub_class_unfrozen_magic_1',
-    name: 'Insensible',
-    nameEn: 'Unfeeling',
-    faction: 'Cisma',
-    baseClass: 'Invocador Abisal (Corruptor)',
-    classType: 'Magia',
-    bonusTitle: 'Reducción de Daño 50% & Reflejo de Maldiciones',
-    bonusEffect: 'Reduce todo el daño mágico y de área recibido por las tropas aliadas en un 50% y devuelve cualquier maldición al lanzador enemigo.',
-    requiredSkills: [
-      { name: 'Diplomacia', nameEn: 'Diplomacy', tier: 'Experta' },
-      { name: 'Economía', nameEn: 'Economy', tier: 'Experta' },
-      { name: 'Magia de nochesombra', nameEn: 'Nightshade Magic', tier: 'Experta' },
-      { name: 'Resistencia', nameEn: 'Resistance', tier: 'Experta' },
-      { name: 'Sabiduría', nameEn: 'Wisdom', tier: 'Experta' },
+    "id": "sub_class_demons_magic_1",
+    "recommendedHeroes": [
+      "Khariseth",
+      "Fleu",
+      "Groo"
     ],
-    recommendedHeroes: ['Dhüvri', 'Ra\'Davok', 'La Mirada Colectiva', 'Kwinri', 'Ulkuth'],
-    tacticalTier: 'Tier S+',
-    strategicAnalysis: 'El contraataque definitivo contra estrategias de debuff y maldiciones masivas.',
-    synergyNotes: 'Convierte a las tropas de Cisma en tanques indestructibles ante cualquier ofensiva de hechizos.',
+    "tacticalTier": "Tier A+",
+    "strategicAnalysis": "Bloquea eficazmente a tiradores y asedios enemigos.",
+    "synergyNotes": "Protege las tropas frágiles mientras los devoradores avanzan."
   },
+  {
+    "id": "sub_class_demons_magic_2",
+    "recommendedHeroes": [
+      "Mila",
+      "Oriax",
+      "Pauper"
+    ],
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Seca la reserva mágica del adversario mientras te mantiene en combustible infinito.",
+    "synergyNotes": "Desactiva por completo a magos rivales en batallas prolongadas."
+  },
+  {
+    "id": "sub_class_unfrozen_magic_1",
+    "recommendedHeroes": [
+      "Nihil",
+      "Cuerno Negro",
+      "Matastala la Blanca",
+      "Jänhei"
+    ],
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "Inhabilita las herramientas de control del tablero de los magos rivales.",
+    "synergyNotes": "Permite cruzar todo el mapa de combate en el Turno 1 e impactar las líneas enemigas sin frenos."
+  },
+  {
+    "id": "sub_class_unfrozen_might_1",
+    "recommendedHeroes": [
+      "Mara Mat'ha",
+      "El Doncel de Hierro",
+      "Wal'kha",
+      "Urgo el Cambiante",
+      "Mártir Tho"
+    ],
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Capacidad de flanqueo instantáneo que deja obsoletas las murallas y las barreras defensivas.",
+    "synergyNotes": "Permite teletransportar infantería pesada directamente sobre arqueros y artillería."
+  },
+  {
+    "id": "sub_class_unfrozen_magic_2",
+    "recommendedHeroes": [
+      "Grellekh el Traidor",
+      "Reina de Hielo Hel'Ghat",
+      "Tölketh",
+      "Hermana Keiri"
+    ],
+    "tacticalTier": "Tier S",
+    "strategicAnalysis": "Zonifica el mapa forzando al enemigo a maniobrar a través de terrenos letales.",
+    "synergyNotes": "Convierte el campo de batalla en una trampa mortal combinada con empujes y aturdimientos."
+  },
+  {
+    "id": "sub_class_unfrozen_might_2",
+    "recommendedHeroes": [
+      "Dhüvri",
+      "Ra'Davok",
+      "La Mirada Colectiva",
+      "Kwinri",
+      "Ulkuth"
+    ],
+    "tacticalTier": "Tier S+",
+    "strategicAnalysis": "El contraataque definitivo contra estrategias de debuff y maldiciones masivas.",
+    "synergyNotes": "Convierte a las tropas de Cisma en tanques indestructibles ante cualquier ofensiva de hechizos."
+  }
 ];
+
+const GUIDE_BY_ID = new Map(GUIDE_SUBCLASSES.map((guide) => [guide.id, guide]));
+
+const FACTION_MAP: Record<string, SubclassInfo['faction']> = {
+  dungeon: 'Mazmorra',
+  human: 'Templo',
+  nature: 'Foresta',
+  undead: 'Necrópolis',
+  unfrozen: 'Cisma',
+  demons: 'Colmena',
+};
+
+const CLASS_TYPE_MAP: Record<string, SubclassInfo['classType']> = {
+  might: 'Poder',
+  magic: 'Magia',
+};
+
+export const OFFICIAL_SUBCLASSES: SubclassInfo[] = GUIDE_SUBCLASSES
+  .map((guide) => {
+    const api = API_SUBCLASSES_DATA.find((item) => item.id === guide.id);
+    if (!api) return null;
+
+    return {
+      id: api.id,
+      name: api.name,
+      nameEn: api.name,
+      faction: FACTION_MAP[api.faction],
+      baseClass: api.classDisplay,
+      classType: CLASS_TYPE_MAP[api.classType],
+      bonusTitle: api.description,
+      bonusEffect: api.description,
+      requiredSkills: api.requiredSkills.map((skill) => ({
+        name: skill.skillName,
+        nameEn: skill.skillName,
+        tier: 'Experta' as const,
+      })),
+      recommendedHeroes: guide.recommendedHeroes ?? [],
+      tacticalTier: guide.tacticalTier ?? 'Tier A',
+      strategicAnalysis: guide.strategicAnalysis ?? '',
+      synergyNotes: guide.synergyNotes ?? '',
+    };
+  })
+  .filter((item): item is SubclassInfo => item !== null);
+
+export const getSubclassWithGuide = (id: string): SubclassInfo | undefined => {
+  return OFFICIAL_SUBCLASSES.find((subclass) => subclass.id === id);
+};

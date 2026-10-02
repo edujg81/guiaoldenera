@@ -76,6 +76,12 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
       ? selectedUnit.variants.branchB
       : selectedUnit.variants.branchA;
 
+  const getBranchKeyForVariant = (variant: UnitVariant): 'base' | 'branch_a' | 'branch_b' => {
+    if (selectedUnit.variants.base.id === variant.id) return 'base';
+    if (selectedUnit.variants.branchA.id === variant.id) return 'branch_a';
+    return 'branch_b';
+  };
+
   return (
     <div className="space-y-6">
       {/* Intro Banner */}
@@ -689,15 +695,16 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                       <span>Habilidades ({variant.abilities.length})</span>
                     </div>
                     {(() => {
-                      const exclusiveList = getExclusiveAbilitiesForBranch(variant.id, selectedUnit);
+                      const variantBranchKey = getBranchKeyForVariant(variant);
+                      const exclusiveList = getExclusiveAbilitiesForBranch(variantBranchKey, selectedUnit);
                       if (exclusiveList.length === 0) return null;
                       return (
                         <span className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded border uppercase flex items-center gap-1 ${
-                          variant.id === 'branch_a'
+                          variantBranchKey === 'branch_a'
                             ? themeMode === 'light'
                               ? 'bg-purple-100 text-purple-900 border-purple-300'
                               : 'bg-purple-950/80 text-purple-300 border-purple-500/50'
-                            : variant.id === 'branch_b'
+                            : variantBranchKey === 'branch_b'
                             ? themeMode === 'light'
                               ? 'bg-emerald-100 text-emerald-900 border-emerald-300'
                               : 'bg-emerald-950/80 text-emerald-300 border-emerald-500/50'
@@ -713,7 +720,8 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                   </div>
                   <ul className="space-y-1.5">
                     {variant.abilities.map((ab, i) => {
-                      const isExclusive = isAbilityExclusiveToBranch(ab, variant.id, selectedUnit);
+                      const variantBranchKey = getBranchKeyForVariant(variant);
+                      const isExclusive = isAbilityExclusiveToBranch(ab, variantBranchKey, selectedUnit);
                       const parsed = parseAbility(ab);
 
                       if (isExclusive) {
@@ -721,11 +729,11 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                           <li
                             key={i}
                             className={`p-2 rounded-xl border text-[11px] leading-snug space-y-1 transition-all ${
-                              variant.id === 'branch_a'
+                              variantBranchKey === 'branch_a'
                                 ? themeMode === 'light'
                                   ? 'bg-purple-50 border-purple-300 text-purple-950 shadow-xs ring-1 ring-purple-200'
                                   : 'bg-purple-950/70 border-purple-500/70 text-purple-100 shadow-[0_0_12px_rgba(168,85,247,0.2)]'
-                                : variant.id === 'branch_b'
+                                : variantBranchKey === 'branch_b'
                                 ? themeMode === 'light'
                                   ? 'bg-emerald-50 border-emerald-300 text-emerald-950 shadow-xs ring-1 ring-emerald-200'
                                   : 'bg-emerald-950/70 border-emerald-500/70 text-emerald-100 shadow-[0_0_12px_rgba(16,185,129,0.2)]'
@@ -746,9 +754,9 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                                 <span className="font-semibold tracking-tight">{parsed.title}</span>
                               </div>
                               <span className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded border uppercase shrink-0 ${
-                                variant.id === 'branch_a'
+                                variantBranchKey === 'branch_a'
                                   ? 'bg-purple-500/25 text-purple-200 border-purple-400/50'
-                                  : variant.id === 'branch_b'
+                                  : variantBranchKey === 'branch_b'
                                   ? 'bg-emerald-500/25 text-emerald-200 border-emerald-400/50'
                                   : 'bg-amber-500/25 text-amber-200 border-amber-400/50'
                               }`}>
@@ -791,7 +799,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               <div className="space-y-2">
                 <button
                   onClick={() => {
-                    setSelectedBranch(variant.id);
+                    setSelectedBranch(getBranchKeyForVariant(variant));
                     setUnitViewMode('catalog');
                   }}
                   className={`w-full py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer border ${
@@ -804,7 +812,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                 </button>
                 <button
                   onClick={() => {
-                    setSelectedBranch(variant.id);
+                    setSelectedBranch(getBranchKeyForVariant(variant));
                     setUnitViewMode('cross_units');
                   }}
                   className={`w-full py-1.5 rounded-xl text-[11px] font-mono font-bold transition-all cursor-pointer border flex items-center justify-center gap-1.5 ${

@@ -351,11 +351,30 @@ export interface CostEntry {
 
 // --- SPELLS (/api/spells) ---
 
+export interface ApiSpellLevel {
+  level: number;
+  manaCost: number;
+  description: string;
+  bonusDescription: string | null;
+  starDustCost: number | null;
+}
+
 export interface ApiSpell {
   id: string;
   name: string;
-  localizedName: string;
+  school: string;
+  schoolDisplay: string;
+  schoolTierText: string;
+  rank: number;
+  category: string;
   icon: string;
+  isMasterful: boolean;
+  baseNameForSort: string;
+  localizedName: string;
+  exceptionText: string | null;
+  isBonusSpell: boolean;
+  levels: ApiSpellLevel[];
+  relatedSkill: string | null;
 }
 // TIPOS LOCALES EXTENDIDOS (preservan campos no presentes en la API)
 // =====================================================================

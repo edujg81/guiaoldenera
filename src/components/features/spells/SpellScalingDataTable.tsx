@@ -321,7 +321,7 @@ export const SpellScalingDataTable: React.FC<SpellScalingDataTableProps> = ({
 
                   {/* Level 2 Damage */}
                   <td className="p-3 text-right">
-                    {l2?.calculatedValue !== null ? (
+                    {l2 && l2.calculatedValue !== null ? (
                       <span className="text-slate-300">{l2.calculatedValue}</span>
                     ) : (
                       <span className="text-slate-500 italic text-[11px] font-sans">-</span>
@@ -330,7 +330,7 @@ export const SpellScalingDataTable: React.FC<SpellScalingDataTableProps> = ({
 
                   {/* Level 3 Damage */}
                   <td className="p-3 text-right">
-                    {l3?.calculatedValue !== null ? (
+                    {l3 && l3.calculatedValue !== null ? (
                       <span className="text-purple-300 font-semibold">{l3.calculatedValue}</span>
                     ) : (
                       <span className="text-slate-500 italic text-[11px] font-sans">-</span>

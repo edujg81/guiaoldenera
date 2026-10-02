@@ -208,6 +208,30 @@ export interface SpellUnlockCost {
   description: string;
 }
 
+export interface GuideSpell {
+  id: string;
+  priority?: string;
+  tacticalUtility?: string;
+  whereToLearn?: string;
+  unlockCost?: SpellUnlockCost;
+  astrologyCost?: number;
+  astrologyPointsCost?: string;
+  observationCost?: number;
+  observationPerLevelCost?: number;
+  isConfirmedCost?: boolean;
+  isNeutral?: boolean;
+  guildPointsCost?: string;
+  acquisitionMethod?: string;
+}
+
+export interface GuideSubclass {
+  id: string;
+  recommendedHeroes?: string[];
+  tacticalTier?: SubclassInfo['tacticalTier'];
+  strategicAnalysis?: string;
+  synergyNotes?: string;
+}
+
 export interface RecommendedSpell {
   id: string;
   name: string;
