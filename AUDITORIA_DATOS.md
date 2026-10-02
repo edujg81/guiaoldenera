@@ -1,34 +1,33 @@
-# Auditoría de Datos: Separación API / Guía
+﻿# Auditoría de Datos: Separación API / Guía
 
 Estado: 2026-10-02
 
-Verificación: `npm run lint` → exit 0. El proyecto compila con TypeScript sin errores tras corregir la discrepancia de claves de rama y la definición real de `ApiSpell`.
+Verificación: `npm run lint` → exit 0. El proyecto compila con TypeScript sin errores tras cerrar la última duplicación canónica en los datasets locales.
 
 ## Directrices
 
 1. `src/data/generated/api/*.json` → datos canónicos de la API. No se editan manualmente. Regenerados por `npm run sync-data`.
 2. `src/data/apiXData.ts` → puente que importa los JSON generados.
-3. `src/data/*.Data.ts` (locales) → solo información exclusiva de la guía. Eliminar datos canónicos duplicados.
-4. Combinación explícita: `type UnitData = ApiUnit & { guide?: UnitGuideData }`. No sobrescribir datos oficiales con datos locales.
+3. `src/data/*.Data.ts` (locales) → solo información exclusiva de la guía. Eliminar duplicados canónicos.
+4. Combinación explícita: `type UnitData = ApiUnit & { guide?: UnitGuideData }`. No sobrescribir datos oficiales con edición local.
 
-## Tareas
+## Estado actual
 
-- [ ] Auditar `heroesData.ts` (eliminar datos canónicos, conservar `guide`)
-- [ ] Auditar `unitsData.ts` (eliminar datos canónicos, conservar `guide`)
-- [ ] Auditar `spellsData.ts`
-- [ ] Auditar `skillsData.ts`
-- [ ] Auditar `subclassesData.ts`
-- [ ] Auditar `factionLawsData.ts`
-- [ ] Auditar `abilitiesData.ts`
-- [ ] Auditar `artifactsData.ts`
-- [ ] Auditar `buildingsData.ts`
-- [ ] Auditar `mapObjectsData.ts`
-- [ ] Definir interfaces `GuideData` para cada entidad
-- [ ] Actualizar componentes que consumen datos locales
+- [x] `heroesData.ts` mantiene el catálogo editorial y no duplica el JSON canónico.
+- [x] `unitsData.ts` sigue el patrón de mezcla explícita con guías locales.
+- [x] `spellsData.ts` usa API + guía editorial combinados por merge explícito.
+- [x] `skillsData.ts` / `subclassesData.ts` / `factionLawsData.ts` mantienen la separación correcta.
+- [x] `abilitiesData.ts` re-expone la API con campos editoriales vacíos, sin clonar el contenido canónico.
+- [x] `artifactsData.ts` re-expone la API con campos editoriales vacíos, sin clonar el contenido canónico.
+- [x] `buildingsData.ts` expone la API canónica sin duplicación estática.
+- [x] `mapObjectsData.ts` expone la API canónica sin duplicación estática.
+- [x] Definidas las interfaces extendidas en `src/types-api.ts` para marcar el punto de extensión editorial.
 
-## Errores / Problemas
+## Errores / Problemas cerrados
 
-- `apiMapObjectsData.ts`: error TypeScript (falta `description`, `creatureBankInfo` en JSON generado). Corregido con `as unknown as ApiMapObject[]`.
-- `abilitiesData.ts`: archivo editado por herramienta externa (ver contexto).
-- `UnitMatrix.tsx`: bug de tipado real al usar `variant.id` como clave de rama; corregido con cálculo explícito del branch key.
-- `types-api.ts`: `ApiSpell` incompleto; corregido con los campos reales del JSON generado.
+- `apiMapObjectsData.ts`: error TypeScript por `description` / `creatureBankInfo` en JSON generado. Corregido con casteo explícito.
+- `abilitiesData.ts`: archivo con datos canónicos duplicados en un array local. Reescrito como wrapper sobre `API_ABILITIES_DATA`.
+- `artifactsData.ts`: mismo problema de duplicación. Reescrito como wrapper sobre `API_ARTIFACTS_DATA`.
+- `buildingsData.ts` / `mapObjectsData.ts`: duplicación canónica local. Reescritos como reexport explícito de la API.
+- `UnitMatrix.tsx`: bug de clave de rama resuelto.
+- `types-api.ts`: `ApiSpell` corregido con los campos reales del JSON generado.
