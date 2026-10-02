@@ -109,15 +109,16 @@ const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] =
   });
 };
 
-export const HeroDetailModal: React.FC<HeroDetailModalProps> = ({
+export const HeroDetailModal: React.FC<HeroDetailModalProps> = (props) =>
+  props.hero ? <HeroDetailModalContent {...props} hero={props.hero} /> : null;
+
+const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithExtras }> = ({
   hero,
   onClose,
   onCompare,
   themeMode = 'dark',
   themeAccentClass = 'text-amber-400',
 }) => {
-  if (!hero) return null;
-
   const isMage = hero.classType === 'magic';
   const [activeTab, setActiveTab] = useStickyState<'overview' | 'skills' | 'tactics' | 'subclasses' | 'simulator'>('overview', `hero_detail_tab_${hero.id}`);
   const [inspectedSkill, setInspectedSkill] = useState<ApiSkill | null>(null);
@@ -531,7 +532,7 @@ const SkillsTab: React.FC<{
       <div className="space-y-4">
         <div className="flex items-center gap-2 mb-3">
           <Sparkles className="w-4 h-4" />
-          <h3 className="text-lg font-semibold font-serif">{hero.name}'s Skill Build Recommendations</h3>
+          <h3 className="text-lg font-semibold font-serif">Recomendaciones de habilidades para {hero.name}</h3>
         </div>
         
         {skillRecommendations.map((rec, index) => (
