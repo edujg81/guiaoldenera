@@ -2372,7 +2372,7 @@ export const DUNGEON_HEROES_LOCAL: HeroExtension[] = [
     tierRank: 'Tier S+ (Meta)',
     recommendedStartingTier: 'Elección #1 absoluta para builds centradas en control de masas sin contraataque, disparo certero y petrificación cuerpo a cuerpo.',
     statGrowth: { attack: 45, defense: 35, spellPower: 10, knowledge: 10 },
-    tacticalPlaystyle: 'Las Medusas bajo el mando de Enatee disparan con daño aumentado y, si son trabadas en cuerpo a cuerpo, petrifican a los asaltantes eliminando el contraataque.',
+    tacticalPlaystyle: 'Prioriza las Medusas con Enatee: su especialidad aumenta su crecimiento en ciudad y, bajo su mando, les da +1 de Velocidad, +1 de Iniciativa y +20 % de PV; su Ataque y Defensa aumentan en 1 cada 3 niveles del héroe. La Medusa puede atacar a distancia completa; la Medusa escultora dispone de Petrificación activa cuerpo a cuerpo, que hace que el objetivo pierda su turno hasta el final de la ronda.',
     idealSkillBuild: [
       'Fuerza del triunvirato (Experta)',
       'Combate (Experta)',

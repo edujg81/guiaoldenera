@@ -39,7 +39,8 @@ El estado de cada tarea se gestiona mediante cajas de verificación:
 #### A. Mazmorra (Dungeon) - Elfos Oscuros y Moradores de Alvar (18 Héroes)
 - [x] **Clases**: Adalid / Guerrero (Might) y Brujo / Mago (Magic).
 - [x] **9 Guerreros (Might)**:
-  - [x] Enatee (La Soberana de la Mirada de Piedra) - Petrificación y bono de ataque.
+  - [x] Enatee - Datos canónicos contrastados con la API («Amenaza serpenteante» y sus efectos sobre las medusas).
+  - [x] Enatee - Análisis de juego inicial (`tacticalPlaystyle`) actualizado según la API y aprobado por el usuario; distingue la Petrificación activa de Medusa escultora de un efecto automático al ser trabada.
   - [x] Devir, hijo de Devir (El Caudillo de los Laberintos) - Crecimiento y bono a Minotauros.
   - [x] Tellaris el Traicionado (La Capitana Renegada) - Tácticas y despliegue avanzado.
   - [x] Kieran (El Patriarca del Pueblo Ciego) - Bonificación a Trogloditas y visión cavernícola.

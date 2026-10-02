@@ -35,6 +35,12 @@ El proyecto es una aplicación web en castellano diseñada para proporcionar her
 >   - Desbloqueo en Observatorio: `Tier × (2 Cristales, 2 Gemas, 2 Mercurio) + Oro`.
 >   - Progresión de Polvo Alquímico (*Dust*): Nivel 1 (Base, 0 Polvo), Nivel 2 (25 Polvo + 1.000 Oro), Nivel 3 (25 Polvo + 1.500 Oro + 2 Raros), Nivel 4 Magistral (25 Polvo + 2.000 Oro + 4 Raros).
 
+### Jerarquía de fuentes y aprobación de contenido
+1. **Fuente canónica**: los datos publicados por la API oficial del juego son la autoridad para nombres, facciones, clases, atributos, habilidades, especialidades, criaturas, hechizos y demás mecánicas que la API incluya. En el repositorio, consulta primero los datos sincronizados de `src/data/generated/api/`. No sustituyas ni contradigas esos valores con la checklist, guías locales u otras fuentes.
+2. **Información ausente de la API**: cualquier afirmación factual que la API no incluya requiere una fuente fiable, que debe citarse o enlazarse, y la confirmación explícita del usuario antes de incorporarla como contenido del proyecto. Si no se encuentra una fuente adecuada o hay conflicto entre fuentes, deja el dato como pendiente y no lo presentes como canónico.
+3. **Análisis derivado**: tácticas, estrategias, builds, recomendaciones y valoraciones competitivas pueden elaborarse como análisis experto a partir de los datos canónicos de la API. Deben identificarse claramente como análisis, no como hechos del juego, y requieren confirmación explícita del usuario antes de incorporarse al proyecto. Se pueden contrastar además con fuentes fiables.
+4. **Separación y discrepancias**: mantén diferenciados los datos canónicos y el análisis. Ante una discrepancia, conserva el dato de la API como canónico, documenta la afirmación discrepante con su fuente y solicita confirmación antes de cambiar o añadir contenido.
+
 ---
 
 ## 4. DIRECTIVAS DE INGENIERÍA Y CÓDIGO
@@ -46,7 +52,7 @@ El proyecto es una aplicación web en castellano diseñada para proporcionar her
 ---
 
 ## 5. PROTOCOLO DE RESPUESTA COMPETITIVA
-Cuando diseñes o analices builds de héroes o tácticas de combate:
+Cuando diseñes o analices builds de héroes o tácticas de combate, presenta el resultado como análisis experto derivado de datos canónicos y solicita confirmación antes de incorporarlo al proyecto. No conviertas recomendaciones en hechos canónicos. Incluye:
 1. **Tier & Rol Competitivo**: Clasifica al héroe (S+, S, A, B) indicando su rol principal (Main de Asalto, Farmeo Día 1, Hechicero de Late Game, Apoyo Económico).
 2. **Especialidad y Mecánica Núcleo**: Desglosa cómo escala su pasiva por nivel y su sinergia con unidades clave.
 3. **Ruta de Habilidades Óptima**: Especifica la prioridad de adquisición de habilidades primarias y secundarias (Básica -> Avanzada -> Experta).

@@ -304,7 +304,7 @@ const FACTION_MAP: Record<string, SubclassInfo['faction']> = {
   nature: 'Foresta',
   undead: 'Necrópolis',
   unfrozen: 'Cisma',
-  demons: 'Colmena',
+  demon: 'Colmena',
 };
 
 const CLASS_TYPE_MAP: Record<string, SubclassInfo['classType']> = {

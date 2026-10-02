@@ -455,7 +455,7 @@ export const SKILL_SELECTION_GUIDES: Record<string, SubskillSelectionGuide> = {
 
 
 export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
-  'hero-enatee': [
+  'dungeon_hero_1': [
     {
       skillName: 'Combate (Experta)',
       advancedSubskill: 'Golpe poderoso',
@@ -505,7 +505,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: 'Permite aprender y lanzar magia neutral alta independientemente del nivel.',
     },
   ],
-  'hero-devir': [
+  'dungeon_hero_6': [
     {
       skillName: 'Combate (Experta)',
       advancedSubskill: 'Esgrima',
@@ -557,7 +557,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: 'Aprende magia neutral y hechizos de bendición independientemente del nivel.',
     },
   ],
-  'hero-tellaris': [
+  'dungeon_hero_2': [
     {
       skillName: 'Combate (Experta)',
       advancedSubskill: 'Golpe poderoso',
@@ -607,7 +607,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: '+2 de Poder de Hechizo y Conocimiento directos para reforzar sus lanzamientos.',
     },
   ],
-  'hero-kieran': [
+  'dungeon_hero_4': [
     {
       skillName: 'Combate (Experta)',
       advancedSubskill: 'Esgrima',
@@ -659,7 +659,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: 'Reduce en 1 ronda la recarga de conjuros de sombras.',
     },
   ],
-  'hero-zakron': [
+  'dungeon_hero_11': [
     {
       skillName: 'Magia arcana (Experta)',
       advancedSubskill: 'Tiempo arcano',
@@ -711,7 +711,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: '+10% adicional de daño mágico infligido (+20% con Ofensiva) a todos los hechizos.',
     },
   ],
-  'hero-typhona': [
+  'dungeon_hero_16': [
     {
       skillName: 'Magia de nochesombra (Experta)',
       advancedSubskill: 'Tiempo de nochesombra',
@@ -763,7 +763,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: '+10% de experiencia en combate para acelerar la progresión de niveles.',
     },
   ],
-  'hero-rhea': [
+  'dungeon_hero_8': [
     {
       skillName: 'Suerte (Experta)',
       advancedSubskill: 'Confianza bestial',
@@ -815,7 +815,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: 'Permite aprender hechizos neutrales avanzados de utilidad.',
     },
   ],
-  'hero-lodos': [
+  'dungeon_hero_18': [
     {
       skillName: 'Magia de nochesombra (Experta)',
       advancedSubskill: 'Tiempo de nochesombra',
@@ -867,7 +867,7 @@ export const HERO_SUBSKILL_CHOICES: Record<string, HeroSubskillChoice[]> = {
       advancedReason: '+10% adicional de daño mágico infligido con conjuros directos.',
     },
   ],
-  'hero-glastor': [
+  'dungeon_hero_15': [
     {
       skillName: 'Economía (Experta)',
       advancedSubskill: 'Recaudador de impuestos',

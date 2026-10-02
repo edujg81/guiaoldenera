@@ -22,7 +22,6 @@ import {
   RotateCcw,
   Copy,
   Check,
-  Star,
   Users,
   Flame as FlameIcon,
   Award as AwardIcon,
@@ -85,29 +84,8 @@ const findOfficialSkill = (skillStr: string): ApiSkill | undefined => {
   });
 };
 
-const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] => {
-  if (HERO_SUBSKILL_CHOICES[hero.id]) {
-    return HERO_SUBSKILL_CHOICES[hero.id];
-  }
-  // Dynamic fallback using hero's idealSkillBuild
-  return hero.idealSkillBuild.map((skillStr) => {
-    const clean = skillStr.replace(/\s*\((Experta|Avanzada|Básica)\)/, '').trim();
-    const offSkill = findOfficialSkill(clean);
-    const skillId = offSkill?.id || clean.toLowerCase().replace(/\s+/g, '-');
-
-    // Simple fallback - use first subskills if no guide available
-    const advSub = offSkill?.level2.subSkillChoices[0] || { name: 'Subhabilidad Avanzada' };
-    const expSub = offSkill?.level3.subSkillChoices[0] || { name: 'Subhabilidad Experta' };
-
-    return {
-      skillName: skillStr,
-      advancedSubskill: advSub.name,
-      advancedReason: 'Optimiza el rendimiento del héroe en combate.',
-      expertSubskill: expSub.name,
-      expertReason: 'Proporciona la ventaja definitiva en combate tardío.',
-    };
-  });
-};
+const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] =>
+  HERO_SUBSKILL_CHOICES[hero.id] ?? [];
 
 export const HeroDetailModal: React.FC<HeroDetailModalProps> = (props) =>
   props.hero ? <HeroDetailModalContent {...props} hero={props.hero} /> : null;
@@ -124,37 +102,13 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
   const [inspectedSkill, setInspectedSkill] = useState<ApiSkill | null>(null);
   const [showSubskillsDetails, setShowSubskillsDetails] = useStickyState<boolean>(true, 'hero_show_subskills_details');
 
-  // Calculate subclasses progress for this hero's faction and class
+  // The modal has no active skill allocation, so show API requirements without inventing progress.
   const factionSubclasses = useMemo(() => {
     const list = OFFICIAL_SUBCLASSES.filter(
-      (sc) => sc.faction === hero.faction && sc.classType === (isMage ? 'Magia' : 'Poder')
+      (sc) => sc.faction === hero.factionDisplay && sc.classType === (isMage ? 'Magia' : 'Poder')
     );
-    return list.map((sc) => {
-      // Check each required skill
-      const reqStatus = sc.requiredSkills.map((req) => {
-        const offSkill = findOfficialSkill(req.name);
-        const alloc = offSkill ? { tier: 'expert' } : undefined; // Simplified - in reality would check hero's ideal build
-        const isExpert = alloc?.tier === 'expert';
-        const currentTier = alloc?.tier || 'none';
-        return {
-          reqName: req.name,
-          offSkillId: offSkill?.id,
-          isExpert,
-          currentTier,
-        };
-      });
-
-      const expertCount = reqStatus.filter((r) => r.isExpert).length;
-      const isUnlocked = expertCount >= 5;
-
-      return {
-        ...sc,
-        reqStatus,
-        expertCount,
-        isUnlocked,
-      };
-    });
-  }, [hero.faction, isMage]);
+    return list;
+  }, [hero.factionDisplay, isMage]);
 
   // Get skill recommendations for this hero
   const skillRecommendations = useMemo(() => {
@@ -535,7 +489,9 @@ const SkillsTab: React.FC<{
           <h3 className="text-lg font-semibold font-serif">Recomendaciones de habilidades para {hero.name}</h3>
         </div>
         
-        {skillRecommendations.map((rec, index) => (
+        {skillRecommendations.length === 0 ? (
+          <p className="text-sm text-slate-400">No hay recomendaciones de subhabilidades revisadas para este héroe.</p>
+        ) : skillRecommendations.map((rec, index) => (
           <div key={index} className="border rounded-xl p-4 mb-4 transition-all hover:shadow-lg">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-800/50 rounded-full text-slate-400">
@@ -749,7 +705,7 @@ const TacticsTab: React.FC<{
 // Subclasses Tab Component
 const SubclassesTab: React.FC<{
   hero: HeroWithExtras;
-  factionSubclasses: any[];
+  factionSubclasses: SubclassInfo[];
   themeMode?: 'dark' | 'light';
   themeAccentClass?: string;
 }> = ({ hero, factionSubclasses, themeMode, themeAccentClass }) => {
@@ -758,7 +714,7 @@ const SubclassesTab: React.FC<{
       <div className="space-y-4">
         <div className="flex items-center gap-2 mb-3">
           <Award className="w-4 h-4" />
-          <h3 className="text-lg font-semibold font-serif">Progresión de Subclases para {hero.name}</h3>
+          <h3 className="text-lg font-semibold font-serif">Subclases y requisitos para {hero.name}</h3>
         </div>
         
         {factionSubclasses.length > 0 ? (
@@ -774,50 +730,18 @@ const SubclassesTab: React.FC<{
                       <h4 className="font-semibold text-slate-200">{subclass.name}</h4>
                       <p className="text-xs text-slate-400">{subclass.bonusTitle}</p>
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-2">
-                          <Star className="w-3 h-3" />
-                          <span className="font-mono text-sm">Requisitos:</span>
-                        </div>
-                        <span className="text-sm font-mono">{subclass.expertCount}/5 habilidades a Experto</span>
+                    <div className="mt-3 space-y-2">
+                      <div className="flex items-center gap-2 text-xs font-mono">
+                        <BookOpen className="w-3 h-3" />
+                        <span>Requisitos oficiales: 5 habilidades a nivel Experto</span>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-2">
-                          {subclass.isUnlocked ? (
-                            <CheckCircle2 className="w-3 h-3 text-emerald-400" />
-                          ) : (
-                            <X className="w-3 h-3 text-rose-400" />
-                          )}
-                          <span className="font-mono text-sm">Estado:</span>
-                        </div>
-                        <span className={`font-mono text-sm font-bold ${
-                          subclass.isUnlocked ? 'text-emerald-400' : 'text-rose-400'
-                        }`}>
-                          {subclass.isUnlocked ? 'Desbloqueada' : 'Bloqueada'}
-                        </span>
-                      </div>
-                    </div>
-                    {!subclass.isUnlocked && subclass.reqStatus.length > 0 && (
-                      <div className="mt-3 space-y-2">
-                        <div className="flex items-center gap-2 mb-1 text-xs font-mono">
-                          <BookOpen className="w-3 h-3" />
-                          <span>Detalles de Requisitos:</span>
-                        </div>
-                        {subclass.reqStatus.map((req: { reqName: string; offSkillId?: string; isExpert: boolean; currentTier: string }, idx: number) => (
-                          <div key={idx} className="flex items-center gap-3">
-                            <div className="flex items-center gap-2">
-                              <span className={`text-[10px] font-mono font-bold ${
-                                req.isExpert ? 'text-emerald-400' : 'text-slate-400'
-                              }`}>
-                                {req.reqName}
-                              </span>
-                              <span className="text-xs">({req.currentTier})</span>
-                            </div>
-                          </div>
+                      <ul className="list-disc pl-5 text-sm text-slate-300">
+                        {subclass.requiredSkills.map((skill) => (
+                          <li key={skill.name}>{skill.name} (Experta)</li>
                         ))}
-                      </div>
-                    )}
+                      </ul>
+                      <p className="text-xs text-slate-400">El progreso actual de habilidades no está disponible en esta ficha.</p>
+                    </div>
                   </div>
                 </div>
               </div>
