@@ -576,6 +576,11 @@ const SkillsTab: React.FC<{
                           <div className="mt-1 font-semibold text-slate-100">
                             {advancedSelected?.name ?? rec.advancedSubskill}
                           </div>
+                          {officialSkill?.level2.description ? (
+                            <p className="mt-1 text-[11px] leading-relaxed text-sky-200/90">
+                              <ResolvedText text={officialSkill.level2.description} />
+                            </p>
+                          ) : null}
                           {advancedSelected?.description ? (
                             <p className="mt-1 text-xs leading-relaxed text-slate-300">
                               <ResolvedText text={advancedSelected.description} />
@@ -606,6 +611,11 @@ const SkillsTab: React.FC<{
                           <div className="mt-1 font-semibold text-slate-100">
                             {expertSelected?.name ?? rec.expertSubskill}
                           </div>
+                          {officialSkill?.level3.description ? (
+                            <p className="mt-1 text-[11px] leading-relaxed text-amber-200/90">
+                              <ResolvedText text={officialSkill.level3.description} />
+                            </p>
+                          ) : null}
                           {expertSelected?.description ? (
                             <p className="mt-1 text-xs leading-relaxed text-slate-300">
                               <ResolvedText text={expertSelected.description} />
@@ -668,6 +678,11 @@ const SkillsTab: React.FC<{
                     <span className="font-semibold text-slate-200">Avanzada</span>
                   </div>
                   <p className="text-slate-300">{inspectedSkill.level2.levelName}</p>
+                  {inspectedSkill.level2.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level2.description} />
+                    </p>
+                  ) : null}
                   {showSubskillsDetails && inspectedSkill.level2.subSkillChoices.length > 0 && (
                     <div className="mt-3 space-y-3">
                       <div className="flex items-center gap-2 mb-1 text-xs font-mono">
@@ -705,6 +720,11 @@ const SkillsTab: React.FC<{
                     <span className="font-semibold text-slate-200">Experta</span>
                   </div>
                   <p className="text-slate-300">{inspectedSkill.level3.levelName}</p>
+                  {inspectedSkill.level3.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level3.description} />
+                    </p>
+                  ) : null}
                   {showSubskillsDetails && inspectedSkill.level3.subSkillChoices.length > 0 && (
                     <div className="mt-3 space-y-3">
                       <div className="flex items-center gap-2 mb-1 text-xs font-mono">
