@@ -670,6 +670,11 @@ const SkillsTab: React.FC<{
                     <span className="font-semibold text-slate-200">Básica</span>
                   </div>
                   <p className="text-slate-300">{inspectedSkill.level1.levelName}</p>
+                  {inspectedSkill.level1.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level1.description} />
+                    </p>
+                  ) : null}
                 </div>
                 
                 <div className="border rounded-xl p-4">
@@ -687,7 +692,7 @@ const SkillsTab: React.FC<{
                     <div className="mt-3 space-y-3">
                       <div className="flex items-center gap-2 mb-1 text-xs font-mono">
                         <Sparkles className="w-3 h-3" />
-                        <span>Subskills Avanzadas:</span>
+                        <span>Subhabilidades Avanzadas:</span>
                       </div>
                       {inspectedSkill.level2.subSkillChoices.map((sub, idx) => (
                         <div key={idx} className="flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-900/60 p-2.5">
@@ -729,7 +734,7 @@ const SkillsTab: React.FC<{
                     <div className="mt-3 space-y-3">
                       <div className="flex items-center gap-2 mb-1 text-xs font-mono">
                         <Award className="w-3 h-3 text-yellow-400" />
-                        <span>Subskills Expertas:</span>
+                        <span>Subhabilidades Expertas:</span>
                       </div>
                       {inspectedSkill.level3.subSkillChoices.map((sub, idx) => (
                         <div key={idx} className="flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-900/60 p-2.5">
@@ -763,7 +768,7 @@ const SkillsTab: React.FC<{
                 onClick={() => setShowSubskillsDetails(!showSubskillsDetails)}
                 className="px-3 py-1 rounded text-xs font-mono transition-all hover:bg-slate-700/50"
               >
-                {showSubskillsDetails ? 'Ocultar Subskills' : 'Mostrar Subskills'}
+                {showSubskillsDetails ? 'Ocultar Subhabilidades' : 'Mostrar Subhabilidades'}
               </button>
               <button
                 onClick={() => setInspectedSkill(null)}
