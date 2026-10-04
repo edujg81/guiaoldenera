@@ -12,8 +12,7 @@
 - El análisis derivado (tácticas, builds, recomendaciones) debe identificarse claramente como análisis, no como hecho del juego.
 - Todo el contenido editorial partirá de análisis que deben realizarse a partir de los datos canónicos, asumiendo el rol de un jugador experto de Heroes of Might and Magic: Olden Era, pudiendo consultar otras fuentes fiables y requiriendo la confirmación del usuario.
 - **Fuentes de verdad (canónicas)**: `src/data/generated/api/`.
-- **Fuentes fiables**: `https://www.olden-era.com/en`, `https://heavenlyforge.gg/es`, `https://heroes-olden-era.com/es`, `https://es.wikipedia.org/wiki/Heroes_of_Might_and_Magic:_Olden_Era`, `https://wiki.hoodedhorse.com/Heroes_of_Might_and_Magic_Olden_Era/Main_Page`
-- **Fuentes editoriales**: `https://townportal.gg/en`, `https://heavenlyforge.gg/es`, `https://www.thegamer.com/heroes-of-might-and-magic-olden-era-best-spells-tier-list`, `https://www.xmodhub.com/info/blog/heroes-of-might-and-magic-olden-era-best-factions-tier-list/`
+- **Fuentes fiables / editoriales**: `https://www.olden-era.com/en`, `https://heavenlyforge.gg/es`, `https://heroes-olden-era.com/es`, `https://es.wikipedia.org/wiki/Heroes_of_Might_and_Magic:_Olden_Era`, `https://wiki.hoodedhorse.com/Heroes_of_Might_and_Magic_Olden_Era/Main_Page`, `https://townportal.gg/en`, `https://www.thegamer.com/heroes-of-might-and-magic-olden-era-best-spells-tier-list`, `https://www.xmodhub.com/info/blog/heroes-of-might-and-magic-olden-era-best-factions-tier-list/`
 
 ## Subclases y Recomendaciones
 - Las subclases y sus requisitos (siempre a nivel Experto) son canónicos de la API (`apiSubclassesData.ts`).

@@ -335,6 +335,10 @@ export interface SubclassInfo {
 
 export interface HeroSubskillChoice {
   skillName: string;
+  skillId?: string;
+  starting?: boolean;
+  appearanceChance?: number | null;
+  skillReason?: string;
   advancedSubskill: string;
   advancedReason: string;
   expertSubskill?: string;

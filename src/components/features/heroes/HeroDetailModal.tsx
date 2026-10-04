@@ -31,6 +31,7 @@ import { HeroImage } from '../../ui/HeroImage';
 import { OFFICIAL_SKILLS_DATA } from '../../../data/officialSkillsData';
 import { OFFICIAL_SUBCLASSES } from '../../../data/subclassesData';
 import { HERO_SUBSKILL_CHOICES } from '../../../data/subskillsRecommendationData';
+import { HERO_BUILD_AUDIT } from '../../../data/heroBuildAuditData';
 import { useStickyState } from '../../../utils/useStickyState';
 import { HeroBuildSimulator } from '../../HeroBuildSimulator';
 import type { FactionId } from '../../../data/factionDataProvider';
@@ -112,8 +113,28 @@ const resolveSubskillChoice = (
   return choices[0] ?? null;
 };
 
-const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] =>
-  HERO_SUBSKILL_CHOICES[hero.id] ?? [];
+const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] => {
+  const audit = HERO_BUILD_AUDIT[hero.id];
+  if (audit) {
+    return audit.recommendedSkills.map((rec) => {
+      const skill = OFFICIAL_SKILLS_DATA.find((s) => s.id === rec.skillId);
+      const advanced = skill?.level2.subSkillChoices.find((x) => x.id === rec.advancedSubskillId);
+      const expert = skill?.level3.subSkillChoices.find((x) => x.id === rec.expertSubskillId);
+      return {
+        skillId: rec.skillId,
+        skillName: skill?.name ?? rec.skillId,
+        starting: rec.starting,
+        appearanceChance: rec.appearanceChance,
+        skillReason: rec.why,
+        advancedSubskill: advanced?.name ?? rec.advancedSubskillId ?? '',
+        advancedReason: rec.advancedWhy,
+        expertSubskill: expert?.name ?? rec.expertSubskillId ?? '',
+        expertReason: rec.expertWhy,
+      };
+    });
+  }
+  return HERO_SUBSKILL_CHOICES[hero.id] ?? [];
+};
 
 export const HeroDetailModal: React.FC<HeroDetailModalProps> = (props) =>
   props.hero ? <HeroDetailModalContent {...props} hero={props.hero} /> : null;
@@ -164,6 +185,7 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
   themeAccentClass = 'text-amber-400',
 }) => {
   const isMage = hero.classType === 'magic';
+  const buildAudit = HERO_BUILD_AUDIT[hero.id];
   const [activeTab, setActiveTab] = useStickyState<'overview' | 'skills' | 'tactics' | 'subclasses' | 'simulator'>('overview', `hero_detail_tab_${hero.id}`);
   const [inspectedSkill, setInspectedSkill] = useState<ApiSkill | null>(null);
   const [showSubskillsDetails, setShowSubskillsDetails] = useStickyState<boolean>(true, 'hero_show_subskills_details');
@@ -215,7 +237,7 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
           <div className="flex flex-col min-w-0">
             <div className="flex items-center gap-2 mb-1">
               <h2 className="text-2xl font-serif font-bold text-yellow-200">{hero.name}</h2>
-              <TierBadge tier={hero.tierRank} size="sm" className="max-w-full whitespace-normal text-center" />
+              <TierBadge tier={buildAudit?.tier ?? hero.tierRank} size="sm" className="max-w-full whitespace-normal text-center" />
             </div>
 
             <p className="mt-1 text-[16px] leading-snug break-words text-slate-400 font-cursive italic">
@@ -360,7 +382,7 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
           <OverviewTab hero={hero} onCompare={onCompare} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'skills' && (
-          <SkillsTab hero={hero} skillRecommendations={skillRecommendations} inspectedSkill={inspectedSkill} setInspectedSkill={setInspectedSkill} showSubskillsDetails={showSubskillsDetails} setShowSubskillsDetails={setShowSubskillsDetails} themeMode={themeMode} themeAccentClass={themeAccentClass} />
+          <SkillsTab hero={hero} skillRecommendations={skillRecommendations} buildAudit={buildAudit} inspectedSkill={inspectedSkill} setInspectedSkill={setInspectedSkill} showSubskillsDetails={showSubskillsDetails} setShowSubskillsDetails={setShowSubskillsDetails} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'tactics' && (
           <TacticsTab hero={hero} themeMode={themeMode} themeAccentClass={themeAccentClass} />
@@ -539,13 +561,14 @@ const OverviewTab: React.FC<{
 const SkillsTab: React.FC<{
   hero: HeroWithExtras;
   skillRecommendations: HeroSubskillChoice[];
+  buildAudit?: typeof HERO_BUILD_AUDIT[string];
   inspectedSkill: ApiSkill | null;
   setInspectedSkill: (skill: ApiSkill | null) => void;
   showSubskillsDetails: boolean;
   setShowSubskillsDetails: (show: boolean) => void;
   themeMode?: 'dark' | 'light';
   themeAccentClass?: string;
-}> = ({ hero, skillRecommendations, inspectedSkill, setInspectedSkill, showSubskillsDetails, setShowSubskillsDetails, themeMode, themeAccentClass }) => {
+}> = ({ hero, skillRecommendations, buildAudit, inspectedSkill, setInspectedSkill, showSubskillsDetails, setShowSubskillsDetails, themeMode, themeAccentClass }) => {
   return (
     <div className="space-y-6">
       {/* Skill Recommendations */}
@@ -554,6 +577,31 @@ const SkillsTab: React.FC<{
           <Sparkles className="w-4 h-4" />
           <h3 className="text-lg font-semibold font-serif">Recomendaciones de habilidades para {hero.name}</h3>
         </div>
+        {buildAudit ? (
+          <div className="rounded-xl border border-amber-700/40 bg-amber-950/20 p-4 space-y-2">
+            <div className="flex items-center justify-between gap-3">
+              <span className="font-semibold text-amber-300">Build editorial · Tier {buildAudit.tier}</span>
+              <span className="text-[11px] font-mono text-slate-400">La subclase es opcional</span>
+            </div>
+            <p className="text-xs leading-relaxed text-slate-300">{buildAudit.tierReason}</p>
+            <p className="text-xs leading-relaxed text-slate-300">{buildAudit.buildReason}</p>
+            <p className="text-xs leading-relaxed text-slate-400"><strong className="text-slate-300">Subclase recomendada:</strong> {buildAudit.recommendedSubclass.name}. {buildAudit.recommendedSubclass.reason}</p>
+            <div className="rounded-lg border border-slate-800 bg-slate-950/50 p-3">
+              <div className="text-[11px] font-mono uppercase tracking-wide text-slate-400 mb-2">Habilidades necesarias para la subclase</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {buildAudit.recommendedSubclass.requiredSkills.map((req) => {
+                  const skill = OFFICIAL_SKILLS_DATA.find((s) => s.id === req.skillId);
+                  return (
+                    <div key={req.skillId} className="flex items-center justify-between gap-2 rounded border border-slate-800 px-2 py-1.5 text-xs">
+                      <span className={req.starting ? 'text-amber-300 font-semibold' : 'text-slate-300'}>{skill?.name ?? req.skillId}{req.starting ? ' · Inicial' : ''}</span>
+                      <span className="font-mono text-slate-500">{req.starting ? '—' : `${req.appearanceChance ?? 0}%`}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        ) : null}
         
         {skillRecommendations.length === 0 ? (
           <p className="text-sm text-slate-400">No hay recomendaciones de subhabilidades revisadas para este héroe.</p>
@@ -589,6 +637,10 @@ const SkillsTab: React.FC<{
                           <ResolvedText text={officialSkill.level1.description} />
                         </p>
                       ) : null}
+                      {rec.skillReason ? <p className="mt-2 text-xs leading-relaxed text-emerald-200/90"><strong>Por qué:</strong> {rec.skillReason}</p> : null}
+                      <div className="mt-2 flex flex-wrap gap-2 text-[10px] font-mono">
+                        <span className="rounded border border-slate-700 bg-slate-900 px-2 py-1 text-slate-400">{rec.starting ? 'Inicial' : `Aparición: ${rec.appearanceChance ?? 0}%`}</span>
+                      </div>
                     </div>
                   </div>
 
@@ -614,6 +666,7 @@ const SkillsTab: React.FC<{
                           <div className="mt-1 font-semibold text-slate-100">
                             {advancedSelected?.name ?? rec.advancedSubskill}
                           </div>
+                          {rec.advancedReason ? <p className="mt-1 text-xs leading-relaxed text-emerald-200/80"><strong>Motivo:</strong> {rec.advancedReason}</p> : null}
                           {officialSkill?.level2.description ? (
                             <p className="mt-1 text-[11px] leading-relaxed text-sky-200/90">
                               <ResolvedText text={officialSkill.level2.description} />
@@ -649,6 +702,7 @@ const SkillsTab: React.FC<{
                           <div className="mt-1 font-semibold text-slate-100">
                             {expertSelected?.name ?? rec.expertSubskill}
                           </div>
+                          {rec.expertReason ? <p className="mt-1 text-xs leading-relaxed text-emerald-200/80"><strong>Motivo:</strong> {rec.expertReason}</p> : null}
                           {officialSkill?.level3.description ? (
                             <p className="mt-1 text-[11px] leading-relaxed text-amber-200/90">
                               <ResolvedText text={officialSkill.level3.description} />
