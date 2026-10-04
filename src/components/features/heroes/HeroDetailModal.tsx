@@ -118,6 +118,44 @@ const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] =
 export const HeroDetailModal: React.FC<HeroDetailModalProps> = (props) =>
   props.hero ? <HeroDetailModalContent {...props} hero={props.hero} /> : null;
 
+// Función para obtener la recomendación de subclase
+const getSubclassRecommendation = (hero: HeroWithExtras, subclasses: SubclassInfo[]): string => {
+  if (subclasses.length === 0) return "No hay subclases disponibles para esta combinación.";
+  
+  // Contar cuántas habilidades requeridas por cada subclase coinciden con las habilidades iniciales del héroe
+  const initialSkillIds = new Set((hero.startingSkills ?? []).map(s => s.skillId.toLowerCase()));
+  const initialSkillNames = new Set((hero.startingSkills ?? []).map(s => s.skillName.toLowerCase()));
+  
+  const subclassScores = subclasses.map(subclass => {
+    let matchCount = 0;
+    subclass.requiredSkills.forEach(skill => {
+      const skillIdLower = skill.skillId.toLowerCase();
+      const skillNameLower = skill.name.toLowerCase();
+      if (initialSkillIds.has(skillIdLower) || initialSkillNames.has(skillNameLower)) {
+        matchCount++;
+      }
+    });
+    return { subclass, score: matchCount };
+  });
+  
+  // Ordenar por puntuación descendente
+  subclassScores.sort((a, b) => b.score - a.score);
+  
+  // Si hay un claro ganador
+  if (subclassScores[0].score > 0 && subclassScores[0].score > subclassScores[1]?.score) {
+    const bestSubclass = subclassScores[0].subclass;
+    return `Se recomienda la subclase ${bestSubclass.name} porque coincide con ${subclassScores[0].score} habilidad${subclassScores[0].score > 1 ? 's' : ''} relevante${subclassScores[0].score > 1 ? 's' : ''} de tu build.`;
+  }
+  
+  // Si hay empate o ninguna coincidencia significativa
+  if (subclassScores[0].score === 0) {
+    return "Ninguna de las subclases muestra una clara ventaja basada en tus habilidades iniciales. Considera construir alrededor de tu especialidad y estilo de juego preferido.";
+  }
+  
+  // Empate en puntuación
+  return "Ambas subclases muestran potencial equivalente basado en tus habilidades. La elección depende de tu estrategia preferida y composición de ejército.";
+};
+
 const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithExtras }> = ({
   hero,
   onClose,
@@ -863,30 +901,64 @@ const SubclassesTab: React.FC<{
             {factionSubclasses.map((subclass, index) => (
               <div key={subclass.id} className="border rounded-xl p-4 mb-4 transition-all hover:shadow-lg">
                 <div className="flex items-start justify-between gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-800/50 rounded-full text-slate-400">
-                    {index + 1}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="mb-2">
-                      <h4 className="font-semibold text-slate-200">{subclass.name}</h4>
-                      <p className="text-xs text-slate-400">{subclass.bonusTitle}</p>
-                    </div>
-                    <div className="mt-3 space-y-2">
-                      <div className="flex items-center gap-2 text-xs font-mono">
-                        <BookOpen className="w-3 h-3" />
-                        <span>Requisitos oficiales: 5 habilidades a nivel Experto</span>
-                      </div>
-                      <ul className="list-disc pl-5 text-sm text-slate-300">
-                        {subclass.requiredSkills.map((skill) => (
-                          <li key={skill.name}>{skill.name} (Experta)</li>
-                        ))}
-                      </ul>
-                      <p className="text-xs text-slate-400">El progreso actual de habilidades no está disponible en esta ficha.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                                <div className="flex-shrink-0 w-18 h-18 flex items-center justify-center bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700">
+                                  {subclass.icon ? (
+                                    <img
+                                      src={resolveHeroDetailAsset(subclass.icon) ?? undefined}
+                                      alt={subclass.name}
+                                      className="w-18 h-18 object-cover"
+                                    />
+                                  ) : (
+                                    <Award className="w-6 h-6 text-slate-400" />
+                                  )}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="mb-2">
+                                    <h4 className="font-semibold text-slate-200">{subclass.name}</h4>
+                                  </div>
+                                  <div className="mt-3 space-y-2">
+                                    <div className="flex items-center gap-2 text-xs font-mono">
+                                      <BookOpen className="w-4 h-4" />
+                                      <span>Requisitos oficiales: 5 habilidades a nivel Experto</span>
+                                    </div>
+                                    <ul className="pl-5 text-sm text-slate-300">
+                                      {subclass.requiredSkills.map((skill) => {
+                                        const isInitial = hero.startingSkills?.some(s => 
+                                          s.skillId === skill.skillId || s.skillName.toLowerCase().includes(skill.name.toLowerCase()) || skill.name.toLowerCase().includes(s.skillName.toLowerCase())
+                                        );
+                                        return (
+                                          <li key={skill.skillId} className={isInitial ? 'text-amber-300 font-semibold' : ''}>
+                                            <span className="inline-flex items-center gap-2">
+                                              {skill.icon ? (
+                                                <img src={resolveHeroDetailAsset(skill.icon) ?? undefined} alt={skill.name} className="w-10 h-10 object-cover rounded" />
+                                              ) : null}
+                                              {skill.name} (Experta)
+                                              {isInitial ? <span className="text-[12px] bg-amber-900/40 text-amber-300 px-1 rounded border border-amber-700/30">Inicial</span> : null}
+                                            </span>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
+                                    <p className="text-sm text-slate-400 leading-relaxed">
+                                                                          <ResolvedText text={subclass.bonusEffect} />
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                
+                                                ))}
+          
+          {/* Recomendación única fuera de los recuadros */}
+          <div className="mt-6 p-4 bg-slate-900/60 rounded-2xl border border-amber-900/30 shadow-lg">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-serif font-bold text-amber-300 text-lg">Recomendación de subclase</h4>
+            </div>
+            <p className="text-sm text-slate-200 leading-relaxed font-medium">
+              {getSubclassRecommendation(hero, factionSubclasses)}
+            </p>
+          </div>
           </div>
         ) : (
           <div className="text-center py-8">

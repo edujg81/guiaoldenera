@@ -326,9 +326,12 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = GUIDE_SUBCLASSES
       classType: CLASS_TYPE_MAP[api.classType],
       bonusTitle: api.description,
       bonusEffect: api.description,
+      icon: api.icon,
       requiredSkills: api.requiredSkills.map((skill) => ({
+        skillId: skill.skillId,
         name: skill.skillName,
         nameEn: skill.skillName,
+        icon: skill.icon,
         tier: 'Experta' as const,
       })),
       recommendedHeroes: guide.recommendedHeroes ?? [],

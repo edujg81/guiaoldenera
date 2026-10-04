@@ -309,8 +309,10 @@ export interface OfficialSkill {
 }
 
 export interface SubclassRequiredSkill {
+  skillId: string;
   name: string;
   nameEn: string;
+  icon?: string;
   tier: 'Experta';
 }
 
@@ -321,6 +323,7 @@ export interface SubclassInfo {
   faction: 'Mazmorra' | 'Templo' | 'Foresta' | 'Necrópolis' | 'Cisma' | 'Colmena';
   baseClass: string;
   classType: 'Poder' | 'Magia';
+  icon?: string;
   bonusTitle: string;
   bonusEffect: string;
   requiredSkills: SubclassRequiredSkill[];
