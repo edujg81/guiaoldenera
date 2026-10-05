@@ -7,8 +7,8 @@ export interface HeroBuildAudit { heroId: string; tier: 'S+'|'S'|'A'|'B'|'C'|'D'
 export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
   "demon_hero_1": {
     "heroId": "demon_hero_1",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tiradora: prioriza Invocar enjambre, Ofensiva, Arte de batalla, Suerte y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -115,12 +115,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_10": {
     "heroId": "demon_hero_10",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Caminante: prioriza Invocar enjambre, Logística, Tácticas, Exploración y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -227,12 +232,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_11": {
     "heroId": "demon_hero_11",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Resistente a los elementos: prioriza Invocar enjambre, Resistencia, Magia de batalla, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -339,12 +349,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_12": {
     "heroId": "demon_hero_12",
     "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Brillo encantador: prioriza Invocar enjambre, Economía, Logística, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -451,12 +466,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_13": {
     "heroId": "demon_hero_13",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Punzante: prioriza Invocar enjambre, Magia de nochesombra, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -563,12 +583,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_14": {
     "heroId": "demon_hero_14",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Hijo de todas las madres: prioriza Invocar enjambre, Sabiduría, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -675,12 +700,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_15": {
     "heroId": "demon_hero_15",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Aleteo: prioriza Invocar enjambre, Magia de luz solar, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -787,12 +817,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_16": {
     "heroId": "demon_hero_16",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Aquí y allí: prioriza Invocar enjambre, Magia de batalla, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -899,12 +934,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_17": {
     "heroId": "demon_hero_17",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tejido primigenio: prioriza Invocar enjambre, Magia primigenia, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1011,12 +1051,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_18": {
     "heroId": "demon_hero_18",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Picaduras de pulgas: prioriza Invocar enjambre, Arte de batalla, Ofensiva, Liderazgo y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1123,12 +1168,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_2": {
     "heroId": "demon_hero_2",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Al asalto: prioriza Invocar enjambre, Suerte, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1235,12 +1285,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_3": {
     "heroId": "demon_hero_3",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Deseo de aprender: prioriza Invocar enjambre, Percepción, Logística, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1347,12 +1402,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_4": {
     "heroId": "demon_hero_4",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Vermificación: prioriza Invocar enjambre, Defensa, Resistencia, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1459,12 +1519,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_5": {
     "heroId": "demon_hero_5",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Golpe intimidante: prioriza Invocar enjambre, Combate, Ofensiva, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1571,12 +1636,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_6": {
     "heroId": "demon_hero_6",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Proliferación: prioriza Invocar enjambre, Invocar avatar, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1683,12 +1753,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_7": {
     "heroId": "demon_hero_7",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Carroñera: prioriza Invocar enjambre, Reclutamiento, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1795,12 +1870,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_8": {
     "heroId": "demon_hero_8",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Presencia inspiradora: prioriza Invocar enjambre, Liderazgo, Ofensiva, Arte de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -1907,12 +1987,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "demon_hero_9": {
     "heroId": "demon_hero_9",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Maestro de ajedrez: prioriza Invocar enjambre, Tácticas, Arte de batalla, Logística y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2019,12 +2104,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_1": {
     "heroId": "dungeon_hero_1",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Amenaza serpenteante: prioriza Fuerza del Triunvirato, Defensa, Resistencia, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2131,12 +2221,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_10": {
     "heroId": "dungeon_hero_10",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Deseo de aprender: prioriza Fuerza del Triunvirato, Percepción, Taumaturgia, Logística y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2243,12 +2338,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_11": {
     "heroId": "dungeon_hero_11",
     "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tejehechizos: prioriza Fuerza del Triunvirato, Hechicería, Magia de batalla, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2355,12 +2455,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_12": {
     "heroId": "dungeon_hero_12",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Máscara del sol: prioriza Fuerza del Triunvirato, Taumaturgia, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2467,12 +2572,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_13": {
     "heroId": "dungeon_hero_13",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "S",
+    "tierReason": "S: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Danza macabra: prioriza Fuerza del Triunvirato, Reclutamiento, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2579,12 +2689,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_14": {
     "heroId": "dungeon_hero_14",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Carisma: prioriza Fuerza del Triunvirato, Diplomacia, Percepción, Liderazgo y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2691,12 +2806,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_15": {
     "heroId": "dungeon_hero_15",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Pudiente: prioriza Fuerza del Triunvirato, Economía, Logística, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2803,12 +2923,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_16": {
     "heroId": "dungeon_hero_16",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Hidra de Alvar: prioriza Fuerza del Triunvirato, Magia de batalla, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -2915,12 +3040,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_17": {
     "heroId": "dungeon_hero_17",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Fuente de conocimiento: prioriza Fuerza del Triunvirato, Magia de luz solar, Magia de batalla, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3027,12 +3157,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_18": {
     "heroId": "dungeon_hero_18",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Maestría de las sombras: prioriza Fuerza del Triunvirato, Magia de nochesombra, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3139,12 +3274,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_2": {
     "heroId": "dungeon_hero_2",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Con un ojo abierto: prioriza Fuerza del Triunvirato, Arte de batalla, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3251,12 +3391,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_3": {
     "heroId": "dungeon_hero_3",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Golpe venenoso: prioriza Fuerza del Triunvirato, Combate, Ofensiva, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3363,12 +3508,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_4": {
     "heroId": "dungeon_hero_4",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en El pueblo ciego: prioriza Fuerza del Triunvirato, Tácticas, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3475,12 +3625,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_5": {
     "heroId": "dungeon_hero_5",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Espía: prioriza Fuerza del Triunvirato, Exploración, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3587,12 +3742,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_6": {
     "heroId": "dungeon_hero_6",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Guarida de Baltasar: prioriza Fuerza del Triunvirato, Liderazgo, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3699,12 +3859,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_7": {
     "heroId": "dungeon_hero_7",
     "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Buscadora de gemas: prioriza Fuerza del Triunvirato, Economía, Logística, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3811,12 +3976,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_8": {
     "heroId": "dungeon_hero_8",
     "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Herradura de cuatro hojas: prioriza Fuerza del Triunvirato, Suerte, Ofensiva, Liderazgo y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -3923,12 +4093,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "dungeon_hero_9": {
     "heroId": "dungeon_hero_9",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Dominio arcano: prioriza Fuerza del Triunvirato, Magia arcana, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4035,12 +4210,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_1": {
     "heroId": "human_hero_1",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Caminante: prioriza Justicia, Logística, Tácticas, Exploración y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4147,12 +4327,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_10": {
     "heroId": "human_hero_10",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Vigor espiritual: prioriza Justicia, Diplomacia, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4259,12 +4444,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_11": {
     "heroId": "human_hero_11",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Deseo de aprender: prioriza Justicia, Percepción, Logística, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4371,12 +4561,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_12": {
     "heroId": "human_hero_12",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tejiendo la luz: prioriza Justicia, Invocar avatar, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4483,12 +4678,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_13": {
     "heroId": "human_hero_13",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Fuente de conocimiento: prioriza Justicia, Magia de luz solar, Magia de batalla, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4595,12 +4795,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_14": {
     "heroId": "human_hero_14",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Sanador compasivo: prioriza Justicia, Defensa, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4707,12 +4912,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_15": {
     "heroId": "human_hero_15",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Bendición: prioriza Justicia, Magia de luz solar, Magia de batalla, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4819,12 +5029,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_16": {
     "heroId": "human_hero_16",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Himno a Arina: prioriza Justicia, Taumaturgia, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -4931,12 +5146,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_17": {
     "heroId": "human_hero_17",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Corazón de corazones: prioriza Justicia, Magia de nochesombra, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5043,12 +5263,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_18": {
     "heroId": "human_hero_18",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Pudiente: prioriza Justicia, Economía, Logística, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5155,12 +5380,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_2": {
     "heroId": "human_hero_2",
     "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Explorador: prioriza Justicia, Exploración, Logística, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5267,12 +5497,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_3": {
     "heroId": "human_hero_3",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Sal de la tierra: prioriza Justicia, Defensa, Resistencia, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5379,12 +5614,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_4": {
     "heroId": "human_hero_4",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Jaeger: prioriza Justicia, Suerte, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5491,12 +5731,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_5": {
     "heroId": "human_hero_5",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Presencia inspiradora: prioriza Justicia, Liderazgo, Ofensiva, Arte de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5603,12 +5848,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_6": {
     "heroId": "human_hero_6",
     "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Buscador de gemas: prioriza Justicia, Reclutamiento, Logística, Economía y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5715,12 +5965,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_7": {
     "heroId": "human_hero_7",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Experta en justas: prioriza Justicia, Ofensiva, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5827,12 +6082,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_8": {
     "heroId": "human_hero_8",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Lord auténtico: prioriza Justicia, Arte de batalla, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -5939,12 +6199,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "human_hero_9": {
     "heroId": "human_hero_9",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Aniquilación heroica: prioriza Justicia, Combate, Ofensiva, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6051,12 +6316,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_1": {
     "heroId": "nature_hero_1",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Explorador: prioriza Murmullo, Exploración, Logística, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6163,12 +6433,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_10": {
     "heroId": "nature_hero_10",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Vigor espiritual: prioriza Murmullo, Sabiduría, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6275,12 +6550,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_11": {
     "heroId": "nature_hero_11",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en El árbol más antiguo: prioriza Murmullo, Taumaturgia, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6387,12 +6667,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_12": {
     "heroId": "nature_hero_12",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Ascuas templadas: prioriza Murmullo, Magia primigenia, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6499,12 +6784,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_13": {
     "heroId": "nature_hero_13",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Descarga de hielo: prioriza Murmullo, Magia primigenia, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6611,12 +6901,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_14": {
     "heroId": "nature_hero_14",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Peñazo: prioriza Murmullo, Magia primigenia, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6723,12 +7018,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_15": {
     "heroId": "nature_hero_15",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Truenos y relámpagos: prioriza Murmullo, Magia primigenia, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6835,12 +7135,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_16": {
     "heroId": "nature_hero_16",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Copia murmurante: prioriza Murmullo, Magia arcana, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -6947,12 +7252,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_17": {
     "heroId": "nature_hero_17",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Nativa del Bosque Murmullo: prioriza Murmullo, Invocar avatar, Magia de batalla, Hechicería y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7059,12 +7369,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_18": {
     "heroId": "nature_hero_18",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Músico errante: prioriza Murmullo, Hechicería, Taumaturgia, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7171,12 +7486,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_2": {
     "heroId": "nature_hero_2",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tirador: prioriza Murmullo, Ofensiva, Arte de batalla, Suerte y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7283,12 +7603,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_3": {
     "heroId": "nature_hero_3",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Canto del fauno: prioriza Murmullo, Liderazgo, Arte de batalla, Ofensiva y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7395,12 +7720,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_4": {
     "heroId": "nature_hero_4",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Selección natural: prioriza Murmullo, Magia de batalla, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7507,12 +7837,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_5": {
     "heroId": "nature_hero_5",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Herradura de cuatro hojas: prioriza Murmullo, Suerte, Ofensiva, Liderazgo y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7619,12 +7954,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_6": {
     "heroId": "nature_hero_6",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "D",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Brillo encantador: prioriza Murmullo, Combate, Logística, Economía y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7731,12 +8071,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_7": {
     "heroId": "nature_hero_7",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Huella de Hksmilla: prioriza Murmullo, Ofensiva, Combate, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7843,12 +8188,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_8": {
     "heroId": "nature_hero_8",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Carisma: prioriza Murmullo, Diplomacia, Liderazgo, Percepción y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -7955,12 +8305,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "nature_hero_9": {
     "heroId": "nature_hero_9",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Deseo de aprender: prioriza Murmullo, Percepción, Logística, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8067,12 +8422,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_1": {
     "heroId": "necro_hero_1",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en De otra pasta: prioriza Nigromancia, Defensa, Ofensiva, Arte de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8179,12 +8539,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_10": {
     "heroId": "necro_hero_10",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Dominio arcano: prioriza Nigromancia, Magia arcana, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8291,12 +8656,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_11": {
     "heroId": "necro_hero_11",
     "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Amnésico: prioriza Nigromancia, Arte de batalla, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8403,12 +8773,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_12": {
     "heroId": "necro_hero_12",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Voluntad sepulcral: prioriza Nigromancia, Sabiduría, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8515,12 +8890,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_13": {
     "heroId": "necro_hero_13",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Gremio de huesos: prioriza Nigromancia, Suerte, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8627,12 +9007,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_14": {
     "heroId": "necro_hero_14",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Maestría de las sombras: prioriza Nigromancia, Magia de nochesombra, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8739,12 +9124,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_15": {
     "heroId": "necro_hero_15",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Marchitamiento: prioriza Nigromancia, Hechicería, Taumaturgia, Magia de nochesombra y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8851,12 +9241,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_16": {
     "heroId": "necro_hero_16",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Nostalgia melancólica: prioriza Nigromancia, Taumaturgia, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -8963,12 +9358,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_17": {
     "heroId": "necro_hero_17",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Legión de no muertos: prioriza Nigromancia, Invocar avatar, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9075,12 +9475,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_18": {
     "heroId": "necro_hero_18",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Pudiente: prioriza Nigromancia, Magia de batalla, Logística, Economía y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9187,12 +9592,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_2": {
     "heroId": "necro_hero_2",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Carisma: prioriza Nigromancia, Diplomacia, Liderazgo, Percepción y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9299,12 +9709,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_3": {
     "heroId": "necro_hero_3",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Títeres perfectos: prioriza Nigromancia, Ofensiva, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9411,12 +9826,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_4": {
     "heroId": "necro_hero_4",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Guerra terrorífica: prioriza Nigromancia, Tácticas, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9523,12 +9943,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_5": {
     "heroId": "necro_hero_5",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Parte de una manada: prioriza Nigromancia, Exploración, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9635,12 +10060,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_6": {
     "heroId": "necro_hero_6",
-    "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Vuélvelos locos: prioriza Nigromancia, Resistencia, Ofensiva, Arte de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9747,12 +10177,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_7": {
     "heroId": "necro_hero_7",
     "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Suelo lánguido: prioriza Nigromancia, Logística, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9859,12 +10294,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_8": {
     "heroId": "necro_hero_8",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "D",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Legión de no muertos: prioriza Nigromancia, Invocar avatar, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -9971,12 +10411,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "necro_hero_9": {
     "heroId": "necro_hero_9",
     "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Alquimista: prioriza Nigromancia, Reclutamiento, Logística, Economía y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10083,12 +10528,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_1": {
     "heroId": "unfrozen_hero_1",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Caminante: prioriza Comunión abisal, Logística, Exploración, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10195,12 +10645,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_10": {
     "heroId": "unfrozen_hero_10",
     "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Combatiente: prioriza Comunión abisal, Ofensiva, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10307,12 +10762,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_11": {
     "heroId": "unfrozen_hero_11",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Corazón de hielo: prioriza Comunión abisal, Defensa, Resistencia, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10419,12 +10879,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_12": {
     "heroId": "unfrozen_hero_12",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Invocación inferior: prioriza Comunión abisal, Reclutamiento, Magia de batalla, Resistencia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10531,12 +10996,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_13": {
     "heroId": "unfrozen_hero_13",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Enviado de la Grieta: prioriza Comunión abisal, Liderazgo, Resistencia, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10643,12 +11113,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_14": {
     "heroId": "unfrozen_hero_14",
     "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Dilatación estelar: prioriza Comunión abisal, Logística, Tácticas, Ofensiva y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10755,12 +11230,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_15": {
     "heroId": "unfrozen_hero_15",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Explorador: prioriza Comunión abisal, Exploración, Logística, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10867,12 +11347,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_16": {
     "heroId": "unfrozen_hero_16",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Fortaleza mágica: prioriza Comunión abisal, Magia arcana, Magia de batalla, Hechicería y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -10979,12 +11464,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_17": {
     "heroId": "unfrozen_hero_17",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "A",
+    "tierReason": "A: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Máscara de la luna: prioriza Comunión abisal, Magia de nochesombra, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11091,12 +11581,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_18": {
     "heroId": "unfrozen_hero_18",
-    "tier": "A",
-    "tierReason": "Tier editorial A: opción fuerte y consistente, aunque con más condicionantes o menor impacto global que los héroes S+.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de magia que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Verdadera creyente: prioriza Comunión abisal, Hechicería, Taumaturgia, Logística y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11203,12 +11698,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_2": {
     "heroId": "unfrozen_hero_2",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tejedor de hechizos: prioriza Comunión abisal, Hechicería, Magia de batalla, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11315,12 +11815,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_3": {
     "heroId": "unfrozen_hero_3",
     "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Maestra de ajedrez: prioriza Comunión abisal, Tácticas, Arte de batalla, Logística y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11427,12 +11932,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_4": {
     "heroId": "unfrozen_hero_4",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Canalla: prioriza Comunión abisal, Arte de batalla, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11539,12 +12049,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_5": {
     "heroId": "unfrozen_hero_5",
-    "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tier": "C",
+    "tierReason": "C: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Hermanos a sangre fría: prioriza Comunión abisal, Resistencia, Defensa, Reclutamiento y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11651,12 +12166,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_6": {
     "heroId": "unfrozen_hero_6",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "B",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Atadura de cadenas: prioriza Comunión abisal, Sabiduría, Resistencia, Defensa y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11763,12 +12283,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_7": {
     "heroId": "unfrozen_hero_7",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
+    "tier": "S+",
+    "tierReason": "S+: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Tejido primigenio: prioriza Comunión abisal, Magia primigenia, Hechicería, Taumaturgia y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11875,12 +12400,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_8": {
     "heroId": "unfrozen_hero_8",
     "tier": "B",
-    "tierReason": "Tier editorial B: héroe jugable y útil, pero más dependiente de la situación, del mapa o de una ejecución concreta que las opciones superiores.",
+    "tierReason": "B: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Esencia siempre cambiante: prioriza Comunión abisal, Invocar avatar, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -11987,12 +12517,17 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   },
   "unfrozen_hero_9": {
     "heroId": "unfrozen_hero_9",
     "tier": "D",
-    "tierReason": "Tier editorial D: actualmente difícil de recomendar como elección por defecto; necesita condiciones muy concretas para competir con las alternativas de la facción.",
+    "tierReason": "D: combina la especialización canónica, las habilidades iniciales y una ruta de combate físico que no depende de conseguir una subclase. La dificultad real de las tiradas se tiene en cuenta mediante las probabilidades de aparición; las habilidades de baja probabilidad no son condiciones de la build.",
     "buildReason": "Build editorial centrada en Alquimista: prioriza Comunión abisal, Magia arcana, Logística, Economía y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
     "recommendedSkills": [
       {
@@ -12099,7 +12634,12 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": [
+      "https://www.olden-era.com/en/heroes",
+      "https://www.olden-era.com/en/classes",
+      "https://heavenlyforge.gg/es/olden-era/skills",
+      "https://heroes-olden-era.com/es/"
+    ]
   }
 };
 

@@ -31,11 +31,10 @@ import { HeroImage } from '../../ui/HeroImage';
 import { OFFICIAL_SKILLS_DATA } from '../../../data/officialSkillsData';
 import { OFFICIAL_SUBCLASSES } from '../../../data/subclassesData';
 import { HERO_SUBSKILL_CHOICES } from '../../../data/subskillsRecommendationData';
+import { HERO_BUILD_AUDIT } from '../../../data/heroBuildAuditData';
 import { useStickyState } from '../../../utils/useStickyState';
 import { HeroBuildSimulator } from '../../HeroBuildSimulator';
 import type { FactionId } from '../../../data/factionDataProvider';
-import { getHeroBuildAudit } from '../../../data/heroBuildAuditData';
-import type { HeroBuildAudit } from '../../../data/heroBuildAuditData';
 
 const heroDetailAssetUrls = import.meta.glob(
   '/src/assets/**/*.{png,jpg,jpeg,webp,svg}',
@@ -114,8 +113,28 @@ const resolveSubskillChoice = (
   return choices[0] ?? null;
 };
 
-const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] =>
-  HERO_SUBSKILL_CHOICES[hero.id] ?? [];
+const getSubskillChoicesForHero = (hero: HeroWithExtras): HeroSubskillChoice[] => {
+  const audit = HERO_BUILD_AUDIT[hero.id];
+  if (audit) {
+    return audit.recommendedSkills.map((rec) => {
+      const skill = OFFICIAL_SKILLS_DATA.find((s) => s.id === rec.skillId);
+      const advanced = skill?.level2.subSkillChoices.find((x) => x.id === rec.advancedSubskillId);
+      const expert = skill?.level3.subSkillChoices.find((x) => x.id === rec.expertSubskillId);
+      return {
+        skillId: rec.skillId,
+        skillName: skill?.name ?? rec.skillId,
+        starting: rec.starting,
+        appearanceChance: rec.appearanceChance,
+        skillReason: rec.why,
+        advancedSubskill: advanced?.name ?? rec.advancedSubskillId ?? '',
+        advancedReason: rec.advancedWhy,
+        expertSubskill: expert?.name ?? rec.expertSubskillId ?? '',
+        expertReason: rec.expertWhy,
+      };
+    });
+  }
+  return HERO_SUBSKILL_CHOICES[hero.id] ?? [];
+};
 
 export const HeroDetailModal: React.FC<HeroDetailModalProps> = (props) =>
   props.hero ? <HeroDetailModalContent {...props} hero={props.hero} /> : null;
@@ -166,6 +185,7 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
   themeAccentClass = 'text-amber-400',
 }) => {
   const isMage = hero.classType === 'magic';
+  const buildAudit = HERO_BUILD_AUDIT[hero.id];
   const [activeTab, setActiveTab] = useStickyState<'overview' | 'skills' | 'tactics' | 'subclasses' | 'simulator'>('overview', `hero_detail_tab_${hero.id}`);
   const [inspectedSkill, setInspectedSkill] = useState<ApiSkill | null>(null);
   const [showSubskillsDetails, setShowSubskillsDetails] = useStickyState<boolean>(true, 'hero_show_subskills_details');
@@ -182,8 +202,6 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
   const skillRecommendations = useMemo(() => {
     return getSubskillChoicesForHero(hero);
   }, [hero.id]);
-
-  const heroBuildAudit = useMemo(() => getHeroBuildAudit(hero.id), [hero.id]);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
@@ -219,7 +237,7 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
           <div className="flex flex-col min-w-0">
             <div className="flex items-center gap-2 mb-1">
               <h2 className="text-2xl font-serif font-bold text-yellow-200">{hero.name}</h2>
-              <TierBadge tier={hero.tierRank} size="sm" className="max-w-full whitespace-normal text-center" />
+              <TierBadge tier={buildAudit?.tier ?? hero.tierRank} size="sm" className="max-w-full whitespace-normal text-center" />
             </div>
 
             <p className="mt-1 text-[16px] leading-snug break-words text-slate-400 font-cursive italic">
@@ -364,13 +382,13 @@ const HeroDetailModalContent: React.FC<HeroDetailModalProps & { hero: HeroWithEx
           <OverviewTab hero={hero} onCompare={onCompare} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'skills' && (
-          <SkillsTab hero={hero} skillRecommendations={skillRecommendations} buildAudit={heroBuildAudit} inspectedSkill={inspectedSkill} setInspectedSkill={setInspectedSkill} showSubskillsDetails={showSubskillsDetails} setShowSubskillsDetails={setShowSubskillsDetails} themeMode={themeMode} themeAccentClass={themeAccentClass} />
+          <SkillsTab hero={hero} skillRecommendations={skillRecommendations} buildAudit={buildAudit} inspectedSkill={inspectedSkill} setInspectedSkill={setInspectedSkill} showSubskillsDetails={showSubskillsDetails} setShowSubskillsDetails={setShowSubskillsDetails} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'tactics' && (
           <TacticsTab hero={hero} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'subclasses' && (
-          <SubclassesTab hero={hero} factionSubclasses={factionSubclasses} buildAudit={heroBuildAudit} themeMode={themeMode} themeAccentClass={themeAccentClass} />
+          <SubclassesTab hero={hero} factionSubclasses={factionSubclasses} themeMode={themeMode} themeAccentClass={themeAccentClass} />
         )}
         {activeTab === 'simulator' && (
           <div className="space-y-6">
@@ -543,101 +561,175 @@ const OverviewTab: React.FC<{
 const SkillsTab: React.FC<{
   hero: HeroWithExtras;
   skillRecommendations: HeroSubskillChoice[];
-  buildAudit: HeroBuildAudit | null;
+  buildAudit?: typeof HERO_BUILD_AUDIT[string];
   inspectedSkill: ApiSkill | null;
   setInspectedSkill: (skill: ApiSkill | null) => void;
   showSubskillsDetails: boolean;
   setShowSubskillsDetails: (show: boolean) => void;
   themeMode?: 'dark' | 'light';
   themeAccentClass?: string;
-}> = ({ hero, skillRecommendations, buildAudit, inspectedSkill, setInspectedSkill, showSubskillsDetails, setShowSubskillsDetails }) => {
-  const auditSkills = buildAudit?.recommendedSkills ?? [];
-  const skills = auditSkills.length > 0 ? auditSkills : skillRecommendations.map((rec) => {
-    const official = findOfficialSkill(rec.skillName);
-    return {
-      skillId: official?.id ?? rec.skillName,
-      starting: hero.startingSkills?.some(s => s.skillId === official?.id) ?? false,
-      appearanceChance: null,
-      why: '',
-      advancedSubskillId: null,
-      advancedWhy: '',
-      expertSubskillId: null,
-      expertWhy: '',
-    };
-  });
-
+}> = ({ hero, skillRecommendations, buildAudit, inspectedSkill, setInspectedSkill, showSubskillsDetails, setShowSubskillsDetails, themeMode, themeAccentClass }) => {
   return (
     <div className="space-y-6">
+      {/* Skill Recommendations */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 mb-3">
           <Sparkles className="w-4 h-4" />
-          <h3 className="text-lg font-semibold font-serif">Build recomendada de habilidades para {hero.name}</h3>
+          <h3 className="text-lg font-semibold font-serif">Recomendaciones de habilidades para {hero.name}</h3>
         </div>
-
-        {buildAudit && (
-          <div className="p-4 rounded-xl border border-amber-900/40 bg-amber-950/20">
-            <div className="flex items-center gap-2 mb-2">
-              <Target className="w-4 h-4 text-amber-400" />
-              <span className="font-semibold text-amber-300">Criterio de la build</span>
+        {buildAudit ? (
+          <div className="rounded-xl border border-amber-700/40 bg-amber-950/20 p-4 space-y-2">
+            <div className="flex items-center justify-between gap-3">
+              <span className="font-semibold text-amber-300">Build editorial · Tier {buildAudit.tier}</span>
+              <span className="text-[11px] font-mono text-slate-400">La subclase es opcional</span>
             </div>
-            <p className="text-sm leading-relaxed text-slate-300">{buildAudit.buildReason}</p>
+            <p className="text-xs leading-relaxed text-slate-300">{buildAudit.tierReason}</p>
+            <p className="text-xs leading-relaxed text-slate-300">{buildAudit.buildReason}</p>
+            <p className="text-xs leading-relaxed text-slate-400"><strong className="text-slate-300">Subclase recomendada:</strong> {buildAudit.recommendedSubclass.name}. {buildAudit.recommendedSubclass.reason}</p>
+            <div className="rounded-lg border border-slate-800 bg-slate-950/50 p-3">
+              <div className="text-[11px] font-mono uppercase tracking-wide text-slate-400 mb-2">Habilidades necesarias para la subclase</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {buildAudit.recommendedSubclass.requiredSkills.map((req) => {
+                  const skill = OFFICIAL_SKILLS_DATA.find((s) => s.id === req.skillId);
+                  return (
+                    <div key={req.skillId} className="flex items-center justify-between gap-2 rounded border border-slate-800 px-2 py-1.5 text-xs">
+                      <span className={req.starting ? 'text-amber-300 font-semibold' : 'text-slate-300'}>{skill?.name ?? req.skillId}{req.starting ? ' · Inicial' : ''}</span>
+                      <span className="font-mono text-slate-500">{req.starting ? '—' : `${req.appearanceChance ?? 0}%`}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
-        )}
-
-        {skills.length === 0 ? (
-          <p className="text-sm text-slate-400">No hay recomendaciones editoriales revisadas para este héroe.</p>
-        ) : skills.map((rec, index) => {
-          const officialSkill = OFFICIAL_SKILLS_DATA.find((s) => s.id === rec.skillId) ?? findOfficialSkill(rec.skillId);
-          if (!officialSkill) return null;
-          const advancedSelected = rec.advancedSubskillId
-            ? officialSkill.level2.subSkillChoices.find(s => s.id === rec.advancedSubskillId)
-            : null;
-          const expertSelected = rec.expertSubskillId
-            ? officialSkill.level3.subSkillChoices.find(s => s.id === rec.expertSubskillId)
-            : null;
+        ) : null}
+        
+        {skillRecommendations.length === 0 ? (
+          <p className="text-sm text-slate-400">No hay recomendaciones de subhabilidades revisadas para este héroe.</p>
+        ) : skillRecommendations.map((rec, index) => {
+          const officialSkill = findOfficialSkill(rec.skillName);
+          const officialSkillIcon = officialSkill ? resolveHeroDetailAsset(officialSkill.icon) : null;
+          const advancedSelected = resolveSubskillChoice(rec.skillName, 'advanced', rec.advancedSubskill);
+          const expertSelected = resolveSubskillChoice(rec.skillName, 'expert', rec.expertSubskill);
 
           return (
-            <div key={rec.skillId} className="border rounded-xl p-4 mb-4 transition-all hover:shadow-lg">
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-800/50 rounded-full text-slate-400">{index + 1}</div>
+            <div key={index} className="border rounded-xl p-4 mb-4 transition-all hover:shadow-lg">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-800/50 rounded-full text-slate-400">
+                  {index + 1}
+                </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex items-center gap-3">
-                      {officialSkill.icon ? <img src={resolveHeroDetailAsset(officialSkill.icon) ?? undefined} alt={officialSkill.name} className="h-10 w-10 rounded-md object-cover" /> : null}
-                      <div>
-                        <h4 className="font-semibold text-slate-100">{officialSkill.name}</h4>
-                        <span className="text-[11px] font-mono text-slate-400">{rec.starting ? 'Habilidad inicial' : 'Habilidad recomendada'}</span>
+                  <div className="mb-3 flex items-start gap-3">
+                    {officialSkillIcon ? (
+                      <img
+                        src={officialSkillIcon}
+                        alt={officialSkill?.name ?? rec.skillName}
+                        className="h-10 w-10 shrink-0 rounded-md object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-800 text-slate-400">
+                        <Sparkles className="h-5 w-5" />
+                      </div>
+                    )}
+                    <div className="min-w-0">
+                      <h4 className="font-semibold text-slate-200">{officialSkill?.name ?? rec.skillName}</h4>
+                      {officialSkill?.level1.description ? (
+                        <p className="mt-1 text-xs leading-relaxed text-slate-300">
+                          <ResolvedText text={officialSkill.level1.description} />
+                        </p>
+                      ) : null}
+                      {rec.skillReason ? <p className="mt-2 text-xs leading-relaxed text-emerald-200/90"><strong>Por qué:</strong> {rec.skillReason}</p> : null}
+                      <div className="mt-2 flex flex-wrap gap-2 text-[10px] font-mono">
+                        <span className="rounded border border-slate-700 bg-slate-900 px-2 py-1 text-slate-400">{rec.starting ? 'Inicial' : `Aparición: ${rec.appearanceChance ?? 0}%`}</span>
                       </div>
                     </div>
-                    <div className="text-right">
-                      {rec.starting ? (
-                        <span className="inline-flex px-2 py-1 rounded-md border border-amber-700/40 bg-amber-950/30 text-xs font-mono text-amber-300">Inicial</span>
-                      ) : rec.appearanceChance != null ? (
-                        <span className="inline-flex px-2 py-1 rounded-md border border-sky-700/40 bg-sky-950/30 text-xs font-mono text-sky-300">Aparición: {rec.appearanceChance}%</span>
-                      ) : null}
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-blue-600/40 bg-blue-950/40">
+                          {advancedSelected?.icon ? (
+                            <img
+                              src={resolveHeroDetailAsset(advancedSelected.icon) ?? undefined}
+                              alt={advancedSelected.name}
+                              className="h-8 w-8 object-cover"
+                            />
+                          ) : (
+                            <Zap className="h-4 w-4 text-blue-400" />
+                          )}
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2">
+                            <Zap className="w-4 h-4 text-blue-400" />
+                            <span className="font-mono text-xs uppercase tracking-wide text-slate-400">Avanzada</span>
+                          </div>
+                          <div className="mt-1 font-semibold text-slate-100">
+                            {advancedSelected?.name ?? rec.advancedSubskill}
+                          </div>
+                          {rec.advancedReason ? <p className="mt-1 text-xs leading-relaxed text-emerald-200/80"><strong>Motivo:</strong> {rec.advancedReason}</p> : null}
+                          {officialSkill?.level2.description ? (
+                            <p className="mt-1 text-[11px] leading-relaxed text-sky-200/90">
+                              <ResolvedText text={officialSkill.level2.description} />
+                            </p>
+                          ) : null}
+                          {advancedSelected?.description ? (
+                            <p className="mt-1 text-xs leading-relaxed text-slate-300">
+                              <ResolvedText text={advancedSelected.description} />
+                            </p>
+                          ) : null}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-amber-600/40 bg-amber-950/40">
+                          {expertSelected?.icon ? (
+                            <img
+                              src={resolveHeroDetailAsset(expertSelected.icon) ?? undefined}
+                              alt={expertSelected.name}
+                              className="h-8 w-8 object-cover"
+                            />
+                          ) : (
+                            <Award className="h-4 w-4 text-amber-400" />
+                          )}
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2">
+                            <Award className="w-4 h-4 text-amber-400" />
+                            <span className="font-mono text-xs uppercase tracking-wide text-slate-400">Experta</span>
+                          </div>
+                          <div className="mt-1 font-semibold text-slate-100">
+                            {expertSelected?.name ?? rec.expertSubskill}
+                          </div>
+                          {rec.expertReason ? <p className="mt-1 text-xs leading-relaxed text-emerald-200/80"><strong>Motivo:</strong> {rec.expertReason}</p> : null}
+                          {officialSkill?.level3.description ? (
+                            <p className="mt-1 text-[11px] leading-relaxed text-amber-200/90">
+                              <ResolvedText text={officialSkill.level3.description} />
+                            </p>
+                          ) : null}
+                          {expertSelected?.description ? (
+                            <p className="mt-1 text-xs leading-relaxed text-slate-300">
+                              <ResolvedText text={expertSelected.description} />
+                            </p>
+                          ) : null}
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {officialSkill.level1.description ? <p className="mt-2 text-xs leading-relaxed text-slate-300"><ResolvedText text={officialSkill.level1.description} /></p> : null}
-                  {rec.why ? <p className="mt-3 text-sm leading-relaxed text-slate-300"><span className="font-semibold text-amber-300">Por qué:</span> {rec.why}</p> : null}
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                    <div className="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
-                      <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wide text-sky-300"><Zap className="w-4 h-4" /> Avanzada</div>
-                      <div className="mt-1 font-semibold text-slate-100">{advancedSelected?.name ?? 'Sin subhabilidad recomendada'}</div>
-                      {advancedSelected?.description ? <p className="mt-1 text-xs leading-relaxed text-slate-300"><ResolvedText text={advancedSelected.description} /></p> : null}
-                      {rec.advancedWhy ? <p className="mt-2 text-xs leading-relaxed text-slate-400"><span className="font-semibold text-sky-300">Motivo:</span> {rec.advancedWhy}</p> : null}
-                    </div>
-                    <div className="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
-                      <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wide text-amber-300"><Award className="w-4 h-4" /> Experta</div>
-                      <div className="mt-1 font-semibold text-slate-100">{expertSelected?.name ?? 'Sin subhabilidad recomendada'}</div>
-                      {expertSelected?.description ? <p className="mt-1 text-xs leading-relaxed text-slate-300"><ResolvedText text={expertSelected.description} /></p> : null}
-                      {rec.expertWhy ? <p className="mt-2 text-xs leading-relaxed text-slate-400"><span className="font-semibold text-amber-300">Motivo:</span> {rec.expertWhy}</p> : null}
-                    </div>
-                  </div>
-
-                  <button onClick={() => setInspectedSkill(officialSkill)} className="mt-3 inline-flex items-center gap-2 rounded px-3 py-1.5 text-xs font-mono bg-slate-800/50 text-slate-200 hover:bg-slate-700/60">
-                    Ver detalle oficial de la habilidad
+                  <button
+                    onClick={() => {
+                      const skill = findOfficialSkill(rec.skillName);
+                      if (skill) setInspectedSkill(skill);
+                    }}
+                    className={`mt-3 inline-flex items-center gap-2 rounded px-3 py-1.5 text-xs font-mono transition-all ${
+                      showSubskillsDetails
+                        ? 'bg-slate-800/50 text-slate-200'
+                        : 'hover:bg-slate-700/50 text-slate-400'
+                    }`}
+                  >
+                    {showSubskillsDetails ? 'Ver detalle oficial' : 'Ver detalle oficial'}
                   </button>
                 </div>
               </div>
@@ -646,18 +738,136 @@ const SkillsTab: React.FC<{
         })}
       </div>
 
+      {/* Subskill Details Modal */}
       {inspectedSkill && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
           <div className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-2xl border p-6 shadow-2xl bg-slate-950 text-slate-100">
-            <button onClick={() => setInspectedSkill(null)} className="absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800"><X className="w-5 h-5" /></button>
+            <button
+              onClick={() => setInspectedSkill(null)}
+              className="absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            
             <div className="space-y-4">
-              <div className="flex items-center gap-2"><BookOpen className="w-5 h-5" /><h2 className="text-xl font-serif font-bold">{inspectedSkill.name}</h2></div>
-              {(['level1','level2','level3'] as const).map((level, i) => {
-                const data = inspectedSkill[level];
-                const label = i === 0 ? 'Básica' : i === 1 ? 'Avanzada' : 'Experta';
-                return <div key={level} className="border rounded-xl p-4"><div className="flex items-center gap-2 mb-2"><span className="font-semibold text-slate-200">{label}</span></div><p className="text-slate-300">{data.levelName}</p>{data.description ? <p className="mt-2 text-xs leading-relaxed text-slate-300"><ResolvedText text={data.description} /></p> : null}{showSubskillsDetails && data.subSkillChoices.length > 0 ? <div className="mt-3 space-y-2">{data.subSkillChoices.map(sub => <div key={sub.id} className="rounded-lg border border-slate-800 bg-slate-900/60 p-2"><div className="font-semibold text-sm">{sub.name}</div><p className="text-xs text-slate-300 mt-1"><ResolvedText text={sub.description} /></p></div>)}</div> : null}</div>;
-              })}
-              <div className="flex justify-end gap-2"><button onClick={() => setShowSubskillsDetails(!showSubskillsDetails)} className="px-3 py-1 rounded text-xs bg-slate-800">{showSubskillsDetails ? 'Ocultar subhabilidades' : 'Mostrar subhabilidades'}</button><button onClick={() => setInspectedSkill(null)} className="px-3 py-1 rounded text-xs bg-slate-800">Cerrar</button></div>
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="w-5 h-5" />
+                <h2 className="text-xl font-serif font-bold">{inspectedSkill.name}</h2>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="border rounded-xl p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Zap className="w-4 h-4 text-blue-400" />
+                    <span className="font-semibold text-slate-200">Básica</span>
+                  </div>
+                  <p className="text-slate-300">{inspectedSkill.level1.levelName}</p>
+                  {inspectedSkill.level1.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level1.description} />
+                    </p>
+                  ) : null}
+                </div>
+                
+                <div className="border rounded-xl p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Sparkles className="w-4 h-4 text-amber-400" />
+                    <span className="font-semibold text-slate-200">Avanzada</span>
+                  </div>
+                  <p className="text-slate-300">{inspectedSkill.level2.levelName}</p>
+                  {inspectedSkill.level2.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level2.description} />
+                    </p>
+                  ) : null}
+                  {showSubskillsDetails && inspectedSkill.level2.subSkillChoices.length > 0 && (
+                    <div className="mt-3 space-y-3">
+                      <div className="flex items-center gap-2 mb-1 text-xs font-mono">
+                        <Sparkles className="w-3 h-3" />
+                        <span>Subhabilidades Avanzadas:</span>
+                      </div>
+                      {inspectedSkill.level2.subSkillChoices.map((sub, idx) => (
+                        <div key={idx} className="flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-900/60 p-2.5">
+                          <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md border border-slate-700 bg-slate-950">
+                            {sub.icon ? (
+                              <img
+                                src={resolveHeroDetailAsset(sub.icon) ?? undefined}
+                                alt={sub.name}
+                                className="h-7 w-7 object-cover"
+                              />
+                            ) : (
+                              <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+                            )}
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <div className="text-sm font-semibold text-slate-100">{sub.name}</div>
+                            <p className="mt-1 text-xs leading-relaxed text-slate-300">
+                              <ResolvedText text={sub.description} />
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                
+                <div className="border rounded-xl p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Award className="w-4 h-4 text-yellow-400" />
+                    <span className="font-semibold text-slate-200">Experta</span>
+                  </div>
+                  <p className="text-slate-300">{inspectedSkill.level3.levelName}</p>
+                  {inspectedSkill.level3.description ? (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                      <ResolvedText text={inspectedSkill.level3.description} />
+                    </p>
+                  ) : null}
+                  {showSubskillsDetails && inspectedSkill.level3.subSkillChoices.length > 0 && (
+                    <div className="mt-3 space-y-3">
+                      <div className="flex items-center gap-2 mb-1 text-xs font-mono">
+                        <Award className="w-3 h-3 text-yellow-400" />
+                        <span>Subhabilidades Expertas:</span>
+                      </div>
+                      {inspectedSkill.level3.subSkillChoices.map((sub, idx) => (
+                        <div key={idx} className="flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-900/60 p-2.5">
+                          <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md border border-slate-700 bg-slate-950">
+                            {sub.icon ? (
+                              <img
+                                src={resolveHeroDetailAsset(sub.icon) ?? undefined}
+                                alt={sub.name}
+                                className="h-7 w-7 object-cover"
+                              />
+                            ) : (
+                              <Award className="w-3 h-3 text-yellow-400" />
+                            )}
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <div className="text-sm font-semibold text-slate-100">{sub.name}</div>
+                            <p className="mt-1 text-xs leading-relaxed text-slate-300">
+                              <ResolvedText text={sub.description} />
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-4 pt-3 border-t border-slate-800 flex justify-end">
+              <button
+                onClick={() => setShowSubskillsDetails(!showSubskillsDetails)}
+                className="px-3 py-1 rounded text-xs font-mono transition-all hover:bg-slate-700/50"
+              >
+                {showSubskillsDetails ? 'Ocultar Subhabilidades' : 'Mostrar Subhabilidades'}
+              </button>
+              <button
+                onClick={() => setInspectedSkill(null)}
+                className="ml-3 px-3 py-1 rounded text-xs font-mono bg-slate-800 hover:bg-slate-700 text-slate-200"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
@@ -729,37 +939,87 @@ const TacticsTab: React.FC<{
 const SubclassesTab: React.FC<{
   hero: HeroWithExtras;
   factionSubclasses: SubclassInfo[];
-  buildAudit: HeroBuildAudit | null;
   themeMode?: 'dark' | 'light';
   themeAccentClass?: string;
-}> = ({ hero, factionSubclasses, buildAudit }) => {
-  const recommended = buildAudit?.recommendedSubclass ?? null;
-  const initialIds = new Set(hero.startingSkills?.map(s => s.skillId) ?? []);
-
+}> = ({ hero, factionSubclasses, themeMode, themeAccentClass }) => {
   return (
     <div className="space-y-6">
-      <div className="flex items-center gap-2 mb-3"><Award className="w-4 h-4" /><h3 className="text-lg font-semibold font-serif">Subclases y requisitos para {hero.name}</h3></div>
-
-      {recommended && (
-        <div className="p-4 rounded-2xl border border-amber-700/40 bg-amber-950/20 shadow-lg">
-          <div className="flex items-center justify-between gap-3 mb-2">
-            <div className="flex items-center gap-2"><Target className="w-5 h-5 text-amber-400" /><h4 className="font-serif font-bold text-amber-300 text-lg">Subclase recomendada: {recommended.name}</h4></div>
-            <span className={`px-2 py-1 rounded-md text-xs font-mono ${recommended.pursue ? 'bg-emerald-950/50 text-emerald-300 border border-emerald-700/40' : 'bg-slate-800 text-slate-300 border border-slate-700'}`}>{recommended.pursue ? 'Objetivo recomendado' : 'No priorizar'}</span>
-          </div>
-          <p className="text-sm text-slate-300 leading-relaxed">{recommended.reason}</p>
-          <div className="mt-4"><div className="text-xs font-mono text-slate-400 mb-2">Requisitos: 5 habilidades a nivel Experto</div><div className="flex flex-wrap gap-2">{recommended.requiredSkills.map(req => { const skill = OFFICIAL_SKILLS_DATA.find(s => s.id === req.skillId); return <span key={req.skillId} className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-xs border ${req.starting || initialIds.has(req.skillId) ? 'border-amber-700/50 bg-amber-950/30 text-amber-300' : 'border-slate-700 bg-slate-900 text-slate-300'}`}>{skill?.name ?? req.skillId}{req.starting || initialIds.has(req.skillId) ? ' · Inicial' : req.appearanceChance != null ? ` · ${req.appearanceChance}%` : ''}</span>; })}</div></div>
+      <div className="space-y-4">
+        <div className="flex items-center gap-2 mb-3">
+          <Award className="w-4 h-4" />
+          <h3 className="text-lg font-semibold font-serif">Subclases y requisitos para {hero.name}</h3>
         </div>
-      )}
-
-      {factionSubclasses.length > 0 ? factionSubclasses.map(subclass => (
-        <div key={subclass.id} className="border rounded-xl p-4 transition-all hover:shadow-lg">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-18 h-18 flex items-center justify-center bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700">{subclass.icon ? <img src={resolveHeroDetailAsset(subclass.icon) ?? undefined} alt={subclass.name} className="w-18 h-18 object-cover" /> : <Award className="w-6 h-6 text-slate-400" />}</div>
-            <div className="flex-1 min-w-0"><h4 className="font-semibold text-slate-200">{subclass.name}</h4><div className="mt-3 text-xs font-mono text-slate-400">Requisitos oficiales: 5 habilidades a nivel Experto</div><ul className="mt-2 pl-5 text-sm text-slate-300">{subclass.requiredSkills.map(skill => { const initial = initialIds.has(skill.skillId) || hero.startingSkills?.some(s => s.skillName.toLowerCase().includes(skill.name.toLowerCase()) || skill.name.toLowerCase().includes(s.skillName.toLowerCase())); return <li key={skill.skillId} className={initial ? 'text-amber-300 font-semibold' : ''}>{skill.name} (Experta){initial ? ' · Inicial' : ''}</li>; })}</ul><p className="mt-3 text-sm text-slate-400 leading-relaxed"><ResolvedText text={subclass.bonusEffect} /></p></div>
+        
+        {factionSubclasses.length > 0 ? (
+          <div className="space-y-4">
+            {factionSubclasses.map((subclass, index) => (
+              <div key={subclass.id} className="border rounded-xl p-4 mb-4 transition-all hover:shadow-lg">
+                <div className="flex items-start justify-between gap-4">
+                                <div className="flex-shrink-0 w-18 h-18 flex items-center justify-center bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700">
+                                  {subclass.icon ? (
+                                    <img
+                                      src={resolveHeroDetailAsset(subclass.icon) ?? undefined}
+                                      alt={subclass.name}
+                                      className="w-18 h-18 object-cover"
+                                    />
+                                  ) : (
+                                    <Award className="w-6 h-6 text-slate-400" />
+                                  )}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="mb-2">
+                                    <h4 className="font-semibold text-slate-200">{subclass.name}</h4>
+                                  </div>
+                                  <div className="mt-3 space-y-2">
+                                    <div className="flex items-center gap-2 text-xs font-mono">
+                                      <BookOpen className="w-4 h-4" />
+                                      <span>Requisitos oficiales: 5 habilidades a nivel Experto</span>
+                                    </div>
+                                    <ul className="pl-5 text-sm text-slate-300">
+                                      {subclass.requiredSkills.map((skill) => {
+                                        const isInitial = hero.startingSkills?.some(s => 
+                                          s.skillId === skill.skillId || s.skillName.toLowerCase().includes(skill.name.toLowerCase()) || skill.name.toLowerCase().includes(s.skillName.toLowerCase())
+                                        );
+                                        return (
+                                          <li key={skill.skillId} className={isInitial ? 'text-amber-300 font-semibold' : ''}>
+                                            <span className="inline-flex items-center gap-2">
+                                              {skill.icon ? (
+                                                <img src={resolveHeroDetailAsset(skill.icon) ?? undefined} alt={skill.name} className="w-10 h-10 object-cover rounded" />
+                                              ) : null}
+                                              {skill.name} (Experta)
+                                              {isInitial ? <span className="text-[12px] bg-amber-900/40 text-amber-300 px-1 rounded border border-amber-700/30">Inicial</span> : null}
+                                            </span>
+                                          </li>
+                                        );
+                                      })}
+                                    </ul>
+                                    <p className="text-sm text-slate-400 leading-relaxed">
+                                                                          <ResolvedText text={subclass.bonusEffect} />
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                
+                                                ))}
+          
+          {/* Recomendación única fuera de los recuadros */}
+          <div className="mt-6 p-4 bg-slate-900/60 rounded-2xl border border-amber-900/30 shadow-lg">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-serif font-bold text-amber-300 text-lg">Recomendación de subclase</h4>
+            </div>
+            <p className="text-sm text-slate-200 leading-relaxed font-medium">
+              {getSubclassRecommendation(hero, factionSubclasses)}
+            </p>
           </div>
-        </div>
-      )) : <p className="text-center py-8 text-slate-400">No hay subclases disponibles para la combinación de facción y clase de este héroe.</p>}
+          </div>
+        ) : (
+          <div className="text-center py-8">
+            <p className="text-slate-400">No hay subclases disponibles para la combinación de facción y clase de este héroe.</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
-
