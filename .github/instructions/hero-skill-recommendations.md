@@ -1,6 +1,6 @@
 # Hero Skill Recommendations — Olden Era
 
-Este documento contiene las recomendaciones editoriales de habilidades para cada héroe de Olden Era, basadas en el análisis de datos canónicos (`idealSkillBuild` en `*Data.ts`) y guías de estrategia. Las habilidades están clasificadas por especialización y nivel de recomendación.
+Este documento contiene las recomendaciones editoriales de habilidades para cada héroe de Olden Era, basadas en el análisis de datos canónicos y guías de estrategia (fuentes fiables). Las habilidades están clasificadas por especialización y nivel de recomendación.
 
 ## Mazmorra (Dungeon)
 

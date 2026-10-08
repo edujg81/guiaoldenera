@@ -575,13 +575,22 @@ const SkillsTab: React.FC<{
         </div>
 
         {buildAudit && (
-          <div className="p-4 rounded-xl border border-amber-900/40 bg-amber-950/20">
-            <div className="flex items-center gap-2 mb-2">
-              <Target className="w-4 h-4 text-amber-400" />
-              <span className="font-semibold text-amber-300">Criterio de la build</span>
+          <>
+            <div className="p-4 rounded-xl border border-sky-900/40 bg-sky-950/20">
+              <div className="flex items-center gap-2 mb-2">
+                <Target className="w-4 h-4 text-sky-400" />
+                <span className="font-semibold text-sky-300">Tier {buildAudit.tier} · análisis derivado</span>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">{buildAudit.tierReason}</p>
             </div>
-            <p className="text-sm leading-relaxed text-slate-300">{buildAudit.buildReason}</p>
-          </div>
+            <div className="p-4 rounded-xl border border-amber-900/40 bg-amber-950/20">
+              <div className="flex items-center gap-2 mb-2">
+                <Target className="w-4 h-4 text-amber-400" />
+                <span className="font-semibold text-amber-300">Criterio de la build</span>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">{buildAudit.buildReason}</p>
+            </div>
+          </>
         )}
 
         {skills.length === 0 ? (
