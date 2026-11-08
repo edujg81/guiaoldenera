@@ -283,7 +283,7 @@
     "spellPower": "4",
     "knowledge": "2",
     "specializationName": "Punzante",
-    "specializationDescription": "El crecimiento de avispones en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los avispones obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los avispones enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de avispones en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los avispones obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los avispones enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "wasp",
@@ -311,9 +311,9 @@
         "icon": "icons/hero_skills/skill_faction_demons"
       },
       {
-        "skillId": "skill_magic_night",
-        "skillName": "Magia de nochesombra básica",
-        "icon": "icons/hero_skills/skill_magic_night"
+        "skillId": "skill_first_aid",
+        "skillName": "Primeros auxilios básicos",
+        "icon": "icons/hero_skills/skill_first_aid"
       }
     ],
     "startingSpells": [
@@ -350,7 +350,7 @@
     "spellPower": "4",
     "knowledge": "2",
     "specializationName": "Hijo de todas las madres",
-    "specializationDescription": "El crecimiento de reinas de la Colmena en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las reinas de la Colmena obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las reinas de la Colmena enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de reinas de la Colmena en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las reinas de la Colmena obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las reinas de la Colmena enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "trick_demon",
@@ -678,7 +678,7 @@
     "spellPower": "2",
     "knowledge": "1",
     "specializationName": "Al asalto",
-    "specializationDescription": "El crecimiento de asoladores en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los asoladores obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los asoladores enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de asoladores en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los asoladores obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los asoladores enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "trick_demon",
@@ -792,7 +792,7 @@
     "spellPower": "2",
     "knowledge": "1",
     "specializationName": "Vermificación",
-    "specializationDescription": "El crecimiento de vermes en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los vermes obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los vermes enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de vermes en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los vermes obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los vermes enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "olgoi",
@@ -962,7 +962,7 @@
     "spellPower": "2",
     "knowledge": "1",
     "specializationName": "Carroñera",
-    "specializationDescription": "El crecimiento de langostas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las langostas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las langostas enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de langostas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las langostas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las langostas enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "locust",
@@ -1142,7 +1142,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Amenaza serpenteante",
-    "specializationDescription": "El crecimiento de medusas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las medusas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las medusas enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de medusas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las medusas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las medusas enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "trogl",
@@ -1397,7 +1397,7 @@
     "spellPower": "2",
     "knowledge": "3",
     "specializationName": "Danza macabra",
-    "specializationDescription": "El crecimiento de bailarinas de ónice en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las bailarinas de ónice obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las bailarinas de ónice enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de bailarinas de ónice en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las bailarinas de ónice obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las bailarinas de ónice enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "blade_dancer",
@@ -1598,7 +1598,7 @@
     "spellPower": "2",
     "knowledge": "3",
     "specializationName": "Hidra de Alvar",
-    "specializationDescription": "El crecimiento de hidras en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las hidras obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las hidras enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de hidras en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las hidras obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las hidras enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "hydra",
@@ -1909,7 +1909,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "El pueblo ciego",
-    "specializationDescription": "El crecimiento de trogloditas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los trogloditas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los trogloditas enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de trogloditas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los trogloditas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los trogloditas enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "trogl",
@@ -1969,7 +1969,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Espía",
-    "specializationDescription": "El crecimiento de infiltrados en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los infiltrados obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los infiltrados enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de infiltrados en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los infiltrados obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los infiltrados enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "assassin",
@@ -2029,7 +2029,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Guarida de Baltasar",
-    "specializationDescription": "El crecimiento de minotauros en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los minotauros obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los minotauros enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de minotauros en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los minotauros obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los minotauros enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "trogl",
@@ -2477,7 +2477,7 @@
     "spellPower": "2",
     "knowledge": "3",
     "specializationName": "Tejiendo la luz",
-    "specializationDescription": "El crecimiento de tejedoras de luz en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las tejedoras de luz obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las tejedoras de luz enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de tejedoras de luz en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las tejedoras de luz obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las tejedoras de luz enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "esquire",
@@ -2639,9 +2639,9 @@
         "icon": "icons/hero_skills/skill_faction_humans"
       },
       {
-        "skillId": "skill_protection",
-        "skillName": "Defensa básica",
-        "icon": "icons/hero_skills/skill_protection"
+        "skillId": "skill_first_aid",
+        "skillName": "Primeros auxilios básicos",
+        "icon": "icons/hero_skills/skill_first_aid"
       }
     ],
     "startingSpells": [
@@ -2719,7 +2719,7 @@
         "isMasterful": true
       }
     ],
-    "description": "Cuando Vesper llegó a Jadame, se unió a la Iglesia del Sol. Afirmaba ser mago de la oscura Orden del Clarobosque. Empezó a destacar por otorgar poderosas bendiciones y encantamientos, pero la Inquisición desconfiaba de sus motivos. Para ponerlo a prueba, lo enviaron al frente del Bosque Murmullo sin saber que dicho encargo interfería con sus propios designios.\nMientras vive sometido a un escrutinio constante, Vesper aguarda su momento persiguiendo objetivos ocultos y manteniendo su fachada de mago humilde.",
+    "description": "Cuando Vesper llegó a Jadame, se unió a la Iglesia del Sol. Afirmaba ser mago de la oscura Orden del Clarobosque. Empezó a destacar por otorgar poderosas bendiciones y encantamientos, pero la Inquisición desconfiaba de sus motivos. Para ponerlo a prueba, lo enviaron al frente del Bosque Murmullo sin saber que dicho encargo le favorecería en sus propios designios.\nMientras vive sometido a un escrutinio constante, Vesper aguarda su momento persiguiendo objetivos ocultos y manteniendo su fachada de mago humilde.",
     "motto": "¿Quién es él realmente? ¿Y de quién es la bendición que porta?",
     "statLabels": {
       "startingArmy": "Ejército inicial",
@@ -3006,7 +3006,7 @@
     "spellPower": "1",
     "knowledge": "1",
     "specializationName": "Sal de la tierra",
-    "specializationDescription": "El crecimiento de espadachines en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los espadachines obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los espadachines enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de espadachines en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los espadachines obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los espadachines enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "esquire",
@@ -3066,7 +3066,7 @@
     "spellPower": "1",
     "knowledge": "1",
     "specializationName": "Jaeger",
-    "specializationDescription": "El crecimiento de saeteros en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los saeteros obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los saeteros enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de saeteros en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los saeteros obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los saeteros enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "crossbowman",
@@ -3227,7 +3227,7 @@
         "isMasterful": false
       }
     ],
-    "description": "Avis era un caballero de renombre al que le esperaba una vida maravillosa de nobleza y matrimonio. Lo perdió todo en un terrible incendio que lo desfiguró y acabó con la vida de su prometida. Tras no recibir ninguna respuesta por parte de la Iglesia, se puso una máscara para ocultar sus cicatrices y buscar la piedra filosofal, un objeto milagroso que puede restaurar la salud y la juventud.\nNo importa cuánto la busque, la piedra le elude. Tal vez sea solo un mito, pero no tiene otra opción.",
+    "description": "Avis era un caballero de renombre al que le esperaba una vida maravillosa de nobleza y matrimonio. Lo perdió todo en un terrible incendio que lo desfiguró y acabó con la vida de su prometida. Tras no recibir ninguna respuesta por parte de la Iglesia, se puso una máscara para ocultar sus cicatrices y buscar la piedra filosofal, un objeto milagroso que puede restaurar la salud y la juventud.\nNo importa cuánto la busque, la piedra lo elude. Tal vez sea solo un mito, pero no tiene otra opción.",
     "motto": "La piedra filosofal se lo devolverá todo: su rostro, su esposa y su vida. No hay otra opción.",
     "statLabels": {
       "startingArmy": "Ejército inicial",
@@ -3253,7 +3253,7 @@
     "spellPower": "1",
     "knowledge": "1",
     "specializationName": "Experta en justas",
-    "specializationDescription": "El crecimiento de caballerías en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las caballerías obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las caballerías enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de caballerías en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las caballerías obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las caballerías enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "esquire",
@@ -3307,7 +3307,7 @@
     "spellPower": "1",
     "knowledge": "1",
     "specializationName": "Lord auténtico",
-    "specializationDescription": "Aumenta el ataque y la defensa de todas las criaturas amistosas un <resolved>10</resolved> % de su ataque y defensa, más un <resolved>5</resolved> % adicional por cada <resolved>5</resolved> nivel(es) de héroe.",
+    "specializationDescription": "Aumenta el ataque y la defensa de todas las criaturas amistosas un <resolved>10</resolved> % de su ataque y defensa, más un <resolved>5</resolved> % adicional por cada <resolved>6</resolved> nivel(es) de héroe.",
     "startingArmy": [
       {
         "unitId": "esquire",
@@ -3431,14 +3431,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3491,14 +3491,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3554,12 +3554,12 @@
     "spellPower": "2",
     "knowledge": "2",
     "specializationName": "El árbol más antiguo",
-    "specializationDescription": "El crecimiento de herbomantes en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los herbomantes obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los herbomantes enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de herbomantes en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los herbomantes obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los herbomantes enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
@@ -3619,14 +3619,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3686,14 +3686,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3753,14 +3753,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3820,14 +3820,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3887,14 +3887,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -3954,14 +3954,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4021,14 +4021,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "5 - 8",
+        "countInterval": "6 - 9",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4045,9 +4045,9 @@
         "icon": "icons/hero_skills/skill_faction_nature"
       },
       {
-        "skillId": "skill_sorcery",
-        "skillName": "Hechicería básica",
-        "icon": "icons/hero_skills/skill_sorcery"
+        "skillId": "skill_battlemage",
+        "skillName": "Magia de batalla básica",
+        "icon": "icons/hero_skills/skill_battlemage"
       }
     ],
     "startingSpells": [
@@ -4088,14 +4088,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4143,25 +4143,25 @@
     "defence": "1",
     "spellPower": "2",
     "knowledge": "2",
-    "specializationName": "Canto del fauno",
-    "specializationDescription": "El crecimiento de faunos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los faunos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los faunos enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationName": "Canto de la fauna",
+    "specializationDescription": "El crecimiento de faunas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las faunas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las faunas enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "8 - 12",
+        "unitName": "Fauna",
+        "countInterval": "9 - 13",
         "icon": "icons/units/hex_portraits/elf_tracker"
       }
     ],
@@ -4208,14 +4208,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4232,9 +4232,9 @@
         "icon": "icons/hero_skills/skill_faction_nature"
       },
       {
-        "skillId": "skill_battlemage",
-        "skillName": "Magia de batalla básica",
-        "icon": "icons/hero_skills/skill_battlemage"
+        "skillId": "skill_tactics",
+        "skillName": "Tácticas básicas",
+        "icon": "icons/hero_skills/skill_tactics"
       }
     ],
     "startingSpells": [
@@ -4275,14 +4275,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4335,14 +4335,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4402,14 +4402,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4464,14 +4464,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4524,14 +4524,14 @@
     "startingArmy": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
-        "countInterval": "10 - 15",
+        "unitName": "Fauna",
+        "countInterval": "11 - 16",
         "icon": "icons/units/hex_portraits/elf_tracker"
       },
       {
         "unitId": "twinkle",
         "unitName": "Lupuciérnaga",
-        "countInterval": "6 - 9",
+        "countInterval": "7 - 10",
         "icon": "icons/units/hex_portraits/twinkle"
       },
       {
@@ -4591,13 +4591,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -4658,13 +4658,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -4720,24 +4720,24 @@
     "spellPower": "2",
     "knowledge": "4",
     "specializationName": "Amnésico",
-    "specializationDescription": "El crecimiento de apariciones en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las apariciones obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las apariciones enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de apariciones en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las apariciones obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las apariciones enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "9 - 13",
+        "countInterval": "9 - 12",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "9 - 13",
+        "countInterval": "9 - 12",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "9 - 13",
+        "countInterval": "9 - 12",
         "icon": "icons/units/hex_portraits/flicker"
       }
     ],
@@ -4793,7 +4793,7 @@
     "spellPower": "2",
     "knowledge": "4",
     "specializationName": "Voluntad sepulcral",
-    "specializationDescription": "El crecimiento de liches en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los liches obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los liches enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de liches en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los liches obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los liches enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "skeleton",
@@ -4860,7 +4860,7 @@
     "spellPower": "2",
     "knowledge": "4",
     "specializationName": "Gremio de huesos",
-    "specializationDescription": "El crecimiento de ladrones de tumbas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los ladrones de tumbas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los ladrones de tumbas enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de ladrones de tumbas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los ladrones de tumbas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los ladrones de tumbas enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "skeleton",
@@ -4944,13 +4944,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5017,13 +5017,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5090,13 +5090,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5163,13 +5163,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5236,13 +5236,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "11 - 16",
+        "countInterval": "11 - 15",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5309,13 +5309,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5365,7 +5365,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Títeres perfectos",
-    "specializationDescription": "El crecimiento de esqueletos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los esqueletos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los esqueletos enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de esqueletos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los esqueletos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los esqueletos enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "skeleton",
@@ -5432,7 +5432,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Guerra terrorífica",
-    "specializationDescription": "El crecimiento de caballeros del terror en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los caballeros del terror obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los caballeros del terror enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de caballeros del terror en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los caballeros del terror obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los caballeros del terror enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "avatar_of_war",
@@ -5487,24 +5487,24 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Parte de una manada",
-    "specializationDescription": "El crecimiento de mascotas no muertas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las mascotas no muertas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y las mascotas no muertas enemigas pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de mascotas no muertas en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, las mascotas no muertas obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y las mascotas no muertas enemigas pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "8 - 11",
+        "countInterval": "8 - 10",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5565,13 +5565,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5638,13 +5638,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5711,13 +5711,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -5773,13 +5773,13 @@
       {
         "unitId": "flicker",
         "unitName": "Aparición",
-        "countInterval": "14 - 19",
+        "countInterval": "13 - 18",
         "icon": "icons/units/hex_portraits/flicker"
       },
       {
         "unitId": "pet",
         "unitName": "Mascota no muerta",
-        "countInterval": "10 - 14",
+        "countInterval": "10 - 13",
         "icon": "icons/units/hex_portraits/pet"
       }
     ],
@@ -6036,7 +6036,7 @@
     "spellPower": "3",
     "knowledge": "2",
     "specializationName": "Invocación inferior",
-    "specializationDescription": "El crecimiento de ra'shoth en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los ra'shoth obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los ra'shoth enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de ra'shoth en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los ra'shoth obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los ra'shoth enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "lesser_eldritch",
@@ -6103,7 +6103,7 @@
     "spellPower": "3",
     "knowledge": "2",
     "specializationName": "Enviado de la Grieta",
-    "specializationDescription": "El crecimiento de shoth majestuosos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los shoth majestuosos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los shoth majestuosos enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de shoth majestuosos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los shoth majestuosos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los shoth majestuosos enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "lesser_eldritch",
@@ -6634,7 +6634,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Canalla",
-    "specializationDescription": "El crecimiento de cultores en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los cultores obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los cultores enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de cultores en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los cultores obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los cultores enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "unfrozen_cultist",
@@ -6701,7 +6701,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Hermanos a sangre fría",
-    "specializationDescription": "El crecimiento de jinetes de aga'shoth en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los jinetes de aga'shoth obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los jinetes de aga'shoth enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de jinetes de aga'shoth en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los jinetes de aga'shoth obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los jinetes de aga'shoth enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "frostworm_rider",
@@ -6763,7 +6763,7 @@
     "spellPower": "1",
     "knowledge": "2",
     "specializationName": "Atadura de cadenas",
-    "specializationDescription": "El crecimiento de cóncubos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los cóncubos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>3</resolved> niveles de héroe, y los cóncubos enemigos pierden una cantidad equivalente de ataque y defensa.",
+    "specializationDescription": "El crecimiento de cóncubos en tus ciudades aumenta en <resolved>1</resolved>.\nBajo su mando, los cóncubos obtienen <resolved>1</resolved> de velocidad, <resolved>1</resolved> de iniciativa y un <resolved>20</resolved> % de PV. Su ataque y defensa aumentan en <resolved>1</resolved> por cada <resolved>5</resolved> niveles de héroe, y los cóncubos enemigos pierden una cantidad equivalente de ataque y defensa.",
     "startingArmy": [
       {
         "unitId": "lesser_eldritch",
@@ -6785,9 +6785,9 @@
         "icon": "icons/hero_skills/skill_faction_unfrozen"
       },
       {
-        "skillId": "skill_mastery",
-        "skillName": "Sabiduría básica",
-        "icon": "icons/hero_skills/skill_mastery"
+        "skillId": "skill_first_aid",
+        "skillName": "Primeros auxilios básicos",
+        "icon": "icons/hero_skills/skill_first_aid"
       }
     ],
     "startingSpells": [

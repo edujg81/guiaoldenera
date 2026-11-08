@@ -259,7 +259,7 @@
     "prefabPath": null,
     "localizedName": "Túnica de vórtice",
     "slotIcon": "icons/item_slots/ARMOR",
-    "description": "Cada vez que el oponente lanza un hechizo, restaura el <resolved>40</resolved> % de su coste como maná al portador.",
+    "description": "Cada vez que el oponente lanza un hechizo, restaura el <resolved>40</resolved> % de su coste como maná temporal al portador.",
     "narrativeDescription": "Si la miras demasiado tiempo, sentirás como si te estuviera absorbiendo.",
     "upgradeDescription": "Mejora: Restaura el <resolved>60</resolved> % del coste del hechizo.",
     "upgradeCost": "Coste de mejora: 50",
@@ -598,6 +598,25 @@
     "setBonus": null
   },
   {
+    "id": "leather_armor_artifact",
+    "name": "leather_armor_artifact",
+    "rarity": "common",
+    "slot": "armor",
+    "raritySlotText": "Armadura común",
+    "icon": "icons/artifacts/leather_armor_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Armadura de cuero",
+    "slotIcon": "icons/item_slots/ARMOR",
+    "description": "+<resolved>1</resolved> de defensa y conocimiento.",
+    "narrativeDescription": "Esta armadura es lo bastante ligera como para que nada entorpezca tus movimientos al tejer hechizos.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 10",
+    "setBonus": null
+  },
+  {
     "id": "banner_of_four_winds_artifact",
     "name": "banner_of_four_winds_artifact_name",
     "rarity": "epic",
@@ -741,11 +760,11 @@
       "setName": "Flechas vivientes",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "+<resolved>1</resolved> de iniciativa a todas las criaturas amistosas."
         },
         {
-          "header": "Con 3 elementos del conjunto equipados:",
+          "header": "Con 5 elementos del conjunto equipados:",
           "effect": "Las criaturas con ataques a distancia obtienen \"Disparo doble\"."
         }
       ],
@@ -767,6 +786,18 @@
           "name": "Arco de setamadera",
           "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
           "slot": "left_hand"
+        },
+        {
+          "artifactId": "living_arrows_elven_blade_artifact",
+          "name": "Hoja élfica",
+          "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "living_arrows_ripe_apple_artifact",
+          "name": "Manzana madura",
+          "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+          "slot": "item_slot"
         }
       ]
     }
@@ -891,9 +922,9 @@
   {
     "id": "monster_head_artifact",
     "name": "monster_head_artifact_name",
-    "rarity": "rare",
+    "rarity": "epic",
     "slot": "back",
-    "raritySlotText": "Objeto de espalda raro",
+    "raritySlotText": "Objeto de espalda épico",
     "icon": "icons/artifacts/monster_head_artifact",
     "isOrphan": false,
     "prefabPath": null,
@@ -904,7 +935,7 @@
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,
     "upgradeCostNote": null,
-    "destroyReward": "Destruir artefacto: 20",
+    "destroyReward": "Destruir artefacto: 30",
     "setBonus": null
   },
   {
@@ -988,47 +1019,6 @@
     }
   },
   {
-    "id": "ambassadors_word_ambassadors_sash_artifact",
-    "name": "ambassadors_word_ambassadors_sash_artifact_name",
-    "rarity": "legendary",
-    "slot": "back",
-    "raritySlotText": "Objeto de espalda legendario",
-    "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
-    "isOrphan": false,
-    "prefabPath": null,
-    "localizedName": "Fajín del embajador",
-    "slotIcon": "icons/item_slots/BACK",
-    "description": "+<resolved>10</resolved> % al poder de persuasión en Diplomacia.",
-    "narrativeDescription": "¡Te seguirán si das buena impresión!",
-    "upgradeDescription": "Mejora: +<resolved>5</resolved> % adicional de poder de persuasión en Diplomacia.",
-    "upgradeCost": "Coste de mejora: 100",
-    "upgradeCostNote": null,
-    "destroyReward": "Destruir artefacto: 40",
-    "setBonus": {
-      "setName": "Palabra del embajador",
-      "bonuses": [
-        {
-          "header": "Con 2 elementos del conjunto equipados:",
-          "effect": "Las formaciones neutrales se unen al ejército del portador de forma gratuita."
-        }
-      ],
-      "setItems": [
-        {
-          "artifactId": "ambassadors_word_diplomatic_gifts_artifact",
-          "name": "Regalos diplomáticos",
-          "icon": "icons/artifacts/ambassadors_word_diplomatic_gifts_artifact",
-          "slot": "item_slot"
-        },
-        {
-          "artifactId": "ambassadors_word_ambassadors_sash_artifact",
-          "name": "Fajín del embajador",
-          "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
-          "slot": "back"
-        }
-      ]
-    }
-  },
-  {
     "id": "wizards_might_wizards_cloak_artifact",
     "name": "wizards_might_wizards_cloak_artifact_name",
     "rarity": "rare",
@@ -1068,6 +1058,72 @@
         }
       ]
     }
+  },
+  {
+    "id": "ambassadors_word_ambassadors_robe_artifact",
+    "name": "ambassadors_word_ambassadors_robe_artifact_name",
+    "rarity": "legendary",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda legendario",
+    "icon": "icons/artifacts/ambassadors_word_ambassadors_robe_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Túnica del diplomático",
+    "slotIcon": "icons/item_slots/BACK",
+    "description": "+<resolved>10</resolved>% al poder de persuasión en Diplomacia.",
+    "narrativeDescription": "Una lengua persuasiva puede resultar más valiosa que las vetas de oro, y más destructiva que un desastre natural.",
+    "upgradeDescription": "Mejora: +<resolved>5</resolved>% adicional de poder de persuasión en Diplomacia.",
+    "upgradeCost": "Coste de mejora: 100",
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 40",
+    "setBonus": {
+      "setName": "Palabra del embajador",
+      "bonuses": [
+        {
+          "header": "Con 3 elementos del conjunto equipados:",
+          "effect": "Las formaciones neutrales se unen al ejército del portador de forma gratuita."
+        }
+      ],
+      "setItems": [
+        {
+          "artifactId": "ambassadors_word_diplomatic_gifts_artifact",
+          "name": "Regalos diplomáticos",
+          "icon": "icons/artifacts/ambassadors_word_diplomatic_gifts_artifact",
+          "slot": "item_slot"
+        },
+        {
+          "artifactId": "ambassadors_word_ambassadors_sash_artifact",
+          "name": "Fajín del embajador",
+          "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
+          "slot": "belt"
+        },
+        {
+          "artifactId": "ambassadors_word_ambassadors_robe_artifact",
+          "name": "Túnica del diplomático",
+          "icon": "icons/artifacts/ambassadors_word_ambassadors_robe_artifact",
+          "slot": "back"
+        }
+      ]
+    }
+  },
+  {
+    "id": "satchel_artifact",
+    "name": "satchel_artifact",
+    "rarity": "common",
+    "slot": "back",
+    "raritySlotText": "Objeto de espalda común",
+    "icon": "icons/artifacts/satchel_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Zurrón",
+    "slotIcon": "icons/item_slots/BACK",
+    "description": "+<resolved>1</resolved> de defensa y poder de hechizo.",
+    "narrativeDescription": "La forma perfecta de llevar tus pertenencias cuando eres joven y huyes de casa.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 10",
+    "setBonus": null
   },
   {
     "id": "magic_key_ring_artifact",
@@ -1588,6 +1644,91 @@
     "setBonus": null
   },
   {
+    "id": "ambassadors_word_ambassadors_sash_artifact",
+    "name": "ambassadors_word_ambassadors_sash_artifact_name",
+    "rarity": "legendary",
+    "slot": "belt",
+    "raritySlotText": "Cinturón legendario",
+    "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Fajín del embajador",
+    "slotIcon": "icons/item_slots/BELT",
+    "description": "+<resolved>10</resolved> % al poder de persuasión en Diplomacia.",
+    "narrativeDescription": "¡Te seguirán si das buena impresión!",
+    "upgradeDescription": "Mejora: +<resolved>5</resolved> % adicional de poder de persuasión en Diplomacia.",
+    "upgradeCost": "Coste de mejora: 100",
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 40",
+    "setBonus": {
+      "setName": "Palabra del embajador",
+      "bonuses": [
+        {
+          "header": "Con 3 elementos del conjunto equipados:",
+          "effect": "Las formaciones neutrales se unen al ejército del portador de forma gratuita."
+        }
+      ],
+      "setItems": [
+        {
+          "artifactId": "ambassadors_word_diplomatic_gifts_artifact",
+          "name": "Regalos diplomáticos",
+          "icon": "icons/artifacts/ambassadors_word_diplomatic_gifts_artifact",
+          "slot": "item_slot"
+        },
+        {
+          "artifactId": "ambassadors_word_ambassadors_sash_artifact",
+          "name": "Fajín del embajador",
+          "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
+          "slot": "belt"
+        },
+        {
+          "artifactId": "ambassadors_word_ambassadors_robe_artifact",
+          "name": "Túnica del diplomático",
+          "icon": "icons/artifacts/ambassadors_word_ambassadors_robe_artifact",
+          "slot": "back"
+        }
+      ]
+    }
+  },
+  {
+    "id": "kergar_buckle_artifact",
+    "name": "kergar_buckle_artifact",
+    "rarity": "epic",
+    "slot": "belt",
+    "raritySlotText": "Cinturón épico",
+    "icon": "icons/artifacts/kergar_buckle_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Hebilla de kergar",
+    "slotIcon": "icons/item_slots/BELT",
+    "description": "+<resolved>3</resolved> de ataque y poder de hechizo.",
+    "narrativeDescription": "El kergar posee las mejores cualidades del acero, pero resulta mucho más fácil de encantar.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": null
+  },
+  {
+    "id": "battle_mage_belt_artifact",
+    "name": "battle_mage_belt_artifact",
+    "rarity": "rare",
+    "slot": "belt",
+    "raritySlotText": "Cinturón raro",
+    "icon": "icons/artifacts/battle_mage_belt_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Cinturón del mago de batalla",
+    "slotIcon": "icons/item_slots/BELT",
+    "description": "+<resolved>2</resolved> de ataque y conocimiento.",
+    "narrativeDescription": "Para reclamar un cinturón como este, hay que derrotar a su anterior propietario en un duelo mágico.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 20",
+    "setBonus": null
+  },
+  {
     "id": "seven_league_boots_artifact",
     "name": "seven_league_boots_artifact_name",
     "rarity": "legendary",
@@ -1994,6 +2135,44 @@
         }
       ]
     }
+  },
+  {
+    "id": "boots_of_dreams_artifact",
+    "name": "boots_of_dreams_artifact",
+    "rarity": "epic",
+    "slot": "boots",
+    "raritySlotText": "Botas épicas",
+    "icon": "icons/artifacts/boots_of_dreams_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Botas de los sueños",
+    "slotIcon": "icons/item_slots/BOOTS",
+    "description": "+<resolved>3</resolved> de defensa y poder de hechizo.",
+    "narrativeDescription": "El poder mágico surge del mundo onírico…, ¿o quizá nos halaga pensar que procede de allí?",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": null
+  },
+  {
+    "id": "enchanted_jackboots_artifact",
+    "name": "enchanted_jackboots_artifact",
+    "rarity": "rare",
+    "slot": "boots",
+    "raritySlotText": "Botas raras",
+    "icon": "icons/artifacts/enchanted_jackboots_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Botas militares encantadas",
+    "slotIcon": "icons/item_slots/BOOTS",
+    "description": "+<resolved>2</resolved> de defensa y conocimiento.",
+    "narrativeDescription": "El encantamiento de estas botas permite al portador esquivar cualquier golpe dirigido a las piernas.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 20",
+    "setBonus": null
   },
   {
     "id": "enchanted_magic_scroll_artifact_day_17_magic_clear_view",
@@ -4093,22 +4272,60 @@
     "setBonus": null
   },
   {
+    "id": "archmage_hood_artifact",
+    "name": "archmage_hood_artifact",
+    "rarity": "epic",
+    "slot": "head",
+    "raritySlotText": "Objeto de cabeza épico",
+    "icon": "icons/artifacts/archmage_hood_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Capucha del archimago",
+    "slotIcon": "icons/item_slots/HEAD",
+    "description": "+<resolved>3</resolved> de defensa y conocimiento.",
+    "narrativeDescription": "Desafiar a un archimago es una auténtica locura. Por cada golpe contra su barrera arcana, responderá con una docena de contrahechizos lanzados con pasmosa facilidad.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": null
+  },
+  {
     "id": "orb_of_inhibition_artifact",
     "name": "orb_of_inhibition_artifact_name",
-    "rarity": "epic",
+    "rarity": "legendary",
     "slot": "item_slot",
-    "raritySlotText": "Objeto épico",
+    "raritySlotText": "Objeto legendario",
     "icon": "icons/artifacts/orb_of_inhibition_artifact",
     "isOrphan": false,
     "prefabPath": null,
     "localizedName": "Orbe de inhibición",
     "slotIcon": "icons/item_slots/ITEM_SLOT",
-    "description": "En la primera ronda de la batalla, los héroes no pueden usar su libro de hechizos ni sus aptitudes activas.",
+    "description": "En la primera ronda de la batalla, los héroes no pueden usar su libro de hechizos.",
     "narrativeDescription": "Es extraño contemplarlo, como si dentro de este orbe no existiera la luz ni el sonido.",
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,
     "upgradeCostNote": null,
-    "destroyReward": "Destruir artefacto: 30",
+    "destroyReward": "Destruir artefacto: 40",
+    "setBonus": null
+  },
+  {
+    "id": "orb_of_poisons_artifact",
+    "name": "orb_of_poisons_artifact_name",
+    "rarity": "legendary",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto legendario",
+    "icon": "icons/artifacts/orb_of_venom_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Orbe de veneno",
+    "slotIcon": "icons/item_slots/ITEM_SLOT",
+    "description": "En la primera ronda de la batalla, los héroes no pueden usar sus aptitudes activas.",
+    "narrativeDescription": "Una peligrosa toxina que nubla la mente se filtra por las juntas de la esfera metálica.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 40",
     "setBonus": null
   },
   {
@@ -4228,9 +4445,9 @@
   {
     "id": "orb_of_destruction_artifact",
     "name": "orb_of_destruction_artifact_name",
-    "rarity": "rare",
+    "rarity": "epic",
     "slot": "item_slot",
-    "raritySlotText": "Objeto raro",
+    "raritySlotText": "Objeto épico",
     "icon": "icons/artifacts/orb_of_destruction_artifact",
     "isOrphan": false,
     "prefabPath": null,
@@ -4241,8 +4458,36 @@
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,
     "upgradeCostNote": null,
-    "destroyReward": "Destruir artefacto: 20",
-    "setBonus": null
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": {
+      "setName": "Héroe de fábulas",
+      "bonuses": [
+        {
+          "header": "Con 3 elementos del conjunto equipados:",
+          "effect": "Cuando el héroe usa el golpe heroico, sus efectos se aplican dos veces."
+        }
+      ],
+      "setItems": [
+        {
+          "artifactId": "excalibur_artifact",
+          "name": "Excalibur",
+          "icon": "icons/artifacts/excalibur_artifact",
+          "slot": "left_hand"
+        },
+        {
+          "artifactId": "caduceus_artifact",
+          "name": "Caduceo",
+          "icon": "icons/artifacts/caduceus_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "orb_of_destruction_artifact",
+          "name": "Orbe de destrucción",
+          "icon": "icons/artifacts/orb_of_destruction_artifact",
+          "slot": "item_slot"
+        }
+      ]
+    }
   },
   {
     "id": "ancient_idol_artifact",
@@ -4274,7 +4519,7 @@
     "prefabPath": null,
     "localizedName": "Guía táctica",
     "slotIcon": "icons/item_slots/ITEM_SLOT",
-    "description": "El oponente no puede recolocar las criaturas antes del inicio de la batalla.",
+    "description": "Los héroes no pueden recolocar las criaturas antes del inicio de la batalla.",
     "narrativeDescription": "22… Ra4 23. Nc3 Ra8 24. Nb5 Ra4 25. Nc3 Ra8 26. Nb5",
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,
@@ -4477,11 +4722,11 @@
       "setName": "Flechas vivientes",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "+<resolved>1</resolved> de iniciativa a todas las criaturas amistosas."
         },
         {
-          "header": "Con 3 elementos del conjunto equipados:",
+          "header": "Con 5 elementos del conjunto equipados:",
           "effect": "Las criaturas con ataques a distancia obtienen \"Disparo doble\"."
         }
       ],
@@ -4503,6 +4748,18 @@
           "name": "Arco de setamadera",
           "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
           "slot": "left_hand"
+        },
+        {
+          "artifactId": "living_arrows_elven_blade_artifact",
+          "name": "Hoja élfica",
+          "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "living_arrows_ripe_apple_artifact",
+          "name": "Manzana madura",
+          "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+          "slot": "item_slot"
         }
       ]
     }
@@ -4979,7 +5236,7 @@
       "setName": "Palabra del embajador",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "Las formaciones neutrales se unen al ejército del portador de forma gratuita."
         }
       ],
@@ -4994,6 +5251,12 @@
           "artifactId": "ambassadors_word_ambassadors_sash_artifact",
           "name": "Fajín del embajador",
           "icon": "icons/artifacts/ambassadors_word_ambassadors_sash_artifact",
+          "slot": "belt"
+        },
+        {
+          "artifactId": "ambassadors_word_ambassadors_robe_artifact",
+          "name": "Túnica del diplomático",
+          "icon": "icons/artifacts/ambassadors_word_ambassadors_robe_artifact",
           "slot": "back"
         }
       ]
@@ -5238,6 +5501,69 @@
     "upgradeCostNote": null,
     "destroyReward": "Destruir artefacto: 30",
     "setBonus": null
+  },
+  {
+    "id": "living_arrows_ripe_apple_artifact",
+    "name": "living_arrows_ripe_apple_artifact_name",
+    "rarity": "epic",
+    "slot": "item_slot",
+    "raritySlotText": "Objeto épico",
+    "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Manzana madura",
+    "slotIcon": "icons/item_slots/ITEM_SLOT",
+    "description": "Las criaturas amistosas infligen +<resolved>10</resolved> % de daño a distancia.",
+    "narrativeDescription": "¡Diana!",
+    "upgradeDescription": "Mejora: +<resolved>5</resolved> % de daño a distancia adicional.",
+    "upgradeCost": "Coste de mejora: 75",
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": {
+      "setName": "Flechas vivientes",
+      "bonuses": [
+        {
+          "header": "Con 3 elementos del conjunto equipados:",
+          "effect": "+<resolved>1</resolved> de iniciativa a todas las criaturas amistosas."
+        },
+        {
+          "header": "Con 5 elementos del conjunto equipados:",
+          "effect": "Las criaturas con ataques a distancia obtienen \"Disparo doble\"."
+        }
+      ],
+      "setItems": [
+        {
+          "artifactId": "living_arrows_light_and_shade_cloak_artifact",
+          "name": "Capa de luces y sombras",
+          "icon": "icons/artifacts/living_arrows_light_and_shade_cloak_artifact",
+          "slot": "back"
+        },
+        {
+          "artifactId": "living_arrows_quivering_quiver_artifact",
+          "name": "Carcaj carcajeante",
+          "icon": "icons/artifacts/living_arrows_quivering_quiver_artifact",
+          "slot": "item_slot"
+        },
+        {
+          "artifactId": "living_arrows_shroomwood_bow_artifact",
+          "name": "Arco de setamadera",
+          "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
+          "slot": "left_hand"
+        },
+        {
+          "artifactId": "living_arrows_elven_blade_artifact",
+          "name": "Hoja élfica",
+          "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "living_arrows_ripe_apple_artifact",
+          "name": "Manzana madura",
+          "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+          "slot": "item_slot"
+        }
+      ]
+    }
   },
   {
     "id": "beelzebubs_blessing_chitinous_shield_artifact",
@@ -5765,7 +6091,7 @@
       "setName": "Héroe de fábulas",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "Cuando el héroe usa el golpe heroico, sus efectos se aplican dos veces."
         }
       ],
@@ -5781,6 +6107,12 @@
           "name": "Caduceo",
           "icon": "icons/artifacts/caduceus_artifact",
           "slot": "right_hand"
+        },
+        {
+          "artifactId": "orb_of_destruction_artifact",
+          "name": "Orbe de destrucción",
+          "icon": "icons/artifacts/orb_of_destruction_artifact",
+          "slot": "item_slot"
         }
       ]
     }
@@ -5841,6 +6173,107 @@
         }
       ]
     }
+  },
+  {
+    "id": "living_arrows_elven_blade_artifact",
+    "name": "living_arrows_elven_blade_artifact_name",
+    "rarity": "epic",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria épico",
+    "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Hoja élfica",
+    "slotIcon": "icons/item_slots/RIGHT_HAND",
+    "description": "Elimina la penalización por ataque cuerpo a cuerpo para las criaturas a distancia aliadas.",
+    "narrativeDescription": "Forjada con tal maestría que esta hoja sale de la vaina en un instante, incluso en las situaciones más extremas.",
+    "upgradeDescription": "Mejora: Las criaturas amistosas infligen +<resolved>5</resolved> % de daño a distancia.",
+    "upgradeCost": "Coste de mejora: 75",
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": {
+      "setName": "Flechas vivientes",
+      "bonuses": [
+        {
+          "header": "Con 3 elementos del conjunto equipados:",
+          "effect": "+<resolved>1</resolved> de iniciativa a todas las criaturas amistosas."
+        },
+        {
+          "header": "Con 5 elementos del conjunto equipados:",
+          "effect": "Las criaturas con ataques a distancia obtienen \"Disparo doble\"."
+        }
+      ],
+      "setItems": [
+        {
+          "artifactId": "living_arrows_light_and_shade_cloak_artifact",
+          "name": "Capa de luces y sombras",
+          "icon": "icons/artifacts/living_arrows_light_and_shade_cloak_artifact",
+          "slot": "back"
+        },
+        {
+          "artifactId": "living_arrows_quivering_quiver_artifact",
+          "name": "Carcaj carcajeante",
+          "icon": "icons/artifacts/living_arrows_quivering_quiver_artifact",
+          "slot": "item_slot"
+        },
+        {
+          "artifactId": "living_arrows_shroomwood_bow_artifact",
+          "name": "Arco de setamadera",
+          "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
+          "slot": "left_hand"
+        },
+        {
+          "artifactId": "living_arrows_elven_blade_artifact",
+          "name": "Hoja élfica",
+          "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "living_arrows_ripe_apple_artifact",
+          "name": "Manzana madura",
+          "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+          "slot": "item_slot"
+        }
+      ]
+    }
+  },
+  {
+    "id": "greater_genie_bracers_artifact",
+    "name": "greater_genie_bracers_artifact",
+    "rarity": "epic",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria épico",
+    "icon": "icons/artifacts/greater_genie_bracers_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Brazales del genio mayor",
+    "slotIcon": "icons/item_slots/RIGHT_HAND",
+    "description": "+<resolved>3</resolved> de ataque y conocimiento.",
+    "narrativeDescription": "La energía del plano elemental del aire envuelve a su portador, imbuyéndolo con una fracción del poder de los genios más grandes.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 30",
+    "setBonus": null
+  },
+  {
+    "id": "ritual_shield_artifact",
+    "name": "ritual_shield_artifact",
+    "rarity": "rare",
+    "slot": "right_hand",
+    "raritySlotText": "Objeto de mano secundaria raro",
+    "icon": "icons/artifacts/ritual_shield_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Escudo ritual",
+    "slotIcon": "icons/item_slots/RIGHT_HAND",
+    "description": "+<resolved>2</resolved> de defensa y poder de hechizo.",
+    "narrativeDescription": "En Chapitel Sombrío habitan artesanos capaces de convertir escudos en poderosos catalizadores mágicos, pero sus servicios cuestan el rescate de un rey.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 20",
+    "setBonus": null
   },
   {
     "id": "magic_scroll_artifact_day_17_magic_clear_view",
@@ -7632,11 +8065,11 @@
       "setName": "Flechas vivientes",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "+<resolved>1</resolved> de iniciativa a todas las criaturas amistosas."
         },
         {
-          "header": "Con 3 elementos del conjunto equipados:",
+          "header": "Con 5 elementos del conjunto equipados:",
           "effect": "Las criaturas con ataques a distancia obtienen \"Disparo doble\"."
         }
       ],
@@ -7658,6 +8091,18 @@
           "name": "Arco de setamadera",
           "icon": "icons/artifacts/living_arrows_shroomwood_bow_artifact",
           "slot": "left_hand"
+        },
+        {
+          "artifactId": "living_arrows_elven_blade_artifact",
+          "name": "Hoja élfica",
+          "icon": "icons/artifacts/living_arrows_elven_blade_artifact",
+          "slot": "right_hand"
+        },
+        {
+          "artifactId": "living_arrows_ripe_apple_artifact",
+          "name": "Manzana madura",
+          "icon": "icons/artifacts/living_arrows_ripe_apple_artifact",
+          "slot": "item_slot"
         }
       ]
     }
@@ -7950,7 +8395,7 @@
       "setName": "Héroe de fábulas",
       "bonuses": [
         {
-          "header": "Con 2 elementos del conjunto equipados:",
+          "header": "Con 3 elementos del conjunto equipados:",
           "effect": "Cuando el héroe usa el golpe heroico, sus efectos se aplican dos veces."
         }
       ],
@@ -7966,6 +8411,12 @@
           "name": "Caduceo",
           "icon": "icons/artifacts/caduceus_artifact",
           "slot": "right_hand"
+        },
+        {
+          "artifactId": "orb_of_destruction_artifact",
+          "name": "Orbe de destrucción",
+          "icon": "icons/artifacts/orb_of_destruction_artifact",
+          "slot": "item_slot"
         }
       ]
     }
@@ -8026,6 +8477,25 @@
         }
       ]
     }
+  },
+  {
+    "id": "infantryman_sword_artifact",
+    "name": "infantryman_sword_artifact",
+    "rarity": "common",
+    "slot": "left_hand",
+    "raritySlotText": "Objeto de mano principal común",
+    "icon": "icons/artifacts/infantryman_sword_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Espada del soldado",
+    "slotIcon": "icons/item_slots/LEFT_HAND",
+    "description": "+<resolved>1</resolved> de ataque y poder de hechizo.",
+    "narrativeDescription": "Equipo estándar de los soldados del Templo del Sol, aunque todavía conserva los tenues vestigios de antiguas bendiciones.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 10",
+    "setBonus": null
   },
   {
     "id": "soulscaller_ring_artifact",
@@ -8282,9 +8752,9 @@
     "prefabPath": null,
     "localizedName": "Controlador de resonancia carmesí",
     "slotIcon": "icons/item_slots/RING",
-    "description": "-<resolved>20</resolved> % de poder de hechizo para el héroe enemigo. Las criaturas amistosas son inmunes a los efectos que les impiden atacar.",
+    "description": "-<resolved>10</resolved> % de poder de hechizo para el héroe enemigo. Las criaturas amistosas son inmunes a los efectos que les impiden atacar.",
     "narrativeDescription": "La magia es el arte de la resonancia. Lo que significa que la vibración discordante puede amortiguarla.",
-    "upgradeDescription": "Mejora: -<resolved>10</resolved> % adicional de poder de hechizo enemigo.",
+    "upgradeDescription": "Mejora: -<resolved>5</resolved> % adicional de poder de hechizo enemigo.",
     "upgradeCost": "Coste de mejora: 75",
     "upgradeCostNote": null,
     "destroyReward": "Destruir artefacto: 30",
@@ -8331,9 +8801,9 @@
   {
     "id": "ring_of_neutrality_artifact",
     "name": "ring_of_neutrality_artifact_name",
-    "rarity": "rare",
+    "rarity": "epic",
     "slot": "ring",
-    "raritySlotText": "Anillo raro",
+    "raritySlotText": "Anillo épico",
     "icon": "icons/artifacts/ring_of_neutrality_artifact",
     "isOrphan": false,
     "prefabPath": null,
@@ -8344,7 +8814,7 @@
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,
     "upgradeCostNote": null,
-    "destroyReward": "Destruir artefacto: 20",
+    "destroyReward": "Destruir artefacto: 30",
     "setBonus": null
   },
   {
@@ -8702,6 +9172,44 @@
     }
   },
   {
+    "id": "alchemist_ring_hat_artifact",
+    "name": "alchemist_ring_hat_artifact",
+    "rarity": "rare",
+    "slot": "ring",
+    "raritySlotText": "Anillo raro",
+    "icon": "icons/artifacts/alchemist_ring_hat_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Anillo de sello del alquimista",
+    "slotIcon": "icons/item_slots/RING",
+    "description": "+<resolved>2</resolved> de ataque y poder de hechizo.",
+    "narrativeDescription": "Los restos pulverizados de unas hierbas místicas muy poco comunes están profundamente incrustados en el material y le transmiten sus extrañas propiedades.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 20",
+    "setBonus": null
+  },
+  {
+    "id": "ward_artifact",
+    "name": "ward_artifact",
+    "rarity": "common",
+    "slot": "ring",
+    "raritySlotText": "Anillo común",
+    "icon": "icons/artifacts/ward_artifact",
+    "isOrphan": false,
+    "prefabPath": null,
+    "localizedName": "Protección del plebeyo",
+    "slotIcon": "icons/item_slots/RING",
+    "description": "+<resolved>1</resolved> de ataque y conocimiento.",
+    "narrativeDescription": "Un talismán de campesinos que buscan el favor de un dios menor, aunque no hay consenso sobre cuál: Eridore, Quix o Urdt.",
+    "upgradeDescription": "No se puede mejorar.",
+    "upgradeCost": null,
+    "upgradeCostNote": null,
+    "destroyReward": "Destruir artefacto: 10",
+    "setBonus": null
+  },
+  {
     "id": "holy_sigil_of_uurdt_artifact",
     "name": "holy_sigil_of_uurdt_artifact_name",
     "rarity": "epic",
@@ -8712,7 +9220,7 @@
     "prefabPath": null,
     "localizedName": "Sello sagrado de Uurdt",
     "slotIcon": "icons/item_slots/UNIQUE_SLOT",
-    "description": "Mientras se usa, otorga todas las subhabilidades no aprendidas de las siguientes habilidades: Defensa, Magia primigenia, Reclutamiento.",
+    "description": "Mientras se usa, otorga todas las subhabilidades no aprendidas de las siguientes habilidades: Defensa, Magia primigenia, Reclutamiento y Primeros auxilios.",
     "narrativeDescription": "\"Donde la sangre se derrama, crecen las plantas\". Este era el lema de un antiguo culto druídico, y solo su sello perdura para contar su historia.",
     "upgradeDescription": "No se puede mejorar.",
     "upgradeCost": null,

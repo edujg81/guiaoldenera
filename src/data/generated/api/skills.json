@@ -34,7 +34,7 @@
         {
           "id": "sub_skill_assault_6",
           "name": "Frenesí de batalla",
-          "description": "Las criaturas amistosas obtienen +<resolved>2</resolved> de ataque por cada punto de moral.",
+          "description": "Las criaturas amistosas obtienen +<resolved>1</resolved> de ataque por cada punto de moral.",
           "icon": "icons/hero_sub_skills/sub_skill_assault_6_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -64,9 +64,9 @@
         },
         {
           "id": "sub_skill_assault_5",
-          "name": "Firmeza",
-          "description": "-<resolved>15</resolved> % de defensa a las criaturas enemigas.",
-          "icon": "icons/hero_sub_skills/sub_skill_protection_5_icon",
+          "name": "Fuerza imparable",
+          "description": "-<resolved>10</resolved> % de defensa a las criaturas enemigas.",
+          "icon": "icons/hero_sub_skills/sub_skill_assault_5_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -160,59 +160,28 @@
     "skillType": "Common",
     "level1": {
       "levelName": "Magia de batalla básica",
-      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>15</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente.",
+      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>20</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente, pero reducen un <resolved>20</resolved> % del ataque y la defensa del héroe.",
       "icon": "icons/hero_skills/skill_battlemage",
       "subSkillChoices": []
     },
     "level2": {
       "levelName": "Magia de batalla avanzada",
-      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>20</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente.",
+      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>30</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente, pero reducen un <resolved>30</resolved> % del ataque y la defensa del héroe.",
       "icon": "icons/hero_skills/skill_battlemage_2",
       "subSkillChoices": [
         {
           "id": "sub_skill_battlemage_1",
-          "name": "Aura de destrucción",
-          "description": "Cada vez que el héroe usa un hechizo en combate, su ataque aumenta en <resolved>1</resolved> hasta el final de esa batalla.",
-          "icon": "icons/hero_sub_skills/sub_skill_battlemage_1_icon",
+          "name": "Hechizos perforantes",
+          "description": "Los hechizos ofensivos ignoran el <resolved>25</resolved> % de la resistencia mágica del objetivo.",
+          "icon": "icons/hero_sub_skills/sub_skill_sorcery_4_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
           "id": "sub_skill_battlemage_2",
-          "name": "Aura de protección",
-          "description": "Cada vez que el héroe usa un hechizo en combate, su defensa aumenta en <resolved>1</resolved> hasta el final de esa batalla.",
-          "icon": "icons/hero_sub_skills/sub_skill_battlemage_2_icon",
-          "grantedSpell": null,
-          "grantedBattleAbility": null
-        },
-        {
-          "id": "sub_skill_battlemage_3",
-          "name": "Aura de hechicería",
-          "description": "Cada vez que el héroe usa un hechizo en combate, su poder de hechizo aumenta en <resolved>1</resolved> hasta el final de esa batalla.",
-          "icon": "icons/hero_sub_skills/sub_skill_battlemage_3_icon",
-          "grantedSpell": null,
-          "grantedBattleAbility": null
-        }
-      ]
-    },
-    "level3": {
-      "levelName": "Magia de batalla experta",
-      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>25</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente.",
-      "icon": "icons/hero_skills/skill_battlemage_3",
-      "subSkillChoices": [
-        {
-          "id": "sub_skill_battlemage_4",
-          "name": "Autoridad del mago de batalla",
-          "description": "El ataque de las criaturas amistosas aumenta un <resolved>15</resolved> % del poder de hechizo del héroe. Esta bonificación se duplica si el héroe conoce \"Hechicería\".",
-          "icon": "icons/hero_sub_skills/sub_skill_battlemage_4_icon",
-          "grantedSpell": null,
-          "grantedBattleAbility": null
-        },
-        {
-          "id": "sub_skill_battlemage_5",
-          "name": "Autoridad del mago protector",
-          "description": "La defensa de las criaturas amistosas aumenta un <resolved>15</resolved> % del conocimiento del héroe. Esta bonificación se duplica si el héroe conoce \"Resistencia\".",
-          "icon": "icons/hero_sub_skills/sub_skill_battlemage_5_icon",
+          "name": "Retorno de maná",
+          "description": "Cada vez que el héroe usa un hechizo en batalla, gana<resolved>2</resolved> de maná temporal.",
+          "icon": "icons/hero_sub_skills/sub_skill_battlemage_2_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -221,6 +190,37 @@
           "name": "Tiempo mágico",
           "description": "Las recargas de todos los hechizos de batalla del héroe se reducen en <resolved>1</resolved> ronda(s).",
           "icon": "icons/hero_sub_skills/sub_skill_battlemage_6_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        }
+      ]
+    },
+    "level3": {
+      "levelName": "Magia de batalla experta",
+      "description": "El ataque y la defensa de las criaturas amistosas aumentan un <resolved>40</resolved> % del poder de hechizo y el conocimiento del héroe respectivamente, pero reducen un <resolved>40</resolved> % del ataque y la defensa del héroe.",
+      "icon": "icons/hero_skills/skill_battlemage_3",
+      "subSkillChoices": [
+        {
+          "id": "sub_skill_battlemage_4",
+          "name": "Autoridad del mago de batalla",
+          "description": "El ataque de las criaturas amistosas aumenta un <resolved>10</resolved> % del poder de hechizo del héroe. Esta bonificación se duplica si el héroe conoce \"Hechicería\".",
+          "icon": "icons/hero_sub_skills/sub_skill_battlemage_4_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_battlemage_5",
+          "name": "Autoridad del mago protector",
+          "description": "La defensa de las criaturas amistosas aumenta un <resolved>10</resolved> % del conocimiento del héroe. Esta bonificación se duplica si el héroe conoce \"Resistencia\".",
+          "icon": "icons/hero_sub_skills/sub_skill_battlemage_5_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_battlemage_3",
+          "name": "Aura de hechicería",
+          "description": "Cada vez que el héroe lanza un hechizo en combate, gana <resolved>1</resolved> de poder de hechizo y de conocimiento hasta el final de la batalla.",
+          "icon": "icons/hero_sub_skills/sub_skill_battlemage_3_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -401,9 +401,9 @@
       "icon": "icons/hero_skills/skill_enlightenment_2",
       "subSkillChoices": [
         {
-          "id": "sub_skill_enlightenment_1",
-          "name": "Iluminación",
-          "description": "El héroe obtiene +<resolved>10</resolved> % adicional de EXP.",
+          "id": "sub_skill_enlightenment_1_alt",
+          "name": "Comprender lo efímero",
+          "description": "El héroe y las criaturas amistosas infligen +<resolved>50</resolved> % de daño a todas las criaturas invocadas.",
           "icon": "icons/hero_sub_skills/sub_skill_enlightenment_1_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -494,10 +494,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_faction_demons_3",
-          "name": "Asolar",
-          "description": "Las larvas de fuego infligen +<resolved>1</resolved> de daño.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_demons_4_icon",
+          "id": "sub_skill_faction_demons_4",
+          "name": "Poder de colmena",
+          "description": "Reduce en -<resolved>1</resolved> el coste de la aptitud \"Aparición prematura\".",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_demons_3_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -509,10 +509,10 @@
       "icon": "icons/hero_skills/skill_faction_demons_3",
       "subSkillChoices": [
         {
-          "id": "sub_skill_faction_demons_4",
-          "name": "Poder de colmena",
-          "description": "El héroe obtiene <resolved>1</resolved> de suerte y moral.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_demons_3_icon",
+          "id": "sub_skill_faction_demons_3",
+          "name": "Asolar",
+          "description": "Las larvas de fuego infligen +<resolved>1</resolved> de daño.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_demons_4_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -622,13 +622,13 @@
     "skillType": "Faction",
     "level1": {
       "levelName": "Justicia básica",
-      "description": "<i>¡Los caídos en combate lo hacen en nombre del héroe!</i> Cuando una criatura amistosa muere o mata a un enemigo, el ataque, la defensa, el poder de hechizo y el conocimiento del héroe aumentan en <resolved>1</resolved> durante dos rondas. Este efecto se puede acumular.",
+      "description": "En combate, el héroe puede recitar una plegaria básica. Cada vez que una formación amistosa comienza su turno mientras hay una plegaria activa, recibe una gracia que dura hasta que surte efecto. Solo puede haber una plegaria activa a la vez.",
       "icon": "icons/hero_skills/skill_faction_humans",
       "subSkillChoices": []
     },
     "level2": {
       "levelName": "Justicia avanzada",
-      "description": "<i>¡Los caídos en combate lo hacen en nombre del héroe!</i> Cuando una criatura amistosa muere o mata a un enemigo, el ataque, la defensa, el poder de hechizo y el conocimiento del héroe aumentan en <resolved>1</resolved> durante tres rondas. Este efecto se puede acumular.",
+      "description": "En combate, el héroe puede recitar una plegaria avanzada. Cada vez que una formación amistosa comienza su turno mientras hay una plegaria activa, recibe una gracia que dura hasta que surte efecto. Solo puede haber una plegaria activa a la vez.",
       "icon": "icons/hero_skills/skill_faction_humans_2",
       "subSkillChoices": [
         {
@@ -640,59 +640,49 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_faction_humans_2",
-          "name": "Sacrificio justo",
-          "description": "Cada vez que una formación amistosa muere o mata a una formación enemiga, el héroe obtiene <resolved>3</resolved> de maná temporal.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_2_icon",
+          "id": "sub_skill_faction_humans_rework_2",
+          "name": "Secreto del maná",
+          "description": "Tras activar cualquier plegaria, las criaturas amistosas que hayan recibido una gracia restauran +<resolved>1</resolved> de maná temporal al héroe al comienzo de su turno. El efecto dura hasta el final de la ronda.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_2_rework_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_faction_humans_3",
-          "name": "Toque purificador",
-          "description": "Otorga una nueva aptitud. Disipa todos los efectos negativos del objetivo.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_3_icon",
+          "id": "sub_skill_faction_humans_rework_3",
+          "name": "Piedad",
+          "description": "El héroe obtiene +<resolved>10</resolved> % más de EXP.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_3_rework_icon",
           "grantedSpell": null,
-          "grantedBattleAbility": {
-            "id": "sub_skill_faction_humans_4_ability",
-            "name": "Toque purificador",
-            "icon": "icons/hero_abilities/sub_skill_faction_humans_4_ability",
-            "description": "Elimina todos los efectos negativos del objetivo."
-          }
+          "grantedBattleAbility": null
         }
       ]
     },
     "level3": {
       "levelName": "Justicia experta",
-      "description": "<i>¡Los caídos en combate lo hacen en nombre del héroe!</i> Cuando una criatura amistosa muere o mata a un enemigo, el ataque, la defensa, el poder de hechizo y el conocimiento del héroe aumentan en <resolved>1</resolved> durante cuatro rondas. Este efecto se puede acumular.",
+      "description": "En combate, el héroe puede recitar una plegaria experta. Cada vez que una formación amistosa comienza su turno mientras hay una plegaria activa, recibe una gracia que dura hasta que surte efecto. Solo puede haber una plegaria activa a la vez.",
       "icon": "icons/hero_skills/skill_faction_humans_3",
       "subSkillChoices": [
         {
-          "id": "sub_skill_faction_humans_2_old",
-          "name": "Guardián",
-          "description": "Cada vez que una criatura amistosa mata a un enemigo, restaura completamente sus PV. <b>No puede</b> revivir a las unidades caídas.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_4_icon",
+          "id": "sub_skill_faction_humans_rework_4",
+          "name": "Réquiem",
+          "description": "Cada vez que una formación muere, el héroe obtiene +<resolved>1</resolved> en todos los atributos hasta el final de la ronda.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_4_rework_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_faction_humans_5",
-          "name": "El elegido",
-          "description": "Otorga una nueva aptitud. Aumenta el ataque de una criatura amistosa un <resolved>50</resolved> % del ataque y poder de hechizo del héroe, y su defensa un <resolved>50</resolved> % de la defensa y conocimiento del héroe (hasta fin de ronda).",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_5_icon",
+          "id": "sub_skill_faction_humans_rework_5",
+          "name": "Cuidar de los demás",
+          "description": "Cada vez que el héroe activa una plegaria, la formación amistosa activa obtiene su gracia inmediatamente.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_5_rework_icon",
           "grantedSpell": null,
-          "grantedBattleAbility": {
-            "id": "sub_skill_faction_humans_5_ability",
-            "name": "El elegido",
-            "icon": "icons/hero_abilities/sub_skill_faction_humans_5_ability",
-            "description": "El ataque de la criatura amistosa objetivo aumenta en un <resolved>50</resolved> % del ataque y el poder de hechizo del héroe, y su defensa en un <resolved>50</resolved> % de la defensa y el conocimiento del héroe. La bonificación dura hasta el final de la ronda."
-          }
+          "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_faction_humans_6",
-          "name": "Fe firme",
-          "description": "Cada vez que se activa Justicia, el héroe obtiene +<resolved>1</resolved> en todos los atributos hasta el final de la ronda.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_6_icon",
+          "id": "sub_skill_faction_humans_rework_6",
+          "name": "Contemplación",
+          "description": "La activación de plegarias no gasta cargas de concentración.",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_humans_6_rework_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -738,7 +728,7 @@
           "id": "sub_skill_faction_nature_3",
           "name": "Vástago del bosque",
           "description": "+<resolved>20</resolved> de maná máximo.",
-          "icon": "icons/hero_sub_skills/sub_skill_faction_nature_3_icon",
+          "icon": "icons/hero_sub_skills/sub_skill_faction_nature_3_alt_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -939,41 +929,128 @@
     }
   },
   {
+    "id": "skill_first_aid",
+    "name": "Primeros Auxilios",
+    "icon": "icons/hero_skills/skill_first_aid",
+    "skillType": "Common",
+    "level1": {
+      "levelName": "Primeros auxilios básicos",
+      "description": "Tras ganar una batalla, las formaciones amistosas supervivientes reviven un <resolved>20</resolved> % de las unidades perdidas durante esa batalla.",
+      "icon": "icons/hero_skills/skill_first_aid",
+      "subSkillChoices": []
+    },
+    "level2": {
+      "levelName": "Primeros auxilios avanzados",
+      "description": "Tras ganar una batalla, las formaciones amistosas supervivientes reviven un <resolved>30</resolved> % de las unidades perdidas durante esa batalla.",
+      "icon": "icons/hero_skills/skill_first_aid_2",
+      "subSkillChoices": [
+        {
+          "id": "sub_skill_first_aid_1",
+          "name": "Regreso al servicio",
+          "description": "Revive un +<resolved>10</resolved> % adicional de las unidades perdidas durante la batalla. Esta bonificación se duplica si el héroe conoce \"Reclutamiento\".",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_1_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_first_aid_5",
+          "name": "Decocciones curativas",
+          "description": "Las criaturas amistosas ganan +<resolved>2</resolved> PV.",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_5_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_first_aid_3",
+          "name": "Antídotos",
+          "description": "Otorga una nueva aptitud. Disipa todos los efectos negativos del objetivo.",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_3_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": {
+            "id": "sub_skill_first_aid_3_ability",
+            "name": "Antídotos",
+            "icon": "icons/hero_abilities/sub_skill_first_aid_3_ability",
+            "description": "Disipa todos los efectos negativos de un objetivo amistoso."
+          }
+        }
+      ]
+    },
+    "level3": {
+      "levelName": "Primeros auxilios expertos",
+      "description": "Tras ganar una batalla, las formaciones amistosas supervivientes reviven un <resolved>40</resolved> % de las unidades perdidas durante esa batalla.",
+      "icon": "icons/hero_skills/skill_first_aid_3",
+      "subSkillChoices": [
+        {
+          "id": "sub_skill_first_aid_4",
+          "name": "Frenesí de batalla",
+          "description": "Cada vez que una criatura amistosa mata a un enemigo, restaura completamente sus PV. <b>No puede</b> revivir a las unidades caídas.",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_4_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_first_aid_2",
+          "name": "Adrenalina",
+          "description": "Cada vez que una formación amistosa recibe daño y sobrevive, obtiene un +<resolved>10</resolved> % de daño infligido y un −<resolved>10</resolved> % de daño recibido hasta el final de la siguiente ronda.",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_2_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": null
+        },
+        {
+          "id": "sub_skill_first_aid_6",
+          "name": "Amoníaco",
+          "description": "Otorga una nueva aptitud que revive a un cadáver amistoso objetivo y le restaura parcialmente sus PV. Se puede usar una vez por batalla.",
+          "icon": "icons/hero_sub_skills/sub_skill_first_aid_6_icon",
+          "grantedSpell": null,
+          "grantedBattleAbility": {
+            "id": "sub_skill_first_aid_6_ability",
+            "name": "Amoníaco",
+            "icon": "icons/hero_abilities/sub_skill_first_aid_6_ability",
+            "description": "Revive un cadáver amistoso objetivo y le restaura [ <resolved>50</resolved> + <resolved>20</resolved> % × (nivel del héroe - 1) ] PV. Se puede usar una vez por batalla."
+          }
+        }
+      ]
+    },
+    "statLabels": {
+      "heroesStartingWithSkill": "Héroes que empiezan con esta Habilidad"
+    }
+  },
+  {
     "id": "skill_formation",
     "name": "Arte de batalla",
     "icon": "icons/hero_skills/skill_formation",
     "skillType": "Common",
     "level1": {
       "levelName": "Arte de batalla básico",
-      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>20</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>20</resolved> % de defensa hasta el final de la ronda.",
+      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>10</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>10</resolved> % de defensa hasta el final de la ronda.",
       "icon": "icons/hero_skills/skill_formation",
       "subSkillChoices": []
     },
     "level2": {
       "levelName": "Arte de batalla avanzado",
-      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>30</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>30</resolved> % de defensa hasta el final de la ronda.",
+      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>15</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>15</resolved> % de defensa hasta el final de la ronda.",
       "icon": "icons/hero_skills/skill_formation_2",
       "subSkillChoices": [
         {
-          "id": "sub_skill_formation_1",
-          "name": "Maestría en cuerpo a cuerpo",
-          "description": "Las criaturas amistosas infligen +<resolved>10</resolved>% y reciben -<resolved>10</resolved>% de daño cuerpo a cuerpo.",
-          "icon": "icons/hero_sub_skills/sub_skill_formation_1_icon",
+          "id": "sub_skill_formation_6",
+          "name": "Manamancia",
+          "description": "El maná máximo del héroe aumenta en <resolved>2</resolved> según su ataque y defensa. Esta bonificación se duplica si el héroe conoce \"Reclutamiento\".",
+          "icon": "icons/hero_sub_skills/sub_skill_formation_6_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
           "id": "sub_skill_formation_2",
-          "name": "Maestría a distancia",
-          "description": "Las criaturas amistosas infligen +<resolved>10</resolved> % y reciben -<resolved>10</resolved> % de daño a distancia y de largo alcance.",
-          "icon": "icons/hero_sub_skills/sub_skill_formation_2_alt_icon",
+          "name": "Fortificación",
+          "description": "Cuando una formación amistosa se salta su turno, obtiene +<resolved>20</resolved> de defensa hasta el final de la ronda.",
+          "icon": "icons/hero_sub_skills/sub_skill_formation_2_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
           "id": "sub_skill_formation_3",
           "name": "Vigilancia",
-          "description": "Las criaturas amistosas obtienen Vigilancia cuando eligen esperar en combate. Mientras dura Vigilancia, golpean cuando un enemigo se aleja caminando o volando de una casilla dentro de su alcance de combate cuerpo a cuerpo.",
+          "description": "Las criaturas amistosas obtienen Vigilancia cuando esperan en combate. Mientras dura Vigilancia, golpean a un enemigo que se aleja caminando o volando de una casilla dentro de su alcance de combate cuerpo a cuerpo.",
           "icon": "icons/hero_sub_skills/sub_skill_formation_3_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -982,7 +1059,7 @@
     },
     "level3": {
       "levelName": "Arte de batalla experto",
-      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>40</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>40</resolved> % de defensa hasta el final de la ronda.",
+      "description": "Cuando una criatura amistosa espera en su turno, obtiene +<resolved>20</resolved> % de ataque hasta el final de la ronda. Cuando se salta un turno, obtiene +<resolved>20</resolved> % de defensa hasta el final de la ronda.",
       "icon": "icons/hero_skills/skill_formation_3",
       "subSkillChoices": [
         {
@@ -1002,10 +1079,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_formation_6",
-          "name": "Manamancia",
-          "description": "El maná máximo del héroe aumenta en <resolved>2</resolved> según su ataque y defensa. Esta bonificación se duplica si el héroe conoce \"Reclutamiento\".",
-          "icon": "icons/hero_sub_skills/sub_skill_formation_6_icon",
+          "id": "sub_skill_formation_1",
+          "name": "Todo listo",
+          "description": "Cuando una formación amistosa espera en su turno, obtiene +<resolved>1</resolved> de velocidad hasta el final de la ronda.",
+          "icon": "icons/hero_sub_skills/sub_skill_formation_1_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -1110,15 +1187,15 @@
       "subSkillChoices": [
         {
           "id": "sub_skill_logistic_2",
-          "name": "Pasos agigantados",
-          "description": "El héroe recupera <resolved>5</resolved> punto(s) de movimiento después de cada victoria en combate.",
-          "icon": "icons/hero_sub_skills/sub_skill_logistic_2_icon",
+          "name": "Monturas fuertes",
+          "description": "+<resolved>5</resolved> % adicional de puntos de movimiento en el mapa global.",
+          "icon": "icons/hero_sub_skills/sub_skill_logistic_4_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
           "id": "sub_skill_logistic_4",
-          "name": "Monturas fuertes",
+          "name": "Magia de rastreo",
           "description": "Los hechizos neutrales del mapa global cuestan -<resolved>4</resolved> de maná. Esta bonificación se duplica si el héroe conoce \"Exploración\".",
           "icon": "icons/hero_sub_skills/sub_skill_logistic_4_alt_icon",
           "grantedSpell": null,
@@ -1127,7 +1204,7 @@
         {
           "id": "sub_skill_logistic_3",
           "name": "Planificación cuidadosa",
-          "description": "Cada día, el héroe ahorra hasta <resolved>50</resolved> puntos de movimiento no utilizados para el día siguiente. Esta bonificación se duplica si el héroe conoce \"Magia arcana\".",
+          "description": "Cada día, el héroe ahorra hasta <resolved>30</resolved> puntos de movimiento no utilizados para el día siguiente. Esta bonificación se duplica si el héroe conoce \"Magia arcana\".",
           "icon": "icons/hero_sub_skills/sub_skill_logistic_3_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -1200,7 +1277,7 @@
         {
           "id": "sub_skill_luck_2",
           "name": "Siempre sale cara",
-          "description": "El héroe obtiene +<resolved>25</resolved> % de oro y recursos de las pilas en el mapa global. Esta bonificación se duplica si el héroe conoce \"Economía\".",
+          "description": "El héroe obtiene +<resolved>10</resolved> % de oro y recursos de las pilas en el mapa global. Esta bonificación se duplica si el héroe conoce \"Economía\".",
           "icon": "icons/hero_sub_skills/sub_skill_luck_2_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -1384,9 +1461,9 @@
         },
         {
           "id": "sub_skill_magic_night_5",
-          "name": "La hora del lobo",
-          "description": "-<resolved>10</resolved> % de ataque y defensa a las criaturas enemigas.",
-          "icon": "icons/hero_sub_skills/sub_skill_magic_night_5_icon",
+          "name": "Aura de impedimento",
+          "description": "El enemigo pierde <resolved>1</resolved> carga(s) de concentración al comienzo de cada ronda de batalla, <b>excepto la primera</b>.",
+          "icon": "icons/hero_sub_skills/sub_skill_resistance_4_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -1674,7 +1751,7 @@
         {
           "id": "sub_skill_protection_6",
           "name": "Por voluntad de la suerte",
-          "description": "Las criaturas amistosas obtienen +<resolved>2</resolved> de defensa por cada punto de suerte.",
+          "description": "Las criaturas amistosas obtienen +<resolved>1</resolved> de defensa por cada punto de suerte.",
           "icon": "icons/hero_sub_skills/sub_skill_protection_6_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
@@ -1704,9 +1781,9 @@
         },
         {
           "id": "sub_skill_protection_5",
-          "name": "Fuerza imparable",
-          "description": "-<resolved>15</resolved> % de ataque a las criaturas enemigas.",
-          "icon": "icons/hero_sub_skills/sub_skill_assault_5_icon",
+          "name": "Firmeza",
+          "description": "-<resolved>10</resolved> % de ataque a las criaturas enemigas.",
+          "icon": "icons/hero_sub_skills/sub_skill_protection_5_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -1742,17 +1819,17 @@
         },
         {
           "id": "sub_skill_resistance_4",
-          "name": "Aura de impedimento",
-          "description": "El enemigo pierde <resolved>1</resolved> carga(s) de concentración al comienzo de cada ronda de batalla, <b>excepto la primera</b>.",
-          "icon": "icons/hero_sub_skills/sub_skill_resistance_4_icon",
+          "name": "Hechicería protectora",
+          "description": "Reduce un <resolved>20</resolved> % el daño de golpe heroico que reciben las criaturas amistosas. Esta bonificación se duplica si el héroe conoce \"Primeros Auxilios\".",
+          "icon": "icons/hero_sub_skills/sub_skill_sorcery_8_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_resistance_3",
-          "name": "Metabolismo rápido",
-          "description": "Todos los efectos negativos sobre criaturas amistosas duran <resolved>2</resolved> rondas menos (no menos de <resolved>1</resolved>).",
-          "icon": "icons/hero_sub_skills/sub_skill_resistance_3_icon",
+          "id": "sub_skill_resistance_7",
+          "name": "Cambio temporal",
+          "description": "+<resolved>1</resolved> ronda(s) a la recarga de todos los hechizos enemigos.",
+          "icon": "icons/hero_sub_skills/sub_skill_resistance_2_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -1777,10 +1854,10 @@
           }
         },
         {
-          "id": "sub_skill_resistance_7",
-          "name": "Cambio temporal",
-          "description": "+<resolved>1</resolved> ronda(s) a la recarga de todos los hechizos enemigos.",
-          "icon": "icons/hero_sub_skills/sub_skill_resistance_2_icon",
+          "id": "sub_skill_resistance_3",
+          "name": "Metabolismo rápido",
+          "description": "Todos los efectos negativos sobre criaturas amistosas duran <resolved>2</resolved> rondas menos (no menos de <resolved>1</resolved>).",
+          "icon": "icons/hero_sub_skills/sub_skill_resistance_3_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -1823,10 +1900,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_scouting_2",
-          "name": "Caminos familiares",
-          "description": "+<resolved>10</resolved> de puntos de movimiento cuando el héroe comienza el día en una zona que controlas. Esta bonificación se duplica si el héroe conoce \"Sabiduría\".",
-          "icon": "icons/hero_sub_skills/sub_skill_scouting_2_icon",
+          "id": "sub_skill_scouting_6",
+          "name": "Contraespionaje",
+          "description": "Los enemigos no pueden ver información detallada sobre tu ejército. Cuando lo intentan, ven una cantidad aleatoria de criaturas aleatorias de tu facción.",
+          "icon": "icons/hero_sub_skills/sub_skill_scouting_6_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -1862,10 +1939,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_scouting_6",
-          "name": "Contraespionaje",
-          "description": "Los enemigos no pueden ver información detallada sobre tu ejército. Cuando lo intentan, ven una cantidad aleatoria de criaturas aleatorias de tu facción.",
-          "icon": "icons/hero_sub_skills/sub_skill_scouting_6_icon",
+          "id": "sub_skill_scouting_2",
+          "name": "Pasos agigantados",
+          "description": "El héroe recupera <resolved>5</resolved> punto(s) de movimiento después de cada victoria en combate.",
+          "icon": "icons/hero_sub_skills/sub_skill_logistic_2_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -1975,14 +2052,14 @@
     },
     "level2": {
       "levelName": "Hechicería avanzada",
-      "description": "+<resolved>30</resolved> % de daño mágico infligido.",
+      "description": "+<resolved>25</resolved> % de daño mágico infligido.",
       "icon": "icons/hero_skills/skill_sorcery_2",
       "subSkillChoices": [
         {
-          "id": "sub_skill_sorcery_7",
-          "name": "Hechicería de invocación",
-          "description": "Todas las criaturas invocadas en combate obtienen +<resolved>25</resolved> % de salud e infligen +<resolved>25</resolved> %de daño.",
-          "icon": "icons/hero_sub_skills/sub_skill_sorcery_7_icon",
+          "id": "sub_skill_sorcery_6",
+          "name": "Influencia mágica",
+          "description": "Los hechizos enemigos cuestan +<resolved>4</resolved> de maná.",
+          "icon": "icons/hero_sub_skills/sub_skill_wisdom_1_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -2010,14 +2087,14 @@
     },
     "level3": {
       "levelName": "Hechicería experta",
-      "description": "+<resolved>40</resolved> % de daño mágico infligido.",
+      "description": "+<resolved>30</resolved> % de daño mágico infligido.",
       "icon": "icons/hero_skills/skill_sorcery_3",
       "subSkillChoices": [
         {
-          "id": "sub_skill_sorcery_4",
-          "name": "Hechizos perforantes",
-          "description": "Los hechizos ofensivos ignoran el <resolved>25</resolved> % de la resistencia mágica del objetivo.",
-          "icon": "icons/hero_sub_skills/sub_skill_sorcery_4_icon",
+          "id": "sub_skill_sorcery_7",
+          "name": "Hechicería de invocación",
+          "description": "Todas las criaturas invocadas en combate obtienen +<resolved>25</resolved> % de salud e infligen +<resolved>25</resolved> % de daño.",
+          "icon": "icons/hero_sub_skills/sub_skill_sorcery_7_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -2107,10 +2184,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_summoner_6",
-          "name": "Invocación de destrucción",
-          "description": "El héroe y las criaturas amistosas infligen +<resolved>50</resolved> % de daño a todas las criaturas invocadas.",
-          "icon": "icons/hero_sub_skills/sub_skill_summoner_6_icon",
+          "id": "sub_skill_summoner_7",
+          "name": "Invocación parasitaria",
+          "description": "Cada vez que el avatar invocado inflige o recibe daño, el héroe obtiene <resolved>3</resolved> de maná temporal.",
+          "icon": "icons/hero_sub_skills/sub_skill_summoner_7_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -2201,7 +2278,7 @@
     "id": "skill_trainer",
     "name": "Reclutamiento",
     "icon": "icons/hero_skills/skill_trainer",
-    "skillType": "Class",
+    "skillType": "Common",
     "level1": {
       "levelName": "Reclutamiento básico",
       "description": "+<resolved>4</resolved> al crecimiento de criaturas de rango 1 en todas tus ciudades.",
@@ -2222,10 +2299,10 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_trainer_5",
-          "name": "Guardias de élite",
-          "description": "El ataque y la defensa de las criaturas amistosas de rango 1, 2 y 3 obtienen un <resolved>25</resolved> % del ataque y la defensa del héroe como ataque y defensa. Esta bonificación se duplica si el héroe conoce \"Tácticas\".",
-          "icon": "icons/hero_sub_skills/sub_skill_trainer_5_icon",
+          "id": "sub_skill_trainer_2",
+          "name": "Entrenamiento extenuante",
+          "description": "Las recargas de todas las aptitudes de las criaturas amistosas se reducen en <resolved>1</resolved> ronda(s).",
+          "icon": "icons/hero_sub_skills/sub_skill_trainer_2_new_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -2257,18 +2334,18 @@
           "grantedBattleAbility": null
         },
         {
-          "id": "sub_skill_trainer_2",
-          "name": "Entrenamiento extenuante",
-          "description": "Las criaturas amistosas obtienen <resolved>2</resolved> PV.",
-          "icon": "icons/hero_sub_skills/sub_skill_trainer_2_icon",
+          "id": "sub_skill_trainer_5",
+          "name": "Milicia",
+          "description": "Al comienzo de la batalla, las formaciones amistosas de rango 1, rango 2 y rango 3 obtienen un <resolved>5</resolved> % de unidades temporales. Esta bonificación se duplica si el héroe conoce \"Táctica\".",
+          "icon": "icons/hero_sub_skills/sub_skill_trainer_6_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
         {
           "id": "sub_skill_trainer_6",
-          "name": "Mentores",
-          "description": "Permite mejorar las criaturas del ejército del héroe fuera de la ciudad, siempre que el ejército ya contenga la versión mejorada. Mejorar con este método tiene un coste superior al habitual.",
-          "icon": "icons/hero_sub_skills/sub_skill_trainer_6_icon",
+          "name": "Guardias de élite",
+          "description": "Permite cambiar las mejoras de las criaturas del ejército del héroe sin necesidad de estar en una ciudad ni junto a un objeto especial.",
+          "icon": "icons/hero_sub_skills/sub_skill_trainer_5_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         }
@@ -2296,9 +2373,9 @@
       "subSkillChoices": [
         {
           "id": "sub_skill_wisdom_1",
-          "name": "Antimago",
-          "description": "Los hechizos enemigos cuestan +<resolved>4</resolved> de maná.",
-          "icon": "icons/hero_sub_skills/sub_skill_wisdom_1_icon",
+          "name": "Alma vasta",
+          "description": "Las recargas de todos los hechizos de batalla del héroe se reducen en <resolved>1</resolved> ronda(s).",
+          "icon": "icons/hero_sub_skills/sub_skill_sorcery_6_icon",
           "grantedSpell": null,
           "grantedBattleAbility": null
         },
@@ -2335,7 +2412,7 @@
         },
         {
           "id": "sub_skill_wisdom_2",
-          "name": "Alma vasta",
+          "name": "Campos de maná",
           "description": "+<resolved>10</resolved> % de maná restaurado cada mañana.",
           "icon": "icons/hero_sub_skills/sub_skill_wisdom_2_icon",
           "grantedSpell": null,

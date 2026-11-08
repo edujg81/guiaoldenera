@@ -49,7 +49,7 @@
     "classType": "might",
     "classDisplay": "Ejecutor",
     "icon": "icons/hero_sub_classes/sub_class_demons_might_2_icon",
-    "description": "Otorga una aptitud de batalla nueva. Permite al héroe consumir un cadáver objetivo y obtener ataque, defensa y poder de hechizo adicionales hasta el final de la batalla.",
+    "description": "Otorga una nueva aptitud. Permite al héroe consumir un cadáver objetivo y obtener ataque, defensa y poder de hechizo adicionales hasta el final de la batalla.",
     "factionIcon": "icons/fractions/hive_icon",
     "classIcon": "icons/hero_classes/might_demon_icon",
     "requiredSkills": [
@@ -175,7 +175,7 @@
     "classType": "might",
     "classDisplay": "Adalid",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_might_1_icon",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de ataque.",
+    "description": "El héroe obtiene +<resolved>40</resolved> % de ataque.",
     "factionIcon": "icons/fractions/dungeon_icon",
     "classIcon": "icons/hero_classes/might_dungeon_icon",
     "requiredSkills": [
@@ -217,7 +217,7 @@
     "classType": "might",
     "classDisplay": "Adalid",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_might_2_icon",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de defensa.",
+    "description": "El héroe obtiene +<resolved>40</resolved> % de defensa.",
     "factionIcon": "icons/fractions/dungeon_icon",
     "classIcon": "icons/hero_classes/might_dungeon_icon",
     "requiredSkills": [
@@ -259,7 +259,7 @@
     "classType": "magic",
     "classDisplay": "Brujo",
     "icon": "icons/hero_sub_classes/sub_class_dungeon_magic_1_icon",
-    "description": "El héroe obtiene +<resolved>100</resolved> % de poder de hechizo.",
+    "description": "El héroe obtiene +<resolved>40</resolved> % de poder de hechizo.",
     "factionIcon": "icons/fractions/dungeon_icon",
     "classIcon": "icons/hero_classes/magic_dungeon_icon",
     "requiredSkills": [
@@ -931,7 +931,7 @@
     "classType": "magic",
     "classDisplay": "Portavoz de la Grieta",
     "icon": "icons/hero_sub_classes/sub_class_unfrozen_magic_1_icon",
-    "description": "El héroe obtiene +<resolved>10</resolved> de ataque, defensa, poder de hechizo y conocimiento.",
+    "description": "El héroe obtiene +<resolved>8</resolved> de ataque, defensa, poder de hechizo y conocimiento.",
     "factionIcon": "icons/fractions/unfrozen_icon",
     "classIcon": "icons/hero_classes/magic_unfrozen_icon",
     "requiredSkills": [

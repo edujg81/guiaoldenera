@@ -81,7 +81,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -105,7 +107,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -151,10 +155,58 @@
     "abilityType": "Active",
     "icon": "icons/abilities/aqualotl_ability_5_name",
     "nameSid": "aqualotl_ability_5_name",
+    "description": "Selecciona una casilla. Atrae hacia la casilla objetivo a todas las formaciones situadas a un máximo de dos casillas de distancia en cualquier dirección, si es posible.",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Especial",
+    "immunities": null,
+    "infoNotes": [
+      "Solo se puede usar después de \"Despertar\"."
+    ],
+    "sourceUnitIds": [
+      "aqualotl_upg"
+    ],
+    "sourceUnitNames": [
+      "Náyade vernal"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "aqualotl_ability_5_name_new",
+    "name": "Tenaza de hielo",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_5_name_new",
+    "nameSid": "aqualotl_ability_5_name_new",
     "description": "Confunde al enemigo objetivo. Mientras está confundido, su velocidad e iniciativa se reducen en <resolved>2</resolved>.\nDuración: <resolved>3</resolved> ronda(s).",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Efecto negativo",
+    "immunities": null,
+    "infoNotes": [
+      "Solo se puede usar después de \"Despertar\"."
+    ],
+    "sourceUnitIds": [
+      "aqualotl_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Náyade brumal"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "aqualotl_ability_6_name",
+    "name": "Hipotermia",
+    "abilityType": "Active",
+    "icon": "icons/abilities/aqualotl_ability_6_name",
+    "nameSid": "aqualotl_ability_6_name",
+    "description": "El ataque, la defensa, el poder de hechizo y el conocimiento del héroe enemigo se reducen en <resolved>2</resolved> hasta el final de la ronda.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Especial",
     "immunities": null,
     "infoNotes": [
       "Solo se puede usar después de \"Despertar\"."
@@ -323,17 +375,17 @@
     "abilityType": "Active",
     "icon": "icons/abilities/assassin_ability_2_name",
     "nameSid": "assassin_ability_2_name",
-    "description": "Inflige daño de ataque básico a cualquier enemigo ignorando su defensa.",
+    "description": "Inflige un <resolved>50</resolved> % de daño de ataque básico ([ <resolved>2</resolved>–<resolved>3</resolved> × cantidad de unidades ]) a cualquier enemigo ignorando su defensa.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Ataque",
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "assassin_upg"
+      "assassin_upg_alt"
     ],
     "sourceUnitNames": [
-      "Infiltrado astuto"
+      "Infiltrado lúgubre"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -475,6 +527,32 @@
     "infoNotes": [
       "No gasta cargas de concentración."
     ],
+    "sourceUnitIds": [
+      "blade_dancer",
+      "blade_dancer_upg",
+      "blade_dancer_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Bailarina de ónice",
+      "Bailarina de jaspe",
+      "Bailarina áurea"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "blade_dancer_ability_2_name",
+    "name": "Danza de hojas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/blade_dancer_ability_2_name",
+    "nameSid": "blade_dancer_ability_2_name",
+    "description": "Esta criatura ataca dos veces hasta el final de la ronda.",
+    "rank": 3,
+    "energyCost": 3,
+    "abilityTypeSid": "Ataque",
+    "immunities": null,
+    "infoNotes": null,
     "sourceUnitIds": [
       "blade_dancer",
       "blade_dancer_upg",
@@ -666,12 +744,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "druid",
-      "druid_upg"
+      "druid"
     ],
     "sourceUnitNames": [
-      "Herbomante",
-      "Esporamante"
+      "Herbomante"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -690,10 +766,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "druid_upg"
+      "druid_upg_alt"
     ],
     "sourceUnitNames": [
-      "Esporamante"
+      "Murmumante"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -716,6 +792,28 @@
     ],
     "sourceUnitNames": [
       "Murmumante"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "druid_ability_5_name",
+    "name": "Invasión de abejas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/druid_ability_5_name",
+    "nameSid": "druid_ability_5_name",
+    "description": "Inflige [ <resolved>16</resolved> + <resolved>4</resolved> × cantidad de unidades ] de daño a todas las criaturas enemigas adyacentes a la casilla objetivo. Las abejas le siguen atacando e infligen [ <resolved>16</resolved> + <resolved>4</resolved> × cantidad de unidades ] de daño al comienzo de cada turno. Este efecto se puede acumular.\nDuración: <resolved>3</resolved> ronda(s).",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Efecto negativo",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "druid_upg"
+    ],
+    "sourceUnitNames": [
+      "Esporamante"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -799,7 +897,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/eldritch_flyer_ability_2_name",
     "nameSid": "eldritch_flyer_ability_2_name",
-    "description": "Inflige el <resolved>100</resolved> % de un ataque básico ([ <resolved>10</resolved>–<resolved>13</resolved> × cantidad de unidades ]) como daño puro al objetivo.",
+    "description": "Inflige el <resolved>100</resolved> % de un ataque básico ([ <resolved>10</resolved>–<resolved>12</resolved> × cantidad de unidades ]) como daño puro al objetivo.",
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Ataque",
@@ -835,7 +933,53 @@
       "elf_tracker_upg_alt"
     ],
     "sourceUnitNames": [
-      "Fauno guerrero"
+      "Fauna guerrera"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "elf_tracker_ability_2_name",
+    "name": "Erradicación de forasteros",
+    "abilityType": "Active",
+    "icon": "icons/abilities/elf_tracker_ability_2_name",
+    "nameSid": "elf_tracker_ability_2_name",
+    "description": "Realiza un ataque que inflige un +<resolved>30</resolved> % de daño.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Modificador de ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "elf_tracker",
+      "elf_tracker_upg"
+    ],
+    "sourceUnitNames": [
+      "Fauna",
+      "Fauna arquera"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "elf_tracker_ability_3_name",
+    "name": "Erradicación de forasteros",
+    "abilityType": "Active",
+    "icon": "icons/abilities/elf_tracker_ability_3_name",
+    "nameSid": "elf_tracker_ability_3_name",
+    "description": "Realiza un ataque que inflige un +<resolved>30</resolved> % de daño.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Modificador de ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "elf_tracker_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Fauna guerrera"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -851,7 +995,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -875,7 +1021,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -897,7 +1045,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/ent_ability_3_name",
     "nameSid": "ent_ability_3_name",
-    "description": "Los enemigos en un radio de <resolved>2</resolved> casilla(s) solo pueden seleccionar como objetivo a esta criatura hasta el final de la ronda.",
+    "description": "Los enemigos en un radio de <resolved>2</resolved> casilla(s) solo pueden seleccionar como objetivo a esta criatura hasta el final de la siguiente ronda.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Efecto positivo",
@@ -921,7 +1069,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/ent_ability_4_name",
     "nameSid": "ent_ability_4_name",
-    "description": "El ataque de esta criatura se convierte en defensa adicional hasta el final de la ronda.",
+    "description": "El ataque de esta criatura se convierte en defensa adicional hasta el final de la siguiente ronda.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Especial",
@@ -934,6 +1082,34 @@
     ],
     "sourceUnitNames": [
       "Íriyad fúngico"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "esquire_ability_1_name",
+    "name": "Escudos preparados",
+    "abilityType": "Active",
+    "icon": "icons/abilities/esquire_ability_1_name",
+    "nameSid": "esquire_ability_1_name",
+    "description": "Recibe -<resolved>30</resolved> % de daño a distancia.\nDuración: <resolved>2</resolved> ronda(s).",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Efecto positivo",
+    "immunities": null,
+    "infoNotes": [
+      "No finaliza el turno."
+    ],
+    "sourceUnitIds": [
+      "esquire",
+      "esquire_upg",
+      "esquire_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Espadachín",
+      "Capitán de la guardia",
+      "Égida del Sol"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -998,6 +1174,28 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
+      "flicker_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Fantasma"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "flicker_ability_2_name",
+    "name": "Puertas del Más Allá",
+    "abilityType": "Active",
+    "icon": "icons/abilities/flicker_ability_2_name",
+    "nameSid": "flicker_ability_2_name",
+    "description": "Invoca [ <resolved>1</resolved> × cantidad de unidades ] aparición(es) en una casilla adyacente. Desaparecen después de la batalla.",
+    "rank": 3,
+    "energyCost": 3,
+    "abilityTypeSid": "Invocación",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
       "flicker_upg"
     ],
     "sourceUnitNames": [
@@ -1013,7 +1211,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/frostworm_rider_ability_1_name",
     "nameSid": "frostworm_rider_ability_1_name",
-    "description": "Realiza un ataque adicional que inflige el <resolved>100</resolved> % de un ataque básico ([ <resolved>5</resolved>–<resolved>7</resolved> × cantidad de unidades ]) como daño puro.",
+    "description": "Realiza un ataque adicional que inflige el <resolved>100</resolved> % de un ataque básico ([ <resolved>6</resolved>–<resolved>8</resolved> × cantidad de unidades ]) como daño puro.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Modificador de ataque",
@@ -1039,7 +1237,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/frostworm_rider_ability_2_name",
     "nameSid": "frostworm_rider_ability_2_name",
-    "description": "Realiza un ataque adicional que inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>2</resolved>–<resolved>4</resolved> × cantidad de unidades ]) como daño puro al enemigo objetivo y a todos los enemigos adyacentes.",
+    "description": "Realiza un ataque adicional que inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>3</resolved>–<resolved>4</resolved> × cantidad de unidades ]) como daño puro al enemigo objetivo y a todos los enemigos adyacentes.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Ataque",
@@ -1119,12 +1317,10 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "godslayer",
-      "godslayer_upg",
       "godslayer_upg_alt"
     ],
     "sourceUnitNames": [
       "Asolador",
-      "Asolador amenazante",
       "Asolador maníaco"
     ],
     "statLabels": {
@@ -1238,57 +1434,11 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
-      "graverobber"
-    ],
-    "sourceUnitNames": [
-      "Ladrón de tumbas"
-    ],
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "graverobber_ability_1_name",
-    "name": "Desenterrar huesos",
-    "abilityType": "Active",
-    "icon": "icons/abilities/graverobber_ability_1_name",
-    "nameSid": "graverobber_ability_1_name",
-    "description": "Invoca [ <resolved>3</resolved> × cantidad de unidades ] esqueleto(s) en una casilla adyacente. Desaparecen después de la batalla.",
-    "rank": 2,
-    "energyCost": 2,
-    "abilityTypeSid": "Invocación",
-    "immunities": null,
-    "infoNotes": [
-      "No finaliza el turno."
-    ],
-    "sourceUnitIds": [
+      "graverobber",
       "graverobber_upg"
     ],
     "sourceUnitNames": [
-      "Mercader de muerte"
-    ],
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "graverobber_ability_2_name",
-    "name": "Atrapar recuerdos",
-    "abilityType": "Active",
-    "icon": "icons/abilities/graverobber_ability_2_name",
-    "nameSid": "graverobber_ability_2_name",
-    "description": "Invoca [ <resolved>1</resolved> × cantidad de unidades ] aparición(es) en una casilla adyacente. Desaparecen después de la batalla.",
-    "rank": 2,
-    "energyCost": 2,
-    "abilityTypeSid": "Invocación",
-    "immunities": null,
-    "infoNotes": [
-      "No finaliza el turno."
-    ],
-    "sourceUnitIds": [
-      "graverobber_upg"
-    ],
-    "sourceUnitNames": [
+      "Ladrón de tumbas",
       "Mercader de muerte"
     ],
     "statLabels": {
@@ -1692,12 +1842,10 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
-      "jaw",
-      "jaw_upg"
+      "jaw"
     ],
     "sourceUnitNames": [
-      "Escorpión",
-      "Escorpión volcánico"
+      "Escorpión"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -1742,12 +1890,10 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
-      "jaw",
-      "jaw_upg"
+      "jaw"
     ],
     "sourceUnitNames": [
-      "Escorpión",
-      "Escorpión volcánico"
+      "Escorpión"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -1792,12 +1938,10 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
-      "jaw",
-      "jaw_upg"
+      "jaw"
     ],
     "sourceUnitNames": [
-      "Escorpión",
-      "Escorpión volcánico"
+      "Escorpión"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -1822,6 +1966,78 @@
     ],
     "sourceUnitNames": [
       "Escorpión cavernoso"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "jaw_ability_4_name",
+    "name": "Adaptación de la Colmena: Ataque",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_4_name",
+    "nameSid": "jaw_ability_4_name",
+    "description": "Aumenta el daño infligido por todas las criaturas amistosas en un <resolved>10</resolved> % hasta el final de la ronda.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Efecto positivo",
+    "immunities": null,
+    "infoNotes": [
+      "No finaliza el turno."
+    ],
+    "sourceUnitIds": [
+      "jaw_upg"
+    ],
+    "sourceUnitNames": [
+      "Escorpión volcánico"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "jaw_ability_5_name",
+    "name": "Adaptación de la Colmena: Defensa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_5_name",
+    "nameSid": "jaw_ability_5_name",
+    "description": "Reduce el daño recibido por todas las criaturas amistosas en un <resolved>10</resolved> % hasta el final de la ronda.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Efecto positivo",
+    "immunities": null,
+    "infoNotes": [
+      "No finaliza el turno."
+    ],
+    "sourceUnitIds": [
+      "jaw_upg"
+    ],
+    "sourceUnitNames": [
+      "Escorpión volcánico"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "jaw_ability_6_name",
+    "name": "Adaptación de la Colmena: Velocidad",
+    "abilityType": "Active",
+    "icon": "icons/abilities/jaw_ability_6_name",
+    "nameSid": "jaw_ability_6_name",
+    "description": "Aumenta la velocidad de todas las criaturas amistosas en <resolved>1</resolved> hasta el final de la ronda.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Efecto positivo",
+    "immunities": null,
+    "infoNotes": [
+      "No finaliza el turno."
+    ],
+    "sourceUnitIds": [
+      "jaw_upg"
+    ],
+    "sourceUnitNames": [
+      "Escorpión volcánico"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -1855,7 +2071,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/lava_larva_ability_1_name",
     "nameSid": "lava_larva_ability_1_name",
-    "description": "Salta sobre un objetivo en un radio de dos casillas y se autodestruye, lo que inflige [ <resolved>30</resolved> × (nivel del héroe - 1) ] de daño mágico al objetivo y a todas las criaturas adyacentes.",
+    "description": "Salta sobre un objetivo en un radio de dos casillas y se autodestruye, lo que inflige [ <resolved>15</resolved> × (nivel del héroe - 1) ] de daño mágico al objetivo y a todas las criaturas adyacentes.",
     "rank": 1,
     "energyCost": 1,
     "abilityTypeSid": "Especial",
@@ -1877,7 +2093,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/lava_larva_ability_2_name",
     "nameSid": "lava_larva_ability_2_name",
-    "description": "Se autodestruye e inflige [ <resolved>30</resolved> × (nivel del héroe - 1) ] de daño mágico a todas las criaturas adyacentes.",
+    "description": "Se autodestruye e inflige [ <resolved>15</resolved> × (nivel del héroe - 1) ] de daño mágico a todas las criaturas adyacentes.",
     "rank": 1,
     "energyCost": 1,
     "abilityTypeSid": "Especial",
@@ -2016,7 +2232,7 @@
     "icon": "icons/abilities/lich_ability_2_name",
     "nameSid": "lich_ability_2_name",
     "description": "Activa todos los efectos prolongados aplicados al objetivo, lo que agota al instante su duración restante con un <resolved>50</resolved>% de poder reducido. A continuación, estos efectos se eliminan.",
-    "rank": 1,
+    "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Efecto negativo",
     "immunities": null,
@@ -2026,6 +2242,30 @@
     ],
     "sourceUnitNames": [
       "Liche pestilente"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "lich_ability_3_name",
+    "name": "Última chispa",
+    "abilityType": "Active",
+    "icon": "icons/abilities/lich_ability_3_name",
+    "nameSid": "lich_ability_3_name",
+    "description": "Destruye el cadáver seleccionado y restaura +<resolved>6</resolved> de maná temporal al héroe de esta criatura (si lo hay).",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Especial",
+    "immunities": [
+      "No afecta a las encarnaciones ni a los constructos."
+    ],
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "lich_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Liche sanguino"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -2322,6 +2562,28 @@
     }
   },
   {
+    "id": "medusa_ability_4_name",
+    "name": "Salva de flechas",
+    "abilityType": "Active",
+    "icon": "icons/abilities/medusa_ability_4_name",
+    "nameSid": "medusa_ability_4_name",
+    "description": "Selecciona <resolved>3</resolved> objetivo(s) para este ataque. El ataque inflige a los objetivos un <resolved>50</resolved> % del daño de ataque básico ([ <resolved>7</resolved>-<resolved>8</resolved> × cantidad de unidades ]) y la mitad de ese daño a todos los enemigos adyacentes a ellos.",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "medusa_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Medusa reina"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "minos_ability_1_name",
     "name": "Estilo de lucha: Gran impacto",
     "abilityType": "Active",
@@ -2374,12 +2636,108 @@
     }
   },
   {
+    "id": "minos_ability_3_name",
+    "name": "Embestida del minotauro",
+    "abilityType": "Active",
+    "icon": "icons/abilities/minos_ability_3_name",
+    "nameSid": "minos_ability_3_name",
+    "description": "Después de atacar, empuja al objetivo si es posible.",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Modificador de ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "minos",
+      "minos_upg",
+      "minos_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Minotauro",
+      "Señor minotauro",
+      "Minotauro de la Vanguardia"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "minos_ability_4_name",
+    "name": "Pisotón de Baltasar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/minos_ability_4_name",
+    "nameSid": "minos_ability_4_name",
+    "description": "La velocidad de todos los enemigos adyacentes se reduce en <resolved>1</resolved>.\nDuración: <resolved>2</resolved> ronda(s).",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Especial",
+    "immunities": null,
+    "infoNotes": [
+      "No finaliza el turno."
+    ],
+    "sourceUnitIds": [
+      "minos_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Minotauro de la Vanguardia"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "mummy_ability_1_name",
+    "name": "Pestilencia",
+    "abilityType": "Active",
+    "icon": "icons/abilities/mummy_ability_1_name",
+    "nameSid": "mummy_ability_1_name",
+    "description": "Maldice a todas las criaturas enemigas. Una vez por ronda, las criaturas malditas reciben [ <resolved>12</resolved> + <resolved>4</resolved> × cantidad de unidades ] de daño puro al comienzo de su turno. Este efecto se puede acumular. \nDuración: <resolved>3</resolved> ronda(s).",
+    "rank": 2,
+    "energyCost": 2,
+    "abilityTypeSid": "Especial",
+    "immunities": [
+      "No afecta a criaturas mágicas, no muertos ni constructos."
+    ],
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "mummy"
+    ],
+    "sourceUnitNames": [
+      "Momia"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "mummy_ability_2_name",
+    "name": "Bendición retorcida",
+    "abilityType": "Active",
+    "icon": "icons/abilities/mummy_ability_2_name",
+    "nameSid": "mummy_ability_2_name",
+    "description": "Disipa todos los efectos positivos de esta criatura y restaura <resolved>150</resolved> PV por cada uno. Puede revivir a las unidades caídas y crear más por encima de su cantidad original. Las unidades creadas son temporales.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Especial",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "mummy"
+    ],
+    "sourceUnitNames": [
+      "Momia"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "olgoi_ability_1_name",
     "name": "Devorar",
     "abilityType": "Active",
     "icon": "icons/abilities/olgoi_ability_1_name",
     "nameSid": "olgoi_ability_1_name",
-    "description": "Si la criatura enemiga objetivo tiene menos del <resolved>40</resolved> % de sus unidades originales, queda destruida inmediatamente. Las criaturas que mueren así no dejarán un cadáver.",
+    "description": "Si la criatura enemiga objetivo tiene menos del <resolved>30</resolved> % de sus unidades originales, queda destruida inmediatamente. Las criaturas que mueren así no dejarán un cadáver.",
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Modificador de ataque",
@@ -2410,10 +2768,10 @@
       "No finaliza el turno."
     ],
     "sourceUnitIds": [
-      "pet_upg"
+      "pet_upg_alt"
     ],
     "sourceUnitNames": [
-      "Barghest"
+      "Sabueso blindado"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -2429,7 +2787,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -2453,7 +2813,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -2573,7 +2935,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -2597,7 +2961,9 @@
     "rank": 3,
     "energyCost": 3,
     "abilityTypeSid": "Especial",
-    "immunities": null,
+    "immunities": [
+      "No se puede bloquear."
+    ],
     "infoNotes": [
       "No finaliza el turno."
     ],
@@ -2643,7 +3009,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/qilin_ability_4_name",
     "nameSid": "qilin_ability_4_name",
-    "description": "Se traslada a cualquier casilla libre dentro de su alcance de movimiento. Inflige <resolved>100</resolved> % de un ataque básico ([ <resolved>30</resolved>-<resolved>36</resolved> × cantidad de unidades ]) como daño mágico a todas las criaturas adyacentes a la casilla de destino.",
+    "description": "Se traslada a cualquier casilla libre dentro de su alcance de movimiento. Inflige <resolved>100</resolved> % de un ataque básico ([ <resolved>30</resolved>-<resolved>35</resolved> × cantidad de unidades ]) como daño mágico a todas las criaturas adyacentes a la casilla de destino.",
     "rank": 2,
     "energyCost": 2,
     "abilityTypeSid": "Movimiento",
@@ -2667,13 +3033,37 @@
     "abilityType": "Active",
     "icon": "icons/abilities/qilin_ability_5_name",
     "nameSid": "qilin_ability_5_name",
-    "description": "Esta criatura ignora los obstáculos y recibe -<resolved>35</resolved> % de daño hasta el final de la ronda.",
-    "rank": 2,
-    "energyCost": 2,
+    "description": "Esta criatura ignora los obstáculos y nunca recibe más de <resolved>1</resolved> de daño por golpe hasta el final de la ronda.",
+    "rank": 3,
+    "energyCost": 3,
     "abilityTypeSid": "Efecto positivo",
     "immunities": null,
     "infoNotes": [
       "No finaliza el turno. Solo se puede usar después de \"Despertar\"."
+    ],
+    "sourceUnitIds": [
+      "qilin_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Qilin de niebla"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "qilin_ability_6_name",
+    "name": "Bruma del bosque",
+    "abilityType": "Active",
+    "icon": "icons/abilities/qilin_ability_6_name",
+    "nameSid": "qilin_ability_6_name",
+    "description": "La criatura enemiga objetivo no puede usar ataques a distancia.\nDuración: <resolved>1</resolved> ronda(s).",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Efecto positivo",
+    "immunities": null,
+    "infoNotes": [
+      "Solo se puede usar después de \"Despertar\"."
     ],
     "sourceUnitIds": [
       "qilin_upg_alt"
@@ -2922,6 +3312,72 @@
     }
   },
   {
+    "id": "sunlight_cavalry_ability_2_name",
+    "name": "Golpear y Regresar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/sunlight_cavalry_ability_2_name",
+    "nameSid": "sunlight_cavalry_ability_2_name",
+    "description": "Esta criatura regresará a su posición original después de atacar.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Modificador de ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "sunlight_cavalry_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Caballería de la Lanza del Sol"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "trickster_ability_2_name",
+    "name": "Crecimiento de cola",
+    "abilityType": "Active",
+    "icon": "icons/abilities/trickster_ability_2_name",
+    "nameSid": "trickster_ability_2_name",
+    "description": "Hasta el final de la batalla, esta criatura puede actuar +<resolved>1</resolved> vez/veces adicional(es) después de su turno. Este efecto se puede acumular.",
+    "rank": 3,
+    "energyCost": 3,
+    "abilityTypeSid": "Especial",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "trickster"
+    ],
+    "sourceUnitNames": [
+      "Kitsune"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "trick_demon_ability_1_name",
+    "name": "Golpear y Regresar",
+    "abilityType": "Active",
+    "icon": "icons/abilities/trick_demon_ability_1_name",
+    "nameSid": "trick_demon_ability_1_name",
+    "description": "Esta criatura regresará a su posición original después de atacar.",
+    "rank": 1,
+    "energyCost": 1,
+    "abilityTypeSid": "Modificador de ataque",
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "trick_demon_upg"
+    ],
+    "sourceUnitNames": [
+      "Parásito guardián"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "trogl_ability_1_name",
     "name": "Estilo de lucha: Escupitajo viscoso",
     "abilityType": "Active",
@@ -3073,7 +3529,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/unfrozen_cultist_ability_3_name",
     "nameSid": "unfrozen_cultist_ability_3_name",
-    "description": "Inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>2</resolved>–<resolved>4</resolved> × cantidad de unidades ]) como daño puro al objetivo y a todos los enemigos adyacentes. La iniciativa de todos los objetivos se reduce en <resolved>1</resolved> hasta el final de la siguiente ronda.",
+    "description": "Inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>2</resolved>–<resolved>3</resolved> × cantidad de unidades ]) como daño puro al objetivo y a todos los enemigos adyacentes. La iniciativa de todos los objetivos se reduce en <resolved>1</resolved> hasta el final de la siguiente ronda.",
     "rank": 1,
     "energyCost": 1,
     "abilityTypeSid": "Modificador de ataque",
@@ -3095,7 +3551,7 @@
     "abilityType": "Active",
     "icon": "icons/abilities/unfrozen_cultist_ability_4_name",
     "nameSid": "unfrozen_cultist_ability_4_name",
-    "description": "Inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>2</resolved>–<resolved>4</resolved> × cantidad de unidades ]) como daño puro al objetivo y a todos los enemigos adyacentes. La velocidad de todos los objetivos se reduce en <resolved>1</resolved> hasta el final de la siguiente ronda.",
+    "description": "Inflige el <resolved>50</resolved> % de un ataque básico ([ <resolved>2</resolved>–<resolved>3</resolved> × cantidad de unidades ]) como daño puro al objetivo y a todos los enemigos adyacentes. La velocidad de todos los objetivos se reduce en <resolved>1</resolved> hasta el final de la siguiente ronda.",
     "rank": 1,
     "energyCost": 1,
     "abilityTypeSid": "Modificador de ataque",
@@ -3583,9 +4039,9 @@
       "Herbomante",
       "Esporamante",
       "Murmumante",
-      "Fauno",
-      "Fauno arquero",
-      "Fauno guerrero",
+      "Fauna",
+      "Fauna arquera",
+      "Fauna guerrera",
       "Espadachín",
       "Capitán de la guardia",
       "Égida del Sol",
@@ -3650,6 +4106,7 @@
       "minos_upg_alt",
       "pixie",
       "sentinel",
+      "trickster",
       "trogl",
       "trogl_upg",
       "trogl_upg_alt",
@@ -3684,6 +4141,7 @@
       "Minotauro de la Vanguardia",
       "Pixie",
       "Centinela de la gloria",
+      "Kitsune",
       "Troglodita",
       "Troglodita infernal",
       "Troglodita tóxico",
@@ -3721,10 +4179,12 @@
       "graverobber",
       "graverobber_upg",
       "graverobber_upg_alt",
+      "kitten_skeleton",
       "lich",
       "lich_dragon",
       "lich_upg",
       "lich_upg_alt",
+      "mummy",
       "pet",
       "pet_upg",
       "pet_upg_alt",
@@ -3746,10 +4206,12 @@
       "Ladrón de tumbas",
       "Mercader de muerte",
       "Maestro de perrera",
+      "kitten_skeleton",
       "Liche",
       "Dragón liche",
       "Liche pestilente",
       "Liche sanguino",
+      "Momia",
       "Mascota no muerta",
       "Barghest",
       "Sabueso blindado",
@@ -3772,96 +4234,6 @@
     "icon": "icons/abilities/aqualotl_ability_4_name",
     "nameSid": "aqualotl_ability_4_name",
     "description": "Disipa a la criatura invocada elegida o a las formaciones temporales.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "aqualotl_ability_5_name_new",
-    "name": "Tenaza de hielo",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/aqualotl_ability_5_name_new",
-    "nameSid": "aqualotl_ability_5_name_new",
-    "description": "Selecciona una casilla. Atrae hacia la casilla objetivo a todas las formaciones situadas a un máximo de dos casillas de distancia en cualquier dirección, si es posible.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "aqualotl_ability_6_name",
-    "name": "Hipotermia",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/aqualotl_ability_6_name",
-    "nameSid": "aqualotl_ability_6_name",
-    "description": "El ataque, la defensa, el poder de hechizo y el conocimiento del héroe enemigo se reducen en <unresolved>&lt;unic_unit_aqualotl_ability_6&gt;</unresolved> hasta el final de la ronda.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "assassin_passive_4_name",
-    "name": "Emboscada",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/assassin_passive_4_name",
-    "nameSid": "assassin_passive_4_name",
-    "description": "Al comienzo de cada ronda, esta criatura se oculta entre las sombras y no puede ser seleccionada como objetivo hasta que comience su turno.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "assassin_passive_5_name",
-    "name": "Liquidación",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/assassin_passive_5_name",
-    "nameSid": "assassin_passive_5_name",
-    "description": "Si, después de este ataque, el tamaño de la formación objetivo es inferior o igual a un <unresolved>&lt;unic_unit_assassin_passive_5&gt;</unresolved> % de su tamaño original, se destruye de inmediato.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "avatar_of_war_passive_5_name",
-    "name": "Supresión",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/avatar_of_war_passive_5_name",
-    "nameSid": "avatar_of_war_passive_5_name",
-    "description": "La probabilidad de que las formaciones enemigas adyacentes salten su turno aumenta un +<unresolved>&lt;unic_unit_avatar_of_war_passive_5&gt;</unresolved> % por cada punto negativo de su moral.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -4396,24 +4768,6 @@
     }
   },
   {
-    "id": "base_passive_strike_swirl_1_name",
-    "name": "Golpe torbellino",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/base_passive_strike_swirl_1_name",
-    "nameSid": "base_passive_strike_swirl_1_name",
-    "description": "Inflige daño a todos los enemigos adyacentes.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "basilisk_passive_1_name",
     "name": "Mirada mortal",
     "abilityType": "Orphan",
@@ -4450,24 +4804,6 @@
     }
   },
   {
-    "id": "blade_dancer_ability_2_name",
-    "name": "Danza de hojas",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/blade_dancer_ability_2_name",
-    "nameSid": "blade_dancer_ability_2_name",
-    "description": "Esta criatura ataca dos veces hasta el final de la ronda.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "demon_passive_3_name",
     "name": "Determinación de victoria",
     "abilityType": "Orphan",
@@ -4486,120 +4822,12 @@
     }
   },
   {
-    "id": "druid_ability_5_name",
-    "name": "Invasión de abejas",
+    "id": "graverobber_ability_2_name",
+    "name": "Atrapar recuerdos",
     "abilityType": "Orphan",
-    "icon": "icons/abilities/druid_ability_5_name",
-    "nameSid": "druid_ability_5_name",
-    "description": "Inflige [ <unresolved>&lt;current_unit_abilityBaseDamage&gt;</unresolved> + <unresolved>&lt;current_unit_abilityDamage&gt;</unresolved> × cantidad de unidades ] de daño a todas las criaturas enemigas adyacentes a la casilla objetivo. Las abejas le siguen atacando e infligen [ <unresolved>&lt;current_unit_startTurnDamage_active_base&gt;</unresolved> + <unresolved>&lt;current_unit_startTurnDamage_active&gt;</unresolved> × cantidad de unidades ] de daño al comienzo de cada turno. Este efecto se puede acumular.\nDuración: <unresolved>&lt;current_unit_ability_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "elf_tracker_ability_2_name",
-    "name": "Erradicación de forasteros",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/elf_tracker_ability_2_name",
-    "nameSid": "elf_tracker_ability_2_name",
-    "description": "Realiza un ataque que inflige un +<unresolved>&lt;unic_unit_elf_tracker_ability_2&gt;</unresolved> % de daño.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "esquire_ability_1_name",
-    "name": "Escudos preparados",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/esquire_ability_1_name",
-    "nameSid": "esquire_ability_1_name",
-    "description": "Recibe -<unresolved>&lt;current_unit_ability_buff_inDmgMods_param&gt;</unresolved> % de daño a distancia.\nDuración: <unresolved>&lt;current_unit_ability_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "flicker_ability_2_name",
-    "name": "Puertas del Más Allá",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/flicker_ability_2_name",
-    "nameSid": "flicker_ability_2_name",
+    "icon": "icons/abilities/graverobber_ability_2_name",
+    "nameSid": "graverobber_ability_2_name",
     "description": "Invoca [ <unresolved>&lt;current_unit_abilitySummonCount&gt;</unresolved> × cantidad de unidades ] aparición(es) en una casilla adyacente. Desaparecen después de la batalla.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "frostworm_rider_passive_4_name",
-    "name": "Incursión",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/frostworm_rider_passive_4_name",
-    "nameSid": "frostworm_rider_passive_4_name",
-    "description": "Aumenta en <unresolved>&lt;unic_unit_frostworm_rider_passive_4&gt;</unresolved> la velocidad de todos los ra'shoth, shoth majestuosos y enviados abisales amistosos.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "graverobber_passive_3_name",
-    "name": "Lanzar un hueso",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/graverobber_passive_3_name",
-    "nameSid": "graverobber_passive_3_name",
-    "description": "Aumenta en +<unresolved>&lt;unic_unit_graverobber_passive_3&gt;</unresolved> la velocidad y la iniciativa de los esqueletos amistosos.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "graverobber_passive_4_name",
-    "name": "Líder de la manada",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/graverobber_passive_4_name",
-    "nameSid": "graverobber_passive_4_name",
-    "description": "Aumenta en +<unresolved>&lt;unic_unit_graverobber_passive_4&gt;</unresolved> la velocidad y la iniciativa de las mascotas no muertas amistosas.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -4630,156 +4858,12 @@
     }
   },
   {
-    "id": "inquisitor_passive_2_name",
-    "name": "Malleus Maleficarum",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/inquisitor_passive_2_name",
-    "nameSid": "inquisitor_passive_2_name",
-    "description": "Las formaciones amistosas adyacentes reciben -<unresolved>&lt;unic_unit_inquisitor_passive_2&gt;</unresolved> % de daño mágico.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "jaw_ability_4_name",
-    "name": "Adaptación de la Colmena: Ataque",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/jaw_ability_4_name",
-    "nameSid": "jaw_ability_4_name",
-    "description": "Aumenta el daño infligido por todas las criaturas amistosas en un <unresolved>&lt;current_unit_ability_buff_outAllDmgMod_param&gt;</unresolved> % hasta el final de la ronda.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "jaw_ability_5_name",
-    "name": "Adaptación de la Colmena: Defensa",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/jaw_ability_5_name",
-    "nameSid": "jaw_ability_5_name",
-    "description": "Reduce el daño recibido por todas las criaturas amistosas en un <unresolved>&lt;current_unit_ability_buff_inAllDmgMod_param&gt;</unresolved> % hasta el final de la ronda.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "jaw_ability_6_name",
-    "name": "Adaptación de la Colmena: Velocidad",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/jaw_ability_6_name",
-    "nameSid": "jaw_ability_6_name",
-    "description": "Aumenta la velocidad de todas las criaturas amistosas en <unresolved>&lt;current_unit_ability_buff_speed_param&gt;</unresolved> hasta el final de la ronda.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "kitten_horn_passive_2_name",
-    "name": "Demasiado mono para ser cierto",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/kitten_horn_passive_2_name",
-    "nameSid": "kitten_horn_passive_2_name",
-    "description": "Aumenta el poder de persuasión del héroe en Diplomacia en un <resolved>5</resolved> %. Este efecto <b>no</b> se acumula.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "lava_larva_ability_3_name",
     "name": "Apariencia repugnante",
     "abilityType": "Orphan",
     "icon": "icons/abilities/lava_larva_ability_3_name",
     "nameSid": "lava_larva_ability_3_name",
     "description": "Todos los enemigos adyacentes solo pueden seleccionar como objetivo a esta criatura hasta que muera.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "lava_larva_passive_0_name",
-    "name": "Castas",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/lava_larva_passive_0_name",
-    "nameSid": "lava_larva_passive_0_name",
-    "description": "Obtiene una bonificación según la clase de su héroe:\n• Si forma parte del ejército de un héroe de poder, inflige +<unresolved>&lt;unic_unit_lava_larva_passive_3_1&gt;</unresolved> % de daño con los ataques básicos.\n• Si forma parte del ejército de un héroe de magia, inflige +<unresolved>&lt;unic_unit_lava_larva_passive_3_2&gt;</unresolved> % de daño al explotar.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "lich_ability_3_name",
-    "name": "Cosecha de almas",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/lich_ability_3_name",
-    "nameSid": "lich_ability_3_name",
-    "description": "Destruye el cadáver seleccionado y restaura +<unresolved>&lt;unic_unit_lich_active_3&gt;</unresolved> de maná temporal al héroe de esta criatura (si lo hay).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "lich_passive_3_name",
-    "name": "Aura de la plaga",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/lich_passive_3_name",
-    "nameSid": "lich_passive_3_name",
-    "description": "La duración de todos los efectos negativos aplicados a todas las criaturas enemigas aumenta en <unresolved>&lt;unic_unit_lich_passive_3&gt;</unresolved> ronda(s).",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -4810,156 +4894,12 @@
     }
   },
   {
-    "id": "medusa_ability_4_name",
-    "name": "Salva de flechas",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/medusa_ability_4_name",
-    "nameSid": "medusa_ability_4_name",
-    "description": "Selecciona <unresolved>&lt;unic_unit_medusa_active_1&gt;</unresolved> objetivo(s) para este ataque. El ataque inflige a los objetivos un <unresolved>&lt;unic_unit_medusa_active_2&gt;</unresolved> % del daño de ataque básico ([ <unresolved>&lt;current_unit_minStatDamage_alt&gt;</unresolved>-<unresolved>&lt;current_unit_maxStatDamage_alt&gt;</unresolved> × cantidad de unidades ]) y la mitad de ese daño a todos los enemigos adyacentes a ellos.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "minos_ability_3_name",
-    "name": "Embestida del minotauro",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/minos_ability_3_name",
-    "nameSid": "minos_ability_3_name",
-    "description": "Después de atacar, empuja al objetivo si es posible.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "minos_ability_4_name",
-    "name": "Pisotón de Baltasar",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/minos_ability_4_name",
-    "nameSid": "minos_ability_4_name",
-    "description": "La velocidad de todos los enemigos adyacentes se reduce en <unresolved>&lt;current_unit_ability_buff_speed_param&gt;</unresolved>.\nDuración: <unresolved>&lt;current_unit_ability_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "mummy_ability_1_name",
-    "name": "Pestilencia",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/mummy_ability_1_name",
-    "nameSid": "mummy_ability_1_name",
-    "description": "Maldice a todas las criaturas enemigas. Una vez por ronda, las criaturas malditas reciben [ <unresolved>&lt;current_unit_startTurnDamage_active_base&gt;</unresolved> + <unresolved>&lt;current_unit_startTurnDamage_active&gt;</unresolved> × cantidad de unidades ] de daño puro al comienzo de su turno. Este efecto se puede acumular. \nDuración: <unresolved>&lt;current_unit_ability_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "mummy_ability_2_name",
-    "name": "Bendición retorcida",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/mummy_ability_2_name",
-    "nameSid": "mummy_ability_2_name",
-    "description": "Disipa todos los efectos positivos de esta criatura y restaura <unresolved>&lt;unic_unit_mummy_active_1&gt;</unresolved> PV por cada uno. Puede revivir a las unidades caídas y crear más por encima de su cantidad original. Las unidades creadas son temporales.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "mummy_passive_1_name",
-    "name": "Ansias de muerte",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/mummy_passive_1_name",
-    "nameSid": "mummy_passive_1_name",
-    "description": "Al atacar, activa todos los efectos prolongados aplicados al objetivo, lo que agota al instante su duración restante. A continuación, estos efectos se eliminan.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "obsidian_dragon_passive_2_name",
     "name": "Achicharramiento",
     "abilityType": "Orphan",
     "icon": "icons/abilities/obsidian_dragon_passive_2_name",
     "nameSid": "obsidian_dragon_passive_2_name",
     "description": "Los ataques prenden fuego al objetivo. Las criaturas en llamas reciben [ <unresolved>&lt;current_unit_startTurnDamage_passive&gt;</unresolved> × cantidad de unidades ] de daño mágico al comienzo de su turno. Este efecto se puede acumular.\nDuración: <unresolved>&lt;current_unit_passive_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "olgoi_passive_3_name",
-    "name": "Devorador de maná",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/olgoi_passive_3_name",
-    "nameSid": "olgoi_passive_3_name",
-    "description": "Si la casilla de destino contiene un cadáver caído, este es devorado y recupera <unresolved>&lt;unic_unit_olgoi_passive_2&gt;</unresolved> de maná temporal al héroe de esta criatura (si está presente).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "phoenix_passive_4_name",
-    "name": "Agonía llameante",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/phoenix_passive_4_name",
-    "nameSid": "phoenix_passive_4_name",
-    "description": "Al morir, esta criatura explota e inflige [ <unresolved>&lt;unic_unit_lava_larva_passive_1_base&gt;</unresolved> × (nivel del héroe - 1) ] de daño mágico a todas las criaturas adyacentes.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -4990,114 +4930,6 @@
     }
   },
   {
-    "id": "qilin_ability_6_name",
-    "name": "Bruma del bosque",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/qilin_ability_6_name",
-    "nameSid": "qilin_ability_6_name",
-    "description": "La criatura enemiga objetivo no puede usar ataques a distancia.\nDuración: <unresolved>&lt;current_unit_ability_baseBuffDuration&gt;</unresolved> ronda(s).",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "qilin_passive_5_name",
-    "name": "Ataque de oportunidad",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/qilin_passive_5_name",
-    "nameSid": "qilin_passive_5_name",
-    "description": "Permanece siempre en Vigilancia y ataca a las formaciones enemigas que abandonen, caminando o volando, una casilla situada dentro de su alcance cuerpo a cuerpo. Este ataque funciona como un contraataque, pero no consume ninguna carga de contraataque.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "succubus_passive_3_name",
-    "name": "Seducción",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/succubus_passive_3_name",
-    "nameSid": "succubus_passive_3_name",
-    "description": "Esta criatura siempre recibe el daño mínimo.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "succubus_passive_4_name",
-    "name": "Sufrimiento incesante",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/succubus_passive_4_name",
-    "nameSid": "succubus_passive_4_name",
-    "description": "Los ataques básicos de esta criatura infligen +<unresolved>&lt;unic_unit_succubus_ability_4&gt;</unresolved> de daño puro por cada carga de concentración de su ejército.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "sunlight_cavalry_ability_2_name",
-    "name": "Golpear y Regresar",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/sunlight_cavalry_ability_2_name",
-    "nameSid": "sunlight_cavalry_ability_2_name",
-    "description": "Esta criatura regresará a su posición original después de atacar.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "sunlight_cavalry_passive_4_name",
-    "name": "Presencia heroica",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/sunlight_cavalry_passive_4_name",
-    "nameSid": "sunlight_cavalry_passive_4_name",
-    "description": "La probabilidad de que las formaciones amistosas adyacentes realicen un turno adicional aumenta un +<unresolved>&lt;unic_unit_sunlight_cavalry_passive_4&gt;</unresolved> % por cada punto de su moral.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "trickster_ability_1_name",
     "name": "Zorro de nueve colas",
     "abilityType": "Orphan",
@@ -5116,66 +4948,12 @@
     }
   },
   {
-    "id": "trickster_ability_2_name",
-    "name": "Crecimiento de cola",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/trickster_ability_2_name",
-    "nameSid": "trickster_ability_2_name",
-    "description": "Hasta el final de la batalla, esta criatura puede actuar +<unresolved>&lt;unic_unit_trickster_active_1&gt;</unresolved> vez/veces adicional(es) después de su turno. Este efecto se puede acumular.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
     "id": "trickster_passive_1_name",
     "name": "Truco",
     "abilityType": "Orphan",
     "icon": "icons/abilities/trickster_passive_1_name",
     "nameSid": "trickster_passive_1_name",
     "description": "Mientras haya alguna ilusión de kitsune con vida en el campo de batalla, el artero en sí no recibe ningún daño.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "trick_demon_ability_1_name",
-    "name": "Golpear y Regresar",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/trick_demon_ability_1_name",
-    "nameSid": "trick_demon_ability_1_name",
-    "description": "Esta criatura regresará a su posición original después de atacar.",
-    "rank": null,
-    "energyCost": null,
-    "abilityTypeSid": null,
-    "immunities": null,
-    "infoNotes": null,
-    "sourceUnitIds": null,
-    "sourceUnitNames": null,
-    "statLabels": {
-      "creaturesWithAbility": "Criaturas con esta Aptitud"
-    }
-  },
-  {
-    "id": "unfrozen_cultist_passive_1_name",
-    "name": "Canalizador de la Grieta",
-    "abilityType": "Orphan",
-    "icon": "icons/abilities/unfrozen_cultist_passive_1_name",
-    "nameSid": "unfrozen_cultist_passive_1_name",
-    "description": "Aumenta en <unresolved>&lt;unic_unit_unfrozen_cultist_passive_1&gt;</unresolved> la iniciativa de todos los ra'shoth, shoth majestuosos y enviados abisales amistosos.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -5407,13 +5185,11 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "assassin",
-      "assassin_upg",
-      "assassin_upg_alt"
+      "assassin_upg"
     ],
     "sourceUnitNames": [
       "Infiltrado",
-      "Infiltrado astuto",
-      "Infiltrado lúgubre"
+      "Infiltrado astuto"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -5432,10 +5208,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "assassin_upg"
+      "assassin_upg_alt"
     ],
     "sourceUnitNames": [
-      "Infiltrado astuto"
+      "Infiltrado lúgubre"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -5454,10 +5230,54 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
+      "assassin_upg"
+    ],
+    "sourceUnitNames": [
+      "Infiltrado astuto"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "assassin_passive_4_name",
+    "name": "Emboscada",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/assassin_passive_4_name",
+    "nameSid": "assassin_passive_4_name",
+    "description": "Al comienzo de cada ronda, esta criatura se oculta entre las sombras y no puede ser seleccionada como objetivo hasta que comience su turno.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
       "assassin_upg_alt"
     ],
     "sourceUnitNames": [
       "Infiltrado lúgubre"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "assassin_passive_5_name",
+    "name": "Liquidación",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/assassin_passive_5_name",
+    "nameSid": "assassin_passive_5_name",
+    "description": "Si, después de este ataque, el tamaño de la formación objetivo es inferior o igual a un <resolved>10</resolved> % de su tamaño original, se destruye de inmediato.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "assassin_upg"
+    ],
+    "sourceUnitNames": [
+      "Infiltrado astuto"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -5576,6 +5396,28 @@
     }
   },
   {
+    "id": "avatar_of_war_passive_5_name",
+    "name": "Miedo paralizante",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/avatar_of_war_passive_5_name",
+    "nameSid": "avatar_of_war_passive_5_name",
+    "description": "La probabilidad de que las formaciones enemigas adyacentes salten su turno aumenta un +<resolved>2</resolved> % por cada punto negativo de su moral.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "avatar_of_war_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Segador vacuo"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "base_passive_absolute_resistance_name",
     "name": "Resistencia absoluta",
     "abilityType": "Passive",
@@ -5631,9 +5473,9 @@
       "minos_upg"
     ],
     "sourceUnitNames": [
-      "Fauno",
-      "Fauno arquero",
-      "Fauno guerrero",
+      "Fauna",
+      "Fauna arquera",
+      "Fauna guerrera",
       "Langosta gigante",
       "Señor minotauro"
     ],
@@ -5794,7 +5636,8 @@
       "esquire_upg",
       "locust",
       "locust_upg",
-      "locust_upg_alt"
+      "locust_upg_alt",
+      "pet_upg"
     ],
     "sourceUnitNames": [
       "Caballero del terror",
@@ -5803,7 +5646,8 @@
       "Capitán de la guardia",
       "Langosta",
       "Langosta gigante",
-      "Langosta cosechadora"
+      "Langosta cosechadora",
+      "Barghest"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -6142,6 +5986,7 @@
       "jaw_upg",
       "jaw_upg_alt",
       "kitten_horn",
+      "kitten_skeleton",
       "lava_larva",
       "lesser_eldritch",
       "lesser_eldritch_upg_alt",
@@ -6152,6 +5997,7 @@
       "minos",
       "minos_upg",
       "minos_upg_alt",
+      "mummy",
       "olgoi",
       "olgoi_upg",
       "peasant",
@@ -6172,6 +6018,7 @@
       "sunlight_cavalry",
       "sunlight_cavalry_upg",
       "sunlight_cavalry_upg_alt",
+      "trickster",
       "trogl",
       "trogl_upg",
       "trogl_upg_alt",
@@ -6206,7 +6053,7 @@
       "Shoth majestuoso",
       "Shoth innombrable",
       "Shoth impensable",
-      "Fauno guerrero",
+      "Fauna guerrera",
       "Íriyad de enredadera",
       "Íriyad fúngico",
       "Íriyad de cristal",
@@ -6238,6 +6085,7 @@
       "Escorpión volcánico",
       "Escorpión cavernoso",
       "Cuernigato",
+      "kitten_skeleton",
       "Larva de fuego",
       "Ra'shoth",
       "Ra'shoth feroz",
@@ -6248,6 +6096,7 @@
       "Minotauro",
       "Señor minotauro",
       "Minotauro de la Vanguardia",
+      "Momia",
       "Verme",
       "Devorador",
       "Campesino",
@@ -6268,6 +6117,7 @@
       "Caballería",
       "Caballería noble",
       "Caballería de la Lanza del Sol",
+      "Kitsune",
       "Troglodita",
       "Troglodita infernal",
       "Troglodita tóxico",
@@ -6332,8 +6182,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
+      "assassin_upg",
       "blade_dancer_upg",
       "dragon_upg",
+      "godslayer_upg",
       "hive_queen_upg_alt",
       "hydra",
       "hydra_upg",
@@ -6342,8 +6194,10 @@
       "vampire_upg"
     ],
     "sourceUnitNames": [
+      "Infiltrado astuto",
       "Bailarina de jaspe",
       "Dragón Rojo",
+      "Asolador amenazante",
       "Cazadora de la Colmena",
       "Hidra",
       "Hidra ctónica",
@@ -6406,7 +6260,6 @@
       "blade_dancer_upg_alt",
       "crossbowman",
       "crossbowman_upg",
-      "halfling",
       "lesser_eldritch_upg",
       "lich",
       "lich_upg",
@@ -6432,7 +6285,6 @@
       "Bailarina áurea",
       "Saetero",
       "Azorero",
-      "Mediano",
       "Ra'shoth punzante",
       "Liche",
       "Liche pestilente",
@@ -6469,7 +6321,7 @@
     ],
     "sourceUnitNames": [
       "Bailarina de jaspe",
-      "Fauno",
+      "Fauna",
       "Piróvoro",
       "Embrujadora"
     ],
@@ -6491,11 +6343,15 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "angel_upg",
-      "elf_tracker_upg"
+      "elf_tracker_upg",
+      "halfling",
+      "mech_guard"
     ],
     "sourceUnitNames": [
       "Arcángel",
-      "Fauno arquero"
+      "Fauna arquera",
+      "Mediano",
+      "Observador del mundo"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -6515,14 +6371,12 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "crossbowman_upg_alt",
-      "mech_guard",
       "medusa",
       "medusa_upg",
       "medusa_upg_alt"
     ],
     "sourceUnitNames": [
       "Ballestero",
-      "Observador del mundo",
       "Medusa",
       "Medusa escultora",
       "Medusa reina"
@@ -6668,7 +6522,7 @@
     "sourceUnitNames": [
       "Arcángel",
       "Ballestero",
-      "Fauno arquero",
+      "Fauna arquera",
       "Mediano",
       "Observador del mundo",
       "Medusa",
@@ -6972,6 +6826,28 @@
       "Fénix",
       "Fénix llameante",
       "Fénix de energía"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "base_passive_strike_swirl_1_name",
+    "name": "Golpe torbellino",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/base_passive_strike_swirl_1_name",
+    "nameSid": "base_passive_strike_swirl_1_name",
+    "description": "Inflige daño a todos los enemigos adyacentes.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "twinkle_upg"
+    ],
+    "sourceUnitNames": [
+      "Lupuciérnaga del alba"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -7299,6 +7175,28 @@
     "abilityType": "Passive",
     "icon": "icons/abilities/druid_passive_1_name",
     "nameSid": "druid_passive_1_name",
+    "description": "Reduce el coste de maná de los hechizos del héroe en <resolved>3</resolved>. Este efecto <b>no</b> se acumula; solo se activa el más fuerte.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "druid_upg"
+    ],
+    "sourceUnitNames": [
+      "Esporamante"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "druid_passive_1_name",
+    "name": "Magia fúngica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/druid_passive_1_name",
+    "nameSid": "druid_passive_1_name",
     "description": "Reduce el coste de maná de los hechizos del héroe en <resolved>2</resolved>. Este efecto <b>no</b> se acumula; solo se activa el más fuerte.",
     "rank": null,
     "energyCost": null,
@@ -7306,11 +7204,9 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "druid_upg",
       "druid_upg_alt"
     ],
     "sourceUnitNames": [
-      "Esporamante",
       "Murmumante"
     ],
     "statLabels": {
@@ -7323,7 +7219,7 @@
     "abilityType": "Passive",
     "icon": "icons/abilities/druid_passive_2_name",
     "nameSid": "druid_passive_2_name",
-    "description": "Aumenta el nivel de los hechizos del héroe en <resolved>1</resolved>. Este efecto <b>no</b> se acumula.",
+    "description": "Aumenta el nivel de los hechizos de batalla del héroe en <resolved>1</resolved>. Este efecto <b>no</b> se acumula.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -7714,6 +7610,28 @@
     }
   },
   {
+    "id": "frostworm_rider_passive_4_name",
+    "name": "Incursión",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/frostworm_rider_passive_4_name",
+    "nameSid": "frostworm_rider_passive_4_name",
+    "description": "Aumenta en <resolved>1</resolved> la velocidad de todos los ra'shoth, shoth majestuosos y enviados abisales amistosos.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "frostworm_rider_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Mat'ha aga'shoth"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "giant_frog_passive_1_name",
     "name": "Escupitajo ablandador",
     "abilityType": "Passive",
@@ -7874,6 +7792,50 @@
     }
   },
   {
+    "id": "graverobber_passive_3_name",
+    "name": "Lanzar un hueso",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/graverobber_passive_3_name",
+    "nameSid": "graverobber_passive_3_name",
+    "description": "Aumenta en +<resolved>1</resolved> la velocidad y la iniciativa de los esqueletos amistosos.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "graverobber_upg"
+    ],
+    "sourceUnitNames": [
+      "Mercader de muerte"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "graverobber_passive_4_name",
+    "name": "Líder de la manada",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/graverobber_passive_4_name",
+    "nameSid": "graverobber_passive_4_name",
+    "description": "Aumenta en +<resolved>1</resolved> la velocidad y la iniciativa de las mascotas no muertas amistosas.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "graverobber_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Maestro de perrera"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "griffin_passive_1_name",
     "name": "Protector leal",
     "abilityType": "Passive",
@@ -7961,12 +7923,32 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "hive_queen",
-      "hive_queen_upg",
-      "hive_queen_upg_alt"
+      "hive_queen_upg"
     ],
     "sourceUnitNames": [
       "Reina de la Colmena",
-      "Madre de la Colmena",
+      "Madre de la Colmena"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "hive_queen_passive_3_name",
+    "name": "¡Machaca a los débiles!",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/hive_queen_passive_3_name",
+    "nameSid": "hive_queen_passive_3_name",
+    "description": "Cuanto menor sea el rango del objetivo, mayor será el daño que esta criatura le inflija: +<resolved>6</resolved> % de daño por rango de diferencia.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "hive_queen_upg_alt"
+    ],
+    "sourceUnitNames": [
       "Cazadora de la Colmena"
     ],
     "statLabels": {
@@ -8134,6 +8116,28 @@
     }
   },
   {
+    "id": "inquisitor_passive_2_name",
+    "name": "Malleus Maleficarum",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/inquisitor_passive_2_name",
+    "nameSid": "inquisitor_passive_2_name",
+    "description": "Las formaciones amistosas adyacentes reciben -<resolved>30</resolved> % de daño mágico.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "inquisitor_upg"
+    ],
+    "sourceUnitNames": [
+      "Madre superiora"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "kitten_horn_passive_1_name",
     "name": "Posos de locura",
     "abilityType": "Passive",
@@ -8156,12 +8160,56 @@
     }
   },
   {
+    "id": "kitten_horn_passive_2_name",
+    "name": "Demasiado mono para ser cierto",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/kitten_horn_passive_2_name",
+    "nameSid": "kitten_horn_passive_2_name",
+    "description": "Aumenta el poder de persuasión del héroe en Diplomacia en un <resolved>5</resolved> %. Este efecto <b>no</b> se acumula.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "kitten_horn"
+    ],
+    "sourceUnitNames": [
+      "Cuernigato"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "lava_larva_passive_0_name",
+    "name": "Castas",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lava_larva_passive_0_name",
+    "nameSid": "lava_larva_passive_0_name",
+    "description": "Obtiene una bonificación según la clase de su héroe:\n• Si forma parte del ejército de un héroe de poder, inflige +<resolved>50</resolved> % de daño con los ataques básicos.\n• Si forma parte del ejército de un héroe de magia, inflige +<resolved>50</resolved> % de daño al explotar.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "lava_larva"
+    ],
+    "sourceUnitNames": [
+      "Larva de fuego"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "lava_larva_passive_1_name",
     "name": "Mejunje inestable",
     "abilityType": "Passive",
     "icon": "icons/abilities/lava_larva_passive_1_name",
     "nameSid": "lava_larva_passive_1_name",
-    "description": "Al morir, esta criatura explota e inflige [ <resolved>15</resolved> × (nivel del héroe - 1) ] de daño mágico a todas las criaturas adyacentes.",
+    "description": "Al morir, esta criatura explota e inflige [ <resolved>10</resolved> × (nivel del héroe - 1) ] de daño mágico a todas las criaturas adyacentes.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -8244,6 +8292,28 @@
     }
   },
   {
+    "id": "lich_passive_3_name",
+    "name": "Aura de la plaga",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/lich_passive_3_name",
+    "nameSid": "lich_passive_3_name",
+    "description": "Aumenta la duración de todos los efectos negativos aplicados a todas las criaturas enemigas en <resolved>1</resolved>.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "lich_upg"
+    ],
+    "sourceUnitNames": [
+      "Liche pestilente"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "lightweaver_passive_1_name",
     "name": "Ungido para el daño",
     "abilityType": "Passive",
@@ -8300,10 +8370,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "medusa_upg_alt"
+      "medusa_upg"
     ],
     "sourceUnitNames": [
-      "Medusa reina"
+      "Medusa escultora"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -8315,7 +8385,7 @@
     "abilityType": "Passive",
     "icon": "icons/abilities/minos_passive_1_name",
     "nameSid": "minos_passive_1_name",
-    "description": "Esta criatura siempre tiene moral positiva, y su máximo aumenta a <resolved>5</resolved>. La probabilidad de realizar un turno adicional aumenta un +<resolved>5</resolved> % por cada punto total.",
+    "description": "Esta criatura siempre tiene moral positiva, y su máximo aumenta a <resolved>5</resolved>. La probabilidad de realizar un turno adicional aumenta un +<resolved>5</resolved> % por cada punto de moral en total.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,
@@ -8384,6 +8454,28 @@
     }
   },
   {
+    "id": "mummy_passive_1_name",
+    "name": "Ansias de muerte",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/mummy_passive_1_name",
+    "nameSid": "mummy_passive_1_name",
+    "description": "Al atacar, activa todos los efectos prolongados aplicados al objetivo, lo que agota al instante su duración restante. A continuación, estos efectos se eliminan.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "mummy"
+    ],
+    "sourceUnitNames": [
+      "Momia"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "obsidian_dragon_passive_1_name",
     "name": "Desdén",
     "abilityType": "Passive",
@@ -8411,6 +8503,30 @@
     "abilityType": "Passive",
     "icon": "icons/abilities/olgoi_passive_1_name",
     "nameSid": "olgoi_passive_1_name",
+    "description": "Si la casilla de destino contiene un cadáver caído, este es devorado y recupera <resolved>100</resolved> PV. Puede revivir a las unidades caídas.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": [
+      "No afecta a los no muertos, encarnaciones ni constructos."
+    ],
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "olgoi"
+    ],
+    "sourceUnitNames": [
+      "Verme"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "olgoi_passive_1_name",
+    "name": "Devorador de cadáveres",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/olgoi_passive_1_name",
+    "nameSid": "olgoi_passive_1_name",
     "description": "Si la casilla de destino contiene un cadáver caído, este es devorado y recupera <resolved>120</resolved> PV. Puede revivir a las unidades caídas.",
     "rank": null,
     "energyCost": null,
@@ -8420,14 +8536,10 @@
     ],
     "infoNotes": null,
     "sourceUnitIds": [
-      "olgoi",
-      "olgoi_upg",
-      "olgoi_upg_alt"
+      "olgoi_upg"
     ],
     "sourceUnitNames": [
-      "Verme",
-      "Devorador",
-      "Piróvoro"
+      "Devorador"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -8473,6 +8585,30 @@
     ],
     "sourceUnitNames": [
       "Devorador",
+      "Piróvoro"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "olgoi_passive_3_name",
+    "name": "Devorador de maná",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/olgoi_passive_3_name",
+    "nameSid": "olgoi_passive_3_name",
+    "description": "Si la casilla de destino contiene un cadáver caído, este es devorado y recupera <resolved>6</resolved> de maná temporal al héroe de esta criatura (si está presente).",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": [
+      "No afecta a los no muertos, encarnaciones ni constructos."
+    ],
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "olgoi_upg_alt"
+    ],
+    "sourceUnitNames": [
       "Piróvoro"
     ],
     "statLabels": {
@@ -8684,6 +8820,28 @@
     }
   },
   {
+    "id": "phoenix_passive_4_name",
+    "name": "Agonía llameante",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/phoenix_passive_4_name",
+    "nameSid": "phoenix_passive_4_name",
+    "description": "Al morir, esta criatura arde en un vórtice de fuego e inflige [<resolved>55</resolved> × cantidad de unidades] de daño mágico a todas las criaturas adyacentes.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "phoenix_upg"
+    ],
+    "sourceUnitNames": [
+      "Fénix llameante"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "qilin_passive_1_name",
     "name": "Encarnación del aire",
     "abilityType": "Passive",
@@ -8748,10 +8906,10 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "qilin_upg_alt"
+      "qilin_upg"
     ],
     "sourceUnitNames": [
-      "Qilin de niebla"
+      "Qilin de trueno"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -8770,10 +8928,32 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "qilin_upg"
+      "qilin_upg_alt"
     ],
     "sourceUnitNames": [
-      "Qilin de trueno"
+      "Qilin de niebla"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "qilin_passive_5_name",
+    "name": "Ataque de oportunidad",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/qilin_passive_5_name",
+    "nameSid": "qilin_passive_5_name",
+    "description": "Permanece siempre en Vigilancia y ataca a las formaciones enemigas que abandonen, caminando o volando, una casilla situada dentro de su alcance cuerpo a cuerpo. Este ataque funciona como un contraataque, pero no consume ninguna carga de contraataque.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "qilin_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Qilin de niebla"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -8807,6 +8987,28 @@
     "abilityType": "Passive",
     "icon": "icons/abilities/succubus_passive_1_name",
     "nameSid": "succubus_passive_1_name",
+    "description": "Los hechizos del héroe enemigo cuestan +<resolved>3</resolved> de maná. Este efecto <b>no</b> se acumula. Solo se activa el más fuerte.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "succubus_upg"
+    ],
+    "sourceUnitNames": [
+      "Señora de las cadenas"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "succubus_passive_1_name",
+    "name": "Gánate la magia, cariño",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_1_name",
+    "nameSid": "succubus_passive_1_name",
     "description": "Los hechizos del héroe enemigo cuestan +<resolved>2</resolved> de maná. Este efecto <b>no</b> se acumula. Solo se activa el más fuerte.",
     "rank": null,
     "energyCost": null,
@@ -8814,11 +9016,9 @@
     "immunities": null,
     "infoNotes": null,
     "sourceUnitIds": [
-      "succubus_upg",
       "succubus_upg_alt"
     ],
     "sourceUnitNames": [
-      "Señora de las cadenas",
       "Embrujadora"
     ],
     "statLabels": {
@@ -8842,6 +9042,54 @@
     ],
     "sourceUnitNames": [
       "Señora de las cadenas"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "succubus_passive_3_name",
+    "name": "Seducción",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_3_name",
+    "nameSid": "succubus_passive_3_name",
+    "description": "Esta criatura siempre recibe el daño mínimo.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "succubus",
+      "succubus_upg",
+      "succubus_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Cóncubo",
+      "Señora de las cadenas",
+      "Embrujadora"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "succubus_passive_4_name",
+    "name": "Sufrimiento incesante",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/succubus_passive_4_name",
+    "nameSid": "succubus_passive_4_name",
+    "description": "Los ataques básicos de esta criatura infligen +<resolved>22</resolved> de daño puro por cada carga de concentración de su ejército.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "succubus_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Embrujadora"
     ],
     "statLabels": {
       "creaturesWithAbility": "Criaturas con esta Aptitud"
@@ -8962,6 +9210,28 @@
     }
   },
   {
+    "id": "sunlight_cavalry_passive_4_name",
+    "name": "Presencia heroica",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/sunlight_cavalry_passive_4_name",
+    "nameSid": "sunlight_cavalry_passive_4_name",
+    "description": "La probabilidad de que las formaciones amistosas adyacentes realicen un turno adicional aumenta un +<resolved>2</resolved> % por cada punto de su moral.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "sunlight_cavalry_upg"
+    ],
+    "sourceUnitNames": [
+      "Caballería noble"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "trick_demon_passive_1_name",
     "name": "¡Derribemos al fuerte!",
     "abilityType": "Passive",
@@ -8975,12 +9245,32 @@
     "infoNotes": null,
     "sourceUnitIds": [
       "trick_demon",
-      "trick_demon_upg",
-      "trick_demon_upg_alt"
+      "trick_demon_upg"
     ],
     "sourceUnitNames": [
       "Parásito",
-      "Parásito guardián",
+      "Parásito guardián"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
+    "id": "trick_demon_passive_1_name",
+    "name": "¡Derribemos al fuerte!",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/trick_demon_passive_1_name",
+    "nameSid": "trick_demon_passive_1_name",
+    "description": "Cuanto mayor sea el rango del objetivo, mayor será el daño que esta criatura le inflija: +<resolved>6</resolved> % de daño por rango de diferencia.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "trick_demon_upg_alt"
+    ],
+    "sourceUnitNames": [
       "Parásito asolador"
     ],
     "statLabels": {
@@ -9058,12 +9348,34 @@
     }
   },
   {
+    "id": "unfrozen_cultist_passive_1_name",
+    "name": "Canalizador de la Grieta",
+    "abilityType": "Passive",
+    "icon": "icons/abilities/unfrozen_cultist_passive_1_name",
+    "nameSid": "unfrozen_cultist_passive_1_name",
+    "description": "Aumenta en <resolved>1</resolved> la iniciativa de todos los ra'shoth, shoth majestuosos y enviados abisales amistosos.",
+    "rank": null,
+    "energyCost": null,
+    "abilityTypeSid": null,
+    "immunities": null,
+    "infoNotes": null,
+    "sourceUnitIds": [
+      "unfrozen_cultist_upg_alt"
+    ],
+    "sourceUnitNames": [
+      "Devoto"
+    ],
+    "statLabels": {
+      "creaturesWithAbility": "Criaturas con esta Aptitud"
+    }
+  },
+  {
     "id": "vampire_passive_1_name",
     "name": "Vampirismo",
     "abilityType": "Passive",
     "icon": "icons/abilities/vampire_passive_1_name",
     "nameSid": "vampire_passive_1_name",
-    "description": "Cada ataque restaura un <resolved>50</resolved> % del daño infligido como PV a esta criatura. Puede revivir a las unidades caídas.",
+    "description": "Cada ataque restaura un <resolved>67</resolved> % del daño infligido como PV a esta criatura. Puede revivir a las unidades caídas.",
     "rank": null,
     "energyCost": null,
     "abilityTypeSid": null,

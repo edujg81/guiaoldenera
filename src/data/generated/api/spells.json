@@ -201,28 +201,28 @@
       {
         "level": 1,
         "manaCost": 6,
-        "description": "La criatura enemiga objetivo pierde <resolved>3</resolved> de ataque y defensa.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura enemiga objetivo pierde <resolved>2</resolved> de ataque y defensa.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": null,
         "starDustCost": null
       },
       {
         "level": 2,
         "manaCost": 6,
-        "description": "La criatura enemiga objetivo pierde <resolved>3</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura enemiga objetivo pierde <resolved>2</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "La reducción de ataque y defensa aumenta en cada ronda.",
         "starDustCost": null
       },
       {
         "level": 3,
         "manaCost": 6,
-        "description": "La criatura enemiga objetivo pierde <resolved>3</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda. Disipa \"Agrandar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura enemiga objetivo pierde <resolved>2</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda. Disipa \"Agrandar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "Disipa \"Agrandar sombra\".",
         "starDustCost": null
       },
       {
         "level": 4,
         "manaCost": 6,
-        "description": "Todas las criaturas enemigas objetivo pierden <resolved>3</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda. Disipa \"Agrandar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "Todas las criaturas enemigas objetivo pierden <resolved>2</resolved> de ataque y defensa. Esta reducción aumenta en cada ronda. Disipa \"Agrandar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "Afecta a todas las criaturas enemigas.",
         "starDustCost": null
       }
@@ -1179,11 +1179,7 @@
         "starDustCost": null
       }
     ],
-    "relatedSkill": {
-      "id": "campaign_skill_summoner",
-      "name": "Invocar avatar",
-      "icon": "icons/hero_skills/skill_summoner"
-    }
+    "relatedSkill": null
   },
   {
     "id": "bonus_magic_astral_summon_5",
@@ -1208,11 +1204,7 @@
         "starDustCost": null
       }
     ],
-    "relatedSkill": {
-      "id": "campaign_skill_summoner",
-      "name": "Invocar avatar",
-      "icon": "icons/hero_skills/skill_summoner"
-    }
+    "relatedSkill": null
   },
   {
     "id": "night_1_magic_unnatural_calm",
@@ -1324,28 +1316,28 @@
       {
         "level": 1,
         "manaCost": 7,
-        "description": "La criatura amistosa objetivo obtiene <resolved>3</resolved> de ataque y defensa.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura amistosa objetivo obtiene <resolved>2</resolved> de ataque y defensa.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": null,
         "starDustCost": null
       },
       {
         "level": 2,
         "manaCost": 7,
-        "description": "La criatura amistosa objetivo obtiene <resolved>3</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura amistosa objetivo obtiene <resolved>2</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "La bonificación de ataque y defensa aumenta en cada ronda.",
         "starDustCost": null
       },
       {
         "level": 3,
         "manaCost": 7,
-        "description": "La criatura amistosa objetivo obtiene <resolved>3</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda. Disipa \"Acortar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura amistosa objetivo obtiene <resolved>2</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda. Disipa \"Acortar sombra\".\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "Disipa \"Acortar sombra\".",
         "starDustCost": null
       },
       {
         "level": 4,
         "manaCost": 7,
-        "description": "Todas las criaturas amistosas obtienen <resolved>3</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda. Disipa \"Acortar sombra\".\nDuración: [ <resolved>3</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "Todas las criaturas amistosas obtienen <resolved>2</resolved> de ataque y defensa. Esta bonificación aumenta en cada ronda. Disipa \"Acortar sombra\".\nDuración: [ <resolved>3</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "Afecta a todas las criaturas amistosas.",
         "starDustCost": null
       }
@@ -3355,21 +3347,21 @@
       {
         "level": 2,
         "manaCost": 8,
-        "description": "La criatura amistosa objetivo recibe -<resolved>60</resolved> % de daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
-        "bonusDescription": "Daño: -<resolved>30</resolved> %>-<resolved>60</resolved> %.",
+        "description": "La criatura amistosa objetivo recibe -<resolved>45</resolved> % de daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "bonusDescription": "Daño: -<resolved>30</resolved> %>-<resolved>45</resolved> %.",
         "starDustCost": null
       },
       {
         "level": 3,
         "manaCost": 8,
-        "description": "La criatura amistosa objetivo recibe -<resolved>60</resolved> % de daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "La criatura amistosa objetivo recibe -<resolved>45</resolved> % de daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "También se aplica al daño de largo alcance.",
         "starDustCost": null
       },
       {
         "level": 4,
         "manaCost": 8,
-        "description": "Todas las criaturas amistosas reciben -<resolved>60</resolved> % del daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
+        "description": "Todas las criaturas amistosas reciben -<resolved>45</resolved> % del daño a distancia y de largo alcance.\nDuración: [ <resolved>1</resolved> + <resolved>1</resolved> por cada <resolved>4</resolved> de poder de hechizo del héroe ] ronda(s).",
         "bonusDescription": "Afecta a todas las criaturas amistosas.",
         "starDustCost": null
       }
@@ -4450,30 +4442,30 @@
     "levels": [
       {
         "level": 1,
-        "manaCost": 17,
-        "description": "El héroe restaura al instante <resolved>40</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
+        "manaCost": 15,
+        "description": "El héroe restaura al instante <resolved>35</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
         "bonusDescription": null,
         "starDustCost": 2
       },
       {
         "level": 2,
-        "manaCost": 13,
-        "description": "El héroe restaura al instante <resolved>40</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
-        "bonusDescription": "Coste de maná base: <resolved>17</resolved> > <resolved>13</resolved>.",
+        "manaCost": 11,
+        "description": "El héroe restaura al instante <resolved>35</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
+        "bonusDescription": "Coste de maná base: <resolved>15</resolved> > <resolved>11</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 3,
-        "manaCost": 13,
-        "description": "El héroe restaura al instante <resolved>60</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
-        "bonusDescription": "Bonificación de puntos de movimiento: <resolved>60</resolved> > <resolved>60</resolved>.",
+        "manaCost": 11,
+        "description": "El héroe restaura al instante <resolved>50</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
+        "bonusDescription": "Bonificación de puntos de movimiento: <resolved>35</resolved> > <resolved>50</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 4,
-        "manaCost": 13,
-        "description": "El héroe restaura al instante <resolved>60</resolved> puntos de movimiento al héroe. Se puede usar <resolved>2</resolved> vez/veces al día.",
-        "bonusDescription": "Se puede utilizar +<resolved>1</resolved> vez al día.",
+        "manaCost": 11,
+        "description": "El héroe restaura al instante <resolved>80</resolved> puntos de movimiento al héroe. Se puede usar <resolved>1</resolved> vez/veces al día.",
+        "bonusDescription": "Bonificación de puntos de movimiento: <resolved>50</resolved> > <resolved>80</resolved>.",
         "starDustCost": 2
       }
     ],
@@ -4485,39 +4477,39 @@
     "school": "neutral",
     "schoolDisplay": "Magia neutral",
     "schoolTierText": "Magia neutral alta",
-    "rank": 2,
+    "rank": 4,
     "category": "Magia del Mapa Global",
     "icon": "icons/hero_magics/neutral_magic_pocket_dimension",
     "isMasterful": false,
     "baseNameForSort": "Dimensión de bolsillo",
     "localizedName": "Dimensión de bolsillo",
-    "exceptionText": "El héroe debe tener al menos nivel <resolved>4</resolved> para aprender este hechizo.",
+    "exceptionText": "El héroe debe tener al menos nivel <resolved>12</resolved> para aprender este hechizo.",
     "isBonusSpell": false,
     "levels": [
       {
         "level": 1,
-        "manaCost": 14,
+        "manaCost": 22,
         "description": "Crea una entrada a un punto de apoyo remoto en un espacio adyacente que dura hasta el final del día, lo que permite a cualquier héroe aliado dejar criaturas y artefactos allí. Si un héroe enemigo interactúa con la entrada, esta desaparece. Se puede usar <resolved>1</resolved> vez/veces al día.",
         "bonusDescription": null,
-        "starDustCost": 2
+        "starDustCost": 4
       },
       {
         "level": 2,
-        "manaCost": 10,
+        "manaCost": 18,
         "description": "Crea una entrada a un punto de apoyo remoto en un espacio adyacente que dura hasta el final del día, lo que permite a cualquier héroe aliado dejar criaturas y artefactos allí. Si un héroe enemigo interactúa con la entrada, esta desaparece. Se puede usar <resolved>1</resolved> vez/veces al día.",
-        "bonusDescription": "Coste de maná base: <resolved>14</resolved> > <resolved>10</resolved>.",
+        "bonusDescription": "Coste de maná base: <resolved>22</resolved> > <resolved>18</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 3,
-        "manaCost": 10,
+        "manaCost": 18,
         "description": "Crea una entrada a un punto de apoyo remoto en un espacio libre en un radio de <resolved>4</resolved> cuadro(s) que dura hasta el final del día, lo que permite a cualquier héroe aliado dejar criaturas y artefactos allí. Si un héroe enemigo interactúa con la entrada, esta desaparece. Se puede usar <resolved>1</resolved> vez/veces al día.",
         "bonusDescription": "La entrada al punto de apoyo se puede crear en un radio de <resolved>4</resolved> cuadro(s).",
         "starDustCost": 1
       },
       {
         "level": 4,
-        "manaCost": 10,
+        "manaCost": 18,
         "description": "Crea una entrada a un punto de apoyo en un espacio libre en un radio de <resolved>4</resolved> cuadro(s) que dura hasta el final del día siguiente, lo que permite a cualquier héroe aliado dejar criaturas y artefactos allí. Si un héroe enemigo interactúa con la entrada, esta desaparece. Se puede usar<resolved>1</resolved> vez/veces al día.",
         "bonusDescription": "La entrada al punto de apoyo dura hasta el final del día siguiente.",
         "starDustCost": 2
@@ -4531,39 +4523,39 @@
     "school": "neutral",
     "schoolDisplay": "Magia neutral",
     "schoolTierText": "Magia neutral alta",
-    "rank": 4,
+    "rank": 3,
     "category": "Magia del Mapa Global",
     "icon": "icons/hero_magics/neutral_magic_light_gate",
     "isMasterful": false,
     "baseNameForSort": "Portal de luz",
     "localizedName": "Portal de luz",
-    "exceptionText": "El héroe debe tener al menos nivel <resolved>12</resolved> para aprender este hechizo.",
+    "exceptionText": "El héroe debe tener al menos nivel <resolved>8</resolved> para aprender este hechizo.",
     "isBonusSpell": false,
     "levels": [
       {
         "level": 1,
-        "manaCost": 28,
+        "manaCost": 18,
         "description": "Crea un portal hasta el final del día que puede atravesar cualquier héroe. Se entra desde un espacio libre adyacente y se sale a un espacio libre en un radio de <resolved>5</resolved> cuadro(s) del héroe. Veces al día: <resolved>1</resolved>.",
         "bonusDescription": null,
-        "starDustCost": 4
+        "starDustCost": 3
       },
       {
         "level": 2,
-        "manaCost": 20,
+        "manaCost": 10,
         "description": "Crea un portal hasta el final del día que puede atravesar cualquier héroe. Se entra desde un espacio libre adyacente y se sale a un espacio libre en un radio de <resolved>5</resolved> cuadro(s) del héroe. Veces al día: <resolved>1</resolved>.",
-        "bonusDescription": "Coste de maná base: <resolved>28</resolved> > <resolved>20</resolved>.",
+        "bonusDescription": "Coste de maná base: <resolved>18</resolved> > <resolved>10</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 3,
-        "manaCost": 20,
+        "manaCost": 10,
         "description": "Crea un portal hasta el final del día que puede atravesar cualquier héroe. Se entra desde un espacio libre adyacente y se sale a un espacio libre en un radio de <resolved>7</resolved> cuadro(s) del héroe. Veces al día: <resolved>1</resolved>.",
         "bonusDescription": "Radio objetivo: <resolved>5</resolved> > <resolved>7</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 4,
-        "manaCost": 20,
+        "manaCost": 10,
         "description": "Crea un portal hasta el final del día que puede atravesar cualquier héroe. Se entra desde un espacio libre adyacente y se sale a un espacio libre en un radio de <resolved>7</resolved> cuadro(s) del héroe. Veces al día: <resolved>2</resolved>.",
         "bonusDescription": "Se puede utilizar +<resolved>1</resolved> vez al día.",
         "starDustCost": 2
@@ -4649,14 +4641,14 @@
       {
         "level": 3,
         "manaCost": 14,
-        "description": "Teletransporta al héroe a la ubicación objetivo en un radio de <resolved>11</resolved> cuadros. Se puede usar <resolved>1</resolved> veces al día.",
-        "bonusDescription": "Radio objetivo: <resolved>8</resolved> > <resolved>11</resolved>.",
+        "description": "Teletransporta al héroe a la ubicación objetivo en un radio de <resolved>12</resolved> cuadros. Se puede usar <resolved>1</resolved> veces al día.",
+        "bonusDescription": "Radio objetivo: <resolved>8</resolved> > <resolved>12</resolved>.",
         "starDustCost": 1
       },
       {
         "level": 4,
         "manaCost": 14,
-        "description": "Teletransporta al héroe a la ubicación objetivo en un radio de <resolved>11</resolved> cuadros. Se puede usar <resolved>2</resolved> veces al día.",
+        "description": "Teletransporta al héroe a la ubicación objetivo en un radio de <resolved>12</resolved> cuadros. Se puede usar <resolved>2</resolved> veces al día.",
         "bonusDescription": "Se puede utilizar +<resolved>1</resolved> vez al día.",
         "starDustCost": 2
       }
@@ -4669,26 +4661,26 @@
     "school": "neutral",
     "schoolDisplay": "Magia neutral",
     "schoolTierText": "Magia neutral alta",
-    "rank": 3,
+    "rank": 2,
     "category": "Magia del Mapa Global",
     "icon": "icons/hero_magics/neutral_magic_shadow_form",
     "isMasterful": false,
     "baseNameForSort": "Vuelo de las sombras",
     "localizedName": "Vuelo de las sombras",
-    "exceptionText": "El héroe debe tener al menos nivel <resolved>8</resolved> para aprender este hechizo.",
+    "exceptionText": "El héroe debe tener al menos nivel <resolved>4</resolved> para aprender este hechizo.",
     "isBonusSpell": false,
     "levels": [
       {
         "level": 1,
         "manaCost": 20,
-        "description": "Otorga al héroe la aptitud de volar, por lo que puede moverse libremente a través de cualquier obstáculo en el mapa global. Volar sobre obstáculos cuesta + <resolved>30</resolved> % de puntos de movimiento.",
+        "description": "Otorga al héroe la aptitud de volar, por lo que puede moverse libremente a través de cualquier obstáculo en el mapa global. Volar sobre obstáculos cuesta + <resolved>40</resolved> % de puntos de movimiento.",
         "bonusDescription": null,
-        "starDustCost": 3
+        "starDustCost": 2
       },
       {
         "level": 2,
         "manaCost": 14,
-        "description": "Otorga al héroe la aptitud de volar, por lo que puede moverse libremente a través de cualquier obstáculo en el mapa global. Volar sobre obstáculos cuesta + <resolved>30</resolved> % de puntos de movimiento.",
+        "description": "Otorga al héroe la aptitud de volar, por lo que puede moverse libremente a través de cualquier obstáculo en el mapa global. Volar sobre obstáculos cuesta + <resolved>40</resolved> % de puntos de movimiento.",
         "bonusDescription": "Coste de maná base: <resolved>20</resolved> > <resolved>14</resolved>.",
         "starDustCost": 1
       },

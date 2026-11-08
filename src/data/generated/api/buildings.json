@@ -217,7 +217,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1000
+        "amount": 1500
       },
       {
         "resourceName": "wood",
@@ -257,7 +257,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1750
+        "amount": 2000
       },
       {
         "resourceName": "dust",
@@ -304,7 +304,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2500
+        "amount": 2750
       },
       {
         "resourceName": "wood",
@@ -344,7 +344,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3000
+        "amount": 3250
       },
       {
         "resourceName": "dust",
@@ -391,7 +391,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3250
+        "amount": 3000
       },
       {
         "resourceName": "wood",
@@ -401,6 +401,11 @@
     "costLabel": "Coste de construcción:",
     "effects": null,
     "requirements": [
+      {
+        "buildingName": "Vivienda abandonada",
+        "buildingId": "demon_Build_Tier_1_L1",
+        "iconPath": "icons/cities_buildings/demon/d_build_tier_1_level_1"
+      },
       {
         "buildingName": "Guarida de carroña",
         "buildingId": "demon_Build_Tier_2_L1",
@@ -433,11 +438,11 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1000
+        "amount": 1500
       },
       {
         "resourceName": "wood",
-        "amount": 10
+        "amount": 5
       },
       {
         "resourceName": "crystals",
@@ -488,7 +493,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3750
+        "amount": 4000
       },
       {
         "resourceName": "ore",
@@ -530,7 +535,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1500
+        "amount": 1750
       },
       {
         "resourceName": "ore",
@@ -585,7 +590,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 5000
+        "amount": 5500
       },
       {
         "resourceName": "wood",
@@ -686,7 +691,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 6500
+        "amount": 6000
       },
       {
         "resourceName": "ore",
@@ -732,7 +737,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 4500
+        "amount": 4000
       },
       {
         "resourceName": "ore",
@@ -837,15 +842,15 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 12500
+        "amount": 15000
       },
       {
         "resourceName": "wood",
-        "amount": 15
+        "amount": 10
       },
       {
         "resourceName": "ore",
-        "amount": 15
+        "amount": 10
       },
       {
         "resourceName": "crystals",
@@ -1766,7 +1771,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1000
+        "amount": 1500
       },
       {
         "resourceName": "ore",
@@ -1802,7 +1807,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 750
+        "amount": 1000
       },
       {
         "resourceName": "ore",
@@ -1853,7 +1858,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 2250
       },
       {
         "resourceName": "wood",
@@ -1956,7 +1961,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1250
+        "amount": 1750
       },
       {
         "resourceName": "ore",
@@ -2015,7 +2020,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1250
+        "amount": 2000
       },
       {
         "resourceName": "ore",
@@ -2070,7 +2075,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 4000
+        "amount": 4500
       },
       {
         "resourceName": "wood",
@@ -2116,7 +2121,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3250
+        "amount": 3500
       },
       {
         "resourceName": "wood",
@@ -2285,7 +2290,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3500
+        "amount": 2500
       },
       {
         "resourceName": "wood",
@@ -2335,19 +2340,19 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 3500
       },
       {
         "resourceName": "wood",
-        "amount": 10
+        "amount": 5
       },
       {
         "resourceName": "ore",
-        "amount": 10
+        "amount": 5
       },
       {
         "resourceName": "gemstones",
-        "amount": 10
+        "amount": 5
       },
       {
         "resourceName": "dust",
@@ -3365,7 +3370,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1250
+        "amount": 1500
       },
       {
         "resourceName": "ore",
@@ -3452,7 +3457,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2250
+        "amount": 2500
       },
       {
         "resourceName": "wood",
@@ -3585,7 +3590,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2250
+        "amount": 2500
       },
       {
         "resourceName": "wood",
@@ -3640,7 +3645,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3250
+        "amount": 3500
       },
       {
         "resourceName": "gemstones",
@@ -3690,7 +3695,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3250
+        "amount": 3500
       },
       {
         "resourceName": "gemstones",
@@ -3788,7 +3793,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 4500
+        "amount": 4000
       },
       {
         "resourceName": "wood",
@@ -3843,7 +3848,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3500
+        "amount": 4000
       },
       {
         "resourceName": "ore",
@@ -4862,7 +4867,7 @@
   },
   {
     "id": "nature_Build_Tier_1_L1",
-    "name": "Cabañas de faunos",
+    "name": "Cabañas de faunas",
     "faction": "nature",
     "factionDisplay": "Foresta",
     "level": 1,
@@ -4870,11 +4875,11 @@
     "iconPath": "icons/cities_buildings/nature/nature_build_tier_1_level_1",
     "category": "hires",
     "factionIcon": "icons/fractions/spring_icon",
-    "description": "Permite reclutar faunos.",
+    "description": "Permite reclutar faunas.",
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1250
+        "amount": 2000
       },
       {
         "resourceName": "wood",
@@ -4888,7 +4893,7 @@
     "recruitableUnits": [
       {
         "unitId": "elf_tracker",
-        "unitName": "Fauno",
+        "unitName": "Fauna",
         "iconPath": "icons/units/hex_portraits/elf_tracker"
       }
     ],
@@ -4898,7 +4903,7 @@
   },
   {
     "id": "nature_Build_Tier_1_L2",
-    "name": "Cabañas de faunos II",
+    "name": "Cabañas de faunas II",
     "faction": "nature",
     "factionDisplay": "Foresta",
     "level": 2,
@@ -4906,11 +4911,11 @@
     "iconPath": "icons/cities_buildings/nature/nature_build_tier_1_level_2",
     "category": "hires",
     "factionIcon": "icons/fractions/spring_icon",
-    "description": "Permite reclutar faunos arqueros y faunos guerreros.",
+    "description": "Permite reclutar faunas arqueras y faunas guerreras.",
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1000
+        "amount": 1500
       },
       {
         "resourceName": "wood",
@@ -4925,7 +4930,7 @@
     "effects": null,
     "requirements": [
       {
-        "buildingName": "Cabañas de faunos",
+        "buildingName": "Cabañas de faunas",
         "buildingId": "nature_Build_Tier_1_L1",
         "iconPath": "icons/cities_buildings/nature/nature_build_tier_1_level_1"
       }
@@ -4934,12 +4939,12 @@
     "recruitableUnits": [
       {
         "unitId": "elf_tracker_upg",
-        "unitName": "Fauno arquero",
+        "unitName": "Fauna arquera",
         "iconPath": "icons/units/hex_portraits/elf_tracker_upg"
       },
       {
         "unitId": "elf_tracker_upg_alt",
-        "unitName": "Fauno guerrero",
+        "unitName": "Fauna guerrera",
         "iconPath": "icons/units/hex_portraits/elf_tracker_upg_alt"
       }
     ],
@@ -4961,7 +4966,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1750
+        "amount": 2750
       },
       {
         "resourceName": "gemstones",
@@ -4980,7 +4985,7 @@
     "effects": null,
     "requirements": [
       {
-        "buildingName": "Cabañas de faunos",
+        "buildingName": "Cabañas de faunas",
         "buildingId": "nature_Build_Tier_1_L1",
         "iconPath": "icons/cities_buildings/nature/nature_build_tier_1_level_1"
       }
@@ -5011,7 +5016,11 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 2250
+      },
+      {
+        "resourceName": "wood",
+        "amount": 5
       },
       {
         "resourceName": "crystals",
@@ -5161,7 +5170,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2750
+        "amount": 3250
       },
       {
         "resourceName": "ore",
@@ -5179,11 +5188,6 @@
         "buildingName": "Círculo de menhires",
         "buildingId": "nature_Build_Tier_3_L1",
         "iconPath": "icons/cities_buildings/nature/nature_build_tier_3_level_1"
-      },
-      {
-        "buildingName": "Cofradía de magos",
-        "buildingId": "nature_Build_Magic_Guild_L1",
-        "iconPath": "icons/cities_buildings/nature/nature_build_magic_guild_level_1"
       }
     ],
     "requirementsLabel": "Edificios necesarios",
@@ -5212,7 +5216,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 2250
       },
       {
         "resourceName": "ore",
@@ -5490,11 +5494,11 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 15000
+        "amount": 17500
       },
       {
         "resourceName": "wood",
-        "amount": 10
+        "amount": 5
       },
       {
         "resourceName": "ore",
@@ -5502,7 +5506,7 @@
       },
       {
         "resourceName": "crystals",
-        "amount": 15
+        "amount": 10
       }
     ],
     "costLabel": "Coste de construcción:",
@@ -5540,15 +5544,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 17500
-      },
-      {
-        "resourceName": "wood",
-        "amount": 10
-      },
-      {
-        "resourceName": "ore",
-        "amount": 10
+        "amount": 20000
       },
       {
         "resourceName": "crystals",
@@ -6429,7 +6425,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1500
+        "amount": 1750
       }
     ],
     "costLabel": "Coste de construcción:",
@@ -6461,7 +6457,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 1000
+        "amount": 1250
       },
       {
         "resourceName": "dust",
@@ -6595,7 +6591,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3000
+        "amount": 3250
       },
       {
         "resourceName": "wood",
@@ -6688,7 +6684,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 4250
+        "amount": 4000
       },
       {
         "resourceName": "wood",
@@ -6743,7 +6739,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3500
+        "amount": 3250
       },
       {
         "resourceName": "wood",
@@ -6802,7 +6798,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3500
+        "amount": 4500
       },
       {
         "resourceName": "wood",
@@ -6852,7 +6848,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 3500
       },
       {
         "resourceName": "mercury",
@@ -6954,7 +6950,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3500
+        "amount": 4500
       },
       {
         "resourceName": "ore",
@@ -7063,15 +7059,15 @@
       },
       {
         "resourceName": "wood",
-        "amount": 5
+        "amount": 10
       },
       {
         "resourceName": "ore",
-        "amount": 5
+        "amount": 10
       },
       {
         "resourceName": "mercury",
-        "amount": 25
+        "amount": 20
       },
       {
         "resourceName": "dust",
@@ -8040,7 +8036,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 250
+        "amount": 500
       },
       {
         "resourceName": "mercury",
@@ -8186,7 +8182,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2750
+        "amount": 3500
       },
       {
         "resourceName": "wood",
@@ -8232,7 +8228,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 750
+        "amount": 1250
       },
       {
         "resourceName": "wood",
@@ -8287,7 +8283,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2250
+        "amount": 2750
       },
       {
         "resourceName": "gemstones",
@@ -8342,7 +8338,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 2000
+        "amount": 2250
       },
       {
         "resourceName": "mercury",
@@ -8393,7 +8389,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3750
+        "amount": 3250
       },
       {
         "resourceName": "wood",
@@ -8498,7 +8494,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 6250
+        "amount": 5750
       },
       {
         "resourceName": "wood",
@@ -8548,7 +8544,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 3750
+        "amount": 2750
       },
       {
         "resourceName": "wood",
@@ -8603,7 +8599,7 @@
     "costs": [
       {
         "resourceName": "gold",
-        "amount": 15000
+        "amount": 12500
       },
       {
         "resourceName": "gemstones",
@@ -8615,7 +8611,7 @@
       },
       {
         "resourceName": "mercury",
-        "amount": 15
+        "amount": 20
       }
     ],
     "costLabel": "Coste de construcción:",
@@ -9257,9 +9253,9 @@
     "effects": null,
     "requirements": [
       {
-        "buildingName": "Cofradía de magos III",
-        "buildingId": "unfrozen_Build_Magic_Guild_L3",
-        "iconPath": "icons/cities_buildings/unfrozen/u_build_mage_guild_level_3"
+        "buildingName": "Gran biblioteca",
+        "buildingId": "unfrozen_Build_Endless_Library_L1",
+        "iconPath": "icons/cities_buildings/unfrozen/u_build_endless_library"
       }
     ],
     "requirementsLabel": "Edificios necesarios",
