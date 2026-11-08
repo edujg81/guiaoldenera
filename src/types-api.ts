@@ -161,7 +161,7 @@ export interface ApiHero {
   specializationIcon: string;
   startingArmy: { unitId: string; unitName: string; countInterval: string; icon: string }[];
   startingSkills: { skillId: string; skillName: string; icon: string }[];
-  startingSpells: { spellId: string; spellName: string; icon: string; isMasterful?: boolean }[];
+  startingSpells: { spellId: string; spellName: string; icon: string; isMasterful?: boolean }[] | null;
   description: string;
   motto: string;
   statLabels: Record<string, string>;

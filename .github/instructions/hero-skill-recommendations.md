@@ -39,8 +39,8 @@ Este documento contiene las recomendaciones editoriales de habilidades para cada
 
 ### Aguijón (dungeon_hero_3)
 **Canónico (API):** `id: dungeon_hero_3`, `name: Aguijón`, `classType: might`, `specializationName: Señor de la Guerra`, `startingSkills: [Fuerza del Triunvirato básica, Combate básica]`.
-**Comentario editorial:** Especialización "Señor de la Guerra" indica rol de combate físico puro. Build centrada en Fuerza del triunvirato (Experta) y Combate (Experta) para máximo daño físico; Logística (Experta) para movilidad; Tácticas (Experta) para posicionamiento; Defensa (Avanzada) para protección; Liderazgo (Avanzada) para límite de tropas; Sabiduría (Avanzada) para maná; Magia de nochesombra (Avanzada) para hechizos de apoyo.
-**Subhabilidades:** Fuerza del triunvirato → Experto: Postura Perfeccionada; Avanzado: Postura de Ataque. Combate → Experto: Golpe poderoso (daño Golpe heroico); Avanzado: Esgrima.
+**Comentario editorial:** Especialización "Señor de la Guerra" indica rol de combate físico puro. Build centrada en Fuerza del triunvirato (Experta) y Combate (Experta) para máximo daño físico; Logística (Experta) para movilidad; Tácticas (Experta) para posicionamiento; Defensa (Avanzada) para protección; Liderazgo (Avanzada) para límite de tropas; Sabiduría (Avanzada) para maná; Magia de nochesombra (Avanzada) para hechizos de apoyo. No se recomienda Taumaturgia para este rol físico puro.
+**Subhabilidades:** Fuerza del triunvirato → Experto: Postura Perfeccionada; Avanzado: Postura de Ataque. Combate → Experto: Golpe poderoso; Avanzado: Esgrima.
 **Tier:** S+ (Meta) — Rol de combate físico puro, confirmado por análisis de facción Mazmorra.
 **Habilidades recomendadas:**
 1. Fuerza del triunvirato (Experta)

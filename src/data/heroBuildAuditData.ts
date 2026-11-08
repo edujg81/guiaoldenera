@@ -5,7 +5,7 @@ import { API_SKILLS_DATA } from './apiSkillsData';
 
 export interface HeroBuildSkillAudit { skillId: string; starting: boolean; appearanceChance: number | null; why: string; advancedSubskillId: string | null; advancedWhy: string; expertSubskillId: string | null; expertWhy: string; }
 export interface HeroSubclassAudit { id: string; name: string; pursue: boolean; reason: string; requiredSkills: { skillId: string; starting: boolean; appearanceChance: number | null }[]; }
-export interface HeroBuildAudit { heroId: string; tier: 'S+'|'S'|'A'|'B'|'C'|'D'; tierReason: string; buildReason: string; recommendedSkills: HeroBuildSkillAudit[]; recommendedSubclass: HeroSubclassAudit; sources: string[]; }
+export interface HeroBuildAudit { heroId: string; tier: 'S+'|'S'|'A'|'B'|'C'|'D'; tierReason: string; buildReason: string; recommendedSkills: HeroBuildSkillAudit[]; recommendedSubclass: HeroSubclassAudit; sources: string[]; analysisReviewed?: boolean; }
 
 export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
   "demon_hero_1": {
@@ -2036,115 +2036,229 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
   },
   "dungeon_hero_1": {
     "heroId": "dungeon_hero_1",
-    "tier": "A",
-    "tierReason": "Análisis derivado: Enatee tiene un perfil muy sólido y muy realista para una Mazmorra que quiere controlar la línea y evitar el desgaste innecesario. Su especialización de Amenaza serpenteante encaja con una presión constante y con una composición de control, aunque no alcanza la explosividad ni la versatilidad de los mejores picks de facción.",
-    "buildReason": "Análisis derivado: la build recomendada para Enatee prioriza la lógica de control de masas, capitalizando su especialización y sus habilidades de protección para convertir la fortaleza defensiva en una ventaja duradera. La prioridad es mantener la presión real del ejército sin caer en una build demasiado rígida o demasiado dependiente de la subclase.",
+    "tier": "S",
+    "analysisReviewed": true,
+    "tierReason": "Tier S en una partida estándar: su especialidad aumenta el crecimiento de Medusas y mejora sus atributos, velocidad, iniciativa y PV, pero concentra buena parte de su valor en una criatura de rango 5 y requiere tiempo y recursos para convertir el crecimiento en ejército. Puede alcanzar Tier S+ cuando el mapa permite reclutar y mejorar Medusas con regularidad. Es una valoración derivada, no un ranking oficial ni una afirmación basada en winrate.",
+    "buildReason": "Plan físico de largo plazo: llevar Fuerza del Triunvirato y Defensa iniciales a experto, añadir Ofensiva, Tácticas y Liderazgo para potenciar y conservar el ejército, y perseguir Guardaespaldas de Baltasar solo si aparecen sus requisitos sin sacrificar las prioridades de combate. La Medusa escultora es la mejora predeterminada por su daño fijo y Petrificación; la Medusa reina es preferible si importa más actuar antes y reducir iniciativa.",
     "recommendedSkills": [
       {
         "skillId": "skill_faction_dungeon",
         "starting": true,
         "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
+        "why": "Enatee ya empieza con Fuerza del Triunvirato. Llevarla a experta eleva a +6 el atributo del héroe que corresponda a la postura elegida; la mejora avanzada de terreno refuerza además los combates de Mazmorra en terreno nativo.",
         "advancedSubskillId": "sub_skill_faction_dungeon_1",
-        "advancedWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase.",
-        "expertSubskillId": "sub_skill_faction_dungeon_5",
-        "expertWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase."
+        "advancedWhy": "Pasajes subterráneos aporta a las criaturas de Mazmorra +10 % de daño y -10 % de daño recibido en terreno nativo. Es una mejora de combate concreta cuando se pelea en ese terreno; no la trato como una bonificación permanente fuera de él.",
+        "expertSubskillId": "sub_skill_faction_dungeon_3",
+        "expertWhy": "Oportunistas da +1 iniciativa a las criaturas aliadas, alineándose con la iniciativa adicional que la especialidad concede a las Medusas. Ambas bonificaciones se acumulan, permitiendo a las Medusas atacar más rápido."
       },
       {
         "skillId": "skill_protection",
         "starting": true,
         "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
+        "why": "También es inicial. Su reducción de daño básico protege a todo el ejército, que es especialmente útil para conservar las Medusas de rango 5 mientras el resto de la fuerza mantiene la línea.",
         "advancedSubskillId": "sub_skill_protection_2",
-        "advancedWhy": "La defensa contra ataques a distancia reduce pérdidas y la opción experta baja el ataque enemigo.",
+        "advancedWhy": "Cobertura reduce un 20 % el daño de ataques a distancia y de largo alcance. La escojo porque las Medusas necesitan seguir disparando y pueden perder valor si el rival concentra fuego sobre ellas.",
         "expertSubskillId": "sub_skill_protection_5",
-        "expertWhy": "La defensa contra ataques a distancia reduce pérdidas y la opción experta baja el ataque enemigo."
+        "expertWhy": "Fuerza imparable reduce un 15 % el ataque de las criaturas enemigas. Se acumula con la reducción de atributos que la especialidad aplica a Medusas enemigas."
       },
       {
-        "skillId": "skill_resistance",
+        "skillId": "skill_assault",
         "starting": false,
-        "appearanceChance": 15,
-        "why": "Añade herramientas contra magia y control, especialmente importantes cuando el héroe no dispone de una defensa mágica propia.",
-        "advancedSubskillId": "sub_skill_resistance_1",
-        "advancedWhy": "Dificulta la magia enemiga y, a Experto, reduce de forma directa su capacidad mágica.",
-        "expertSubskillId": "sub_skill_resistance_6",
-        "expertWhy": "Dificulta la magia enemiga y, a Experto, reduce de forma directa su capacidad mágica."
+        "appearanceChance": null,
+        "why": "Ofensiva experta aumenta un 20 % el daño de los ataques básicos aliados. Es la mejora de daño directa para las Medusas y el resto de un ejército físico; no cuento como ataque básico su estilo alternativo de Descarga de flechas.",
+        "advancedSubskillId": "sub_skill_assault_2",
+        "advancedWhy": "Tiro con arco añade un 15 % a los ataques a distancia y de largo alcance, que es el modo normal de atacar de la Medusa. Esta mejora sí está descrita específicamente para ataques a distancia.",
+        "expertSubskillId": "sub_skill_assault_5",
+        "expertWhy": "Firmeza reduce un 15 % la defensa de las criaturas enemigas. Ayuda a convertir en daño físico la ventaja de iniciativa y el control que generan Enatee y las Medusas."
       },
       {
-        "skillId": "skill_trainer",
+        "skillId": "skill_tactics",
         "starting": false,
-        "appearanceChance": 10,
-        "why": "Refuerza crecimiento, ejército y logística de reclutamiento; tiene sentido en héroes cuya especialización potencia criaturas concretas.",
-        "advancedSubskillId": "sub_skill_trainer_1",
-        "advancedWhy": "Aumenta crecimiento y, a Experto, añade movilidad económica mediante transferencia entre ciudades.",
-        "expertSubskillId": "sub_skill_trainer_4",
-        "expertWhy": "Aumenta crecimiento y, a Experto, añade movilidad económica mediante transferencia entre ciudades."
+        "appearanceChance": null,
+        "why": "Tácticas experta amplía a cinco líneas la zona de despliegue. Para Enatee importa poder colocar la retaguardia de Medusas con intención y ajustar la pantalla de tropas al ejército rival.",
+        "advancedSubskillId": "sub_skill_tactics_1",
+        "advancedWhy": "Uno para todos concede ataque por cada enemigo adyacente y duplica esa bonificación si el héroe conoce Ofensiva, que forma parte de esta build. Su valor depende de que la línea frontal pueda trabar enemigos sin exponer las Medusas.",
+        "expertSubskillId": "sub_skill_tactics_4",
+        "expertWhy": "Todos para uno concede defensa por cada aliado adyacente y duplica esa bonificación si Enatee conoce Defensa, que ya trae de inicio. La aprovecharía en la línea frontal, no agrupando las Medusas entre sí a costa de su posición de tiro."
       },
       {
-        "skillId": "skill_economy",
+        "skillId": "skill_leadership",
         "starting": false,
-        "appearanceChance": 12.5,
-        "why": "Acelera recursos y permite convertir una especialización económica o de crecimiento en ventaja estructural.",
-        "advancedSubskillId": "sub_skill_economy_1",
-        "advancedWhy": "Genera recursos permanentes y, a nivel Experto, mejora el valor económico de los artefactos.",
-        "expertSubskillId": "sub_skill_economy_6",
-        "expertWhy": "Genera recursos permanentes y, a nivel Experto, mejora el valor económico de los artefactos."
+        "appearanceChance": null,
+        "why": "Liderazgo experto da +3 de moral al héroe. Elegiría Golpe inspirador para tener una posibilidad de restablecer Golpe heroico cada vez que Enatee lo usa; la API fija esa probabilidad en un 5 % por punto de moral.",
+        "advancedSubskillId": "sub_skill_leadership_2",
+        "advancedWhy": "Héroe de leyendas reduce en 1 la moral enemiga en combate. Es una interferencia constante y no exige Combate para duplicar su efecto, a diferencia de Resolución.",
+        "expertSubskillId": "sub_skill_leadership_6",
+        "expertWhy": "Golpe inspirador escala con la moral del héroe: con los +3 de Liderazgo experto, la fórmula publicada equivale a un 15 % por uso de Golpe heroico."
+      },
+      {
+        "skillId": "skill_mastery",
+        "starting": false,
+        "appearanceChance": null,
+        "why": "Enatee no registra hechizos iniciales, por eso Sabiduría no es prioridad de apertura. La incluyo como inversión tardía para el requisito de Guardaespaldas de Baltasar y para permitir aprender hechizos de rango alto sin la habilidad de su escuela.",
+        "advancedSubskillId": "sub_skill_mastery_7",
+        "advancedWhy": "Acabar el trabajo hace que Golpe heroico elimine unidades temporales de la formación objetivo. Es la opción avanzada más alineada con el perfil físico de Enatee, aunque su valor depende de enfrentarse a invocaciones temporales.",
+        "expertSubskillId": "sub_skill_mastery_3",
+        "expertWhy": "Ojo de águila permite aprender al inicio de la batalla hechizos que conozca el rival y que Enatee pueda aprender. Es una herramienta tardía y dependiente del enfrentamiento, no una razón para priorizar Sabiduría antes de sus habilidades de ejército."
+      },
+      {
+        "skillId": "skill_magic_night",
+        "starting": false,
+        "appearanceChance": null,
+        "why": "Magia de nochesombra no forma parte de la apertura de Enatee: no tiene hechizos iniciales. La incluyo exclusivamente como requisito de experto para Guardaespaldas de Baltasar y por su debilitación directa de las tropas enemigas.",
+        "advancedSubskillId": "sub_skill_magic_night_3",
+        "advancedWhy": "La noche más oscura reduce un nivel los hechizos de nochesombra enemigos. Es una elección de enfrentamiento; si el rival no usa esa escuela, la mejora avanzada aporta poco y no debe retrasar las habilidades de combate.",
+        "expertSubskillId": "sub_skill_magic_night_5",
+        "expertWhy": "La hora del lobo reduce un 10 % el ataque y la defensa de las criaturas enemigas. Se acumula con la reducción de atributos que la especialidad aplica a Medusas enemigas."
+      },
+      {
+        "skillId": "skill_diplomacy",
+        "starting": false,
+        "appearanceChance": null,
+        "why": "Diplomacia es el último requisito de Guardaespaldas de Baltasar. Su efecto real es de mapa: puede lograr que neutrales se unan a cambio de oro, así que la sitúo al final y no por daño de combate.",
+        "advancedSubskillId": "sub_skill_diplomacy_2",
+        "advancedWhy": "Elocuencia reduce un 75 % el coste de rendición. La prefiero a una mejora que dependa de Combate, habilidad que no está en la ruta propuesta.",
+        "expertSubskillId": "sub_skill_diplomacy_6",
+        "expertWhy": "Negociador aumenta un 20 % el número de unidades que se unen desde formaciones neutrales. Solo paga su coste de oportunidad en mapas con neutrales reclutables y oro suficiente."
+      }
+    ],
+    "recommendedSubclass": {
+      "id": "sub_class_dungeon_might_1",
+      "name": "Guardaespaldas de Baltasar",
+      "pursue": true,
+      "reason": "Objetivo de largo plazo, no prioridad de apertura: concede +100 % de ataque y exige Ofensiva, Sabiduría, Magia de nochesombra, Liderazgo y Diplomacia expertas. Las tres últimas habilidades de la ruta completan esos requisitos; si su coste de oportunidad impide mejorar antes el ejército, se abandona la subclase y se conservan las prioridades de combate.",
+      "requiredSkills": [
+        {
+          "skillId": "skill_assault",
+          "starting": false,
+          "appearanceChance": null
+        },
+        {
+          "skillId": "skill_mastery",
+          "starting": false,
+          "appearanceChance": null
+        },
+        {
+          "skillId": "skill_magic_night",
+          "starting": false,
+          "appearanceChance": null
+        },
+        {
+          "skillId": "skill_leadership",
+          "starting": false,
+          "appearanceChance": null
+        },
+        {
+          "skillId": "skill_diplomacy",
+          "starting": false,
+          "appearanceChance": null
+        }
+      ]
+    },
+    "sources": ["https://www.olden-era.com/en/heroes"]
+  },
+  "dungeon_hero_3": {
+    "heroId": "dungeon_hero_3",
+    "tier": "S+",
+    "tierReason": "Análisis derivado: Aguijón es un Adalid de Mazmorra con especialización 'Golpe venenoso' (golpe heroico + veneno acumulativo) y ejército inicial de Trogloditas / Infiltrados / Bailarinas de ónice. Su rol es combate físico puro con presión temprana; no depende de subclase para ser efectivo.",
+    "buildReason": "Análisis derivado: la build prioriza Fuerza del Triunvirato (Experta) y Combate (Experta) para maximizar daño físico y golpe heroico; Logística (Experta) y Tácticas (Experta) para movilidad y posicionamiento; Defensa (Avanzada) y Liderazgo (Avanzada) para protección y límite de tropas; Sabiduría (Avanzada) para maná; Magia de nochesombra (Avanzada) como apoyo. Subclase no es objetivo inicial.",
+    "recommendedSkills": [
+      {
+        "skillId": "skill_faction_dungeon",
+        "starting": true,
+        "appearanceChance": null,
+        "why": "Fuerza del Triunvirato es inicial y escala el daño de tropas de élite (Trogloditas / Infiltrados), que es el núcleo de la presión de Aguijón.",
+        "advancedSubskillId": "sub_skill_faction_dungeon_2",
+        "advancedWhy": "Postura de Ataque (+2/+4) refuerza el turno 1, clave para un Adalid que quiere romper antes de que el enemigo se estabilice.",
+        "expertSubskillId": "sub_skill_faction_dungeon_6",
+        "expertWhy": "Postura Perfeccionada potencia el daño en combate prolongado, donde el veneno acumulativo de la especialización ya está actuando.",
+      },
+      {
+        "skillId": "skill_battle_artistry",
+        "starting": true,
+        "appearanceChance": null,
+        "why": "Combate es inicial y aumenta daño físico; encaja con la especialización 'Golpe venenoso' porque el golpe heroico debe ser lo más fuerte posible.",
+        "advancedSubskillId": "sub_skill_battle_artistry_2",
+        "advancedWhy": "Esgrima (+2 Ataque, +2 Defensa) mejora la línea de vanguardia sin diluir la identidad ofensiva.",
+        "expertSubskillId": "sub_skill_battle_artistry_1",
+        "expertWhy": "Golpe poderoso aumenta el daño del golpe heroico, que es la mecánica central de Aguijón (daño base + veneno acumulativo).",
       },
       {
         "skillId": "skill_logistic",
         "starting": false,
-        "appearanceChance": 5,
-        "why": "La movilidad tiene valor transversal y permite aprovechar mejor una especialización de mapa, experiencia o economía.",
+        "appearanceChance": 10,
+        "why": "Logística da movilidad de mapa; Aguijón necesita llegar rápido a puntos de contacto para aprovechar su presión temprana.",
         "advancedSubskillId": "sub_skill_logistic_2",
-        "advancedWhy": "La movilidad adicional se convierte directamente en más acciones de mapa y limpieza por día.",
+        "advancedWhy": "Movilidad extra permite limpiar objetivos antes de que el enemigo organice su defensa.",
         "expertSubskillId": "sub_skill_logistic_6",
-        "expertWhy": "La movilidad adicional se convierte directamente en más acciones de mapa y limpieza por día."
+        "expertWhy": "Movilidad consolidada convierte la presión temprana en ventaja estructural de tempo.",
       },
       {
-        "skillId": "skill_battlemage",
+        "skillId": "skill_tactics",
+        "starting": false,
+        "appearanceChance": 7.5,
+        "why": "Tácticas mejora posicionamiento; con Trogloditas y Infiltrados, el orden de turno y la formación de flancos importan.",
+        "advancedSubskillId": "sub_skill_tactics_1",
+        "advancedWhy": "Vigilancia (contraataque automático al entrar en rango) protege la línea de vanguardia de Aguijón.",
+        "expertSubskillId": "sub_skill_tactics_6",
+        "expertWhy": "Formación de Cuña refuerza la defensa de flancos, útil con la composición inicial de Mazmorra.",
+      },
+      {
+        "skillId": "skill_protection",
         "starting": false,
         "appearanceChance": 5,
-        "why": "Convierte el uso de hechizos en estadísticas de combate y crea un puente eficaz entre magia y ejército.",
-        "advancedSubskillId": "sub_skill_battlemage_3",
-        "advancedWhy": "Acumula poder de hechizo al lanzar magia y después reduce las recargas de las herramientas de batalla.",
-        "expertSubskillId": "sub_skill_battlemage_6",
-        "expertWhy": "Acumula poder de hechizo al lanzar magia y después reduce las recargas de las herramientas de batalla."
+        "why": "Defensa reduce pérdidas; Aguijón es físico puro y necesita que su ejército sobreviva al primer intercambio.",
+        "advancedSubskillId": "sub_skill_protection_2",
+        "advancedWhy": "Defensa contra ataques a distancia protege a los Infiltrados y Bailarinas de ónice.",
+        "expertSubskillId": "sub_skill_protection_5",
+        "expertWhy": "Reducción de ataque enemigo hace más consistente la fase de presión temprana.",
+      },
+      {
+        "skillId": "skill_leadership",
+        "starting": false,
+        "appearanceChance": 10,
+        "why": "Liderazgo aumenta límite de tropas; con Trogloditas como núcleo, más tropas = más presión sostenida.",
+        "advancedSubskillId": "sub_skill_leadership_1",
+        "advancedWhy": "Iniciativa adicional hace que Aguijón mueva antes y que la presión se sienta antes.",
+        "expertSubskillId": "sub_skill_leadership_5",
+        "expertWhy": "Flujo estable de turno, útil cuando la composición quiere romper la formación sin perder control.",
+      },
+      {
+        "skillId": "skill_wisdom",
+        "starting": false,
+        "appearanceChance": 15,
+        "why": "Sabiduría mejora maná; aunque Aguijón es físico, el golpe heroico y el veneno pueden beneficiarse de recursos mágicos.",
+        "advancedSubskillId": "sub_skill_wisdom_6",
+        "advancedWhy": "Aumenta recursos mágicos y, a Experto, eleva nivel de escuela para mayor eficiencia.",
+        "expertSubskillId": "sub_skill_wisdom_3",
+        "expertWhy": "Mejor flujo de maná permite usar hechizos de apoyo sin sacrificar la presión física.",
+      },
+      {
+        "skillId": "skill_magic_night",
+        "starting": false,
+        "appearanceChance": 6,
+        "why": "Magia de nochesombra como apoyo; no es prioridad, pero aporta hechizos de control que complementan la presión física.",
+        "advancedSubskillId": "sub_skill_magic_night_2",
+        "advancedWhy": "Aumenta rendimiento de la escuela concreta para hechizos de apoyo.",
+        "expertSubskillId": "sub_skill_magic_night_5",
+        "expertWhy": "Refuerza la capacidad de cierre con magia cuando el combate se alarga.",
       }
     ],
     "recommendedSubclass": {
-      "id": "sub_class_dungeon_might_2",
-      "name": "Enviado de Lengua de Plata",
+      "id": "sub_class_dungeon_might_1",
+      "name": "Guardaespaldas de Baltasar",
       "pursue": false,
-      "reason": "No perseguir activamente: la build principal tiene mayor prioridad. Si aparecen de forma natural varias habilidades requeridas, puede aprovecharse la subclase.",
+      "reason": "Análisis derivado: la subclase requiere Formación, Maestría, Magia de nochesombra, Liderazgo y Economía — habilidades que no son el núcleo de Aguijón. No perseguir activamente; si aparece naturalmente, aprovechar. La prioridad es daño físico y golpe heroico, no subclase.",
       "requiredSkills": [
-        {
-          "skillId": "skill_protection",
-          "starting": true,
-          "appearanceChance": null
-        },
-        {
-          "skillId": "skill_sorcery",
-          "starting": false,
-          "appearanceChance": 5
-        },
-        {
-          "skillId": "skill_magic_day",
-          "starting": false,
-          "appearanceChance": 5
-        },
-        {
-          "skillId": "skill_luck",
-          "starting": false,
-          "appearanceChance": 7.5
-        },
-        {
-          "skillId": "skill_scouting",
-          "starting": false,
-          "appearanceChance": 12.5
-        }
+        { "skillId": "skill_formation", "starting": false, "appearanceChance": 15 },
+        { "skillId": "skill_mastery", "starting": false, "appearanceChance": 0.0 },
+        { "skillId": "skill_magic_night", "starting": false, "appearanceChance": 6 },
+        { "skillId": "skill_leadership", "starting": false, "appearanceChance": 10 },
+        { "skillId": "skill_economy", "starting": false, "appearanceChance": 7.5 }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"],
+    "analysisReviewed": true
   },
   "dungeon_hero_10": {
     "heroId": "dungeon_hero_10",
@@ -3156,227 +3270,96 @@ export const HERO_BUILD_AUDIT: Record<string, HeroBuildAudit> = {
   },
   "dungeon_hero_2": {
     "heroId": "dungeon_hero_2",
-    "tier": "C",
-    "tierReason": "Tier editorial C: opción de nicho; puede funcionar con una estrategia concreta, pero ofrece menos valor general que las alternativas superiores.",
-    "buildReason": "Build editorial centrada en Con un ojo abierto: prioriza Fuerza del Triunvirato, Arte de batalla, Hechicería, Magia de batalla y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
+    "tier": "A",
+    "analysisReviewed": true,
+    "tierReason": "Tier A en una partida estándar: Tellaris tiene un arranque de combate muy fuerte por su hechizo inicial y por la combinación con Arte de batalla, pero su valor real depende de sacar rendimiento del primer impulso y de la composición del ejército que lo acompaña. Es un héroe muy bueno en la fase temprana y muy sólido en la primera oleada, pero no ofrece el mismo engine generalista de un héroe S+ de largo recorrido.",
+    "buildReason": "Build enfocada en tempo de inicio y control de la primera ronda: Tellaris ya nace con Fuerza del Triunvirato y Arte de batalla, y su especialización le da `Inicio precoz magistral`, un hechizo que añade iniciativa a todas las criaturas amistosas. La ruta correcta es reforzar ese primer golpe con Magia de batalla y Liderazgo, alejándose del plan de subclase de largo plazo y priorizando el flujo de la primera batalla sobre la optimización de un atributo único.",
     "recommendedSkills": [
       {
         "skillId": "skill_faction_dungeon",
         "starting": true,
         "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
+        "why": "Es la identidad principal del héroe: combina perfectamente con el primer hechizo de Tellaris, porque hace que la ventaja inicial de iniciativa se sienta desde el primer turno y no solo como un beneficio pasivo abstracto.",
         "advancedSubskillId": "sub_skill_faction_dungeon_1",
-        "advancedWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase.",
-        "expertSubskillId": "sub_skill_faction_dungeon_5",
-        "expertWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase."
+        "advancedWhy": "Pasajes subterráneos aporta más daño y menos daño recibido en terreno nativo, reforzando la idea de que Tellaris es un héroe que quiere cerrar la primera oleada con más fuerza que el rival.",
+        "expertSubskillId": "sub_skill_faction_dungeon_3",
+        "expertWhy": "Oportunistas da +1 de iniciativa a las criaturas amistosas, y ese valor se alinea exactamente con la intención de que Tellaris gane el orden de batalla antes que el rival."
       },
       {
         "skillId": "skill_formation",
         "starting": true,
         "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
-        "advancedSubskillId": "sub_skill_formation_1",
-        "advancedWhy": "Se elige la maestría que coincide con el perfil de tropas; la experta genera concentración para sostener el plan de combate.",
+        "why": "Arte de batalla ya es parte de su base; la combinación con `Inicio precoz` convierte a Tellaris en un héroe de orden de turno y de primera presión, no de potenciación aislada de un único atributo.",
+        "advancedSubskillId": "sub_skill_formation_2",
+        "advancedWhy": "Maestría a distancia es la elección más coherente con su composición inicial, que incluye unidades de alcance y golpes de ventana corta. Ayuda a que el primer enfrentamiento no dependa de una sola línea de contacto.",
         "expertSubskillId": "sub_skill_formation_4",
-        "expertWhy": "Se elige la maestría que coincide con el perfil de tropas; la experta genera concentración para sostener el plan de combate."
-      },
-      {
-        "skillId": "skill_sorcery",
-        "starting": false,
-        "appearanceChance": 5,
-        "why": "Aumenta el rendimiento de la magia ofensiva y escala directamente con una especialización de daño mágico.",
-        "advancedSubskillId": "sub_skill_sorcery_3",
-        "advancedWhy": "La combinación de daño mágico adicional y niveles de hechizo maximiza una build de magia ofensiva.",
-        "expertSubskillId": "sub_skill_sorcery_5",
-        "expertWhy": "La combinación de daño mágico adicional y niveles de hechizo maximiza una build de magia ofensiva."
+        "expertWhy": "Concentración en combate hace que el ritmo de batalla se mantenga tras el primer intercambio, algo especialmente útil cuando Tellaris ya ha gastado su valor más fuerte en el inicio de la pelea."
       },
       {
         "skillId": "skill_battlemage",
         "starting": false,
         "appearanceChance": 5,
-        "why": "Convierte el uso de hechizos en estadísticas de combate y crea un puente eficaz entre magia y ejército.",
+        "why": "Magia de batalla integra la magia de combate con el ejército: cada hechizo que se use en la pelea se convierte en más valor real para la propia línea y mejora la sostenibilidad del plan de partida de Tellaris.",
         "advancedSubskillId": "sub_skill_battlemage_3",
-        "advancedWhy": "Acumula poder de hechizo al lanzar magia y después reduce las recargas de las herramientas de batalla.",
+        "advancedWhy": "Aura de hechicería añade poder de hechizo cada vez que se usa magia, reforzando la parte de combate del héroe sin convertirlo en un especialista de un solo casillero.",
         "expertSubskillId": "sub_skill_battlemage_6",
-        "expertWhy": "Acumula poder de hechizo al lanzar magia y después reduce las recargas de las herramientas de batalla."
-      },
-      {
-        "skillId": "skill_wisdom",
-        "starting": false,
-        "appearanceChance": 0,
-        "why": "Amplía el acceso y la potencia de los hechizos; es prioritaria cuando la especialización gira alrededor de magia.",
-        "advancedSubskillId": "sub_skill_wisdom_6",
-        "advancedWhy": "Aumenta los recursos mágicos y, en Experta, eleva el nivel de una escuela para que la inversión en magia tenga retorno real.",
-        "expertSubskillId": "sub_skill_wisdom_3",
-        "expertWhy": "Aumenta los recursos mágicos y, en Experta, eleva el nivel de una escuela para que la inversión en magia tenga retorno real."
-      },
-      {
-        "skillId": "skill_assault",
-        "starting": false,
-        "appearanceChance": 15,
-        "why": "Aumenta de forma directa el daño básico del ejército y es especialmente valiosa para una especialización física o de ataque.",
-        "advancedSubskillId": "sub_skill_assault_3",
-        "advancedWhy": "Se prioriza daño básico; la opción avanzada se adapta a distancia y la experta mantiene una mejora ofensiva plana.",
-        "expertSubskillId": "sub_skill_assault_1",
-        "expertWhy": "Se prioriza daño básico; la opción avanzada se adapta a distancia y la experta mantiene una mejora ofensiva plana."
+        "expertWhy": "Tiempo mágico reduce la recarga de los hechizos, lo que encaja con la identidad de Tellaris: una build de apertura agresiva que quiere reutilizar el primer impulso del hechizo inicial en varias batallas."
       },
       {
         "skillId": "skill_leadership",
         "starting": false,
         "appearanceChance": 12.5,
-        "why": "Aumenta la consistencia del ejército mediante iniciativa, moral y oportunidades de turnos adicionales.",
+        "why": "Liderazgo es la dirección más natural después del choque inicial. El valor de Tellaris no es un molinillo largo, sino una mayor probabilidad de obtener el primer turno y mantener la moral del ejército en el pico de presión.",
         "advancedSubskillId": "sub_skill_leadership_1",
-        "advancedWhy": "La iniciativa plana mejora el orden de actuación y la opción experta busca mantener el ritmo del Golpe heroico.",
+        "advancedWhy": "Resolución duplica la probabilidad de turno extra por punto de moral, y al combinarse con Arte de batalla hace más tangible esa idea de empezar antes y repetir la ventaja de la primera oleada.",
         "expertSubskillId": "sub_skill_leadership_5",
-        "expertWhy": "La iniciativa plana mejora el orden de actuación y la opción experta busca mantener el ritmo del Golpe heroico."
-      }
-    ],
-    "recommendedSubclass": {
-      "id": "sub_class_dungeon_might_1",
-      "name": "Guardaespaldas de Baltasar",
-      "pursue": false,
-      "reason": "No perseguir activamente: la build principal tiene mayor prioridad. Si aparecen de forma natural varias habilidades requeridas, puede aprovecharse la subclase.",
-      "requiredSkills": [
-        {
-          "skillId": "skill_assault",
-          "starting": false,
-          "appearanceChance": 15
-        },
-        {
-          "skillId": "skill_mastery",
-          "starting": false,
-          "appearanceChance": 0.0
-        },
-        {
-          "skillId": "skill_magic_night",
-          "starting": false,
-          "appearanceChance": 5
-        },
-        {
-          "skillId": "skill_leadership",
-          "starting": false,
-          "appearanceChance": 12.5
-        },
-        {
-          "skillId": "skill_diplomacy",
-          "starting": false,
-          "appearanceChance": 12.5
-        }
-      ]
-    },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
-  },
-  "dungeon_hero_3": {
-    "heroId": "dungeon_hero_3",
-    "tier": "S+",
-    "tierReason": "Tier editorial S+: está entre las opciones de referencia más fuertes para la facción según las fuentes consultadas, con una especialización que aporta un impacto claro en tempo, limpieza del mapa y/o combate final.",
-    "buildReason": "Build editorial centrada en Golpe venenoso: prioriza Fuerza del Triunvirato, Combate, Ofensiva, Tácticas y conserva el hueco restante para adaptarse a las ofertas de nivel. La subclase se trata como una bonificación posible, no como requisito.",
-    "recommendedSkills": [
-      {
-        "skillId": "skill_faction_dungeon",
-        "starting": true,
-        "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
-        "advancedSubskillId": "sub_skill_faction_dungeon_1",
-        "advancedWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase.",
-        "expertSubskillId": "sub_skill_faction_dungeon_5",
-        "expertWhy": "Se escoge la mejora que más potencia el motor propio de la facción sin exigir que la build gire alrededor de una subclase."
-      },
-      {
-        "skillId": "skill_battle_artistry",
-        "starting": true,
-        "appearanceChance": null,
-        "why": "Es una habilidad inicial del héroe y ya forma parte de su identidad canónica; la llevamos a Experta porque refuerza directamente su especialización.",
-        "advancedSubskillId": "sub_skill_battle_artistry_3",
-        "advancedWhy": "Mejora las estadísticas de combate y abarata el Golpe heroico para poder utilizarlo con mayor frecuencia.",
-        "expertSubskillId": "sub_skill_battle_artistry_1",
-        "expertWhy": "Mejora las estadísticas de combate y abarata el Golpe heroico para poder utilizarlo con mayor frecuencia."
+        "expertWhy": "¡Marchen! concede +1 de iniciativa a las criaturas amistosas, directamente alineado con el plan de Tellaris: no se trata de sostener un combate indefinido, sino de poner al rivales en desventaja desde la primera acción."
       },
       {
         "skillId": "skill_assault",
         "starting": false,
         "appearanceChance": 15,
-        "why": "Aumenta de forma directa el daño básico del ejército y es especialmente valiosa para una especialización física o de ataque.",
-        "advancedSubskillId": "sub_skill_assault_3",
-        "advancedWhy": "Se prioriza daño básico; la opción avanzada se adapta a distancia y la experta mantiene una mejora ofensiva plana.",
+        "why": "Si la primera ventaja funcional se consolida, el siguiente paso lógico es convertirla en daño real. Tellaris no necesita una build de burst absurda; necesita que la presión inicial explote en un segundo clímax de ataque normal.",
+        "advancedSubskillId": "sub_skill_assault_2",
+        "advancedWhy": "Tiro con arco refuerza la parte de alcance y larga distancia de la composición inicial, lo que mantiene el valor del héroe incluso cuando la icónica primera iniciativa ya no es tan decisiva.",
         "expertSubskillId": "sub_skill_assault_1",
-        "expertWhy": "Se prioriza daño básico; la opción avanzada se adapta a distancia y la experta mantiene una mejora ofensiva plana."
-      },
-      {
-        "skillId": "skill_tactics",
-        "starting": false,
-        "appearanceChance": 10,
-        "why": "Mejora el despliegue y la generación/uso de concentración; es especialmente eficiente cuando la especialización depende de posicionamiento o tempo.",
-        "advancedSubskillId": "sub_skill_tactics_1",
-        "advancedWhy": "Aprovecha el posicionamiento y transforma la concentración gastada en recursos para la build.",
-        "expertSubskillId": "sub_skill_tactics_6",
-        "expertWhy": "Aprovecha el posicionamiento y transforma la concentración gastada en recursos para la build."
-      },
-      {
-        "skillId": "skill_formation",
-        "starting": false,
-        "appearanceChance": 15,
-        "why": "Aporta una mejora global de combate y permite adaptar la build al tipo de tropas que realmente acompañen al héroe.",
-        "advancedSubskillId": "sub_skill_formation_1",
-        "advancedWhy": "Se elige la maestría que coincide con el perfil de tropas; la experta genera concentración para sostener el plan de combate.",
-        "expertSubskillId": "sub_skill_formation_4",
-        "expertWhy": "Se elige la maestría que coincide con el perfil de tropas; la experta genera concentración para sostener el plan de combate."
-      },
-      {
-        "skillId": "skill_leadership",
-        "starting": false,
-        "appearanceChance": 12.5,
-        "why": "Aumenta la consistencia del ejército mediante iniciativa, moral y oportunidades de turnos adicionales.",
-        "advancedSubskillId": "sub_skill_leadership_1",
-        "advancedWhy": "La iniciativa plana mejora el orden de actuación y la opción experta busca mantener el ritmo del Golpe heroico.",
-        "expertSubskillId": "sub_skill_leadership_5",
-        "expertWhy": "La iniciativa plana mejora el orden de actuación y la opción experta busca mantener el ritmo del Golpe heroico."
-      },
-      {
-        "skillId": "skill_protection",
-        "starting": false,
-        "appearanceChance": 15,
-        "why": "Reduce las pérdidas y protege las tropas frente a los tipos de daño que más penalizan a una build física.",
-        "advancedSubskillId": "sub_skill_protection_2",
-        "advancedWhy": "La defensa contra ataques a distancia reduce pérdidas y la opción experta baja el ataque enemigo.",
-        "expertSubskillId": "sub_skill_protection_5",
-        "expertWhy": "La defensa contra ataques a distancia reduce pérdidas y la opción experta baja el ataque enemigo."
+        "expertWhy": "El ataque básico del ejército se convierte en el mejor camino para cerrar la partida cuando la iniciativa ya ha dado el mejor golpe del turno inicial."
       }
     ],
     "recommendedSubclass": {
-      "id": "sub_class_dungeon_might_1",
-      "name": "Guardaespaldas de Baltasar",
+      "id": "sub_class_dungeon_might_2",
+      "name": "Enviado de Lengua de Plata",
       "pursue": false,
-      "reason": "No perseguir activamente: la build principal tiene mayor prioridad. Si aparecen de forma natural varias habilidades requeridas, puede aprovecharse la subclase.",
+      "reason": "No es la ruta principal. La subclase defensiva puede funcionar si el mapa exige más supervivencia que explosividad, pero la identidad de Tellaris es ganar el orden de batalla y convertir el primer intercambio en una ventaja que se repita antes de que la pelea se estabilice.",
       "requiredSkills": [
         {
-          "skillId": "skill_assault",
+          "skillId": "skill_protection",
           "starting": false,
           "appearanceChance": 15
         },
         {
-          "skillId": "skill_mastery",
-          "starting": false,
-          "appearanceChance": 0.0
-        },
-        {
-          "skillId": "skill_magic_night",
+          "skillId": "skill_sorcery",
           "starting": false,
           "appearanceChance": 5
         },
         {
-          "skillId": "skill_leadership",
+          "skillId": "skill_magic_day",
           "starting": false,
-          "appearanceChance": 12.5
+          "appearanceChance": 7.5
         },
         {
-          "skillId": "skill_diplomacy",
+          "skillId": "skill_luck",
+          "starting": false,
+          "appearanceChance": 10
+        },
+        {
+          "skillId": "skill_scouting",
           "starting": false,
           "appearanceChance": 12.5
         }
       ]
     },
-    "sources": ["https://www.olden-era.com/en/heroes", "https://heavenlyforge.gg/es/tierlists/heroes", "https://townportal.gg/en/tier-lists"]
+    "sources": ["https://www.olden-era.com/en/heroes"]
   },
   "dungeon_hero_4": {
     "heroId": "dungeon_hero_4",
@@ -12279,8 +12262,14 @@ export function getHeroBuildAudit(heroId: string): HeroBuildAudit | null {
   const specialization = cleanDescription(hero.specializationDescription);
   const initialSkills = hero.startingSkills.map((skill) => skill.skillName).join(' y ');
   const initialArmy = hero.startingArmy.map((unit) => unit.unitName).join(', ');
-  const initialSpells = hero.startingSpells.map((spell) => spell.spellName).join(', ');
-  const tierAnalysis = analyzeHeroTier(hero, audit);
+  const initialSpells = (hero.startingSpells ?? []).map((spell) => spell.spellName).join(', ');
+  const tierAnalysis = audit.analysisReviewed
+    ? {
+        tier: audit.tier,
+        tierReason: audit.tierReason,
+        specialtyFocus: getEffectFocus(specialization),
+      }
+    : analyzeHeroTier(hero, audit);
   const seenSkillIds = new Set<string>();
   const auditRecommendations = audit.recommendedSkills.filter((recommendation) => {
     if (seenSkillIds.has(recommendation.skillId)) return false;
@@ -12304,10 +12293,14 @@ export function getHeroBuildAudit(heroId: string): HeroBuildAudit | null {
     const skillFocus = getEffectFocus(baseEffect);
     const isStarting = hero.startingSkills.some((startingSkill) => startingSkill.skillId === skill.id);
     const why = recommendation.why || `${skill.name}: ${baseEffect}. ${explainSkillFit(skillFocus, tierAnalysis.specialtyFocus, isStarting)}`;
-    const advancedWhy = advanced
+    const advancedWhy = audit.analysisReviewed && recommendation.advancedWhy
+      ? recommendation.advancedWhy
+      : advanced
       ? `${advanced.name}: ${cleanDescription(advanced.description)}. ${explainSkillFit(getEffectFocus(advanced.description), tierAnalysis.specialtyFocus, isStarting)} Si la partida exige otro enfoque, compara este efecto con las demás opciones avanzadas.`
       : `La auditoría no selecciona una subhabilidad avanzada para ${skill.name}. Se conserva como prioridad su efecto base (${baseEffect}) sin atribuirle una mejora que esta build no ha elegido.`;
-    const expertWhy = expert
+    const expertWhy = audit.analysisReviewed && recommendation.expertWhy
+      ? recommendation.expertWhy
+      : expert
       ? `${expert.name}: ${cleanDescription(expert.description)}. ${explainSkillFit(getEffectFocus(expert.description), tierAnalysis.specialtyFocus, isStarting)} Es una recomendación para el plan de ${hero.name}, no una respuesta universal a todos los enfrentamientos.`
       : `La auditoría no selecciona una subhabilidad experta para ${skill.name}; por tanto, no se inventa una justificación para una opción que la build no ha elegido.`;
 
@@ -12332,7 +12325,9 @@ export function getHeroBuildAudit(heroId: string): HeroBuildAudit | null {
     ...audit,
     tier: tierAnalysis.tier,
     tierReason: tierAnalysis.tierReason,
-    buildReason: `Análisis derivado para ${hero.name}. Perfil: ${hero.specializationName} (${specialization || 'sin descripción disponible en la API'}). Parte con ${initialSkills || 'sin habilidades iniciales registradas'}, ejército ${initialArmy || 'no registrado'} y hechizo(s) ${initialSpells || 'ninguno registrado'}. La ruta abre con ${coreEffects.join('; ')}; cada habilidad posterior cubre el eje explicado en su recomendación.`,
+    buildReason: audit.analysisReviewed
+      ? audit.buildReason
+      : `Análisis derivado para ${hero.name}. Perfil: ${hero.specializationName} (${specialization || 'sin descripción disponible en la API'}). Parte con ${initialSkills || 'sin habilidades iniciales registradas'}, ejército ${initialArmy || 'no registrado'} y hechizo(s) ${initialSpells || 'ninguno registrado'}. La ruta abre con ${coreEffects.join('; ')}; cada habilidad posterior cubre el eje explicado en su recomendación.`,
     recommendedSkills,
   };
 }
