@@ -1083,6 +1083,7 @@ export const CISMA_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const CISMA_UNITS: UnitInfo[] = [
   // TIER 1: RA\'SHOTH (RA\'SHOTH)
   {
+    id: 'lesser_eldritch',
     tier: 1,
     name: 'Ra\'shoth',
     upgradeName: 'Ra\'shoth punzante',
@@ -1216,6 +1217,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 2: CULTOR (CULTIST)
   {
+    id: 'unfrozen_cultist',
     tier: 2,
     name: 'Cultor',
     upgradeName: 'Vinculador',
@@ -1346,6 +1348,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 3: JINETE DE AGA\'SHOTH (AGA\'SHOTH RIDER)
   {
+    id: 'frostworm_rider',
     tier: 3,
     name: 'Jinete de aga\'shoth',
     upgradeName: 'Domador de aga\'shoth',
@@ -1483,6 +1486,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 4: SHOTH MAJESTUOSO (GRAND SHOTH)
   {
+    id: 'eldritch_flyer',
     tier: 4,
     name: 'Shoth majestuoso',
     upgradeName: 'Shoth innombrable',
@@ -1621,6 +1625,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 5: CÓNCUBO (CONCUBUS)
   {
+    id: 'succubus',
     tier: 5,
     name: 'Cóncubo',
     upgradeName: 'Señora de las cadenas',
@@ -1761,6 +1766,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 6: ÁRBITRO (ARBITRATOR)
   {
+    id: 'arbitrator',
     tier: 6,
     name: 'Árbitro',
     upgradeName: 'Árbitro de la Grieta',
@@ -1902,6 +1908,7 @@ export const CISMA_UNITS: UnitInfo[] = [
 
   // TIER 7: ENVIADO ABISAL (ABYSSAL ENVOY)
   {
+    id: 'unspeakable',
     tier: 7,
     name: 'Enviado abisal',
     upgradeName: 'Supervisor abisal',

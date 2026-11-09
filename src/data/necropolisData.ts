@@ -1095,6 +1095,7 @@ export const NECROPOLIS_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const NECROPOLIS_UNITS: UnitInfo[] = [
   // TIER 1: ESQUELETO (SKELETON)
   {
+    id: 'skeleton',
     tier: 1,
     name: 'Esqueleto',
     upgradeName: 'Esqueleto guerrero',
@@ -1219,6 +1220,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 2: APARICIÓN (WIGHT)
   {
+    id: 'flicker',
     tier: 2,
     name: 'Aparición',
     upgradeName: 'Espectro',
@@ -1353,6 +1355,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 3: MASCOTA NO MUERTA (UNDEAD PET)
   {
+    id: 'pet',
     tier: 3,
     name: 'Mascota no muerta',
     upgradeName: 'Barghest',
@@ -1485,6 +1488,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 4: LADRÓN DE TUMBAS (GRAVEROBBER)
   {
+    id: 'graverobber',
     tier: 4,
     name: 'Ladrón de tumbas',
     upgradeName: 'Mercader de muerte',
@@ -1617,6 +1621,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 5: LICHE (LICH)
   {
+    id: 'lich',
     tier: 5,
     name: 'Liche',
     upgradeName: 'Liche pestilente',
@@ -1748,6 +1753,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 6: CABALLERO DEL TERROR (DREAD KNIGHT)
   {
+    id: 'avatar_of_war',
     tier: 6,
     name: 'Caballero del terror',
     upgradeName: 'Avatar de guerra',
@@ -1883,6 +1889,7 @@ export const NECROPOLIS_UNITS: UnitInfo[] = [
 
   // TIER 7: VAMPIRO (VAMPIRE)
   {
+    id: 'vampire',
     tier: 7,
     name: 'Vampiro',
     upgradeName: 'Señor vampiro',

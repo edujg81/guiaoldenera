@@ -1083,6 +1083,7 @@ export const ENJAMBRE_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const ENJAMBRE_UNITS: UnitInfo[] = [
   // TIER 1: PARÁSITO (PARASITE)
   {
+    id: 'trick_demon',
     tier: 1,
     name: 'Parásito',
     upgradeName: 'Parásito guardián',
@@ -1213,6 +1214,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 2: LANGOSTA (LOCUST)
   {
+    id: 'locust',
     tier: 2,
     name: 'Langosta',
     upgradeName: 'Langosta gigante',
@@ -1347,6 +1349,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 3: AVISPÓN (HORNET)
   {
+    id: 'wasp',
     tier: 3,
     name: 'Avispón',
     upgradeName: 'Cantor',
@@ -1479,6 +1482,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 4: ESCORPIÓN (SCORPION)
   {
+    id: 'jaw',
     tier: 4,
     name: 'Escorpión',
     upgradeName: 'Escorpión volcánico',
@@ -1617,6 +1621,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 5: ASOLADOR (REAVER)
   {
+    id: 'godslayer',
     tier: 5,
     name: 'Asolador',
     upgradeName: 'Asolador amenazante',
@@ -1755,6 +1760,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 6: VERME (WAURMS)
   {
+    id: 'olgoi',
     tier: 6,
     name: 'Verme',
     upgradeName: 'Devorador',
@@ -1896,6 +1902,7 @@ export const ENJAMBRE_UNITS: UnitInfo[] = [
 
   // TIER 7: REINA DE LA COLMENA (HIVE QUEEN)
   {
+    id: 'hive_queen',
     tier: 7,
     name: 'Reina de la Colmena',
     upgradeName: 'Madre de la Colmena',

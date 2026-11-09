@@ -93,6 +93,7 @@ export interface UnitBranchComparison {
 }
 
 export interface UnitInfo {
+  id: string;
   tier: number;
   name: string;
   upgradeName: string;

@@ -11,8 +11,8 @@ Estado: API = fuente de verdad absoluta para datos del juego
 |---|---|---|---|
 | `/api/heroes` | `src/data/heroesData.ts` | ✅ Completo | 108 héroes, 6 facciones, `DungeonHero` interface |
 | `/api/heroes/{id}` | `src/data/heroesData.ts` | ✅ Detalles | Héroe individual con stats, skills, spells, army |
-| `/api/units` | `src/data/apiUnitsData.ts` | ✅ API Catálogo | 148 unidades (id, name, faction, tier, iconPath, isOrphan, scale, prefabPath) |
-| `/api/units/{id}` | `src/data/apiUnitsData.ts` | ✅ API Detalles | Unidad individual con stats, abilities, costs (ver unitAssetsData.ts para locales) |
+| `/api/units` | `src/data/apiUnitsData.ts` | ✅ API Catálogo | 151 unidades en el snapshot local actual (id, name, faction, tier, iconPath, isOrphan, scale, prefabPath) |
+| `/api/units/{id}` | `src/data/apiUnitsData.ts` | ✅ API Detalles | Unidad individual con estadísticas, habilidades y costes (ver unitAssetsData.ts para imágenes locales) |
 | `/api/spells` | `src/data/apiSpellsData.ts` | ✅ API Catálogo | 115 hechizos (id, name, school, rank, category, icon, isMasterful) |
 | `/api/spells/{id}` | `src/data/apiSpellsData.ts` | ✅ API Detalles | Hechizo individual con descripción, coste, duración (ver spellsData.ts para locales) |
 | `/api/skills` | `src/data/apiSkillsData.ts` | ✅ API Catálogo | 30 habilidades (id, name, icon, skillType, levels) |
@@ -46,10 +46,11 @@ Estado: API = fuente de verdad absoluta para datos del juego
 - **Campos locales adicionales**: `idealSkillBuild`, `statGrowth`, `tacticalPlaystyle`, `synergyCombo`, `day1Action`, `title`, `heroClass`, `tierRank`, `recommendedStartingTier`, `role`
 - **Estado**: Sincronizado (API = catálogo, local = extensión)
 
-### 2. `/api/units` → `unitAssetsData.ts`
-- **Campos API**: `id`, `name`, `faction`, `factionDisplay`, `tier`, `iconPath`, `isOrphan`, `scale`, `prefabPath`
-- **Campos locales adicionales**: `nameEs`, `nameEn`, `faction_id`, `faction_image`, `visual_3d`
-- **Estado**: Sincronizado (API = datos canónicos, local = assets + nombres ES/EN)
+### 2. `/api/units` → `apiUnitsData.ts` + `unitsData.ts`
+- **Datos API**: `apiUnitsData.ts` conserva el catálogo y las fichas detalladas generadas desde `/api/units` y `/api/units/{id}`.
+- **Datos editoriales**: las seis listas de facción conservan variantes, costes tácticos y análisis propios de la guía.
+- **Fusión para la UI**: `unitsData.ts` combina cada ficha con sus variantes de API mediante los IDs de `variants.base`, `variants.branchA` y `variants.branchB`. La vista `UnitMatrix` consume las fichas combinadas a través de `factionDataProvider.ts`.
+- **Estado**: API = fuente de estadísticas, nombres localizados, habilidades y costes; los datos editoriales conservan nombres en inglés y completan la información exclusiva de la guía.
 
 ### 3. `/api/spells` → `spellsData.ts`
 - **Campos API**: `id`, `name`, `school`, `schoolDisplay`, `schoolTierText`, `rank`, `category`, `icon`, `isMasterful`, `baseNameForSort`
@@ -114,7 +115,7 @@ Estado: API = fuente de verdad absoluta para datos del juego
 | Endpoint | Registros | Archivo Local | Estado | Acción Requerida |
 |---|---|---|---|---|
 | `/api/heroes` | 108 | `heroesData.ts` | ✅ Sincronizado | Ninguna |
-| `/api/units` | 148 | `unitAssetsData.ts` | ✅ Sincronizado | Ninguna |
+| `/api/units` | 151 | `apiUnitsData.ts` + `unitsData.ts` | ✅ Combinado para la vista de unidades | Ninguna |
 | `/api/spells` | 115 | `spellsData.ts` | ✅ Sincronizado | Ninguna |
 | `/api/skills` | 30 | `officialSkillsData.ts` | ✅ Sincronizado | Ninguna |
 | `/api/subclasses` | 24 | `subclassesData.ts` | ✅ Sincronizado | Ninguna |
@@ -130,7 +131,7 @@ Estado: API = fuente de verdad absoluta para datos del juego
 
 La API es la fuente de verdad para todos los datos del juego. La aplicación debe:
 
-1. **Mantener** los archivos locales existentes (`heroesData.ts`, `unitAssetsData.ts`, etc.) como extensiones con datos exclusivos de la aplicación.
+1. **Mantener** los archivos de API (`apiUnitsData.ts`, etc.) como datos canónicos y los archivos editoriales (`unitsData.ts`, `heroesData.ts`, etc.) como extensiones con datos exclusivos de la aplicación.
 2. **Crear** los 4 archivos faltantes (`artifactsData.ts`, `abilitiesData.ts`, `buildingsData.ts`, `mapObjectsData.ts`) con estructuras mínimas que mapeen los campos de la API.
 3. **Implementar** un mecanismo de sincronización que compare los datos de la API con los locales y actualice los campos canónicos sin perder los datos exclusivos.
 4. **Documentar** cualquier cambio en `API_ENDPOINTS.md` y `sync-log.md`.

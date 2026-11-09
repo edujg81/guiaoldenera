@@ -6,7 +6,7 @@ Fuente: https://github.com/laszlo-gilanyi/OldenEraExplorer
 ## Endpoints Confirmados (200 OK) — Catálogos
 
 ### Unidades y Criaturas
-- `GET /api/units` — 148 unidades (id, name, faction, factionDisplay, tier, iconPath, isOrphan, scale, prefabPath)
+- `GET /api/units` — 151 unidades en el snapshot local actual (id, name, faction, factionDisplay, tier, iconPath, isOrphan, scale, prefabPath)
 - `GET /api/units/{id}` — Datos completos (localizedName, factionIcon, attack, defense, minDamage, maxDamage, health, speed, initiative, growth, luck, morale, squadValue, expBonus, description, narrativeDescription, creatureType, passiveAbilities, activeAbilities, costEntries, upgradeCostEntries, usedByHeroes, statLabels)
 
 ### Héroes

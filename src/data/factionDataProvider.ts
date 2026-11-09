@@ -1,28 +1,29 @@
 import { BuildStep, UnitInfo, HeroWithExtras, TacticalScenario, FactionLaw, FactionLawPreset } from '../types';
 import { getHeroesByFactionKey } from './heroesData';
+import { getUnitsForFaction as getUnifiedUnitsForFaction } from './unitsData';
 
 // Mazmorra (Dungeon)
-import { FULL_56_DAY_BUILD_STEPS, DUNGEON_UNITS, DUNGEON_HEROES, TACTICAL_SCENARIOS } from './dungeonData';
+import { FULL_56_DAY_BUILD_STEPS, TACTICAL_SCENARIOS } from './dungeonData';
 import { FACTION_LAWS, FACTION_LAW_PRESETS } from './factionLawsData';
 
 // Templo (Temple)
-import { TEMPLE_56_DAY_BUILD_STEPS, TEMPLE_UNITS, TEMPLE_HEROES, TEMPLE_COMBAT_TACTICS } from './templeData';
+import { TEMPLE_56_DAY_BUILD_STEPS, TEMPLE_COMBAT_TACTICS } from './templeData';
 import { TEMPLE_FACTION_LAWS, TEMPLE_LAW_PRESETS } from './templeLawsData';
 
 // Arboleda (Sylvan)
-import { ARBOLEDA_56_DAY_BUILD_STEPS, ARBOLEDA_UNITS, ARBOLEDA_HEROES, ARBOLEDA_COMBAT_TACTICS } from './arboledaData';
+import { ARBOLEDA_56_DAY_BUILD_STEPS, ARBOLEDA_COMBAT_TACTICS } from './arboledaData';
 import { ARBOLEDA_FACTION_LAWS, ARBOLEDA_LAW_PRESETS } from './arboledaLawsData';
 
 // Necrópolis (Necropolis)
-import { NECROPOLIS_56_DAY_BUILD_STEPS, NECROPOLIS_UNITS, NECROPOLIS_HEROES, NECROPOLIS_COMBAT_TACTICS } from './necropolisData';
+import { NECROPOLIS_56_DAY_BUILD_STEPS, NECROPOLIS_COMBAT_TACTICS } from './necropolisData';
 import { NECROPOLIS_FACTION_LAWS, NECROPOLIS_LAW_PRESETS } from './necropolisLawsData';
 
 // Enjambre (Swarm / Hive)
-import { ENJAMBRE_56_DAY_BUILD_STEPS, ENJAMBRE_UNITS, ENJAMBRE_HEROES, ENJAMBRE_COMBAT_TACTICS } from './enjambreData';
+import { ENJAMBRE_56_DAY_BUILD_STEPS, ENJAMBRE_COMBAT_TACTICS } from './enjambreData';
 import { ENJAMBRE_FACTION_LAWS, ENJAMBRE_LAW_PRESETS } from './enjambreLawsData';
 
 // Cisma (Schism / Arcane)
-import { CISMA_56_DAY_BUILD_STEPS, CISMA_UNITS, CISMA_HEROES, CISMA_COMBAT_TACTICS } from './cismaData';
+import { CISMA_56_DAY_BUILD_STEPS, CISMA_COMBAT_TACTICS } from './cismaData';
 import { CISMA_FACTION_LAWS, CISMA_LAW_PRESETS } from './cismaLawsData';
 
 export type FactionId = 'Mazmorra' | 'Templo' | 'Foresta' | 'Necrópolis' | 'Colmena' | 'Cisma';
@@ -663,21 +664,7 @@ export function getBuildStepsForFaction(faction: FactionId | string): BuildStep[
 }
 
 export function getUnitsForFaction(faction: FactionId | string): UnitInfo[] {
-  switch (faction) {
-    case 'Templo':
-      return TEMPLE_UNITS;
-    case 'Foresta':
-      return ARBOLEDA_UNITS;
-    case 'Necrópolis':
-      return NECROPOLIS_UNITS;
-    case 'Colmena':
-      return ENJAMBRE_UNITS;
-    case 'Cisma':
-      return CISMA_UNITS;
-    case 'Mazmorra':
-    default:
-      return DUNGEON_UNITS;
-  }
+  return getUnifiedUnitsForFaction(faction);
 }
 
 export function getHeroesForFaction(faction: FactionId | string): HeroWithExtras[] {

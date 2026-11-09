@@ -1128,6 +1128,7 @@ export const TEMPLE_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const TEMPLE_UNITS: UnitInfo[] = [
   // TIER 1: ESPADACHÍN (SWORDSMAN)
   {
+    id: 'esquire',
     tier: 1,
     name: 'Espadachín',
     upgradeName: 'Capitán de la guardia',
@@ -1258,6 +1259,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 2: SAETERO (CROSSBOWMAN)
   {
+    id: 'crossbowman',
     tier: 2,
     name: 'Saetero',
     upgradeName: 'Azorero',
@@ -1393,6 +1395,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 3: GRIFO (GRIFFIN)
   {
+    id: 'griffin',
     tier: 3,
     name: 'Grifo',
     upgradeName: 'Grifo del Templo',
@@ -1530,6 +1533,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 4: TEJEDORA DE LUZ (LIGHTWEAVER)
   {
+    id: 'lightweaver',
     tier: 4,
     name: 'Tejedora de Luz',
     upgradeName: 'Hierofante',
@@ -1660,6 +1664,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 5: CABALLERÍA (CAVALRY)
   {
+    id: 'sunlight_cavalry',
     tier: 5,
     name: 'Caballería',
     upgradeName: 'Caballería noble',
@@ -1798,6 +1803,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 6: INQUISIDOR (INQUISITOR)
   {
+    id: 'inquisitor',
     tier: 6,
     name: 'Inquisidor',
     upgradeName: 'Madre superiora',
@@ -1938,6 +1944,7 @@ export const TEMPLE_UNITS: UnitInfo[] = [
 
   // TIER 7: ÁNGEL (ANGEL)
   {
+    id: 'angel',
     tier: 7,
     name: 'Ángel',
     upgradeName: 'Arcángel',

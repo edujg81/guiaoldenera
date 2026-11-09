@@ -298,11 +298,11 @@ export interface ApiUnit {
   morale: number;
   squadValue: number;
   expBonus: number;
-  description: string;
+  description: string | null;
   narrativeDescription: string;
-  creatureType: CreatureType[];
+  creatureType: CreatureType;
   passiveAbilities: PassiveAbilitie[];
-  activeAbilities: string;
+  activeAbilities: ActiveAbilitie[] | null;
   costEntries: CostEntry[];
   upgradeCostEntries: string | null;
   usedByHeroes: string;
@@ -327,6 +327,23 @@ export interface CreatureType {
 }
 
 export interface PassiveAbilitie {
+  id: string;
+  name: string;
+  nameSid: string;
+  abilityType: string;
+  description: string;
+  rank: number | null;
+  energyCost: number | null;
+  abilityTypeSid: string;
+  immunities: string | null;
+  infoNotes: string | null;
+  icon: string;
+  sourceUnitIds: string | null;
+  sourceUnitNames: string | null;
+  statLabels: string | null;
+}
+
+export interface ActiveAbilitie {
   id: string;
   name: string;
   nameSid: string;

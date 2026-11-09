@@ -1083,6 +1083,7 @@ export const ARBOLEDA_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const ARBOLEDA_UNITS: UnitInfo[] = [
   // TIER 1: FAUNO (FAUN)
   {
+    id: 'elf_tracker',
     tier: 1,
     name: 'Fauno',
     upgradeName: 'Fauno arquero',
@@ -1213,6 +1214,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 2: LUPUCIÉRNAGA (HOPLET)
   {
+    id: 'twinkle',
     tier: 2,
     name: 'Lupuciérnaga',
     upgradeName: 'Lupuciérnaga del alba',
@@ -1348,6 +1350,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 3: ÍRIYAD DE ENREDADERA (VINE IRIYAD)
   {
+    id: 'ent',
     tier: 3,
     name: 'Íriyad de enredadera',
     upgradeName: 'Íriyad fúngico',
@@ -1489,6 +1492,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 4: NÁYADE (NAIAD)
   {
+    id: 'aqualotl',
     tier: 4,
     name: 'Náyade',
     upgradeName: 'Náyade vernal',
@@ -1628,6 +1632,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 5: HERBOMANTE (HERBOMANCER)
   {
+    id: 'druid',
     tier: 5,
     name: 'Herbomante',
     upgradeName: 'Esporamante',
@@ -1766,6 +1771,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 6: QILIN (QILIN)
   {
+    id: 'qilin',
     tier: 6,
     name: 'Qilin',
     upgradeName: 'Qilin de trueno',
@@ -1907,6 +1913,7 @@ export const ARBOLEDA_UNITS: UnitInfo[] = [
 
   // TIER 7: FÉNIX (PHOENIX)
   {
+    id: 'phoenix',
     tier: 7,
     name: 'Fénix',
     upgradeName: 'Fénix llameante',

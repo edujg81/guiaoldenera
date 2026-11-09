@@ -1,4 +1,5 @@
 import { BuildStep, UnitInfo, HeroSkill, TacticalScenario, FactionLaw, RecommendedSpell } from '../types';
+import { ApiUnit } from '../types-api';
 import { mergeFactionHeroes, type HeroExtension } from './heroesDataProvider';
 import { OFFICIAL_SPELLS_DATA } from './spellsData';
 
@@ -1175,6 +1176,7 @@ export const FULL_56_DAY_BUILD_STEPS: BuildStep[] = [
 export const DUNGEON_UNITS: UnitInfo[] = [
   // TIER 1: TROGLODITA (TROGLODYTE)
   {
+    id: 'trogl',
     tier: 1,
     name: 'Troglodita',
     upgradeName: 'Troglodita infernal',
@@ -1306,6 +1308,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 2: INFILTRADO (INFILTRATOR)
   {
+    id: 'assassin',
     tier: 2,
     name: 'Infiltrado',
     upgradeName: 'Infiltrado astuto',
@@ -1446,6 +1449,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 3: BAILARINA DE ÓNICE (ONYX DANCER)
   {
+    id: 'blade_dancer',
     tier: 3,
     name: 'Bailarina de ónice',
     upgradeName: 'Bailarina de jaspe',
@@ -1580,6 +1584,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 4: MINOTAURO (MINOTAUR)
   {
+    id: 'minos',
     tier: 4,
     name: 'Minotauro',
     upgradeName: 'Señor minotauro',
@@ -1719,6 +1724,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 5: MEDUSA (MEDUSA)
   {
+    id: 'medusa',
     tier: 5,
     name: 'Medusa',
     upgradeName: 'Medusa escultora',
@@ -1859,6 +1865,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 6: HIDRA (HYDRA)
   {
+    id: 'hydra',
     tier: 6,
     name: 'Hidra',
     upgradeName: 'Hidra ctónica',
@@ -2002,6 +2009,7 @@ export const DUNGEON_UNITS: UnitInfo[] = [
 
   // TIER 7: DRAGÓN DE CUEVA (CAVE DRAGON)
   {
+    id: 'black_dragon',
     tier: 7,
     name: 'Dragón de cueva',
     upgradeName: 'Dragón negro',

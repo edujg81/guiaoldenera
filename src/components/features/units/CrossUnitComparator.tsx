@@ -917,6 +917,18 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
                 ))}
               </tr>
 
+              {/* Valor de Escuadrón */}
+              <tr className={isDark ? 'hover:bg-white/5' : 'hover:bg-slate-50'}>
+                <td className="p-3 font-semibold text-slate-400 flex items-center gap-1.5">
+                  <Crown className="w-3.5 h-3.5 text-amber-400" /> Valor de Escuadrón (IA)
+                </td>
+                {activeSlots.map((slot) => (
+                  <td key={slot.id} className="p-3 text-amber-300 font-bold">
+                    {slot.variant.squadValue ?? slot.unit?.squadValue ?? '—'}
+                  </td>
+                ))}
+              </tr>
+
               {/* Coste de Reclutamiento */}
               <tr className={isDark ? 'hover:bg-white/5' : 'hover:bg-slate-50'}>
                 <td className="p-3 font-semibold text-slate-400 flex items-center gap-1.5">

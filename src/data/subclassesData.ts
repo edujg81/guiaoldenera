@@ -315,7 +315,9 @@ const CLASS_TYPE_MAP: Record<string, SubclassInfo['classType']> = {
 export const OFFICIAL_SUBCLASSES: SubclassInfo[] = GUIDE_SUBCLASSES
   .map((guide) => {
     const api = API_SUBCLASSES_DATA.find((item) => item.id === guide.id);
-    if (!api) return null;
+    if (!api) {
+      throw new Error(`API data not found for guide id ${guide.id}`);
+    }
 
     return {
       id: api.id,
@@ -339,8 +341,7 @@ export const OFFICIAL_SUBCLASSES: SubclassInfo[] = GUIDE_SUBCLASSES
       strategicAnalysis: guide.strategicAnalysis ?? '',
       synergyNotes: guide.synergyNotes ?? '',
     };
-  })
-  .filter((item): item is SubclassInfo => item !== null);
+  });
 
 export const getSubclassWithGuide = (id: string): SubclassInfo | undefined => {
   return OFFICIAL_SUBCLASSES.find((subclass) => subclass.id === id);
