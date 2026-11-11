@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FactionId, getUnitsForFaction, FACTIONS_METADATA, getFactionTheme } from '../data/factionDataProvider';
 import { UnitVariant } from '../types';
 import { useStickyState } from '../utils/useStickyState';
@@ -6,6 +6,8 @@ import { UnitStatRadarChart, parseAverageDamage } from './ui/UnitStatRadarChart'
 import { CrossUnitComparator } from './features/units/CrossUnitComparator';
 import { UnitImage } from './ui/UnitImage';
 import { FactionImage } from './ui/FactionImage';
+import { ALL_UNITS_SORTED, type UnitFactionId } from '../data/unitsData';
+import { UnitCatalogTable } from './features/units/UnitCatalogTable';
 import {
   isAbilityExclusiveToBranch,
   parseAbility,
@@ -33,6 +35,7 @@ import {
   HelpCircle,
   Gem,
   AlertTriangle,
+  List,
 } from 'lucide-react';
 
 interface UnitMatrixProps {
@@ -40,18 +43,32 @@ interface UnitMatrixProps {
   themeMode?: 'dark' | 'light';
 }
 
+const UNIT_FACTIONS: UnitFactionId[] = [
+  ...Object.keys(FACTIONS_METADATA) as FactionId[],
+  'Neutral',
+];
+
 export const UnitMatrix: React.FC<UnitMatrixProps> = ({ 
   selectedFaction = 'Mazmorra',
   themeMode = 'dark',
 }) => {
   const [selectedTier, setSelectedTier] = useStickyState<number>(1, `units_selected_tier_${selectedFaction}`);
+  const [unitFaction, setUnitFaction] = useState<UnitFactionId>(selectedFaction);
+  const [selectedUnitId, setSelectedUnitId] = useState('');
   const [selectedBranch, setSelectedBranch] = useStickyState<'base' | 'branch_a' | 'branch_b' | 'comparison'>('branch_a', 'units_selected_branch');
-  const [unitViewMode, setUnitViewMode] = useStickyState<'catalog' | 'branches' | 'cross_units'>('catalog', 'units_view_mode_v2');
+  const [unitViewMode, setUnitViewMode] = useStickyState<
+    'catalog' | 'branches' | 'cross_units' | 'all_units'
+  >('catalog', 'units_view_mode_v2');
   const [showFullDecisionModal, setShowFullDecisionModal] = useState<boolean>(false);
 
-  const units = getUnitsForFaction(selectedFaction);
-  const meta = FACTIONS_METADATA[selectedFaction] || FACTIONS_METADATA.Mazmorra;
-  const theme = getFactionTheme(selectedFaction, themeMode);
+  useEffect(() => {
+    setUnitFaction(selectedFaction);
+  }, [selectedFaction]);
+
+  const isNeutral = unitFaction === 'Neutral';
+  const units = getUnitsForFaction(unitFaction);
+  const meta = isNeutral ? { name: 'Neutral' } : FACTIONS_METADATA[unitFaction] || FACTIONS_METADATA.Mazmorra;
+  const theme = getFactionTheme(isNeutral ? 'Mazmorra' : unitFaction, themeMode);
 
   const getIcon = (iconName: string) => {
     switch (iconName) {
@@ -67,10 +84,12 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
     }
   };
 
-  const selectedUnit = units.find((u) => u.tier === selectedTier) || units[0];
+  const selectedUnit = (isNeutral ? units.find((unit) => unit.id === selectedUnitId) : undefined)
+    || units.find((unit) => unit.tier === selectedTier)
+    || units[0];
 
   const currentVariant: UnitVariant =
-    selectedBranch === 'base'
+    isNeutral || selectedBranch === 'base'
       ? selectedUnit.variants.base
       : selectedBranch === 'branch_b'
       ? selectedUnit.variants.branchB
@@ -98,7 +117,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               Bestiario & Unidades de Guerra • Heroes of Might and Magic: Olden Era
             </div>
             <div className="flex items-center gap-3">
-              <FactionImage faction={selectedFaction} size="lg" />
+              <FactionImage faction={unitFaction} size="lg" />
               <div>
                 <h2 className={`text-xl sm:text-2xl font-serif uppercase tracking-wide font-bold ${
                   themeMode === 'light' ? 'text-slate-900' : 'text-white'
@@ -110,7 +129,9 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
             <p className={`text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed ${
               themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'
             }`}>
-              En Olden Era, cada criatura de {meta.name} dispone de una forma <strong>Base</strong> y dos mejoras alternativas: <strong>Rama A</strong> (enfoque ofensivo o especializado) y <strong>Rama B</strong> (enfoque táctico, de control o defensivo). Alterna libremente entre ellas para comparar atributos, habilidades y recomendaciones.
+              {isNeutral
+                ? 'Las criaturas neutrales no pertenecen a ninguna facción y se muestran como fichas individuales, sin ramas ni mejoras alternativas.'
+                : <>En Olden Era, cada criatura de {meta.name} dispone de una forma <strong>Base</strong> y dos mejoras alternativas: <strong>Rama A</strong> (enfoque ofensivo o especializado) y <strong>Rama B</strong> (enfoque táctico, de control o defensivo). Alterna libremente entre ellas para comparar atributos, habilidades y recomendaciones.</>}
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2 self-start md:self-auto shrink-0">
@@ -121,7 +142,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                 if (selectedBranch === 'comparison') setSelectedBranch('branch_a');
               }}
               className={`px-3 py-2 rounded-xl text-xs font-mono font-bold flex items-center gap-1.5 border transition-all cursor-pointer ${
-                unitViewMode === 'catalog' && selectedBranch !== 'comparison'
+                unitViewMode === 'catalog' && (isNeutral || selectedBranch !== 'comparison')
                   ? `${theme.primaryButton} shadow-md`
                   : themeMode === 'light'
                   ? 'bg-slate-100 text-slate-800 hover:bg-slate-200 border-slate-300'
@@ -132,7 +153,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               <span>Ficha Individual</span>
             </button>
 
-            <button
+            {!isNeutral && <button
               id="view-mode-branches"
               onClick={() => {
                 setUnitViewMode('branches');
@@ -148,7 +169,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
             >
               <Columns3 className="w-3.5 h-3.5" />
               <span>Base vs A vs B</span>
-            </button>
+            </button>}
 
             <button
               id="view-mode-cross"
@@ -164,21 +185,80 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               <Swords className="w-3.5 h-3.5 text-amber-400" />
               <span>Comparador Entre Unidades & Facciones</span>
             </button>
+            <button
+              id="view-mode-all-units"
+              onClick={() => setUnitViewMode('all_units')}
+              className={`px-3 py-2 rounded-xl text-xs font-mono font-bold flex items-center gap-1.5 border transition-all cursor-pointer ${
+                unitViewMode === 'all_units'
+                  ? 'bg-sky-700 border-sky-400 text-white shadow-lg'
+                  : themeMode === 'light'
+                  ? 'bg-sky-50 text-sky-900 hover:bg-sky-100 border-sky-300'
+                  : 'bg-sky-950/40 text-sky-300 hover:bg-sky-900/40 border-sky-700/60'
+              }`}
+            >
+              <List className="w-3.5 h-3.5" />
+              <span>Todas las unidades</span>
+            </button>
           </div>
         </div>
       </div>
 
+      <div className={`flex flex-wrap items-center gap-2 rounded-2xl border p-3 ${
+        themeMode === 'light' ? 'border-slate-200 bg-white' : 'border-slate-800 bg-black/40'
+      }`}>
+        <span className={`mr-1 text-[10px] font-mono font-bold uppercase tracking-wider ${
+          themeMode === 'light' ? 'text-slate-600' : 'text-slate-400'
+        }`}>Facción de unidades:</span>
+        {UNIT_FACTIONS.map((faction) => {
+          const isSelected = unitFaction === faction;
+          const label = faction === 'Neutral' ? 'Neutral' : FACTIONS_METADATA[faction].name;
+          return (
+            <button
+              key={faction}
+              type="button"
+              onClick={() => {
+                const nextUnits = getUnitsForFaction(faction);
+                setUnitFaction(faction);
+                setSelectedTier(nextUnits[0].tier);
+                setSelectedUnitId(nextUnits[0].id);
+                setSelectedBranch(faction === 'Neutral' ? 'base' : 'branch_a');
+                setShowFullDecisionModal(false);
+              }}
+              aria-pressed={isSelected}
+              className={`rounded-lg border px-3 py-1.5 text-xs font-mono font-bold transition-colors ${
+                isSelected
+                  ? 'border-amber-400 bg-amber-600 text-white'
+                  : themeMode === 'light'
+                  ? 'border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100'
+                  : 'border-slate-700 bg-slate-900 text-slate-300 hover:text-white'
+              }`}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+
       {unitViewMode === 'cross_units' ? (
         <CrossUnitComparator
-          initialFaction={selectedFaction}
+          initialFaction={unitFaction}
           initialTier={selectedTier}
-          initialVariant={selectedBranch === 'comparison' ? 'branch_a' : selectedBranch}
+          initialVariant={isNeutral ? 'base' : selectedBranch === 'comparison' ? 'branch_a' : selectedBranch}
           themeMode={themeMode}
-          onSelectUnitInCatalog={(fac, tier, v) => {
+          onSelectUnitInCatalog={(fac, tier, v, unitId) => {
+            setUnitFaction(fac);
             setSelectedTier(tier);
+            if (unitId) setSelectedUnitId(unitId);
             setSelectedBranch(v);
             setUnitViewMode('catalog');
           }}
+        />
+      ) : unitViewMode === 'all_units' ? (
+        <UnitCatalogTable
+          title="Catálogo completo de unidades"
+          description="Todas las unidades disponibles, ordenadas por valor de escuadra de mayor a menor."
+          units={ALL_UNITS_SORTED}
+          themeMode={themeMode}
         />
       ) : (
         <>
@@ -186,14 +266,15 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
       {/* Tier Selector Row (Tiers 1 to 7) */}
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5">
         {units.map((unit) => {
-          const isSelected = unit.tier === selectedTier;
+          const isSelected = isNeutral ? unit.id === selectedUnit.id : unit.tier === selectedTier;
           return (
             <button
-              key={unit.tier}
-              id={`unit-tier-${unit.tier}`}
+                  key={unit.id}
+                  id={`unit-${unit.id}`}
               onClick={() => {
                 setSelectedTier(unit.tier);
-              }}
+                    setSelectedUnitId(unit.id);
+                  }}
               className={`p-3 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
                 isSelected
                   ? themeMode === 'light'
@@ -213,7 +294,8 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                   T{unit.tier}
                 </span>
                 <UnitImage
-                  name={unit.name}
+                  name={isNeutral ? unit.id : unit.name}
+                  alt={unit.name}
                   nameEn={unit.variants.base.nameEn}
                   size="sm"
                   fallbackIcon={getIcon(unit.iconName)}
@@ -254,6 +336,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
       </div>
 
       {/* Branch Selector Tabs */}
+      {!isNeutral && <>
       <div className={`border rounded-2xl p-2 sm:p-3 flex flex-wrap items-center justify-between gap-2 shadow-lg backdrop-blur-sm ${
         themeMode === 'light'
           ? 'bg-white border-slate-200 shadow-xs'
@@ -479,9 +562,10 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
           </div>
         </div>
       )}
+      </>}
 
       {/* COMPARISON VIEW (3 Columns: Base vs Branch A vs Branch B) */}
-      {selectedBranch === 'comparison' ? (
+      {!isNeutral && selectedBranch === 'comparison' ? (
         <div className="space-y-4">
           <UnitStatRadarChart
             baseVariant={selectedUnit.variants.base}
@@ -863,7 +947,8 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                   : 'bg-slate-900 border-slate-700 text-slate-300'
               }`}>
                 <UnitImage
-                  name={currentVariant.name}
+                  name={isNeutral ? selectedUnit.id : currentVariant.name}
+                  alt={currentVariant.name}
                   nameEn={currentVariant.nameEn}
                   size="lg"
                   fallbackIcon={getIcon(selectedUnit.iconName)}
@@ -1148,7 +1233,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Habilidades Especiales & Pasivas ({currentVariant.abilities.length})</span>
                 </h4>
-                {selectedBranch !== 'base' && (() => {
+                {selectedBranch !== 'base' && selectedBranch !== 'comparison' && (() => {
                   const exclusiveList = getExclusiveAbilitiesForBranch(selectedBranch, selectedUnit);
                   if (exclusiveList.length === 0) return null;
                   return (
@@ -1169,7 +1254,11 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               </div>
               <ul className="space-y-1.5">
                 {currentVariant.abilities.map((ability, idx) => {
-                  const isExclusive = isAbilityExclusiveToBranch(ability, selectedBranch, selectedUnit);
+                  const isExclusive = isAbilityExclusiveToBranch(
+                    ability,
+                    selectedBranch === 'comparison' ? 'base' : selectedBranch,
+                    selectedUnit,
+                  );
                   const parsed = parseAbility(ability);
 
                   if (isExclusive) {

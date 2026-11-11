@@ -241,13 +241,16 @@ export const UNIT_ASSETS_CATALOG: UnitAssetEntry[] = [
   { unit_id: 'gorilla', icon: 'src/assets/icons/units/hex_portraits/gorilla.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Grol', nameEn: 'Groll' },
   { unit_id: 'halfling', icon: 'src/assets/icons/units/hex_portraits/halfling.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Mediano', nameEn: 'Halfling' },
   { unit_id: 'kitten_horn', icon: 'src/assets/icons/units/hex_portraits/kitten_horn.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Cuernigato', nameEn: 'Kittenhorn' },
+  { unit_id: 'kitten_skeleton', icon: 'src/assets/icons/units/hex_portraits/kitten_skeleton.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Esqueleto gatuno', nameEn: 'Kitten Skeleton' },
   { unit_id: 'lich_dragon', icon: 'src/assets/icons/units/hex_portraits/lich_dragon.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Dragón liche', nameEn: 'Lich Dragon' },
+  { unit_id: 'mummy', icon: 'src/assets/icons/units/hex_portraits/mummy.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Momia', nameEn: 'Mummy' },
   { unit_id: 'peasant', icon: 'src/assets/icons/units/hex_portraits/peasant.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Campesino', nameEn: 'Peasant' },
   { unit_id: 'pixie', icon: 'src/assets/icons/units/hex_portraits/pixie.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Pixie', nameEn: 'Pixie' },
   { unit_id: 'primal_remnant', icon: 'src/assets/icons/units/hex_portraits/primal_remnant.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Remanente primigenio', nameEn: 'Primal Remnant' },
   { unit_id: 'sentinel', icon: 'src/assets/icons/units/hex_portraits/sentinel.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Centinela de la gloria', nameEn: 'Sentinel of Glory' },
   { unit_id: 'star_child', icon: 'src/assets/icons/units/hex_portraits/star_child.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Niña estrella', nameEn: 'Starchild' },
   { unit_id: 'unicorn', icon: 'src/assets/icons/units/hex_portraits/unicorn.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Unicornio', nameEn: 'Unicorn' },
+  { unit_id: 'trickster', icon: 'src/assets/icons/units/hex_portraits/trickster.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Kitsune', nameEn: 'Kitsune' },
   { unit_id: 'mech_guard', icon: 'src/assets/icons/units/hex_portraits/mech_guard.png', faction: 'Neutral', faction_id: 'neutral', faction_image: 'src/assets/icons/fractions/unicorn.png', nameEs: 'Observador del mundo', nameEn: 'Worldwatcher' },
 ];
 

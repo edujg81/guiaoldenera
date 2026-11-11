@@ -6,6 +6,7 @@ import {
   FACTIONS_METADATA,
   getFactionTheme,
 } from '../../../data/factionDataProvider';
+import type { UnitFactionId } from '../../../data/unitsData';
 import { MultiUnitRadarChart, MultiUnitSlot } from '../../ui/MultiUnitRadarChart';
 import { parseAverageDamage } from '../../ui/UnitStatRadarChart';
 import { UnitImage } from '../../ui/UnitImage';
@@ -42,26 +43,28 @@ import {
 } from 'lucide-react';
 
 interface CrossUnitComparatorProps {
-  initialFaction?: FactionId;
+  initialFaction?: UnitFactionId;
   initialTier?: number;
   initialVariant?: 'base' | 'branch_a' | 'branch_b' | string;
   themeMode?: 'dark' | 'light';
-  onSelectUnitInCatalog?: (faction: FactionId, tier: number, variant: 'base' | 'branch_a' | 'branch_b') => void;
+  onSelectUnitInCatalog?: (faction: UnitFactionId, tier: number, variant: 'base' | 'branch_a' | 'branch_b', unitId: string) => void;
 }
 
 export interface UnitSelectionState {
-  factionId: FactionId;
+  factionId: UnitFactionId;
   tier: number;
   variantKey: 'base' | 'branchA' | 'branchB';
+  unitId?: string;
 }
 
-const CANONICAL_FACTIONS: { id: FactionId; name: string; subtitle: string; color: string; bgBadge: string }[] = [
+const CANONICAL_FACTIONS: { id: UnitFactionId; name: string; subtitle: string; color: string; bgBadge: string }[] = [
   { id: 'Mazmorra', name: 'Mazmorra', subtitle: 'Caos & Sombras', color: '#a855f7', bgBadge: 'bg-purple-950/60' },
   { id: 'Templo', name: 'Templo', subtitle: 'Orden & Luz Sagrada', color: '#f59e0b', bgBadge: 'bg-amber-950/60' },
   { id: 'Foresta', name: 'Foresta', subtitle: 'Naturaleza & Armonía', color: '#10b981', bgBadge: 'bg-emerald-950/60' },
   { id: 'Necrópolis', name: 'Necrópolis', subtitle: 'Muerte & Oscuridad', color: '#94a3b8', bgBadge: 'bg-slate-900/80' },
   { id: 'Colmena', name: 'Colmena', subtitle: 'Horda Demoníaca', color: '#f97316', bgBadge: 'bg-orange-950/60' },
   { id: 'Cisma', name: 'Cisma', subtitle: 'Vacío Abisal', color: '#6366f1', bgBadge: 'bg-indigo-950/60' },
+  { id: 'Neutral', name: 'Neutral', subtitle: 'Criaturas independientes', color: '#10b981', bgBadge: 'bg-emerald-950/60' },
 ];
 
 const PRESETS = [
@@ -123,12 +126,16 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
     if (v === 'branch_b' || v === 'branchB') return 'branchB';
     return 'branchA';
   };
+  const initialNeutralUnit = initialFaction === 'Neutral'
+    ? getUnitsForFaction('Neutral').find((unit) => unit.tier === initialTier) ?? getUnitsForFaction('Neutral')[0]
+    : undefined;
 
   // State for Unit 1, Unit 2, and optional Unit 3
   const [slot1, setSlot1] = useState<UnitSelectionState>({
     factionId: initialFaction,
-    tier: initialTier,
-    variantKey: mapInitialVariant(initialVariant),
+    tier: initialNeutralUnit?.tier ?? initialTier,
+    variantKey: initialFaction === 'Neutral' ? 'base' : mapInitialVariant(initialVariant),
+    unitId: initialNeutralUnit?.id,
   });
 
   const [slot2, setSlot2] = useState<UnitSelectionState>({
@@ -147,11 +154,15 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
     fallbackColor: string
   ): MultiUnitSlot => {
     const factionUnits = getUnitsForFaction(slot.factionId);
-    const unit = factionUnits.find((u) => u.tier === slot.tier) || factionUnits[0];
-    const meta = FACTIONS_METADATA[slot.factionId] || FACTIONS_METADATA.Mazmorra;
+    const unit = (slot.factionId === 'Neutral' ? factionUnits.find((u) => u.id === slot.unitId) : undefined)
+      || factionUnits.find((u) => u.tier === slot.tier)
+      || factionUnits[0];
+    const meta = slot.factionId === 'Neutral'
+      ? { name: 'Neutral' }
+      : FACTIONS_METADATA[slot.factionId] || FACTIONS_METADATA.Mazmorra;
 
     const variant: UnitVariant =
-      slot.variantKey === 'base'
+      slot.factionId === 'Neutral' || slot.variantKey === 'base'
         ? unit.variants.base
         : slot.variantKey === 'branchB'
         ? unit.variants.branchB
@@ -171,7 +182,7 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
       unitName: unit.name,
       tier: unit.tier,
       variantKey: slot.variantKey,
-      variantLabel,
+      variantLabel: slot.factionId === 'Neutral' ? 'Individual' : variantLabel,
       variant,
       unit,
       color: fallbackColor,
@@ -298,7 +309,15 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
     onRemove?: () => void
   ) => {
     const factionUnits = getUnitsForFaction(slot.factionId);
-    const currentUnit = factionUnits.find((u) => u.tier === slot.tier) || factionUnits[0];
+    const currentUnit = (slot.factionId === 'Neutral' ? factionUnits.find((u) => u.id === slot.unitId) : undefined)
+      || factionUnits.find((u) => u.tier === slot.tier)
+      || factionUnits[0];
+    const isNeutral = slot.factionId === 'Neutral';
+    const selectedVariant = isNeutral || slot.variantKey === 'base'
+      ? currentUnit.variants.base
+      : slot.variantKey === 'branchB'
+      ? currentUnit.variants.branchB
+      : currentUnit.variants.branchA;
 
     return (
       <div
@@ -335,10 +354,14 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
           <select
             value={slot.factionId}
             onChange={(e) => {
-              const newFaction = e.target.value as FactionId;
+              const newFaction = e.target.value as UnitFactionId;
+              const newFactionUnits = getUnitsForFaction(newFaction);
               setSlot((prev) => ({
                 ...prev,
                 factionId: newFaction,
+                tier: newFactionUnits[0].tier,
+                unitId: newFaction === 'Neutral' ? newFactionUnits[0].id : undefined,
+                variantKey: newFaction === 'Neutral' ? 'base' : prev.variantKey,
               }));
             }}
             className={`w-full p-2 rounded-xl text-xs font-mono font-bold focus:outline-none cursor-pointer border ${
@@ -361,12 +384,16 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
             Criatura (Tier 1 - 7):
           </label>
           <select
-            value={slot.tier}
+            value={isNeutral ? currentUnit.id : slot.tier}
             onChange={(e) => {
-              const newTier = parseInt(e.target.value, 10);
+              const selectedUnit = isNeutral
+                ? factionUnits.find((unit) => unit.id === e.target.value)
+                : factionUnits.find((unit) => unit.tier === parseInt(e.target.value, 10));
+              if (!selectedUnit) return;
               setSlot((prev) => ({
                 ...prev,
-                tier: newTier,
+                tier: selectedUnit.tier,
+                unitId: isNeutral ? selectedUnit.id : undefined,
               }));
             }}
             className={`w-full p-2 rounded-xl text-xs font-mono font-bold focus:outline-none cursor-pointer border ${
@@ -376,7 +403,7 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
             }`}
           >
             {factionUnits.map((u) => (
-              <option key={u.tier} value={u.tier}>
+              <option key={u.id} value={isNeutral ? u.id : u.tier}>
                 T{u.tier} • {u.name} ({u.dwelling} • {u.attackType || 'Melé'})
               </option>
             ))}
@@ -402,12 +429,15 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
                   : 'bg-slate-100 border-slate-300 text-slate-700 hover:bg-slate-200'
               }`}
             >
-              Base
+              {isNeutral ? 'Individual' : 'Base'}
             </button>
             <button
               type="button"
               onClick={() => setSlot((prev) => ({ ...prev, variantKey: 'branchA' }))}
+              disabled={isNeutral}
               className={`py-1.5 px-2 rounded-lg border text-center transition-all cursor-pointer truncate ${
+                isNeutral ? 'cursor-not-allowed opacity-50' : ''
+              } ${
                 slot.variantKey === 'branchA'
                   ? 'bg-purple-600 border-purple-400 text-white shadow-sm font-bold'
                   : isDark
@@ -420,7 +450,10 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
             <button
               type="button"
               onClick={() => setSlot((prev) => ({ ...prev, variantKey: 'branchB' }))}
+              disabled={isNeutral}
               className={`py-1.5 px-2 rounded-lg border text-center transition-all cursor-pointer truncate ${
+                isNeutral ? 'cursor-not-allowed opacity-50' : ''
+              } ${
                 slot.variantKey === 'branchB'
                   ? 'bg-emerald-600 border-emerald-400 text-white shadow-sm font-bold'
                   : isDark
@@ -441,30 +474,17 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
         >
           <div className="flex items-center gap-2.5 truncate">
             <UnitImage
-              name={
-                slot.variantKey === 'base'
-                  ? currentUnit.variants.base.name
-                  : slot.variantKey === 'branchB'
-                  ? currentUnit.variants.branchB.name
-                  : currentUnit.variants.branchA.name
-              }
+              name={isNeutral ? currentUnit.id : selectedVariant.name}
+              alt={selectedVariant.name}
               nameEn={
-                slot.variantKey === 'base'
-                  ? currentUnit.variants.base.nameEn
-                  : slot.variantKey === 'branchB'
-                  ? currentUnit.variants.branchB.nameEn
-                  : currentUnit.variants.branchA.nameEn
+                selectedVariant.nameEn
               }
               size="sm"
               className="w-9 h-9 rounded-lg"
             />
             <div className="truncate">
               <div className="font-bold truncate" style={{ color }}>
-                {slot.variantKey === 'base'
-                  ? currentUnit.variants.base.name
-                  : slot.variantKey === 'branchB'
-                  ? currentUnit.variants.branchB.name
-                  : currentUnit.variants.branchA.name}
+                {selectedVariant.name}
               </div>
               <div className="text-[10px] text-slate-400 truncate">
                 {currentUnit.dwelling} • {currentUnit.attackType || 'Melé'}
@@ -1128,7 +1148,8 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
                   onSelectUnitInCatalog(
                     slot.factionId,
                     slot.tier,
-                    slot.variantKey === 'branchB' ? 'branch_b' : slot.variantKey === 'base' ? 'base' : 'branch_a'
+                    slot.variantKey === 'branchB' ? 'branch_b' : slot.variantKey === 'base' ? 'base' : 'branch_a',
+                    slot.unit.id
                   )
                 }
                 className={`w-full py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer border ${

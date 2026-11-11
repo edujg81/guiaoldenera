@@ -1,11 +1,12 @@
 import React from 'react';
 import { UnitVariant, UnitInfo } from '../../types';
-import { FactionId, getFactionTheme } from '../../data/factionDataProvider';
+import { getFactionTheme } from '../../data/factionDataProvider';
+import type { UnitFactionId } from '../../data/unitsData';
 import { parseAverageDamage } from './UnitStatRadarChart';
 
 export interface MultiUnitSlot {
   id: string;
-  factionId: FactionId;
+  factionId: UnitFactionId;
   factionName: string;
   unitName: string;
   tier: number;
