@@ -5,6 +5,8 @@ import { OFFICIAL_SUBCLASSES } from '../data/subclassesData';
 import { HERO_SUBSKILL_CHOICES } from '../data/subskillsRecommendationData';
 import type { HeroWithExtras, SubclassInfo } from '../types';
 import type { ApiSkill } from '../types-api';
+import { ApiAssetImage } from './ui/ApiAssetImage';
+import { ResolvedText } from './ui/ResolvedText';
 import { WaxSealBadge } from './ui/WaxSealBadge';
 import { useStickyState } from '../utils/useStickyState';
 import {
@@ -607,7 +609,7 @@ Generado con Compendio Táctico HoMM: Olden Era`;
                   <div className={`text-[10px] font-mono mb-2 ${
                     isDark ? 'text-amber-400/90' : 'text-amber-700 font-semibold'
                   }`}>
-                    {sc.bonusTitle}
+                    <ResolvedText text={sc.bonusTitle} />
                   </div>
 
                   {/* Requirements List with live checks */}
@@ -633,7 +635,7 @@ Generado con Compendio Táctico HoMM: Olden Era`;
                 <p className={`text-[10px] leading-tight mt-1 pt-1.5 border-t line-clamp-2 ${
                   isDark ? 'border-slate-800 text-slate-400' : 'border-slate-200 text-slate-600'
                 }`}>
-                  {sc.bonusEffect}
+                  <ResolvedText text={sc.bonusEffect} />
                 </p>
               </div>
             );
@@ -691,6 +693,13 @@ Generado con Compendio Táctico HoMM: Olden Era`;
             const currentAlloc = allocations[skill.id] || { skillId: skill.id, tier: 'none' };
             const isAllocated = currentAlloc.tier !== 'none';
             const tier = currentAlloc.tier;
+            const skillIcon = tier === 'expert'
+              ? skill.level3.icon
+              : tier === 'advanced'
+              ? skill.level2.icon
+              : tier === 'basic'
+              ? skill.level1.icon
+              : skill.icon;
 
             return (
               <div
@@ -708,17 +717,24 @@ Generado con Compendio Táctico HoMM: Olden Era`;
                 <div>
                   {/* Skill Header */}
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <div>
-                      <h4 className={`text-sm font-bold font-serif ${
-                        isDark ? 'text-slate-100' : 'text-slate-900'
-                      }`}>
-                        {skill.name}
-                      </h4>
-                      <span className={`text-[10px] font-mono ${
-                        isDark ? 'text-slate-400' : 'text-slate-500'
-                      }`}>
-                        {skill.category}
-                      </span>
+                    <div className="flex min-w-0 items-center gap-2">
+                      <ApiAssetImage
+                        iconPath={skillIcon}
+                        alt={`Icono de ${skill.name}`}
+                        className="h-16 w-16 shrink-0 rounded-lg object-cover"
+                      />
+                      <div className="min-w-0">
+                        <h4 className={`text-sm font-bold font-serif ${
+                          isDark ? 'text-slate-100' : 'text-slate-900'
+                        }`}>
+                          {skill.name}
+                        </h4>
+                        <span className={`text-[10px] font-mono ${
+                          isDark ? 'text-slate-400' : 'text-slate-500'
+                        }`}>
+                          {skill.category}
+                        </span>
+                      </div>
                     </div>
 
                     <button
@@ -807,7 +823,14 @@ Generado con Compendio Táctico HoMM: Olden Era`;
                                   : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100'
                               }`}
                             >
-                              <span className="truncate">{sub.name}</span>
+                              <span className="flex min-w-0 items-center gap-2">
+                                <ApiAssetImage
+                                  iconPath={sub.icon}
+                                  alt=""
+                                  className="h-7 w-7 shrink-0 rounded object-cover"
+                                />
+                                <span className="truncate">{sub.name}</span>
+                              </span>
                               <span className="text-[10px] shrink-0">{isSelected ? '✓ Activa' : 'Elegir'}</span>
                             </button>
                           );
@@ -835,7 +858,14 @@ Generado con Compendio Táctico HoMM: Olden Era`;
                                       : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100'
                                   }`}
                                 >
-                                  <span className="truncate">{sub.name}</span>
+                                  <span className="flex min-w-0 items-center gap-2">
+                                    <ApiAssetImage
+                                      iconPath={sub.icon}
+                                      alt=""
+                                      className="h-7 w-7 shrink-0 rounded object-cover"
+                                    />
+                                    <span className="truncate">{sub.name}</span>
+                                  </span>
                                   <span className="text-[10px] shrink-0">{isSelected ? '✓ Activa' : 'Elegir'}</span>
                                 </button>
                               );
@@ -859,11 +889,18 @@ Generado con Compendio Táctico HoMM: Olden Era`;
             isDark ? 'bg-slate-900 border-slate-700 text-slate-100' : 'bg-white border-slate-300 text-slate-900'
           } shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto`}>
             <div className="flex items-center justify-between border-b pb-3 border-slate-800">
-              <div>
-                <span className="text-[10px] font-mono uppercase font-bold text-amber-400">
-                  {activeModalSkill.name}
-                </span>
-                <h3 className="text-xl font-bold font-serif">{activeModalSkill.name}</h3>
+              <div className="flex min-w-0 items-center gap-3">
+                <ApiAssetImage
+                  iconPath={activeModalSkill.icon}
+                  alt={`Icono de ${activeModalSkill.name}`}
+                  className="h-24 w-24 shrink-0 rounded-lg object-cover"
+                />
+                <div>
+                  <span className="text-[10px] font-mono uppercase font-bold text-amber-400">
+                    {activeModalSkill.name}
+                  </span>
+                  <h3 className="text-xl font-bold font-serif">{activeModalSkill.name}</h3>
+                </div>
               </div>
               <button
                 type="button"
@@ -878,14 +915,17 @@ Generado con Compendio Táctico HoMM: Olden Era`;
             <div className="space-y-2">
               <h4 className="text-xs font-mono font-bold uppercase text-slate-400">Niveles de Maestría:</h4>
               <div className="space-y-1.5 text-xs font-mono">
-                <div className={`p-2 rounded border ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
-                  <span className="text-blue-400 font-bold">Básica (1 pt):</span> {activeModalSkill.level1.levelName}
+                <div className={`p-2 rounded border flex items-center gap-2 ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
+                  <ApiAssetImage iconPath={activeModalSkill.level1.icon} alt="" className="h-8 w-8 shrink-0 rounded object-cover" />
+                  <span><span className="text-blue-400 font-bold">Básica (1 pt):</span> {activeModalSkill.level1.levelName}</span>
                 </div>
-                <div className={`p-2 rounded border ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
-                  <span className="text-purple-400 font-bold">Avanzada (2 pts):</span> {activeModalSkill.level2.levelName}
+                <div className={`p-2 rounded border flex items-center gap-2 ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
+                  <ApiAssetImage iconPath={activeModalSkill.level2.icon} alt="" className="h-8 w-8 shrink-0 rounded object-cover" />
+                  <span><span className="text-purple-400 font-bold">Avanzada (2 pts):</span> {activeModalSkill.level2.levelName}</span>
                 </div>
-                <div className={`p-2 rounded border ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
-                  <span className="text-yellow-400 font-bold">Experta (3 pts):</span> {activeModalSkill.level3.levelName}
+                <div className={`p-2 rounded border flex items-center gap-2 ${isDark ? 'bg-black/40 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
+                  <ApiAssetImage iconPath={activeModalSkill.level3.icon} alt="" className="h-8 w-8 shrink-0 rounded object-cover" />
+                  <span><span className="text-yellow-400 font-bold">Experta (3 pts):</span> {activeModalSkill.level3.levelName}</span>
                 </div>
               </div>
             </div>
@@ -898,8 +938,13 @@ Generado con Compendio Táctico HoMM: Olden Era`;
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 {activeModalSkill.level2.subSkillChoices.map((sub, sIdx) => (
                   <div key={sIdx} className={`p-2.5 rounded-lg border text-xs ${isDark ? 'bg-black/60 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
-                    <div className="font-bold text-slate-200 mb-1">{sub.name}</div>
-                    <p className="text-[11px] text-slate-400 leading-tight">{sub.description}</p>
+                    <div className="mb-1 flex items-center gap-2 font-bold text-slate-200">
+                      <ApiAssetImage iconPath={sub.icon} alt="" className="h-8 w-8 shrink-0 rounded object-cover" />
+                      <span>{sub.name}</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400 leading-tight">
+                      <ResolvedText text={sub.description} />
+                    </p>
                   </div>
                 ))}
               </div>
@@ -910,8 +955,13 @@ Generado con Compendio Táctico HoMM: Olden Era`;
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 {activeModalSkill.level3.subSkillChoices.map((sub, sIdx) => (
                   <div key={sIdx} className={`p-2.5 rounded-lg border text-xs ${isDark ? 'bg-black/60 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
-                    <div className="font-bold text-slate-200 mb-1">{sub.name}</div>
-                    <p className="text-[11px] text-slate-400 leading-tight">{sub.description}</p>
+                    <div className="mb-1 flex items-center gap-2 font-bold text-slate-200">
+                      <ApiAssetImage iconPath={sub.icon} alt="" className="h-8 w-8 shrink-0 rounded object-cover" />
+                      <span>{sub.name}</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400 leading-tight">
+                      <ResolvedText text={sub.description} />
+                    </p>
                   </div>
                 ))}
               </div>

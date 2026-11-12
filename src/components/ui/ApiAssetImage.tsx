@@ -5,6 +5,8 @@ const apiAssetUrls = import.meta.glob(
     '/src/assets/icons/faction_laws/*.png',
     '/src/assets/icons/cities_buildings/**/*.png',
     '/src/assets/icons/hero_magics/*.png',
+    '/src/assets/icons/hero_skills/*.png',
+    '/src/assets/icons/hero_sub_skills/*.png',
   ],
   {
     eager: true,
