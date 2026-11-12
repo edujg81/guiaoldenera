@@ -933,7 +933,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
             themeMode === 'light' ? 'border-slate-200' : 'border-white/10'
           }`}>
             <div className="flex items-center gap-3.5">
-              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border shadow-lg overflow-hidden shrink-0 ${
+              <div className={`w-44 h-44 rounded-2xl flex items-center justify-center border shadow-lg overflow-hidden shrink-0 ${
                 selectedBranch === 'branch_b'
                   ? themeMode === 'light'
                     ? 'bg-emerald-100 border-emerald-300 text-emerald-900 shadow-sm'

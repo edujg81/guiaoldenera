@@ -112,6 +112,38 @@ const PRESETS = [
   },
 ];
 
+function getAttackDefenseDamageMultiplier(attack: number, defense: number): number {
+  const difference = Math.trunc(attack - defense);
+  const points = Math.min(Math.abs(difference), 100);
+  const bonus = points * 0.04 - (points * (points - 1) / 2) * 0.0004;
+  const coefficient = 1 + bonus;
+
+  return difference > 0 ? coefficient : difference < 0 ? 1 / coefficient : 1;
+}
+
+function getDamageRange(damage: string | number): [number, number] {
+  if (typeof damage === 'number') return [damage, damage];
+  const values = damage.split('-').map((value) => Number(value.trim()));
+  if (values.length === 2 && values.every(Number.isFinite)) {
+    return [values[0], values[1]];
+  }
+  const value = Number(damage);
+  return Number.isFinite(value) ? [value, value] : [0, 0];
+}
+
+function getGoldEquivalentCost(cost: UnitVariant['cost']): number {
+  const additionalResources = [
+    cost.ore,
+    cost.wood,
+    cost.gems,
+    cost.crystal,
+    cost.mercury,
+    cost.alchemicalDust,
+  ].reduce<number>((total, amount) => total + (amount ?? 0), 0);
+
+  return cost.gold + additionalResources * 50;
+}
+
 export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
   initialFaction = 'Mazmorra',
   initialTier = 1,
@@ -255,21 +287,8 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
     const dmg2Avg = parseAverageDamage(u2.stats.damage);
     const init2 = u2.stats.initiative;
 
-    // Damage mod 1 against 2
-    let mod1To2 = 1.0;
-    if (atk1 >= def2) {
-      mod1To2 = 1 + Math.min((atk1 - def2) * 0.05, 3.0); // max +300%
-    } else {
-      mod1To2 = Math.max(1 - (def2 - atk1) * 0.025, 0.25); // max -75%
-    }
-
-    // Damage mod 2 against 1
-    let mod2To1 = 1.0;
-    if (atk2 >= def1) {
-      mod2To1 = 1 + Math.min((atk2 - def1) * 0.05, 3.0);
-    } else {
-      mod2To1 = Math.max(1 - (def1 - atk2) * 0.025, 0.25);
-    }
+    const mod1To2 = getAttackDefenseDamageMultiplier(atk1, def2);
+    const mod2To1 = getAttackDefenseDamageMultiplier(atk2, def1);
 
     const strike1Dealt = dmg1Avg * mod1To2;
     const strike2Dealt = dmg2Avg * mod2To1;
@@ -626,7 +645,7 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
               </span>
             </div>
             <p className="text-xs text-slate-400 mt-0.5">
-              Evaluación de primer golpe por Iniciativa, modificador de Daño (Atq vs Def) y represalia.
+              Daño según Δ = ATQ − DEF: el primer punto aporta un 4 % y cada punto adicional aporta 0,04 puntos porcentuales menos, hasta 100 puntos. Si la Defensa supera el Ataque, el coeficiente se aplica dividiendo.
             </p>
           </div>
           <div className="flex items-center gap-2 text-xs font-mono font-bold text-slate-300">
@@ -968,18 +987,59 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
                 })}
               </tr>
 
-              {/* Efficiency Metric: DPS per 100 Gold */}
+              {/* Damage efficiency adjusted against a generic defense and resource-equivalent cost */}
               <tr className={isDark ? 'bg-white/5' : 'bg-slate-50'}>
-                <td className="p-3 font-bold text-amber-400 flex items-center gap-1.5">
-                  <TrendingUp className="w-3.5 h-3.5 text-amber-400" /> Daño Medio / 100 Oro
+                <td className="p-3 font-bold text-amber-400">
+                  <span className="flex items-center gap-1.5">
+                    <TrendingUp className="w-3.5 h-3.5 text-amber-400" /> Daño Medio / 100 Oro equivalente
+                  </span>
+                  <span className="mt-1 block text-[9px] font-normal text-slate-500">
+                    ATQ vs DEF 0 · cada recurso extra = 50 Oro
+                  </span>
                 </td>
                 {activeSlots.map((slot) => {
-                  const avg = parseAverageDamage(slot.variant.stats.damage);
-                  const gold = slot.variant.cost.gold || 1;
-                  const ratio = (avg / gold) * 100;
+                  const averageDamage = parseAverageDamage(slot.variant.stats.damage);
+                  const damageMultiplier = getAttackDefenseDamageMultiplier(
+                    slot.variant.stats.attack,
+                    0,
+                  );
+                  const goldEquivalentCost = getGoldEquivalentCost(slot.variant.cost);
+                  const ratio = goldEquivalentCost > 0
+                    ? (averageDamage * damageMultiplier / goldEquivalentCost) * 100
+                    : 0;
                   return (
                     <td key={slot.id} className="p-3 font-bold text-amber-300">
                       {ratio.toFixed(2)} pts
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr className={isDark ? 'bg-white/5' : 'bg-slate-50'}>
+                <td className="p-3 font-bold text-amber-400">
+                  Daño mínimo por golpe vs DEF 13
+                </td>
+                {activeSlots.map((slot) => {
+                  const [minimumDamage] = getDamageRange(slot.variant.stats.damage);
+                  const multiplier = getAttackDefenseDamageMultiplier(slot.variant.stats.attack, 13);
+                  return (
+                    <td key={slot.id} className="p-3 font-bold text-amber-300">
+                      {(minimumDamage * multiplier).toFixed(1)}
+                    </td>
+                  );
+                })}
+              </tr>
+
+              <tr className={isDark ? 'bg-white/5' : 'bg-slate-50'}>
+                <td className="p-3 font-bold text-amber-400">
+                  Daño máximo por golpe vs DEF 13
+                </td>
+                {activeSlots.map((slot) => {
+                  const [, maximumDamage] = getDamageRange(slot.variant.stats.damage);
+                  const multiplier = getAttackDefenseDamageMultiplier(slot.variant.stats.attack, 13);
+                  return (
+                    <td key={slot.id} className="p-3 font-bold text-amber-300">
+                      {(maximumDamage * multiplier).toFixed(1)}
                     </td>
                   );
                 })}
@@ -1142,16 +1202,19 @@ export const CrossUnitComparator: React.FC<CrossUnitComparatorProps> = ({
             </div>
 
             {/* Link to view in catalog */}
-            {onSelectUnitInCatalog && (
+            {onSelectUnitInCatalog && slot.unit && (
               <button
-                onClick={() =>
+                onClick={() => {
+                  const unitId = slot.unit?.id;
+                  if (!unitId) return;
+
                   onSelectUnitInCatalog(
                     slot.factionId,
                     slot.tier,
                     slot.variantKey === 'branchB' ? 'branch_b' : slot.variantKey === 'base' ? 'base' : 'branch_a',
-                    slot.unit.id
-                  )
-                }
+                    unitId
+                  );
+                }}
                 className={`w-full py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer border ${
                   isDark
                     ? 'bg-white/5 hover:bg-white/10 border-white/10 text-slate-200'

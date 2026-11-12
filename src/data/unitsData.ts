@@ -380,7 +380,8 @@ export const UNITS_BY_FACTION: Record<FactionId, UnitInfo[]> = {
 
 export const NEUTRAL_UNITS = API_UNITS_DATA
   .filter((unit) => unit.faction === 'neutral')
-  .map(createNeutralUnit);
+  .map(createNeutralUnit)
+  .sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name, 'es'));
 export const UNITS_BY_UNIT_FACTION: Record<UnitFactionId, UnitInfo[]> = {
   ...UNITS_BY_FACTION,
   Neutral: NEUTRAL_UNITS,
