@@ -1,6 +1,8 @@
 import { BuildStep, UnitInfo, HeroWithExtras, TacticalScenario, FactionLaw, FactionLawPreset } from '../types';
+import type { ApiFactionLaw } from '../types-api';
 import { getHeroesByFactionKey } from './heroesData';
 import { getUnitsForFaction as getUnifiedUnitsForFaction } from './unitsData';
+import { API_FACTION_LAWS_DATA } from './apiFactionLawsData';
 
 // Mazmorra (Dungeon)
 import { FULL_56_DAY_BUILD_STEPS, TACTICAL_SCENARIOS } from './dungeonData';
@@ -25,6 +27,125 @@ import { ENJAMBRE_FACTION_LAWS, ENJAMBRE_LAW_PRESETS } from './enjambreLawsData'
 // Cisma (Schism / Arcane)
 import { CISMA_56_DAY_BUILD_STEPS, CISMA_COMBAT_TACTICS } from './cismaData';
 import { CISMA_FACTION_LAWS, CISMA_LAW_PRESETS } from './cismaLawsData';
+
+const EDITORIAL_FACTION_LAWS = [
+  ...FACTION_LAWS,
+  ...TEMPLE_FACTION_LAWS,
+  ...ARBOLEDA_FACTION_LAWS,
+  ...NECROPOLIS_FACTION_LAWS,
+  ...ENJAMBRE_FACTION_LAWS,
+  ...CISMA_FACTION_LAWS,
+];
+
+const EDITORIAL_LAW_BY_ID = new Map(EDITORIAL_FACTION_LAWS.map((law) => [law.id, law]));
+const API_FACTION_BY_DISPLAY_NAME: Record<string, string> = {
+  Mazmorra: 'dungeon',
+  Templo: 'human',
+  Foresta: 'nature',
+  Necrópolis: 'undead',
+  Colmena: 'demon',
+  Cisma: 'unfrozen',
+};
+const FACTION_LAW_TIER_BY_POINTS = new Map<number, FactionLaw['tier']>([
+  [0, 1],
+  [5, 2],
+  [15, 3],
+  [30, 4],
+  [50, 5],
+]);
+
+interface ApiLawPosition {
+  tierMinPoints: number;
+  branchType: 'Ciudad' | 'Militar';
+  priorityOrder: number;
+}
+
+function createApiLawPositions(): Map<string, ApiLawPosition> {
+  const positions = new Map<string, ApiLawPosition>();
+  const factionLayouts = new Map<string, ApiFactionLaw['layout']>();
+  for (const law of API_FACTION_LAWS_DATA) {
+    if (!factionLayouts.has(law.faction)) factionLayouts.set(law.faction, law.layout);
+  }
+
+  for (const layout of factionLayouts.values()) {
+    let priorityOrder = 0;
+    for (const tier of layout) {
+      if (tier.groups.length !== 2) {
+        throw new Error(`El árbol de leyes de API debe tener dos ramas; se recibieron ${tier.groups.length}.`);
+      }
+      for (const [groupIndex, group] of tier.groups.entries()) {
+        for (const law of group.laws) {
+          priorityOrder += 1;
+          if (positions.has(law.id)) {
+            throw new Error(`La ley de API "${law.id}" aparece más de una vez en el árbol.`);
+          }
+          positions.set(law.id, {
+            tierMinPoints: tier.countToUnlock,
+            branchType: groupIndex === 0 ? 'Ciudad' : 'Militar',
+            priorityOrder,
+          });
+        }
+      }
+    }
+  }
+  return positions;
+}
+
+const API_LAW_POSITIONS = createApiLawPositions();
+
+function toFactionLaw(apiLaw: ApiFactionLaw): FactionLaw {
+  const editorialLaw = EDITORIAL_LAW_BY_ID.get(apiLaw.id);
+  const position = API_LAW_POSITIONS.get(apiLaw.id);
+  if (!position) {
+    throw new Error(`La ley de API "${apiLaw.id}" no aparece en el árbol de leyes de su facción.`);
+  }
+  if (apiLaw.levels.length === 0) {
+    throw new Error(`La ley de API "${apiLaw.id}" no tiene niveles definidos.`);
+  }
+
+  const branchType = position.branchType;
+  let cumulativeCost = 0;
+  const ranks = apiLaw.levels.map((level) => {
+    cumulativeCost += level.cost;
+    const editorialRank = editorialLaw?.ranks?.find((rank) => rank.level === level.level);
+    return {
+      level: level.level,
+      costLaws: level.cost,
+      cumulativeCost,
+      effect: level.description,
+      tacticalImpact: editorialRank?.tacticalImpact ?? level.description,
+      recommendedUnlockTime: editorialRank?.recommendedUnlockTime,
+    };
+  });
+  const firstRank = ranks[0];
+  const tier = FACTION_LAW_TIER_BY_POINTS.get(position.tierMinPoints);
+  if (!tier) {
+    throw new Error(`Umbral de leyes no reconocido en la API: ${position.tierMinPoints}.`);
+  }
+
+  return {
+    ...editorialLaw,
+    id: apiLaw.id,
+    icon: apiLaw.icon,
+    priorityOrder: position.priorityOrder,
+    tier,
+    tierMinPoints: position.tierMinPoints,
+    name: apiLaw.localizedName,
+    nameEn: editorialLaw?.nameEn ?? apiLaw.localizedName,
+    category: editorialLaw?.category ?? branchType,
+    branch: editorialLaw?.branch ?? branchType,
+    branchType,
+    costLaws: firstRank?.costLaws ?? 0,
+    maxLevel: apiLaw.levels.length,
+    ranks,
+    effect: firstRank?.effect ?? '',
+    tacticalImpact: firstRank?.tacticalImpact ?? '',
+  };
+}
+
+const FACTION_LAWS_FROM_API = API_FACTION_LAWS_DATA
+  .filter((law) => API_LAW_POSITIONS.has(law.id))
+  .map(toFactionLaw);
 
 export type FactionId = 'Mazmorra' | 'Templo' | 'Foresta' | 'Necrópolis' | 'Colmena' | 'Cisma';
 
@@ -690,21 +811,10 @@ export function getCombatTacticsForFaction(faction: FactionId | string): Tactica
 }
 
 export function getFactionLawsForFaction(faction: FactionId | string): FactionLaw[] {
-  switch (faction) {
-    case 'Templo':
-      return TEMPLE_FACTION_LAWS;
-    case 'Foresta':
-      return ARBOLEDA_FACTION_LAWS;
-    case 'Necrópolis':
-      return NECROPOLIS_FACTION_LAWS;
-    case 'Colmena':
-      return ENJAMBRE_FACTION_LAWS;
-    case 'Cisma':
-      return CISMA_FACTION_LAWS;
-    case 'Mazmorra':
-    default:
-      return FACTION_LAWS;
-  }
+  const apiFaction = API_FACTION_BY_DISPLAY_NAME[faction] ?? API_FACTION_BY_DISPLAY_NAME.Mazmorra;
+  return FACTION_LAWS_FROM_API
+    .filter((law) => law.id.includes(`_${apiFaction}_`))
+    .sort((a, b) => a.tier - b.tier || a.priorityOrder - b.priorityOrder);
 }
 
 export function getFactionLawPresetsForFaction(faction: FactionId | string): FactionLawPreset[] {

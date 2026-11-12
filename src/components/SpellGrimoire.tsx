@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { OFFICIAL_SPELLS_DATA as RECOMMENDED_SPELLS } from '../data/spellsData';
 import { RecommendedSpell, SpellLevelInfo } from '../types';
+import { ApiAssetImage } from './ui/ApiAssetImage';
 import { useStickyState } from '../utils/useStickyState';
 import { FactionId, FACTIONS_METADATA, getFactionTheme } from '../data/factionDataProvider';
 import {
@@ -973,7 +974,13 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
               {/* Header with Title and Favorite Toggle */}
               <div>
                 <div className="flex items-start justify-between gap-3 mb-2.5">
-                  <div>
+                  <div className="flex items-start gap-3 min-w-0">
+                    <ApiAssetImage
+                      iconPath={spell.icon}
+                      alt={`Icono de ${spell.name}`}
+                      className="w-18 h-18 rounded-xl object-cover shrink-0 border border-slate-700 shadow-md"
+                    />
+                    <div className="min-w-0">
                     <div className="flex items-center gap-1.5 flex-wrap mb-1">
                       <SmartSpellHoverCard
                         spell={spell}
@@ -1061,6 +1068,7 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                         )}
                       </h3>
                     </SmartSpellHoverCard>
+                    </div>
                   </div>
 
                   <button

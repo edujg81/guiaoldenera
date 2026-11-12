@@ -55,10 +55,13 @@ export interface ApiBuilding {
   name: string;
   faction: string;
   factionDisplay: string;
+  level: number;
+  maxLevel: number;
+  category: string;
   factionIcon: string;
   description: string;
   iconPath: string;
-  costs: ApiCost[];
+  costs: ApiCost[] | null;
   costLabel: string;
   effects: string[] | null;
   requirements: ApiRequirement[] | null;

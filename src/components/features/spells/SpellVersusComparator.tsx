@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RecommendedSpell } from '../../../types';
+import { ApiAssetImage } from '../../ui/ApiAssetImage';
 import {
   calculateSpellAtSpellPower,
   CalculatedSpell,
@@ -146,7 +147,8 @@ export const SpellVersusComparator: React.FC<SpellVersusComparatorProps> = ({
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-400">
                     {spellA.school} • Tier {spellA.tier}
                   </span>
-                  <h4 className="text-base font-serif font-bold text-slate-900 dark:text-white group-hover:text-amber-400 transition-colors flex items-center gap-1">
+                  <h4 className="text-base font-serif font-bold text-slate-900 dark:text-white group-hover:text-amber-400 transition-colors flex items-center gap-2">
+                    <ApiAssetImage iconPath={spellA.icon} alt="" className="w-18 h-18 rounded-lg object-cover shrink-0 border border-slate-700" />
                     <span>{spellA.name}</span>
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 opacity-60 group-hover:opacity-100" />
                   </h4>
@@ -179,11 +181,11 @@ export const SpellVersusComparator: React.FC<SpellVersusComparatorProps> = ({
               {calcA.levels.map((lvl) => (
                 <div
                   key={lvl.level}
-                  className="p-2 rounded-lg bg-black/30 border border-slate-800/80 flex items-center justify-between gap-2"
+                  className="p-2 rounded-lg bg-black/30 border border-slate-800/80 flex items-start justify-between gap-2"
                 >
-                  <div className="min-w-0">
-                    <span className="font-bold text-slate-200 font-mono text-[11px]">Niv. {lvl.level}: </span>
-                    <span className="text-slate-300 text-[11px] font-sans truncate">{lvl.baseEffect}</span>
+                  <div className="flex min-w-0 flex-1 items-baseline gap-1">
+                    <span className="shrink-0 font-bold text-slate-200 font-mono text-[11px]">Niv. {lvl.level}:</span>
+                    <span className="min-w-0 flex-1 whitespace-normal break-words text-slate-300 text-[11px] font-sans">{lvl.baseEffect}</span>
                   </div>
                   {lvl.calculatedValue !== null && (
                     <span className="text-xs font-bold font-mono text-amber-300 shrink-0">
@@ -224,7 +226,8 @@ export const SpellVersusComparator: React.FC<SpellVersusComparatorProps> = ({
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400">
                     {spellB.school} • Tier {spellB.tier}
                   </span>
-                  <h4 className="text-base font-serif font-bold text-slate-900 dark:text-white group-hover:text-amber-400 transition-colors flex items-center gap-1">
+                  <h4 className="text-base font-serif font-bold text-slate-900 dark:text-white group-hover:text-amber-400 transition-colors flex items-center gap-2">
+                    <ApiAssetImage iconPath={spellB.icon} alt="" className="w-16 h-16 rounded-lg object-cover shrink-0 border border-slate-700" />
                     <span>{spellB.name}</span>
                     <Sparkles className="w-3.5 h-3.5 text-amber-500 opacity-60 group-hover:opacity-100" />
                   </h4>
@@ -257,11 +260,11 @@ export const SpellVersusComparator: React.FC<SpellVersusComparatorProps> = ({
               {calcB.levels.map((lvl) => (
                 <div
                   key={lvl.level}
-                  className="p-2 rounded-lg bg-black/30 border border-slate-800/80 flex items-center justify-between gap-2"
+                  className="p-2 rounded-lg bg-black/30 border border-slate-800/80 flex items-start justify-between gap-2"
                 >
-                  <div className="min-w-0">
-                    <span className="font-bold text-slate-200 font-mono text-[11px]">Niv. {lvl.level}: </span>
-                    <span className="text-slate-300 text-[11px] font-sans truncate">{lvl.baseEffect}</span>
+                  <div className="flex min-w-0 flex-1 items-baseline gap-1">
+                    <span className="shrink-0 font-bold text-slate-200 font-mono text-[11px]">Niv. {lvl.level}:</span>
+                    <span className="min-w-0 flex-1 whitespace-normal break-words text-slate-300 text-[11px] font-sans">{lvl.baseEffect}</span>
                   </div>
                   {lvl.calculatedValue !== null && (
                     <span className="text-xs font-bold font-mono text-amber-300 shrink-0">

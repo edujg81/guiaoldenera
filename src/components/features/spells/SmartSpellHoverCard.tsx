@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
+// @ts-ignore react-dom typings are not installed in this project.
 import { createPortal } from 'react-dom';
 import { Sparkles, Zap, Gem, Award, Shield, Target, Compass, Orbit, Flame, Sun, Moon } from 'lucide-react';
 import { RecommendedSpell } from '../../../types';
+import { ApiAssetImage } from '../../ui/ApiAssetImage';
 import { formatEffectWithSpellPower, parseSpellFormula, evaluateSpellFormula } from '../../../utils/spellScalingCalculator';
 import { FactionId, getFactionTheme } from '../../../data/factionDataProvider';
 import { getFactionSpellPriority } from '../../../data/factionSpellData';
@@ -158,7 +160,9 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
           >
             {/* Header with School Crest and Tier */}
             <div className="flex items-start justify-between gap-2 border-b pb-2.5 mb-2.5 border-purple-500/20">
-              <div>
+              <div className="flex items-center gap-2">
+                <ApiAssetImage iconPath={spell.icon} alt="" className="w-20 h-20 rounded-lg object-cover shrink-0 border border-purple-500/30" />
+                <div>
                 <div className="flex items-center gap-1.5 mb-1">
                   <span className="p-1 rounded-md bg-black/30 border border-purple-500/30">
                     {getSchoolIcon()}
@@ -173,6 +177,7 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
                 <h4 className="font-serif font-bold text-sm tracking-wide text-white flex items-center gap-1.5">
                   <span>{spell.name}</span>
                 </h4>
+                </div>
               </div>
 
               <div className="text-right">

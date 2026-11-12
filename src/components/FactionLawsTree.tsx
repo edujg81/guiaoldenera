@@ -13,6 +13,8 @@ import {
 } from '../data/factionDataProvider';
 import { FactionLaw, FactionLawPreset, LawRank, PresetStep } from '../types';
 import { useStickyState } from '../utils/useStickyState';
+import { ResolvedText } from './ui/ResolvedText';
+import { ApiAssetImage } from './ui/ApiAssetImage';
 import { 
   Scroll, 
   Sparkles, 
@@ -529,7 +531,7 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
               <span>Leyes y Decretos de {meta.name}</span>
             </h2>
             <p className="text-slate-300 text-xs mt-1 max-w-3xl leading-relaxed">
-              En <em>Heroes of Might and Magic: Olden Era</em>, el árbol de leyes de <strong>{meta.name}</strong> cuenta con <strong>{factionLaws.length} Decretos multinivel</strong> distribuidos en <strong>5 Tiers</strong> y <strong>2 Ramas Canónicas (Ciudad y Militar)</strong>. Selecciona un Preset táctico para visualizar en <strong>estricto orden de selección (1º, 2º, 3º...)</strong> las leyes recomendadas y sus rangos de mejora con un presupuesto de <strong>50 Sellos de Ley</strong>.
+              En <em>Heroes of Might and Magic: Olden Era</em>, el árbol de leyes de <strong>{meta.name}</strong> cuenta con <strong>{factionLaws.length} leyes</strong> distribuidas en <strong>5 Tiers</strong> y <strong>2 Ramas Canónicas (Ciudad y Militar)</strong>. Selecciona un Preset táctico para visualizar en <strong>estricto orden de selección (1º, 2º, 3º...)</strong> las leyes recomendadas y sus rangos de mejora con un presupuesto de <strong>50 Sellos de Ley</strong>.
             </p>
           </div>
 
@@ -1030,9 +1032,12 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                             )}
                           </div>
 
-                          <h4 className={`text-base font-serif font-bold tracking-wide ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                            {law.name}
-                          </h4>
+                          <div className="flex items-center gap-2">
+                            <ApiAssetImage iconPath={law.icon} alt="" className="w-14 h-14 rounded-lg object-cover shrink-0" />
+                            <h4 className={`text-base font-serif font-bold tracking-wide ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                              {law.name}
+                            </h4>
+                          </div>
 
                           {/* Recommended Unlock Time in Calendar */}
                           <div className={`mt-1 flex items-center gap-1.5 text-xs font-mono ${themeMode === 'light' ? 'text-amber-800 font-semibold' : 'text-amber-300'}`}>
@@ -1107,7 +1112,7 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                           Efecto del Rango {step.level}:
                         </span>
                         <p className={`leading-relaxed text-[11px] ${themeMode === 'light' ? 'text-slate-800' : 'text-slate-200'}`}>
-                          {rankData ? rankData.effect : law.effect}
+                          <ResolvedText text={rankData?.effect ?? law.effect ?? ''} />
                         </p>
                       </div>
 
@@ -1120,7 +1125,8 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                           Justificación en este Paso:
                         </span>
                         <p className={`leading-relaxed text-[11px] ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'}`}>
-                          {step.rationale || (rankData ? rankData.tacticalImpact : law.tacticalImpact)} <span className={`italic ${themeMode === 'light' ? 'text-purple-800 font-medium' : theme.textAccent}`}>({law.synergy})</span>
+                          <ResolvedText text={step.rationale || rankData?.tacticalImpact || law.tacticalImpact || ''} />
+                          {law.synergy && <span className={`italic ${themeMode === 'light' ? 'text-purple-800 font-medium' : theme.textAccent}`}> ({law.synergy})</span>}
                         </p>
                       </div>
                     </div>
@@ -1228,9 +1234,12 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                           </div>
                         </div>
 
-                        <h4 className={`text-sm font-serif font-bold tracking-wide mb-1.5 leading-snug ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                          {law.name}
-                        </h4>
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <ApiAssetImage iconPath={law.icon} alt="" className="w-14 h-14 rounded-lg object-cover shrink-0" />
+                          <h4 className={`text-sm font-serif font-bold tracking-wide leading-snug ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                            {law.name}
+                          </h4>
+                        </div>
 
                         {/* Level selector if multi-level */}
                         {law.maxLevel > 1 && (
@@ -1263,12 +1272,13 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                         <p className={`text-xs leading-relaxed p-2 rounded-lg border mt-1 ${
                           themeMode === 'light' ? 'bg-white border-slate-200 text-slate-800' : 'bg-black/40 border-slate-900 text-slate-200'
                         }`}>
-                          {rankData ? rankData.effect : law.effect}
+                          <ResolvedText text={rankData?.effect ?? law.effect ?? ''} />
                         </p>
 
                         {/* Tactical Impact */}
                         <p className={`text-[11px] leading-relaxed mt-2 ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-400'}`}>
-                          <strong className={`font-mono ${themeMode === 'light' ? 'text-purple-900' : theme.textAccent}`}>Táctica:</strong> {rankData?.tacticalImpact || law.tacticalImpact}
+                          <strong className={`font-mono ${themeMode === 'light' ? 'text-purple-900' : theme.textAccent}`}>Táctica:</strong>{' '}
+                          <ResolvedText text={rankData?.tacticalImpact || law.tacticalImpact || ''} />
                         </p>
 
                         {/* Lock Warning if Unavailable */}
@@ -1407,9 +1417,12 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                             </div>
                           </div>
 
-                          <h4 className={`text-sm font-serif font-bold tracking-wide mb-1.5 leading-snug ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                            {law.name}
-                          </h4>
+                          <div className="flex items-center gap-2 mb-1.5">
+                            <ApiAssetImage iconPath={law.icon} alt="" className="w-14 h-14 rounded-lg object-cover shrink-0" />
+                            <h4 className={`text-sm font-serif font-bold tracking-wide leading-snug ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                              {law.name}
+                            </h4>
+                          </div>
 
                           {/* Level selector if multi-level */}
                           {law.maxLevel > 1 && (
@@ -1441,7 +1454,7 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                           <p className={`text-xs leading-relaxed p-2 rounded-lg border mt-1 ${
                             themeMode === 'light' ? 'bg-white border-slate-200 text-slate-800' : 'bg-black/40 border-slate-900 text-slate-300'
                           }`}>
-                            {rankData ? rankData.effect : law.effect}
+                            <ResolvedText text={rankData?.effect ?? law.effect ?? ''} />
                           </p>
 
                           {!isEnacted && !available && (
@@ -1579,9 +1592,12 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                         </span>
                       )}
                     </div>
-                    <h3 className={`text-base font-serif font-bold tracking-wide ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
-                      {law.name}
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <ApiAssetImage iconPath={law.icon} alt="" className="w-14 h-14 rounded-lg object-cover shrink-0" />
+                      <h3 className={`text-base font-serif font-bold tracking-wide ${themeMode === 'light' ? 'text-slate-900' : 'text-white'}`}>
+                        {law.name}
+                      </h3>
+                    </div>
                   </div>
 
                   {/* Level selector if multi-level */}
@@ -1628,14 +1644,15 @@ export const FactionLawsTree: React.FC<FactionLawsTreeProps> = ({
                         ? 'bg-white border-slate-200 text-slate-800 shadow-sm'
                         : `${theme.bgBadge} border ${theme.borderSubtle} text-slate-200`
                     }`}>
-                      {rankData ? rankData.effect : law.effect}
+                      <ResolvedText text={rankData?.effect ?? law.effect ?? ''} />
                     </p>
                   </div>
 
                   {/* Tactical Impact */}
                   <div className="mt-2">
                     <p className={`text-xs leading-relaxed ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-400'}`}>
-                      <strong className={`font-mono ${themeMode === 'light' ? 'text-purple-900' : theme.textAccent}`}>Táctica:</strong> {rankData?.tacticalImpact || law.tacticalImpact}
+                      <strong className={`font-mono ${themeMode === 'light' ? 'text-purple-900' : theme.textAccent}`}>Táctica:</strong>{' '}
+                      <ResolvedText text={rankData?.tacticalImpact || law.tacticalImpact || ''} />
                     </p>
                   </div>
 

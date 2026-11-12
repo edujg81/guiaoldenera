@@ -3,6 +3,8 @@ import { FactionId, FACTIONS_METADATA, getFactionTheme } from '../data/factionDa
 import { TownStructure, TownStructureCost, StructureUpgradeLevel } from '../types';
 import { getStructuresForFaction } from '../data/townStructuresData';
 import { WaxSealBadge } from './ui/WaxSealBadge';
+import { ResolvedText } from './ui/ResolvedText';
+import { ApiAssetImage } from './ui/ApiAssetImage';
 import {
   Castle,
   Shield,
@@ -84,12 +86,18 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
         const matchesUnit =
           st.unitRecruited?.toLowerCase().includes(query) ||
           st.unitRecruitedBase?.toLowerCase().includes(query) ||
+          st.apiRecruitableUnits?.some((unit) => unit.name.toLowerCase().includes(query)) ||
           st.unitUpgrades?.branchA.toLowerCase().includes(query) ||
           st.unitUpgrades?.branchB.toLowerCase().includes(query);
-        const matchesEffects = st.effects.some((e) => e.toLowerCase().includes(query));
+        const matchesEffects = st.effects.some((e) => e.toLowerCase().includes(query)) ||
+          st.apiDescription?.toLowerCase().includes(query) ||
+          st.apiEffects?.some((effect) => effect.toLowerCase().includes(query)) ||
+          st.apiUpgradeOptions?.some((option) => option.toLowerCase().includes(query));
         const matchesPrereq = st.prerequisites.some((p) => p.toLowerCase().includes(query));
         const matchesUpgrades = st.upgradeLevels?.some((lvl) =>
-          lvl.name.toLowerCase().includes(query) || lvl.effects.some((e) => e.toLowerCase().includes(query))
+          lvl.name.toLowerCase().includes(query) ||
+          lvl.description?.toLowerCase().includes(query) ||
+          lvl.effects.some((e) => e.toLowerCase().includes(query))
         );
         return matchesName || matchesUnit || matchesEffects || matchesPrereq || !!matchesUpgrades;
       }
@@ -128,7 +136,7 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
     const requiredForT7 = factionStructures.filter((s) =>
       s.category === 'Moradas de Criaturas' ||
       s.category === 'Fortificaciones' ||
-      (s.category === 'Magia & Cofradía' && s.id.includes('mage-guild'))
+      s.category === 'Magia & Cofradía'
     );
 
     const total: TownStructureCost = {
@@ -138,6 +146,8 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
       gems: 0,
       crystal: 0,
       mercury: 0,
+      alchemicalDust: 0,
+      grail: 0,
     };
 
     requiredForT7.forEach((s) => {
@@ -147,6 +157,8 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
       total.gems = (total.gems || 0) + (s.cost.gems || 0);
       total.crystal = (total.crystal || 0) + (s.cost.crystal || 0);
       total.mercury = (total.mercury || 0) + (s.cost.mercury || 0);
+      total.alchemicalDust = (total.alchemicalDust || 0) + (s.cost.alchemicalDust || 0);
+      total.grail = (total.grail || 0) + (s.cost.grail || 0);
     });
 
     return {
@@ -190,6 +202,18 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
         {!!cost.mercury && (
           <span className="inline-flex items-center gap-1 bg-red-950/50 text-red-300 border border-red-600/40 px-2 py-0.5 rounded font-semibold">
             🧪 {cost.mercury} Mercurio
+          </span>
+        )}
+        {!!cost.alchemicalDust && (
+          <span className="inline-flex items-center gap-1 bg-violet-950/50 text-violet-200 border border-violet-600/40 px-2 py-0.5 rounded font-semibold">
+            <Sparkles className="w-3 h-3 text-violet-300" />
+            {cost.alchemicalDust} Polvo alquímico
+          </span>
+        )}
+        {!!cost.grail && (
+          <span className="inline-flex items-center gap-1 bg-yellow-950/50 text-yellow-200 border border-yellow-600/40 px-2 py-0.5 rounded font-semibold">
+            <Crown className="w-3 h-3 text-yellow-400" />
+            {cost.grail} Grial
           </span>
         )}
       </div>
@@ -329,6 +353,7 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
                     </div>
 
                     <h4 className="text-sm sm:text-base font-serif font-bold text-white flex items-center gap-1.5">
+                      <ApiAssetImage iconPath={structure.apiIconPath} alt="" className="w-12 h-12 rounded-lg object-cover shrink-0" />
                       {structure.name}
                     </h4>
 
@@ -394,11 +419,23 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
                       Estructura Única ({selectedStructure.faction})
                     </span>
                   )}
+                  {!selectedStructure.apiBuildingIds && (
+                    <span className="text-[10px] font-mono text-amber-200 bg-amber-950/50 border border-amber-700/40 px-2 py-0.5 rounded">
+                      Ficha editorial sin registro en la API
+                    </span>
+                  )}
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-serif font-bold text-white">
-                  {selectedStructure.name}
-                </h3>
+                <div className="flex items-center gap-3 mt-2">
+                  <ApiAssetImage
+                    iconPath={activeLevel?.apiIconPath ?? selectedStructure.apiIconPath}
+                    alt=""
+                    className="w-24 h-24 rounded-lg object-cover shrink-0 border border-slate-700"
+                  />
+                  <h3 className="text-lg sm:text-xl font-serif font-bold text-white">
+                    {activeLevel?.name ?? selectedStructure.name}
+                  </h3>
+                </div>
                 <p className="text-xs font-mono text-slate-400">
                   Facción: <strong className={theme.textAccent}>{selectedStructure.faction}</strong>
                 </p>
@@ -530,6 +567,14 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
 
                       {/* Effects of this level */}
                       <div>
+                        {activeLevel.description && (
+                          <div className="mb-3 rounded-lg border border-cyan-800/40 bg-cyan-950/20 p-2.5">
+                            <span className="text-[10px] font-mono text-cyan-300 font-bold uppercase block mb-1">
+                              Descripción de la API
+                            </span>
+                            <ResolvedText text={activeLevel.description} className="text-xs text-slate-200" />
+                          </div>
+                        )}
                         <span className="text-[11px] font-mono text-slate-400 font-semibold block mb-1">
                           Efectos otorgados por este nivel:
                         </span>
@@ -537,7 +582,7 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
                           {activeLevel.effects.map((eff, i) => (
                             <li key={i} className="flex items-start gap-1.5">
                               <span className="text-cyan-400 font-bold">•</span>
-                              <span>{eff}</span>
+                              <ResolvedText text={eff} />
                             </li>
                           ))}
                         </ul>
@@ -629,14 +674,52 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
                   <Sparkles className="w-3.5 h-3.5 text-yellow-400" />
                   Efectos y Producción
                 </h4>
+                {!selectedStructure.upgradeLevels && selectedStructure.apiDescription && (
+                  <div className="rounded-lg border border-cyan-800/40 bg-cyan-950/20 p-2.5 text-xs text-slate-200">
+                    <span className="text-[10px] font-mono text-cyan-300 font-bold uppercase block mb-1">
+                      Descripción de la API
+                    </span>
+                    <ResolvedText text={selectedStructure.apiDescription} />
+                  </div>
+                )}
                 <ul className="space-y-1 text-xs text-slate-300">
                   {selectedStructure.effects.map((eff, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <span className="text-amber-400 font-bold">•</span>
-                      <span>{eff}</span>
+                      <ResolvedText text={eff} />
                     </li>
                   ))}
                 </ul>
+                {selectedStructure.apiRecruitableUnits && (
+                  <div className="rounded-lg border border-emerald-800/40 bg-emerald-950/20 p-2.5">
+                    <span className="text-[10px] font-mono text-emerald-300 font-bold uppercase block mb-1">
+                      Criaturas reclutables según la API
+                    </span>
+                    <ul className="space-y-1 text-xs text-slate-200">
+                      {selectedStructure.apiRecruitableUnits.map((unit, index) => (
+                        <li key={`${unit.buildingLevel}-${unit.name}-${index}`}>
+                          <span className="text-emerald-400 font-bold">•</span>{' '}
+                          Nivel {unit.buildingLevel}: {unit.name}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {selectedStructure.apiUpgradeOptions && (
+                  <div className="rounded-lg border border-amber-800/40 bg-amber-950/20 p-2.5">
+                    <span className="text-[10px] font-mono text-amber-300 font-bold uppercase block mb-1">
+                      Mejoras indicadas por la API
+                    </span>
+                    <ul className="space-y-1 text-xs text-slate-200">
+                      {selectedStructure.apiUpgradeOptions.map((option, index) => (
+                        <li key={`${option}-${index}`} className="flex items-start gap-1.5">
+                          <span className="text-amber-400 font-bold">•</span>
+                          <ResolvedText text={option} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
               {/* ========================================================= */}
@@ -650,9 +733,10 @@ export const TownStructuresBrowser: React.FC<TownStructuresBrowserProps> = ({
                       Mejoras Alternativas de Criatura (Rama A vs Rama B)
                     </div>
                     {selectedStructure.dwellingUpgradeCost && (
-                      <span className="text-[10px] font-mono text-slate-300">
-                        Mejora de morada: {selectedStructure.dwellingUpgradeCost.gold?.toLocaleString()} Oro
-                      </span>
+                      <div className="text-[10px] font-mono">
+                        <span className="text-slate-300 block mb-1">Coste de mejora de morada:</span>
+                        {renderCostBadge(selectedStructure.dwellingUpgradeCost)}
+                      </div>
                     )}
                   </div>
 

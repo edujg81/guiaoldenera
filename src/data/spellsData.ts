@@ -42,6 +42,7 @@ function mergeSpell(api: ApiSpell, guide: GuideSpell): RecommendedSpell {
 
   return {
     id: api.id,
+    icon: api.icon,
     name: api.localizedName,
     // The API currently exposes the canonical localized name, not a separate English label.
     nameEn: api.localizedName,

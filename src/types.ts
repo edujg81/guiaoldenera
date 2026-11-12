@@ -129,6 +129,7 @@ export interface LawRank {
 
 export interface FactionLaw {
   id: string;
+  icon?: string;
   priorityOrder: number;
   tier: 1 | 2 | 3 | 4 | 5;
   tierMinPoints: number; // 0, 5, 15, 30, 50
@@ -235,6 +236,7 @@ export interface GuideSubclass {
 
 export interface RecommendedSpell {
   id: string;
+  icon?: string;
   name: string;
   nameEn: string;
   masterfulName?: string;
@@ -399,14 +401,17 @@ export interface TownStructureCost {
   crystal?: number;
   mercury?: number;
   alchemicalDust?: number;
+  grail?: number;
 }
 
 export interface StructureUpgradeLevel {
   level: number;
   name: string;
   nameEn?: string;
+  apiIconPath?: string;
   cost: TownStructureCost;
   prerequisites: string[];
+  description?: string;
   effects: string[];
   bonusIncome?: string;
   growthBonus?: string;
@@ -443,11 +448,15 @@ export interface TownStructure {
   cost: TownStructureCost;
   prerequisites: string[];
   prerequisiteIds?: string[];
+  apiBuildingIds?: string[];
+  apiDescription?: string;
+  apiIconPath?: string;
+  apiEffects?: string[];
+  apiRecruitableUnits?: { name: string; iconPath: string; buildingLevel: number }[];
+  apiUpgradeOptions?: string[];
   effects: string[];
   strategicTip: string;
   timingRecommendation: string;
   isFactionUnique?: boolean;
   upgradeLevels?: StructureUpgradeLevel[];
 }
-
-
