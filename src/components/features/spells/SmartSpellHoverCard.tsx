@@ -8,6 +8,15 @@ import { formatEffectWithSpellPower, parseSpellFormula, evaluateSpellFormula } f
 import { FactionId, getFactionTheme } from '../../../data/factionDataProvider';
 import { getFactionSpellPriority } from '../../../data/factionSpellData';
 
+const FACTION_SCROLLS: Record<FactionId, string> = {
+  Mazmorra: 'dungeon',
+  Templo: 'human',
+  Foresta: 'nature',
+  Necrópolis: 'undead',
+  Colmena: 'demon',
+  Cisma: 'unfrozen',
+};
+
 export interface SmartSpellHoverCardProps {
   spell: RecommendedSpell;
   currentSpellPower?: number;
@@ -151,22 +160,29 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
               left: `${coords.left}px`,
               width: '340px',
               zIndex: 9999,
+              background: 'transparent',
             }}
-            className={`fixed rounded-2xl border p-4 shadow-2xl transition-all duration-200 transform-gpu animate-in fade-in-0 zoom-in-95 pointer-events-auto ${
+            className={`fixed overflow-hidden rounded-2xl p-4 shadow-2xl transition-all duration-200 transform-gpu animate-in fade-in-0 zoom-in-95 pointer-events-auto ${
               themeMode === 'light'
                 ? 'holographic-card-light border-purple-200 text-slate-800'
                 : 'holographic-card-dark border-purple-500/40 text-slate-200'
             }`}
           >
+            <ApiAssetImage
+              iconPath={`icons/faction_laws_main_icons/scroll_faction_${FACTION_SCROLLS[activeFaction]}`}
+              alt=""
+              className="pointer-events-none absolute inset-x-0 -top-8 h-[calc(100%+1.9rem)] w-full object-cover opacity-70"
+            />
+            <div className={`pointer-events-none absolute inset-0 ${
+              themeMode === 'light' ? 'bg-white/25' : 'bg-slate-950/45'
+            }`} />
+            <div className="relative z-10">
             {/* Header with School Crest and Tier */}
-            <div className="flex items-start justify-between gap-2 border-b pb-2.5 mb-2.5 border-purple-500/20">
+            <div className="flex items-start justify-between gap-2 pb-2.5 mb-2.5 border-purple-500/20">
               <div className="flex items-center gap-2">
-                <ApiAssetImage iconPath={spell.icon} alt="" className="w-20 h-20 rounded-lg object-cover shrink-0 border border-purple-500/30" />
+                <ApiAssetImage iconPath={spell.icon} alt="" className="w-20 h-20 rounded-lg object-cover shrink-0" />
                 <div>
                 <div className="flex items-center gap-1.5 mb-1">
-                  <span className="p-1 rounded-md bg-black/30 border border-purple-500/30">
-                    {getSchoolIcon()}
-                  </span>
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-400">
                     {spell.school}
                   </span>
@@ -181,10 +197,6 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
               </div>
 
               <div className="text-right">
-                <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border border-cyan-500/40 bg-cyan-950/40 text-cyan-300 flex items-center gap-1">
-                  <Zap className="w-3 h-3 text-cyan-400" />
-                  {level1.manaCost} - {level4.manaCost} Maná
-                </span>
                 {spell.masterfulName && (
                   <span className="text-[9px] font-mono block mt-1 text-amber-300">
                     ★ {spell.masterfulName}
@@ -261,7 +273,7 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
             </div>
 
             {/* Cost Breakdown */}
-            <div className="pt-2 border-t border-purple-500/20 flex items-center justify-between text-[10px] font-mono text-slate-400">
+            <div className="pt-2  flex items-center justify-between text-[10px] font-mono text-slate-400">
               <span className="flex items-center gap-1">
                 <Gem className="w-3 h-3 text-amber-500" />
                 {spell.isNeutral || spell.unlockCost.gold === 0
@@ -279,6 +291,7 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
               ) : (
                 <span className="text-amber-400 font-semibold">25 Polvo / Nivel</span>
               )}
+            </div>
             </div>
           </div>,
           document.body

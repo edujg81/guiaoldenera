@@ -61,7 +61,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className={`flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3 pb-2 border-b ${theme.borderSubtle}`}>
           {/* Izquierda: Título */}
           <div className="flex items-center gap-2 min-w-0">
-            <FactionImage faction={selectedFaction} size="sm" className="w-6 h-6" />
+            <FactionImage faction={selectedFaction} size="sm" className="w-18 h-18" />
             <h1 className="text-sm sm:text-lg md:text-xl font-serif text-white uppercase italic truncate">
               Guía de Conquista: <span className={`${theme.textAccent} font-bold`}>{selectedFaction}</span>
             </h1>

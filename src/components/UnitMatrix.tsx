@@ -117,7 +117,7 @@ export const UnitMatrix: React.FC<UnitMatrixProps> = ({
               Bestiario & Unidades de Guerra • Heroes of Might and Magic: Olden Era
             </div>
             <div className="flex items-center gap-3">
-              <FactionImage faction={unitFaction} size="lg" />
+              <FactionImage faction={unitFaction} size="xl" className="w-18 h-18" />
               <div>
                 <h2 className={`text-xl sm:text-2xl font-serif uppercase tracking-wide font-bold ${
                   themeMode === 'light' ? 'text-slate-900' : 'text-white'

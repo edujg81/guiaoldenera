@@ -3,6 +3,7 @@ import React from 'react';
 const apiAssetUrls = import.meta.glob(
   [
     '/src/assets/icons/faction_laws/*.png',
+    '/src/assets/icons/faction_laws_main_icons/*.png',
     '/src/assets/icons/cities_buildings/**/*.png',
     '/src/assets/icons/hero_magics/*.png',
     '/src/assets/icons/hero_skills/*.png',

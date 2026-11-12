@@ -1,8 +1,17 @@
 import React from 'react';
-import { Sun, Moon, Flame, Orbit, Compass, Sparkles, Check, BookOpen } from 'lucide-react';
-import { CANONICAL_MAGIC_SCHOOLS, CanonicalSchoolMeta, matchSpellSchool } from '../../../utils/spellScalingCalculator';
+import { Check, BookOpen } from 'lucide-react';
+import { CANONICAL_MAGIC_SCHOOLS, matchSpellSchool } from '../../../utils/spellScalingCalculator';
 import { FactionId, getFactionTheme } from '../../../data/factionDataProvider';
 import { RecommendedSpell } from '../../../types';
+import { ApiAssetImage } from '../../ui/ApiAssetImage';
+
+const SCHOOL_ICON_PATHS: Record<string, string> = {
+  Luz: 'icons/hero_skills/skill_magic_day_2',
+  Nochesombra: 'icons/hero_skills/skill_magic_night_2',
+  Primigenia: 'icons/hero_skills/skill_magic_primal_2',
+  Arcana: 'icons/hero_skills/skill_magic_space_2',
+  Neutral: 'icons/hero_skills/skill_mage',
+};
 
 interface SpellSchoolSigilSelectorProps {
   selectedSchool: string;
@@ -20,21 +29,6 @@ export const SpellSchoolSigilSelector: React.FC<SpellSchoolSigilSelectorProps> =
   themeMode = 'dark',
 }) => {
   const theme = getFactionTheme(activeFaction, themeMode);
-
-  const getSchoolIcon = (type: CanonicalSchoolMeta['iconType']) => {
-    switch (type) {
-      case 'sun':
-        return <Sun className="w-4 h-4 text-amber-500" />;
-      case 'moon':
-        return <Moon className="w-4 h-4 text-purple-400" />;
-      case 'elemental':
-        return <Flame className="w-4 h-4 text-emerald-400" />;
-      case 'arcane':
-        return <Orbit className="w-4 h-4 text-indigo-400" />;
-      case 'astral':
-        return <Compass className="w-4 h-4 text-cyan-400" />;
-    }
-  };
 
   const getSchoolSpellCount = (schoolId: string): number => {
     if (schoolId === 'all') return spells.length;
@@ -94,13 +88,17 @@ export const SpellSchoolSigilSelector: React.FC<SpellSchoolSigilSelectorProps> =
               <div>
                 <div className="flex items-center justify-between mb-1.5">
                   <div
-                    className={`w-7 h-7 rounded-lg flex items-center justify-center border ${
+                    className={`w-24 h-24 rounded-lg flex items-center justify-center ${
                       themeMode === 'light'
                         ? 'bg-slate-50 border-slate-200'
                         : 'bg-black/60 border-slate-800'
                     }`}
                   >
-                    {getSchoolIcon(school.iconType)}
+                    <ApiAssetImage
+                      iconPath={SCHOOL_ICON_PATHS[school.id]}
+                      alt={`Escuela ${school.name}`}
+                      className="h-24 w-24 object-contain"
+                    />
                   </div>
 
                   <span
