@@ -3,6 +3,7 @@ import { ChevronDown, ChevronUp, X } from 'lucide-react';
 import type { ApiUnit } from '../../../types-api';
 import { UNIT_ASSETS_CATALOG } from '../../../data/unitAssetsData';
 import { UnitImage } from '../../ui/UnitImage';
+import { ResolvedText } from '../../ui/ResolvedText';
 
 interface UnitCatalogTableProps {
   title: string;
@@ -360,7 +361,8 @@ export const UnitCatalogTable: React.FC<UnitCatalogTableProps> = ({
                 name={selectedUnit.id}
                 alt={getUnitName(selectedUnit)}
                 nameEn={UNIT_ASSETS_BY_ID.get(selectedUnit.id)?.nameEn ?? selectedUnit.name}
-                size="lg"
+                size="xl"
+                className="w-48 h-48"
               />
               <div>
                 <p className={`text-xs font-mono uppercase tracking-wider ${
@@ -419,7 +421,9 @@ export const UnitCatalogTable: React.FC<UnitCatalogTableProps> = ({
                 <h4 className="text-xs font-mono font-bold uppercase tracking-wider">Descripción</h4>
                 <p className={`mt-2 text-sm leading-relaxed ${
                   themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'
-                }`}>{selectedUnit.narrativeDescription || selectedUnit.description}</p>
+                }`}>
+                  <ResolvedText text={selectedUnit.narrativeDescription || selectedUnit.description || ''} />
+                </p>
               </div>
             )}
             {selectedUnit.passiveAbilities.length + (selectedUnit.activeAbilities?.length ?? 0) > 0 && (
@@ -434,7 +438,9 @@ export const UnitCatalogTable: React.FC<UnitCatalogTableProps> = ({
                       {ability.description && (
                         <p className={`mt-1 text-xs leading-relaxed ${
                           themeMode === 'light' ? 'text-slate-600' : 'text-slate-400'
-                        }`}>{ability.description}</p>
+                        }`}>
+                          <ResolvedText text={ability.description} />
+                        </p>
                       )}
                     </li>
                   ))}
