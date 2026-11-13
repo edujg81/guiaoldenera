@@ -1102,15 +1102,19 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                     themeMode === 'light' ? 'bg-slate-50 border-slate-200' : `bg-black/50 ${theme.borderSubtle}`
                   }`}>
                     <span className={`text-[10px] uppercase block mb-0.5 ${themeMode === 'light' ? 'text-amber-800 font-semibold' : 'text-amber-400'}`}>
-                      {spell.isNeutral || spell.unlockCost.gold === 0 ? 'Adquisición Neutral / Observatorio:' : 'Coste Desbloqueo Base:'}
+                      {spell.isNeutral ? 'Adquisición Neutral / Observatorio:' : 'Coste Desbloqueo Base:'}
                     </span>
                     <span className={`text-[11px] ${themeMode === 'light' ? 'text-amber-900 font-semibold' : 'text-amber-300'}`}>
-                      {spell.isNeutral || spell.unlockCost.gold === 0 ? (
+                      {spell.isNeutral ? (
                         <span className="text-teal-700 dark:text-cyan-300 font-semibold">
-                          {spell.unlockCost.observationPoints !== undefined
+                          {!spell.hasEditorialGuide
+                            ? 'Dato no verificado'
+                            : spell.unlockCost.observationPoints !== undefined
                             ? `${spell.unlockCost.observationPoints} Pts de Observación (0 Oro)`
-                            : 'Sin definir (Pendiente de confirmación)'}
+                            : 'Dato no verificado'}
                         </span>
+                      ) : !spell.hasEditorialGuide ? (
+                        'Dato no verificado'
                       ) : (
                         <>
                           {spell.unlockCost.gold > 0 ? `${spell.unlockCost.gold.toLocaleString()} Oro` : ''}
@@ -1146,7 +1150,11 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                         : themeMode === 'light' ? 'text-purple-900' : theme.textAccent
                     }`}>
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                      Sinergia Táctica Canónica con {activeFaction}:
+                      {factionPrioInfo
+                        ? `Sinergia Táctica Canónica con ${activeFaction}:`
+                        : spell.hasEditorialGuide
+                          ? 'Consejo táctico editorial:'
+                          : 'Efecto base documentado:'}
                     </span>
 
                     {factionPrioInfo?.keyUnitsBenefited && (
@@ -1241,19 +1249,23 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                               <Gem className="w-3 h-3 text-amber-500" />
                               {lvl.level === 1 ? (
                                 <span className={themeMode === 'light' ? 'text-slate-600 font-mono' : 'text-slate-400 font-mono'}>
-                                  {spell.isNeutral
-                                    ? (lvl.upgradeCost.observationPoints !== undefined
-                                        ? `${lvl.upgradeCost.observationPoints} Pts de Observación (Confirmado)`
-                                        : 'Sin definir (Pendiente de confirmación)')
-                                    : 'Desbloqueo Base'}
+                                  {!spell.hasEditorialGuide
+                                    ? 'Dato no verificado'
+                                    : spell.isNeutral
+                                      ? (lvl.upgradeCost.observationPoints !== undefined
+                                          ? `${lvl.upgradeCost.observationPoints} Pts de Observación (Confirmado)`
+                                          : 'Dato no verificado')
+                                      : 'Desbloqueo Base'}
                                 </span>
                               ) : (
                                 <span>
-                                  {spell.isNeutral ? (
+                                  {!spell.hasEditorialGuide ? (
+                                    <span>Dato no verificado</span>
+                                  ) : spell.isNeutral ? (
                                     <span className="font-semibold text-teal-700 dark:text-cyan-300">
                                       {lvl.upgradeCost.observationPoints !== undefined || spell.unlockCost.observationPoints !== undefined
                                         ? '+1 Punto de Observación adicional'
-                                        : 'Sin definir (Pendiente de confirmación)'}
+                                        : 'Dato no verificado'}
                                     </span>
                                   ) : (
                                     <>
@@ -1300,7 +1312,9 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                               : `${theme.textAccent} bg-black/40 ${theme.borderSubtle}`
                           }`}>
                             <span className="text-cyan-600 dark:text-cyan-400 font-bold">★ Mejora Clave:</span>
-                            <span className={`font-sans ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'}`}>{lvl.keyBonus}</span>
+                            <span className={`font-sans ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'}`}>
+                              {spell.hasEditorialGuide ? lvl.keyBonus : lvl.keyBonus || 'Dato no verificado'}
+                            </span>
                           </div>
                         </div>
                       ))}
@@ -1369,19 +1383,23 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                             <Gem className="w-3 h-3 text-amber-500" />
                             {activeLevel.level === 1 ? (
                               <span className={themeMode === 'light' ? 'text-slate-600 font-sans' : 'text-slate-300 font-sans'}>
-                                {spell.isNeutral
+                                {!spell.hasEditorialGuide
+                                  ? 'Dato no verificado'
+                                  : spell.isNeutral
                                   ? (activeLevel.upgradeCost.observationPoints !== undefined
                                       ? `${activeLevel.upgradeCost.observationPoints} Pts de Observación (Confirmado)`
-                                      : 'Sin definir (Pendiente de confirmación)')
+                                      : 'Dato no verificado')
                                   : 'Desbloqueo Base'}
                               </span>
                             ) : (
                               <span>
-                                {spell.isNeutral ? (
+                                {!spell.hasEditorialGuide ? (
+                                  <span>Dato no verificado</span>
+                                ) : spell.isNeutral ? (
                                   <span className="font-semibold text-teal-700 dark:text-cyan-300">
                                     {activeLevel.upgradeCost.observationPoints !== undefined || spell.unlockCost.observationPoints !== undefined
                                       ? '+1 Punto de Observación adicional'
-                                      : 'Sin definir (Pendiente de confirmación)'}
+                                      : 'Dato no verificado'}
                                   </span>
                                 ) : (
                                   <>
@@ -1432,7 +1450,9 @@ export const SpellGrimoire: React.FC<SpellGrimoireProps> = ({
                             : `${theme.textAccent} ${theme.bgBadge} ${theme.borderSubtle}`
                         }`}>
                           <span className="text-cyan-600 dark:text-cyan-400 font-bold shrink-0">★ Ventaja de Nivel:</span>
-                          <span className={`font-sans ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'}`}>{activeLevel.keyBonus}</span>
+                          <span className={`font-sans ${themeMode === 'light' ? 'text-slate-700' : 'text-slate-300'}`}>
+                            {spell.hasEditorialGuide ? activeLevel.keyBonus : activeLevel.keyBonus || 'Dato no verificado'}
+                          </span>
                         </div>
 
                         {/* Alternate Guild Condition */}

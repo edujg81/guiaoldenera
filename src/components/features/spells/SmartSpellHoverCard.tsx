@@ -265,10 +265,14 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
 
               <div className="p-2 rounded-lg border border-amber-500/40 bg-gradient-to-r from-amber-950/40 to-black/60">
                 <div className="flex items-center justify-between text-[10px] font-mono font-bold text-amber-400 mb-0.5">
-                  <span>Nivel 4 (Magistral)</span>
+                  <span>
+                    {level4.level === 4 ? 'Nivel 4 (Magistral)' : `Nivel ${level4.level}`}
+                  </span>
                   <span className="text-amber-300">{level4.manaCost} Maná</span>
                 </div>
-                <p className="text-[11px] leading-snug text-amber-200">{level4.keyBonus}</p>
+                <p className="text-[11px] leading-snug text-amber-200">
+                  {spell.hasEditorialGuide ? level4.keyBonus : level4.keyBonus || 'Dato no verificado'}
+                </p>
               </div>
             </div>
 
@@ -276,17 +280,23 @@ export const SmartSpellHoverCard: React.FC<SmartSpellHoverCardProps> = ({
             <div className="pt-2  flex items-center justify-between text-[10px] font-mono text-slate-400">
               <span className="flex items-center gap-1">
                 <Gem className="w-3 h-3 text-amber-500" />
-                {spell.isNeutral || spell.unlockCost.gold === 0
+                {!spell.hasEditorialGuide
+                  ? 'Coste: Dato no verificado'
+                  : spell.isNeutral
                   ? (spell.unlockCost.observationPoints !== undefined
-                      ? `Nivel 1: ${spell.unlockCost.observationPoints} Pts Observación (0 Oro)`
-                      : 'Nivel 1: Sin definir (Observatorio)')
+                      ? spell.hasEditorialGuide
+                        ? `Nivel 1: ${spell.unlockCost.observationPoints} Pts Observación (0 Oro)`
+                        : 'Coste: Dato no verificado'
+                      : 'Coste: Dato no verificado')
                   : `Desbloqueo: ${spell.unlockCost.gold.toLocaleString()} Oro`}
               </span>
-              {spell.isNeutral || spell.unlockCost.gold === 0 ? (
+              {!spell.hasEditorialGuide ? (
+                <span className="text-slate-400 font-semibold">Mejora: Dato no verificado</span>
+              ) : spell.isNeutral ? (
                 <span className="text-teal-400 font-semibold">
-                  {spell.unlockCost.observationPoints !== undefined
+                  {spell.hasEditorialGuide && spell.unlockCost.observationPoints !== undefined
                     ? '+1 Pto Observación / Nivel'
-                    : 'Mejora: Sin definir'}
+                    : 'Mejora: Dato no verificado'}
                 </span>
               ) : (
                 <span className="text-amber-400 font-semibold">25 Polvo / Nivel</span>

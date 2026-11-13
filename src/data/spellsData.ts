@@ -6,6 +6,7 @@ import { NIGHTSHADE_SPELL_GUIDE } from './spells/nightshadeSpells';
 import { PRIMAL_SPELL_GUIDE } from './spells/primalSpells';
 import { ARCANE_SPELL_GUIDE } from './spells/arcaneSpells';
 import { NEUTRAL_SPELL_GUIDE } from './spells/neutralSpells';
+import { matchSpellSchool } from '../utils/spellScalingCalculator';
 
 const GUIDE_SPELLS: GuideSpell[] = [
   ...DAYLIGHT_SPELL_GUIDE,
@@ -36,12 +37,43 @@ function buildLevels(spell: ApiSpell): SpellLevelInfo[] {
   }));
 }
 
-function mergeSpell(api: ApiSpell, guide: GuideSpell): RecommendedSpell {
-  const special = API_BY_ID.get(`${api.id}_special`);
-  const firstLevel = api.levels[0];
+function createApiBasedGuide(api: ApiSpell): GuideSpell {
+  const baseEffect = stripMarkup(api.levels[0]?.description).trim();
+  const isNeutral =
+    api.school.toLowerCase() === 'neutral' ||
+    api.schoolDisplay.toLowerCase().includes('neutral');
 
   return {
     id: api.id,
+    priority: 'Dato no verificado',
+    tacticalUtility: baseEffect
+      ? `${baseEffect}`
+      : 'Dato no verificado',
+    whereToLearn: 'Dato no verificado',
+    unlockCost: {
+      formula: 'Dato no verificado',
+      gold: 0,
+      description: 'Dato no verificado',
+    },
+    isConfirmedCost: false,
+    isNeutral,
+  };
+}
+
+function mergeSpell(
+  api: ApiSpell,
+  guide: GuideSpell,
+  hasEditorialGuide: boolean,
+): RecommendedSpell {
+  const special = API_BY_ID.get(`${api.id}_special`);
+  const firstLevel = api.levels[0];
+  const isNeutralByApi =
+    api.school.toLowerCase() === 'neutral' ||
+    api.schoolDisplay.toLowerCase().includes('neutral');
+
+  return {
+    id: api.id,
+    hasEditorialGuide,
     icon: api.icon,
     name: api.localizedName,
     // The API currently exposes the canonical localized name, not a separate English label.
@@ -59,36 +91,33 @@ function mergeSpell(api: ApiSpell, guide: GuideSpell): RecommendedSpell {
     observationPerLevelCost: guide.observationPerLevelCost,
     isConfirmedCost: guide.isConfirmedCost,
     unlockCost: guide.unlockCost ?? {
-      formula: 'Sin información editorial',
+      formula: 'Dato no verificado',
       gold: 0,
-      description: '',
+      description: 'Dato no verificado',
     },
     levels: buildLevels(api),
     effect: stripMarkup(firstLevel?.description),
-    tacticalUtility: guide.tacticalUtility ?? '',
-    whereToLearn: guide.whereToLearn ?? '',
-    isNeutral: guide.isNeutral,
+    tacticalUtility: guide.tacticalUtility ?? 'Dato no verificado',
+    whereToLearn: guide.whereToLearn ?? 'Dato no verificado',
+    isNeutral: isNeutralByApi || guide.isNeutral === true,
     guildPointsCost: guide.guildPointsCost,
     acquisitionMethod: guide.acquisitionMethod,
   };
 }
 
-export const OFFICIAL_SPELLS_DATA: RecommendedSpell[] = GUIDE_SPELLS
-  .map((guide) => {
-    const api = API_BY_ID.get(guide.id);
-    return api ? mergeSpell(api, guide) : null;
-  })
-  .filter((spell): spell is RecommendedSpell => spell !== null);
+export const OFFICIAL_SPELLS_DATA: RecommendedSpell[] = API_SPELLS_DATA.map((api) => {
+  const guide = GUIDE_BY_ID.get(api.id);
+  return mergeSpell(api, guide ?? createApiBasedGuide(api), !!guide);
+});
 
-// Exports grouped by the guide's editorial sections. Their factual fields are supplied by the API at merge time.
-export const DAYLIGHT_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => DAYLIGHT_SPELL_GUIDE.some((g) => g.id === spell.id));
-export const NIGHTSHADE_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => NIGHTSHADE_SPELL_GUIDE.some((g) => g.id === spell.id));
-export const PRIMAL_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => PRIMAL_SPELL_GUIDE.some((g) => g.id === spell.id));
-export const ARCANE_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => ARCANE_SPELL_GUIDE.some((g) => g.id === spell.id));
-export const NEUTRAL_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => NEUTRAL_SPELL_GUIDE.some((g) => g.id === spell.id));
+export const DAYLIGHT_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => matchSpellSchool(spell.school, 'Luz'));
+export const NIGHTSHADE_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => matchSpellSchool(spell.school, 'Nochesombra'));
+export const PRIMAL_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => matchSpellSchool(spell.school, 'Primigenia'));
+export const ARCANE_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => matchSpellSchool(spell.school, 'Arcana'));
+export const NEUTRAL_SPELLS = OFFICIAL_SPELLS_DATA.filter((spell) => matchSpellSchool(spell.school, 'Neutral'));
 
 export const getSpellWithGuide = (id: string): RecommendedSpell | undefined => {
   const guide = GUIDE_BY_ID.get(id);
   const api = API_BY_ID.get(id);
-  return api && guide ? mergeSpell(api, guide) : undefined;
+  return api ? mergeSpell(api, guide ?? createApiBasedGuide(api), !!guide) : undefined;
 };

@@ -236,6 +236,7 @@ export interface GuideSubclass {
 
 export interface RecommendedSpell {
   id: string;
+  hasEditorialGuide?: boolean;
   icon?: string;
   name: string;
   nameEn: string;
